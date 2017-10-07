@@ -1,0 +1,4717 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WitsWay.Utilities.Win</name>
+    </assembly>
+    <members>
+        <member name="T:WitsWay.Utilities.Win.BackgroundLoader">
+            <summary>
+            后台加载
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.BackgroundLoader.#ctor(System.Action,System.Action)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="doWork">加载动作内容</param>
+            <param name="completedWork">完成后内容</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Builders.ConfigFormBuilder">
+            <summary>
+            创建配置管理的窗体
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Builders.ConfigFormBuilder._abmConfigUC">
+            <summary>
+            窗体用户控件
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Builders.ConfigFormBuilder._viewControl">
+            <summary>
+            _viewControl
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Builders.ConfigFormBuilder._tabCaption">
+            <summary>
+            左边菜单标题
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Builders.ConfigFormBuilder._isSelected">
+            <summary>
+            左边菜单是否选中
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Builders.ConfigFormBuilder._tabIndex">
+            <summary>
+            左边菜单tabindex
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Builders.ConfigFormBuilder.SetTabItemCaption(System.String)">
+            <summary>
+            设置左边菜单的标题
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Builders.ConfigFormBuilder.SetSelected">
+            <summary>
+            设置左边菜单是否选中
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Builders.ConfigFormBuilder.SetTabIndex(System.Int32)">
+            <summary>
+            设置左边菜单的tabindex
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Builders.ConfigFormBuilder.AddConfigForm(DevExpress.XtraBars.Ribbon.BackstageViewControl,DevExpress.XtraEditors.XtraUserControl)">
+            <summary>
+            添加配置窗体
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Builders.ConfigFormBuilder.Builder">
+            <summary>
+            生成窗体
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.BasicExportModel`1">
+            <summary>
+            地区信息导出模型
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.BasicExportModel`1.TextTitle">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.BasicExportModel`1.DataHead">
+            <summary>
+            数据表头
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.BasicExportModel`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.BasicExportModel`1.TextFoot">
+            <summary>
+            页脚
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.BasicExportModel`1.TextHead">
+            <summary>
+            页眉
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.BasicExportModel`1.SetDataHead(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            设置数据源标头
+            </summary>
+            <param name="gridView"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.BasicExportReport">
+            <summary>
+            基本导出报表
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.BasicExportReport.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.BasicExportReport.InitReport``1(WitsWay.Utilities.Win.Controls.BasicExportModel{``0})">
+            <summary>
+            初始化导出报表
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.BasicExportReport.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.BasicExportReport.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.BasicExportReport.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.ButtonEditUC">
+            <summary>
+            ButtonEdit控件
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ButtonEditUC.SetCanDeleteValue">
+            <summary>
+            设置响应删除事件
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ButtonEditUC.SetisSelectable">
+            <summary>
+            设置是否可以选择样式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ButtonEditUC.SetValueStyle">
+            <summary>
+            值得样式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ButtonEditUC._buttonEdit_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            删除
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.ButtonEditUC.CustomUseDeleteStyle">
+            <summary>
+            选中的对象是否使用删除样式
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.ButtonEditUC.CustomCanDeleteValue">
+            <summary>
+            按键Delete清楚选择值是否可用
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.ButtonEditUC.CustomIsSelectable">
+            <summary>
+            选择按钮是否可用，双击文本框是否可用
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.ColumnShowUC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ColumnShowUC.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ColumnShowUC.InitUC(DevExpress.XtraGrid.Views.Grid.GridView,System.Collections.Generic.List{System.String},System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="view"></param>
+            <param name="lockColumn"></param>
+            <param name="gridID"></param>
+            <param name="employeeID"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ColumnShowUC.BindEvents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ColumnShowUC.BindControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ColumnShowUC.SetViewShow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.ColumnShowUC.AllShowFieldSetting">
+            <summary>
+            Get所有显示字段设置
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.ColumnShowUC.ShowColumnItem">
+            <summary>
+            显示列项
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.ColumnShowUC.ShowColumnItem.ColumnCaption">
+            <summary>
+            列标题
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.ColumnShowUC.ShowColumnItem.ColumnField">
+            <summary>
+            列字段
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.ColumnShowUC.ShowColumnItem.ImageIndex">
+            <summary>
+            图片索引
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.ColumnShowUC.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ColumnShowUC.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.ColumnShowUC.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.FlyingForm">
+            <summary>
+            浮动消息层
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.FlyingForm.IconTextSpacing">
+            <summary>
+            图标和文本之间的间距（像素）
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.BasePoint">
+            <summary>
+            基准点。用于指导本窗体显示位置
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.TipIcon">
+            <summary>
+            提示图标
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.TipText">
+            <summary>
+            提示文本
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.Delay">
+            <summary>
+            停留时长（毫秒）
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.Floating">
+            <summary>
+            是否允许浮动
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.FlyingForm.GetPaddedRectangle">
+            <summary>
+            获取刨去Padding的内容区
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.FlyingForm.Fly(System.Drawing.Point,System.Drawing.Point,System.Drawing.Size,System.Drawing.Size,System.Drawing.Image,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sourcePoint"></param>
+            <param name="targetPoint"></param>
+            <param name="sourceSize"></param>
+            <param name="targetSize"></param>
+            <param name="image"></param>
+            <param name="speed"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.GlassButton">
+            <summary>
+            ͸����ť
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.GlassButton.#ctor">
+            <summary>
+            ͸����ť
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.GlassButton.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.FontsStyle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.FontSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.IconTransparency">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.text">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.ButtonText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign.Up">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign.Down">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign.UpperLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign.UpperRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign.BottomLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign.BottomRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextAlign.Center">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.TextAlign">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.TextSpacingX">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.TextSpacingY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.Icon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign.Up">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign.Down">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign.UpperLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign.UpperRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign.BottomLeft">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign.BottomRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.IconBitmapAlign.Center">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.IconAlign">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.IconSpacingX">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.IconSpacingY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextImageRelation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextImageRelation.ImageAboveText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.ButtonTextImageRelation.TextAboveImage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.TextImageRelation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.mouseOnColors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.MouseOn_Colors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.mouseDownColors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.MouseDown_Colors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.Normal_Colors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.disabledColors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.GlassButton.DisabledColors">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.GlassButton.CMouseLeave">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.GlassButton.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.GlassButton.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.GlassButton.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonMenu">
+            <summary>
+            Ribbon菜单
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenu.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenu.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenu.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenu.OnPaintGrip(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenu.DrawArc(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenu.Deflate(System.Drawing.Rectangle)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonMenuShadow">
+            <summary>
+            Ribbon菜单阴影
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuShadow.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuShadow.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuShadow.DrawArc(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonMenuButton">
+            <summary>
+            Ribbon按钮
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.OnCreateControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_imagelocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_imagelocation.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_imagelocation.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_imagelocation.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_imagelocation.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_imagelocation.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.ImageLocation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.ImageOffset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.MaxImageSize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_showbase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_showbase.Yes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_showbase.No">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.ShowBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.Radius">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_groupPos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_groupPos.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_groupPos.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_groupPos.Center">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_groupPos.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_groupPos.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_groupPos.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.GroupPos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_arrow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_arrow.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_arrow.ToRight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_arrow.ToDown">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.Arrow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_splitbutton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_splitbutton.No">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuButton.e_splitbutton.Yes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.SplitButton">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.SplitDistance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.KeepPress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.IsPressed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.MenuPos">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.ColorBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.ColorOn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.ColorPress">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.ColorBaseStroke">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.ColorOnStroke">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.ColorPressStroke">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.GetColorIncreased(System.Drawing.Color,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="color"></param>
+            <param name="h"></param>
+            <param name="s"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.GetColor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="A"></param>
+            <param name="R"></param>
+            <param name="G"></param>
+            <param name="B"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="pevent"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.OnResize(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.Dispose(System.Boolean)">
+            <summary>
+            释放由 <see cref="T:System.Windows.Forms.ButtonBase"/> 占用的非托管资源，还可以另外再释放托管资源。
+            </summary>
+            <param name="disposing">为 true 则释放托管资源和非托管资源；为 false 则仅释放非托管资源。</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.FillGradients(System.Drawing.Graphics,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.DrawImage(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.DrawString(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.DrawArc(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.DrawShadow(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.DrawArrow(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.FillSplit(System.Drawing.Graphics)">
+            <summary>
+            
+            </summary>
+            <param name="gr"></param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonMenuButton.FadingSpeed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.OnMouseEnter(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.OnMouseLeave(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.UpdateLeave">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="mevent"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="mevent"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuButton.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="mevent"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.#ctor(System.Drawing.Color)">
+            <summary>
+            
+            </summary>
+            <param name="color"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.#ctor(System.UInt32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="alpha"></param>
+            <param name="hue"></param>
+            <param name="saturation"></param>
+            <param name="brightness"></param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonColor.AC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonColor.RC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonColor.GC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonColor.BC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.GetColor">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.GetRed">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.GetGreen">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.GetBlue">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonColor.HC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonColor.SC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.RibbonColor.VC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonColor.C">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonColor.C.Red">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonColor.C.Green">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonColor.C.Blue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonColor.C.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.CMax">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.CMin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.GetBrightness">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.GetSaturation">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.GetHue">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.IsDark">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.IncreaseBrightness(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.SetBrightness(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.IncreaseHue(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.SetHue(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.IncreaseSaturation(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.SetSaturation(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonColor.IncreaseHSV(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="h"></param>
+            <param name="s"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.RibbonMenuRenderer">
+            <summary>
+            Ribbon菜单呈现
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.RibbonMenuRenderer.StrokeColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuRenderer.OnRenderMenuItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuRenderer.OnRenderItemImage(System.Windows.Forms.ToolStripItemImageRenderEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuRenderer.OnRenderToolStripBorder(System.Windows.Forms.ToolStripRenderEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuRenderer.DrawArc(System.Drawing.Rectangle,System.Drawing.Drawing2D.GraphicsPath)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <param name="pa"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuRenderer.Deflate(System.Drawing.Rectangle)">
+            <summary>
+            
+            </summary>
+            <param name="re"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.RibbonMenuRenderer.GetColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="R"></param>
+            <param name="G"></param>
+            <param name="B"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.SplashForm2">
+            <summary>
+            加载窗体
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashForm2.#ctor(System.Action,System.Boolean)">
+            <summary>
+            加载窗体
+            </summary>
+            <param name="work">后台任务</param>
+            <param name="acceptNotify">是否接受通知</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashForm2.InitForm(System.Drawing.Icon,System.Drawing.Bitmap,System.Drawing.Bitmap,System.String,System.String)">
+            <summary>
+            初始化窗体
+            </summary>
+            <param name="icon">窗体图标</param>
+            <param name="productImg">产品图片</param>
+            <param name="corpImg">企业图片</param>
+            <param name="copyright">版权</param>
+            <param name="loadText">加载文字</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashForm2.GetYear">
+            <summary>
+            获取年份
+            </summary>
+            <returns>年份</returns>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.SplashForm2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashForm2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashForm2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.PagerUC">
+            <summary>
+            分页控件
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.PagerUC.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.PagerUC.PageSizeAllow">
+            <summary>
+            允许每页显示条数
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.PagerUC.PageSize">
+            <summary>
+            每页显示条数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.PagerUC.SetPagerParameter(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            设置分页参数
+            </summary>
+            <param name="totalRecord">数据总条数</param>
+            <param name="pageSize">每页大小</param>
+            <param name="pageIndex">当前页码</param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.PagerUC.TotalRecord">
+            <summary>
+            总记录条数
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.PagerUC.PageCount">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.PagerUC.PageIndex">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.PagerUC.SetButtonState">
+            <summary>
+            设置控件状态
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.PagerUC.ResetControl">
+            <summary>
+            初始化控件状态
+            </summary>
+        </member>
+        <member name="E:WitsWay.Utilities.Win.Controls.PagerUC.PageChanged">
+            <summary>
+            页改变事件
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.PagerUC.OnPageChanged">
+            <summary>
+            激发页面改变事件
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.PagerUC.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.PagerUC.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.PagerUC.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.LoadingCircle">
+            <summary>
+            Loading控件
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle">
+            <summary>
+            Loading控件样式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.#ctor">
+            <summary>
+             Loading控件样式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Drawing.Color)">
+            <summary>
+             Loading控件样式
+            </summary>
+            <param name="innerCircleRadius">内半径</param>
+            <param name="outerCircleRadius">外半径</param>
+            <param name="numberSpoke">点数</param>
+            <param name="spokeThickness">点厚度</param>
+            <param name="circleColor">圆圈颜色</param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.InnerCircleRadius">
+            <summary>
+            内半径
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.OuterCircleRadius">
+            <summary>
+            外半径
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.NumberSpoke">
+            <summary>
+            点数
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.SpokeThickness">
+            <summary>
+            点厚度
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.CircleColor">
+            <summary>
+            圆圈颜色
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.Enabled">
+            <summary>
+            是否可用
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.Active">
+            <summary>
+            是否激活
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.BackColor">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.RotationSpeed">
+            <summary>
+            旋转速度
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle.CircleStyle">
+            <summary>
+            样式
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.LoadingCircle.StylePresets">
+            <summary>
+            呈现样式
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.LoadingCircle.StylePresets.MacOSX">
+            <summary>
+            MacOSX
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.LoadingCircle.StylePresets.Firefox">
+            <summary>
+            Firefox
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.LoadingCircle.StylePresets.IE7">
+            <summary>
+            IE7
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.LoadingCircle.StylePresets.Custom">
+            <summary>
+            Custom
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.Color">
+            <summary>
+            Gets or sets the lightest color of the circle.
+            </summary>
+            <value>The lightest color of the circle.</value>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.OuterCircleRadius">
+            <summary>
+            Gets or sets the outer circle radius.
+            </summary>
+            <value>The outer circle radius.</value>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.InnerCircleRadius">
+            <summary>
+            Gets or sets the inner circle radius.
+            </summary>
+            <value>The inner circle radius.</value>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.NumberSpoke">
+            <summary>
+            Gets or sets the number of spoke.
+            </summary>
+            <value>The number of spoke.</value>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.Active">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:LoadingCircle"/> is active.
+            </summary>
+            <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.SpokeThickness">
+            <summary>
+            Gets or sets the spoke thickness.
+            </summary>
+            <value>The spoke thickness.</value>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.RotationSpeed">
+            <summary>
+            Gets or sets the rotation speed.
+            </summary>
+            <value>The rotation speed.</value>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Controls.LoadingCircle.StylePreset">
+            <summary>
+            Quickly sets the style to one of these presets, or a custom style if desired
+            </summary>
+            <value>The style preset.</value>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LoadingCircle"/> class.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircle_Resize(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Resize event of the LoadingCircle control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.aTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Handles the Tick event of the aTimer control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.Paint"></see> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.GetPreferredSize(System.Drawing.Size)">
+            <summary>
+            Retrieves the size of a rectangular area into which a control can be fitted.
+            </summary>
+            <param name="proposedSize">The custom-sized area for a control.</param>
+            <returns>
+            An ordered pair of type <see cref="T:System.Drawing.Size"></see> representing the width and height of a rectangle.
+            </returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.Darken(System.Drawing.Color,System.Int32)">
+            <summary>
+            Darkens a specified color.
+            </summary>
+            <param name="_objColor">Color to darken.</param>
+            <param name="_intPercent">The percent of darken.</param>
+            <returns>The new color generated.</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.GenerateColorsPallet">
+            <summary>
+            Generates the colors pallet.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.GenerateColorsPallet(System.Drawing.Color,System.Boolean,System.Int32)">
+            <summary>
+            Generates the colors pallet.
+            </summary>
+            <param name="_objColor">Color of the lightest spoke.</param>
+            <param name="_blnShadeColor">if set to <c>true</c> the color will be shaded on X spoke.</param>
+            <param name="_intNbSpoke"></param>
+            <returns>An array of color used to draw the circle.</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.GetControlCenterPoint">
+            <summary>
+            Gets the control center point.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.GetControlCenterPoint(System.Windows.Forms.Control)">
+            <summary>
+            Gets the control center point.
+            </summary>
+            <returns>PointF object</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.DrawLine(System.Drawing.Graphics,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.Color,System.Int32)">
+            <summary>
+            Draws the line with GDI+.
+            </summary>
+            <param name="_objGraphics">The Graphics object.</param>
+            <param name="_objPointOne">The point one.</param>
+            <param name="_objPointTwo">The point two.</param>
+            <param name="_objColor">Color of the spoke.</param>
+            <param name="_intLineThickness">The thickness of spoke.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.GetCoordinate(System.Drawing.PointF,System.Int32,System.Double)">
+            <summary>
+            Gets the coordinate.
+            </summary>
+            <param name="_objCircleCenter">The Circle center.</param>
+            <param name="_intRadius">The radius.</param>
+            <param name="_dblAngle">The angle.</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.GetSpokesAngles">
+            <summary>
+            Gets the spokes angles.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.GetSpokesAngles(System.Int32)">
+            <summary>
+            Gets the spoke angles.
+            </summary>
+            <param name="spokeNum">The number spoke.</param>
+            <returns>An array of angle.</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.ActiveTimer">
+            <summary>
+            Actives the timer.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.SetCircleAppearance(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the circle appearance.
+            </summary>
+            <param name="numberSpoke">The number spoke.</param>
+            <param name="spokeThickness">The spoke thickness.</param>
+            <param name="innerCircleRadius">The inner circle radius.</param>
+            <param name="outerCircleRadius">The outer circle radius.</param>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.LoadingCircle.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.LoadingCircle.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.SplashForm">
+            <summary>
+            加载窗体
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashForm.#ctor(System.Action,System.Drawing.Icon)">
+            <summary>
+            加载窗体
+            </summary>
+            <param name="work"></param>
+            <param name="icon">窗体图标</param>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.SplashForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.SplashNoticeMsgEventHandler">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.SplashNotice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:WitsWay.Utilities.Win.Controls.SplashNotice.SplashNoticeMsg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashNotice.Notice(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="E:WitsWay.Utilities.Win.Controls.SplashNotice.FinishWork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.SplashNotice.OnFinishWork">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.WaitForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.WaitForm.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.WaitForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.WaitForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.WaitForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Controls.WaitUC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.WaitUC.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Controls.WaitUC.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.WaitUC.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Controls.WaitUC.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.DevSkinEnum">
+            <summary>
+            Dev皮肤枚举
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.DevSkinEnum.Custom_Office_2010_Blue">
+            <summary>
+            Custom Office 2010 Blue
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.DevSkinEnum.Office_2007_Blue">
+            <summary>
+            Office 2007 Blue
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.GridViewExtends">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SetTag(DevExpress.XtraGrid.Views.Base.BaseView,System.String,System.Object)">
+            <summary>
+            设置控件Tag
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.GetTag(DevExpress.XtraGrid.Views.Base.BaseView,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.GetTag``1(DevExpress.XtraGrid.Views.Base.BaseView,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+            <typeparam name="T">Tag数据类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.RemoveTag(DevExpress.XtraGrid.Views.Base.BaseView,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.AutoRowHeight(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean)">
+            <summary>
+            自动行高度
+            </summary>
+            <param name="view">表格</param>
+            <param name="autoHeight">是否自动行高度，默认true</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.DrawRowIndicator(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.GetFocusData``1(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            取Grid选中数据
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SelectXtraGridRow(DevExpress.XtraGrid.Views.Grid.GridView,WitsWay.Utilities.Supports.IKey)">
+            <summary>
+            选中GridView对应Key的行,如果不存在则选中第一行
+            </summary>
+            <param name="gv">GridView控件</param>
+            <param name="key">要选中的Key</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SelectXtraGridRow(DevExpress.XtraGrid.Views.Grid.GridView,System.String)">
+            <summary>
+            选中GridView对应Key的行,如果不存在则选中第一行
+            </summary>
+            <param name="gv">GridView控件</param>
+            <param name="keyToSelect">要选中的Key</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SetColumnSortable(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraGrid.Columns.GridColumn[])">
+            <summary>
+            设置Grid的列排序是否启用，默认禁用
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="columns">设置为启用排序的列</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.ShowGroupColumn(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            设置Grid的列排序是否启用，默认禁用
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.OfficeStyle(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            设置GridView为Office样式
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.ExpandMasterRow(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            在主从视图展开/折叠所有主视图的行
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.CollapseMasterRow(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            在主从视图展开/折叠所有主视图的行
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SetMasterRowExpanded(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean)">
+            <summary>
+            在主从视图展开/折叠所有主视图的行
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="expand">是否展开</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.RowCheckBoxMultiSelect(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            CheckBox多选支持
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.GetSelectDatas``1(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            获取选中的数据
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <param name="gridView">表格</param>
+            <returns>选中数据列表</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.RowCheckBoxSelect(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            CheckBox多选支持
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="multiSelect"></param>
+            <param name="showCheckInColumn"></param>
+            <param name="showCheckInGroup"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean,System.Boolean,DevExpress.XtraGrid.Columns.GridColumn[])">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean,System.Boolean)">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraGrid.Columns.GridColumn[])">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView,System.Boolean)">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.SetStyle(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            设置gridview格式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.BindRowDoubleClick``1(DevExpress.XtraGrid.Views.Grid.GridView,System.Action{``0})">
+            <summary>
+            行双击
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="action">事件处理器</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.UnbindRowDoubleClick``1(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            解绑行双击
+            </summary>
+            <param name="gridView">表格</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.BindPopup``1(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraBars.PopupMenu,System.Predicate{``0})">
+            <summary>
+            绑定行右键弹出菜单
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="popup">弹出菜单</param>
+            <param name="beforeShow">显示前处理</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridViewExtends.UnbindPopup``1(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraBars.PopupMenu)">
+            <summary>
+            解绑右键菜单
+            </summary>
+            <param name="gridView">表格</param>
+            <param name="popup">弹出菜单</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.TreeListNodeExtends">
+            <summary>
+            TreeListNode扩展类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListNodeExtends.SetTag(DevExpress.XtraTreeList.Nodes.TreeListNode,System.String,System.Object)">
+            <summary>
+            设置控件Tag
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListNodeExtends.GetTag(DevExpress.XtraTreeList.Nodes.TreeListNode,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListNodeExtends.GetTag``1(DevExpress.XtraTreeList.Nodes.TreeListNode,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+            <typeparam name="T">Tag数据类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListNodeExtends.RemoveTag(DevExpress.XtraTreeList.Nodes.TreeListNode,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.ControlExtends">
+            <summary>
+            Control扩展类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.ControlExtends.SetTag(System.Windows.Forms.Control,System.String,System.Object)">
+            <summary>
+            设置控件Tag
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.ControlExtends.GetTag(System.Windows.Forms.Control,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.ControlExtends.GetTag``1(System.Windows.Forms.Control,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+            <typeparam name="T">Tag数据类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.ControlExtends.RemoveTag(System.Windows.Forms.Control,System.String)">
+            <summary>
+            获取控件Tag
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="tagKey">数据键</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.GridControlExtends">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridControlExtends.BindCopyToCtrlC(DevExpress.XtraGrid.GridControl,DevExpress.XtraGrid.Columns.GridColumn[])">
+            <summary>
+            绑定CtrlC
+            </summary>
+            <param name="gridControl"></param>
+            <param name="columns"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridControlExtends.RegisteGridCellHint``1(DevExpress.XtraGrid.GridControl,System.Func{DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo,System.Boolean},System.Func{``0,System.String},System.Func{DevExpress.XtraGrid.Views.Grid.GridView,System.Int32,DevExpress.XtraGrid.Columns.GridColumn,System.String})">
+            <summary>
+            向Grid注册提示信息
+            </summary>
+            <typeparam name="TEntity">grid绑定的实体类型</typeparam>
+            <param name="gridControl">要注册的Grid</param>
+            <param name="showTipsCondition">显示提示信息的条件</param>
+            <param name="getCellHintText">获取显示文本的委托</param>
+            <param name="getCellHintTitle">获取显示标题的委托，如果为空则显示列标题</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridControlExtends.RegisteGridCellHint(DevExpress.XtraGrid.GridControl,System.Func{DevExpress.XtraGrid.Views.Grid.ViewInfo.GridHitInfo,System.Boolean},System.Func{DevExpress.XtraGrid.Views.Grid.GridView,System.Int32,DevExpress.XtraGrid.Columns.GridColumn,System.String},System.Func{DevExpress.XtraGrid.Views.Grid.GridView,System.Int32,DevExpress.XtraGrid.Columns.GridColumn,System.String})">
+            <summary>
+            向Grid注册单元格中的提示信息
+               用户可根据表格，列，行来指定提示内容
+            </summary>
+            <param name="gridControl">要注册的Grid</param>
+            <param name="showTipsCondition">显示提示信息的条件</param>
+            <param name="getCellHintText">获取显示文本的委托</param>
+            <param name="getCellHintTitle">获取显示标题的委托，如果为空则显示列标题</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.GridColumnExtends">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridColumnExtends.FixColumnWidth(DevExpress.XtraGrid.Columns.GridColumn,System.Int32)">
+            <summary>
+            固定列宽
+            </summary>
+            <param name="column">列</param>
+            <param name="width">宽度</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridColumnExtends.AutoColumnWidth(DevExpress.XtraGrid.Columns.GridColumn,System.Int32)">
+            <summary>
+            固定列宽
+            </summary>
+            <param name="column">列</param>
+            <param name="width">宽度</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridColumnExtends.CenterText(DevExpress.XtraGrid.Columns.GridColumn,System.Boolean,System.Boolean)">
+            <summary>
+            居中文字
+            </summary>
+            <param name="column">列</param>
+            <param name="centerHeader">列头居中否</param>
+            <param name="centerCell">列单元格居中否</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.BarExtends">
+            <summary>
+            Bar扩展类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.BarExtends.DockToGroup(DevExpress.XtraBars.Bar,DevExpress.XtraEditors.GroupControl,System.Windows.Forms.DockStyle)">
+            <summary>
+            停靠到GroupControl
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.BarExtends.DockToPanel(DevExpress.XtraBars.Bar,DevExpress.XtraEditors.PanelControl,System.Windows.Forms.DockStyle)">
+            <summary>
+            停靠到PanelControl
+            </summary>
+            <param name="bar">Toolbar控件</param>
+            <param name="panel">Panel控件</param>
+            <param name="dock">Dock位置</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.BarExtends.SetStandaloneStyle(DevExpress.XtraBars.Bar)">
+            <summary>
+            设置Bar样式
+            </summary>
+            <param name="bar"><see cref="T:DevExpress.XtraBars.Bar"/>控件</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.BarExtends.DockToContainer(DevExpress.XtraBars.Bar,DevExpress.Utils.Controls.PanelBase,System.Windows.Forms.DockStyle)">
+            <summary>
+            停靠到容器
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.RepositoryItemExtends">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.RepositoryItemExtends.AutoHeight(DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit,System.Boolean)">
+            <summary>
+            自动高度
+            </summary>
+            <param name="memoItem">表格控件</param>
+            <param name="autoHeight">是否自动行高度，默认true</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.RepositoryItemExtends.AutoHeight(DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit)">
+            <summary>
+            自动高度
+            </summary>
+            <param name="pictureItem">表格控件</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.RepositoryItemExtends.PictureHeight(DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit,System.Int32)">
+            <summary>
+            自动高度
+            </summary>
+            <param name="pictureItem">表格控件</param>
+            <param name="height">图片高度</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.TreeListExtends">
+            <summary>
+            XtraTree扩展类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListExtends.GetFocusData``1(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            初始化TreeList筛选器
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListExtends.GetTreeDatas``1(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            初始化TreeList筛选器
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListExtends.FilterInit(DevExpress.XtraTreeList.TreeList,DevExpress.XtraEditors.TextEdit,System.Boolean)">
+            <summary>
+            初始化TreeList筛选器
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListExtends.FilterText(DevExpress.XtraTreeList.TreeList,System.String)">
+            <summary>
+            TreeList筛选文字
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListExtends.FilterClear(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            清除TreeList筛选
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.TreeListExtends.BindPopup``1(DevExpress.XtraTreeList.TreeList,DevExpress.XtraBars.PopupMenu,System.Predicate{``0})">
+            <summary>
+            为TreeList绑定PopupMenu
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.HttpClientHelper">
+            <summary>
+            Http客户端辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.HttpClientHelper.AsyncHttpPostRequestString(System.String,System.Object,System.Net.Cookie)">
+            <summary>
+            HttpClient实现Post请求String
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.HttpClientHelper.HttpPostRequestString(System.String,System.Object,System.Net.Cookie)">
+            <summary>
+            HttpClient实现Post请求String
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.HttpClientHelper.AsyncHttpPostRequestCookies(System.String,System.Object,System.Net.Cookie)">
+            <summary>
+            HttpClient实现Post请求Cookie
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.HttpClientHelper.HttpPostRequestCookies(System.String,System.Object)">
+            <summary>
+            HttpClient实现Post请求Cookie
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.BarHelper">
+            <summary>
+            Bar辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.BarHelper.SetToolBarStyle(DevExpress.XtraBars.Bar)">
+            <summary>
+            设置Toolbar的样式
+            </summary>
+            <param name="toolBar"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.BarHelper.SetBarStaticButtonLength(DevExpress.XtraBars.BarStaticItem,System.Int32)">
+            <summary>
+            设置用于填充空白的静态文本条的长度
+            </summary>
+            <param name="barStaticItem">静态文本条</param>
+            <param name="length">长度</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.ButtonStyleHelper">
+            <summary>
+            Button样式辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ButtonStyleHelper.StyleButton(DevExpress.XtraEditors.SimpleButton,WitsWay.Utilities.Win.Helpers.ButtonStyles,System.Nullable{System.Int32},System.String,System.Boolean,System.Nullable{System.Int32})">
+            <summary>
+            设置Button样式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ButtonStyleHelper.StyleButton(DevExpress.XtraEditors.SimpleButton,System.Drawing.Image,System.Nullable{System.Int32},System.String,System.Boolean,System.Nullable{System.Int32})">
+            <summary>
+            设置Button样式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ButtonStyleHelper.GetButtonIcon(WitsWay.Utilities.Win.Helpers.ButtonStyles)">
+            <summary>
+            取得图标
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.ButtonStyles">
+            <summary>
+            按钮样式
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Search">
+            <summary>
+            搜索
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Refresh">
+            <summary>
+            刷新
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Confirm">
+            <summary>
+            确定
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Select">
+            <summary>
+            选择
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Group">
+            <summary>
+            分组
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.ViewWay">
+            <summary>
+            查看方式
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.View">
+            <summary>
+            查看
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Edit">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.ClearSearch">
+            <summary>
+            清除
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Preview">
+            <summary>
+            预览
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.GenerateParameter">
+            <summary>
+            生成参数
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.BatchAll">
+            <summary>
+            有无批次
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Batched">
+            <summary>
+            有批次
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.BatchNot">
+            <summary>
+            无批次
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Set">
+            <summary>
+            设置
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Add">
+            <summary>
+            添加
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Backward">
+            <summary>
+            回退
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Foreward">
+            <summary>
+            前进
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Save">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Print">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.AddNew2">
+            <summary>
+            新增2
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Delete2">
+            <summary>
+            移除2
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.SendGoods">
+            <summary>
+            发货
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Accept">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.SendDefer">
+            <summary>
+            发货延迟
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.ExpandAll">
+            <summary>
+            全部展开
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.CollapseAll">
+            <summary>
+            全部折叠
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.Login_Button">
+            <summary>
+            登录按钮
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.MoveUp">
+            <summary>
+            上移
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Helpers.ButtonStyles.MoveDown">
+            <summary>
+            下移
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.GridDragHelper">
+            <summary>
+            表格拖动Helper
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridDragHelper.Register(DevExpress.XtraGrid.GridControl)">
+            <summary>
+            注册对指定GridControl的拖动事件
+            </summary>
+            <param name="gridControl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridDragHelper.UnRegister">
+            <summary>
+            取消对Grid拖动的注册
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.GridControlDoubleClickHelper`1">
+            <summary>
+            GridView鼠标双击辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridControlDoubleClickHelper`1.GetAction(System.String)">
+            <summary>
+            获取Action
+            </summary>
+            <param name="key">GridView的Name作为存储键</param>
+            <returns>Action实例</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridControlDoubleClickHelper`1.BindDoubleClick(DevExpress.XtraGrid.Views.Grid.GridView,System.Action{`0})">
+            <summary>
+            绑定Grid双击事件
+            </summary>
+            <param name="view">GridView</param>
+            <param name="action">操作</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridControlDoubleClickHelper`1.UnbindDoubleClick(DevExpress.XtraGrid.Views.Grid.GridView)">
+            <summary>
+            解绑行双击
+            </summary>
+            <param name="view">GridView控件</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.ShortcutHelper">
+            <summary>
+            快捷方式辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ShortcutHelper.Exists(System.String,System.String)">
+            <summary>
+            Check to see if a shortcut exists in a given directory with a specified file name
+            </summary>
+            <param name="directoryPath">The directory in which to look</param>
+            <param name="linkPathName">The name of the shortcut (without the .lnk extension) or the full path to a file of the same name</param>
+            <returns>Returns true if the link exists</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ShortcutHelper.Exists(System.Environment.SpecialFolder,System.String)">
+            <summary>
+            Check to see if a shell link exists to the given path in the specified special folder
+            </summary>
+            <returns>return true if it exists</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ShortcutHelper.Update(System.Environment.SpecialFolder,System.String,System.String,System.Boolean)">
+            <summary>
+            Update the specified folder by creating or deleting a Shell Link if necessary
+            </summary>
+            <param name="folder">A SpecialFolder in which the link will reside</param>
+            <param name="targetPathName">The path name of the target file for the link</param>
+            <param name="linkPathName">The file name for the link itself or, if a path name the directory information will be ignored.</param>
+            <param name="install">If true, create the link, otherwise delete it</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ShortcutHelper.Update(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Update the specified folder by creating or deleting a Shell Link if necessary
+            </summary>
+            <param name="directoryPath">The full path of the directory in which the link will reside</param>
+            <param name="targetPathName">The path name of the target file for the link</param>
+            <param name="linkPathName">The file name for the link itself or, if a path name the directory information will be ignored.</param>
+            <param name="create">If true, create the link, otherwise delete it</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.SpinEditHelper">
+            <summary>
+            SpinEdit控件辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.SpinEditHelper.SetSpinEditStyle(DevExpress.XtraEditors.SpinEdit,System.Boolean,System.Decimal,System.Decimal)">
+            <summary>
+            设置SpinEdit样式
+            </summary>
+            <param name="spin">spin控件</param>
+            <param name="minValue">最小值</param>
+            <param name="maxValue">最大值</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.SpinEditHelper.SetSpinEditStyle(DevExpress.XtraEditors.SpinEdit,System.Int32,System.Decimal,System.Decimal)">
+            <summary>
+            设置SpinEdit样式
+            </summary>
+            <param name="spin">spin控件</param>
+            <param name="decimalDigits">小数位数</param>
+            <param name="minValue">最小值</param>
+            <param name="maxValue">最大值</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.GridViewPopupHelper`1">
+            <summary>
+            TreeList右键菜单辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridViewPopupHelper`1.BindPopupMenu(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraBars.PopupMenu,System.Predicate{`0})">
+            <summary>
+            绑定弹出右键菜单到树，此方法只支持一个树上注册一个PopupMenu
+            </summary>
+            <param name="view"></param>
+            <param name="popup"></param>
+            <param name="showPredicate">谓词委托，返回true显示右键，false不显示</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridViewPopupHelper`1.UnbindPopupMenu(DevExpress.XtraGrid.Views.Grid.GridView,DevExpress.XtraBars.PopupMenu)">
+            <summary>
+            解绑右键弹出菜单
+            </summary>
+            <param name="view">GridView控件</param>
+            <param name="popup">右键弹出菜单</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.ComboBoxHelper">
+            <summary>
+            下拉控件辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.BindEnumToCombo``1(DevExpress.XtraEditors.ComboBoxEdit,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到下拉框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.BindEnumToCombo(DevExpress.XtraEditors.ComboBoxEdit,System.Type,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到下拉框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="enumType">枚举类型</param>
+            <param name="header">请选择等文字</param>
+            <param name="exceptValue">不绑定项</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.BindEnumToCombo(DevExpress.XtraEditors.Repository.RepositoryItemComboBox,System.Type,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到下拉框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="enumType">枚举类型</param>
+            <param name="header">请选择等文字</param>
+            <param name="exceptValue">不绑定项</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.BindListToCombo``1(DevExpress.XtraEditors.ComboBoxEdit,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.String)">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="header">请选择等文字</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.BindListToCombo``1(DevExpress.XtraEditors.Repository.RepositoryItemComboBox,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.Func{``0,System.String},System.String)">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="idFunc">取得标识的方法</param>
+            <param name="header">请选择等文字</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.SetSelectEnum``1(DevExpress.XtraEditors.ComboBoxEdit,``0)">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.SetSelectEnum(DevExpress.XtraEditors.ComboBoxEdit,System.Int32)">
+            <summary>
+            设置选中项
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.SetSelectData``1(DevExpress.XtraEditors.ComboBoxEdit,``0)">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.SetSelectKey(DevExpress.XtraEditors.ComboBoxEdit,System.String)">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="key">数据键</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.GetSelectEnum``1(DevExpress.XtraEditors.ComboBoxEdit)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ComboBoxHelper.GetSelectData``1(DevExpress.XtraEditors.ComboBoxEdit)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.DeletedStyleHelper">
+            <summary>
+            文字删除样式的帮助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.DeletedStyleHelper.RegisterGrid``1(DevExpress.XtraGrid.Views.Grid.GridView,System.Predicate{``0},System.String)">
+            <summary>
+            向Grid注册删除样式的显示
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="gridView">要显示删除样式的表格</param>
+            <param name="funcIsDeleted">范围数据是否被删除的委托</param>
+            <param name="fieldName">要显示删除样式的列字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.DeletedStyleHelper.RegisterGrid``1(DevExpress.XtraGrid.Views.Grid.GridView,System.Predicate{``0},DevExpress.XtraGrid.Columns.GridColumn)">
+            <summary>
+            向Grid注册删除样式的显示
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="gridView">要显示删除样式的表格</param>
+            <param name="funcIsDeleted">范围数据是否被删除的委托</param>
+            <param name="column">要显示删除样式的列</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.DeletedStyleHelper.RegisterTreeList``1(DevExpress.XtraTreeList.TreeList,System.Predicate{``0},System.String)">
+            <summary>
+            向TreeList注册删除样式的显示
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="treeList">要显示删除样式的TreeList</param>
+            <param name="funcIsDeleted">范围数据是否被删除的委托</param>
+            <param name="fieldName">要显示删除样式的列字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.DeletedStyleHelper.RegisterTreeList``1(DevExpress.XtraTreeList.TreeList,System.Predicate{``0},DevExpress.XtraTreeList.Columns.TreeListColumn)">
+            <summary>
+            向TreeList注册删除样式的显示
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+            <param name="treeList">要显示删除样式的TreeList</param>
+            <param name="funcIsDeleted">范围数据是否被删除的委托</param>
+            <param name="column">要显示删除样式的列</param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.GridDeletedStyleHelper`1">
+            <summary>
+            设置Grid单元格文字删除样式的帮助类
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridDeletedStyleHelper`1.#ctor(DevExpress.XtraGrid.Views.Grid.GridView,System.Predicate{`0},System.String)">
+            <summary>
+            设置Grid单元格文字删除样式的帮助类
+            </summary>
+            <param name="gridView"></param>
+            <param name="funcIsDeleted"></param>
+            <param name="fieldName"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridDeletedStyleHelper`1.GetDataSource">
+            <summary>
+            获取数据源
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridDeletedStyleHelper`1.ColumnNeedSet(DevExpress.XtraGrid.Columns.GridColumn)">
+            <summary>
+            列是否需要设置样式
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.TreeDeletedStyleHelper`1">
+            <summary>
+            设置TreeList单元格文字删除样式的帮助类
+            </summary>
+            <typeparam name="T">数据源类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeDeletedStyleHelper`1.#ctor(DevExpress.XtraTreeList.TreeList,System.Predicate{`0},System.String)">
+            <summary>
+            设置TreeList单元格文字删除样式的帮助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeDeletedStyleHelper`1.ColumnNeedSet(DevExpress.XtraTreeList.Columns.TreeListColumn)">
+            <summary>
+            列是否需要设置样式
+            </summary>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.IGridSelectRow">
+            <summary>
+            Grid行选中支持
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.IGridSelectRow.IsSelect">
+            <summary>
+            是否选中
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.PInvokeHelper">
+            <summary>
+            平台互操作辅助类
+            </summary>
+            <summary>
+            平台互操作辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.PInvokeHelper.Logoff">
+            <summary>
+            注销
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.PInvokeHelper.Reboot">
+            <summary>
+            重启
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.PInvokeHelper.Shutdown">
+            <summary>
+            关机
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.PInvokeHelper.GetKeyState(System.Int32)">
+            <summary>
+            获取键状态
+            </summary>
+            <param name="keyCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.PInvokeHelper.keybd_event(System.Byte,System.Byte,System.UInt32,System.UIntPtr)">
+            <summary>
+            改变键状态
+            </summary>
+            <param name="bVk"></param>
+            <param name="bScan"></param>
+            <param name="dwFlags"></param>
+            <param name="dwExtraInfo"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.PInvokeHelper.ChangeNumLock">
+            <summary>
+            设置NUM Lock
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.PInvokeHelper.ChangeScrollLock">
+            <summary>
+            设置Scroll Lock
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.PInvokeHelper.ChangeCapsLock">
+            <summary>
+            设置Caps Lock
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.PInvokeHelper.IsCapsLock">
+            <summary>
+            是否CapsLock开启
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.PInvokeHelper.IsNumLock">
+            <summary>
+            是否NumLock开启
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.PInvokeHelper.IsScrollLock">
+            <summary>
+            是否ScrollLock开启
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.RepositoryComboBoxHelper">
+            <summary>
+            RepositoryComboBox辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RepositoryComboBoxHelper.BindEnumToRepositoryCombo``1(DevExpress.XtraEditors.Repository.RepositoryItemComboBox,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到下拉框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RepositoryComboBoxHelper.BindListToCombo``1(DevExpress.XtraEditors.Repository.RepositoryItemComboBox,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.String)">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="header">请选择等文字</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1">
+            <summary>
+            文本框块选择帮助器
+            </summary>
+            <typeparam name="TEntity">保存的强类型实体类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.#ctor(DevExpress.XtraEditors.TextEdit)">
+            <summary>
+            构造一个文本框块选择帮助器，以';'作为分隔符
+            </summary>
+            <param name="textEdit">文本框</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.#ctor(DevExpress.XtraEditors.TextEdit,System.Char)">
+            <summary>
+            构造一个文本框块选择帮助器
+            </summary>
+            <param name="textEdit">文本框</param>
+            <param name="splitChar">块分隔字符</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.#ctor(DevExpress.XtraEditors.TextEdit,System.Char,System.Collections.Generic.IEqualityComparer{`0})">
+            <summary>
+            构造一个文本框块选择帮助器
+            </summary>
+            <param name="textEdit">文本框</param>
+            <param name="splitChar">块分隔字符</param>
+            <param name="equalityComparer">比较器</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.AddBlock(`0)">
+            <summary>
+            添加一个块，以entity.ToString() 作为显示字符串
+            </summary>
+            <param name="entity">块包含的实体</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.AddBlock(System.String,`0)">
+            <summary>
+            添加一个块
+            </summary>
+            <param name="displayString">显示字符串</param>
+            <param name="entity">块包含的实体</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.ResetText">
+            <summary>
+            重设文本
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.GetBlocks">
+            <summary>
+            获取所有已经添加的块
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.SelectBlock">
+            <summary>
+            选取块
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.CalcSelectionPosition">
+            <summary>
+            计算选区位置
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.GetStartIndex(System.String,System.Int32)">
+            <summary>
+            在文本中获取当前段的开始位置
+            </summary>
+            <param name="text">文本</param>
+            <param name="index">当前位置</param>
+            <returns>当前段的开始位置</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.GetEndIndex(System.String,System.Int32)">
+            <summary>
+            在文本中获取当前段的结束位置
+            </summary>
+            <param name="text">文本</param>
+            <param name="index">当前位置</param>
+            <returns>当前段的结束位置</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.RemoveCurrBlock">
+            <summary>
+            删除当前块
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TextEditBlockSelectHelper`1.GetCurrBlockIndex">
+            <summary>
+            获取当前块序号
+            </summary>
+            <returns>当前块序号</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.TreeListHelper">
+            <summary>
+            XtraTree辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.BindTree``1(DevExpress.XtraTreeList.TreeList,System.Collections.Generic.List{``0},``0,System.Int32)">
+            <summary>
+            绑定树
+            </summary>
+            <typeparam name="T">数据列表</typeparam>
+            <param name="tree">树控件</param>
+            <param name="datas">数据</param>
+            <param name="selectData">选中数据</param>
+            <param name="expandLevel">展开层级，0折叠，1展开全部，2展开到第二级，3展开到第三级…</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.AppendNodes``1(DevExpress.XtraTreeList.TreeList,System.Collections.Generic.List{``0},System.Int32,DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            添加节点
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.SelectNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            选中节点数据
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">选中数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.SelectNode(DevExpress.XtraTreeList.TreeList,System.String)">
+            <summary>
+            选中节点ID
+            </summary>
+            <param name="tree">树控件</param>
+            <param name="nodeId">选中数据ID</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.FindNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            选中节点数据
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">选中数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.FindNode(DevExpress.XtraTreeList.TreeList,System.String)">
+            <summary>
+            选中节点ID
+            </summary>
+            <param name="tree">树控件</param>
+            <param name="nodeId">选中数据ID</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.ExpandTree``1(DevExpress.XtraTreeList.TreeList,System.Int32)">
+            <summary>
+            展开树
+            </summary>
+            <typeparam name="T">数据列表</typeparam>
+            <param name="tree">树控件</param>
+            <param name="expandLevel">展开层级，0折叠，1展开全部，2展开到第二级，3展开到第三级…</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.ExpandTreeNest(DevExpress.XtraTreeList.Nodes.TreeListNodes,System.Int32)">
+            <summary>
+            遍历递归展开
+            </summary>
+            <param name="nodes">节点集合</param>
+            <param name="expandLevel">展开层级</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.AppendNode``1(DevExpress.XtraTreeList.TreeList,``0,System.String,System.Boolean)">
+            <summary>
+            添加节点数据
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">数据</param>
+            <param name="afterWho">在哪个节点后</param>
+            <param name="select">是否选中添加数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.InsertNode``1(DevExpress.XtraTreeList.TreeList,``0,System.String,System.Boolean)">
+            <summary>
+            插入节点数据
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">数据</param>
+            <param name="beforWho">在哪个节点前</param>
+            <param name="select">是否选中添加数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.UpdateNode``1(DevExpress.XtraTreeList.TreeList,``0,System.Boolean)">
+            <summary>
+            更新节点
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="data">数据</param>
+            <param name="select">是否选中修改节点</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.UpdateNodeList``1(DevExpress.XtraTreeList.TreeList,System.Collections.Generic.List{``0})">
+            <summary>
+            批量更新节点列表
+            </summary>
+            <typeparam name="T">节点类型</typeparam>
+            <param name="tree">树控件</param>
+            <param name="dataList">数据列表</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.RemoveNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            移除节点
+            </summary>
+            <param name="tree">树控件</param>
+            <param name="nodeData">节点数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.MoveUpNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            上移节点
+            </summary>
+            <param name="tree">Tree控件</param>
+            <param name="nodeData">上移节点ID</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.MoveNodeDataUp``1(DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            向下移动指定节点的数据
+            </summary>
+            <param name="findNode"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.MoveTop``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            移动节点到顶部
+            </summary>
+            <param name="tree">Tree控件</param>
+            <param name="nodeData">节点数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.MoveNodeDataTop``1(DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            向下移动指定节点的数据
+            </summary>
+            <param name="findNode"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.MoveBottom``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            移动节点到底部
+            </summary>
+            <param name="tree">Tree控件</param>
+            <param name="nodeData">上移节点ID</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.MoveNodeDataBottom``1(DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            移动指定节点的数据到底部
+            </summary>
+            <param name="findNode"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.MoveDownNode``1(DevExpress.XtraTreeList.TreeList,``0)">
+            <summary>
+            下移节点
+            </summary>
+            <param name="tree">TreeList控件</param>
+            <param name="nodeData">节点数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.MoveNodeDataDown``1(DevExpress.XtraTreeList.Nodes.TreeListNode)">
+            <summary>
+            向下移动指定节点的数据
+            </summary>
+            <param name="findNode"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.FixTreeListColumnWidth(DevExpress.XtraTreeList.Columns.TreeListColumn,System.Int32)">
+            <summary>
+            固定列宽
+            </summary>
+            <param name="column">列</param>
+            <param name="width">宽度</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.RegisteTreeCellHint``1(DevExpress.XtraTreeList.TreeList,System.Func{DevExpress.XtraTreeList.TreeListHitInfo,System.Boolean},System.Func{``0,System.String},System.Func{DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.XtraTreeList.Columns.TreeListColumn,System.String})">
+            <summary>
+            向TreeList注册单元格中的提示信息
+               用户可根据节点，列来指定提示内容
+            </summary>
+            <typeparam name="TEntity">treeList上绑定的实体的类型</typeparam>
+            <param name="treeList">要注册的TreeList</param>
+            <param name="showTipsCondition">显示提示信息的条件</param>
+            <param name="getCellHintText">获取显示文本的委托</param>
+            <param name="getCellHintTitle">获取显示标题的委托，如果为空则显示列标题</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListHelper.RegisteTreeCellHint(DevExpress.XtraTreeList.TreeList,System.Func{DevExpress.XtraTreeList.TreeListHitInfo,System.Boolean},System.Func{DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.XtraTreeList.Columns.TreeListColumn,System.String},System.Func{DevExpress.XtraTreeList.Nodes.TreeListNode,DevExpress.XtraTreeList.Columns.TreeListColumn,System.String})">
+            <summary>
+            向TreeList注册单元格中的提示信息
+               用户可根据节点，列来指定提示内容
+            </summary>
+            <param name="treeList">要注册的TreeList</param>
+            <param name="showTipsCondition">显示提示信息的条件</param>
+            <param name="getCellHintText">获取显示文本的委托</param>
+            <param name="getCellHintTitle">获取显示标题的委托，如果为空则显示列标题</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.GridServerMode">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridServerMode.RegisterGridView(DevExpress.XtraGrid.Views.Grid.GridView,WitsWay.Utilities.Win.Helpers.GridServerModeParameter)">
+            <summary>
+            注册服务端分页GridView
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.SortColumnChangedEventHandler">
+            <summary>
+            排序列改变事件
+            </summary>
+            <param name="column">当前排序列</param>
+            <param name="order">排序顺序</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.GridServerModeParameter">
+            <summary>
+            XtraGrid服务端模式参数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridServerModeParameter.#ctor(System.Collections.Generic.List{DevExpress.XtraGrid.Columns.GridColumn},System.Int32,System.Int32,System.Int32,DevExpress.XtraGrid.Columns.GridColumn,DevExpress.Data.ColumnSortOrder,WitsWay.Utilities.Win.Helpers.SortColumnChangedEventHandler)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="allowSortColumns">允许排序列</param>
+            <param name="canSortImage">可排序列图片</param>
+            <param name="asscendImage">升序图片</param>
+            <param name="descendImage">降序图片</param>
+            <param name="sortColumn">默认排序列</param>
+            <param name="sortOrder">默认排序顺序</param>
+            <param name="sortColumnChanged">排序列改变委托方法</param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.GridServerModeParameter.AllowSortColumns">
+            <summary>
+            允许排序列
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.GridServerModeParameter.CanSortImage">
+            <summary>
+            允许排序图片
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.GridServerModeParameter.AsscendImage">
+            <summary>
+            升序图片
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.GridServerModeParameter.DescendImage">
+            <summary>
+            降序图片
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.GridServerModeParameter.SortColumn">
+            <summary>
+            排序列
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.GridServerModeParameter.SortOrder">
+            <summary>
+            排序顺序
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.GridServerModeParameter.SortColumnChanged">
+            <summary>
+            排序列改变委托
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.GridServerModeParameter.OnSortColumnChanged">
+            <summary>
+            激发排序列改变事件
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.TreeStyleHelper">
+            <summary>
+            XtraTree样式辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeStyleHelper.SetXtraTreeStyle(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            设置TreeList样式
+            </summary>
+            <param name="tree">TreeList控件</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeStyleHelper.SetXtraTreeStyle(DevExpress.XtraTreeList.TreeList,System.Boolean)">
+            <summary>
+            设置TreeList样式
+            </summary>
+            <param name="tree">TreeList控件</param>
+            <param name="editable"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeStyleHelper.SetXtraTreeStyle(DevExpress.XtraTreeList.TreeList,DevExpress.XtraTreeList.Columns.TreeListColumn[])">
+            <summary>
+            设置TreeList样式
+            </summary>
+            <param name="tree">TreeList控件</param>
+            <param name="allowEditColumn">允许编辑列</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeStyleHelper.SetAsReadOnly(DevExpress.XtraTreeList.TreeList)">
+            <summary>
+            设置树为只读树，只允许选择行，不允许选择单元格
+            </summary>
+            <param name="tree">TreeList控件</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.TreeListPopupHelper`1">
+            <summary>
+            TreeList右键菜单辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeListPopupHelper`1.BindPopupMenu(DevExpress.XtraTreeList.TreeList,DevExpress.XtraBars.PopupMenu,System.Predicate{`0})">
+            <summary>
+            绑定弹出右键菜单到树，此方法只支持一个树上注册一个PopupMenu
+            </summary>
+            <param name="tree"></param>
+            <param name="popup"></param>
+            <param name="showPredicate">谓词委托，返回true显示右键，false不显示</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.RadioGroupHelper">
+            <summary>
+            下拉控件辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RadioGroupHelper.BindEnumToRadioGroup``1(DevExpress.XtraEditors.RadioGroup,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到单选组
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RadioGroupHelper.BindEnumList``1(DevExpress.XtraEditors.RadioGroup,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到单选组
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="list">绑定的枚举列表</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RadioGroupHelper.BindListToRadioGroup``1(DevExpress.XtraEditors.RadioGroup,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.Func{``0,System.Object})">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="valueFunc">取得值方法</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RadioGroupHelper.SetSelectEnum``1(DevExpress.XtraEditors.RadioGroup,``0)">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RadioGroupHelper.SetSelectValue``1(DevExpress.XtraEditors.RadioGroup,``0)">
+            <summary>
+            设置选中项
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="val">数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RadioGroupHelper.GetSelectEnum``1(DevExpress.XtraEditors.RadioGroup)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RadioGroupHelper.GetSelectData``1(DevExpress.XtraEditors.RadioGroup)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper">
+            <summary>
+            下拉复选控件辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.BindListToCombo``1(DevExpress.XtraEditors.CheckedComboBoxEdit,System.Collections.Generic.List{``0},System.Func{``0,System.String})">
+            <summary>
+            绑定对象列表到下拉复选框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.BindEnumToCombo``1(DevExpress.XtraEditors.CheckedComboBoxEdit,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到下拉复选框
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.SetSelectEnum``1(DevExpress.XtraEditors.CheckedComboBoxEdit,System.Collections.Generic.List{``0})">
+            <summary>
+            设置选中的枚举
+            </summary>
+            <typeparam name="T">枚举类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">选中的枚举列表</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.SetSelectData``1(DevExpress.XtraEditors.CheckedComboBoxEdit,System.Collections.Generic.List{``0},System.Func{``0,System.String})">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+            <param name="displayFunc"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.GetSelectData``1(DevExpress.XtraEditors.CheckedComboBoxEdit)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">CheckedComboBoxEdit控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.GetSelectData``1(DevExpress.XtraEditors.CheckedListBoxControl)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">CheckedListBoxControl控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.GetSelectEnum``1(DevExpress.XtraEditors.CheckedComboBoxEdit)">
+            <summary>
+            获取选中枚举项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.GetSelectEnum``1(DevExpress.XtraEditors.CheckedListBoxControl)">
+            <summary>
+            获取选中枚举项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.RegisterItemCheckCallback(DevExpress.XtraEditors.CheckedComboBoxEdit,DevExpress.XtraEditors.Controls.ItemCheckEventHandler)">
+            <summary>
+            注册CheckedComboBoxEdit的ItemChecked事件
+            </summary>
+            <param name="comboBox">CheckedComboBoxEdit</param>
+            <param name="itemCheckCallback">ItemChecked事件回调</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper.ConfigListControl(DevExpress.XtraEditors.CheckedComboBoxEdit,System.Action{DevExpress.XtraEditors.CheckedListBoxControl})">
+            <summary>
+            设置CheckedBoxEdit中包含的CheckedListBoxControl
+            </summary>
+            <param name="checkedComboBoxEdit"></param>
+            <param name="configAction"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.RepositoryImageComboBoxHelper">
+            <summary>
+            RepositoryComboBox辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RepositoryImageComboBoxHelper.BindListToRepositoryCombo``1(DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox,System.Collections.Generic.List{``0},System.Func{``0,System.String},System.Func{``0,System.String},System.String)">
+            <summary>
+            绑定对象列表到下拉框
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">下拉控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+            <param name="header">请选择等文字</param>
+            <param name="idFunc"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper">
+            <summary>
+            复选控件列表辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper.BindList``1(DevExpress.XtraEditors.CheckedListBoxControl,System.Collections.Generic.List{``0},System.Func{``0,System.String})">
+            <summary>
+            绑定对象列表到复选列表控件
+            </summary>
+            <typeparam name="T">对象类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="datas">数据列表</param>
+            <param name="displayFunc">取得显示文字方法</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper.BindEnum``1(DevExpress.XtraEditors.CheckedListBoxControl,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            绑定枚举到复选列表控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper.BindEnumList``1(DevExpress.XtraEditors.CheckedListBoxControl,System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            绑定枚举到复选列表控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="list">绑定的枚举列表</param>
+            <param name="header">请选择等文字</param>
+            <typeparam name="T">枚举类型</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper.SetSelectEnum``1(DevExpress.XtraEditors.CheckedListBoxControl,System.Collections.Generic.List{``0})">
+            <summary>
+            设置选中的枚举
+            </summary>
+            <typeparam name="T">枚举类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">选中的枚举列表</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper.SetSelectData``1(DevExpress.XtraEditors.CheckedListBoxControl,System.Collections.Generic.List{``0},System.Func{``0,System.String})">
+            <summary>
+            设置选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <param name="data">数据</param>
+            <param name="displayFunc"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper.GetSelectData``1(DevExpress.XtraEditors.CheckedListBoxControl)">
+            <summary>
+            获取选中项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">CheckedListBoxControl控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper.GetSelectEnum``1(DevExpress.XtraEditors.CheckedListBoxControl)">
+            <summary>
+            获取选中枚举项
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="ctr">控件</param>
+            <returns>选中数据</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.TreeFilterHelper">
+            <summary>
+            添加入：王怀生
+            添加日期：2013年11月19日
+            说明：处理13.1控件引入后TreeList筛选问题
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeFilterHelper.#ctor(DevExpress.XtraTreeList.TreeList,DevExpress.XtraEditors.TextEdit,System.Boolean)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="tree">要实现筛选功能的TreeList控件</param>
+            <param name="edit"></param>
+            <param name="immediate"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeFilterHelper.FilterText(System.String)">
+            <summary>
+            筛选文字
+            </summary>
+            <param name="text">要筛选的文字</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.TreeFilterHelper.ClearFilter">
+            <summary>
+            清除筛选
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.ValidateHelper">
+            <summary>
+            验证辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ValidateHelper.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ValidateHelper.#ctor(DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider)">
+            <summary>
+            验证辅助类
+            </summary>
+            <param name="errorProvider">错误提供控件</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ValidateHelper.Register(DevExpress.XtraEditors.BaseEdit,System.Object,System.Func{System.Collections.Generic.List{WitsWay.Utilities.Validate.ValidateResult}},System.Boolean)">
+            <summary>
+            注册验证控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="ctrValue">控件默认值</param>
+            <param name="valMethod">验证方法</param>
+            <param name="immediate"></param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.ValidateHelper.ValidateEnable">
+            <summary>
+            验证是否可用
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ValidateHelper.Validate(System.Boolean)">
+            <summary>
+            验证所有注册过的控件
+            </summary>
+            <returns>通过返回true，否则false</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ValidateHelper.Validate(DevExpress.XtraEditors.BaseEdit)">
+            <summary>
+            验证注册过的特定控件
+            </summary>
+            <param name="ctr">要验证的控件</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ValidateHelper.RemoveEditorError(DevExpress.XtraEditors.BaseEdit)">
+            <summary>
+            移除控件错误提示
+            </summary>
+            <param name="ctr"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.IErrorProvider">
+            <summary>
+            错误提供者接口
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Helpers.IErrorProvider.ErrorProvider">
+            <summary>
+            错误提供者
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.XtraGridHelper">
+            <summary>
+            XtraGrid辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.XtraGridHelper.PreHandleFiterText(System.String)">
+            <summary>
+            预处理Filter字符串，这里主要是因为Grid控件本身的Bug导致的
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.XtraGridHelper.GetRepositoryButton(System.String,System.String,System.String,System.Drawing.Image)">
+            <summary>
+            获取XtraGrid按钮
+            </summary>
+            <param name="caption">文字</param>
+            <param name="tooltip">提示</param>
+            <param name="ctrName">控件名</param>
+            <param name="icon">图标</param>
+            <returns><see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit"/>控件</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.XtraGridHelper.GetRepositoryButton(System.String,System.String,System.String,System.Drawing.Image,System.Boolean)">
+            <summary>
+            获取XtraGrid按钮
+            </summary>
+            <param name="caption">标题</param>
+            <param name="tooltip">提示</param>
+            <param name="ctrName">控件名</param>
+            <param name="icon">控件图标</param>
+            <param name="enable">控件是否可用</param>
+            <returns><see cref="T:DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit"/>控件</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.ControlStyleHelper">
+            <summary>
+            控件样式设置帮助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetPopupStyle(DevExpress.XtraEditors.XtraForm)">
+            <summary>
+            弹出页面样式
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetPopupStyle(DevExpress.XtraEditors.XtraForm,System.Drawing.Icon,System.Boolean)">
+            <summary>
+            弹出页面样式
+            </summary>
+            <param name="form">form</param>
+            <param name="resize">是否允许重新设置Size</param>
+            <param name="icon"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetDateEditStyle(DevExpress.XtraEditors.DateEdit,DevExpress.XtraEditors.Controls.TextEditStyles)">
+            <summary>
+            设置日期选择控件样式
+            </summary>
+            <param name="ctr">日期选择控件</param>
+            <param name="style"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetSpinEditStyle(DevExpress.XtraEditors.SpinEdit,DevExpress.Utils.HorzAlignment,System.Boolean,DevExpress.XtraEditors.Controls.TextEditStyles)">
+            <summary>
+            设置Spin控件样式
+            </summary>
+            <param name="ctr">Spin控件</param>
+            <param name="align">对齐HorzAlignment</param>
+            <param name="isFloat">是否Float</param>
+            <param name="style">TextEditStyle</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetLabelTextCenter(DevExpress.XtraEditors.LabelControl)">
+            <summary>
+            设置Label文字居中
+            </summary>
+            <param name="lbl"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetNullText(DevExpress.XtraEditors.BaseEdit,System.String,System.String)">
+            <summary>
+            设置控件NullText
+            </summary>
+            <param name="editor">控件</param>
+            <param name="nullText">Null文字</param>
+            <param name="initText">初始文字</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetLoadingCircle(WitsWay.Utilities.Win.Controls.LoadingCircle)">
+            <summary>
+            
+            </summary>
+            <param name="loading"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetNavControl(DevExpress.XtraNavBar.NavBarControl)">
+            <summary>
+            
+            </summary>
+            <param name="nav"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetMainMenu(DevExpress.XtraBars.Bar)">
+            <summary>
+            
+            </summary>
+            <param name="bar"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ControlStyleHelper.SetMidManager(DevExpress.XtraTabbedMdi.XtraTabbedMdiManager)">
+            <summary>
+            
+            </summary>
+            <param name="midManager"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.UserControlHelper">
+            <summary>
+            用户控件辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.UserControlHelper.ShowDialog(System.Windows.Forms.UserControl,System.String,System.Windows.Forms.Form)">
+            <summary>
+            用户控件显示为对话框
+            </summary>
+            <param name="owner">父窗体</param>
+            <param name="title">窗体标题</param>
+            <param name="uc">用户控件</param>
+            <returns>对话框结果</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Layouts.ButtonEditBase`1">
+            <summary>
+            LookUpEdit
+            </summary>
+            <typeparam name="TAdapter"></typeparam>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Layouts.ButtonEditBase`1.AdapterInstance">
+            <summary>
+            Adapter
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Layouts.ButtonEditBase`1.Adapter">
+            <summary>
+            模型
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Layouts.ButtonEditBase`1.CustomerControlName">
+            <summary>
+            控件名称
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Layouts.ButtonEditBase`1.GetResult(System.Int32)">
+            <summary>
+            取控件里面的结果
+            </summary>
+            <param name="customerControlIndex"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Layouts.ButtonEditBase`1.BindUC(System.Int32)">
+            <summary>
+            显示控件里的数据
+            </summary>
+            <param name="customerControlIndex"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1">
+            <summary>
+            用户自定义控件基类
+            </summary>
+            <typeparam name="TAdapter"></typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1.#ctor">
+            <summary>
+            CustomerControlBase
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1.AdapterInstance">
+            <summary>
+            Adapter
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1.Adapter">
+            <summary>
+            Adapter
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1.CustomerControlName">
+            <summary>
+            控件名称
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1.GetResult(System.Int32)">
+            <summary>
+            用户控件的操作结果
+            </summary>
+            <param name="customerControlIndex"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1.BindUC(System.Int32)">
+            <summary>
+            显示用户控件信息
+            </summary>
+            <param name="customerControlIndex"></param>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Layouts.CustomerControlBase`1.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Layouts.LookUpEditBase`1">
+            <summary>
+            LookUpEdit
+            </summary>
+            <typeparam name="TAdapter"></typeparam>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Layouts.LookUpEditBase`1.AdapterInstance">
+            <summary>
+            Adapter
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Layouts.LookUpEditBase`1.Adapter">
+            <summary>
+            模型
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Layouts.LookUpEditBase`1.CustomerControlName">
+            <summary>
+            控件名称
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Layouts.LookUpEditBase`1.GetResult(System.Int32)">
+            <summary>
+            取控件里面的结果
+            </summary>
+            <param name="customerControlIndex"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Layouts.LookUpEditBase`1.BindUC(System.Int32)">
+            <summary>
+            显示控件里的数据
+            </summary>
+            <param name="customerControlIndex"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.WinUtilityConsts">
+            <summary>
+            公共类库使用常量
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.TreeListFilterTagKey">
+            <summary>
+            TreeList过滤Tag键
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.TreeListBindDatasTagKey">
+            <summary>
+            TreeList绑定数据列表Tag键
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.TreeListNodeBindDataTagKey">
+            <summary>
+            TreeListNode绑定数据Tag键
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.TreeListPopupMenuHelperTagKey">
+            <summary>
+            TreeList弹出菜单帮助类Tag键
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.GridViewPopupMenuHelperTagKey">
+            <summary>
+            GridView弹出菜单绑定辅助类Tag键
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.GridViewDoubleClickHelperTagKey">
+            <summary>
+            GridView双击事件绑定辅助类Tag键
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Functions.WebApiHost">
+            <summary>
+            WebApi辅助类
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Functions.WebApiHost.HostServer">
+            <summary>
+            托管Server
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Functions.WebApiHost.SelfHostConfig(System.Uri,System.Action{System.Web.Http.SelfHost.HttpSelfHostConfiguration})">
+            <summary>
+            启动自托管
+            </summary>
+            <param name="uri">服务地址</param>
+            <param name="configRouteAction">配置路由Action
+            <example>
+            <![CDATA[
+            config.Routes.MapHttpRoute("ApiDefault", "api/{controller}/{id}", new { id = RouteParameter.Optional });
+            config.Routes.MapHttpRoute("report", "{controller}/{action}/{para}", new { controller = "ReportController", para = RouteParameter.Optional });
+            ]]>
+            </example>
+            </param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Functions.WebApiHost.SelfHostStart">
+            <summary>
+            启动自托管
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Functions.WebApiHost.SelfHostStop">
+            <summary>
+            停止自托管服务
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Functions.WebApiHost.ReleaseUnManagedResource">
+            <summary>
+            释放非托管资源
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Functions.CrossDomainHandler">
+            <summary>
+            跨域Handler
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.ICheckable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.ICheckable.IsChecked">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.IdTextData">
+            <summary>
+            ID-Text-Data，用于Combo绑定
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.IdTextData.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.IdTextData.Text">
+            <summary>
+            显示文字
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.IdTextData.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.IdTextData.GetData``1">
+            <summary>
+            获取数据
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.IdTextData.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.IdTextData.GetTypeCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.IconKey">
+            <summary>
+            图标Key枚举
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Delete16">
+            <summary>Delete16 </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Refresh16">
+            <summary>Refresh16 </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Search16">
+            <summary>Search16 </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Confirm16">
+            <summary>Confirm16 </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Close16">
+            <summary>Close16 </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Select16">
+            <summary>Select16 </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Group16">
+            <summary>Group16 </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.View16">
+            <summary>View16 </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Edit16">
+            <summary>Edit16 </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.ClearSearch16">
+            <summary>ClearSearch16</summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Backward16">
+            <summary>
+            回退
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Forward16">
+            <summary>
+            前进
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Save16">
+            <summary>
+            保存
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Print16">
+            <summary>
+            打印
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.IconKey.Check16">
+            <summary>
+            审核
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.IconManager">
+            <summary>
+            图标管理
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.IconManager.GetIcon(WitsWay.Utilities.Win.IconKey)">
+            <summary>
+            取得Icon
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.IconManager.GetIcon(System.String)">
+            <summary>
+            取得Icon
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.IconManager.GetContractItemIcon(WitsWay.Utilities.Win.ContractItemIconKey)">
+            <summary>
+            取得Icon
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Accept16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Add16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.AddNew216">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Backward16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.BatchAll16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Batched16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.BatchNot16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.CabinetGreen">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.CabinetRed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.CabinetYellow">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.CablineGreen">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.CablineRed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.CablineYellow">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Check16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.ClearSearch16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Close16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.CollapseAll16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.CommandKey">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Confirm16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Confirm161">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Database16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Delete16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Delete216">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.DoorGreen">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.DoorRed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.DoorYellow">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Edit16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Error">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Executing">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.ExpandAll16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.FittingGreen">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.FittingRed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.FittingYellow">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Foreward16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Gear16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.GenerateParameter16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Group16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Help16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Info16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Key16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Lock16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Login_Button">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Mail16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Money16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.MoveDown16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.MoveUp16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Note16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Organize16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Overlay">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Paper16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Preview16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Print16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Refresh16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Save16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Search16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Select16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.SendDefer16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.SendGoods16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Set16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Sheet16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Succeed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Success">
+            <summary>
+              查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.UnitGreen">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.UnitRed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.UnitYellow">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Unlock16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.View16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.ViewWay16">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.Wait">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.AttachedFileUploader">
+            <summary>
+            附件上传类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.AttachedFileUploader.Upload(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="url"></param>
+            <param name="fullName"></param>
+            <param name="attachedFileType"></param>
+            <param name="cookies"></param>
+            <returns></returns>
+            <example>
+            <code>
+            Perform the equivalent of posting a form with a fullName and two files, in HTML:
+            <form action="{url}" method="post" enctype="multipart/form-data">
+                <input type="text" name="fullName" />
+                <input type="file" name="file1" />
+            </form>
+            </code>
+            </example>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.AttachedFileUploader.Delete(System.String,System.String)">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.ServiceAdapter`1">
+            <summary>
+            服务适配者
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.ServiceAdapter`1.Call``1(System.Func{`0,``0})">
+            <summary> 调用服务方法
+            </summary>
+            <typeparam name="TResult">方法返回对象</typeparam>
+            <param name="method">调用方法名</param>
+            <returns>通过服务获取的数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.ServiceAdapter`1.Call(System.Action{`0})">
+            <summary>
+            调用服务方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.ServiceAdapter`1.AsyncCall``1(System.Func{`0,``0},System.String)">
+            <summary>
+            调用服务方法
+            </summary>
+            <typeparam name="TResult">方法返回对象</typeparam>
+            <param name="method">调用方法名</param>
+            <param name="title">等待窗体标题</param>
+            <returns>通过服务获取的数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.ServiceAdapter`1.AsyncCall(System.Action{`0},System.String)">
+            <summary>
+            调用服务方法
+            </summary>
+            <param name="method">调用方法名</param>
+            <param name="title">等待窗体标题</param>
+            <returns>通过服务获取的数据</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.ServiceAdapter`1.ServiceItemInfo">
+            <summary>
+            服务配置项
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.ServiceAdapter`1.ServiceItemInfo.ServiceName">
+            <summary>
+            服务名
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.ServiceAdapter`1.ServiceItemInfo.ServiceContract">
+            <summary>
+            服务契约
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.ServiceAdapter`1.ServiceItemInfo.ServiceImplement">
+            <summary>
+            服务实现
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.ServiceAdapter`1.ServiceItemInfo.Enable">
+            <summary>
+            服务是否可用
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.ServiceAdapter`1.AllServices">
+            <summary>
+            所有服务
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.ServiceCaller">
+            <summary>
+            服务调用者
+            <para>
+            调用方式<![CDATA[ var pages = ServiceCaller.GetService<IPageItemService>().Call(s => s.GetAll());]]>
+            </para>
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.ServiceCaller.GetService``1">
+            <summary>
+            获取服务
+            </summary>
+            <typeparam name="TService">服务类型</typeparam>
+            <returns>服务接口实例</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.UtilityHelper">
+            <summary>
+            WinForm通用辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait(System.Object,System.String,System.String,System.Object[])">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait(System.Action,System.String)">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait(System.Action,System.Action,System.String)">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait``1(System.Func{``0},System.String)">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInnerWait(System.Windows.Forms.Control,System.String)">
+            <summary>
+            在指定控件的中部显示等候图标
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.CloseInnerWait(System.Windows.Forms.Control)">
+            <summary>
+            在指定控件的中部取消等候图标的显示
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInnerWaitCircle(System.Windows.Forms.Control,System.String,WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle)">
+            <summary>
+            在指定控件的中部显示等候图标
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInnerWaitCircle(System.Windows.Forms.Control,WitsWay.Utilities.Win.Controls.LoadingCircle,System.String)">
+            <summary>
+            在指定控件的中部显示等候图标
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.CloseInnerWaitCircle(System.Windows.Forms.Control)">
+            <summary>
+            在指定控件的中部取消等候图标的显示
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.CenterControl(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>
+            控件置中
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.AddRedStar(System.Windows.Forms.Control,WitsWay.Utilities.Win.PositionEnum)">
+            <summary>
+            添加必填红星
+            </summary>
+            <param name="ctr">要添加红星的控件</param>
+            <param name="position">图标位置</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInfoMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            提示
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWarningMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowErrorMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowConfirmMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            确认
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowSuccessMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInfoMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            提示
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWarningMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowErrorMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowConfirmMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            确认
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowSuccessMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowDialog(System.Windows.Forms.Control,System.String,System.Windows.Forms.Form,System.Boolean)">
+            <summary>
+            用户控件显示为对话框
+            </summary>
+            <param name="owner">父窗体</param>
+            <param name="title">窗体标题</param>
+            <param name="uc">用户控件</param>
+            <param name="allowESC">是否允许ESC键关闭窗体</param>
+            <returns>对话框结果</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.InvokeExecute(System.Windows.Forms.Control,System.Action)">
+            <summary>
+            Invoke执行
+            </summary>
+            <param name="ctr">调用Invoke方法的控件</param>
+            <param name="action">执行方法</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.HandleException(System.Action,System.Action)">
+            <summary>
+            处理异常
+            </summary>
+            <param name="action">Action执行体</param>
+            <param name="final">try,catch,finally块中执行的Action方法</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.HandleException``1(System.Func{``0},System.Action)">
+            <summary>
+            处理异常
+            </summary>
+            <param name="func">带返回数据的方法执行体</param>
+            <param name="final">try,catch,finally块中执行的Action方法</param>
+            <typeparam name="TResult">返回结果类型</typeparam>
+            <returns>func调用的返回数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.GetControlName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">
+            <summary>
+            得到控件名称（只使用于窗体布局）
+            </summary>
+            <returns>控件名称</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.PositionEnum">
+            <summary>
+            位置枚举
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.PositionEnum.Top">
+            <summary>
+            上
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.PositionEnum.Right">
+            <summary>
+            右
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.PositionEnum.Bottom">
+            <summary>
+            下
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.PositionEnum.Left">
+            <summary>
+            左
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.EntityActionEnum">
+            <summary>
+            实体操作枚举
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.EntityActionEnum.View">
+            <summary>
+            查看
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.EntityActionEnum.Add">
+            <summary>
+            添加
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.EntityActionEnum.Edit">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.EntityActionEnum.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.EntityActionEnum.RemoveAll">
+            <summary>
+            移除所有项
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.ContractItemIconKey">
+            <summary>
+            图标Key枚举
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.CabinetGreen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.CabinetRed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.CabinetYellow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.CablineGreen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.CablineRed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.CablineYellow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.DoorGreen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.DoorRed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.DoorYellow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.FittingGreen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.FittingRed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.FittingYellow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.UnitGreen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.UnitRed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.ContractItemIconKey.UnitYellow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.IdTextValueData`1">
+            <summary>
+            ID-Text-Data，用于Combo绑定
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.IdTextValueData`1.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.IdTextValueData`1.Text">
+            <summary>
+            显示文字
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.IdTextValueData`1.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.IdTextValueData`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.IdTextValueData`1.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

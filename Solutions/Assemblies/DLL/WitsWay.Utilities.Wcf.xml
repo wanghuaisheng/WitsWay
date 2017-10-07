@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WitsWay.Utilities.Wcf</name>
+    </assembly>
+    <members>
+        <member name="T:WitsWay.Utilities.Wcf.AddressWithDnsIdentity">
+            <summary>
+            基于服务器证书DNS的地址信息
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.AddressWithDnsIdentity.ServiceEndPointUri">
+            <summary>
+            服务终节点地址
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.AddressWithDnsIdentity.DnsIdentity">
+            <summary>
+            Dns标识
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.EngineServer.DsMessageQueue`1">
+            <summary>
+            消息队列
+            </summary>
+            <typeparam name="T">泛型类</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.DsMessageQueue`1.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="queuePath">队列路径</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.DsMessageQueue`1.CreateQueue">
+            <summary>
+            创建队列
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.DsMessageQueue`1.SendMessage(`0)">
+            <summary>
+            发送消息到队列
+            </summary>
+            <param name="obj">消息体</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.DsMessageQueue`1.ReceiveMessage">
+            <summary>
+            从队列接收消息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore">
+            <summary>
+            引擎内核
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.autoTaskList">
+            <summary>
+            任务列表
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.hostList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.Start">
+            <summary>
+            开始执行内核
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.Stop">
+            <summary>
+            停止执行内核
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.OnStarting">
+            <summary>
+            启动以前执行事件
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.OnStarted">
+            <summary>
+            启动后执行事件
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.OnStopping">
+            <summary>
+            停止前执行事件
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.OnStopped">
+            <summary>
+            停止后执行事件
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.OnHostStarting(System.ServiceModel.ServiceHost)">
+            <summary>
+            宿主启动中
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.OnHostStoping(System.ServiceModel.ServiceHost)">
+            <summary>
+            宿主停止中
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.EngineExecuteCore.OnInitialization">
+            <summary>
+            初始化事件
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.EngineServer.IAutoTask">
+            <summary>
+            自动任务接口
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.IAutoTask.Start">
+            <summary>
+            开始任务
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.IAutoTask.Stop">
+            <summary>
+            停止任务
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.EngineServer.QueueHandler">
+            <summary>
+            队列处理器抽象类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.QueueHandler.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="QueuePath">队列路径</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.QueueHandler.Run">
+            <summary>
+            监控队列
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.QueueHandler.CustomProcessQueueMessage(System.Object)">
+            <summary>
+            自定义处理队列消息
+            </summary>
+            <param name="message">队列消息</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.QueueHandler.ProcessQueueMessage(System.Object)">
+            <summary>
+            处理队列消息
+            </summary>
+            <param name="message">队列消息</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.QueueHandler.Start">
+            <summary>
+            开始任务
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.QueueHandler.Stop">
+            <summary>
+            停止任务
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.EngineServer.QueueTaskMessage`1">
+            <summary>
+            带消息体的队列任务消息类
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Wcf.EngineServer.QueueTaskMessage`1._messageContent">
+            <summary>
+            消息体
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.EngineServer.QueueTaskMessage`1.MessageContent">
+            <summary>
+            消息体
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.EngineServer.QueueTaskMessageBase">
+            <summary>
+            队列任务消息基类
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.EngineServer.QueueTaskMessageBase.ProcessedTimes">
+            <summary>
+            已处理次数
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.EngineServer.QueueTaskMessageBase.FirstOperationFailTime">
+            <summary>
+            第一次操作失败时间
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.EngineServer.QueueTaskMessageBase.TaskId">
+            <summary>
+            获取或设置队列任务的全局唯一标识
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.EngineServer.QueueTaskMessageBase.QueueType">
+            <summary>
+            队列类型
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.EngineServer.TimingTask">
+            <summary>
+            定时任务
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.EngineServer.TimingTask.Interval">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.EngineServer.TimingTask.AutoReset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.TimingTask.#ctor(System.Double,System.Timers.ElapsedEventHandler)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.TimingTask.Start">
+            <summary>
+            开始任务
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.EngineServer.TimingTask.Stop">
+            <summary>
+            停止任务
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.WcfComponent.WcfClient`1">
+            <summary>
+            Wcf范型通用代理类
+            </summary>
+            <typeparam name="TServiceContract">服务契约</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClient`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClient`1.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClient`1.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClient`1.#ctor(System.String,System.ServiceModel.EndpointAddress)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClient`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClient`1.#ctor(System.Uri)">
+            <summary>
+            根据远程地址采用无安全基本配置创建WCF代理
+            </summary>
+            <param name="serviceUri">服务URI地址</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClient`1.#ctor(System.Uri,System.String)">
+            <summary>
+            根据远程地址和DNS名称采用基本配置创建WCF代理
+            </summary>
+            <param name="serviceUri">服务URI地址</param>
+            <param name="dnsName">服务DNS名称，带安全时设置后才有效</param>
+        </member>
+        <member name="P:WitsWay.Utilities.Wcf.WcfComponent.WcfClient`1.ServiceContract">
+            <summary>
+            获取用于调用服务的服务契约接口
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.WcfComponent.WcfClientForAnonymity`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="TServiceContract"></typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClientForAnonymity`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClientForAnonymity`1.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClientForAnonymity`1.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClientForAnonymity`1.#ctor(System.String,System.ServiceModel.EndpointAddress)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClientForAnonymity`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClientForAnonymity`1.#ctor(System.Uri)">
+            <summary>
+            根据远程地址采用无安全基本配置创建WCF代理
+            </summary>
+            <param name="serviceUri">服务URI地址</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClientForAnonymity`1.#ctor(System.Uri,System.String)">
+            <summary>
+            根据远程地址采用匿名安全模式创建WCF代理
+            </summary>
+            <param name="serviceEndPointUri">服务器地址</param>
+            <param name="dnsIdentity">dns标识</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfClientForAnonymity`1.#ctor(WitsWay.Utilities.Wcf.AddressWithDnsIdentity)">
+            <summary>
+            根据远程地址采用证书安全模式创建WCF代理
+            </summary>
+            <param name="addressWithDnsIdentity">带服务器证书的地址信息</param>        
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.WcfComponent.WcfHelper">
+            <summary>
+            WCF公共工具类方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfHelper.GetBinding(System.Uri)">
+            <summary>
+            根据serviceUri地址生成相应的Binding对象
+            </summary>
+            <param name="serviceUri"></param>
+            <returns>返回包含绑定元素，这些元素指定客户端和服务之间的通信所用的协议、传输和消息编码器。</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WcfHelper.GetBinding(System.String)">
+            <summary>
+            根据serviceUri地址生成相应的Binding对象
+            </summary>
+            <param name="serviceUri"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Wcf.WcfComponent.WCFHost`2">
+            <summary>
+            WCF HOST通用范型类
+            </summary>
+            <typeparam name="TService">服务</typeparam>
+            <typeparam name="TServiceContract">服务契约</typeparam>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WCFHost`2.#ctor(System.Uri[])">
+            <summary>
+            构造函数
+            </summary>
+            <param name="serviceAddresses">服务地址</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WCFHost`2.#ctor(`0,System.Uri[])">
+            <summary>
+            构造单例模式的服务主机
+            </summary>
+            <param name="singletonInstance"></param>
+            <param name="serviceAddresses"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Wcf.WcfComponent.WCFHost`2.SetAttribute">
+            <summary>
+            设置属性
+            </summary>
+        </member>
+    </members>
+</doc>

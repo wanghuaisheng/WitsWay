@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WitsWay.Utilities.Apis</name>
+    </assembly>
+    <members>
+        <member name="T:WitsWay.Utilities.Apis.Attributes.AuditAttribute">
+            <summary>
+            审计特性，拥有该标记的Action会被记录访问日志
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.AuditAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Occurs before the action method is invoked.
+            </summary>
+            <param name="actionContext">The action context.</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.AuditAttribute.OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            Occurs after the action method is invoked.
+            </summary>
+            <param name="actionExecutedContext">The action executed context.</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Apis.Attributes.AuthenticationByCookieAttribute">
+            <summary>  
+            基本验证Attribtue，用以Action的权限处理  
+            </summary>  
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.AuthenticationByCookieAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>  
+            检查用户是否有该Action执行的操作权限  
+            </summary>  
+            <param name="actionContext"></param>  
+        </member>
+        <member name="T:WitsWay.Utilities.Apis.Attributes.BasicAuthenticationAttribute">
+            <summary>  
+            基本验证Attribtue，用以Action的权限处理  
+            </summary>  
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.BasicAuthenticationAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>  
+            检查用户是否有该Action执行的操作权限  
+            </summary>  
+            <param name="actionContext"></param>  
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.BasicAuthenticationAttribute.ValidateUserTicket(System.String)">
+            <summary>  
+            校验用户ticket信息  
+            </summary>  
+            <param name="encryptTicket"></param>  
+            <returns></returns>  
+        </member>
+        <member name="T:WitsWay.Utilities.Apis.Attributes.RequireAuthorizeAttribute">
+            <summary>
+            需要所有指定权限的一个或多个特性
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.RequireAuthorizeAttribute.#ctor(System.Int32)">
+            <summary>
+            构造一个特性实例
+            </summary>
+            <param name="requiredPermission"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.RequireAuthorizeAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Occurs before the action method is invoked.
+            </summary>
+            <param name="actionContext">The action context.</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Apis.Attributes.RequireAnyAuthorizeAttribute">
+            <summary>
+            需要所有指定权限的一个或多个特性
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.RequireAnyAuthorizeAttribute.#ctor(System.Int32[])">
+            <summary>
+            构造一个特性实例
+            </summary>
+            <param name="requiredPermission"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.RequireAnyAuthorizeAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Occurs before the action method is invoked.
+            </summary>
+            <param name="actionContext">The action context.</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Apis.Attributes.RequireAllAuthorizeAttribute">
+            <summary>
+            需要所有指定权限特性
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.RequireAllAuthorizeAttribute.#ctor(System.Int32[])">
+            <summary>
+            构造一个特性实例
+            </summary>
+            <param name="requiredPermission"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Attributes.RequireAllAuthorizeAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Occurs before the action method is invoked.
+            </summary>
+            <param name="actionContext">The action context.</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Apis.Controller.IAuditableController">
+            <summary>
+            支持审计功能的WebApiController
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Controller.IAuditableController.Log(WitsWay.Utilities.Models.OperationLog)">
+            <summary>
+            记录日志
+            </summary>
+            <param name="log"></param>
+        </member>
+        <member name="T:WitsWay.Utilities.Apis.Controller.IAuthoritableController">
+            <summary>
+            可验证的控制器
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Apis.Controller.IAuthoritableController.UserLoginTicket">
+            <summary>
+            用户票据信息
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Controller.IAuthoritableController.HasAllPermission(System.Int32[])">
+            <summary>
+            是否拥有所有指定权限
+            </summary>
+            <param name="permissions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Controller.IAuthoritableController.HasAnyPermission(System.Int32[])">
+            <summary>
+            是否拥有指定权限的一个或多个
+            </summary>
+            <param name="permissions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Apis.Controller.IAuthoritableController.HasPermission(System.Int32)">
+            <summary>
+            是否拥有权限
+            </summary>
+            <param name="permission"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Apis.WebApiConsts">
+            <summary>
+            WebApi上下文
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Apis.WebApiConsts.EncryptDecryptKey">
+            <summary>
+            加密密钥，为8位字符
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Apis.WebApiConsts.LoginResultCookieName">
+            <summary>
+            登录信息Cookie名称
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Apis.WebApiContext">
+            <summary>
+            WebApi上下文
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Apis.WebApiContext.AuthenticationCookieName">
+            <summary>
+            授权Cookie名称
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Apis.WebApiContext.LoginSystem">
+            <summary>
+            登录系统
+            </summary>
+        </member>
+    </members>
+</doc>

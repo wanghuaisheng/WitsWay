@@ -1,0 +1,937 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WitsWay.Utilities.Web</name>
+    </assembly>
+    <members>
+        <member name="T:WitsWay.Utilities.Web.Captcha.CaptchaImage">
+            <summary>
+            验证码图片
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.#ctor">
+            <summary>
+            验证码图片
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.UniqueId">
+            <summary>
+            验证码图片唯一标识
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.RenderedAt">
+            <summary>
+            图片最后呈现时间
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.FontFamilyName">
+            <summary>
+            用于绘制验证码的FontFamily，为空则从字体白名单中为每个字符随机取字体
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.FontWarp">
+            <summary>
+            验证码字体弯曲程度
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.BackgroundNoise">
+            <summary>
+            背景噪点程度
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.LineNoise">
+            <summary>
+            背景噪点线程度
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.TextChars">
+            <summary>
+            验证码有效字符集
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.TextLength">
+            <summary>
+            验证字符长度
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.Text">
+            <summary>
+            Get验证字符
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.Width">
+            <summary>
+            验证码图片宽度
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.Height">
+            <summary>
+            验证码图片高度
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.FontWhitelist">
+            <summary>
+            字体白名单
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.UseSession">
+            <summary>
+            是否通过Session存储
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImage.HandlerName">
+            <summary>
+            Handler名称
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.GetCaptchaImgTag">
+            <summary>
+            获取验证码Img标签内容
+            </summary>
+            <returns>Img标签内容</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.GetCaptchaImage(System.Boolean)">
+            <summary>
+            获取验证图片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.GetCaptchaCode(System.Web.HttpContext,System.String,System.Boolean)">
+            <summary>
+            获取验证码
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.GenerateImage">
+            <summary>
+            强制重新生成验证码图片
+            </summary>
+            <returns>验证码图片</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.GenerateRandomText">
+            <summary>
+            生成随机验证码
+            </summary>
+            <returns>验证码</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.GenerateRandomPoint(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            生成x、y范围内的随机点
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.GetFont">
+            <summary>
+            取得合适尺寸的验证码字体 
+            </summary>
+            <returns>验证码字体</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.WarpChar(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Rectangle)">
+            <summary>
+            扭曲字符
+            </summary>
+            <param name="pathWithText">包含文字的路径</param>
+            <param name="textRectangle">文字区域</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.AddNoise(System.Drawing.Graphics,System.Drawing.Rectangle)">
+            <summary>
+            根据级别添加图片噪点
+            </summary>
+            <param name="graphics">绘制图片</param>
+            <param name="rectangle">图片区域</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImage.AddLines(System.Drawing.Graphics,System.Drawing.Rectangle)">
+            <summary>
+            根据级别添加图片噪点线
+            </summary>
+            <param name="graphics">绘制图片</param>
+            <param name="rectangle">绘制区域</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Captcha.FontWarpFactor">
+            <summary>
+            字体弯曲程度
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.FontWarpFactor.None">
+            <summary>
+            无弯曲
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.FontWarpFactor.Low">
+            <summary>
+            低
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.FontWarpFactor.Medium">
+            <summary>
+            中
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.FontWarpFactor.High">
+            <summary>
+            高
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.FontWarpFactor.Extreme">
+            <summary>
+            极度
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Captcha.BackgroundNoiseLevel">
+            <summary>
+            背景噪点程度
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.BackgroundNoiseLevel.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.BackgroundNoiseLevel.Low">
+            <summary>
+            低
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.BackgroundNoiseLevel.Medium">
+            <summary>
+            中
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.BackgroundNoiseLevel.High">
+            <summary>
+            高
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.BackgroundNoiseLevel.Extreme">
+            <summary>
+            极度
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Captcha.LineNoiseLevel">
+            <summary>
+            背景噪线程度
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.LineNoiseLevel.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.LineNoiseLevel.Low">
+            <summary>
+            低
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.LineNoiseLevel.Medium">
+            <summary>
+            中
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.LineNoiseLevel.High">
+            <summary>
+            高
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Captcha.LineNoiseLevel.Extreme">
+            <summary>
+            极度
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Captcha.CaptchaImageHandler">
+            <summary>
+            从Session或Cache获取验证码图片，然后写入输出流
+            需要在Web中添加
+            需要在web.config中配置：
+            [configuration]
+              [system.web]
+                [httpHandlers]
+                  [add verb="GET" path="CaptchaImage.aspx" type="DotNetSoft.Utilities.Web.Captcha.CaptchaImageHandler, DotNetSoft.Utilities"/]
+                [/httpHandlers]
+              [/system.web]
+            [/configuration]
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Captcha.CaptchaImageHandler.IsReusable">
+            <summary>
+            是否可重用
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Captcha.CaptchaImageHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            处理请求
+            </summary>
+            <param name="context">Http请求上下文</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Enums.HttpMethodKinds">
+            <summary>
+            HttpMethod类型
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Enums.HttpMethodKinds.GET">
+            <summary>
+            从指定的url上获取内容
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Enums.HttpMethodKinds.POST">
+            <summary>
+            提交body中的内容给服务器中指定的url中，属于非幂等的(non-idempotent)请求
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Enums.HttpMethodKinds.HEAD">
+            <summary>
+            从指定的url上获取header内容(类似Get方式)
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Enums.HttpMethodKinds.TRACE">
+            <summary>
+            Allows a programmer to see how the client's message is modified as it passes through a series of proxy servers. The recipient of a TRACE method echoes the HTTP request headers back to the client
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Enums.HttpMethodKinds.PUT">
+            <summary>
+            将body上传至服务器指定url处
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Enums.HttpMethodKinds.DELETE">
+            <summary>
+            在指定url处删除资源
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Enums.HttpMethodKinds.OPTIONS">
+            <summary>
+            获取指定url中能接收的请求方法
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Enums.HttpMethodKinds.CONNECT">
+            <summary>
+            连接指定频段。当客户端需要通过代理服务器连接HTTPS服务器是用到。
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Extends.CookieContainerExtends">
+            <summary>
+            字符串扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.CookieContainerExtends.GetAllCookies(System.Net.CookieContainer)">
+            <summary>
+            遍历Cookie容器
+            </summary>
+            <param name="cookieContainer">Cookie容器</param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Extends.StringExtends">
+            <summary>
+            字符串扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.StringExtends.RemoveIllegalCharacters(System.String)">
+            <summary>
+            移除非法字符
+            </summary>
+            <param name="str">要处理的字符串</param>
+            <returns>处理后的字符串</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.StringExtends.RemoveIllegalCharactersUrlEncode(System.String)">
+            <summary>
+            移除非法字符串并进行Url编码
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.StringExtends.ClearHtmlLabel(System.String)">
+            <summary>
+            清除Html字符
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Helpers.CookieHelper">
+            <summary>
+            Cookies辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.Exists(System.Web.HttpContext,System.String)">
+            <summary>
+            检查是否存在Cookie
+            </summary>
+            <param name="httpContext">Http请求上下文</param>
+            <param name="cookieName">CooKie名称</param>
+            <returns>存在true，不存在false</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.Create(System.String)">
+            <summary>
+            创建Cookie，未保存到Response响应流
+            </summary>
+            <param name="cookieName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.Create(System.String,System.String)">
+            <summary>
+            创建Cookie，未保存到Response响应流
+            </summary>
+            <param name="cookieName"></param>
+            <param name="cookieValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.Create(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            创建Cookie，未保存到Response响应流
+            </summary>
+            <param name="cookieName"></param>
+            <param name="cookieValues"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.Save(System.Web.HttpContext,System.Web.HttpCookie)">
+            <summary>
+            保存Cookie到Response响应流
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieToSave"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.Save(System.Web.HttpContext,System.Web.HttpCookie,System.DateTime)">
+            <summary>
+            保存Cookie到Response响应流
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieToSave"></param>
+            <param name="expires"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.CreateAndSave(System.Web.HttpContext,System.String)">
+            <summary>
+            创建并保存Cookie到响应流
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.CreateAndSave(System.Web.HttpContext,System.String,System.String)">
+             <summary>
+            创建并保存Cookie到响应流，100年过期
+             </summary>
+             <param name="httpContext"></param>
+             <param name="cookieName"></param>
+             <param name="cookieValue"></param>
+             <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.CreateAndSave(System.Web.HttpContext,System.String,System.String,System.DateTime)">
+            <summary>
+            创建并保存Cookie到响应流
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieName"></param>
+            <param name="cookieValue"></param>
+            <param name="expires"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.CreateAndSave(System.Web.HttpContext,System.String,System.Collections.Specialized.NameValueCollection)">
+             <summary>
+            创建并保存Cookie到响应流，100年过期
+             </summary>
+             <param name="httpContext"></param>
+             <param name="cookieName"></param>
+             <param name="cookieValues"></param>
+             <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.CreateAndSave(System.Web.HttpContext,System.String,System.Collections.Specialized.NameValueCollection,System.DateTime)">
+            <summary>
+            创建并保存Cookie到响应流
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieName"></param>
+            <param name="cookieValues"></param>
+            <param name="expires"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.Expire(System.Web.HttpContext,System.Web.HttpCookie)">
+            <summary>
+            过期Cookie，并写入当前响应流
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieToExpire"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.Expire(System.Web.HttpContext,System.String)">
+            <summary>
+            过期Cookie，并写入当前响应流
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieName"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.SetValue(System.Web.HttpContext,System.String,System.String)">
+            <summary>
+            设置Cookie值
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieName"></param>
+            <param name="cookieValue"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.SetValue(System.Web.HttpCookie,System.String)">
+            <summary>
+            设置Cookie值
+            </summary>
+            <param name="cookie"></param>
+            <param name="cookieValue"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.SetKeyValue(System.Web.HttpContext,System.String,System.String,System.String)">
+            <summary>
+            设置Cookie值
+            </summary>
+            <param name="httpContext"></param>
+            <param name="name"></param>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.SetKeyValue(System.Web.HttpCookie,System.String,System.String)">
+            <summary>
+            设置Cookie值
+            </summary>
+            <param name="cookie"></param>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.GetValue(System.Web.HttpContext,System.String)">
+            <summary>
+            获取Cookie值
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.GetValue(System.Web.HttpCookie)">
+            <summary>
+            获取Cookie值
+            </summary>
+            <param name="cookie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.GetValues(System.Web.HttpContext,System.String)">
+            <summary>
+            获取Cookie值集合
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.GetValues(System.Web.HttpCookie)">
+            <summary>
+            获取Cookie值集合
+            </summary>
+            <param name="cookie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.GetKeyValue(System.Web.HttpContext,System.String,System.String)">
+            <summary>
+            获取Cookie值
+            </summary>
+            <param name="httpContext"></param>
+            <param name="cookieName"></param>
+            <param name="cookieKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.CookieHelper.GetKeyValue(System.Web.HttpCookie,System.String)">
+            <summary>
+            获取Cookie值
+            </summary>
+            <param name="cookie"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Helpers.HtmlHelper">
+            <summary>
+            Html帮助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.HtmlHelper.EnumSelect(System.Type,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Boolean,System.String,System.Int32)">
+            <summary>
+            构造一个枚举类型的选择控件
+            </summary>
+            <param name="type">枚举类型</param>
+            <param name="id">控件id</param>
+            <param name="name">控件名称</param>
+            <param name="cssClass">css样式</param>
+            <param name="itemCssClass">项css样式</param>
+            <param name="ignoreList">忽略列表</param>
+            <param name="showAll">显示“所有”选项</param>
+            <param name="allCaption">“所有”选项的标题</param>
+            <param name="allValue">“所有”选项的值</param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Helpers.MimeTypeEnum">
+            <summary>
+            Mimi类型枚举
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.Unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.JPG">
+            <summary>
+            JPG
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.JPEG">
+            <summary>
+            JPEG
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.JPE">
+            <summary>
+            JPE
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.GIF">
+            <summary>
+            GIF
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.PNG">
+            <summary>
+            PNG
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.BMP">
+            <summary>
+            BMP
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.TIF">
+            <summary>
+            TIF
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.TIFF">
+            <summary>
+            TIFF
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.SVG">
+            <summary>
+            SVG
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.ICO">
+            <summary>
+            ICO
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.TXT">
+            <summary>
+            TXT
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.HTM">
+            <summary>
+            HTM
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.HTML">
+            <summary>
+            HTML
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.XHTML">
+            <summary>
+            XHTML
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.XML">
+            <summary>
+            XML
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.XSL">
+            <summary>
+            XSL
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.DTD">
+            <summary>
+            DTD
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.CSS">
+            <summary>
+            CSS
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.JS">
+            <summary>
+            JS
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.SWF">
+            <summary>
+            SWF
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.RTF">
+            <summary>
+            RTF
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.ZIP">
+            <summary>
+            ZIP
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.TAR">
+            <summary>
+            TAR
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.PDF">
+            <summary>
+            PDF
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.AI">
+            <summary>
+            AI
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.PS">
+            <summary>
+            PS
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.EPS">
+            <summary>
+            EPS
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.DOC">
+            <summary>
+            DOC
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.OGG">
+            <summary>
+            OGG
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.MPGA">
+            <summary>
+            MPGA
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.MP2">
+            <summary>
+            MP2
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.MP3">
+            <summary>
+            MP3
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.M3U">
+            <summary>
+            M3U
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.RAM">
+            <summary>
+            RAM
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.RA">
+            <summary>
+            RA
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.RM">
+            <summary>
+            RM
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.WAV">
+            <summary>
+            WAV
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.MPG">
+            <summary>
+            MPG
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.MPEG">
+            <summary>
+            MPEG
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.MPE">
+            <summary>
+            MPE
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.MOV">
+            <summary>
+            MOV
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.QT">
+            <summary>
+            QT
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.AVI">
+            <summary>
+            AVI
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Web.Helpers.MimeTypeEnum.Json">
+            <summary>
+            Json
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Helpers.MimeTypeHelper">
+            <summary>
+            包含Mimi类型的列表
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.MimeTypeHelper.GetMimeType(WitsWay.Utilities.Web.Helpers.MimeTypeEnum)">
+            <summary>
+            获取Mime类型
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Helpers.UploadHelper">
+            <summary>
+            上传文件辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.UploadHelper.CheckFileExtension(System.Web.HttpPostedFile)">
+            <summary>
+            检查文件扩展名
+            检查是否是伪装文件
+            </summary>
+            <param name="file">上传文件</param>
+            <returns>通过返回true，不通过false</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Helpers.UrlHelper">
+            <summary>
+            页面URL转换辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.UrlHelper.RelativeToAbsolute(System.String)">
+            <summary>
+            相对路径转绝对路径
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.UrlHelper.RelativeToFilePath(System.String)">
+            <summary>
+            相对路径转换为物理文件路径
+            </summary>
+            <param name="relativeURL">~/开头的相对路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.UrlHelper.AbsoluteWebRoot(System.String)">
+            <summary>
+            取得网站绝对路径
+            </summary>
+            <value>以 '/'结尾的字符串</value>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Helpers.WebCacheHelper">
+            <summary>
+            Web缓存辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.WebCacheHelper.ClearAllCache">
+            <summary>
+            清除系统所有缓存
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.WebCacheHelper.ClearCacheItem(System.String)">
+            <summary>
+            清除key对应的缓存
+            </summary>
+            <param name="key">Key</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.WebCacheHelper.ClearCacheObjectTypes(System.String)">
+            <summary>
+            移除对应类型的所有缓存
+            </summary>
+            <param name="typeName">对象类型</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.WebCacheHelper.ClearCacheByKeySearch(System.String)">
+            <summary>
+            清除所有前缀为prefix的缓存
+            </summary>
+            <param name="prefix">缓存Key的前缀</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.WebCacheHelper.GetCacheItem(System.String)">
+            <summary>
+            取得缓存项
+            </summary>
+            <param name="cacheKey">缓存key</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.WebCacheHelper.GetCacheItem``1(System.String,System.Object,System.TimeSpan,System.Func{``0})">
+            <summary>
+            取得缓存项
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKey">缓存主键</param>
+            <param name="syncLock">同步锁</param>
+            <param name="timeout">超时时间</param>
+            <param name="func">获取缓存回调函数</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.WebCacheHelper.GetCacheItem``1(System.String,System.Object,System.Web.Caching.CacheItemRemovedCallback,System.TimeSpan,System.Func{``0})">
+            <summary>
+            取得缓存项
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKey">缓存主键</param>
+            <param name="syncLock">同步锁</param>
+            <param name="timeout">超时时间</param>
+            <param name="func">获取缓存回调函数</param>
+            <param name="refreshAction">缓存项移除回调</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.WebCacheHelper.GetCacheItem``1(System.String,System.Object,System.Web.Caching.CacheItemPriority,System.Web.Caching.CacheItemRemovedCallback,System.TimeSpan,System.Func{``0})">
+            <summary>
+            取得缓存项
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKey">缓存主键</param>
+            <param name="syncLock">同步锁</param>
+            <param name="timeout">超时时间</param>
+            <param name="func">获取缓存回调函数</param>
+            <param name="refreshAction">缓存项移除回调</param>
+            <param name="priority">缓存优先级</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.WebCacheHelper.GetCacheItem``1(System.String,System.Object,System.Web.Caching.CacheItemPriority,System.Web.Caching.CacheItemRemovedCallback,System.Web.Caching.CacheDependency,System.TimeSpan,System.Func{``0})">
+            <summary>
+            取得缓存项
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cacheKey">缓存主键</param>
+            <param name="syncLock">同步锁</param>
+            <param name="timeout">超时时间</param>
+            <param name="func">获取缓存回调函数</param>
+            <param name="refreshAction">缓存项移除回调</param>
+            <param name="priority">缓存优先级</param>
+            <param name="cacheDependency">缓存依赖项</param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Web.Properties.Resources.CaptchaHandler">
+            <summary>
+              查找 System.Byte[] 类型的本地化资源。
+            </summary>
+        </member>
+    </members>
+</doc>
