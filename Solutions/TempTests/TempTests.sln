@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralQuery", "GeneralQuery\GeneralQuery.csproj", "{9753C641-E3C0-41DA-B4DA-1A1087698F0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemainProcessTest", "RemainProcessTest\RemainProcessTest.csproj", "{C4102293-05A6-45E6-B0ED-7017ABEC1C63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowTest", "WorkflowTest\WorkflowTest.csproj", "{199C422C-D5FB-4304-A8C0-9808719936B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportUtil", "ReportUtil\ReportUtil.csproj", "{2F8676A4-2ACB-4866-827F-47DE066F2C91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicQuery", "DynamicQuery\DynamicQuery.csproj", "{CDDECF3A-2617-4243-8880-2E900833F096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralQuery.UnitTests", "GeneralQuery.UnitTests\GeneralQuery.UnitTests.csproj", "{7E3EA71F-FDE0-4AC2-99C1-223591EE0BA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlsTest", "ControlsTest\ControlsTest.csproj", "{260882EB-0192-4837-B4E8-566A960BCBAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{F157AF10-2F2E-4355-ADB2-940002E7704A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagramTest", "DiagramTest\DiagramTest.csproj", "{023D5A8C-32F3-47F7-8549-651874E45E65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9753C641-E3C0-41DA-B4DA-1A1087698F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9753C641-E3C0-41DA-B4DA-1A1087698F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9753C641-E3C0-41DA-B4DA-1A1087698F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9753C641-E3C0-41DA-B4DA-1A1087698F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4102293-05A6-45E6-B0ED-7017ABEC1C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4102293-05A6-45E6-B0ED-7017ABEC1C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4102293-05A6-45E6-B0ED-7017ABEC1C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4102293-05A6-45E6-B0ED-7017ABEC1C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199C422C-D5FB-4304-A8C0-9808719936B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199C422C-D5FB-4304-A8C0-9808719936B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199C422C-D5FB-4304-A8C0-9808719936B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199C422C-D5FB-4304-A8C0-9808719936B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F8676A4-2ACB-4866-827F-47DE066F2C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F8676A4-2ACB-4866-827F-47DE066F2C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F8676A4-2ACB-4866-827F-47DE066F2C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F8676A4-2ACB-4866-827F-47DE066F2C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDECF3A-2617-4243-8880-2E900833F096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDECF3A-2617-4243-8880-2E900833F096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDECF3A-2617-4243-8880-2E900833F096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDECF3A-2617-4243-8880-2E900833F096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3EA71F-FDE0-4AC2-99C1-223591EE0BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3EA71F-FDE0-4AC2-99C1-223591EE0BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3EA71F-FDE0-4AC2-99C1-223591EE0BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E3EA71F-FDE0-4AC2-99C1-223591EE0BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260882EB-0192-4837-B4E8-566A960BCBAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260882EB-0192-4837-B4E8-566A960BCBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260882EB-0192-4837-B4E8-566A960BCBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260882EB-0192-4837-B4E8-566A960BCBAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F157AF10-2F2E-4355-ADB2-940002E7704A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F157AF10-2F2E-4355-ADB2-940002E7704A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F157AF10-2F2E-4355-ADB2-940002E7704A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F157AF10-2F2E-4355-ADB2-940002E7704A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023D5A8C-32F3-47F7-8549-651874E45E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023D5A8C-32F3-47F7-8549-651874E45E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023D5A8C-32F3-47F7-8549-651874E45E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023D5A8C-32F3-47F7-8549-651874E45E65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.11:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DynamicQuery\\DynamicQuery.csproj
+		SccProjectName1 = DynamicQuery
+		SccLocalPath1 = DynamicQuery
+		SccProjectUniqueName2 = GeneralQuery.UnitTests\\GeneralQuery.UnitTests.csproj
+		SccProjectName2 = GeneralQuery.UnitTests
+		SccLocalPath2 = GeneralQuery.UnitTests
+		SccProjectUniqueName3 = GeneralQuery\\GeneralQuery.csproj
+		SccProjectName3 = GeneralQuery
+		SccLocalPath3 = GeneralQuery
+		SccProjectUniqueName4 = RemainProcessTest\\RemainProcessTest.csproj
+		SccProjectName4 = RemainProcessTest
+		SccLocalPath4 = RemainProcessTest
+		SccProjectUniqueName5 = ReportUtil\\ReportUtil.csproj
+		SccProjectName5 = ReportUtil
+		SccLocalPath5 = ReportUtil
+		SccProjectUniqueName6 = WorkflowTest\\WorkflowTest.csproj
+		SccProjectName6 = WorkflowTest
+		SccLocalPath6 = WorkflowTest
+		SccProjectUniqueName7 = ControlsTest\\ControlsTest.csproj
+		SccProjectName7 = ControlsTest
+		SccLocalPath7 = ControlsTest
+		SccProjectUniqueName8 = ConsoleTest\\ConsoleTest.csproj
+		SccProjectName8 = ConsoleTest
+		SccLocalPath8 = ConsoleTest
+		SccProjectUniqueName9 = DiagramTest\\DiagramTest.csproj
+		SccProjectName9 = DiagramTest
+		SccLocalPath9 = DiagramTest
+	EndGlobalSection
+EndGlobal

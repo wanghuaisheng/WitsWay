@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9753C641-E3C0-41DA-B4DA-1A1087698F0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WitsWay.TempTests.GeneralQuery</RootNamespace>
+    <AssemblyName>WitsWay.TempTests.GeneralQuery</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.TreeMap.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v17.1.Win, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Win, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v17.1" />
+    <Reference Include="DevExpress.XtraMap.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1.Extensions, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WitsWay.Utilities">
+      <HintPath>..\..\Assemblies\DLL\WitsWay.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="WitsWay.Utilities.Win">
+      <HintPath>..\..\Assemblies\DLL\WitsWay.Utilities.Win.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColumnField.cs" />
+    <Compile Include="ColumnDefinitionRow.cs" />
+    <Compile Include="ConfigManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigManageForm.Designer.cs">
+      <DependentUpon>ConfigManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutApp.designer.cs">
+      <DependentUpon>frmAboutApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBoxForm.Designer.cs">
+      <DependentUpon>ListBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GridModes.cs" />
+    <Compile Include="Models\GridPresentConfig.cs" />
+    <Compile Include="Models\GridFunctions.cs" />
+    <Compile Include="Models\OperationRights.cs" />
+    <Compile Include="NavControlTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NavControlTest.Designer.cs">
+      <DependentUpon>NavControlTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridTestForm.Designer.cs">
+      <DependentUpon>GridTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CorporationType.cs" />
+    <Compile Include="Models\GenderType.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="QueryForms\EmployeeSearchFilter.cs" />
+    <Compile Include="QueryForms\GridCommandContext.cs" />
+    <Compile Include="QueryForms\GridWithFilterUC2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryForms\GridWithFilterUC2.Designer.cs">
+      <DependentUpon>GridWithFilterUC2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryForms\GridWithFilterUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryForms\GridWithFilterUC.Designer.cs">
+      <DependentUpon>GridWithFilterUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavPanelTestForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NavPanelTestForm.Designer.cs">
+      <DependentUpon>NavPanelTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ColumnRowKinds.cs" />
+    <Compile Include="QueryForms\IGridFunctions.cs" />
+    <Compile Include="QueryForms\ISearchFilterUC.cs" />
+    <Compile Include="QueryForms\SearchControlUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryForms\SearchControlUC.Designer.cs">
+      <DependentUpon>SearchControlUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Selectors\IValueSelector.cs" />
+    <Compile Include="Selectors\SelectWays.cs" />
+    <Compile Include="Selectors\SelectorCreater.cs" />
+    <Compile Include="Selectors\DeptSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Selectors\DeptSelector.Designer.cs">
+      <DependentUpon>DeptSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Selectors\SpinEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Selectors\SpinEditor.Designer.cs">
+      <DependentUpon>SpinEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Selectors\UserSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Selectors\UserSelector.Designer.cs">
+      <DependentUpon>UserSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryForms\ToolbarUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryForms\ToolbarUC.Designer.cs">
+      <DependentUpon>ToolbarUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryForms\TabMainForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryForms\TabMainForm3.Designer.cs">
+      <DependentUpon>TabMainForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryForms\TabMainForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryForms\TabMainForm2.Designer.cs">
+      <DependentUpon>TabMainForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsUiButtonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsUiButtonForm.Designer.cs">
+      <DependentUpon>WindowsUiButtonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackstageViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackstageViewForm.Designer.cs">
+      <DependentUpon>BackstageViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryForms\TabMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryForms\TabMainForm.Designer.cs">
+      <DependentUpon>TabMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlyoutPanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlyoutPanelForm.Designer.cs">
+      <DependentUpon>FlyoutPanelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Selectors\SelectorTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selectors\SelectorTest.Designer.cs">
+      <DependentUpon>SelectorTest.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConfigManageForm.resx">
+      <DependentUpon>ConfigManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutApp.resx">
+      <DependentUpon>frmAboutApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxForm.resx">
+      <DependentUpon>ListBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavControlTest.resx">
+      <DependentUpon>NavControlTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridTestForm.resx">
+      <DependentUpon>GridTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryForms\GridWithFilterUC2.resx">
+      <DependentUpon>GridWithFilterUC2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryForms\GridWithFilterUC.resx">
+      <DependentUpon>GridWithFilterUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NavPanelTestForm.resx">
+      <DependentUpon>NavPanelTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QueryForms\SearchControlUC.resx">
+      <DependentUpon>SearchControlUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selectors\DeptSelector.resx">
+      <DependentUpon>DeptSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selectors\SpinEditor.resx">
+      <DependentUpon>SpinEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selectors\UserSelector.resx">
+      <DependentUpon>UserSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryForms\ToolbarUC.resx">
+      <DependentUpon>ToolbarUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryForms\TabMainForm3.resx">
+      <DependentUpon>TabMainForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryForms\TabMainForm2.resx">
+      <DependentUpon>TabMainForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsUiButtonForm.resx">
+      <DependentUpon>WindowsUiButtonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackstageViewForm.resx">
+      <DependentUpon>BackstageViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryForms\TabMainForm.resx">
+      <DependentUpon>TabMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlyoutPanelForm.resx">
+      <DependentUpon>FlyoutPanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selectors\SelectorTest.resx">
+      <DependentUpon>SelectorTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yitusoft-LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynamicQuery\DynamicQuery.csproj">
+      <Project>{cddecf3a-2617-4243-8880-2e900833f096}</Project>
+      <Name>DynamicQuery</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_view_tile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagesetup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom100_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CommandSave16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

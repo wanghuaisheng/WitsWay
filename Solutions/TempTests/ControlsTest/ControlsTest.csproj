@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{260882EB-0192-4837-B4E8-566A960BCBAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WitsWay.TempTests.ControlsTest</RootNamespace>
+    <AssemblyName>WitsWay.TempTests.ControlsTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Drawing, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1" />
+    <Reference Include="DevExpress.XtraBars.v17.1" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v17.1" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Extensions, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Reporting.Extensions, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpellChecker.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WitsWay.Utilities">
+      <HintPath>..\..\Assemblies\DLL\WitsWay.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="WitsWay.Utilities.Win">
+      <HintPath>..\..\Assemblies\DLL\WitsWay.Utilities.Win.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Desktops\DesktopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Desktops\DesktopForm.Designer.cs">
+      <DependentUpon>DesktopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktops\DesktopUc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Desktops\DesktopUc.Designer.cs">
+      <DependentUpon>DesktopUc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorTests\PopupContainerEditTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorTests\PopupContainerEditTest.Designer.cs">
+      <DependentUpon>PopupContainerEditTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EmployeeStatus.cs" />
+    <Compile Include="Models\Sex.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EditorTests\LookupEditorTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorTests\LookupEditorTest.Designer.cs">
+      <DependentUpon>LookupEditorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorTests\SearchLookupEditorTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorTests\SearchLookupEditorTest.Designer.cs">
+      <DependentUpon>SearchLookupEditorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temps\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temps\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorTests\TreeListLookupEditorTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorTests\TreeListLookupEditorTest.Designer.cs">
+      <DependentUpon>TreeListLookupEditorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDiskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalDiskForm.designer.cs">
+      <DependentUpon>PersonalDiskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktops\Widgets\Calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Desktops\Widgets\Calendar.designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktops\Widgets\Clock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Desktops\Widgets\Clock.designer.cs">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktops\Widgets\ToDoList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Desktops\Widgets\ToDoList.designer.cs">
+      <DependentUpon>ToDoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temps\XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temps\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temps\XtraUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Temps\XtraUserControl1.Designer.cs">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temps\XtraUserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Temps\XtraUserControl2.Designer.cs">
+      <DependentUpon>XtraUserControl2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Desktops\DesktopForm.resx">
+      <DependentUpon>DesktopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktops\DesktopUc.resx">
+      <DependentUpon>DesktopUc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorTests\PopupContainerEditTest.resx">
+      <DependentUpon>PopupContainerEditTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="EditorTests\LookupEditorTest.resx">
+      <DependentUpon>LookupEditorTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorTests\SearchLookupEditorTest.resx">
+      <DependentUpon>SearchLookupEditorTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temps\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorTests\TreeListLookupEditorTest.resx">
+      <DependentUpon>TreeListLookupEditorTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalDiskForm.resx">
+      <DependentUpon>PersonalDiskForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktops\Widgets\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktops\Widgets\Clock.resx">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desktops\Widgets\ToDoList.resx">
+      <DependentUpon>ToDoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temps\XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temps\XtraUserControl1.resx">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temps\XtraUserControl2.resx">
+      <DependentUpon>XtraUserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-鼠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\彩色背景-002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\彩色背景-020.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yitusoft-LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddCondition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\And.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnyOf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BeginsWith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Between.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClearAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contains.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoesNotContain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoesNotEqual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipse-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EndsWith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equals.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Greater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreaterOrEqual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IsNotNull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IsNotNullOrEmpty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IsNull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IsNullOrEmpty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Less.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LessOrEqual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoneOf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotAnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotBetween.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotLike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotOr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Or.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Disk\attach-16x16.png" />
+    <Content Include="Resources\Disk\contact-16x16.png" />
+    <Content Include="Resources\Disk\Content.png" />
+    <Content Include="Resources\Disk\CopyLarge.png" />
+    <Content Include="Resources\Disk\CopyPathSmall.png" />
+    <Content Include="Resources\Disk\CopyToLarge.png" />
+    <Content Include="Resources\Disk\CutSmall.png" />
+    <Content Include="Resources\Disk\delete-16x16.png" />
+    <Content Include="Resources\Disk\DeleteLarge.png" />
+    <Content Include="Resources\Disk\DesktopSmall.png" />
+    <Content Include="Resources\Disk\DocumentsSmall.png" />
+    <Content Include="Resources\Disk\DownloadsSmall.png" />
+    <Content Include="Resources\Disk\EditSmall.png" />
+    <Content Include="Resources\Disk\ExtraLarge.png" />
+    <Content Include="Resources\Disk\FavoritesSmall.png" />
+    <Content Include="Resources\Disk\Forward.png" />
+    <Content Include="Resources\Disk\HelpSmall.png" />
+    <Content Include="Resources\Disk\HideSelectedItemsLarge.png" />
+    <Content Include="Resources\Disk\InvertSelectionSmall.png" />
+    <Content Include="Resources\Disk\Large.png" />
+    <Content Include="Resources\Disk\LibrarySmall.bmp" />
+    <Content Include="Resources\Disk\List2.png" />
+    <Content Include="Resources\Disk\Medium.png" />
+    <Content Include="Resources\Disk\MoveToLarge.png" />
+    <Content Include="Resources\Disk\MusicSmall.png" />
+    <Content Include="Resources\Disk\NavigationPaneLarge.png" />
+    <Content Include="Resources\Disk\NewFolderSmall.png" />
+    <Content Include="Resources\Disk\NewItemSmall.png" />
+    <Content Include="Resources\Disk\OpenSmall.png" />
+    <Content Include="Resources\Disk\OptionsLarge.png" />
+    <Content Include="Resources\Disk\PasteLarge.png" />
+    <Content Include="Resources\Disk\PropertiesLarge.bmp" />
+    <Content Include="Resources\Disk\properties_32x32.png" />
+    <Content Include="Resources\Disk\RecentPlacesSmall.png" />
+    <Content Include="Resources\Disk\RenameLarge.png" />
+    <Content Include="Resources\Disk\Reply.png" />
+    <Content Include="Resources\Disk\ReplyAll.png" />
+    <Content Include="Resources\Disk\sale-16x16.png" />
+    <Content Include="Resources\Disk\SelectedAllSmall.png" />
+    <Content Include="Resources\Disk\SelectedNoneSmall.png" />
+    <Content Include="Resources\Disk\Small.png" />
+    <Content Include="Resources\Disk\StandardSystemIco.ico" />
+    <Content Include="Resources\Disk\StandardSystemPng.png" />
+    <Content Include="Resources\Disk\StandardSystemStartBG.png" />
+    <Content Include="Resources\Disk\Tiles.png" />
+    <Content Include="Resources\Disk\Unknown-user.png" />
+    <Content Include="Resources\Disk\VideosSmall.png" />
+    <None Include="Resources\settings.svg" />
+    <None Include="Resources\viewsetting.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
