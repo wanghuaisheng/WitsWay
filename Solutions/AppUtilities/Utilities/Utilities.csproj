@@ -126,7 +126,6 @@
     <Compile Include="Daos\DaoAttribute.cs" />
     <Compile Include="Attributes\EnumFieldAttribute.Static.cs" />
     <Compile Include="Attributes\EnumFieldAttribute.cs" />
-    <Compile Include="Cast\ObjectMapper.cs" />
     <Compile Include="CheckSum\Adler32.cs" />
     <Compile Include="CheckSum\Crc32.cs" />
     <Compile Include="CheckSum\ICheckSum.cs" />

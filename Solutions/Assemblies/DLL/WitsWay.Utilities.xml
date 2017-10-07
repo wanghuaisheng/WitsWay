@@ -724,49 +724,6 @@
             </summary>
             <returns>EnumDisplayText</returns>
         </member>
-        <member name="T:WitsWay.Utilities.Cast.ObjectMapper">
-            <summary>
-            对象映射器类
-                用于将对象的属性值按名称映射到另外一个对象
-                
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Cast.ObjectMapper.Map``2(``0,System.Action{``0,``1})">
-            <summary>
-            获取指定类型的对象，并从源对象获取同名属性值
-            </summary>
-            <typeparam name="TSource">源对象类型</typeparam>
-            <typeparam name="TTarget">目标对象类型</typeparam>
-            <param name="sourceObject">源对象</param>
-            <param name="customeConvertAction">对实体执行的自定义操作，不应该有对模型的修改代码</param>
-            <returns>目标对象</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Cast.ObjectMapper.Map``2(System.Collections.Generic.IEnumerable{``0},System.Action{``0,``1})">
-            <summary>
-            获取指定类型的对象的列表，并从源列表中对象获取同名属性值
-            </summary>
-            <typeparam name="TSource">源对象类型</typeparam>
-            <typeparam name="TTarget">目标对象类型</typeparam>
-            <param name="sourceObjectList">源对象列表</param>
-            <param name="customeConvertAction">对实体执行的自定义操作，不应该有对模型的修改代码</param>
-            <returns>目标对象列表</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Cast.ObjectMapper.ConvertObject``2(System.Object)">
-            <summary>
-            获取指定类型的对象，并从源对象获取同名属性值
-            </summary>
-            <typeparam name="TSource">源对象类型</typeparam>
-            <typeparam name="TTarget">目标对象类型</typeparam>
-            <param name="sourceObject">源对象</param>
-            <returns>目标对象</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Cast.ObjectMapper.GetOrCreatePropertiesDictionary(System.Type)">
-            <summary>
-            从字典中获取指定类型的属性列表，如果不存在则创建
-            </summary>
-            <param name="sourceType">指定类型</param>
-            <returns>所有属性列表</returns>
-        </member>
         <member name="T:WitsWay.Utilities.Compare.CompareObjects">
              <summary>
              Class that allows comparison of two objects of the same type to each other.  Supports classes, lists, arrays, dictionaries, child comparison and more.
@@ -1930,22 +1887,22 @@
             分页参数
             </summary>
         </member>
-        <member name="T:WitsWay.Utilities.Entitys.BulkInsertResult">
+        <member name="T:WitsWay.Utilities.Entitys.SqlBulkResult">
             <summary>
             批量插入结果
             </summary>
         </member>
-        <member name="P:WitsWay.Utilities.Entitys.BulkInsertResult.MaxIdentity">
+        <member name="P:WitsWay.Utilities.Entitys.SqlBulkResult.MaxIdentity">
             <summary>
             最大自增Id
             </summary>
         </member>
-        <member name="P:WitsWay.Utilities.Entitys.BulkInsertResult.RowCount">
+        <member name="P:WitsWay.Utilities.Entitys.SqlBulkResult.RowCount">
             <summary>
             行数
             </summary>
         </member>
-        <member name="P:WitsWay.Utilities.Entitys.BulkInsertResult.Item(System.Int32)">
+        <member name="P:WitsWay.Utilities.Entitys.SqlBulkResult.Item(System.Int32)">
             <summary>
             取得对应索引的Id，从0开始
             </summary>
@@ -4709,6 +4666,18 @@
             <summary>
             日期类型的扩展方法
             </summary>
+            <remarks>
+            SQL Server 2008除了DateTime和SmallDateTime之外，又新增了四种时间类型，分别为：date，time，datetime2和datetimeoffset。
+            各时间类型范围、精度一览表：
+            数据类型 时间范围 精度
+            datetime 1753-01-01到9999-12-31 00:00:00 到 23:59:59.997 3.33毫秒
+            smalldatetime 1900-01-01 到 2079-06-06 00:00:00 到 23:59:59 分钟
+            date 0001-01-01 到 9999-12-31 天
+            time 00:00:00.0000000 到 23:59:59.9999999 100 纳秒
+            datetime2 0001-01-01 到 9999-12-31 00:00:00 到 23:59:59.9999999 100 纳秒
+            datetimeoffset 0001-01-01 到 9999-12-31 00:00:00 到 23:59:59.9999999 -14:00 到 +14:00 100 纳秒
+            各时间类型表达式一览表： 数据类型 输出 time 12:35:29. 1234567 date 2007-05-08 smalldatetime 2007-05-08 12:35:00 datetime 2007-05-08 12:35:29.123 datetime2 2007-05-08 12:35:29. 1234567 datetimeoffset 2007-05-08 12:35:29.1234567 +12:15
+            </remarks>
         </member>
         <member name="F:WitsWay.Utilities.Extends.DateTimeExtends.MinSqlServerDateTime">
             <summary>

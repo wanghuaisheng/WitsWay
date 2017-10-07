@@ -1,21 +1,40 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 
 namespace WitsWay.Utilities.Validate.Validators
 {
     /// <summary>
-    /// ÑéÖ¤Æ÷»ùÀà
+    /// éªŒè¯å™¨åŸºç±»
     /// </summary>
-    /// <typeparam name="TValidator">ÑéÖ¤Æ÷</typeparam>
-    /// <typeparam name="TValue">ÑéÖ¤ÖµÀàĞÍ</typeparam>
+    /// <typeparam name="TValidator">éªŒè¯å™¨</typeparam>
+    /// <typeparam name="TValue">éªŒè¯å€¼ç±»å‹</typeparam>
     public abstract class ValidatorBase<TValidator, TValue> where TValidator : ValidatorBase<TValidator, TValue>
     {
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="value">Öµ</param>
-        /// <param name="fieldName">ÑéÖ¤×Ö¶Î</param>
-        /// <param name="validatorObj">ÑéÖ¤Æ÷</param>
+        /// <param name="value">å€¼</param>
+        /// <param name="fieldName">éªŒè¯å­—æ®µ</param>
+        /// <param name="validatorObj">éªŒè¯å™¨</param>
         protected ValidatorBase( string fieldName, TValue value,Validator validatorObj)
         {
             Value = value;
@@ -24,22 +43,22 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ÑéÖ¤Öµ
+        /// éªŒè¯å€¼
         /// </summary>
         public TValue Value { get; set; }
 
         /// <summary>
-        /// ÑéÖ¤×Ö¶Î
+        /// éªŒè¯å­—æ®µ
         /// </summary>
         public string FieldName { get; private set; }
 
         /// <summary>
-        /// ÑéÖ¤Æ÷
+        /// éªŒè¯å™¨
         /// </summary>
         protected Validator ValidatorObj { get; set; }
 
         /// <summary>
-        /// ÉèÖÃÑéÖ¤½á¹û
+        /// è®¾ç½®éªŒè¯ç»“æœ
         /// </summary>
         /// <param name="pass"></param>
         /// <param name="errorMsg"></param>
@@ -50,10 +69,10 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ×Ô¶¨ÒåÑéÖ¤
+        /// è‡ªå®šä¹‰éªŒè¯
         /// </summary>
-        /// <param name="predicate">Predicate¡¶TValue¡·Î¯ÍĞ£¬ÊäÈëTValueÀàĞÍ£¬·µ»Øbool</param>
-        /// <param name="errorMsg">ÑéÖ¤´íÎóÏûÏ¢</param>
+        /// <param name="predicate">Predicateã€ŠTValueã€‹å§”æ‰˜ï¼Œè¾“å…¥TValueç±»å‹ï¼Œè¿”å›bool</param>
+        /// <param name="errorMsg">éªŒè¯é”™è¯¯æ¶ˆæ¯</param>
         /// <returns></returns>
         public TValidator Is(Predicate<TValue> predicate, string errorMsg)
         {

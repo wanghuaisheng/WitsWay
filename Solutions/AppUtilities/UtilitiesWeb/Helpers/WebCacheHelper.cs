@@ -1,8 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
 /******************************************
- * 2012Äê5ÔÂ3ÈÕ Íõ»³Éú Ìí¼Ó
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
  * 
  * ***************************************/
-
+#endregion
 using System;
 using System.Web;
 using System.Web.Caching;
@@ -10,13 +24,13 @@ using System.Web.Caching;
 namespace WitsWay.Utilities.Web.Helpers
 {
 	/// <summary>
-	/// Web»º´æ¸¨ÖúÀà
+	/// Webç¼“å­˜è¾…åŠ©ç±»
 	/// </summary>
 	public class WebCacheHelper
 	{
 
 		/// <summary>
-		/// Çå³ıÏµÍ³ËùÓĞ»º´æ
+		/// æ¸…é™¤ç³»ç»Ÿæ‰€æœ‰ç¼“å­˜
 		/// </summary>
 		public static void ClearAllCache() 
 		{
@@ -32,7 +46,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 		
 		/// <summary>
-		/// Çå³ıkey¶ÔÓ¦µÄ»º´æ
+		/// æ¸…é™¤keyå¯¹åº”çš„ç¼“å­˜
 		/// </summary>
 		/// <param name="key">Key</param>
 		public static void ClearCacheItem(string key) 
@@ -41,16 +55,16 @@ namespace WitsWay.Utilities.Web.Helpers
 			{
 				HttpRuntime.Cache.Remove(key);
 #if DEBUG
-				HttpContext.Current.Trace.Warn("Cache", "»º´æÏî " + key + " ÒÆ³ı");
+				HttpContext.Current.Trace.Warn("Cache", "ç¼“å­˜é¡¹ " + key + " ç§»é™¤");
 #endif
 			}
 		}
 		
 		
 		/// <summary>
-		/// ÒÆ³ı¶ÔÓ¦ÀàĞÍµÄËùÓĞ»º´æ
+		/// ç§»é™¤å¯¹åº”ç±»å‹çš„æ‰€æœ‰ç¼“å­˜
 		/// </summary>
-		/// <param name="typeName">¶ÔÏóÀàĞÍ</param>
+		/// <param name="typeName">å¯¹è±¡ç±»å‹</param>
 		public static void ClearCacheObjectTypes(string typeName) 
 		{
 			Cache c = HttpRuntime.Cache;
@@ -78,9 +92,9 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
         /// <summary>
-        /// Çå³ıËùÓĞÇ°×ºÎªprefixµÄ»º´æ
+        /// æ¸…é™¤æ‰€æœ‰å‰ç¼€ä¸ºprefixçš„ç¼“å­˜
         /// </summary>
-        /// <param name="prefix">»º´æKeyµÄÇ°×º</param>
+        /// <param name="prefix">ç¼“å­˜Keyçš„å‰ç¼€</param>
         public static void ClearCacheByKeySearch(string prefix)
         {
             Cache c = HttpRuntime.Cache;
@@ -98,9 +112,9 @@ namespace WitsWay.Utilities.Web.Helpers
 
         }
         /// <summary>
-        /// È¡µÃ»º´æÏî
+        /// å–å¾—ç¼“å­˜é¡¹
         /// </summary>
-        /// <param name="cacheKey">»º´ækey</param>
+        /// <param name="cacheKey">ç¼“å­˜key</param>
         /// <returns></returns>
         public static object GetCacheItem(string cacheKey)
         {
@@ -108,13 +122,13 @@ namespace WitsWay.Utilities.Web.Helpers
         }
 
         /// <summary>
-        /// È¡µÃ»º´æÏî
+        /// å–å¾—ç¼“å­˜é¡¹
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="cacheKey">»º´æÖ÷¼ü</param>
-        /// <param name="syncLock">Í¬²½Ëø</param>
-        /// <param name="timeout">³¬Ê±Ê±¼ä</param>
-        /// <param name="func">»ñÈ¡»º´æ»Øµ÷º¯Êı</param>
+        /// <param name="cacheKey">ç¼“å­˜ä¸»é”®</param>
+        /// <param name="syncLock">åŒæ­¥é”</param>
+        /// <param name="timeout">è¶…æ—¶æ—¶é—´</param>
+        /// <param name="func">è·å–ç¼“å­˜å›è°ƒå‡½æ•°</param>
         /// <returns></returns>
 		public static T GetCacheItem<T>(string cacheKey, object syncLock,
 			TimeSpan timeout, Func<T> func)
@@ -123,14 +137,14 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
         /// <summary>
-        /// È¡µÃ»º´æÏî
+        /// å–å¾—ç¼“å­˜é¡¹
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="cacheKey">»º´æÖ÷¼ü</param>
-        /// <param name="syncLock">Í¬²½Ëø</param>
-        /// <param name="timeout">³¬Ê±Ê±¼ä</param>
-        /// <param name="func">»ñÈ¡»º´æ»Øµ÷º¯Êı</param>
-        /// <param name="refreshAction">»º´æÏîÒÆ³ı»Øµ÷</param>
+        /// <param name="cacheKey">ç¼“å­˜ä¸»é”®</param>
+        /// <param name="syncLock">åŒæ­¥é”</param>
+        /// <param name="timeout">è¶…æ—¶æ—¶é—´</param>
+        /// <param name="func">è·å–ç¼“å­˜å›è°ƒå‡½æ•°</param>
+        /// <param name="refreshAction">ç¼“å­˜é¡¹ç§»é™¤å›è°ƒ</param>
         /// <returns></returns>
 		public static T GetCacheItem<T>(string cacheKey, object syncLock,
 			CacheItemRemovedCallback refreshAction, TimeSpan timeout,
@@ -140,15 +154,15 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
         /// <summary>
-        /// È¡µÃ»º´æÏî
+        /// å–å¾—ç¼“å­˜é¡¹
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="cacheKey">»º´æÖ÷¼ü</param>
-        /// <param name="syncLock">Í¬²½Ëø</param>
-        /// <param name="timeout">³¬Ê±Ê±¼ä</param>
-        /// <param name="func">»ñÈ¡»º´æ»Øµ÷º¯Êı</param>
-        /// <param name="refreshAction">»º´æÏîÒÆ³ı»Øµ÷</param>
-        /// <param name="priority">»º´æÓÅÏÈ¼¶</param>
+        /// <param name="cacheKey">ç¼“å­˜ä¸»é”®</param>
+        /// <param name="syncLock">åŒæ­¥é”</param>
+        /// <param name="timeout">è¶…æ—¶æ—¶é—´</param>
+        /// <param name="func">è·å–ç¼“å­˜å›è°ƒå‡½æ•°</param>
+        /// <param name="refreshAction">ç¼“å­˜é¡¹ç§»é™¤å›è°ƒ</param>
+        /// <param name="priority">ç¼“å­˜ä¼˜å…ˆçº§</param>
         /// <returns></returns>
 		public static T GetCacheItem<T>(string cacheKey, object syncLock,
 			CacheItemPriority priority, CacheItemRemovedCallback refreshAction, TimeSpan timeout,
@@ -158,16 +172,16 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
         /// <summary>
-        /// È¡µÃ»º´æÏî
+        /// å–å¾—ç¼“å­˜é¡¹
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="cacheKey">»º´æÖ÷¼ü</param>
-        /// <param name="syncLock">Í¬²½Ëø</param>
-        /// <param name="timeout">³¬Ê±Ê±¼ä</param>
-        /// <param name="func">»ñÈ¡»º´æ»Øµ÷º¯Êı</param>
-        /// <param name="refreshAction">»º´æÏîÒÆ³ı»Øµ÷</param>
-        /// <param name="priority">»º´æÓÅÏÈ¼¶</param>
-        /// <param name="cacheDependency">»º´æÒÀÀµÏî</param>
+        /// <param name="cacheKey">ç¼“å­˜ä¸»é”®</param>
+        /// <param name="syncLock">åŒæ­¥é”</param>
+        /// <param name="timeout">è¶…æ—¶æ—¶é—´</param>
+        /// <param name="func">è·å–ç¼“å­˜å›è°ƒå‡½æ•°</param>
+        /// <param name="refreshAction">ç¼“å­˜é¡¹ç§»é™¤å›è°ƒ</param>
+        /// <param name="priority">ç¼“å­˜ä¼˜å…ˆçº§</param>
+        /// <param name="cacheDependency">ç¼“å­˜ä¾èµ–é¡¹</param>
         /// <returns></returns>
 		public static T GetCacheItem<T>(string cacheKey, object syncLock,
 			CacheItemPriority priority, CacheItemRemovedCallback refreshAction,

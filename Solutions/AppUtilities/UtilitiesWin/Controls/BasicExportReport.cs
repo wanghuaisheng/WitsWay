@@ -1,3 +1,22 @@
+Ôªø#region License(Apache Version 2.0)
+/******************************************
+ * Copyright ¬Æ2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 using System.ComponentModel;
 using System.Drawing;
@@ -10,7 +29,7 @@ namespace WitsWay.Utilities.Win.Controls
 {
 
     /// <summary>
-    /// ª˘±æµº≥ˆ±®±Ì
+    /// Âü∫Êú¨ÂØºÂá∫Êä•Ë°®
     /// </summary>
     public partial class BasicExportReport : XtraReport
     {
@@ -23,7 +42,7 @@ namespace WitsWay.Utilities.Win.Controls
         }
 
         /// <summary>
-        /// ≥ı ºªØµº≥ˆ±®±Ì
+        /// ÂàùÂßãÂåñÂØºÂá∫Êä•Ë°®
         /// </summary>
         /// <param name="model"></param>
         public void InitReport<T>(BasicExportModel<T> model) where T:class
@@ -140,7 +159,7 @@ namespace WitsWay.Utilities.Win.Controls
 
         private void ReportBasicSetting<T>(BasicExportModel<T> model) where T : class
         {
-            DisplayName = $"µº≥ˆ{model.TextTitle}";
+            DisplayName = $"ÂØºÂá∫{model.TextTitle}";
             Margins = new Margins(20, 20, 30, 30);
             PageHeight = 1169;
             PageWidth = 827;

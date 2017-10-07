@@ -1,8 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
 /******************************************
- * 2012Äê4ÔÂ25ÈÕ Íõ»³Éú Ìí¼Ó
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
  * 
  * ***************************************/
-
+#endregion
 using System;
 using System.Collections.Specialized;
 using System.Web;
@@ -10,7 +24,7 @@ using System.Web;
 namespace WitsWay.Utilities.Web.Helpers
 {
 	/// <summary>
-	/// Cookies¸¨ÖúÀà
+	/// Cookiesè¾…åŠ©ç±»
 	/// </summary>
 	public static class CookieHelper
     {
@@ -18,11 +32,11 @@ namespace WitsWay.Utilities.Web.Helpers
         #region [Exists]
 
         /// <summary>
-		/// ¼ì²éÊÇ·ñ´æÔÚCookie
+		/// æ£€æŸ¥æ˜¯å¦å­˜åœ¨Cookie
 		/// </summary>
-		/// <param name="httpContext">HttpÇëÇóÉÏÏÂÎÄ</param>
-		/// <param name="cookieName">CooKieÃû³Æ</param>
-		/// <returns>´æÔÚtrue£¬²»´æÔÚfalse</returns>
+		/// <param name="httpContext">Httpè¯·æ±‚ä¸Šä¸‹æ–‡</param>
+		/// <param name="cookieName">CooKieåç§°</param>
+		/// <returns>å­˜åœ¨trueï¼Œä¸å­˜åœ¨false</returns>
 		public static bool Exists(HttpContext httpContext, string cookieName)
 		{
             if (httpContext == null) throw new ArgumentException("httpContext");
@@ -35,7 +49,7 @@ namespace WitsWay.Utilities.Web.Helpers
         #region [Create]
 
         /// <summary>
-        /// ´´½¨Cookie£¬Î´±£´æµ½ResponseÏìÓ¦Á÷
+        /// åˆ›å»ºCookieï¼Œæœªä¿å­˜åˆ°Responseå“åº”æµ
 		/// </summary>
 		/// <param name="cookieName"></param>
 		/// <returns></returns>
@@ -49,7 +63,7 @@ namespace WitsWay.Utilities.Web.Helpers
 
 
 		/// <summary>
-        /// ´´½¨Cookie£¬Î´±£´æµ½ResponseÏìÓ¦Á÷
+        /// åˆ›å»ºCookieï¼Œæœªä¿å­˜åˆ°Responseå“åº”æµ
 		/// </summary>
 		/// <param name="cookieName"></param>
 		/// <param name="cookieValue"></param>
@@ -63,7 +77,7 @@ namespace WitsWay.Utilities.Web.Helpers
 
 
 		/// <summary>
-        /// ´´½¨Cookie£¬Î´±£´æµ½ResponseÏìÓ¦Á÷
+        /// åˆ›å»ºCookieï¼Œæœªä¿å­˜åˆ°Responseå“åº”æµ
 		/// </summary>
 		/// <param name="cookieName"></param>
 		/// <param name="cookieValues"></param>
@@ -83,7 +97,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		#region [Save]
 
 		/// <summary>
-		/// ±£´æCookieµ½ResponseÏìÓ¦Á÷
+		/// ä¿å­˜Cookieåˆ°Responseå“åº”æµ
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieToSave"></param>
@@ -96,7 +110,7 @@ namespace WitsWay.Utilities.Web.Helpers
 
 
 		/// <summary>
-        /// ±£´æCookieµ½ResponseÏìÓ¦Á÷
+        /// ä¿å­˜Cookieåˆ°Responseå“åº”æµ
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieToSave"></param>
@@ -114,7 +128,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		#region [CreateAndSave]
 
 		/// <summary>
-		/// ´´½¨²¢±£´æCookieµ½ÏìÓ¦Á÷
+		/// åˆ›å»ºå¹¶ä¿å­˜Cookieåˆ°å“åº”æµ
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -128,7 +142,7 @@ namespace WitsWay.Utilities.Web.Helpers
 
 
 		/// <summary>
-        ///´´½¨²¢±£´æCookieµ½ÏìÓ¦Á÷£¬100Äê¹ıÆÚ
+        ///åˆ›å»ºå¹¶ä¿å­˜Cookieåˆ°å“åº”æµï¼Œ100å¹´è¿‡æœŸ
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -143,7 +157,7 @@ namespace WitsWay.Utilities.Web.Helpers
 
 
 		/// <summary>
-        /// ´´½¨²¢±£´æCookieµ½ÏìÓ¦Á÷
+        /// åˆ›å»ºå¹¶ä¿å­˜Cookieåˆ°å“åº”æµ
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -158,7 +172,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-        ///´´½¨²¢±£´æCookieµ½ÏìÓ¦Á÷£¬100Äê¹ıÆÚ
+        ///åˆ›å»ºå¹¶ä¿å­˜Cookieåˆ°å“åº”æµï¼Œ100å¹´è¿‡æœŸ
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -172,7 +186,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-        /// ´´½¨²¢±£´æCookieµ½ÏìÓ¦Á÷
+        /// åˆ›å»ºå¹¶ä¿å­˜Cookieåˆ°å“åº”æµ
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -191,7 +205,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		#region [Expire]
 
 		/// <summary>
-		/// ¹ıÆÚCookie£¬²¢Ğ´Èëµ±Ç°ÏìÓ¦Á÷
+		/// è¿‡æœŸCookieï¼Œå¹¶å†™å…¥å½“å‰å“åº”æµ
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieToExpire"></param>
@@ -210,7 +224,7 @@ namespace WitsWay.Utilities.Web.Helpers
 
 
 		/// <summary>
-        /// ¹ıÆÚCookie£¬²¢Ğ´Èëµ±Ç°ÏìÓ¦Á÷
+        /// è¿‡æœŸCookieï¼Œå¹¶å†™å…¥å½“å‰å“åº”æµ
 		/// </summary>
         /// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -229,7 +243,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		#region [SetValue]
 
 		/// <summary>
-		/// ÉèÖÃCookieÖµ
+		/// è®¾ç½®Cookieå€¼
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -247,7 +261,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-        /// ÉèÖÃCookieÖµ
+        /// è®¾ç½®Cookieå€¼
 		/// </summary>
 		/// <param name="cookie"></param>
 		/// <param name="cookieValue"></param>
@@ -265,7 +279,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-        /// ÉèÖÃCookieÖµ
+        /// è®¾ç½®Cookieå€¼
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="name"></param>
@@ -285,7 +299,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-        /// ÉèÖÃCookieÖµ
+        /// è®¾ç½®Cookieå€¼
 		/// </summary>
 		/// <param name="cookie"></param>
 		/// <param name="key"></param>
@@ -303,7 +317,7 @@ namespace WitsWay.Utilities.Web.Helpers
         #region [GetValue]
 
         /// <summary>
-		/// »ñÈ¡CookieÖµ
+		/// è·å–Cookieå€¼
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -327,7 +341,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-        /// »ñÈ¡CookieÖµ
+        /// è·å–Cookieå€¼
 		/// </summary>
 		/// <param name="cookie"></param>
 		/// <returns></returns>
@@ -341,7 +355,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-		/// »ñÈ¡CookieÖµ¼¯ºÏ
+		/// è·å–Cookieå€¼é›†åˆ
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -365,7 +379,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-        /// »ñÈ¡CookieÖµ¼¯ºÏ
+        /// è·å–Cookieå€¼é›†åˆ
 		/// </summary>
 		/// <param name="cookie"></param>
 		/// <returns></returns>
@@ -379,7 +393,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-        /// »ñÈ¡CookieÖµ
+        /// è·å–Cookieå€¼
 		/// </summary>
 		/// <param name="httpContext"></param>
 		/// <param name="cookieName"></param>
@@ -412,7 +426,7 @@ namespace WitsWay.Utilities.Web.Helpers
 		}
 
 		/// <summary>
-        /// »ñÈ¡CookieÖµ
+        /// è·å–Cookieå€¼
 		/// </summary>
 		/// <param name="cookie"></param>
 		/// <param name="key"></param>

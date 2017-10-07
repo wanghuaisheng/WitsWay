@@ -1,47 +1,66 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 namespace WitsWay.Utilities.CheckSum
 {
 	/// <summary>
-	/// Ğ£Ñé½Ó¿Ú
+	/// æ ¡éªŒæ¥å£
 	/// </summary>
 	public interface ICheckSum
 	{
 		/// <summary>
-		/// Ğ£ÑéÖµ
+		/// æ ¡éªŒå€¼
 		/// </summary>
 		long Value{get;}
 
 		/// <summary>
-		/// ÖØÖÃ
+		/// é‡ç½®
 		/// </summary>
 		void Reset();
 
 		/// <summary>
-		/// Ìí¼ÓĞ£ÑéÖµ
+		/// æ·»åŠ æ ¡éªŒå€¼
 		/// </summary>
 		/// <param name = "value">
-		/// ÒªÌí¼ÓµÄĞ£ÑéÖµ£¬¸ßÎ»ºöÂÔ
+		/// è¦æ·»åŠ çš„æ ¡éªŒå€¼ï¼Œé«˜ä½å¿½ç•¥
 		/// </param>
 		void Update(int value);
 
 		/// <summary>
-		/// ¸üĞÂĞ£ÑéÖµ
+		/// æ›´æ–°æ ¡éªŒå€¼
 		/// </summary>
 		/// <param name="buffer">
-		/// ×Ö½ÚÊı×é
+		/// å­—èŠ‚æ•°ç»„
 		/// </param>
 		void Update(byte[] buffer);
 
 		/// <summary>
-		/// Ìí¼ÓĞ£Ñé×Ö½ÚÊı×é
+		/// æ·»åŠ æ ¡éªŒå­—èŠ‚æ•°ç»„
 		/// </summary>
 		/// <param name = "buffer">
-		/// ×Ö½ÚÊı×é
+		/// å­—èŠ‚æ•°ç»„
 		/// </param>
 		/// <param name = "offset">
-		/// ×óÆ«ÒÆÁ¿
+		/// å·¦åç§»é‡
 		/// </param>
 		/// <param name = "count">
-		/// ÓÃÓÚ¼ÆËãµÄ×Ö½Ú³¤¶È
+		/// ç”¨äºè®¡ç®—çš„å­—èŠ‚é•¿åº¦
 		/// </param>
 		void Update(byte[] buffer, int offset, int count);
 	}

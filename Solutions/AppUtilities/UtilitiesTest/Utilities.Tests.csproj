@@ -137,7 +137,7 @@
     <Compile Include="Utilities\Extents\ObjectExtendsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Others\ExpressionEvaluationTest.cs" />
-    <Compile Include="Utilities\Attributes\EnumDescriptionTests.cs" />
+    <Compile Include="Utilities\Attributes\EnumFieldAttributeTests.cs" />
     <Compile Include="Utilities\Helpers\CollectionHelperTests.cs" />
     <Compile Include="Utilities\Helpers\ComputerHelperTests.cs" />
     <Compile Include="Utilities\Helpers\EncryptDecryptHelperTests.cs" />

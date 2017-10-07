@@ -1,9 +1,28 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 
 namespace WitsWay.Utilities.CheckSum
 {
 	/// <summary>
-	/// Bzip2Ğ£ÑéËã·¨
+	/// Bzip2æ ¡éªŒç®—æ³•
 	/// </summary>
 	public class StrangeCrc : ICheckSum
 	{
@@ -77,7 +96,7 @@ namespace WitsWay.Utilities.CheckSum
 	    private int _globalCrc;
 
 		/// <summary>
-		/// ³õÊ¼»¯ <see cref="StrangeCrc"></see>ÊµÀı
+		/// åˆå§‹åŒ– <see cref="StrangeCrc"></see>å®ä¾‹
 		/// </summary>	
 		public StrangeCrc()
 		{
@@ -85,7 +104,7 @@ namespace WitsWay.Utilities.CheckSum
 		}
 
 		/// <summary>
-		/// ÖØÖÃCrcĞ£ÑéÖµ
+		/// é‡ç½®Crcæ ¡éªŒå€¼
 		/// </summary>
 		public void Reset()
 		{
@@ -93,7 +112,7 @@ namespace WitsWay.Utilities.CheckSum
 		}
 
 		/// <summary>
-		/// »ñÈ¡CRCĞ£ÑéÖµ
+		/// è·å–CRCæ ¡éªŒå€¼
 		/// </summary>
 		public long Value
 		{
@@ -104,10 +123,10 @@ namespace WitsWay.Utilities.CheckSum
 		}
 
 		/// <summary>
-		/// Ìí¼ÓĞ£ÑéÖµ
+		/// æ·»åŠ æ ¡éªŒå€¼
 		/// </summary>
 		/// <param name = "value">
-		/// ÒªÌí¼ÓµÄĞ£ÑéÖµ£¬¸ßÎ»ºöÂÔ
+		/// è¦æ·»åŠ çš„æ ¡éªŒå€¼ï¼Œé«˜ä½å¿½ç•¥
 		/// </param>
 		public void Update(int value)
 		{
@@ -121,10 +140,10 @@ namespace WitsWay.Utilities.CheckSum
 
 
 		/// <summary>
-		/// ¸üĞÂĞ£ÑéÖµ
+		/// æ›´æ–°æ ¡éªŒå€¼
 		/// </summary>
 		/// <param name="buffer">
-		/// ×Ö½ÚÊı×é
+		/// å­—èŠ‚æ•°ç»„
 		/// </param>
 		public void Update(byte[] buffer)
 		{
@@ -137,16 +156,16 @@ namespace WitsWay.Utilities.CheckSum
 		}
 
 		/// <summary>
-		/// ¸üĞÂCRCĞ£ÑéÖµ
+		/// æ›´æ–°CRCæ ¡éªŒå€¼
 		/// </summary>
 		/// <param name = "buffer">
-		/// ×Ö½ÚÊı×é
+		/// å­—èŠ‚æ•°ç»„
 		/// </param>
 		/// <param name = "offset">
-		/// ×óÆ«ÒÆÁ¿
+		/// å·¦åç§»é‡
 		/// </param>
 		/// <param name = "count">
-		/// ÓÃÓÚ¼ÆËãµÄ×Ö½Ú³¤¶È
+		/// ç”¨äºè®¡ç®—çš„å­—èŠ‚é•¿åº¦
 		/// </param>
 		public void Update(byte[] buffer, int offset, int count)
 		{

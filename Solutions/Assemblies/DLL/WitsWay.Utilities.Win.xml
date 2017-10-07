@@ -1722,21 +1722,6 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="T:WitsWay.Utilities.Win.DevSkinEnum">
-            <summary>
-            Dev皮肤枚举
-            </summary>
-        </member>
-        <member name="F:WitsWay.Utilities.Win.DevSkinEnum.Custom_Office_2010_Blue">
-            <summary>
-            Custom Office 2010 Blue
-            </summary>
-        </member>
-        <member name="F:WitsWay.Utilities.Win.DevSkinEnum.Office_2007_Blue">
-            <summary>
-            Office 2007 Blue
-            </summary>
-        </member>
         <member name="T:WitsWay.Utilities.Win.Extends.GridViewExtends">
             <summary>
             XtraGrid辅助类

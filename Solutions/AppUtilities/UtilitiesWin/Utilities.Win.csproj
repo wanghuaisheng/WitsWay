@@ -166,7 +166,6 @@
     <Compile Include="Controls\SplashForm2.Designer.cs">
       <DependentUpon>SplashForm2.cs</DependentUpon>
     </Compile>
-    <Compile Include="DevSkinEnum.cs" />
     <Compile Include="Extends\GridViewExtends.Tag.cs" />
     <Compile Include="Extends\TreeListNodeExtends.cs" />
     <Compile Include="Extends\ControlExtends.cs" />

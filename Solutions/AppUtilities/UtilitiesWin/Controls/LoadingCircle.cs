@@ -1,8 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
 /******************************************
- * 2012Äê7ÔÂ18ÈÕ Íõ»³Éú Ìí¼Ó
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
  * 
  * ***************************************/
-
+#endregion
 using System;
 using System.ComponentModel;
 using System.Drawing;
@@ -12,27 +26,27 @@ using System.Windows.Forms;
 namespace WitsWay.Utilities.Win.Controls
 {
     /// <summary>
-    /// Loading¿Ø¼ş
+    /// Loadingæ§ä»¶
     /// </summary>
     public class LoadingCircle : Control
     {
         /// <summary>
-        /// Loading¿Ø¼şÑùÊ½
+        /// Loadingæ§ä»¶æ ·å¼
         /// </summary>
         public class LoadingCircleStyle
         {
             /// <summary>
-            ///  Loading¿Ø¼şÑùÊ½
+            ///  Loadingæ§ä»¶æ ·å¼
             /// </summary>
             public LoadingCircleStyle() { }
             /// <summary>
-            ///  Loading¿Ø¼şÑùÊ½
+            ///  Loadingæ§ä»¶æ ·å¼
             /// </summary>
-            /// <param name="innerCircleRadius">ÄÚ°ë¾¶</param>
-            /// <param name="outerCircleRadius">Íâ°ë¾¶</param>
-            /// <param name="numberSpoke">µãÊı</param>
-            /// <param name="spokeThickness">µãºñ¶È</param>
-            /// <param name="circleColor">Ô²È¦ÑÕÉ«</param>
+            /// <param name="innerCircleRadius">å†…åŠå¾„</param>
+            /// <param name="outerCircleRadius">å¤–åŠå¾„</param>
+            /// <param name="numberSpoke">ç‚¹æ•°</param>
+            /// <param name="spokeThickness">ç‚¹åšåº¦</param>
+            /// <param name="circleColor">åœ†åœˆé¢œè‰²</param>
             public LoadingCircleStyle(int innerCircleRadius, int outerCircleRadius, int numberSpoke, int spokeThickness, Color circleColor)
             {
                 InnerCircleRadius = innerCircleRadius;
@@ -42,30 +56,30 @@ namespace WitsWay.Utilities.Win.Controls
                 CircleColor = circleColor;
             }
             /// <summary>
-            /// ÄÚ°ë¾¶
+            /// å†…åŠå¾„
             /// </summary>
             public int InnerCircleRadius { get; set; }
             /// <summary>
-            /// Íâ°ë¾¶
+            /// å¤–åŠå¾„
             /// </summary>
             public int OuterCircleRadius { get; set; }
             /// <summary>
-            /// µãÊı
+            /// ç‚¹æ•°
             /// </summary>
             public int NumberSpoke { get; set; }
 
             /// <summary>
-            /// µãºñ¶È
+            /// ç‚¹åšåº¦
             /// </summary>
             public int SpokeThickness { get; set; }
             /// <summary>
-            /// Ô²È¦ÑÕÉ«
+            /// åœ†åœˆé¢œè‰²
             /// </summary>
             public Color CircleColor { get; set; }
 
             private bool _enable = true;
             /// <summary>
-            /// ÊÇ·ñ¿ÉÓÃ
+            /// æ˜¯å¦å¯ç”¨
             /// </summary>
             public bool Enabled
             {
@@ -75,7 +89,7 @@ namespace WitsWay.Utilities.Win.Controls
 
             private bool _active = true;
             /// <summary>
-            /// ÊÇ·ñ¼¤»î
+            /// æ˜¯å¦æ¿€æ´»
             /// </summary>
             public bool Active
             {
@@ -84,7 +98,7 @@ namespace WitsWay.Utilities.Win.Controls
             }
             Color _backColor = Color.Transparent;
             /// <summary>
-            /// ±³¾°É«
+            /// èƒŒæ™¯è‰²
             /// </summary>
             public Color BackColor
             {
@@ -99,7 +113,7 @@ namespace WitsWay.Utilities.Win.Controls
             }
             int _rotationSpeed = 120;
             /// <summary>
-            /// Ğı×ªËÙ¶È
+            /// æ—‹è½¬é€Ÿåº¦
             /// </summary>
             public int RotationSpeed
             {
@@ -113,7 +127,7 @@ namespace WitsWay.Utilities.Win.Controls
 
             StylePresets _circleStyle = StylePresets.Custom;
             /// <summary>
-            /// ÑùÊ½
+            /// æ ·å¼
             /// </summary>
             public StylePresets CircleStyle
             {
@@ -146,7 +160,7 @@ namespace WitsWay.Utilities.Win.Controls
         private const int IE7NumberOfSpoke = 24;
         private const int IE7SpokeThickness = 4;
         /// <summary>
-        /// ³ÊÏÖÑùÊ½
+        /// å‘ˆç°æ ·å¼
         /// </summary>
         public enum StylePresets
         {

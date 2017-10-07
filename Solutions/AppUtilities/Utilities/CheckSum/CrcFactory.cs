@@ -1,9 +1,28 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 
 namespace WitsWay.Utilities.CheckSum
 {
 	/// <summary>
-	/// CRC32Ğ£Ñé
+	/// CRC32æ ¡éªŒ
 	/// </summary>
 	public class CrcFactory : ICheckSum
 	{
@@ -72,7 +91,7 @@ namespace WitsWay.Utilities.CheckSum
 	    private uint _crc;
 
 		/// <summary>
-		/// Ğ£ÑéÖµ
+		/// æ ¡éªŒå€¼
 		/// </summary>
 		public long Value
 		{
@@ -87,7 +106,7 @@ namespace WitsWay.Utilities.CheckSum
 		}
 
 		/// <summary>
-		/// ÖØÖÃĞ£ÑéÖµ
+		/// é‡ç½®æ ¡éªŒå€¼
 		/// </summary>
 		public void Reset()
 		{
@@ -95,10 +114,10 @@ namespace WitsWay.Utilities.CheckSum
 		}
 
 		/// <summary>
-		/// ¸üĞÂĞ£ÑéÖµ
+		/// æ›´æ–°æ ¡éªŒå€¼
 		/// </summary>
 		/// <param name = "value">
-		/// »áÈ¡valueµÄµÍ8Î»
+		/// ä¼šå–valueçš„ä½8ä½
 		/// </param>
 		public void Update(int value)
 		{
@@ -108,10 +127,10 @@ namespace WitsWay.Utilities.CheckSum
 		}
 
 		/// <summary>
-		/// ¸üĞÂ¶ÔÓ¦×Ö½ÚÊı×éµÄCRC32Ğ£ÑéÖµ
+		/// æ›´æ–°å¯¹åº”å­—èŠ‚æ•°ç»„çš„CRC32æ ¡éªŒå€¼
 		/// </summary>
 		/// <param name="buffer">
-		/// ĞèÒªĞ£ÑéµÄ×Ö½ÚÊı×é
+		/// éœ€è¦æ ¡éªŒçš„å­—èŠ‚æ•°ç»„
 		/// </param>
 		public void Update(byte[] buffer)
 		{
@@ -124,16 +143,16 @@ namespace WitsWay.Utilities.CheckSum
 		}
 
 		/// <summary>
-		/// Ìí¼Ó¼ÆËã×Ö½ÚÊı×é
+		/// æ·»åŠ è®¡ç®—å­—èŠ‚æ•°ç»„
 		/// </summary>
 		/// <param name = "buffer">
-		/// ¼ÆËãCRCÖµµÄ×Ö½ÚÊı×é
+		/// è®¡ç®—CRCå€¼çš„å­—èŠ‚æ•°ç»„
 		/// </param>
 		/// <param name = "offset">
-		/// ×óÆ«ÒÆÁ¿
+		/// å·¦åç§»é‡
 		/// </param>
 		/// <param name = "count">
-		/// ×Ö½ÚÊı×éÖĞ ÓÃÓÚ¼ÆËãµÄÎ»Êı
+		/// å­—èŠ‚æ•°ç»„ä¸­ ç”¨äºè®¡ç®—çš„ä½æ•°
 		/// </param>
 		public void Update(byte[] buffer, int offset, int count)
 		{
@@ -144,7 +163,7 @@ namespace WitsWay.Utilities.CheckSum
 
 			if (count < 0)
 			{
-				throw new ArgumentOutOfRangeException(nameof(count), "ÊıÁ¿²»ÄÜĞ¡ÓÚ0");
+				throw new ArgumentOutOfRangeException(nameof(count), "æ•°é‡ä¸èƒ½å°äº0");
 			}
 
 			if (offset < 0 || offset + count > buffer.Length)

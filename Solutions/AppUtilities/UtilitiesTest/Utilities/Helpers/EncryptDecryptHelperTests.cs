@@ -1,3 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WitsWay.Utilities.Helpers;
 
@@ -5,37 +24,37 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
 {
 
 	/// <summary>
-	/// ¼Ó½âÃÜ¸¨ÖúÀà
+	/// åŠ è§£å¯†è¾…åŠ©ç±»
     /// </summary>
     [TestClass]
     public class EncryptDecryptHelperTests
     {
 
         /// <summary>
-        /// DES¼Ó½âÃÜ²âÊÔ
+        /// DESåŠ è§£å¯†æµ‹è¯•
         /// </summary>
         [TestMethod]
         public void EncryptDESTest()
         {
             var key = "123456";
-            //ÏÈ¼ÓÃÜ
-            var result = EncryptDecryptHelper.EncryptDES("ÎÒÊÇ±»¼ÓÃÜÊı¾İ", key);
-            //ÔÙ½âÃÜ
+            //å…ˆåŠ å¯†
+            var result = EncryptDecryptHelper.EncryptDES("æˆ‘æ˜¯è¢«åŠ å¯†æ•°æ®", key);
+            //å†è§£å¯†
             result = EncryptDecryptHelper.DecryptDES(result, key);
 
-            Assert.AreEqual(result, "ÎÒÊÇ±»¼ÓÃÜÊı¾İ");
+            Assert.AreEqual(result, "æˆ‘æ˜¯è¢«åŠ å¯†æ•°æ®");
         }
 
 
         /// <summary>
-        /// MD5¼ÓÃÜ²âÊÔ
+        /// MD5åŠ å¯†æµ‹è¯•
         /// </summary>
         [TestMethod]
         public void EncryptMD5Test()
         {
-            var result = EncryptDecryptHelper.EncryptMD5("ÎÒÊÇ±»¼ÓÃÜÊı¾İ");
+            var result = EncryptDecryptHelper.EncryptMD5("æˆ‘æ˜¯è¢«åŠ å¯†æ•°æ®");
 
-            //Êı¾İÀ´Ô´ÍøÂçÔÚÏßMD5¼ÓÃÜ 32´óĞ´
+            //æ•°æ®æ¥æºç½‘ç»œåœ¨çº¿MD5åŠ å¯† 32å¤§å†™
             Assert.AreEqual(result, "6C21D82CDC9AAEF96FB034123C25707B");
         }
        

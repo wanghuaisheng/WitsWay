@@ -1,8 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
 /******************************************
- * 2012Äê5ÔÂ3ÈÕ Íõ»³Éú Ìí¼Ó
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
  * 
  * ***************************************/
-
+#endregion
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,12 +30,12 @@ using WitsWay.Utilities.Guards;
 namespace WitsWay.Utilities.Helpers
 {
     /// <summary>
-    /// XMLĞòÁĞ»¯¸¨ÖúÀà
+    /// XMLåºåˆ—åŒ–è¾…åŠ©ç±»
     /// </summary>
     public class SerilizeHelper
     {
         /// <summary>
-        /// ×ª»»ÎªÊµÌå
+        /// è½¬æ¢ä¸ºå®ä½“
         /// </summary>
         /// <param name="jsonString"></param>
         /// <returns></returns>
@@ -34,7 +48,7 @@ namespace WitsWay.Utilities.Helpers
         }
 
         /// <summary>
-        /// ×ª»»ÎªÊµÌå
+        /// è½¬æ¢ä¸ºå®ä½“
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
@@ -54,21 +68,21 @@ namespace WitsWay.Utilities.Helpers
         }
 
         /// <summary>
-        /// ĞòÁĞ»¯ÎªÄÚ´æÁ÷MemoryStream
+        /// åºåˆ—åŒ–ä¸ºå†…å­˜æµMemoryStream
         /// </summary>
-        /// <param name="objectToSerilize">ÒªĞòÁĞ»¯µÄ¶ÔÏóÊµÀı</param>
-        /// <returns>ÄÚ´æÁ÷MemoryStream</returns>
+        /// <param name="objectToSerilize">è¦åºåˆ—åŒ–çš„å¯¹è±¡å®ä¾‹</param>
+        /// <returns>å†…å­˜æµMemoryStream</returns>
         public static string SerilizeToXML<T>(T objectToSerilize)
         {
             return SerilizeToXML(objectToSerilize, Encoding.UTF8);
         }
 
         /// <summary>
-        /// ĞòÁĞ»¯ÎªÄÚ´æÁ÷MemoryStream
+        /// åºåˆ—åŒ–ä¸ºå†…å­˜æµMemoryStream
         /// </summary>
-        /// <param name="objectToSerilize">ÒªĞòÁĞ»¯µÄ¶ÔÏóÊµÀı</param>
-        /// <param name="encoding">±àÂë</param>
-        /// <returns>ÄÚ´æÁ÷MemoryStream</returns>
+        /// <param name="objectToSerilize">è¦åºåˆ—åŒ–çš„å¯¹è±¡å®ä¾‹</param>
+        /// <param name="encoding">ç¼–ç </param>
+        /// <returns>å†…å­˜æµMemoryStream</returns>
         public static string SerilizeToXML<T>(T objectToSerilize, Encoding encoding)
         {
             ArgumentGuard.ArgumentNotNull("objectToSerilize", objectToSerilize);
@@ -85,21 +99,21 @@ namespace WitsWay.Utilities.Helpers
         }
 
         /// <summary>
-        /// MemoryStream·´ĞòÁĞ»¯Îª¶ÔÏó
+        /// MemoryStreamååºåˆ—åŒ–ä¸ºå¯¹è±¡
         /// </summary>
-        /// <param name="input">ÊäÈëÁ÷</param>
-        /// <returns>¶ÔÏóÊµÀı</returns>
+        /// <param name="input">è¾“å…¥æµ</param>
+        /// <returns>å¯¹è±¡å®ä¾‹</returns>
         public static T DeserilizeXML<T>(string input)
         {
             return DeserilizeXML<T>(input, Encoding.UTF8);
         }
 
         /// <summary>
-        /// MemoryStream·´ĞòÁĞ»¯Îª¶ÔÏó
+        /// MemoryStreamååºåˆ—åŒ–ä¸ºå¯¹è±¡
         /// </summary>
-        /// <param name="encoding">±àÂë</param>
-        /// <param name="input">ÊäÈëÁ÷</param>
-        /// <returns>¶ÔÏóÊµÀı</returns>
+        /// <param name="encoding">ç¼–ç </param>
+        /// <param name="input">è¾“å…¥æµ</param>
+        /// <returns>å¯¹è±¡å®ä¾‹</returns>
         public static T DeserilizeXML<T>(string input, Encoding encoding)
         {
             if (string.IsNullOrEmpty(input))
@@ -113,11 +127,11 @@ namespace WitsWay.Utilities.Helpers
         }
 
         /// <summary>
-        /// ĞòÁĞ»¯µ½XMLÎÄ¼ş
+        /// åºåˆ—åŒ–åˆ°XMLæ–‡ä»¶
         /// </summary>
-        /// <typeparam name="T">¶ÔÏóÀàĞÍ</typeparam>
-        /// <param name="objectToSerilize">ÒªĞòÁĞ»¯µÄ¶ÔÏóÊµÀı</param>
-        /// <param name="fileName">ÎÄ¼şÃû</param>
+        /// <typeparam name="T">å¯¹è±¡ç±»å‹</typeparam>
+        /// <param name="objectToSerilize">è¦åºåˆ—åŒ–çš„å¯¹è±¡å®ä¾‹</param>
+        /// <param name="fileName">æ–‡ä»¶å</param>
         public static void SerilizeToFile<T>(T objectToSerilize, string fileName)
         {
             try
@@ -134,11 +148,11 @@ namespace WitsWay.Utilities.Helpers
         }
 
         /// <summary>
-        /// ·´ĞòÁĞ»¯ÎÄ¼ş
+        /// ååºåˆ—åŒ–æ–‡ä»¶
         /// </summary>
-        /// <typeparam name="T">¶ÔÏóÀàĞÍ</typeparam>
-        /// <param name="fileName">·´ĞòÁĞ»¯Òª¶ÁÈ¡µÄÎÄ¼şÃû</param>
-        /// <returns>¶ÔÏóÊµÀı</returns>
+        /// <typeparam name="T">å¯¹è±¡ç±»å‹</typeparam>
+        /// <param name="fileName">ååºåˆ—åŒ–è¦è¯»å–çš„æ–‡ä»¶å</param>
+        /// <returns>å¯¹è±¡å®ä¾‹</returns>
         public static T DeserilizeFile<T>(string fileName)
         {
             try
@@ -156,22 +170,22 @@ namespace WitsWay.Utilities.Helpers
         }
 
         /// <summary>
-        /// BinaryFormatterĞòÁĞ»¯
+        /// BinaryFormatteråºåˆ—åŒ–
         /// </summary>
-        /// <typeparam name="T">¶ÔÏóÀàĞÍ</typeparam>
-        /// <param name="objectToSerilize">ÒªĞòÁĞ»¯µÄ¶ÔÏóÊµÀı</param>
-        /// <returns>MemoryStream¶ÔÏó</returns>
+        /// <typeparam name="T">å¯¹è±¡ç±»å‹</typeparam>
+        /// <param name="objectToSerilize">è¦åºåˆ—åŒ–çš„å¯¹è±¡å®ä¾‹</param>
+        /// <returns>MemoryStreamå¯¹è±¡</returns>
         public static string SerilizeToStreamBinary<T>(T objectToSerilize)
         {
             return SerilizeToStreamBinary(objectToSerilize, Encoding.Default);
         }
         /// <summary>
-        /// BinaryFormatterĞòÁĞ»¯
+        /// BinaryFormatteråºåˆ—åŒ–
         /// </summary>
-        /// <typeparam name="T">¶ÔÏóÀàĞÍ</typeparam>
-        /// <param name="objectToSerilize">ÒªĞòÁĞ»¯µÄ¶ÔÏóÊµÀı</param>
-        /// <param name="encoding">±àÂë</param>
-        /// <returns>MemoryStream¶ÔÏó</returns>
+        /// <typeparam name="T">å¯¹è±¡ç±»å‹</typeparam>
+        /// <param name="objectToSerilize">è¦åºåˆ—åŒ–çš„å¯¹è±¡å®ä¾‹</param>
+        /// <param name="encoding">ç¼–ç </param>
+        /// <returns>MemoryStreamå¯¹è±¡</returns>
         public static string SerilizeToStreamBinary<T>(T objectToSerilize, Encoding encoding)
         {
 
@@ -189,11 +203,11 @@ namespace WitsWay.Utilities.Helpers
             }
         }
         /// <summary>
-        /// ĞòÁĞ»¯ÎªbyteÊı×é
+        /// åºåˆ—åŒ–ä¸ºbyteæ•°ç»„
         /// </summary>
-        /// <typeparam name="T">¶ÔÏóÀàĞÍ</typeparam>
-        /// <param name="objectToSerilize">ÒªĞòÁĞ»¯µÄ¶ÔÏóÊµÀı</param>
-        /// <returns>ĞòÁĞ»¯ºóµÄbyteÊı×é</returns>
+        /// <typeparam name="T">å¯¹è±¡ç±»å‹</typeparam>
+        /// <param name="objectToSerilize">è¦åºåˆ—åŒ–çš„å¯¹è±¡å®ä¾‹</param>
+        /// <returns>åºåˆ—åŒ–åçš„byteæ•°ç»„</returns>
         public static byte[] SerilizeToBytes<T>(T objectToSerilize)
         {
 
@@ -235,23 +249,23 @@ namespace WitsWay.Utilities.Helpers
             }
         }
         /// <summary>
-        /// BinaryFormatter·´ĞòÁĞ»¯
+        /// BinaryFormatterååºåˆ—åŒ–
         /// </summary>
-        /// <typeparam name="T">¶ÔÏóÀàĞÍ</typeparam>
-        /// <param name="input">ÓÃÓÚ·´ĞòÁĞ»¯µÄMemoryStreamÁ÷</param>
-        /// <returns>¶ÔÏóÊµÀı</returns>
+        /// <typeparam name="T">å¯¹è±¡ç±»å‹</typeparam>
+        /// <param name="input">ç”¨äºååºåˆ—åŒ–çš„MemoryStreamæµ</param>
+        /// <returns>å¯¹è±¡å®ä¾‹</returns>
         public static T DeserilizeStreamBinary<T>(string input)
         {
             return DeserilizeStreamBinary<T>(input, Encoding.Default);
         }
 
         /// <summary>
-        /// BinaryFormatter·´ĞòÁĞ»¯
+        /// BinaryFormatterååºåˆ—åŒ–
         /// </summary>
-        /// <typeparam name="T">¶ÔÏóÀàĞÍ</typeparam>
-        /// <param name="encoding">±àÂë</param>
-        /// <param name="input">ÓÃÓÚ·´ĞòÁĞ»¯µÄMemoryStreamÁ÷</param>
-        /// <returns>¶ÔÏóÊµÀı</returns>
+        /// <typeparam name="T">å¯¹è±¡ç±»å‹</typeparam>
+        /// <param name="encoding">ç¼–ç </param>
+        /// <param name="input">ç”¨äºååºåˆ—åŒ–çš„MemoryStreamæµ</param>
+        /// <returns>å¯¹è±¡å®ä¾‹</returns>
         public static T DeserilizeStreamBinary<T>(string input, Encoding encoding)
         {
             try
@@ -271,11 +285,11 @@ namespace WitsWay.Utilities.Helpers
 
 
         /// <summary>
-        /// MemoryStream×ª»»ÎªString
+        /// MemoryStreamè½¬æ¢ä¸ºString
         /// </summary>
-        /// <param name="ms">ĞèÒª×ª»»µÄMemoryStream</param>
-        /// <param name="encoding">±àÂë</param>
-        /// <returns>×ª»»ºóµÄString</returns>
+        /// <param name="ms">éœ€è¦è½¬æ¢çš„MemoryStream</param>
+        /// <param name="encoding">ç¼–ç </param>
+        /// <returns>è½¬æ¢åçš„String</returns>
         public static string StreamToString(MemoryStream ms, Encoding encoding)
         {
             if (ms == null) return "";
@@ -285,11 +299,11 @@ namespace WitsWay.Utilities.Helpers
         }
 
         /// <summary>
-        /// String×ª»»ÎªStream
+        /// Stringè½¬æ¢ä¸ºStream
         /// </summary>
-        /// <param name="s">Òª×ª»»µÄString</param>
-        /// <param name="encoding">±àÂë</param>
-        /// <returns>×ª»»ºóµÄMemoryStream</returns>
+        /// <param name="s">è¦è½¬æ¢çš„String</param>
+        /// <param name="encoding">ç¼–ç </param>
+        /// <returns>è½¬æ¢åçš„MemoryStream</returns>
         public static MemoryStream StringToStream(string s, Encoding encoding)
         {
             if (string.IsNullOrEmpty(s)) return null;

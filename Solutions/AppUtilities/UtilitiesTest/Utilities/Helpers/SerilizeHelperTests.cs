@@ -1,8 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
 /******************************************
- * 2012Äê5ÔÂ3ÈÕ Íõ»³Éú Ìí¼Ó
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
  * 
  * ***************************************/
-
+#endregion
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,75 +27,75 @@ using WitsWay.Utilities.Helpers;
 namespace WitsWay.Utlities.Tests.Utilities.Helpers
 {
     /// <summary>
-    /// XMLĞòÁĞ»¯¸¨ÖúÀà
+    /// XMLåºåˆ—åŒ–è¾…åŠ©ç±»
     /// </summary>
     [TestClass]
     public class SerilizeHelperTests
     {
 
         /// <summary>
-        /// JSON×ª»»ÎªÊµÌå
+        /// JSONè½¬æ¢ä¸ºå®ä½“
         /// </summary>
         [TestMethod]
         public void DeserilizeJsonTest()
         {
-            var json = "{UserId:100021,UserName:\"Ğ¡Ã÷\"}";
+            var json = "{UserId:100021,UserName:\"å°æ˜\"}";
             var result = SerilizeHelper.DeserilizeJson<UserInfo>(json);
             Assert.IsTrue(result.UserId == 100021);
         }
 
         /// <summary>
-        /// ÊµÌå×ª»»ÎªJSON
+        /// å®ä½“è½¬æ¢ä¸ºJSON
         /// </summary>
         [TestMethod]
         public void SerilizeToJson1Test()
         {
-            //´ı×ª»»µÄ¶ÔÏó
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
+            userInfo.UserName = "å°æ˜";
 
             var result = SerilizeHelper.SerilizeToJson(userInfo);
 
-            //ÕâÀïÖ»ÅĞ¶Ï×ª»»½á¹ûµÄ³¤¶È£¬¾ßÌåÇë²Î¿¼·µ»ØÊı¾İ
+            //è¿™é‡Œåªåˆ¤æ–­è½¬æ¢ç»“æœçš„é•¿åº¦ï¼Œå…·ä½“è¯·å‚è€ƒè¿”å›æ•°æ®
             Assert.IsTrue(result.Length > 0);
         }
 
         /// <summary>
-        /// ÊµÌå×ªJSON²âÊÔ2
+        /// å®ä½“è½¬JSONæµ‹è¯•2
         /// </summary>
         [TestMethod]
         public void SerilizeToJson2Test()
         {
-            //´ı×ª»»µÄ¶ÔÏó
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var list = new List<UserInfo>();
 
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
+            userInfo.UserName = "å°æ˜";
             list.Add(userInfo);
 
             userInfo = new UserInfo();
             userInfo.UserId = 100022;
-            userInfo.UserName = "Ğ¡ºì";
+            userInfo.UserName = "å°çº¢";
             list.Add(userInfo);
 
             var result = SerilizeHelper.SerilizeToJson<UserInfo>(list);
 
-            //ÕâÀïÖ»ÅĞ¶Ï×ª»»½á¹ûµÄ³¤¶È£¬¾ßÌåÇë²Î¿¼·µ»ØÊı¾İ
+            //è¿™é‡Œåªåˆ¤æ–­è½¬æ¢ç»“æœçš„é•¿åº¦ï¼Œå…·ä½“è¯·å‚è€ƒè¿”å›æ•°æ®
             Assert.IsTrue(result.Length > 0);
         }
 
         /// <summary>
-        /// ¶ÔÏó×ª»»ÎªXML
+        /// å¯¹è±¡è½¬æ¢ä¸ºXML
         /// </summary>
         [TestMethod]
         public void SerilizeToXMLTest()
         {
-            //´ı×ª»»µÄ¶ÔÏó
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
+            userInfo.UserName = "å°æ˜";
 
             var result1 = SerilizeHelper.SerilizeToXML(userInfo);
             var result2 = SerilizeHelper.SerilizeToXML(userInfo, Encoding.UTF8);
@@ -90,15 +104,15 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
         }
         
         /// <summary>
-        /// XML×ª»»Îª¶ÔÏó
+        /// XMLè½¬æ¢ä¸ºå¯¹è±¡
         /// </summary>
         [TestMethod]
         public void DeserilizeXMLTest()
         {
-            //´ı×ª»»µÄ¶ÔÏó
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
+            userInfo.UserName = "å°æ˜";
 
             var result = SerilizeHelper.SerilizeToXML(userInfo);
 
@@ -110,34 +124,34 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
         }
         
         /// <summary>
-        /// ÊµÌå×ª»»ÎªXMLÎÄ¼ş
+        /// å®ä½“è½¬æ¢ä¸ºXMLæ–‡ä»¶
         /// </summary>
         [TestMethod]
         public void SerilizeToFileTest()
         {
-            var path = "d:\\ÁÙÊ±ÎÄ¼ş\\xiaoming" + DateTime.Now.ToString("MMddHHmmssffff") + ".xml";
+            var path = "d:\\ä¸´æ—¶æ–‡ä»¶\\xiaoming" + DateTime.Now.ToString("MMddHHmmssffff") + ".xml";
 
-            //´ı×ª»»µÄ¶ÔÏó
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
+            userInfo.UserName = "å°æ˜";
 
             SerilizeHelper.SerilizeToFile(userInfo, path);
             Assert.IsTrue(File.Exists(path));
         }
 
         /// <summary>
-        /// XMLÎÄ¼ş×ª»»µ½ÊµÌå
+        /// XMLæ–‡ä»¶è½¬æ¢åˆ°å®ä½“
         /// </summary>
         [TestMethod]
         public void DeserilizeFileTest()
         {
-            //ÏÈ´´½¨ÎÄ¼ş
-            var path = "d:\\ÁÙÊ±ÎÄ¼ş\\xiaoming" + DateTime.Now.ToString("MMddHHmmssffff") + ".xml";
-            //´ı×ª»»µÄ¶ÔÏó
+            //å…ˆåˆ›å»ºæ–‡ä»¶
+            var path = "d:\\ä¸´æ—¶æ–‡ä»¶\\xiaoming" + DateTime.Now.ToString("MMddHHmmssffff") + ".xml";
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
+            userInfo.UserName = "å°æ˜";
             SerilizeHelper.SerilizeToFile(userInfo, path);
 
             var result= SerilizeHelper.DeserilizeFile<UserInfo>(path);
@@ -146,15 +160,15 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
         
 
         /// <summary>
-        /// BinaryFormatterĞòÁĞ»¯
+        /// BinaryFormatteråºåˆ—åŒ–
         /// </summary>
         [TestMethod]
         public void SerilizeToStreamBinaryTest()
         {
-            //´ı×ª»»µÄ¶ÔÏó
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
+            userInfo.UserName = "å°æ˜";
 
             var result1 = SerilizeHelper.SerilizeToStreamBinary(userInfo);
             var result2 = SerilizeHelper.SerilizeToStreamBinary(userInfo, Encoding.Default);
@@ -164,18 +178,18 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
         }
 
         /// <summary>
-        /// ·´ĞòÁĞ»¯StreamBinaryµ½¶ÔÏó
+        /// ååºåˆ—åŒ–StreamBinaryåˆ°å¯¹è±¡
         /// </summary>
         [TestMethod]
         public void DeserilizeStreamBinaryTest()
         {
-            //´ı×ª»»µÄ¶ÔÏó
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
-            //ÏÈĞòÁĞ»¯ÎªStreamBinary
+            userInfo.UserName = "å°æ˜";
+            //å…ˆåºåˆ—åŒ–ä¸ºStreamBinary
             var result1 = SerilizeHelper.SerilizeToStreamBinary(userInfo);
-            //ÔÙ·´ĞòÁĞ»¯
+            //å†ååºåˆ—åŒ–
             var result2 = SerilizeHelper.DeserilizeStreamBinary<UserInfo>(result1);
             var result3 = SerilizeHelper.DeserilizeStreamBinary<UserInfo>(result1, Encoding.Default);
 
@@ -185,33 +199,33 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
         }
         
         /// <summary>
-        /// MemoryStreamÓëStringÏà»¥×ª»»
+        /// MemoryStreamä¸Stringç›¸äº’è½¬æ¢
         /// </summary>
         [TestMethod]
         public void StreamInterconversionStringTest()
         {
-            //´ı×ª»»µÄ¶ÔÏó
-            var objStr = "´ı×ª»»µÄ¶ÔÏó";
+            //å¾…è½¬æ¢çš„å¯¹è±¡
+            var objStr = "å¾…è½¬æ¢çš„å¯¹è±¡";
 
-            //ÏÈĞòÁĞ»¯ÎªMemoryStream
+            //å…ˆåºåˆ—åŒ–ä¸ºMemoryStream
             var result1 = SerilizeHelper.StringToStream(objStr, Encoding.Default);
 
-            //ÔÙ×ª»»Îªstring
+            //å†è½¬æ¢ä¸ºstring
             var result2 = SerilizeHelper.StreamToString(result1, Encoding.Default);
 
-            Assert.IsTrue(result2 == "´ı×ª»»µÄ¶ÔÏó");
+            Assert.IsTrue(result2 == "å¾…è½¬æ¢çš„å¯¹è±¡");
         }
 
         /// <summary>
-        /// ĞòÁĞ»¯ÎªbyteÊı×é
+        /// åºåˆ—åŒ–ä¸ºbyteæ•°ç»„
         /// </summary>
         [TestMethod]
         public void SerilizeToBytesTest()
         {
-            //´ı×ª»»µÄ¶ÔÏó
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
+            userInfo.UserName = "å°æ˜";
 
             var result1 = SerilizeHelper.SerilizeToBytes(userInfo);
 
@@ -219,18 +233,18 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
         }
         
         /// <summary>
-        /// ´ÓbyteÊı×é·´ĞòÁĞ»¯µ½¶ÔÏó
+        /// ä»byteæ•°ç»„ååºåˆ—åŒ–åˆ°å¯¹è±¡
         /// </summary>
         [TestMethod]
         public void DeserilizeFromBytesTest()
         {
-            //´ı×ª»»µÄ¶ÔÏó
+            //å¾…è½¬æ¢çš„å¯¹è±¡
             var userInfo = new UserInfo();
             userInfo.UserId = 100021;
-            userInfo.UserName = "Ğ¡Ã÷";
-            //ÏÈĞòÁĞ»¯ÎªÊı×é
+            userInfo.UserName = "å°æ˜";
+            //å…ˆåºåˆ—åŒ–ä¸ºæ•°ç»„
             var result1 = SerilizeHelper.SerilizeToBytes(userInfo);
-            //ÔÙ·´ĞòÁĞ»¯
+            //å†ååºåˆ—åŒ–
             var result2 = SerilizeHelper.DeserilizeFromBytes<UserInfo>(result1);
 
             Assert.IsTrue(result2.UserId == 100021);

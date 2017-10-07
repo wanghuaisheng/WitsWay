@@ -1,11 +1,23 @@
-﻿/*修改日志
- * 2013年5月9日        邓千军         添加
+﻿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright ®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * TODO:第一次通过Tab键将光标移到文本框中时，设置SelectLength没有效果
  * 
- * */
-/* TODO:
- * 第一次通过Tab键将光标移到文本框中时，设置SelectLength没有效果
- */
-
+ * ***************************************/
+#endregion
 using System;
 using System.Collections.Generic;
 using System.Linq;

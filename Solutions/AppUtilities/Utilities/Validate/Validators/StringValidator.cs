@@ -1,27 +1,46 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 using System.Text.RegularExpressions;
 
 namespace WitsWay.Utilities.Validate.Validators
 {
     /// <summary>
-    /// StringÑéÖ¤Æ÷
+    /// StringéªŒè¯å™¨
     /// </summary>
     public class StringValidator : ValidatorBase<StringValidator, string>
     {
 
         /// <summary>
-        /// ³õÊ¼»¯ÑéÖ¤Æ÷
+        /// åˆå§‹åŒ–éªŒè¯å™¨
         /// </summary>
-        /// <param name="value">Öµ</param>
-        /// <param name="fieldName">×Ö¶ÎÃû</param>
-        /// <param name="validatorObj">ÑéÖ¤¶ÔÏó</param>
+        /// <param name="value">å€¼</param>
+        /// <param name="fieldName">å­—æ®µå</param>
+        /// <param name="validatorObj">éªŒè¯å¯¹è±¡</param>
         public StringValidator(string value, string fieldName, Validator validatorObj) : base(value, fieldName, validatorObj) { }
 
         /// <summary>
-        /// ²»Îª¿Õ
+        /// ä¸ä¸ºç©º
         /// </summary>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator NotEmpty(string errorMessage)
         {
             SetResult((Value ?? string.Empty).Length != 0, errorMessage, ValidationErrorCode.StringIsEmpty);
@@ -29,22 +48,22 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// Îª¿Õ
+        /// ä¸ºç©º
         /// </summary>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
-        public StringValidator IsEmpty(string errorMessage = "²»ÄÜÎª¿Õ")
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
+        public StringValidator IsEmpty(string errorMessage = "ä¸èƒ½ä¸ºç©º")
         {
             SetResult((Value ?? string.Empty).Length == 0, errorMessage, ValidationErrorCode.StringIsEmpty);
             return this;
         }
 
         /// <summary>
-        /// ³¤¶ÈÎª
+        /// é•¿åº¦ä¸º
         /// </summary>
-        /// <param name="compareLength">±È½ÏÖµ</param>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="compareLength">æ¯”è¾ƒå€¼</param>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsLength(int compareLength, string errorMessage)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -53,11 +72,11 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ³¤¶È²»Îª
+        /// é•¿åº¦ä¸ä¸º
         /// </summary>
-        /// <param name="compareLength">±È½ÏÖµ</param>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="compareLength">æ¯”è¾ƒå€¼</param>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator NotLength(int compareLength, string errorMessage)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -66,11 +85,11 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ³¤¶È´óÓÚminLength
+        /// é•¿åº¦å¤§äºminLength
         /// </summary>
-        /// <param name="minLength">×îĞ¡³¤¶È</param>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="minLength">æœ€å°é•¿åº¦</param>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsLongerThan(int minLength, string errorMessage)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -79,11 +98,11 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ³¤¶È¶ÌÓÚ
+        /// é•¿åº¦çŸ­äº
         /// </summary>
-        /// <param name="maxLength">×î´ó³¤¶È</param>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="maxLength">æœ€å¤§é•¿åº¦</param>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsShorterThan(int maxLength, string errorMessage)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -92,23 +111,23 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ÕıÔòÆ¥Åä
+        /// æ­£åˆ™åŒ¹é…
         /// </summary>
-        /// <param name="regularExpression">ÕıÔò±í´ïÊ½</param>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="regularExpression">æ­£åˆ™è¡¨è¾¾å¼</param>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator MatchRegex(string regularExpression, string errorMessage)
         {
             return MatchRegex(regularExpression, RegexOptions.None, errorMessage);
         }
 
         /// <summary>
-        /// ÕıÔòÆ¥Åä
+        /// æ­£åˆ™åŒ¹é…
         /// </summary>
-        /// <param name="regularExpression">ÕıÔò±í´ïÊ½</param>
-        /// <param name="regexOptions">Æ¥ÅäÑ¡Ïî</param>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="regularExpression">æ­£åˆ™è¡¨è¾¾å¼</param>
+        /// <param name="regexOptions">åŒ¹é…é€‰é¡¹</param>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator MatchRegex(string regularExpression, RegexOptions regexOptions, string errorMessage)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -118,23 +137,23 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ÕıÔò²»Æ¥Åä
+        /// æ­£åˆ™ä¸åŒ¹é…
         /// </summary>
-        /// <param name="regularExpression">ÕıÔò±í´ïÊ½</param>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="regularExpression">æ­£åˆ™è¡¨è¾¾å¼</param>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator NotMatchRegex(string regularExpression, string errorMessage)
         {
             return NotMatchRegex(regularExpression, RegexOptions.None, errorMessage);
         }
 
         /// <summary>
-        /// ÕıÔò²»Æ¥Åä
+        /// æ­£åˆ™ä¸åŒ¹é…
         /// </summary>
-        /// <param name="regularExpression">ÕıÔò±í´ïÊ½</param>
-        /// <param name="regexOptions">Æ¥ÅäÑ¡Ïî</param>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="regularExpression">æ­£åˆ™è¡¨è¾¾å¼</param>
+        /// <param name="regexOptions">åŒ¹é…é€‰é¡¹</param>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator NotMatchRegex(string regularExpression, RegexOptions regexOptions, string errorMessage)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -145,10 +164,10 @@ namespace WitsWay.Utilities.Validate.Validators
 
 
         /// <summary>
-        /// ¼ì²éÊÇ·ñÊÇEmail
+        /// æ£€æŸ¥æ˜¯å¦æ˜¯Email
         /// </summary>
-        /// <param name="errorMessage">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="errorMessage">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsEmail(string errorMessage)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -158,10 +177,10 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ¼ì²é×Ö·û´®ÊÇ·ñÊÇURL
+        /// æ£€æŸ¥å­—ç¬¦ä¸²æ˜¯å¦æ˜¯URL
         /// </summary>
-        /// <param name="errorMsg">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="errorMsg">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsURL(string errorMsg)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -171,10 +190,10 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ¼ì²é×Ö·û´®ÊÇ·ñÊÇÈÕÆÚ
+        /// æ£€æŸ¥å­—ç¬¦ä¸²æ˜¯å¦æ˜¯æ—¥æœŸ
         /// </summary>
-        /// <param name="errorMsg">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="errorMsg">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsDate(string errorMsg)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -184,10 +203,10 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ¼ì²é×Ö·û´®ÊÇ·ñÊÇÕûĞÎ
+        /// æ£€æŸ¥å­—ç¬¦ä¸²æ˜¯å¦æ˜¯æ•´å½¢
         /// </summary>
-        /// <param name="errorMsg">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="errorMsg">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsInteger(string errorMsg)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -198,10 +217,10 @@ namespace WitsWay.Utilities.Validate.Validators
 
 
         /// <summary>
-        /// ¼ì²é×Ö·û´®ÊÇ·ñÊÇLong
+        /// æ£€æŸ¥å­—ç¬¦ä¸²æ˜¯å¦æ˜¯Long
         /// </summary>
-        /// <param name="errorMsg">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="errorMsg">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsLong(string errorMsg)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -213,10 +232,10 @@ namespace WitsWay.Utilities.Validate.Validators
 
 
         /// <summary>
-        /// ¼ì²é×Ö·û´®ÊÇ·ñÊÇDecimal
+        /// æ£€æŸ¥å­—ç¬¦ä¸²æ˜¯å¦æ˜¯Decimal
         /// </summary>
-        /// <param name="errorMsg">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="errorMsg">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsDecimal(string errorMsg)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -226,12 +245,12 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ¼ì²é×Ö·û´®ÊÇ·ñ³¤¶ÈÔÚminLengthºÍmaxLengthÖ®¼ä
+        /// æ£€æŸ¥å­—ç¬¦ä¸²æ˜¯å¦é•¿åº¦åœ¨minLengthå’ŒmaxLengthä¹‹é—´
         /// </summary>
-        /// <param name="minLength">×îĞ¡³¤¶È</param>
-        /// <param name="maxLength">×î´ó³¤¶È</param>
-        /// <param name="errorMsg">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="minLength">æœ€å°é•¿åº¦</param>
+        /// <param name="maxLength">æœ€å¤§é•¿åº¦</param>
+        /// <param name="errorMsg">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator IsLengthBetween(int minLength, int maxLength, string errorMsg)
         {
             if (string.IsNullOrEmpty(Value)) return this;
@@ -240,11 +259,11 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ¼ì²é×Ö·û´®ÊÇ·ñ°üº¬ÌØ¶¨×Ö·û²Å
+        /// æ£€æŸ¥å­—ç¬¦ä¸²æ˜¯å¦åŒ…å«ç‰¹å®šå­—ç¬¦æ‰
         /// </summary>
-        /// <param name="containValue">°üº¬µÄÖµ</param>
-        /// <param name="errorMsg">´íÎóÏûÏ¢</param>
-        /// <returns>ÑéÖ¤Æ÷</returns>
+        /// <param name="containValue">åŒ…å«çš„å€¼</param>
+        /// <param name="errorMsg">é”™è¯¯æ¶ˆæ¯</param>
+        /// <returns>éªŒè¯å™¨</returns>
         public StringValidator Contains(string containValue, string errorMsg)
         {
             if (string.IsNullOrEmpty(Value)) return this;

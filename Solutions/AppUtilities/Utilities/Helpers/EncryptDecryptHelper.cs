@@ -1,8 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
 /******************************************
- * 2012Äê4ÔÂ25ÈÕ Íõ»³Éú Ìí¼Ó
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
  * 
  * ***************************************/
-
+#endregion
 using System;
 using System.IO;
 using System.Security.Cryptography;
@@ -13,20 +27,20 @@ namespace WitsWay.Utilities.Helpers
 {
 
     /// <summary>
-    /// ¼Ó½âÃÜ¸¨ÖúÀà
+    /// åŠ è§£å¯†è¾…åŠ©ç±»
     /// </summary>
     public static class EncryptDecryptHelper
     {
 
-        //Ä¬ÈÏÃÜÔ¿ÏòÁ¿
+        //é»˜è®¤å¯†é’¥å‘é‡
         private static readonly byte[] Keys = { 0x34, 0x56, 0x78, 0xAB, 0xCD, 0x12, 0x90, 0xEF };
 
         /// <summary>
-        /// DES¼ÓÃÜ×Ö·û´®
+        /// DESåŠ å¯†å­—ç¬¦ä¸²
         /// </summary>
-        /// <param name="encryptString">´ı¼ÓÃÜµÄ×Ö·û´®</param>
-        /// <param name="encryptKey">¼ÓÃÜÃÜÔ¿,ÒªÇóÎª8Î»</param>
-        /// <returns>¼ÓÃÜ³É¹¦·µ»Ø¼ÓÃÜºóµÄ×Ö·û´®£¬Ê§°Ü·µ»ØÔ´´®</returns>
+        /// <param name="encryptString">å¾…åŠ å¯†çš„å­—ç¬¦ä¸²</param>
+        /// <param name="encryptKey">åŠ å¯†å¯†é’¥,è¦æ±‚ä¸º8ä½</param>
+        /// <returns>åŠ å¯†æˆåŠŸè¿”å›åŠ å¯†åçš„å­—ç¬¦ä¸²ï¼Œå¤±è´¥è¿”å›æºä¸²</returns>
         public static string EncryptDES(string encryptString, string encryptKey)
         {
             try
@@ -48,11 +62,11 @@ namespace WitsWay.Utilities.Helpers
         }
 
         /// <summary>
-        /// DES½âÃÜ×Ö·û´®
+        /// DESè§£å¯†å­—ç¬¦ä¸²
         /// </summary>
-        /// <param name="decryptString">´ı½âÃÜµÄ×Ö·û´®</param>
-        /// <param name="decryptKey">½âÃÜÃÜÔ¿,ÒªÇóÎª8Î»,ºÍ¼ÓÃÜÃÜÔ¿ÏàÍ¬</param>
-        /// <returns>½âÃÜ³É¹¦·µ»Ø½âÃÜºóµÄ×Ö·û´®£¬Ê§°Ü·µÔ´´®</returns>
+        /// <param name="decryptString">å¾…è§£å¯†çš„å­—ç¬¦ä¸²</param>
+        /// <param name="decryptKey">è§£å¯†å¯†é’¥,è¦æ±‚ä¸º8ä½,å’ŒåŠ å¯†å¯†é’¥ç›¸åŒ</param>
+        /// <returns>è§£å¯†æˆåŠŸè¿”å›è§£å¯†åçš„å­—ç¬¦ä¸²ï¼Œå¤±è´¥è¿”æºä¸²</returns>
         public static string DecryptDES(string decryptString, string decryptKey)
         {
             try
@@ -74,9 +88,9 @@ namespace WitsWay.Utilities.Helpers
         }
 
         /// <summary>
-        /// MD5¼ÓÃÜ×Ö·û´®
+        /// MD5åŠ å¯†å­—ç¬¦ä¸²
         /// </summary>
-        /// <param name="encryptString">ĞèÒª¼ÓÃÜµÄ×Ö·û´®</param>
+        /// <param name="encryptString">éœ€è¦åŠ å¯†çš„å­—ç¬¦ä¸²</param>
         /// <returns></returns>
         public static string EncryptMD5(string encryptString)
         {

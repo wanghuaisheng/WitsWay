@@ -1,3 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 using WitsWay.Utilities.Extends;
 
@@ -5,12 +24,12 @@ namespace WitsWay.Utilities.Validate.Validators
 {
 
     /// <summary>
-    /// DateTimeÑéÖ¤Æ÷
+    /// DateTimeéªŒè¯å™¨
     /// </summary>
     public class DateValidator : ValidatorBase<DateValidator, DateTime>
     {
         /// <summary>
-        /// ´´½¨DateValidatorÊµÀı
+        /// åˆ›å»ºDateValidatorå®ä¾‹
         /// </summary>
         /// <param name="value"></param>
         /// <param name="fieldName"></param>
@@ -21,7 +40,7 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ÊÇÈÕÆÚ×î´óÖµDateTime.MaxValue
+        /// æ˜¯æ—¥æœŸæœ€å¤§å€¼DateTime.MaxValue
         /// </summary>
         /// <param name="errorMsg"></param>
         /// <returns></returns>
@@ -32,7 +51,7 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ²»ÊÇÈÕÆÚ×î´óÖµDateTime.MaxValue
+        /// ä¸æ˜¯æ—¥æœŸæœ€å¤§å€¼DateTime.MaxValue
         /// </summary>
         /// <param name="errorMsg"></param>
         /// <returns></returns>
@@ -43,7 +62,7 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ÊÇÈÕÆÚ×îĞ¡ÖµDateTime.MinValue
+        /// æ˜¯æ—¥æœŸæœ€å°å€¼DateTime.MinValue
         /// </summary>
         /// <param name="errorMsg"></param>
         /// <returns></returns>
@@ -54,7 +73,7 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ²»ÊÇÈÕÆÚ×îĞ¡ÖµDateTime.MinValue
+        /// ä¸æ˜¯æ—¥æœŸæœ€å°å€¼DateTime.MinValue
         /// </summary>
         /// <param name="errorMsg"></param>
         /// <returns></returns>
@@ -65,7 +84,7 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ValueÔçÓÚcompareValue
+        /// Valueæ—©äºcompareValue
         /// </summary>
         /// <param name="compareValue"></param>
         /// <param name="errorMsg"></param>
@@ -77,7 +96,7 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ValueÔçÓÚ»òµÈÓÚcompareValue
+        /// Valueæ—©äºæˆ–ç­‰äºcompareValue
         /// </summary>
         /// <param name="compareValue"></param>
         /// <param name="errorMsg"></param>
@@ -89,7 +108,7 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ValueÍíÓÚcompareValue
+        /// Valueæ™šäºcompareValue
         /// </summary>
         /// <param name="compareValue"></param>
         /// <param name="errorMsg"></param>
@@ -101,7 +120,7 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ValueÍíÓÚ»òµÈÓÚcompareValue
+        /// Valueæ™šäºæˆ–ç­‰äºcompareValue
         /// </summary>
         /// <param name="compareValue"></param>
         /// <param name="errorMsg"></param>
@@ -113,7 +132,7 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ValueÔÚvalue1ºÍvalue2Ö®¼ä
+        /// Valueåœ¨value1å’Œvalue2ä¹‹é—´
         /// </summary>
         /// <param name="value1"></param>
         /// <param name="value2"></param>
@@ -126,10 +145,10 @@ namespace WitsWay.Utilities.Validate.Validators
         }
 
         /// <summary>
-        /// ÊÇ·ñÊÇÓĞĞ§µÄSQLÊ±¼ä
+        /// æ˜¯å¦æ˜¯æœ‰æ•ˆçš„SQLæ—¶é—´
         /// </summary>
-        /// <param name="errorMsg">´íÎóĞÅÏ¢</param>
-        /// <returns>ÑéÖ¤½á¹û</returns>
+        /// <param name="errorMsg">é”™è¯¯ä¿¡æ¯</param>
+        /// <returns>éªŒè¯ç»“æœ</returns>
         public DateValidator IsValidSqlServerDateTime(string errorMsg)
         {
             SetResult(Value.IsValidSqlServerDateTime(), errorMsg, ValidationErrorCode.DateValidSqlServerDateTime);

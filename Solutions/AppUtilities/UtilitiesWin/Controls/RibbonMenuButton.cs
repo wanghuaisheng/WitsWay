@@ -1,3 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -7,7 +26,7 @@ using System.Windows.Forms;
 namespace WitsWay.Utilities.Win.Controls
 {
     /// <summary>
-    /// Ribbon°´Å¥
+    /// RibbonæŒ‰é’®
     /// </summary>
     public class RibbonMenuButton : Button
     {
@@ -490,9 +509,9 @@ namespace WitsWay.Utilities.Win.Controls
         }
 
         /// <summary>
-        /// ÊÍ·ÅÓÉ <see cref="T:System.Windows.Forms.ButtonBase"/> Õ¼ÓÃµÄ·ÇÍĞ¹Ü×ÊÔ´£¬»¹¿ÉÒÔÁíÍâÔÙÊÍ·ÅÍĞ¹Ü×ÊÔ´¡£
+        /// é‡Šæ”¾ç”± <see cref="T:System.Windows.Forms.ButtonBase"/> å ç”¨çš„éæ‰˜ç®¡èµ„æºï¼Œè¿˜å¯ä»¥å¦å¤–å†é‡Šæ”¾æ‰˜ç®¡èµ„æºã€‚
         /// </summary>
-        /// <param name="disposing">Îª true ÔòÊÍ·ÅÍĞ¹Ü×ÊÔ´ºÍ·ÇÍĞ¹Ü×ÊÔ´£»Îª false Ôò½öÊÍ·Å·ÇÍĞ¹Ü×ÊÔ´¡£</param>
+        /// <param name="disposing">ä¸º true åˆ™é‡Šæ”¾æ‰˜ç®¡èµ„æºå’Œéæ‰˜ç®¡èµ„æºï¼›ä¸º false åˆ™ä»…é‡Šæ”¾éæ‰˜ç®¡èµ„æºã€‚</param>
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
@@ -690,10 +709,10 @@ namespace WitsWay.Utilities.Win.Controls
                 _grayImage = null;
                 _imageHashCode = 0;
             }
-            // »Ò¶ÈÍ¼Ïñ²»´æÔÚ»òÕßÒÑ¾­·¢Éú¸Ä±ä
+            // ç°åº¦å›¾åƒä¸å­˜åœ¨æˆ–è€…å·²ç»å‘ç”Ÿæ”¹å˜
             else if (_grayImage == null || image.GetHashCode() != _imageHashCode)
             {
-                //¼ÆËã»Ò¶ÈÍ¼Ïñ£¬²¢¼ÇÂ¼Ô­Í¼ÏñµÄhashÖµ
+                //è®¡ç®—ç°åº¦å›¾åƒï¼Œå¹¶è®°å½•åŸå›¾åƒçš„hashå€¼
                 _grayImage = CalcGrayImage(image);
                 _imageHashCode = image.GetHashCode();
             }
