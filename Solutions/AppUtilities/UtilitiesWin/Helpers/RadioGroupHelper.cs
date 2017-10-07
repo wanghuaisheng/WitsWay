@@ -31,7 +31,7 @@ namespace WitsWay.Utilities.Win.Helpers
             {
                 throw new ArgumentException(t.FullName + "不是枚举类型");
             }
-            var eds = EnumDescription.GetFieldInfos(typeof(T));
+            var eds = EnumFieldAttribute.GetFieldInfos(typeof(T));
             if (eds != null && eds.Count > 0)
             {
                 if (except == null) { except = new List<T>(); }
@@ -40,7 +40,7 @@ namespace WitsWay.Utilities.Win.Helpers
                 {
                     if (!exceptValue.Contains(ed.EnumValue))
                     {
-                        var item = new RadioGroupItem(ed.EnumValue, ed.EnumDisplayText);
+                        var item = new RadioGroupItem(ed.EnumValue, ed.DisplayText);
                         ctr.Properties.Items.Add(item);
                     }
                 }
@@ -66,11 +66,11 @@ namespace WitsWay.Utilities.Win.Helpers
             if (!t.IsEnum)
                 throw new ArgumentException(t.FullName + "不是枚举类型");
 
-            var eds = EnumDescription.GetFieldInfos(typeof(T));
+            var eds = EnumFieldAttribute.GetFieldInfos(typeof(T));
             var enumValueList = list.Select(x => x.CastTo<int>()).ToList();
 
             foreach (var ed in eds.Where(x => enumValueList.Contains(x.EnumValue)))
-                ctr.Properties.Items.Add(new RadioGroupItem(ed.EnumValue, ed.EnumDisplayText));
+                ctr.Properties.Items.Add(new RadioGroupItem(ed.EnumValue, ed.DisplayText));
         }
 
         /// <summary>

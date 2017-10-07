@@ -56,7 +56,7 @@ namespace WitsWay.Utilities.Win.Helpers
             {
                 ctr.Items.Add(header);
             }
-            var eds = EnumDescription.GetFieldInfos(typeof(T));
+            var eds = EnumFieldAttribute.GetFieldInfos(typeof(T));
 
             var exceptValue = new List<int>();
             if (except != null && except.Count > 0)
@@ -90,7 +90,7 @@ namespace WitsWay.Utilities.Win.Helpers
                 ctr.Items.Add(header);
             }
 
-            var eds = EnumDescription.GetFieldInfos(typeof(T));
+            var eds = EnumFieldAttribute.GetFieldInfos(typeof(T));
             var enumValueList = list.Select(x => x.CastTo<int>()).ToList();
 
             foreach (var ed in eds.Where(x => enumValueList.Contains(x.EnumValue)))
@@ -117,8 +117,8 @@ namespace WitsWay.Utilities.Win.Helpers
             checkedListBoxItemList.ForEach(item => { item.CheckState = CheckState.Unchecked; });
 
             // 设置应该选中的项
-            checkedListBoxItemList.Where(item => item.Value is EnumDescription &&
-                    enumValues.Contains(((EnumDescription)item.Value).EnumValue))
+            checkedListBoxItemList.Where(item => item.Value is EnumFieldAttribute &&
+                    enumValues.Contains(((EnumFieldAttribute)item.Value).EnumValue))
             .ToList()
             .ForEach(item => { item.CheckState = CheckState.Checked; });
         }
@@ -193,7 +193,7 @@ namespace WitsWay.Utilities.Win.Helpers
             return items.OfType<CheckedListBoxItem>()
                             .Where(item => item.CheckState == CheckState.Checked)
                             .Select(item => item.Value)
-                            .OfType<EnumDescription>()
+                            .OfType<EnumFieldAttribute>()
                             .Select(ed => ed.EnumValue)
                             .Cast<T>()
                             .ToList();

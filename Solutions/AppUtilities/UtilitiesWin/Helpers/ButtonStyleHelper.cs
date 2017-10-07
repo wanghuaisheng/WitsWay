@@ -27,7 +27,7 @@ namespace WitsWay.Utilities.Win.Helpers
             if (isShowText)
             {
                 btn.Font = new Font("宋体", 9);
-                btn.Text = string.IsNullOrEmpty(text) ? EnumDescription.GetFieldText(style) : text;
+                btn.Text = string.IsNullOrEmpty(text) ? EnumFieldAttribute.GetFieldText(style) : text;
                 btn.Width = width ?? (btn.Text.Length * 12 + 32);
             }
             else

@@ -1,4 +1,23 @@
-﻿using System;
+﻿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright ®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,16 +33,16 @@ namespace WitsWay.Utilities.Attributes
     /// <summary>
     /// 把枚举值按照指定的文本显示
     /// <example>
-    /// EnumDescription.GetEnumText(typeof(MyEnum));
-    /// EnumDescription.GetFieldText(MyEnum.EnumField);
-    /// EnumDescription.GetFieldInfos(typeof(MyEnum));  
+    /// EnumField.GetEnumText(typeof(MyEnum));
+    /// EnumField.GetFieldText(MyEnum.EnumField);
+    /// EnumField.GetFieldInfos(typeof(MyEnum));  
     /// </example>
     /// </summary>
-    public partial class EnumDescription
+    public partial class EnumFieldAttribute
     {
 
         private static readonly ReaderWriterLockSlim Locker = new ReaderWriterLockSlim(LockRecursionPolicy.NoRecursion);
-        private static readonly ConcurrentDictionary<string, List<EnumDescription>> CachedEnum = new ConcurrentDictionary<string, List<EnumDescription>>();
+        private static readonly ConcurrentDictionary<string, List<EnumFieldAttribute>> CachedEnum = new ConcurrentDictionary<string, List<EnumFieldAttribute>>();
 
         /// <summary>
         /// 得到对枚举的描述文本
@@ -32,9 +51,9 @@ namespace WitsWay.Utilities.Attributes
         /// <returns></returns>
         public static string GetEnumText(Type enumType)
         {
-            var eds = (EnumDescription[])enumType.GetCustomAttributes(typeof(EnumDescription), false);
+            var eds = (EnumFieldAttribute[])enumType.GetCustomAttributes(typeof(EnumFieldAttribute), false);
             if (eds.Length != 1) return string.Empty;
-            return eds[0].EnumDisplayText;
+            return eds[0].DisplayText;
         }
 
         /// <summary>
@@ -45,7 +64,7 @@ namespace WitsWay.Utilities.Attributes
         public static string GetFieldText(object enumValue)
         {
             var fi = GetFieldInfo(enumValue);
-            return fi == null ? string.Empty : fi.EnumDisplayText;
+            return fi == null ? string.Empty : fi.DisplayText;
         }
 
 
@@ -54,7 +73,7 @@ namespace WitsWay.Utilities.Attributes
         /// </summary>
         /// <param name="enumValue">枚举值，不要作任何类型转换</param>
         /// <returns>描述字符串</returns>
-        public static EnumDescription GetFieldInfo(object enumValue)
+        public static EnumFieldAttribute GetFieldInfo(object enumValue)
         {
             var descriptions = GetFieldInfos(enumValue.GetType());
             return descriptions.FirstOrDefault(ed => ed.FieldName == enumValue.ToString());
@@ -65,9 +84,9 @@ namespace WitsWay.Utilities.Attributes
         /// </summary>
         /// <exception cref="NotSupportedException"></exception>
         /// <param name="enumType">枚举类型</param>
-        public static List<EnumDescription> GetFieldInfos(Type enumType)
+        public static List<EnumFieldAttribute> GetFieldInfos(Type enumType)
         {
-            List<EnumDescription> descriptions;
+            List<EnumFieldAttribute> descriptions;
             try
             {
                 if (!CachedEnum.ContainsKey(enumType.FullName))
@@ -75,13 +94,13 @@ namespace WitsWay.Utilities.Attributes
                     Locker.EnterWriteLock();
                     if (!CachedEnum.ContainsKey(enumType.FullName))
                     {
-                        descriptions = new List<EnumDescription>();
+                        descriptions = new List<EnumFieldAttribute>();
                         var fields = enumType.GetFields();
                         foreach (var fi in fields)
                         {
-                            var attrs = fi.GetCustomAttributes(typeof(EnumDescription), false);
+                            var attrs = fi.GetCustomAttributes(typeof(EnumFieldAttribute), false);
                             if (attrs.Length <= 0) continue;
-                            var ed = (EnumDescription)attrs[0];
+                            var ed = (EnumFieldAttribute)attrs[0];
                             ed.EnumValue = (int)fi.GetValue(null);
                             ed.FieldName = fi.Name;
                             descriptions.Add(ed);
@@ -122,7 +141,7 @@ namespace WitsWay.Utilities.Attributes
                 if ((enumInt & tag.EnumValue) > 0)
                 {
                     if (show.Length > 0) { show.Append(spliter); }
-                    show.Append(tag.EnumDisplayText);
+                    show.Append(tag.DisplayText);
                 }
             });
             return show.ToString();
@@ -137,7 +156,7 @@ namespace WitsWay.Utilities.Attributes
             var enumType = typeof(T);
             if (!enumType.IsEnum)
             {
-                Logger.Write("EnumDescription只支持枚举类型。");
+                Logger.Write("EnumField只支持枚举类型。");
                 ExceptionHelper.ThrowProgramException(UtilityErrors.TypeIsAssignableException);
             }
             var edList = GetFieldInfos(enumType);

@@ -54,7 +54,7 @@ namespace WitsWay.Utilities.Win.Helpers
             {
                 ctr.Properties.Items.Add(header);
             }
-            var eds = EnumDescription.GetFieldInfos(enumType);
+            var eds = EnumFieldAttribute.GetFieldInfos(enumType);
             if (eds != null && eds.Count > 0 && exceptValue != null && exceptValue.Count > 0)
             {
                 foreach (var ed in eds)
@@ -102,7 +102,7 @@ namespace WitsWay.Utilities.Win.Helpers
             {
                 x.Add(header);
             }
-            var eds = EnumDescription.GetFieldInfos(enumType);
+            var eds = EnumFieldAttribute.GetFieldInfos(enumType);
             if (eds != null && eds.Count > 0 && exceptValue != null && exceptValue.Count > 0)
             {
                 foreach (var ed in eds)
@@ -193,7 +193,7 @@ namespace WitsWay.Utilities.Win.Helpers
         {
             foreach (var item in ctr.Properties.Items)
             {
-                var ed = item as EnumDescription;
+                var ed = item as EnumFieldAttribute;
                 if (ed != null && ed.EnumValue == data.CastTo<int>())
                 {
                     ctr.SelectedItem = ed;
@@ -255,7 +255,7 @@ namespace WitsWay.Utilities.Win.Helpers
             {
                 throw new ArgumentException(t.FullName + "必须是枚举类型");
             }
-            var ed = ctr.SelectedItem as EnumDescription;
+            var ed = ctr.SelectedItem as EnumFieldAttribute;
             if (ed != null)
             {
                 return ed.EnumValue.CastTo<T>();

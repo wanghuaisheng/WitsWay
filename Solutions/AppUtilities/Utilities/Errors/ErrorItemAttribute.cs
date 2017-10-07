@@ -5,9 +5,9 @@ namespace WitsWay.Utilities.Errors
     /// <summary>
     /// 把枚举值按照指定的文本显示
     /// <example>
-    /// EnumDescription.GetEnumText(typeof(MyEnum));
-    /// EnumDescription.GetFieldText(MyEnum.EnumField);
-    /// EnumDescription.GetFieldInfos(typeof(MyEnum));  
+    /// EnumField.GetEnumText(typeof(MyEnum));
+    /// EnumField.GetFieldText(MyEnum.EnumField);
+    /// EnumField.GetFieldInfos(typeof(MyEnum));  
     /// </example>
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Enum)]

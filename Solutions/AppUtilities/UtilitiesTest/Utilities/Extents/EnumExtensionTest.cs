@@ -20,7 +20,7 @@ namespace WitsWay.Utlities.Tests.Utilities.Extents
             var fields = sex.GetFieldInfos();
             Assert.AreEqual("女", fieldDescription);
             Assert.AreEqual("性别", enumDescription);
-            Assert.IsTrue(field != null && field.FieldName == "Female" && field.EnumDisplayText == "女");
+            Assert.IsTrue(field != null && field.FieldName == "Female" && field.DisplayText == "女");
             Assert.IsTrue(fields != null && fields.Count == 2);
         }
 
@@ -66,12 +66,12 @@ namespace WitsWay.Utlities.Tests.Utilities.Extents
         public Sex Sex { get; set; }
     }
 
-    [EnumDescription("性别")]
+    [EnumFieldAttribute("性别")]
     public enum Sex
     {
-        [EnumDescription("男")]
+        [EnumFieldAttribute("男")]
         Male = 0,
-        [EnumDescription("女")]
+        [EnumFieldAttribute("女")]
         Female = 1
     }
 }

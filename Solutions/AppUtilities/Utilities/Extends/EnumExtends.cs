@@ -17,7 +17,7 @@ namespace WitsWay.Utilities.Extends
         /// <returns>枚举值描述</returns>
         public static string GetDescription(this Enum enumValue)
         {
-            return EnumDescription.GetFieldText(enumValue);
+            return EnumFieldAttribute.GetFieldText(enumValue);
         }
       
         
@@ -28,7 +28,7 @@ namespace WitsWay.Utilities.Extends
         /// <returns>枚举描述</returns>
         public static string GetEnumDescription(this Enum enumValue)
         {
-            return EnumDescription.GetEnumText(enumValue.GetType());
+            return EnumFieldAttribute.GetEnumText(enumValue.GetType());
         }
 
         /// <summary>
@@ -36,9 +36,9 @@ namespace WitsWay.Utilities.Extends
         /// </summary>
         /// <param name="enumValue">枚举值</param>
         /// <returns>枚举字段信息</returns>
-        public static EnumDescription GetFieldInfo(this Enum enumValue)
+        public static EnumFieldAttribute GetFieldInfo(this Enum enumValue)
         {
-            return EnumDescription.GetFieldInfo(enumValue);
+            return EnumFieldAttribute.GetFieldInfo(enumValue);
         }
 
         /// <summary>
@@ -56,9 +56,9 @@ namespace WitsWay.Utilities.Extends
         /// </summary>
         /// <param name="enumValue">枚举值</param>
         /// <returns>枚举所有字段信息</returns>
-        public static List<EnumDescription> GetFieldInfos(this Enum enumValue)
+        public static List<EnumFieldAttribute> GetFieldInfos(this Enum enumValue)
         {
-            return EnumDescription.GetFieldInfos(enumValue.GetType());
+            return EnumFieldAttribute.GetFieldInfos(enumValue.GetType());
         }
         
         /// <summary>

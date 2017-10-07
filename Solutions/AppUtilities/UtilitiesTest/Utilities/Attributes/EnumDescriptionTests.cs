@@ -5,26 +5,26 @@ using WitsWay.Utilities.Attributes;
 namespace WitsWay.Utlities.Tests.Utilities.Attributes
 {
 
-    [EnumDescription("性别枚举")]
+    [EnumFieldAttribute("性别枚举")]
     public enum TestEnumSex
     {
 
-        [EnumDescription("男")]
+        [EnumFieldAttribute("男")]
         Male,
-        [EnumDescription("女")]
+        [EnumFieldAttribute("女")]
         Female
     }
 
-    [EnumDescription("支持功能")]
+    [EnumFieldAttribute("支持功能")]
     [Flags]
     public enum TestEnumSupports
     {
 
-        [EnumDescription("登录")]
+        [EnumFieldAttribute("登录")]
         Login = 1,
-        [EnumDescription("登出")]
+        [EnumFieldAttribute("登出")]
         Logout = 2,
-        [EnumDescription("修改")]
+        [EnumFieldAttribute("修改")]
         Modify = 4
     }
 
@@ -36,7 +36,7 @@ namespace WitsWay.Utlities.Tests.Utilities.Attributes
         [TestMethod]
         public void GetEnumTextTest()
         {
-            var txt = EnumDescription.GetEnumText(typeof(TestEnumSex));
+            var txt = EnumFieldAttribute.GetEnumText(typeof(TestEnumSex));
             Assert.AreEqual(txt, "性别枚举");
         }
 
@@ -44,7 +44,7 @@ namespace WitsWay.Utlities.Tests.Utilities.Attributes
         [TestMethod]
         public void GetFlagShowTest()
         {
-            var flags = EnumDescription.GetFlagShow(TestEnumSupports.Login | TestEnumSupports.Logout, "|");
+            var flags = EnumFieldAttribute.GetFlagShow(TestEnumSupports.Login | TestEnumSupports.Logout, "|");
             Assert.AreEqual(flags, "登录|登出");
         }
 

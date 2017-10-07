@@ -124,8 +124,8 @@
     <Compile Include="Daos\IDao.cs" />
     <Compile Include="Daos\IDaoAttribute.cs" />
     <Compile Include="Daos\DaoAttribute.cs" />
-    <Compile Include="Attributes\EnumDescription.Static.cs" />
-    <Compile Include="Attributes\EnumDescription.cs" />
+    <Compile Include="Attributes\EnumFieldAttribute.Static.cs" />
+    <Compile Include="Attributes\EnumFieldAttribute.cs" />
     <Compile Include="Cast\ObjectMapper.cs" />
     <Compile Include="CheckSum\Adler32.cs" />
     <Compile Include="CheckSum\Crc32.cs" />

@@ -640,85 +640,85 @@
             <param name="filterClause">筛选语句</param>
             <returns>存在true，不存在false</returns>
         </member>
-        <member name="T:WitsWay.Utilities.Attributes.EnumDescription">
+        <member name="T:WitsWay.Utilities.Attributes.EnumFieldAttribute">
             <summary>
             把枚举值按照指定的文本显示
             <example>
-            EnumDescription.GetEnumText(typeof(MyEnum));
-            EnumDescription.GetFieldText(MyEnum.EnumField);
-            EnumDescription.GetFieldInfos(typeof(MyEnum));  
+            EnumField.GetEnumText(typeof(MyEnum));
+            EnumField.GetFieldText(MyEnum.EnumField);
+            EnumField.GetFieldInfos(typeof(MyEnum));  
             </example>
             </summary>
             <summary>
             把枚举值按照指定的文本显示
             <example>
-            EnumDescription.GetEnumText(typeof(MyEnum));
-            EnumDescription.GetFieldText(MyEnum.EnumField);
-            EnumDescription.GetFieldInfos(typeof(MyEnum));  
+            EnumField.GetEnumText(typeof(MyEnum));
+            EnumField.GetFieldText(MyEnum.EnumField);
+            EnumField.GetFieldInfos(typeof(MyEnum));  
             </example>
             </summary>
         </member>
-        <member name="M:WitsWay.Utilities.Attributes.EnumDescription.GetEnumText(System.Type)">
+        <member name="M:WitsWay.Utilities.Attributes.EnumFieldAttribute.GetEnumText(System.Type)">
             <summary>
             得到对枚举的描述文本
             </summary>
             <param name="enumType">枚举类型</param>
             <returns></returns>
         </member>
-        <member name="M:WitsWay.Utilities.Attributes.EnumDescription.GetFieldText(System.Object)">
+        <member name="M:WitsWay.Utilities.Attributes.EnumFieldAttribute.GetFieldText(System.Object)">
             <summary>
             获得指定枚举类型中，指定值的描述文本。
             </summary>
             <param name="enumValue">枚举值，不要作任何类型转换</param>
             <returns>描述字符串</returns>
         </member>
-        <member name="M:WitsWay.Utilities.Attributes.EnumDescription.GetFieldInfo(System.Object)">
+        <member name="M:WitsWay.Utilities.Attributes.EnumFieldAttribute.GetFieldInfo(System.Object)">
             <summary>
             获得指定枚举类型中，指定值的描述文本。
             </summary>
             <param name="enumValue">枚举值，不要作任何类型转换</param>
             <returns>描述字符串</returns>
         </member>
-        <member name="M:WitsWay.Utilities.Attributes.EnumDescription.GetFieldInfos(System.Type)">
+        <member name="M:WitsWay.Utilities.Attributes.EnumFieldAttribute.GetFieldInfos(System.Type)">
             <summary>
             得到枚举类型定义的所有文本
             </summary>
             <exception cref="T:System.NotSupportedException"></exception>
             <param name="enumType">枚举类型</param>
         </member>
-        <member name="M:WitsWay.Utilities.Attributes.EnumDescription.GetFlagShow``1(``0,System.String)">
+        <member name="M:WitsWay.Utilities.Attributes.EnumFieldAttribute.GetFlagShow``1(``0,System.String)">
             <summary>
             列标签显示
             </summary>
         </member>
-        <member name="M:WitsWay.Utilities.Attributes.EnumDescription.GetEnumList``1(``0[])">
+        <member name="M:WitsWay.Utilities.Attributes.EnumFieldAttribute.GetEnumList``1(``0[])">
             <summary>
             得到枚举项列表
             </summary>
             <param name="ignores">忽略枚举项</param>
         </member>
-        <member name="M:WitsWay.Utilities.Attributes.EnumDescription.#ctor(System.String)">
+        <member name="M:WitsWay.Utilities.Attributes.EnumFieldAttribute.#ctor(System.String)">
             <summary>
             描述枚举值
             </summary>
-            <param name="enumDisplayText">描述内容</param>
+            <param name="displayText">描述内容</param>
         </member>
-        <member name="P:WitsWay.Utilities.Attributes.EnumDescription.EnumDisplayText">
+        <member name="P:WitsWay.Utilities.Attributes.EnumFieldAttribute.DisplayText">
             <summary>
             枚举显示文本
             </summary>
         </member>
-        <member name="P:WitsWay.Utilities.Attributes.EnumDescription.EnumValue">
+        <member name="P:WitsWay.Utilities.Attributes.EnumFieldAttribute.EnumValue">
             <summary>
             枚举值
             </summary>
         </member>
-        <member name="P:WitsWay.Utilities.Attributes.EnumDescription.FieldName">
+        <member name="P:WitsWay.Utilities.Attributes.EnumFieldAttribute.FieldName">
             <summary>
             字段名称
             </summary>
         </member>
-        <member name="M:WitsWay.Utilities.Attributes.EnumDescription.ToString">
+        <member name="M:WitsWay.Utilities.Attributes.EnumFieldAttribute.ToString">
             <summary>
              重写ToString
             </summary>
@@ -3980,17 +3980,17 @@
             <summary>
             把枚举值按照指定的文本显示
             <example>
-            EnumDescription.GetEnumText(typeof(MyEnum));
-            EnumDescription.GetFieldText(MyEnum.EnumField);
-            EnumDescription.GetFieldInfos(typeof(MyEnum));  
+            EnumField.GetEnumText(typeof(MyEnum));
+            EnumField.GetFieldText(MyEnum.EnumField);
+            EnumField.GetFieldInfos(typeof(MyEnum));  
             </example>
             </summary>
             <summary>
             把枚举值按照指定的文本显示
             <example>
-            EnumDescription.GetEnumText(typeof(MyEnum));
-            EnumDescription.GetFieldText(MyEnum.EnumField);
-            EnumDescription.GetFieldInfos(typeof(MyEnum));  
+            EnumField.GetEnumText(typeof(MyEnum));
+            EnumField.GetFieldText(MyEnum.EnumField);
+            EnumField.GetFieldInfos(typeof(MyEnum));  
             </example>
             </summary>
         </member>

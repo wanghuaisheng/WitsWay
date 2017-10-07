@@ -39,12 +39,12 @@ namespace WitsWay.Utilities.Web.Helpers
             if (showAll)
                 AppendItem(sb, allCaption, allValue, itemCssClass);
 
-            foreach (var fieldDescription in EnumDescription.GetFieldInfos(type))
+            foreach (var fieldDescription in EnumFieldAttribute.GetFieldInfos(type))
             {
                 if (ignoreList != null && ignoreList.Contains(fieldDescription.EnumValue))
                     continue;
 
-                AppendItem(sb, fieldDescription.EnumDisplayText, fieldDescription.EnumValue, itemCssClass);
+                AppendItem(sb, fieldDescription.DisplayText, fieldDescription.EnumValue, itemCssClass);
             }
             sb.AppendLine("</select>");
 

@@ -35,7 +35,7 @@ namespace WitsWay.Utilities.Win.Helpers
             {
                 ctr.Items.Add(header);
             }
-            var eds = EnumDescription.GetFieldInfos(typeof(T));
+            var eds = EnumFieldAttribute.GetFieldInfos(typeof(T));
             if (eds != null && eds.Count > 0 && except != null && except.Count > 0)
             {
                 var exceptValue = except.Select(old => old.CastTo<int>()).ToList();
