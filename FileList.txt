@@ -1,0 +1,3810 @@
+卷 项目 的文件夹 PATH 列表
+卷序列号为 0000006C 0EDD:C177
+E:.
+│  .gitattributes
+│  .gitignore
+│  FileList.bat
+│  FileList.txt
+│  LICENSE
+│  list.txt
+│  README.md
+│  
+├─.vs
+│  │  ProjectSettings.json
+│  │  slnx.sqlite
+│  │  VSWorkspaceState.json
+│  │  
+│  └─WitsWay
+│      └─v15
+├─Documents
+│  │  README.MD
+│  │  
+│  ├─WitsRights
+│  │      WitsRight.pdm
+│  │      WitsRight.sws
+│  │      WitsRight.xmind
+│  │      
+│  └─WitsSites
+├─Resources
+│      README.MD
+│      
+└─Solutions
+    ├─AppPublishs
+    │      README.MD
+    │      
+    ├─AppUtilities
+    │  │  .gitattributes
+    │  │  .gitignore
+    │  │  AppUtilities.sln
+    │  │  README.MD
+    │  │  
+    │  ├─packages
+    │  │  ├─Microsoft.AspNet.WebApi.Client.5.2.3
+    │  │  │  │  Microsoft.AspNet.WebApi.Client.5.2.3.nupkg
+    │  │  │  │  
+    │  │  │  └─lib
+    │  │  │      ├─net45
+    │  │  │      │      System.Net.Http.Formatting.dll
+    │  │  │      │      System.Net.Http.Formatting.xml
+    │  │  │      │      
+    │  │  │      └─portable-wp8+netcore45+net45+wp81+wpa81
+    │  │  │              System.Net.Http.Formatting.dll
+    │  │  │              System.Net.Http.Formatting.xml
+    │  │  │              
+    │  │  ├─Microsoft.AspNet.WebApi.Core.5.2.3
+    │  │  │  │  Microsoft.AspNet.WebApi.Core.5.2.3.nupkg
+    │  │  │  │  
+    │  │  │  ├─Content
+    │  │  │  │      web.config.transform
+    │  │  │  │      
+    │  │  │  └─lib
+    │  │  │      └─net45
+    │  │  │              System.Web.Http.dll
+    │  │  │              System.Web.Http.xml
+    │  │  │              
+    │  │  ├─Microsoft.AspNet.WebApi.SelfHost.5.2.3
+    │  │  │  │  Microsoft.AspNet.WebApi.SelfHost.5.2.3.nupkg
+    │  │  │  │  
+    │  │  │  └─lib
+    │  │  │      └─net45
+    │  │  │              System.Web.Http.SelfHost.dll
+    │  │  │              System.Web.Http.SelfHost.xml
+    │  │  │              
+    │  │  ├─Microsoft.AspNet.WebApi.WebHost.5.2.3
+    │  │  │  │  Microsoft.AspNet.WebApi.WebHost.5.2.3.nupkg
+    │  │  │  │  
+    │  │  │  └─lib
+    │  │  │      └─net45
+    │  │  │              System.Web.Http.WebHost.dll
+    │  │  │              System.Web.Http.WebHost.xml
+    │  │  │              
+    │  │  ├─Newtonsoft.Json.10.0.3
+    │  │  │  │  LICENSE.md
+    │  │  │  │  Newtonsoft.Json.10.0.3.nupkg
+    │  │  │  │  
+    │  │  │  ├─lib
+    │  │  │  │  ├─net20
+    │  │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │  │      Newtonsoft.Json.xml
+    │  │  │  │  │      
+    │  │  │  │  ├─net35
+    │  │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │  │      Newtonsoft.Json.xml
+    │  │  │  │  │      
+    │  │  │  │  ├─net40
+    │  │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │  │      Newtonsoft.Json.xml
+    │  │  │  │  │      
+    │  │  │  │  ├─net45
+    │  │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │  │      Newtonsoft.Json.xml
+    │  │  │  │  │      
+    │  │  │  │  ├─netstandard1.0
+    │  │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │  │      Newtonsoft.Json.xml
+    │  │  │  │  │      
+    │  │  │  │  ├─netstandard1.3
+    │  │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │  │      Newtonsoft.Json.xml
+    │  │  │  │  │      
+    │  │  │  │  ├─portable-net40+sl5+win8+wp8+wpa81
+    │  │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │  │      Newtonsoft.Json.xml
+    │  │  │  │  │      
+    │  │  │  │  └─portable-net45+win8+wp8+wpa81
+    │  │  │  │          Newtonsoft.Json.dll
+    │  │  │  │          Newtonsoft.Json.xml
+    │  │  │  │          
+    │  │  │  └─tools
+    │  │  │          install.ps1
+    │  │  │          
+    │  │  └─System.Net.Http.4.3.2
+    │  │      │  dotnet_library_license.txt
+    │  │      │  System.Net.Http.4.3.2.nupkg
+    │  │      │  ThirdPartyNotices.txt
+    │  │      │  
+    │  │      ├─lib
+    │  │      │  ├─monoandroid10
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─monotouch10
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─net45
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─net46
+    │  │      │  │      System.Net.Http.dll
+    │  │      │  │      
+    │  │      │  ├─portable-net45+win8+wpa81
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─win8
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─wpa81
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─xamarinios10
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─Xamarinmac20
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─xamarintvos10
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  └─xamarinwatchos10
+    │  │      │          _._
+    │  │      │          
+    │  │      ├─ref
+    │  │      │  ├─monoandroid10
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─monotouch10
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─net45
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─net46
+    │  │      │  │      System.Net.Http.dll
+    │  │      │  │      
+    │  │      │  ├─netcore50
+    │  │      │  │      System.Net.Http.dll
+    │  │      │  │      
+    │  │      │  ├─netstandard1.1
+    │  │      │  │      System.Net.Http.dll
+    │  │      │  │      
+    │  │      │  ├─netstandard1.3
+    │  │      │  │      System.Net.Http.dll
+    │  │      │  │      
+    │  │      │  ├─portable-net45+win8+wpa81
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─win8
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─wpa81
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─xamarinios10
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─Xamarinmac20
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  ├─xamarintvos10
+    │  │      │  │      _._
+    │  │      │  │      
+    │  │      │  └─xamarinwatchos10
+    │  │      │          _._
+    │  │      │          
+    │  │      └─runtimes
+    │  │          ├─unix
+    │  │          │  └─lib
+    │  │          │      └─netstandard1.6
+    │  │          │              System.Net.Http.dll
+    │  │          │              
+    │  │          └─win
+    │  │              └─lib
+    │  │                  ├─net46
+    │  │                  │      System.Net.Http.dll
+    │  │                  │      
+    │  │                  ├─netcore50
+    │  │                  │      System.Net.Http.dll
+    │  │                  │      
+    │  │                  └─netstandard1.3
+    │  │                          System.Net.Http.dll
+    │  │                          
+    │  ├─Utilities
+    │  │  │  Utilities.csproj
+    │  │  │  UtilityConsts.cs
+    │  │  │  UtilityStatics.cs
+    │  │  │  
+    │  │  ├─Attributes
+    │  │  │      EnumFieldAttribute.cs
+    │  │  │      EnumFieldAttribute.Static.cs
+    │  │  │      
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │      ChnCharInfo.dll
+    │  │  │  │      ChnCharInfo.resources.dll
+    │  │  │  │      ICSharpCode.SharpZipLib.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Common.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Data.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Logging.dll
+    │  │  │  │      Microsoft.Practices.ServiceLocation.dll
+    │  │  │  │      Microsoft.Practices.Unity.dll
+    │  │  │  │      Microsoft.Practices.Unity.Interception.dll
+    │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │      WitsWay.Utilities.dll
+    │  │  │  │      WitsWay.Utilities.pdb
+    │  │  │  │      WitsWay.Utilities.xml
+    │  │  │  │      
+    │  │  │  ├─Release
+    │  │  │  └─x64
+    │  │  │      ├─Debug
+    │  │  │      └─Release
+    │  │  ├─Builders
+    │  │  │      PageParameterBuilder.cs
+    │  │  │      
+    │  │  ├─CheckSum
+    │  │  │      Adler32.cs
+    │  │  │      Crc32.cs
+    │  │  │      CrcFactory.cs
+    │  │  │      ICheckSum.cs
+    │  │  │      StrangeCrc.cs
+    │  │  │      
+    │  │  ├─Compare
+    │  │  │      CompareObjects.cs
+    │  │  │      CompareSettings.cs
+    │  │  │      Difference.cs
+    │  │  │      ICompareObjects.cs
+    │  │  │      Tests.cs
+    │  │  │      
+    │  │  ├─Containers
+    │  │  │      BasicTypeContainer.cs
+    │  │  │      
+    │  │  ├─Daos
+    │  │  │      DaoAttribute.cs
+    │  │  │      DaoFactory.cs
+    │  │  │      IDao.cs
+    │  │  │      IDaoAttribute.cs
+    │  │  │      IDaoExtends.cs
+    │  │  │      IRepository.cs
+    │  │  │      IRepositoryBulk.cs
+    │  │  │      IRepositoryClause.cs
+    │  │  │      IRepositoryExist.cs
+    │  │  │      IRepositorySearch.cs
+    │  │  │      IRepositoryStates.cs
+    │  │  │      
+    │  │  ├─EntityCast
+    │  │  │      CasterBuilder.cs
+    │  │  │      FastReflectionCaster.cs
+    │  │  │      IEntityCaster.cs
+    │  │  │      IMapBuilderContext.cs
+    │  │  │      IMapBuilderContextMap.cs
+    │  │  │      PropertyMapping.cs
+    │  │  │      ReflectionCaster.cs
+    │  │  │      
+    │  │  ├─Entitys
+    │  │  │      BulkInsertResult.cs
+    │  │  │      IntIdIntValue.cs
+    │  │  │      IntIdStringValue.cs
+    │  │  │      PageParametercs.cs
+    │  │  │      PageResult.cs
+    │  │  │      PagerFilterPara.cs
+    │  │  │      SortColumn.cs
+    │  │  │      StringIdIntValue.cs
+    │  │  │      StringIdStringValue.cs
+    │  │  │      TimestampData.cs
+    │  │  │      
+    │  │  ├─Enums
+    │  │  │      CrcAlgorithmKinds.cs
+    │  │  │      HashAlgorithmKinds.cs
+    │  │  │      MenuKinds.cs
+    │  │  │      PageFunctions.cs
+    │  │  │      RightOperations.cs
+    │  │  │      SequenceCircle.cs
+    │  │  │      SubSystems.cs
+    │  │  │      
+    │  │  ├─Errors
+    │  │  │      ErrorDomainAttribute.cs
+    │  │  │      ErrorDomains.cs
+    │  │  │      ErrorItemAttribute.cs
+    │  │  │      ErrorItemAttribute.Static.cs
+    │  │  │      ErrorItemExtends.cs
+    │  │  │      ErrorItemFactory.cs
+    │  │  │      ErrorSystems.cs
+    │  │  │      Extents.cs
+    │  │  │      UtilityErrors.cs
+    │  │  │      
+    │  │  ├─Exceptions
+    │  │  │      ApiExceptionDetail.cs
+    │  │  │      AppBusinessException.cs
+    │  │  │      AppExceptionDetail.cs
+    │  │  │      AppExceptionKinds.cs
+    │  │  │      AppMessageException.cs
+    │  │  │      AppProgramException.cs
+    │  │  │      
+    │  │  ├─Extends
+    │  │  │      ByteExtends.cs
+    │  │  │      DatabaseExtends.cs
+    │  │  │      DataRowExtends.cs
+    │  │  │      DateTimeExtends.cs
+    │  │  │      EnumExtends.cs
+    │  │  │      IEnumerableExtends.cs
+    │  │  │      ListExtension.cs
+    │  │  │      MethodExtends.cs
+    │  │  │      ObjectExtends.cs
+    │  │  │      PropertyExtends.cs
+    │  │  │      StringExtends.cs
+    │  │  │      TypeExtends.cs
+    │  │  │      
+    │  │  ├─FastReflection
+    │  │  │  │  FastReflectionExtensions.cs
+    │  │  │  │  
+    │  │  │  ├─Cache
+    │  │  │  │      ConstructorInvokerCache.cs
+    │  │  │  │      FastReflectionCache.cs
+    │  │  │  │      FastReflectionCaches.cs
+    │  │  │  │      FieldAccessorCache.cs
+    │  │  │  │      IFastReflectionCache.cs
+    │  │  │  │      MethodInvokerCache.cs
+    │  │  │  │      PropertyAccessorCache.cs
+    │  │  │  │      
+    │  │  │  ├─Constructor
+    │  │  │  │      ConstructorInvoker.cs
+    │  │  │  │      ConstructorInvokerFactory.cs
+    │  │  │  │      
+    │  │  │  ├─Factory
+    │  │  │  │      FastReflectionFactories.cs
+    │  │  │  │      IFastReflectionFactory.cs
+    │  │  │  │      
+    │  │  │  ├─Field
+    │  │  │  │      FieldAccessor.cs
+    │  │  │  │      FieldAccessorFactory.cs
+    │  │  │  │      
+    │  │  │  ├─Method
+    │  │  │  │      MethodInvoker.cs
+    │  │  │  │      MethodInvokerFactory.cs
+    │  │  │  │      
+    │  │  │  └─Property
+    │  │  │          PropertyAccessor.cs
+    │  │  │          PropertyAccessorFactory.cs
+    │  │  │          
+    │  │  ├─Fills
+    │  │  │      FillKeyAttribute.cs
+    │  │  │      FillKind.cs
+    │  │  │      FillTargetAttribute.cs
+    │  │  │      IFiller.cs
+    │  │  │      
+    │  │  ├─Guards
+    │  │  │      ArgumentGuard.cs
+    │  │  │      
+    │  │  ├─Helpers
+    │  │  │      Annotations.cs
+    │  │  │      AppSettingHelper.cs
+    │  │  │      CollectionHelper.cs
+    │  │  │      ComputerHelper.cs
+    │  │  │      DirFileHelper.cs
+    │  │  │      EncryptDecryptHelper.cs
+    │  │  │      EnumHelper.cs
+    │  │  │      ExceptionHelper.cs
+    │  │  │      ExceptionHelper.HandleClient.cs
+    │  │  │      ExceptionHelper.HandleLogic.cs
+    │  │  │      ExceptionHelper.HandleService.cs
+    │  │  │      ExceptionHelper.ThrowBusiness.cs
+    │  │  │      ExceptionHelper.ThrowProgram.cs
+    │  │  │      ExpressionHelper.cs
+    │  │  │      FileHelper.cs
+    │  │  │      HashAlgorithmExtends.cs
+    │  │  │      HashAlgorithmHelper.cs
+    │  │  │      JsonCreationConverter.cs
+    │  │  │      JsonDeserializeHelper.cs
+    │  │  │      PathCodeHelper.cs
+    │  │  │      PinYinHelper.cs
+    │  │  │      SerilizeHelper.cs
+    │  │  │      ShowCastHelper.cs
+    │  │  │      TsqlHelper.cs
+    │  │  │      ZipHelper.cs
+    │  │  │      
+    │  │  ├─Layouts
+    │  │  │      EditorKinds.cs
+    │  │  │      FormLayoutModelAttribute.cs
+    │  │  │      GridLayoutModelAttribute.cs
+    │  │  │      ICustomerUC.cs
+    │  │  │      ILayoutEditor.cs
+    │  │  │      ISelectorAdapter.cs
+    │  │  │      LayoutEditorAttribute.cs
+    │  │  │      LayoutKinds.cs
+    │  │  │      TreeLayoutAttribute.cs
+    │  │  │      TreeLayoutModelAttribute.cs
+    │  │  │      
+    │  │  ├─Models
+    │  │  │      LoginOperator.cs
+    │  │  │      LoginPost.cs
+    │  │  │      LoginResult.cs
+    │  │  │      OperationLog.cs
+    │  │  │      SequenceNumber.cs
+    │  │  │      
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  Utilities.csproj.FileListAbsolute.txt
+    │  │  │  │  │  WitsWay.Utilities.dll
+    │  │  │  │  │  WitsWay.Utilities.pdb
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  ├─Release
+    │  │  │  │      CoreCompileInputs.cache
+    │  │  │  │      
+    │  │  │  └─x64
+    │  │  │      ├─Debug
+    │  │  │      │      CoreCompileInputs.cache
+    │  │  │      │      
+    │  │  │      └─Release
+    │  │  │              CoreCompileInputs.cache
+    │  │  │              
+    │  │  ├─Patterns
+    │  │  │      MsDispose.cs
+    │  │  │      Sandbox.cs
+    │  │  │      Singleton.cs
+    │  │  │      
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      
+    │  │  ├─Providers
+    │  │  │  └─ParseProviders
+    │  │  │          IParseProvider.cs
+    │  │  │          JsonParseProvider.cs
+    │  │  │          ParserFactory.cs
+    │  │  │          XmlParseProvider.cs
+    │  │  │          
+    │  │  ├─Services
+    │  │  │      IService.cs
+    │  │  │      
+    │  │  ├─SqlBulks
+    │  │  │      AllColumnSelect.cs
+    │  │  │      BulkDelete.cs
+    │  │  │      BulkInsert.cs
+    │  │  │      BulkInsertOrUpdate.cs
+    │  │  │      BulkOperations.cs
+    │  │  │      BulkOperationsHelpers.cs
+    │  │  │      BulkUpdate.cs
+    │  │  │      ColumnSelect.cs
+    │  │  │      IBulkOperations.cs
+    │  │  │      IdentityException.cs
+    │  │  │      ITransaction.cs
+    │  │  │      Setup.cs
+    │  │  │      Table.cs
+    │  │  │      TableSelect.cs
+    │  │  │      
+    │  │  ├─Supports
+    │  │  │  │  IKey.cs
+    │  │  │  │  IKeyName.cs
+    │  │  │  │  IPinYinSupport.cs
+    │  │  │  │  ISelected.cs
+    │  │  │  │  KeyEqualityComparer.cs
+    │  │  │  │  
+    │  │  │  ├─GridSupport
+    │  │  │  │      GridSupport.cs
+    │  │  │  │      GridSupportExtends.cs
+    │  │  │  │      IGridSupport.cs
+    │  │  │  │      
+    │  │  │  └─TreeSupport
+    │  │  │          ITreeSupport.cs
+    │  │  │          ITreeSupportT.cs
+    │  │  │          TreeSupport.cs
+    │  │  │          TreeSupportExtends.cs
+    │  │  │          TreeSupportHelper.cs
+    │  │  │          
+    │  │  ├─Thread
+    │  │  │      LockObject.cs
+    │  │  │      
+    │  │  └─Validate
+    │  │      │  RegexStrings.cs
+    │  │      │  ValidateErrorCode.cs
+    │  │      │  ValidateResult.cs
+    │  │      │  
+    │  │      ├─Annotations
+    │  │      │      CustomValidatorAttribute.cs
+    │  │      │      CustomValidatorFactory.cs
+    │  │      │      EnumRequiredAttribute.cs
+    │  │      │      ICustomValidator.cs
+    │  │      │      IValidateModel.cs
+    │  │      │      ValidateExtends.cs
+    │  │      │      
+    │  │      └─Validators
+    │  │              BoolValidator.cs
+    │  │              DateValidator.cs
+    │  │              NumericValidator.cs
+    │  │              StringValidator.cs
+    │  │              Validator.cs
+    │  │              ValidatorBase.cs
+    │  │              ValidatorMaxPrice.cs
+    │  │              
+    │  ├─UtilitiesApi
+    │  │  │  app.config
+    │  │  │  packages.config
+    │  │  │  Utilities.Apis.csproj
+    │  │  │  WebApiConsts.cs
+    │  │  │  WebApiContext.cs
+    │  │  │  
+    │  │  ├─Attributes
+    │  │  │      AuditAttribute.cs
+    │  │  │      AuthenticationByCookieAttribute.cs
+    │  │  │      BasicAuthenticationAttribute.cs
+    │  │  │      RequireAllAuthorizeAttribute.cs
+    │  │  │      RequireAnyAuthorizeAttribute.cs
+    │  │  │      RequireAuthorizeAttribute.cs
+    │  │  │      
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │      ChnCharInfo.dll
+    │  │  │  │      ICSharpCode.SharpZipLib.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Common.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Data.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Logging.dll
+    │  │  │  │      Microsoft.Practices.ServiceLocation.dll
+    │  │  │  │      Microsoft.Practices.Unity.dll
+    │  │  │  │      Microsoft.Practices.Unity.Interception.dll
+    │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │      Newtonsoft.Json.xml
+    │  │  │  │      System.Net.Http.Formatting.dll
+    │  │  │  │      System.Net.Http.Formatting.xml
+    │  │  │  │      System.Web.Http.dll
+    │  │  │  │      System.Web.Http.WebHost.dll
+    │  │  │  │      System.Web.Http.WebHost.xml
+    │  │  │  │      System.Web.Http.xml
+    │  │  │  │      WitsWay.Utilities.Apis.dll
+    │  │  │  │      WitsWay.Utilities.Apis.dll.config
+    │  │  │  │      WitsWay.Utilities.Apis.pdb
+    │  │  │  │      WitsWay.Utilities.Apis.xml
+    │  │  │  │      WitsWay.Utilities.dll
+    │  │  │  │      WitsWay.Utilities.pdb
+    │  │  │  │      WitsWay.Utilities.Web.dll
+    │  │  │  │      WitsWay.Utilities.Web.pdb
+    │  │  │  │      WitsWay.Utilities.Web.xml
+    │  │  │  │      WitsWay.Utilities.xml
+    │  │  │  │      
+    │  │  │  └─Release
+    │  │  ├─Controller
+    │  │  │      IAuditableController.cs
+    │  │  │      IAuthoritableController.cs
+    │  │  │      
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  Utilities.Api.csproj.FileListAbsolute.txt
+    │  │  │  │  │  Utilities.Api.csprojResolveAssemblyReference.cache
+    │  │  │  │  │  Utilities.Apis.csproj.FileListAbsolute.txt
+    │  │  │  │  │  Utilities.Apis.csprojResolveAssemblyReference.cache
+    │  │  │  │  │  WitsWay.Utilities.Apis.dll
+    │  │  │  │  │  WitsWay.Utilities.Apis.pdb
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  └─Properties
+    │  │          AssemblyInfo.cs
+    │  │          
+    │  ├─UtilitiesTest
+    │  │  │  App.config
+    │  │  │  Utilities.Tests.csproj
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │  │  ChnCharInfo.dll
+    │  │  │  │  │  DevExpress.Charts.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.CodeParser.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.xml
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpo.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpo.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.xml
+    │  │  │  │  │  ExpressionEvaluator.dll
+    │  │  │  │  │  ICSharpCode.SharpZipLib.dll
+    │  │  │  │  │  Microsoft.Practices.EnterpriseLibrary.Common.dll
+    │  │  │  │  │  Microsoft.Practices.EnterpriseLibrary.Data.dll
+    │  │  │  │  │  Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+    │  │  │  │  │  Microsoft.Practices.EnterpriseLibrary.Logging.dll
+    │  │  │  │  │  Microsoft.Practices.ServiceLocation.dll
+    │  │  │  │  │  Microsoft.Practices.Unity.dll
+    │  │  │  │  │  Microsoft.Practices.Unity.Interception.dll
+    │  │  │  │  │  Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+    │  │  │  │  │  Newtonsoft.Json.dll
+    │  │  │  │  │  Newtonsoft.Json.xml
+    │  │  │  │  │  System.Web.Http.dll
+    │  │  │  │  │  System.Web.Http.SelfHost.dll
+    │  │  │  │  │  System.Web.Http.SelfHost.xml
+    │  │  │  │  │  System.Web.Http.xml
+    │  │  │  │  │  WitsWay.Utilities.dll
+    │  │  │  │  │  WitsWay.Utilities.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.dll
+    │  │  │  │  │  WitsWay.Utilities.Wcf.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.xml
+    │  │  │  │  │  WitsWay.Utilities.Web.dll
+    │  │  │  │  │  WitsWay.Utilities.Web.pdb
+    │  │  │  │  │  WitsWay.Utilities.Web.xml
+    │  │  │  │  │  WitsWay.Utilities.Win.dll
+    │  │  │  │  │  WitsWay.Utilities.Win.dll.config
+    │  │  │  │  │  WitsWay.Utilities.Win.pdb
+    │  │  │  │  │  WitsWay.Utilities.Win.xml
+    │  │  │  │  │  WitsWay.Utilities.xml
+    │  │  │  │  │  WitsWay.Utlities.Tests.dll
+    │  │  │  │  │  WitsWay.Utlities.Tests.dll.config
+    │  │  │  │  │  WitsWay.Utlities.Tests.pdb
+    │  │  │  │  │  
+    │  │  │  │  ├─de
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─es
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─ja
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─ru
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  └─zh-Hans
+    │  │  │  │          Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+    │  │  │  │          
+    │  │  │  ├─Release
+    │  │  │  └─x64
+    │  │  │      ├─Debug
+    │  │  │      └─Release
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  Utilities.Tests.csproj.FileListAbsolute.txt
+    │  │  │  │  │  Utilities.Tests.csprojResolveAssemblyReference.cache
+    │  │  │  │  │  WitsWay.Utlities.Tests.dll
+    │  │  │  │  │  WitsWay.Utlities.Tests.pdb
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  ├─Release
+    │  │  │  │      CoreCompileInputs.cache
+    │  │  │  │      
+    │  │  │  └─x64
+    │  │  │      ├─Debug
+    │  │  │      │      CoreCompileInputs.cache
+    │  │  │      │      
+    │  │  │      └─Release
+    │  │  │              CoreCompileInputs.cache
+    │  │  │              
+    │  │  ├─Others
+    │  │  │      ExpressionEvaluationTest.cs
+    │  │  │      
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      
+    │  │  ├─Utilities
+    │  │  │  │  WinUtilityHelper.cs
+    │  │  │  │  
+    │  │  │  ├─Attributes
+    │  │  │  │      EnumFieldAttributeTests.cs
+    │  │  │  │      
+    │  │  │  ├─Builders
+    │  │  │  │      PageParameterBuilderTest.cs
+    │  │  │  │      
+    │  │  │  ├─Extents
+    │  │  │  │      EnumerableExtensionsTest.cs
+    │  │  │  │      EnumExtensionTest.cs
+    │  │  │  │      ListExtensionTest.cs
+    │  │  │  │      ObjectExtendsTest.cs
+    │  │  │  │      
+    │  │  │  ├─Helpers
+    │  │  │  │      CollectionHelperTests.cs
+    │  │  │  │      ComputerHelperTests.cs
+    │  │  │  │      EncryptDecryptHelperTests.cs
+    │  │  │  │      EnumHelperTests.cs
+    │  │  │  │      ExceptionHelperThrowTest.cs
+    │  │  │  │      FileHelperTests.cs
+    │  │  │  │      JsonCreationConverterTests.cs
+    │  │  │  │      JsonDeserializeHelperTests.cs
+    │  │  │  │      PathCodeHelperTests.cs
+    │  │  │  │      PinYinHelperTests.cs
+    │  │  │  │      SerilizeHelperTests.cs
+    │  │  │  │      ShowCastHelperTests.cs
+    │  │  │  │      TSQLHelperTests.cs
+    │  │  │  │      ZipHelperTests.cs
+    │  │  │  │      
+    │  │  │  ├─Validates
+    │  │  │  │      TestCustomValidator.cs
+    │  │  │  │      ValidateTests.cs
+    │  │  │  │      
+    │  │  │  └─_Temp
+    │  │  │          _InOutTemp.cs
+    │  │  │          
+    │  │  └─UtilitiesWin
+    │  │      │  HttpClientHelperTests.cs
+    │  │      │  
+    │  │      └─Entities
+    │  │              CustomerPreorderFilter.cs
+    │  │              GridSearchParameter.cs
+    │  │              LoginTypeEnum.cs
+    │  │              PageParameter.cs
+    │  │              ShopLoginPost.cs
+    │  │              SortColumn.cs
+    │  │              
+    │  ├─UtilitiesWcf
+    │  │  │  AddressWithDnsIdentity.cs
+    │  │  │  Utilities.Wcf.csproj
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │      ChnCharInfo.dll
+    │  │  │  │      ICSharpCode.SharpZipLib.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Common.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Data.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Logging.dll
+    │  │  │  │      Microsoft.Practices.ServiceLocation.dll
+    │  │  │  │      Microsoft.Practices.Unity.dll
+    │  │  │  │      Microsoft.Practices.Unity.Interception.dll
+    │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │      WitsWay.Utilities.dll
+    │  │  │  │      WitsWay.Utilities.pdb
+    │  │  │  │      WitsWay.Utilities.Wcf.dll
+    │  │  │  │      WitsWay.Utilities.Wcf.pdb
+    │  │  │  │      WitsWay.Utilities.Wcf.xml
+    │  │  │  │      WitsWay.Utilities.xml
+    │  │  │  │      
+    │  │  │  ├─Release
+    │  │  │  └─x64
+    │  │  │      ├─Debug
+    │  │  │      └─Release
+    │  │  ├─EngineServer
+    │  │  │      DsMessageQueue.cs
+    │  │  │      EngineExecuteCore.cs
+    │  │  │      IAutoTask.cs
+    │  │  │      QueueHandler.cs
+    │  │  │      QueueTaskMessage.cs
+    │  │  │      QueueTaskMessageBase.cs
+    │  │  │      TimingTask.cs
+    │  │  │      
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  Utilities.Wcf.csproj.FileListAbsolute.txt
+    │  │  │  │  │  Utilities.Wcf.csprojResolveAssemblyReference.cache
+    │  │  │  │  │  WitsWay.Utilities.Wcf.dll
+    │  │  │  │  │  WitsWay.Utilities.Wcf.pdb
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  ├─Release
+    │  │  │  │      CoreCompileInputs.cache
+    │  │  │  │      
+    │  │  │  └─x64
+    │  │  │      ├─Debug
+    │  │  │      │      CoreCompileInputs.cache
+    │  │  │      │      
+    │  │  │      └─Release
+    │  │  │              CoreCompileInputs.cache
+    │  │  │              
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      
+    │  │  └─WcfComponent
+    │  │          WcfClient.cs
+    │  │          WcfClientForAnonymity.cs
+    │  │          WcfHelper.cs
+    │  │          WcfHost.cs
+    │  │          
+    │  ├─UtilitiesWeb
+    │  │  │  Utilities.Web.csproj
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │      ChnCharInfo.dll
+    │  │  │  │      ICSharpCode.SharpZipLib.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Common.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Data.dll
+    │  │  │  │      Microsoft.Practices.EnterpriseLibrary.Logging.dll
+    │  │  │  │      Microsoft.Practices.ServiceLocation.dll
+    │  │  │  │      Microsoft.Practices.Unity.dll
+    │  │  │  │      Microsoft.Practices.Unity.Interception.dll
+    │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │      WitsWay.Utilities.dll
+    │  │  │  │      WitsWay.Utilities.pdb
+    │  │  │  │      WitsWay.Utilities.Web.dll
+    │  │  │  │      WitsWay.Utilities.Web.pdb
+    │  │  │  │      WitsWay.Utilities.Web.xml
+    │  │  │  │      WitsWay.Utilities.xml
+    │  │  │  │      
+    │  │  │  └─Release
+    │  │  ├─Captcha
+    │  │  │      CaptchaImage.cs
+    │  │  │      CaptchaImageHandler.cs
+    │  │  │      VerificationCodeHandler.cs
+    │  │  │      
+    │  │  ├─Enums
+    │  │  │      HttpMethodKinds.cs
+    │  │  │      
+    │  │  ├─Extends
+    │  │  │      CookieContainerExtends.cs
+    │  │  │      StringExtends.cs
+    │  │  │      
+    │  │  ├─Helpers
+    │  │  │      CookieHelper.cs
+    │  │  │      HtmlHelper.cs
+    │  │  │      MimeTypeEnum.cs
+    │  │  │      MimeTypeHelper.cs
+    │  │  │      UploadHelper.cs
+    │  │  │      UrlHelper.cs
+    │  │  │      WebCacheHelper.cs
+    │  │  │      
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  Utilities.Web.csproj.FileListAbsolute.txt
+    │  │  │  │  │  Utilities.Web.csproj.GenerateResource.Cache
+    │  │  │  │  │  Utilities.Web.csprojResolveAssemblyReference.cache
+    │  │  │  │  │  WitsWay.Utilities.Web.dll
+    │  │  │  │  │  WitsWay.Utilities.Web.pdb
+    │  │  │  │  │  WitsWay.Utilities.Web.Properties.Resources.resources
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  │          Properties.Resources.Designer.cs.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      Resources.Designer.cs
+    │  │  │      Resources.resx
+    │  │  │      
+    │  │  └─Resources
+    │  │          CaptchaHandler.ashx
+    │  │          
+    │  ├─UtilitiesWin
+    │  │  │  app.config
+    │  │  │  AttachedFileUploader.cs
+    │  │  │  BackgroundLoader.cs
+    │  │  │  ContractItemIconKey.cs
+    │  │  │  EntityActionEnum.cs
+    │  │  │  ICheckable.cs
+    │  │  │  IconKey.cs
+    │  │  │  IconManager.cs
+    │  │  │  IdTextData.cs
+    │  │  │  IdTextValueData.cs
+    │  │  │  packages.config
+    │  │  │  PositionEnum.cs
+    │  │  │  ServiceAdapter.cs
+    │  │  │  ServiceCaller.cs
+    │  │  │  Utilities.Win.csproj
+    │  │  │  UtilityHelper.cs
+    │  │  │  WinUtilityConsts.cs
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │  │  DevExpress.Charts.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.CodeParser.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.xml
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpo.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpo.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.xml
+    │  │  │  │  │  Newtonsoft.Json.dll
+    │  │  │  │  │  Newtonsoft.Json.xml
+    │  │  │  │  │  System.Web.Http.dll
+    │  │  │  │  │  System.Web.Http.SelfHost.dll
+    │  │  │  │  │  System.Web.Http.SelfHost.xml
+    │  │  │  │  │  System.Web.Http.xml
+    │  │  │  │  │  WitsWay.Utilities.dll
+    │  │  │  │  │  WitsWay.Utilities.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.dll
+    │  │  │  │  │  WitsWay.Utilities.Wcf.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.xml
+    │  │  │  │  │  WitsWay.Utilities.Web.dll
+    │  │  │  │  │  WitsWay.Utilities.Web.pdb
+    │  │  │  │  │  WitsWay.Utilities.Web.xml
+    │  │  │  │  │  WitsWay.Utilities.Win.dll
+    │  │  │  │  │  WitsWay.Utilities.Win.dll.config
+    │  │  │  │  │  WitsWay.Utilities.Win.pdb
+    │  │  │  │  │  WitsWay.Utilities.Win.xml
+    │  │  │  │  │  WitsWay.Utilities.xml
+    │  │  │  │  │  
+    │  │  │  │  ├─de
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─es
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─ja
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  └─ru
+    │  │  │  │          DevExpress.Data.v17.1.resources.dll
+    │  │  │  │          DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │          DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │          DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │          
+    │  │  │  ├─Release
+    │  │  │  └─x64
+    │  │  │      ├─Debug
+    │  │  │      └─Release
+    │  │  ├─Builders
+    │  │  │      ConfigFormBuilder.cs
+    │  │  │      
+    │  │  ├─Controls
+    │  │  │      BasicExportModel.cs
+    │  │  │      BasicExportReport.cs
+    │  │  │      BasicExportReport.Designer.cs
+    │  │  │      BasicExportReport.resx
+    │  │  │      ButtonEditUC.cs
+    │  │  │      ColumnShowUC.cs
+    │  │  │      ColumnShowUC.Designer.cs
+    │  │  │      ColumnShowUC.resx
+    │  │  │      FlyingForm.cs
+    │  │  │      GlassButton.cs
+    │  │  │      GlassButton.designer.cs
+    │  │  │      GlassButton.resx
+    │  │  │      LoadingCircle.cs
+    │  │  │      PagerUC.cs
+    │  │  │      PagerUC.designer.cs
+    │  │  │      PagerUC.resx
+    │  │  │      RibbonMenu.cs
+    │  │  │      RibbonMenuButton.cs
+    │  │  │      RibbonMenuRenderer2.cs
+    │  │  │      SplashForm.cs
+    │  │  │      SplashForm.Designer.cs
+    │  │  │      SplashForm.resx
+    │  │  │      SplashForm2.cs
+    │  │  │      SplashForm2.Designer.cs
+    │  │  │      SplashForm2.resx
+    │  │  │      SplashNotice.cs
+    │  │  │      WaitForm.cs
+    │  │  │      WaitForm.Designer.cs
+    │  │  │      WaitForm.resx
+    │  │  │      WaitUC.cs
+    │  │  │      WaitUC.Designer.cs
+    │  │  │      WaitUC.resx
+    │  │  │      
+    │  │  ├─Extends
+    │  │  │      BarExtends.cs
+    │  │  │      ControlExtends.cs
+    │  │  │      GridColumnExtends.cs
+    │  │  │      GridControlExtends.cs
+    │  │  │      GridViewExtends.cs
+    │  │  │      GridViewExtends.Tag.cs
+    │  │  │      RepositoryItemExtends.cs
+    │  │  │      TreeListExtends.cs
+    │  │  │      TreeListNodeExtends.cs
+    │  │  │      
+    │  │  ├─Functions
+    │  │  │      WebApiHost.cs
+    │  │  │      
+    │  │  ├─Helpers
+    │  │  │      BarHelper.cs
+    │  │  │      ButtonStyleHelper.cs
+    │  │  │      ButtonStyles.cs
+    │  │  │      CheckedComboBoxHelper.cs
+    │  │  │      CheckedListBoxHelper.cs
+    │  │  │      ComboBoxHelper.cs
+    │  │  │      ControlStyleHelper.cs
+    │  │  │      DeletedStyleHelper.cs
+    │  │  │      GridDragHelper.cs
+    │  │  │      GridServerMode.cs
+    │  │  │      GridServerModeParameter.cs
+    │  │  │      GridViewDoubleClickHelper.cs
+    │  │  │      GridViewPopupHelper.cs
+    │  │  │      HttpClientHelper.cs
+    │  │  │      IGridSelectRow.cs
+    │  │  │      MyWebRequest1.cs
+    │  │  │      MyWebRequest3.cs
+    │  │  │      PInvokeHelper.LockKey.cs
+    │  │  │      PInvokeHelper.Shutdown.cs
+    │  │  │      RadioGroupHelper.cs
+    │  │  │      RepositoryComboBoxHelper.cs
+    │  │  │      RepositoryImageComboBoxHelper.cs
+    │  │  │      ShortcutHelper.cs
+    │  │  │      SpinEditHelper.cs
+    │  │  │      TextEditBlockSelectHelper.cs
+    │  │  │      TreeFilterHelper.cs
+    │  │  │      TreeFilterHelper.New.cs
+    │  │  │      TreeListHelper.cs
+    │  │  │      TreeListPopupHelper.cs
+    │  │  │      TreeStyleHelper.cs
+    │  │  │      UserControlHelper.cs
+    │  │  │      ValidateHelper.cs
+    │  │  │      XtraGridHelper.cs
+    │  │  │      
+    │  │  ├─Icons
+    │  │  │      CabinetGreen.png
+    │  │  │      CabinetRed.png
+    │  │  │      CabinetYellow.png
+    │  │  │      CablineGreen.png
+    │  │  │      CablineRed.png
+    │  │  │      CablineYellow.png
+    │  │  │      DoorGreen.png
+    │  │  │      DoorRed.png
+    │  │  │      DoorYellow.png
+    │  │  │      Error.png
+    │  │  │      FittingGreen.png
+    │  │  │      FittingRed.png
+    │  │  │      FittingYellow.png
+    │  │  │      Login_Button.png
+    │  │  │      Succeed.png
+    │  │  │      Success.ico
+    │  │  │      UnitGreen.png
+    │  │  │      UnitRed.png
+    │  │  │      UnitYellow.png
+    │  │  │      
+    │  │  ├─Images
+    │  │  │      Accept16.png
+    │  │  │      Add16.png
+    │  │  │      Backward16.png
+    │  │  │      BatchAll16.png
+    │  │  │      Batched16.png
+    │  │  │      BatchNot16.png
+    │  │  │      check16.png
+    │  │  │      ClearSearch16.png
+    │  │  │      Close16.png
+    │  │  │      Confirm16.png
+    │  │  │      Database16.png
+    │  │  │      Delete16.png
+    │  │  │      Edit16.png
+    │  │  │      Foreward16.png
+    │  │  │      Gear16.png
+    │  │  │      GenerateParameter16.png
+    │  │  │      Group16.png
+    │  │  │      Help16.png
+    │  │  │      Info16.png
+    │  │  │      Key16.png
+    │  │  │      Lock16.png
+    │  │  │      Mail16.png
+    │  │  │      Money16.png
+    │  │  │      MoveDown16.png
+    │  │  │      MoveUp16.png
+    │  │  │      Note16.png
+    │  │  │      Organize16.png
+    │  │  │      Paper16.png
+    │  │  │      Preview16.png
+    │  │  │      Print16.png
+    │  │  │      Refresh16.png
+    │  │  │      Save16.png
+    │  │  │      Search16.png
+    │  │  │      Select16.png
+    │  │  │      SendDefer16.png
+    │  │  │      SendGoods16.png
+    │  │  │      Set16.png
+    │  │  │      Sheet16.png
+    │  │  │      Unlock16.png
+    │  │  │      View16.png
+    │  │  │      ViewWay16.png
+    │  │  │      
+    │  │  ├─Layouts
+    │  │  │      ButtonEditBase.cs
+    │  │  │      CustomerControlBase.cs
+    │  │  │      CustomerControlBase.Designer.cs
+    │  │  │      CustomerControlBase.resx
+    │  │  │      LookUpEditBase.cs
+    │  │  │      
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  Interop.IWshRuntimeLibrary.dll
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  Utilities.Win.csproj.FileListAbsolute.txt
+    │  │  │  │  │  Utilities.Win.csproj.GenerateResource.Cache
+    │  │  │  │  │  Utilities.Win.csproj.ResolveComReference.cache
+    │  │  │  │  │  Utilities.Win.csprojResolveAssemblyReference.cache
+    │  │  │  │  │  WitsWay.Utilities.Win.Controls.BasicExportReport.resources
+    │  │  │  │  │  WitsWay.Utilities.Win.Controls.ColumnShowUC.resources
+    │  │  │  │  │  WitsWay.Utilities.Win.Controls.GlassButton.resources
+    │  │  │  │  │  WitsWay.Utilities.Win.Controls.PagerUC.resources
+    │  │  │  │  │  WitsWay.Utilities.Win.Controls.SplashForm.resources
+    │  │  │  │  │  WitsWay.Utilities.Win.Controls.SplashForm2.resources
+    │  │  │  │  │  WitsWay.Utilities.Win.Controls.WaitForm.resources
+    │  │  │  │  │  WitsWay.Utilities.Win.Controls.WaitUC.resources
+    │  │  │  │  │  WitsWay.Utilities.Win.dll
+    │  │  │  │  │  witsway.utilities.win.dll.licenses
+    │  │  │  │  │  WitsWay.Utilities.Win.Layouts.CustomerControlBase.resources
+    │  │  │  │  │  WitsWay.Utilities.Win.pdb
+    │  │  │  │  │  WitsWay.Utilities.Win.Properties.Resources.resources
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  │          Properties.Resources.Designer.cs.dll
+    │  │  │  │          
+    │  │  │  ├─Release
+    │  │  │  │      CoreCompileInputs.cache
+    │  │  │  │      Interop.IWshRuntimeLibrary.dll
+    │  │  │  │      Utilities.Win.csproj.ResolveComReference.cache
+    │  │  │  │      
+    │  │  │  └─x64
+    │  │  │      ├─Debug
+    │  │  │      │      CoreCompileInputs.cache
+    │  │  │      │      Interop.IWshRuntimeLibrary.dll
+    │  │  │      │      Utilities.Win.csproj.ResolveComReference.cache
+    │  │  │      │      
+    │  │  │      └─Release
+    │  │  │              CoreCompileInputs.cache
+    │  │  │              Interop.IWshRuntimeLibrary.dll
+    │  │  │              Utilities.Win.csproj.ResolveComReference.cache
+    │  │  │              
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      licenses.licx
+    │  │  │      Resources.Designer.cs
+    │  │  │      Resources.resx
+    │  │  │      
+    │  │  ├─Resources
+    │  │  │      AddNew.png
+    │  │  │      CollapseAll16.png
+    │  │  │      CommandKey.png
+    │  │  │      Delete.png
+    │  │  │      Executing.gif
+    │  │  │      ExpandAll16.png
+    │  │  │      Overlay.png
+    │  │  │      Wait.gif
+    │  │  │      
+    │  │  └─_Deleted
+    │  │          GridColumnHeaderCheckHelper.cs
+    │  │          XtraGridHelper.Check.cs
+    │  │          XtraGridHelper.Editor.cs
+    │  │          
+    │  └─Utillities.Win.Tests
+    │      │  app.config
+    │      │  Form1.cs
+    │      │  Form1.Designer.cs
+    │      │  Form1.resx
+    │      │  Program.cs
+    │      │  Utillities.Win.Tests.csproj
+    │      │  
+    │      ├─bin
+    │      │  ├─Debug
+    │      │  │  │  ChnCharInfo.dll
+    │      │  │  │  DevExpress.BonusSkins.v17.1.dll
+    │      │  │  │  DevExpress.Charts.v17.1.Core.dll
+    │      │  │  │  DevExpress.CodeParser.v17.1.dll
+    │      │  │  │  DevExpress.Data.v17.1.dll
+    │      │  │  │  DevExpress.Data.v17.1.xml
+    │      │  │  │  DevExpress.DataAccess.v17.1.dll
+    │      │  │  │  DevExpress.DataAccess.v17.1.xml
+    │      │  │  │  DevExpress.Office.v17.1.Core.dll
+    │      │  │  │  DevExpress.Office.v17.1.Core.xml
+    │      │  │  │  DevExpress.Pdf.v17.1.Core.dll
+    │      │  │  │  DevExpress.Pdf.v17.1.Core.xml
+    │      │  │  │  DevExpress.PivotGrid.v17.1.Core.dll
+    │      │  │  │  DevExpress.PivotGrid.v17.1.Core.xml
+    │      │  │  │  DevExpress.Printing.v17.1.Core.dll
+    │      │  │  │  DevExpress.Printing.v17.1.Core.xml
+    │      │  │  │  DevExpress.RichEdit.v17.1.Core.dll
+    │      │  │  │  DevExpress.RichEdit.v17.1.Core.xml
+    │      │  │  │  DevExpress.Sparkline.v17.1.Core.dll
+    │      │  │  │  DevExpress.Sparkline.v17.1.Core.xml
+    │      │  │  │  DevExpress.Utils.v17.1.dll
+    │      │  │  │  DevExpress.Utils.v17.1.xml
+    │      │  │  │  DevExpress.Xpo.v17.1.dll
+    │      │  │  │  DevExpress.Xpo.v17.1.xml
+    │      │  │  │  DevExpress.XtraBars.v17.1.dll
+    │      │  │  │  DevExpress.XtraBars.v17.1.xml
+    │      │  │  │  DevExpress.XtraCharts.v17.1.dll
+    │      │  │  │  DevExpress.XtraCharts.v17.1.xml
+    │      │  │  │  DevExpress.XtraEditors.v17.1.dll
+    │      │  │  │  DevExpress.XtraEditors.v17.1.xml
+    │      │  │  │  DevExpress.XtraGauges.v17.1.Core.dll
+    │      │  │  │  DevExpress.XtraGauges.v17.1.Core.xml
+    │      │  │  │  DevExpress.XtraGrid.v17.1.dll
+    │      │  │  │  DevExpress.XtraGrid.v17.1.xml
+    │      │  │  │  DevExpress.XtraLayout.v17.1.dll
+    │      │  │  │  DevExpress.XtraLayout.v17.1.xml
+    │      │  │  │  DevExpress.XtraNavBar.v17.1.dll
+    │      │  │  │  DevExpress.XtraNavBar.v17.1.xml
+    │      │  │  │  DevExpress.XtraPrinting.v17.1.dll
+    │      │  │  │  DevExpress.XtraPrinting.v17.1.xml
+    │      │  │  │  DevExpress.XtraReports.v17.1.dll
+    │      │  │  │  DevExpress.XtraReports.v17.1.xml
+    │      │  │  │  DevExpress.XtraTreeList.v17.1.dll
+    │      │  │  │  DevExpress.XtraTreeList.v17.1.xml
+    │      │  │  │  ICSharpCode.SharpZipLib.dll
+    │      │  │  │  Microsoft.Practices.EnterpriseLibrary.Common.dll
+    │      │  │  │  Microsoft.Practices.EnterpriseLibrary.Data.dll
+    │      │  │  │  Microsoft.Practices.EnterpriseLibrary.Logging.dll
+    │      │  │  │  Microsoft.Practices.ServiceLocation.dll
+    │      │  │  │  Microsoft.Practices.Unity.dll
+    │      │  │  │  Microsoft.Practices.Unity.Interception.dll
+    │      │  │  │  Newtonsoft.Json.dll
+    │      │  │  │  Newtonsoft.Json.xml
+    │      │  │  │  System.Web.Http.dll
+    │      │  │  │  System.Web.Http.SelfHost.dll
+    │      │  │  │  System.Web.Http.SelfHost.xml
+    │      │  │  │  System.Web.Http.xml
+    │      │  │  │  WitsWay.Utilities.dll
+    │      │  │  │  WitsWay.Utilities.pdb
+    │      │  │  │  WitsWay.Utilities.Wcf.dll
+    │      │  │  │  WitsWay.Utilities.Wcf.pdb
+    │      │  │  │  WitsWay.Utilities.Wcf.xml
+    │      │  │  │  WitsWay.Utilities.Web.dll
+    │      │  │  │  WitsWay.Utilities.Web.pdb
+    │      │  │  │  WitsWay.Utilities.Web.xml
+    │      │  │  │  WitsWay.Utilities.Win.dll
+    │      │  │  │  WitsWay.Utilities.Win.dll.config
+    │      │  │  │  WitsWay.Utilities.Win.pdb
+    │      │  │  │  WitsWay.Utilities.Win.Tests.exe
+    │      │  │  │  WitsWay.Utilities.Win.Tests.exe.config
+    │      │  │  │  WitsWay.Utilities.Win.Tests.pdb
+    │      │  │  │  WitsWay.Utilities.Win.xml
+    │      │  │  │  WitsWay.Utilities.xml
+    │      │  │  │  
+    │      │  │  ├─de
+    │      │  │  │      DevExpress.Data.v17.1.resources.dll
+    │      │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │      │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │      │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │      │  │  │      
+    │      │  │  ├─es
+    │      │  │  │      DevExpress.Data.v17.1.resources.dll
+    │      │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │      │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │      │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │      │  │  │      
+    │      │  │  ├─ja
+    │      │  │  │      DevExpress.Data.v17.1.resources.dll
+    │      │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │      │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │      │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │      │  │  │      
+    │      │  │  └─ru
+    │      │  │          DevExpress.Data.v17.1.resources.dll
+    │      │  │          DevExpress.DataAccess.v17.1.resources.dll
+    │      │  │          DevExpress.Office.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Pdf.v17.1.Core.resources.dll
+    │      │  │          DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Printing.v17.1.Core.resources.dll
+    │      │  │          DevExpress.RichEdit.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Sparkline.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Utils.v17.1.resources.dll
+    │      │  │          DevExpress.Xpo.v17.1.resources.dll
+    │      │  │          DevExpress.XtraBars.v17.1.resources.dll
+    │      │  │          DevExpress.XtraCharts.v17.1.resources.dll
+    │      │  │          DevExpress.XtraEditors.v17.1.resources.dll
+    │      │  │          DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │      │  │          DevExpress.XtraGrid.v17.1.resources.dll
+    │      │  │          DevExpress.XtraLayout.v17.1.resources.dll
+    │      │  │          DevExpress.XtraNavBar.v17.1.resources.dll
+    │      │  │          DevExpress.XtraPrinting.v17.1.resources.dll
+    │      │  │          DevExpress.XtraReports.v17.1.resources.dll
+    │      │  │          DevExpress.XtraTreeList.v17.1.resources.dll
+    │      │  │          
+    │      │  └─Release
+    │      ├─obj
+    │      │  ├─Debug
+    │      │  │  │  CoreCompileInputs.cache
+    │      │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │      │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │      │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │      │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │      │  │  │  Utillities.Win.Tests.csproj.FileListAbsolute.txt
+    │      │  │  │  Utillities.Win.Tests.csproj.GenerateResource.Cache
+    │      │  │  │  Utillities.Win.Tests.csprojResolveAssemblyReference.cache
+    │      │  │  │  WitsWay.Utilities.Win.Tests.exe
+    │      │  │  │  witsway.utilities.win.tests.exe.licenses
+    │      │  │  │  WitsWay.Utilities.Win.Tests.Form1.resources
+    │      │  │  │  WitsWay.Utilities.Win.Tests.pdb
+    │      │  │  │  WitsWay.Utilities.Win.Tests.Properties.Resources.resources
+    │      │  │  │  
+    │      │  │  └─TempPE
+    │      │  │          Properties.Resources.Designer.cs.dll
+    │      │  │          
+    │      │  └─Release
+    │      │          CoreCompileInputs.cache
+    │      │          
+    │      └─Properties
+    │              AssemblyInfo.cs
+    │              licenses.licx
+    │              Resources.Designer.cs
+    │              Resources.resx
+    │              Settings.Designer.cs
+    │              Settings.settings
+    │              
+    ├─Assemblies
+    │  ├─DLL
+    │  │      WitsWay.Utilities.Apis.dll
+    │  │      WitsWay.Utilities.Apis.pdb
+    │  │      WitsWay.Utilities.Apis.xml
+    │  │      WitsWay.Utilities.dll
+    │  │      WitsWay.Utilities.pdb
+    │  │      WitsWay.Utilities.Wcf.dll
+    │  │      WitsWay.Utilities.Wcf.pdb
+    │  │      WitsWay.Utilities.Wcf.xml
+    │  │      WitsWay.Utilities.Web.dll
+    │  │      WitsWay.Utilities.Web.pdb
+    │  │      WitsWay.Utilities.Web.xml
+    │  │      WitsWay.Utilities.Win.dll
+    │  │      WitsWay.Utilities.Win.pdb
+    │  │      WitsWay.Utilities.Win.xml
+    │  │      WitsWay.Utilities.xml
+    │  │      
+    │  └─DLL3
+    │          ChnCharInfo.dll
+    │          ChnCharInfo.resources.dll
+    │          Common.Log.dll
+    │          Common.Log.log4net.dll
+    │          Common.Logging.Core.dll
+    │          Common.Logging.dll
+    │          EntityFramework.dll
+    │          EntityFramework.SqlServer.dll
+    │          ExpressionEvaluator.dll
+    │          ExpressionTreeVisualizer.dll
+    │          ExpressMapper.dll
+    │          ExpressMapper.pdb
+    │          ExpressMapper.xml
+    │          ICSharpCode.SharpZipLib.dll
+    │          log4net.dll
+    │          Microsoft.Practices.EnterpriseLibrary.Common.dll
+    │          Microsoft.Practices.EnterpriseLibrary.Data.dll
+    │          Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+    │          Microsoft.Practices.EnterpriseLibrary.Logging.dll
+    │          Microsoft.Practices.ServiceLocation.dll
+    │          Microsoft.Practices.Unity.dll
+    │          Microsoft.Practices.Unity.Interception.dll
+    │          Newtonsoft.Json.dll
+    │          Newtonsoft.Json.xml
+    │          Quartz.dll
+    │          VisualizerForm.dll
+    │          
+    ├─TempTests
+    │  │  TempTests.sln
+    │  │  
+    │  ├─ConsoleTest
+    │  │  │  App.config
+    │  │  │  ConsoleTest.csproj
+    │  │  │  Employee.cs
+    │  │  │  Program.cs
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │      WitsWay.TempTests.ConsoleTest.exe
+    │  │  │  │      WitsWay.TempTests.ConsoleTest.exe.config
+    │  │  │  │      WitsWay.TempTests.ConsoleTest.pdb
+    │  │  │  │      WitsWay.TempTests.DynamicQuery.dll
+    │  │  │  │      WitsWay.TempTests.DynamicQuery.pdb
+    │  │  │  │      WitsWay.Utilities.dll
+    │  │  │  │      WitsWay.Utilities.pdb
+    │  │  │  │      WitsWay.Utilities.xml
+    │  │  │  │      
+    │  │  │  └─Release
+    │  │  ├─Entities
+    │  │  │      DataFilterItemData.cs
+    │  │  │      DataItemData.cs
+    │  │  │      EmployeeInfoData.cs
+    │  │  │      ModuleItemData.cs
+    │  │  │      OrgInfoData.cs
+    │  │  │      RightItemData.cs
+    │  │  │      RightMapData.cs
+    │  │  │      RoleInfoData.cs
+    │  │  │      SystemItemData.cs
+    │  │  │      UserInfoData.cs
+    │  │  │      
+    │  │  ├─Enums
+    │  │  │      EmployeeStatus.cs
+    │  │  │      Sex.cs
+    │  │  │      
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  ConsoleTest.csproj.FileListAbsolute.txt
+    │  │  │  │  │  ConsoleTest.csprojResolveAssemblyReference.cache
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  WitsWay.TempTests.ConsoleTest.exe
+    │  │  │  │  │  WitsWay.TempTests.ConsoleTest.pdb
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  └─Properties
+    │  │          AssemblyInfo.cs
+    │  │          
+    │  ├─ControlsTest
+    │  │  │  ControlsTest.csproj
+    │  │  │  PersonalDiskForm.cs
+    │  │  │  PersonalDiskForm.designer.cs
+    │  │  │  PersonalDiskForm.resx
+    │  │  │  Program.cs
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │  │  DevExpress.BonusSkins.v17.1.dll
+    │  │  │  │  │  DevExpress.Charts.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.CodeParser.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.UI.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.UI.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.xml
+    │  │  │  │  │  DevExpress.Diagram.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Diagram.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Drawing.dll
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Drawing.xml
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.SpellChecker.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.SpellChecker.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.UI.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.UI.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpo.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpo.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.Extensions.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.Wizard.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.Wizard.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraDiagram.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraDiagram.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPivotGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPivotGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.Extensions.dll
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.Extensions.xml
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraRichEdit.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraRichEdit.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.Extensions.dll
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.Extensions.xml
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.Reporting.dll
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.Reporting.Extensions.dll
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.Reporting.Extensions.xml
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.Reporting.xml
+    │  │  │  │  │  DevExpress.XtraScheduler.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraSpellChecker.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraSpellChecker.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraVerticalGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraVerticalGrid.v17.1.xml
+    │  │  │  │  │  Newtonsoft.Json.dll
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.exe
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.pdb
+    │  │  │  │  │  WitsWay.Utilities.dll
+    │  │  │  │  │  WitsWay.Utilities.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.dll
+    │  │  │  │  │  WitsWay.Utilities.Wcf.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.xml
+    │  │  │  │  │  WitsWay.Utilities.Web.dll
+    │  │  │  │  │  WitsWay.Utilities.Web.pdb
+    │  │  │  │  │  WitsWay.Utilities.Web.xml
+    │  │  │  │  │  WitsWay.Utilities.Win.dll
+    │  │  │  │  │  WitsWay.Utilities.Win.pdb
+    │  │  │  │  │  WitsWay.Utilities.Win.xml
+    │  │  │  │  │  WitsWay.Utilities.xml
+    │  │  │  │  │  
+    │  │  │  │  ├─de
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.Reporting.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraSpellChecker.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─es
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.Reporting.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraSpellChecker.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─ja
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.Reporting.resources.dll
+    │  │  │  │  │      DevExpress.XtraScheduler.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraSpellChecker.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  └─ru
+    │  │  │  │          DevExpress.Data.v17.1.resources.dll
+    │  │  │  │          DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │          DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │          DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │          DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │          DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │          DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │  │  │  │          DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraScheduler.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.XtraScheduler.v17.1.Extensions.resources.dll
+    │  │  │  │          DevExpress.XtraScheduler.v17.1.Reporting.resources.dll
+    │  │  │  │          DevExpress.XtraScheduler.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraSpellChecker.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  ├─Desktops
+    │  │  │  │  DesktopForm.cs
+    │  │  │  │  DesktopForm.Designer.cs
+    │  │  │  │  DesktopForm.resx
+    │  │  │  │  DesktopUc.cs
+    │  │  │  │  DesktopUc.Designer.cs
+    │  │  │  │  DesktopUc.resx
+    │  │  │  │  
+    │  │  │  └─Widgets
+    │  │  │      │  Calendar.cs
+    │  │  │      │  Calendar.designer.cs
+    │  │  │      │  Calendar.resx
+    │  │  │      │  Clock.cs
+    │  │  │      │  Clock.designer.cs
+    │  │  │      │  Clock.resx
+    │  │  │      │  ToDoList.cs
+    │  │  │      │  ToDoList.designer.cs
+    │  │  │      │  ToDoList.resx
+    │  │  │      │  
+    │  │  │      └─Widgets
+    │  │  ├─EditorTests
+    │  │  │      LookupEditorTest.cs
+    │  │  │      LookupEditorTest.Designer.cs
+    │  │  │      LookupEditorTest.resx
+    │  │  │      PopupContainerEditTest.cs
+    │  │  │      PopupContainerEditTest.Designer.cs
+    │  │  │      PopupContainerEditTest.resx
+    │  │  │      SearchLookupEditorTest.cs
+    │  │  │      SearchLookupEditorTest.Designer.cs
+    │  │  │      SearchLookupEditorTest.resx
+    │  │  │      TreeListLookupEditorTest.cs
+    │  │  │      TreeListLookupEditorTest.Designer.cs
+    │  │  │      TreeListLookupEditorTest.resx
+    │  │  │      
+    │  │  ├─Guide
+    │  │  │      DXGuideLayeredWindow.cs
+    │  │  │      DXGuideLayeredWindowEx.cs
+    │  │  │      DXLayeredWindowAlt.cs
+    │  │  │      GuideControl.cs
+    │  │  │      GuideControlDescription.cs
+    │  │  │      GuideControlEx.cs
+    │  │  │      GuideForm.cs
+    │  │  │      GuideFormAlt.cs
+    │  │  │      GuideGenerator.cs
+    │  │  │      GuideGetCurrentModuleDelegate.cs
+    │  │  │      IGuideDescriptionProvider.cs
+    │  │  │      IGuideForm.cs
+    │  │  │      
+    │  │  ├─Models
+    │  │  │      Employee.cs
+    │  │  │      EmployeeStatus.cs
+    │  │  │      Sex.cs
+    │  │  │      
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  ControlsTest.csproj.FileListAbsolute.txt
+    │  │  │  │  │  ControlsTest.csproj.GenerateResource.Cache
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Desktops.DesktopForm.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Desktops.DesktopUc.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Desktops.Widgets.Calendar.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Desktops.Widgets.Clock.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Desktops.Widgets.ToDoList.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.EditorTests.LookupEditorTest.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.EditorTests.PopupContainerEditTest.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.EditorTests.SearchLookupEditorTest.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.EditorTests.TreeListLookupEditorTest.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.exe
+    │  │  │  │  │  witsway.temptests.controlstest.exe.licenses
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.pdb
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.PersonalDiskForm.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Properties.Resources.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Temps.SplashScreen1.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Temps.XtraForm1.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Temps.XtraUserControl1.resources
+    │  │  │  │  │  WitsWay.TempTests.ControlsTest.Temps.XtraUserControl2.resources
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  │          Properties.Resources.Designer.cs.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      licenses.licx
+    │  │  │      Resources.Designer.cs
+    │  │  │      Resources.resx
+    │  │  │      Settings.Designer.cs
+    │  │  │      Settings.settings
+    │  │  │      
+    │  │  ├─Resources
+    │  │  │  │  01-鼠.png
+    │  │  │  │  add-normal.png
+    │  │  │  │  add.png
+    │  │  │  │  AddCondition.png
+    │  │  │  │  AddGroup.png
+    │  │  │  │  And.png
+    │  │  │  │  AnyOf.png
+    │  │  │  │  BeginsWith.png
+    │  │  │  │  Between.png
+    │  │  │  │  ClearAll.png
+    │  │  │  │  Contains.png
+    │  │  │  │  delete-normal.png
+    │  │  │  │  delete.png
+    │  │  │  │  DoesNotContain.png
+    │  │  │  │  DoesNotEqual.png
+    │  │  │  │  edit-normal.png
+    │  │  │  │  edit.png
+    │  │  │  │  ellipse-normal.png
+    │  │  │  │  ellipse.png
+    │  │  │  │  EndsWith.png
+    │  │  │  │  Equals.png
+    │  │  │  │  filter.png
+    │  │  │  │  Greater.png
+    │  │  │  │  GreaterOrEqual.png
+    │  │  │  │  IsNotNull.png
+    │  │  │  │  IsNotNullOrEmpty.png
+    │  │  │  │  IsNull.png
+    │  │  │  │  IsNullOrEmpty.png
+    │  │  │  │  Less.png
+    │  │  │  │  LessOrEqual.png
+    │  │  │  │  Like.png
+    │  │  │  │  list-normal.png
+    │  │  │  │  list.png
+    │  │  │  │  NoneOf.png
+    │  │  │  │  NotAnd.png
+    │  │  │  │  NotBetween.png
+    │  │  │  │  NotLike.png
+    │  │  │  │  NotOr.png
+    │  │  │  │  Or.png
+    │  │  │  │  RemoveGroup.png
+    │  │  │  │  settings.svg
+    │  │  │  │  viewsetting.svg
+    │  │  │  │  yitusoft-LOGO.png
+    │  │  │  │  彩色背景-002.jpg
+    │  │  │  │  彩色背景-020.gif
+    │  │  │  │  
+    │  │  │  └─Disk
+    │  │  │          attach-16x16.png
+    │  │  │          contact-16x16.png
+    │  │  │          Content.png
+    │  │  │          CopyLarge.png
+    │  │  │          CopyPathSmall.png
+    │  │  │          CopyToLarge.png
+    │  │  │          CutSmall.png
+    │  │  │          delete-16x16.png
+    │  │  │          DeleteLarge.png
+    │  │  │          DesktopSmall.png
+    │  │  │          DocumentsSmall.png
+    │  │  │          DownloadsSmall.png
+    │  │  │          EditSmall.png
+    │  │  │          ExtraLarge.png
+    │  │  │          FavoritesSmall.png
+    │  │  │          Forward.png
+    │  │  │          HelpSmall.png
+    │  │  │          HideSelectedItemsLarge.png
+    │  │  │          InvertSelectionSmall.png
+    │  │  │          Large.png
+    │  │  │          LibrarySmall.bmp
+    │  │  │          List2.png
+    │  │  │          Medium.png
+    │  │  │          MoveToLarge.png
+    │  │  │          MusicSmall.png
+    │  │  │          NavigationPaneLarge.png
+    │  │  │          NewFolderSmall.png
+    │  │  │          NewItemSmall.png
+    │  │  │          OpenSmall.png
+    │  │  │          OptionsLarge.png
+    │  │  │          PasteLarge.png
+    │  │  │          PropertiesLarge.bmp
+    │  │  │          properties_32x32.png
+    │  │  │          RecentPlacesSmall.png
+    │  │  │          RenameLarge.png
+    │  │  │          Reply.png
+    │  │  │          ReplyAll.png
+    │  │  │          sale-16x16.png
+    │  │  │          SelectedAllSmall.png
+    │  │  │          SelectedNoneSmall.png
+    │  │  │          Small.png
+    │  │  │          StandardSystemIco.ico
+    │  │  │          StandardSystemPng.png
+    │  │  │          StandardSystemStartBG.png
+    │  │  │          Tiles.png
+    │  │  │          Unknown-user.png
+    │  │  │          VideosSmall.png
+    │  │  │          
+    │  │  └─Temps
+    │  │          SplashScreen1.cs
+    │  │          SplashScreen1.Designer.cs
+    │  │          SplashScreen1.resx
+    │  │          XtraForm1.cs
+    │  │          XtraForm1.Designer.cs
+    │  │          XtraForm1.resx
+    │  │          XtraUserControl1.cs
+    │  │          XtraUserControl1.Designer.cs
+    │  │          XtraUserControl1.resx
+    │  │          XtraUserControl2.cs
+    │  │          XtraUserControl2.Designer.cs
+    │  │          XtraUserControl2.resx
+    │  │          
+    │  ├─DiagramTest
+    │  │  │  DiagramTest.csproj
+    │  │  │  Form1.cs
+    │  │  │  Form1.Designer.cs
+    │  │  │  Form1.resx
+    │  │  │  MyDiagramControl.cs
+    │  │  │  MyDiagramControl.Designer.cs
+    │  │  │  Program.cs
+    │  │  │  XtraForm1.cs
+    │  │  │  XtraForm1.Designer.cs
+    │  │  │  XtraForm1.resx
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │  │  DevExpress.BonusSkins.v17.1.dll
+    │  │  │  │  │  DevExpress.Charts.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.CodeParser.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.xml
+    │  │  │  │  │  DevExpress.Diagram.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Diagram.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpo.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpo.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraDiagram.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraDiagram.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraVerticalGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraVerticalGrid.v17.1.xml
+    │  │  │  │  │  Newtonsoft.Json.dll
+    │  │  │  │  │  WitsWay.TempTests.DiagramTest.exe
+    │  │  │  │  │  WitsWay.TempTests.DiagramTest.pdb
+    │  │  │  │  │  WitsWay.Utilities.dll
+    │  │  │  │  │  WitsWay.Utilities.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.dll
+    │  │  │  │  │  WitsWay.Utilities.Wcf.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.xml
+    │  │  │  │  │  WitsWay.Utilities.Web.dll
+    │  │  │  │  │  WitsWay.Utilities.Web.pdb
+    │  │  │  │  │  WitsWay.Utilities.Web.xml
+    │  │  │  │  │  WitsWay.Utilities.Win.dll
+    │  │  │  │  │  WitsWay.Utilities.Win.pdb
+    │  │  │  │  │  WitsWay.Utilities.Win.xml
+    │  │  │  │  │  WitsWay.Utilities.xml
+    │  │  │  │  │  
+    │  │  │  │  ├─de
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─es
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─ja
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  └─ru
+    │  │  │  │          DevExpress.Data.v17.1.resources.dll
+    │  │  │  │          DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │          DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │          DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  ├─Models
+    │  │  │  │  DiagramItemStyle.cs
+    │  │  │  │  FlowFactory.cs
+    │  │  │  │  FlowProcessLog.cs
+    │  │  │  │  
+    │  │  │  ├─Configs
+    │  │  │  │      FlowItemConfig.cs
+    │  │  │  │      FlowLineConfig.cs
+    │  │  │  │      FlowNodeConfig.cs
+    │  │  │  │      
+    │  │  │  ├─Items
+    │  │  │  │      FlowItem.cs
+    │  │  │  │      FlowItemKinds.cs
+    │  │  │  │      FlowItemStates.cs
+    │  │  │  │      
+    │  │  │  ├─Lines
+    │  │  │  │      FlowLine.cs
+    │  │  │  │      FlowLineKinds.cs
+    │  │  │  │      FlowLineStates.cs
+    │  │  │  │      
+    │  │  │  └─Nodes
+    │  │  │          FlowNode.cs
+    │  │  │          FlowNodeKinds.cs
+    │  │  │          FlowNodeStates.cs
+    │  │  │          
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  DiagramTest.csproj.FileListAbsolute.txt
+    │  │  │  │  │  DiagramTest.csproj.GenerateResource.Cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  WitsWay.TempTests.DiagramTest.exe
+    │  │  │  │  │  witsway.temptests.diagramtest.exe.licenses
+    │  │  │  │  │  WitsWay.TempTests.DiagramTest.FlowDesignXtraForm.resources
+    │  │  │  │  │  WitsWay.TempTests.DiagramTest.Form1.resources
+    │  │  │  │  │  WitsWay.TempTests.DiagramTest.pdb
+    │  │  │  │  │  WitsWay.TempTests.DiagramTest.Properties.Resources.resources
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  │          Properties.Resources.Designer.cs.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      licenses.licx
+    │  │  │      Resources.Designer.cs
+    │  │  │      Resources.resx
+    │  │  │      Settings.Designer.cs
+    │  │  │      Settings.settings
+    │  │  │      
+    │  │  └─Resources
+    │  │          0.png
+    │  │          111.png
+    │  │          999.png
+    │  │          BG004.gif
+    │  │          PropertyPanel.svg
+    │  │          
+    │  ├─DynamicQuery
+    │  │  │  DynamicQuery.csproj
+    │  │  │  
+    │  │  ├─Attributes
+    │  │  │      EntityDataAttribute.cs
+    │  │  │      EntityFieldAttribute.cs
+    │  │  │      
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │      Newtonsoft.Json.dll
+    │  │  │  │      WitsWay.TempTests.DynamicQuery.dll
+    │  │  │  │      WitsWay.TempTests.DynamicQuery.pdb
+    │  │  │  │      WitsWay.Utilities.dll
+    │  │  │  │      WitsWay.Utilities.pdb
+    │  │  │  │      WitsWay.Utilities.xml
+    │  │  │  │      
+    │  │  │  └─Release
+    │  │  ├─Builders
+    │  │  │      ClauseBuilder.cs
+    │  │  │      ColumnBuilder.cs
+    │  │  │      DynamicQueryable.cs
+    │  │  │      QueryBuilder.cs
+    │  │  │      
+    │  │  ├─DataRights
+    │  │  │      IKey.cs
+    │  │  │      IOwnCompany.cs
+    │  │  │      IOwnDepartment.cs
+    │  │  │      IOwnUser.cs
+    │  │  │      RightContextAttribute.cs
+    │  │  │      RightContextKinds.cs
+    │  │  │      UserContext.cs
+    │  │  │      
+    │  │  ├─Editors
+    │  │  │      IInputEditor.cs
+    │  │  │      IInputEditorT.cs
+    │  │  │      InputEditorAttribute.cs
+    │  │  │      RightFieldAttribute.cs
+    │  │  │      StringInputEditor.cs
+    │  │  │      
+    │  │  ├─Entities
+    │  │  │      ColumnDefinition.cs
+    │  │  │      EntityDataInfo.cs
+    │  │  │      EntityDataSource.cs
+    │  │  │      EntityFieldInfo.cs
+    │  │  │      FilterRule.cs
+    │  │  │      PropertyEditor.cs
+    │  │  │      PropertyField.cs
+    │  │  │      
+    │  │  ├─Enums
+    │  │  │      EditorKinds.cs
+    │  │  │      SupportRelations.cs
+    │  │  │      
+    │  │  ├─Extends
+    │  │  │      ExtendMethods.cs
+    │  │  │      
+    │  │  ├─Factorys
+    │  │  │      EntityInfoFactory.cs
+    │  │  │      ExpressionFactory.cs
+    │  │  │      
+    │  │  ├─Helpers
+    │  │  │      FilterRuleHelper.cs
+    │  │  │      
+    │  │  ├─Logics
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  DynamicQuery.csproj.FileListAbsolute.txt
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  WitsWay.TempTests.DynamicQuery.dll
+    │  │  │  │  │  WitsWay.TempTests.DynamicQuery.pdb
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  └─Properties
+    │  │          AssemblyInfo.cs
+    │  │          
+    │  ├─GeneralQuery
+    │  │  │  BackstageViewForm.cs
+    │  │  │  BackstageViewForm.Designer.cs
+    │  │  │  BackstageViewForm.resx
+    │  │  │  ColumnDefinitionRow.cs
+    │  │  │  ColumnField.cs
+    │  │  │  ColumnRowKinds.cs
+    │  │  │  ConfigManageForm.cs
+    │  │  │  ConfigManageForm.Designer.cs
+    │  │  │  ConfigManageForm.resx
+    │  │  │  FlyoutPanelForm.cs
+    │  │  │  FlyoutPanelForm.Designer.cs
+    │  │  │  FlyoutPanelForm.resx
+    │  │  │  frmAboutApp.cs
+    │  │  │  frmAboutApp.designer.cs
+    │  │  │  frmAboutApp.resx
+    │  │  │  GeneralQuery.csproj
+    │  │  │  GridTestForm.cs
+    │  │  │  GridTestForm.Designer.cs
+    │  │  │  GridTestForm.resx
+    │  │  │  ListBoxForm.cs
+    │  │  │  ListBoxForm.Designer.cs
+    │  │  │  ListBoxForm.resx
+    │  │  │  NavControlTest.cs
+    │  │  │  NavControlTest.Designer.cs
+    │  │  │  NavControlTest.resx
+    │  │  │  NavPanelTestForm.cs
+    │  │  │  NavPanelTestForm.Designer.cs
+    │  │  │  NavPanelTestForm.resx
+    │  │  │  Program.cs
+    │  │  │  WindowsUiButtonForm.cs
+    │  │  │  WindowsUiButtonForm.Designer.cs
+    │  │  │  WindowsUiButtonForm.resx
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │  │  DevExpress.BonusSkins.v17.1.dll
+    │  │  │  │  │  DevExpress.Charts.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.CodeParser.v17.1.dll
+    │  │  │  │  │  DevExpress.Dashboard.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Dashboard.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Dashboard.v17.1.Win.dll
+    │  │  │  │  │  DevExpress.Dashboard.v17.1.Win.xml
+    │  │  │  │  │  DevExpress.Data.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.UI.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.UI.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.xml
+    │  │  │  │  │  DevExpress.Diagram.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Diagram.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Map.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Map.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.TreeMap.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.TreeMap.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.UI.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.UI.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpo.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpo.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.UI.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.UI.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.Wizard.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.Wizard.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraDiagram.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraDiagram.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Presets.dll
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Presets.xml
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Win.dll
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Win.xml
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraMap.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraMap.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPivotGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPivotGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraRichEdit.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraRichEdit.v17.1.Extensions.dll
+    │  │  │  │  │  DevExpress.XtraRichEdit.v17.1.Extensions.xml
+    │  │  │  │  │  DevExpress.XtraRichEdit.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraTreeMap.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraTreeMap.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraVerticalGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraVerticalGrid.v17.1.xml
+    │  │  │  │  │  Newtonsoft.Json.dll
+    │  │  │  │  │  WitsWay.TempTests.DynamicQuery.dll
+    │  │  │  │  │  WitsWay.TempTests.DynamicQuery.pdb
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.exe
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.pdb
+    │  │  │  │  │  WitsWay.Utilities.dll
+    │  │  │  │  │  WitsWay.Utilities.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.dll
+    │  │  │  │  │  WitsWay.Utilities.Wcf.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.xml
+    │  │  │  │  │  WitsWay.Utilities.Web.dll
+    │  │  │  │  │  WitsWay.Utilities.Web.pdb
+    │  │  │  │  │  WitsWay.Utilities.Web.xml
+    │  │  │  │  │  WitsWay.Utilities.Win.dll
+    │  │  │  │  │  WitsWay.Utilities.Win.pdb
+    │  │  │  │  │  WitsWay.Utilities.Win.xml
+    │  │  │  │  │  WitsWay.Utilities.xml
+    │  │  │  │  │  
+    │  │  │  │  ├─de
+    │  │  │  │  │      DevExpress.Dashboard.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Dashboard.v17.1.Win.resources.dll
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Map.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Presets.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─es
+    │  │  │  │  │      DevExpress.Dashboard.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Dashboard.v17.1.Win.resources.dll
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Map.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Presets.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─ja
+    │  │  │  │  │      DevExpress.Dashboard.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Dashboard.v17.1.Win.resources.dll
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Map.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Presets.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  └─ru
+    │  │  │  │          DevExpress.Dashboard.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Dashboard.v17.1.Win.resources.dll
+    │  │  │  │          DevExpress.Data.v17.1.resources.dll
+    │  │  │  │          DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │          DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │          DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Map.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │          DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │          DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │          DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.XtraGauges.v17.1.Presets.resources.dll
+    │  │  │  │          DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraRichEdit.v17.1.Extensions.resources.dll
+    │  │  │  │          DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  ├─Editors
+    │  │  │      EditorKinds.cs
+    │  │  │      IInputEditor.cs
+    │  │  │      IInputEditorT.cs
+    │  │  │      InputEditorAttribute.cs
+    │  │  │      RightFieldAttribute.cs
+    │  │  │      StringInputEditor.cs
+    │  │  │      
+    │  │  ├─Entities
+    │  │  │      EntityDataInfo.cs
+    │  │  │      EntityDataSource.cs
+    │  │  │      EntityFieldInfo.cs
+    │  │  │      PropertyEditor.cs
+    │  │  │      PropertyField.cs
+    │  │  │      
+    │  │  ├─Logics
+    │  │  │      EntityDataAttribute.cs
+    │  │  │      EntityDataSourceFactory.cs
+    │  │  │      EntityFieldAttribute.cs
+    │  │  │      
+    │  │  ├─Models
+    │  │  │      CorporationType.cs
+    │  │  │      Employee.cs
+    │  │  │      GenderType.cs
+    │  │  │      GridFunctions.cs
+    │  │  │      GridModes.cs
+    │  │  │      GridPresentConfig.cs
+    │  │  │      OperationRights.cs
+    │  │  │      
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  GeneralQuery.csproj.FileListAbsolute.txt
+    │  │  │  │  │  GeneralQuery.csproj.GenerateResource.Cache
+    │  │  │  │  │  GeneralQuery.csprojResolveAssemblyReference.cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.BackstageViewForm.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.ConfigManageForm.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.exe
+    │  │  │  │  │  witsway.temptests.generalquery.exe.licenses
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.FlyoutPanelForm.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.FrmAboutApp.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.GridTestForm.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.ListBoxForm.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.NavControlTest.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.NavPanelTestForm.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.pdb
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.Properties.Resources.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.QueryForms.GridWithFilterUc.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.QueryForms.GridWithFilterUc2.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.QueryForms.SearchControlUc.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.QueryForms.TabMainForm.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.QueryForms.TabMainForm2.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.QueryForms.TabMainForm3.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.QueryForms.ToolbarUc.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.Selectors.DeptSelector.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.Selectors.SelectorTest.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.Selectors.SpinEditor.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.Selectors.UserSelector.resources
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.WindowsUiButtonForm.resources
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  │          Properties.Resources.Designer.cs.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      licenses.licx
+    │  │  │      Resources.Designer.cs
+    │  │  │      Resources.resx
+    │  │  │      Settings.Designer.cs
+    │  │  │      Settings.settings
+    │  │  │      
+    │  │  ├─QueryForms
+    │  │  │      EmployeeSearchFilter.cs
+    │  │  │      GridCommandContext.cs
+    │  │  │      GridWithFilterUC.cs
+    │  │  │      GridWithFilterUC.Designer.cs
+    │  │  │      GridWithFilterUC.resx
+    │  │  │      GridWithFilterUC2.cs
+    │  │  │      GridWithFilterUC2.Designer.cs
+    │  │  │      GridWithFilterUC2.resx
+    │  │  │      IGridFunctions.cs
+    │  │  │      ISearchFilterUC.cs
+    │  │  │      SearchControlUC.cs
+    │  │  │      SearchControlUC.Designer.cs
+    │  │  │      SearchControlUC.resx
+    │  │  │      TabMainForm.cs
+    │  │  │      TabMainForm.Designer.cs
+    │  │  │      TabMainForm.resx
+    │  │  │      TabMainForm2.cs
+    │  │  │      TabMainForm2.Designer.cs
+    │  │  │      TabMainForm2.resx
+    │  │  │      TabMainForm3.cs
+    │  │  │      TabMainForm3.Designer.cs
+    │  │  │      TabMainForm3.resx
+    │  │  │      ToolbarUC.cs
+    │  │  │      ToolbarUC.Designer.cs
+    │  │  │      ToolbarUC.resx
+    │  │  │      
+    │  │  ├─Resources
+    │  │  │      About.png
+    │  │  │      add.png
+    │  │  │      application_edit.png
+    │  │  │      application_view_tile.png
+    │  │  │      Blue Round.png
+    │  │  │      CommandSave16.png
+    │  │  │      favicon.png
+    │  │  │      login_logo.gif
+    │  │  │      pagesetup_32x32.png
+    │  │  │      textbox_32x32.png
+    │  │  │      yitusoft-LOGO.png
+    │  │  │      zoom100_32x32.png
+    │  │  │      
+    │  │  └─Selectors
+    │  │          DeptSelector.cs
+    │  │          DeptSelector.Designer.cs
+    │  │          DeptSelector.resx
+    │  │          IValueSelector.cs
+    │  │          SelectorCreater.cs
+    │  │          SelectorTest.cs
+    │  │          SelectorTest.Designer.cs
+    │  │          SelectorTest.resx
+    │  │          SelectWays.cs
+    │  │          SpinEditor.cs
+    │  │          SpinEditor.Designer.cs
+    │  │          SpinEditor.resx
+    │  │          UserSelector.cs
+    │  │          UserSelector.Designer.cs
+    │  │          UserSelector.resx
+    │  │          
+    │  ├─GeneralQuery.UnitTests
+    │  │  │  ExceptionAssert.cs
+    │  │  │  GeneralQuery.UnitTests.csproj
+    │  │  │  packages.config
+    │  │  │  Tests.cs
+    │  │  │  UnitTest1.cs
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │  │  ExpressMapper.dll
+    │  │  │  │  │  ExpressMapper.pdb
+    │  │  │  │  │  ExpressMapper.xml
+    │  │  │  │  │  Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+    │  │  │  │  │  Newtonsoft.Json.dll
+    │  │  │  │  │  WitsWay.TempTests.DynamicQuery.dll
+    │  │  │  │  │  WitsWay.TempTests.DynamicQuery.pdb
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.UnitTests.dll
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.UnitTests.pdb
+    │  │  │  │  │  WitsWay.Utilities.dll
+    │  │  │  │  │  WitsWay.Utilities.pdb
+    │  │  │  │  │  WitsWay.Utilities.xml
+    │  │  │  │  │  
+    │  │  │  │  └─zh-Hans
+    │  │  │  │          Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  GeneralQuery.UnitTests.csproj.FileListAbsolute.txt
+    │  │  │  │  │  GeneralQuery.UnitTests.csprojResolveAssemblyReference.cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.UnitTests.dll
+    │  │  │  │  │  WitsWay.TempTests.GeneralQuery.UnitTests.pdb
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  └─Properties
+    │  │          AssemblyInfo.cs
+    │  │          
+    │  ├─packages
+    │  │  │  repositories.config
+    │  │  │  
+    │  │  └─Expressmapper.1.9.1
+    │  │      │  Expressmapper.1.9.1.nupkg
+    │  │      │  
+    │  │      └─lib
+    │  │          ├─dotnet
+    │  │          │      ExpressMapper.deps.json
+    │  │          │      ExpressMapper.dll
+    │  │          │      ExpressMapper.pdb
+    │  │          │      ExpressMapper.xml
+    │  │          │      
+    │  │          ├─net40
+    │  │          │      ExpressMapper.dll
+    │  │          │      ExpressMapper.pdb
+    │  │          │      ExpressMapper.xml
+    │  │          │      
+    │  │          ├─net45
+    │  │          │      ExpressMapper.dll
+    │  │          │      ExpressMapper.pdb
+    │  │          │      ExpressMapper.xml
+    │  │          │      
+    │  │          ├─net46
+    │  │          │      ExpressMapper.dll
+    │  │          │      ExpressMapper.pdb
+    │  │          │      ExpressMapper.XML
+    │  │          │      
+    │  │          └─portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10
+    │  │                  ExpressMapper.dll
+    │  │                  ExpressMapper.pdb
+    │  │                  ExpressMapper.XML
+    │  │                  
+    │  ├─RemainProcessTest
+    │  │  │  Form1.cs
+    │  │  │  Form1.Designer.cs
+    │  │  │  Form1.resx
+    │  │  │  Program.cs
+    │  │  │  RemainProcessTest.csproj
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │  │  DevExpress.BonusSkins.v17.1.dll
+    │  │  │  │  │  DevExpress.Charts.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.CodeParser.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.xml
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpo.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpo.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.xml
+    │  │  │  │  │  Newtonsoft.Json.dll
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.exe
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.pdb
+    │  │  │  │  │  WitsWay.Utilities.dll
+    │  │  │  │  │  WitsWay.Utilities.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.dll
+    │  │  │  │  │  WitsWay.Utilities.Wcf.pdb
+    │  │  │  │  │  WitsWay.Utilities.Wcf.xml
+    │  │  │  │  │  WitsWay.Utilities.Web.dll
+    │  │  │  │  │  WitsWay.Utilities.Web.pdb
+    │  │  │  │  │  WitsWay.Utilities.Web.xml
+    │  │  │  │  │  WitsWay.Utilities.Win.dll
+    │  │  │  │  │  WitsWay.Utilities.Win.pdb
+    │  │  │  │  │  WitsWay.Utilities.Win.xml
+    │  │  │  │  │  WitsWay.Utilities.xml
+    │  │  │  │  │  
+    │  │  │  │  ├─de
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─es
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─ja
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  └─ru
+    │  │  │  │          DevExpress.Data.v17.1.resources.dll
+    │  │  │  │          DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │          DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │          DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  RemainProcessTest.csproj.FileListAbsolute.txt
+    │  │  │  │  │  RemainProcessTest.csproj.GenerateResource.Cache
+    │  │  │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │  │  │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │  │  │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.exe
+    │  │  │  │  │  witsway.temptests.remainprocesstest.exe.licenses
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.Form1.resources
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.pdb
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.PlanUI.DrawArea.resources
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.PlanUI.PlanControl.resources
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.Properties.Resources.resources
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.RemainUI.RemainMaterialInputDialog.resources
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.RemainUI.RemainProcessForm.resources
+    │  │  │  │  │  WitsWay.TempTests.RemainProcessTest.RemainUI.RemainProcessForm2.resources
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  │          Properties.Resources.Designer.cs.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  ├─PlanUI
+    │  │  │  │  DrawArea.cs
+    │  │  │  │  DrawArea.designer.cs
+    │  │  │  │  DrawArea.resx
+    │  │  │  │  FillBrushes.cs
+    │  │  │  │  GraphicsList.cs
+    │  │  │  │  GraphicsProperties.cs
+    │  │  │  │  Layer.cs
+    │  │  │  │  Layers.cs
+    │  │  │  │  PlanControl.cs
+    │  │  │  │  PlanControl.Designer.cs
+    │  │  │  │  PlanControl.resx
+    │  │  │  │  
+    │  │  │  ├─DrawObjects
+    │  │  │  │      DrawingPens.cs
+    │  │  │  │      DrawLine.cs
+    │  │  │  │      DrawObject.cs
+    │  │  │  │      DrawRectangle.cs
+    │  │  │  │      DrawText.cs
+    │  │  │  │      
+    │  │  │  └─Enums
+    │  │  │          DrawUnitKind.cs
+    │  │  │          
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      licenses.licx
+    │  │  │      Resources.Designer.cs
+    │  │  │      Resources.resx
+    │  │  │      Settings.Designer.cs
+    │  │  │      Settings.settings
+    │  │  │      
+    │  │  └─RemainUI
+    │  │          BarcodeBuffer.cs
+    │  │          RemainMaterialInputDialog.cs
+    │  │          RemainMaterialInputDialog.Designer.cs
+    │  │          RemainMaterialInputDialog.resx
+    │  │          RemainProcessForm.cs
+    │  │          RemainProcessForm.Designer.cs
+    │  │          RemainProcessForm.resx
+    │  │          RemainProcessForm2.cs
+    │  │          RemainProcessForm2.Designer.cs
+    │  │          RemainProcessForm2.resx
+    │  │          
+    │  ├─ReportUtil
+    │  │  │  CustomReportDesigner.cs
+    │  │  │  CustomReportDesigner.Designer.cs
+    │  │  │  CustomReportDesigner.resx
+    │  │  │  DisplayDataSet.cs
+    │  │  │  PrintRibbonControllerResources.Designer.cs
+    │  │  │  PrintRibbonControllerResources.resx
+    │  │  │  ReportDesignerHelper.cs
+    │  │  │  ReportUtil.csproj
+    │  │  │  TestForm.cs
+    │  │  │  TestForm.Designer.cs
+    │  │  │  TestForm.resx
+    │  │  │  XRDesignRibbonControllerResources.Designer.cs
+    │  │  │  XRDesignRibbonControllerResources.resx
+    │  │  │  XtraReport1.cs
+    │  │  │  XtraReport1.Designer.cs
+    │  │  │  XtraReport1.resx
+    │  │  │  
+    │  │  ├─bin
+    │  │  │  ├─Debug
+    │  │  │  │  │  DevExpress.BonusSkins.v17.1.dll
+    │  │  │  │  │  DevExpress.Charts.Designer.v17.1.dll
+    │  │  │  │  │  DevExpress.Charts.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.CodeParser.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.dll
+    │  │  │  │  │  DevExpress.Data.v17.1.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.UI.dll
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.UI.xml
+    │  │  │  │  │  DevExpress.DataAccess.v17.1.xml
+    │  │  │  │  │  DevExpress.Diagram.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Diagram.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Mvvm.v17.1.dll
+    │  │  │  │  │  DevExpress.Mvvm.v17.1.xml
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Office.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Pdf.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.PivotGrid.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Printing.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.RichEdit.v17.1.Export.dll
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Sparkline.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.UI.dll
+    │  │  │  │  │  DevExpress.Utils.v17.1.UI.xml
+    │  │  │  │  │  DevExpress.Utils.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpf.Charts.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpf.Core.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpf.Core.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpf.Docking.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpf.Docking.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpf.DocumentViewer.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Xpf.DocumentViewer.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Xpf.Grid.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Xpf.Grid.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpf.Layout.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.Xpf.Layout.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.Xpf.Printing.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpf.Printing.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpf.PropertyGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpf.Ribbon.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpf.Ribbon.v17.1.xml
+    │  │  │  │  │  DevExpress.Xpo.v17.1.dll
+    │  │  │  │  │  DevExpress.Xpo.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraBars.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.Extensions.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.Wizard.dll
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.Wizard.xml
+    │  │  │  │  │  DevExpress.XtraCharts.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraDiagram.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraDiagram.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraEditors.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.dll
+    │  │  │  │  │  DevExpress.XtraGauges.v17.1.Core.xml
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraLayout.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraNavBar.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPivotGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPivotGrid.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraPrinting.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.Extensions.dll
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.Extensions.xml
+    │  │  │  │  │  DevExpress.XtraReports.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraRichEdit.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraRichEdit.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraTreeList.v17.1.xml
+    │  │  │  │  │  DevExpress.XtraVerticalGrid.v17.1.dll
+    │  │  │  │  │  DevExpress.XtraVerticalGrid.v17.1.xml
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.dll
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.pdb
+    │  │  │  │  │  
+    │  │  │  │  ├─de
+    │  │  │  │  │      DevExpress.Charts.Designer.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Charts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Core.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Docking.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.DocumentViewer.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Grid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Printing.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.PropertyGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Ribbon.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─es
+    │  │  │  │  │      DevExpress.Charts.Designer.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Charts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Core.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Docking.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.DocumentViewer.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Grid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Printing.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.PropertyGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Ribbon.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  ├─ja
+    │  │  │  │  │      DevExpress.Charts.Designer.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Data.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Charts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Core.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Docking.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.DocumentViewer.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Grid.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Printing.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.PropertyGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpf.Ribbon.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │  │  │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │  │      
+    │  │  │  │  └─ru
+    │  │  │  │          DevExpress.Charts.Designer.v17.1.resources.dll
+    │  │  │  │          DevExpress.Data.v17.1.resources.dll
+    │  │  │  │          DevExpress.DataAccess.v17.1.resources.dll
+    │  │  │  │          DevExpress.DataAccess.v17.1.UI.resources.dll
+    │  │  │  │          DevExpress.Diagram.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Office.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Pdf.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Printing.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.RichEdit.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Sparkline.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Utils.v17.1.resources.dll
+    │  │  │  │          DevExpress.Utils.v17.1.UI.resources.dll
+    │  │  │  │          DevExpress.Xpf.Charts.v17.1.resources.dll
+    │  │  │  │          DevExpress.Xpf.Core.v17.1.resources.dll
+    │  │  │  │          DevExpress.Xpf.Docking.v17.1.resources.dll
+    │  │  │  │          DevExpress.Xpf.DocumentViewer.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Xpf.Grid.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.Xpf.Printing.v17.1.resources.dll
+    │  │  │  │          DevExpress.Xpf.PropertyGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.Xpf.Ribbon.v17.1.resources.dll
+    │  │  │  │          DevExpress.Xpo.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraBars.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraCharts.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │  │  │  │          DevExpress.XtraEditors.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │  │  │  │          DevExpress.XtraGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraLayout.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraNavBar.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraPrinting.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │  │  │  │          DevExpress.XtraReports.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraRichEdit.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraTreeList.v17.1.resources.dll
+    │  │  │  │          DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  ├─obj
+    │  │  │  ├─Debug
+    │  │  │  │  │  CoreCompileInputs.cache
+    │  │  │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │  │  │  │  │  ReportUtil.csproj.FileListAbsolute.txt
+    │  │  │  │  │  ReportUtil.csproj.GenerateResource.Cache
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.CustomReportDesigner.resources
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.dll
+    │  │  │  │  │  witsway.temptests.reportutil.dll.licenses
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.pdb
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.PrintRibbonControllerResources.resources
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.Properties.Resources.resources
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.TestForm.resources
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.XRDesignRibbonControllerResources.resources
+    │  │  │  │  │  WitsWay.TempTests.ReportUtil.XtraReport1.resources
+    │  │  │  │  │  
+    │  │  │  │  └─TempPE
+    │  │  │  │          PrintRibbonControllerResources.Designer.cs.dll
+    │  │  │  │          Properties.Resources.Designer.cs.dll
+    │  │  │  │          XRDesignRibbonControllerResources.Designer.cs.dll
+    │  │  │  │          
+    │  │  │  └─Release
+    │  │  │          CoreCompileInputs.cache
+    │  │  │          
+    │  │  ├─Properties
+    │  │  │      AssemblyInfo.cs
+    │  │  │      licenses.licx
+    │  │  │      Resources.Designer.cs
+    │  │  │      Resources.resx
+    │  │  │      Settings.Designer.cs
+    │  │  │      Settings.settings
+    │  │  │      
+    │  │  └─Resources
+    │  │          ReportDesigner.png
+    │  │          ReportDesignerIcon.ico
+    │  │          
+    │  └─WorkflowTest
+    │      │  AppCenterForm.cs
+    │      │  AppCenterForm.Designer.cs
+    │      │  AppCenterForm.resx
+    │      │  FilterEditorTest.cs
+    │      │  FilterEditorTest.designer.cs
+    │      │  FilterEditorTest.resx
+    │      │  FilterEditorTestEntity.cs
+    │      │  LayOutTest.cs
+    │      │  LayOutTest.Designer.cs
+    │      │  LayOutTest.resx
+    │      │  PrintRibbonControllerResources.Designer.cs
+    │      │  PrintRibbonControllerResources.resx
+    │      │  Program.cs
+    │      │  ReportShowForm.cs
+    │      │  ReportShowForm.Designer.cs
+    │      │  ReportShowForm.resx
+    │      │  RibbonDropMenu.cs
+    │      │  RibbonDropMenu.Designer.cs
+    │      │  RibbonDropMenu.resx
+    │      │  RibbonPaintForm.cs
+    │      │  RibbonPaintForm.Designer.cs
+    │      │  RibbonPaintForm.resx
+    │      │  SystemManageForm.cs
+    │      │  SystemManageForm.Designer.cs
+    │      │  SystemManageForm.resx
+    │      │  WorkflowTest.csproj
+    │      │  工作流.xmind
+    │      │  
+    │      ├─bin
+    │      │  ├─Debug
+    │      │  │  │  DevExpress.BonusSkins.v17.1.dll
+    │      │  │  │  DevExpress.Charts.v17.1.Core.dll
+    │      │  │  │  DevExpress.CodeParser.v17.1.dll
+    │      │  │  │  DevExpress.Data.v17.1.dll
+    │      │  │  │  DevExpress.Data.v17.1.xml
+    │      │  │  │  DevExpress.DataAccess.v17.1.dll
+    │      │  │  │  DevExpress.DataAccess.v17.1.UI.dll
+    │      │  │  │  DevExpress.DataAccess.v17.1.UI.xml
+    │      │  │  │  DevExpress.DataAccess.v17.1.xml
+    │      │  │  │  DevExpress.Diagram.v17.1.Core.dll
+    │      │  │  │  DevExpress.Diagram.v17.1.Core.xml
+    │      │  │  │  DevExpress.Images.v17.1.dll
+    │      │  │  │  DevExpress.Office.v17.1.Core.dll
+    │      │  │  │  DevExpress.Office.v17.1.Core.xml
+    │      │  │  │  DevExpress.Pdf.v17.1.Core.dll
+    │      │  │  │  DevExpress.Pdf.v17.1.Core.xml
+    │      │  │  │  DevExpress.Pdf.v17.1.Drawing.dll
+    │      │  │  │  DevExpress.Pdf.v17.1.Drawing.xml
+    │      │  │  │  DevExpress.PivotGrid.v17.1.Core.dll
+    │      │  │  │  DevExpress.PivotGrid.v17.1.Core.xml
+    │      │  │  │  DevExpress.Printing.v17.1.Core.dll
+    │      │  │  │  DevExpress.Printing.v17.1.Core.xml
+    │      │  │  │  DevExpress.RichEdit.v17.1.Core.dll
+    │      │  │  │  DevExpress.RichEdit.v17.1.Core.xml
+    │      │  │  │  DevExpress.RichEdit.v17.1.Export.dll
+    │      │  │  │  DevExpress.Snap.v17.1.Core.dll
+    │      │  │  │  DevExpress.Snap.v17.1.Core.xml
+    │      │  │  │  DevExpress.Snap.v17.1.dll
+    │      │  │  │  DevExpress.Snap.v17.1.Extensions.dll
+    │      │  │  │  DevExpress.Snap.v17.1.Extensions.xml
+    │      │  │  │  DevExpress.Snap.v17.1.xml
+    │      │  │  │  DevExpress.Sparkline.v17.1.Core.dll
+    │      │  │  │  DevExpress.Sparkline.v17.1.Core.xml
+    │      │  │  │  DevExpress.Utils.v17.1.dll
+    │      │  │  │  DevExpress.Utils.v17.1.UI.dll
+    │      │  │  │  DevExpress.Utils.v17.1.UI.xml
+    │      │  │  │  DevExpress.Utils.v17.1.xml
+    │      │  │  │  DevExpress.Xpo.v17.1.dll
+    │      │  │  │  DevExpress.Xpo.v17.1.xml
+    │      │  │  │  DevExpress.XtraBars.v17.1.dll
+    │      │  │  │  DevExpress.XtraBars.v17.1.xml
+    │      │  │  │  DevExpress.XtraCharts.v17.1.dll
+    │      │  │  │  DevExpress.XtraCharts.v17.1.Extensions.dll
+    │      │  │  │  DevExpress.XtraCharts.v17.1.UI.dll
+    │      │  │  │  DevExpress.XtraCharts.v17.1.UI.xml
+    │      │  │  │  DevExpress.XtraCharts.v17.1.Wizard.dll
+    │      │  │  │  DevExpress.XtraCharts.v17.1.Wizard.xml
+    │      │  │  │  DevExpress.XtraCharts.v17.1.xml
+    │      │  │  │  DevExpress.XtraDiagram.v17.1.dll
+    │      │  │  │  DevExpress.XtraDiagram.v17.1.xml
+    │      │  │  │  DevExpress.XtraEditors.v17.1.dll
+    │      │  │  │  DevExpress.XtraEditors.v17.1.xml
+    │      │  │  │  DevExpress.XtraGauges.v17.1.Core.dll
+    │      │  │  │  DevExpress.XtraGauges.v17.1.Core.xml
+    │      │  │  │  DevExpress.XtraGrid.v17.1.dll
+    │      │  │  │  DevExpress.XtraGrid.v17.1.xml
+    │      │  │  │  DevExpress.XtraLayout.v17.1.dll
+    │      │  │  │  DevExpress.XtraLayout.v17.1.xml
+    │      │  │  │  DevExpress.XtraNavBar.v17.1.dll
+    │      │  │  │  DevExpress.XtraNavBar.v17.1.xml
+    │      │  │  │  DevExpress.XtraPdfViewer.v17.1.dll
+    │      │  │  │  DevExpress.XtraPdfViewer.v17.1.xml
+    │      │  │  │  DevExpress.XtraPivotGrid.v17.1.dll
+    │      │  │  │  DevExpress.XtraPivotGrid.v17.1.xml
+    │      │  │  │  DevExpress.XtraPrinting.v17.1.dll
+    │      │  │  │  DevExpress.XtraPrinting.v17.1.xml
+    │      │  │  │  DevExpress.XtraReports.v17.1.dll
+    │      │  │  │  DevExpress.XtraReports.v17.1.Extensions.dll
+    │      │  │  │  DevExpress.XtraReports.v17.1.Extensions.xml
+    │      │  │  │  DevExpress.XtraReports.v17.1.xml
+    │      │  │  │  DevExpress.XtraRichEdit.v17.1.dll
+    │      │  │  │  DevExpress.XtraRichEdit.v17.1.Extensions.dll
+    │      │  │  │  DevExpress.XtraRichEdit.v17.1.Extensions.xml
+    │      │  │  │  DevExpress.XtraRichEdit.v17.1.xml
+    │      │  │  │  DevExpress.XtraTreeList.v17.1.dll
+    │      │  │  │  DevExpress.XtraTreeList.v17.1.xml
+    │      │  │  │  DevExpress.XtraVerticalGrid.v17.1.dll
+    │      │  │  │  DevExpress.XtraVerticalGrid.v17.1.xml
+    │      │  │  │  Newtonsoft.Json.dll
+    │      │  │  │  WitsWay.TempTests.ReportUtil.dll
+    │      │  │  │  WitsWay.TempTests.ReportUtil.pdb
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.exe
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.pdb
+    │      │  │  │  WitsWay.Utilities.dll
+    │      │  │  │  WitsWay.Utilities.pdb
+    │      │  │  │  WitsWay.Utilities.Wcf.dll
+    │      │  │  │  WitsWay.Utilities.Wcf.pdb
+    │      │  │  │  WitsWay.Utilities.Wcf.xml
+    │      │  │  │  WitsWay.Utilities.Web.dll
+    │      │  │  │  WitsWay.Utilities.Web.pdb
+    │      │  │  │  WitsWay.Utilities.Web.xml
+    │      │  │  │  WitsWay.Utilities.Win.dll
+    │      │  │  │  WitsWay.Utilities.Win.pdb
+    │      │  │  │  WitsWay.Utilities.Win.xml
+    │      │  │  │  WitsWay.Utilities.xml
+    │      │  │  │  
+    │      │  │  ├─de
+    │      │  │  │      DevExpress.Data.v17.1.resources.dll
+    │      │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │      │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │      │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Snap.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Snap.v17.1.Extensions.resources.dll
+    │      │  │  │      DevExpress.Snap.v17.1.resources.dll
+    │      │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │      │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │      │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │      │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPdfViewer.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │      │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraRichEdit.v17.1.Extensions.resources.dll
+    │      │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │      │  │  │      
+    │      │  │  ├─es
+    │      │  │  │      DevExpress.Data.v17.1.resources.dll
+    │      │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │      │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │      │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Snap.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Snap.v17.1.Extensions.resources.dll
+    │      │  │  │      DevExpress.Snap.v17.1.resources.dll
+    │      │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │      │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │      │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │      │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPdfViewer.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │      │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraRichEdit.v17.1.Extensions.resources.dll
+    │      │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │      │  │  │      
+    │      │  │  ├─ja
+    │      │  │  │      DevExpress.Data.v17.1.resources.dll
+    │      │  │  │      DevExpress.DataAccess.v17.1.resources.dll
+    │      │  │  │      DevExpress.DataAccess.v17.1.UI.resources.dll
+    │      │  │  │      DevExpress.Diagram.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Office.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Pdf.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Printing.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.RichEdit.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Snap.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Snap.v17.1.Extensions.resources.dll
+    │      │  │  │      DevExpress.Snap.v17.1.resources.dll
+    │      │  │  │      DevExpress.Sparkline.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.Utils.v17.1.resources.dll
+    │      │  │  │      DevExpress.Utils.v17.1.UI.resources.dll
+    │      │  │  │      DevExpress.Xpo.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraBars.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraCharts.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │      │  │  │      DevExpress.XtraEditors.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │      │  │  │      DevExpress.XtraGrid.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraLayout.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraNavBar.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPdfViewer.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraPrinting.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │      │  │  │      DevExpress.XtraReports.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraRichEdit.v17.1.Extensions.resources.dll
+    │      │  │  │      DevExpress.XtraRichEdit.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraTreeList.v17.1.resources.dll
+    │      │  │  │      DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │      │  │  │      
+    │      │  │  └─ru
+    │      │  │          DevExpress.Data.v17.1.resources.dll
+    │      │  │          DevExpress.DataAccess.v17.1.resources.dll
+    │      │  │          DevExpress.DataAccess.v17.1.UI.resources.dll
+    │      │  │          DevExpress.Diagram.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Office.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Pdf.v17.1.Core.resources.dll
+    │      │  │          DevExpress.PivotGrid.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Printing.v17.1.Core.resources.dll
+    │      │  │          DevExpress.RichEdit.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Snap.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Snap.v17.1.Extensions.resources.dll
+    │      │  │          DevExpress.Snap.v17.1.resources.dll
+    │      │  │          DevExpress.Sparkline.v17.1.Core.resources.dll
+    │      │  │          DevExpress.Utils.v17.1.resources.dll
+    │      │  │          DevExpress.Utils.v17.1.UI.resources.dll
+    │      │  │          DevExpress.Xpo.v17.1.resources.dll
+    │      │  │          DevExpress.XtraBars.v17.1.resources.dll
+    │      │  │          DevExpress.XtraCharts.v17.1.resources.dll
+    │      │  │          DevExpress.XtraCharts.v17.1.Wizard.resources.dll
+    │      │  │          DevExpress.XtraEditors.v17.1.resources.dll
+    │      │  │          DevExpress.XtraGauges.v17.1.Core.resources.dll
+    │      │  │          DevExpress.XtraGrid.v17.1.resources.dll
+    │      │  │          DevExpress.XtraLayout.v17.1.resources.dll
+    │      │  │          DevExpress.XtraNavBar.v17.1.resources.dll
+    │      │  │          DevExpress.XtraPdfViewer.v17.1.resources.dll
+    │      │  │          DevExpress.XtraPivotGrid.v17.1.resources.dll
+    │      │  │          DevExpress.XtraPrinting.v17.1.resources.dll
+    │      │  │          DevExpress.XtraReports.v17.1.Extensions.resources.dll
+    │      │  │          DevExpress.XtraReports.v17.1.resources.dll
+    │      │  │          DevExpress.XtraRichEdit.v17.1.Extensions.resources.dll
+    │      │  │          DevExpress.XtraRichEdit.v17.1.resources.dll
+    │      │  │          DevExpress.XtraTreeList.v17.1.resources.dll
+    │      │  │          DevExpress.XtraVerticalGrid.v17.1.resources.dll
+    │      │  │          
+    │      │  └─Release
+    │      ├─Entities
+    │      │      WorkflowForm.cs
+    │      │      WorkflowInfo.cs
+    │      │      
+    │      ├─LayoutTest
+    │      ├─Localization
+    │      ├─obj
+    │      │  ├─Debug
+    │      │  │  │  CoreCompileInputs.cache
+    │      │  │  │  DesignTimeResolveAssemblyReferencesInput.cache
+    │      │  │  │  TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+    │      │  │  │  TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+    │      │  │  │  TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.AppCenterForm.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.exe
+    │      │  │  │  witsway.temptests.workflowtest.exe.licenses
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.Form2.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.LayOutTest.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.pdb
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.PrintRibbonControllerResources.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.Properties.Resources.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.ReportShowForm.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.RibbonDropMenu.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.RibbonPaintForm.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.StripBoard.BaseGroupUc.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.StripBoard.LibItemListUc.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.StripBoard.StripBoardLibForm.resources
+    │      │  │  │  WitsWay.TempTests.WorkflowTest.SystemManageForm.resources
+    │      │  │  │  WorkflowTest.csproj.FileListAbsolute.txt
+    │      │  │  │  WorkflowTest.csproj.GenerateResource.Cache
+    │      │  │  │  WorkflowTest.csprojResolveAssemblyReference.cache
+    │      │  │  │  
+    │      │  │  └─TempPE
+    │      │  │          PrintRibbonControllerResources.Designer.cs.dll
+    │      │  │          Properties.Resources.Designer.cs.dll
+    │      │  │          
+    │      │  └─Release
+    │      │          CoreCompileInputs.cache
+    │      │          
+    │      ├─Properties
+    │      │      AssemblyInfo.cs
+    │      │      licenses.licx
+    │      │      Resources.Designer.cs
+    │      │      Resources.resx
+    │      │      Settings.Designer.cs
+    │      │      Settings.settings
+    │      │      
+    │      ├─Resources
+    │      │      sheep.png
+    │      │      yitusoft-LOGO-Blue.png
+    │      │      yitusoft-LOGO.png
+    │      │      
+    │      └─StripBoard
+    │              BaseGroupUc.cs
+    │              BaseGroupUc.Designer.cs
+    │              BaseGroupUc.resx
+    │              LibItemListUc.cs
+    │              LibItemListUc.Designer.cs
+    │              LibItemListUc.resx
+    │              StripBoardLibForm.cs
+    │              StripBoardLibForm.Designer.cs
+    │              StripBoardLibForm.resx
+    │              StripConfigInfo.cs
+    │              
+    └─ThreeParties
+            README.MD
+            
