@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4228578B-ED44-4D77-AB1B-587BE30BB506}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WitsWay.Utilities.Win</RootNamespace>
+    <AssemblyName>WitsWay.Utilities.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\WitsWay.Utilities.Win.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\WitsWay.Utilities.Win.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\DotNetSoft.WinForm.ClientUtility.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\DotNetSoft.WinForm.ClientUtility.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Assembly\DLL3\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.SelfHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.SelfHost.5.2.3\lib\net45\System.Web.Http.SelfHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WitsWay.Utilities">
+      <HintPath>..\..\Assemblies\DLL\WitsWay.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="WitsWay.Utilities.Wcf">
+      <HintPath>..\..\Assemblies\DLL\WitsWay.Utilities.Wcf.dll</HintPath>
+    </Reference>
+    <Reference Include="WitsWay.Utilities.Web">
+      <HintPath>..\..\Assemblies\DLL\WitsWay.Utilities.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundLoader.cs" />
+    <Compile Include="Builders\ConfigFormBuilder.cs" />
+    <Compile Include="Controls\BasicExportModel.cs" />
+    <Compile Include="Controls\BasicExportReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BasicExportReport.Designer.cs">
+      <DependentUpon>BasicExportReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ButtonEditUC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ColumnShowUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ColumnShowUC.Designer.cs">
+      <DependentUpon>ColumnShowUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FlyingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\GlassButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GlassButton.designer.cs">
+      <DependentUpon>GlassButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RibbonMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RibbonMenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RibbonMenuRenderer2.cs" />
+    <Compile Include="Controls\SplashForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SplashForm2.Designer.cs">
+      <DependentUpon>SplashForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevSkinEnum.cs" />
+    <Compile Include="Extends\GridViewExtends.Tag.cs" />
+    <Compile Include="Extends\TreeListNodeExtends.cs" />
+    <Compile Include="Extends\ControlExtends.cs" />
+    <Compile Include="Extends\GridControlExtends.cs" />
+    <Compile Include="Extends\GridColumnExtends.cs" />
+    <Compile Include="Extends\BarExtends.cs" />
+    <Compile Include="Extends\RepositoryItemExtends.cs" />
+    <Compile Include="Extends\GridViewExtends.cs" />
+    <Compile Include="Extends\TreeListExtends.cs" />
+    <Compile Include="Helpers\HttpClientHelper.cs" />
+    <Compile Include="Helpers\MyWebRequest1.cs" />
+    <Compile Include="Helpers\MyWebRequest3.cs" />
+    <Compile Include="Helpers\BarHelper.cs" />
+    <Compile Include="Helpers\ButtonStyleHelper.cs" />
+    <Compile Include="Helpers\ButtonStyles.cs" />
+    <Compile Include="Controls\PagerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PagerUC.designer.cs">
+      <DependentUpon>PagerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoadingCircle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SplashNotice.cs" />
+    <Compile Include="Controls\WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WaitUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WaitUC.Designer.cs">
+      <DependentUpon>WaitUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\GridDragHelper.cs" />
+    <Compile Include="Helpers\GridViewDoubleClickHelper.cs" />
+    <Compile Include="Helpers\ShortcutHelper.cs" />
+    <Compile Include="Helpers\SpinEditHelper.cs" />
+    <Compile Include="Helpers\GridViewPopupHelper.cs" />
+    <Compile Include="Layouts\ButtonEditBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinUtilityConsts.cs" />
+    <Compile Include="_Deleted\GridColumnHeaderCheckHelper.cs" />
+    <Compile Include="Helpers\ComboBoxHelper.cs" />
+    <Compile Include="Helpers\DeletedStyleHelper.cs" />
+    <Compile Include="Helpers\IGridSelectRow.cs" />
+    <Compile Include="Helpers\PInvokeHelper.Shutdown.cs" />
+    <Compile Include="Helpers\RepositoryComboBoxHelper.cs" />
+    <Compile Include="Helpers\TextEditBlockSelectHelper.cs" />
+    <Compile Include="Helpers\TreeFilterHelper.cs" />
+    <Compile Include="Functions\WebApiHost.cs" />
+    <Compile Include="Helpers\TreeListHelper.cs" />
+    <Compile Include="Helpers\GridServerMode.cs" />
+    <Compile Include="Helpers\GridServerModeParameter.cs" />
+    <Compile Include="_Deleted\XtraGridHelper.Editor.cs" />
+    <Compile Include="_Deleted\XtraGridHelper.Check.cs" />
+    <Compile Include="Helpers\TreeStyleHelper.cs" />
+    <Compile Include="Helpers\TreeListPopupHelper.cs" />
+    <Compile Include="Helpers\RadioGroupHelper.cs" />
+    <Compile Include="Helpers\CheckedComboBoxHelper.cs" />
+    <Compile Include="Helpers\RepositoryImageComboBoxHelper.cs" />
+    <Compile Include="Helpers\PInvokeHelper.LockKey.cs" />
+    <Compile Include="Helpers\CheckedListBoxHelper.cs" />
+    <Compile Include="Helpers\TreeFilterHelper.New.cs" />
+    <Compile Include="ICheckable.cs" />
+    <Compile Include="IdTextData.cs" />
+    <Compile Include="Helpers\ValidateHelper.cs" />
+    <Compile Include="Helpers\XtraGridHelper.cs" />
+    <Compile Include="Helpers\ControlStyleHelper.cs" />
+    <Compile Include="Helpers\UserControlHelper.cs" />
+    <Compile Include="IconKey.cs" />
+    <Compile Include="IconManager.cs" />
+    <Compile Include="Layouts\CustomerControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layouts\CustomerControlBase.Designer.cs">
+      <DependentUpon>CustomerControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\LookUpEditBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AttachedFileUploader.cs" />
+    <Compile Include="ServiceAdapter.cs" />
+    <Compile Include="ServiceCaller.cs" />
+    <Compile Include="UtilityHelper.cs" />
+    <Compile Include="PositionEnum.cs" />
+    <Compile Include="EntityActionEnum.cs" />
+    <Compile Include="ContractItemIconKey.cs" />
+    <Compile Include="IdTextValueData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\BasicExportReport.resx">
+      <DependentUpon>BasicExportReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ColumnShowUC.resx">
+      <DependentUpon>ColumnShowUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GlassButton.resx">
+      <DependentUpon>GlassButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PagerUC.resx">
+      <DependentUpon>PagerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SplashForm2.resx">
+      <DependentUpon>SplashForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WaitForm.resx">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WaitUC.resx">
+      <DependentUpon>WaitUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layouts\CustomerControlBase.resx">
+      <DependentUpon>CustomerControlBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\Overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Executing.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wait.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\CabinetGreen.png" />
+    <Content Include="Icons\CabinetRed.png" />
+    <Content Include="Icons\CabinetYellow.png" />
+    <Content Include="Icons\CablineGreen.png" />
+    <Content Include="Icons\CablineRed.png" />
+    <Content Include="Icons\CablineYellow.png" />
+    <Content Include="Icons\DoorGreen.png" />
+    <Content Include="Icons\DoorRed.png" />
+    <Content Include="Icons\DoorYellow.png" />
+    <Content Include="Icons\Error.png" />
+    <Content Include="Icons\FittingGreen.png" />
+    <Content Include="Icons\FittingRed.png" />
+    <Content Include="Icons\FittingYellow.png" />
+    <Content Include="Icons\Login_Button.png" />
+    <Content Include="Icons\Succeed.png" />
+    <Content Include="Icons\Success.ico" />
+    <Content Include="Icons\UnitGreen.png" />
+    <Content Include="Icons\UnitRed.png" />
+    <Content Include="Icons\UnitYellow.png" />
+    <Content Include="Images\Accept16.png" />
+    <Content Include="Images\Backward16.png" />
+    <Content Include="Images\BatchAll16.png" />
+    <Content Include="Images\Batched16.png" />
+    <Content Include="Images\BatchNot16.png" />
+    <Content Include="Images\check16.png" />
+    <Content Include="Images\ClearSearch16.png" />
+    <Content Include="Images\Close16.png" />
+    <Content Include="Images\Database16.png" />
+    <None Include="Images\MoveDown16.png" />
+    <None Include="Images\MoveUp16.png" />
+    <Content Include="Images\SendDefer16.png" />
+    <Content Include="Images\Delete16.png" />
+    <Content Include="Images\Confirm16.png" />
+    <Content Include="Images\Edit16.png" />
+    <Content Include="Images\Foreward16.png" />
+    <Content Include="Images\Gear16.png" />
+    <Content Include="Images\GenerateParameter16.png" />
+    <Content Include="Images\Group16.png" />
+    <Content Include="Images\Help16.png" />
+    <Content Include="Images\Info16.png" />
+    <Content Include="Images\Add16.png" />
+    <Content Include="Images\Key16.png" />
+    <Content Include="Images\Lock16.png" />
+    <Content Include="Images\Mail16.png" />
+    <Content Include="Images\Money16.png" />
+    <Content Include="Images\Note16.png" />
+    <Content Include="Images\Organize16.png" />
+    <Content Include="Images\Paper16.png" />
+    <Content Include="Images\Preview16.png" />
+    <Content Include="Images\Print16.png" />
+    <Content Include="Images\Refresh16.png" />
+    <Content Include="Images\Save16.png" />
+    <Content Include="Images\Search16.png" />
+    <Content Include="Images\Select16.png" />
+    <Content Include="Images\SendGoods16.png" />
+    <Content Include="Images\Set16.png" />
+    <Content Include="Images\Sheet16.png" />
+    <Content Include="Images\Unlock16.png" />
+    <Content Include="Images\View16.png" />
+    <Content Include="Images\ViewWay16.png" />
+    <None Include="Resources\ExpandAll16.png" />
+    <None Include="Resources\CollapseAll16.png" />
+    <None Include="Resources\CommandKey.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\AddNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>SET DllPath=$(SolutionDir)..\Assemblies\DLL\
+xcopy "$(TargetPath)" "%25DllPath%25$(TargetFileName)" /E /C /Y /R /U
+xcopy "$(TargetDir)$(TargetName).XML" "%25DllPath%25$(TargetName).XML" /E /C /Y /R /U
+xcopy "$(TargetDir)$(TargetName).PDB" "%25DllPath%25$(TargetName).PDB" /E /C /Y /R /U</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>attrib -r -s -h $(ProjectDir)Properties\licenses.licx
+cd.&gt;$(ProjectDir)Properties\licenses.licx</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

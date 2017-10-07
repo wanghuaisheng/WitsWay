@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7244023-8221-4B7B-8CEF-7BB53E6F947D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WitsWay.Utilities</RootNamespace>
+    <AssemblyName>WitsWay.Utilities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\WitsWay.Utilities.xml</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\WitsWay.Utilities.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Debug\DotNetSoft.Utilities.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\..\Assemblies\DLL3\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="ChnCharInfo.resources">
+      <HintPath>..\..\Assemblies\DLL3\ChnCharInfo.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\Assemblies\DLL3\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\DLL3\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\Assemblies\DLL3\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data.SqlCe">
+      <HintPath>..\..\Assemblies\DLL3\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\DLL3\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\Assemblies\DLL3\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\DLL3\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\..\Assemblies\DLL3\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Assembly\DLL3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builders\PageParameterBuilder.cs" />
+    <Compile Include="CheckSum\CrcFactory.cs" />
+    <Compile Include="Containers\BasicTypeContainer.cs" />
+    <Compile Include="Daos\DaoFactory.cs" />
+    <Compile Include="Daos\IDaoExtends.cs" />
+    <Compile Include="Daos\IDao.cs" />
+    <Compile Include="Daos\IDaoAttribute.cs" />
+    <Compile Include="Daos\DaoAttribute.cs" />
+    <Compile Include="Attributes\EnumDescription.Static.cs" />
+    <Compile Include="Attributes\EnumDescription.cs" />
+    <Compile Include="Cast\ObjectMapper.cs" />
+    <Compile Include="CheckSum\Adler32.cs" />
+    <Compile Include="CheckSum\Crc32.cs" />
+    <Compile Include="CheckSum\ICheckSum.cs" />
+    <Compile Include="CheckSum\StrangeCrc.cs" />
+    <Compile Include="Compare\CompareObjects.cs" />
+    <Compile Include="Compare\Tests.cs" />
+    <Compile Include="Compare\Difference.cs" />
+    <Compile Include="Compare\ICompareObjects.cs" />
+    <Compile Include="Compare\CompareSettings.cs" />
+    <Compile Include="Daos\IRepositoryStates.cs" />
+    <Compile Include="Daos\IRepositoryBulk.cs" />
+    <Compile Include="Daos\IRepositorySearch.cs" />
+    <Compile Include="Daos\IRepositoryClause.cs" />
+    <Compile Include="Daos\IRepository.cs" />
+    <Compile Include="EntityCast\CasterBuilder.cs" />
+    <Compile Include="EntityCast\FastReflectionCaster.cs" />
+    <Compile Include="EntityCast\IEntityCaster.cs" />
+    <Compile Include="EntityCast\IMapBuilderContext.cs" />
+    <Compile Include="EntityCast\IMapBuilderContextMap.cs" />
+    <Compile Include="EntityCast\PropertyMapping.cs" />
+    <Compile Include="EntityCast\ReflectionCaster.cs" />
+    <Compile Include="Entitys\PagerFilterPara.cs" />
+    <Compile Include="Entitys\BulkInsertResult.cs" />
+    <Compile Include="Enums\CrcAlgorithmKinds.cs" />
+    <Compile Include="Enums\HashAlgorithmKinds.cs" />
+    <Compile Include="Enums\RightOperations.cs" />
+    <Compile Include="Enums\PageFunctions.cs" />
+    <Compile Include="Enums\SequenceCircle.cs" />
+    <Compile Include="Enums\MenuKinds.cs" />
+    <Compile Include="Enums\SubSystems.cs" />
+    <Compile Include="Helpers\ExceptionHelper.HandleClient.cs" />
+    <Compile Include="Helpers\ExceptionHelper.HandleService.cs" />
+    <Compile Include="Helpers\ExceptionHelper.HandleLogic.cs" />
+    <Compile Include="Helpers\ExceptionHelper.ThrowProgram.cs" />
+    <Compile Include="Helpers\ExceptionHelper.ThrowBusiness.cs" />
+    <Compile Include="Errors\ErrorDomains.cs" />
+    <Compile Include="Errors\ErrorSystems.cs" />
+    <Compile Include="Errors\ErrorItemAttribute.cs" />
+    <Compile Include="Errors\ErrorItemAttribute.Static.cs" />
+    <Compile Include="Errors\ErrorItemExtends.cs" />
+    <Compile Include="Errors\ErrorItemFactory.cs" />
+    <Compile Include="Errors\ErrorDomainAttribute.cs" />
+    <Compile Include="Errors\Extents.cs" />
+    <Compile Include="Errors\UtilityErrors.cs" />
+    <Compile Include="Exceptions\ApiExceptionDetail.cs" />
+    <Compile Include="Exceptions\AppMessageException.cs" />
+    <Compile Include="Exceptions\AppBusinessException.cs" />
+    <Compile Include="Exceptions\AppExceptionDetail.cs" />
+    <Compile Include="Exceptions\AppExceptionKinds.cs" />
+    <Compile Include="Exceptions\AppProgramException.cs" />
+    <Compile Include="Extends\EnumExtends.cs" />
+    <Compile Include="Extends\DatabaseExtends.cs" />
+    <Compile Include="Entitys\IntIdStringValue.cs" />
+    <Compile Include="Entitys\IntIdIntValue.cs" />
+    <Compile Include="Entitys\PageParametercs.cs" />
+    <Compile Include="Entitys\PageResult.cs" />
+    <Compile Include="Entitys\SortColumn.cs" />
+    <Compile Include="Entitys\StringIdIntValue.cs" />
+    <Compile Include="Entitys\StringIdStringValue.cs" />
+    <Compile Include="Entitys\TimestampData.cs" />
+    <Compile Include="Extends\DataRowExtends.cs" />
+    <Compile Include="Extends\DateTimeExtends.cs" />
+    <Compile Include="Extends\ListExtension.cs" />
+    <Compile Include="Extends\MethodExtends.cs" />
+    <Compile Include="Extends\ObjectExtends.cs" />
+    <Compile Include="Extends\PropertyExtends.cs" />
+    <Compile Include="Extends\ByteExtends.cs" />
+    <Compile Include="Extends\TypeExtends.cs" />
+    <Compile Include="Extends\StringExtends.cs" />
+    <Compile Include="Extends\IEnumerableExtends.cs" />
+    <Compile Include="FastReflection\Cache\ConstructorInvokerCache.cs" />
+    <Compile Include="FastReflection\Cache\FastReflectionCache.cs" />
+    <Compile Include="FastReflection\Cache\FastReflectionCaches.cs" />
+    <Compile Include="FastReflection\Cache\FieldAccessorCache.cs" />
+    <Compile Include="FastReflection\Cache\IFastReflectionCache.cs" />
+    <Compile Include="FastReflection\Cache\MethodInvokerCache.cs" />
+    <Compile Include="FastReflection\Cache\PropertyAccessorCache.cs" />
+    <Compile Include="FastReflection\Constructor\ConstructorInvoker.cs" />
+    <Compile Include="FastReflection\Constructor\ConstructorInvokerFactory.cs" />
+    <Compile Include="FastReflection\FastReflectionExtensions.cs" />
+    <Compile Include="FastReflection\Factory\FastReflectionFactories.cs" />
+    <Compile Include="FastReflection\Field\FieldAccessor.cs" />
+    <Compile Include="FastReflection\Field\FieldAccessorFactory.cs" />
+    <Compile Include="FastReflection\Factory\IFastReflectionFactory.cs" />
+    <Compile Include="FastReflection\Method\MethodInvoker.cs" />
+    <Compile Include="FastReflection\Method\MethodInvokerFactory.cs" />
+    <Compile Include="FastReflection\Property\PropertyAccessor.cs" />
+    <Compile Include="FastReflection\Property\PropertyAccessorFactory.cs" />
+    <Compile Include="Fills\FillKeyAttribute.cs" />
+    <Compile Include="Fills\FillKind.cs" />
+    <Compile Include="Fills\FillTargetAttribute.cs" />
+    <Compile Include="Fills\IFiller.cs" />
+    <Compile Include="Guards\ArgumentGuard.cs" />
+    <Compile Include="Helpers\AppSettingHelper.cs" />
+    <Compile Include="Helpers\ComputerHelper.cs" />
+    <Compile Include="Helpers\Annotations.cs" />
+    <Compile Include="Helpers\EncryptDecryptHelper.cs" />
+    <Compile Include="Helpers\ExceptionHelper.cs" />
+    <Compile Include="Helpers\DirFileHelper.cs" />
+    <Compile Include="Helpers\ExpressionHelper.cs" />
+    <Compile Include="Helpers\HashAlgorithmExtends.cs" />
+    <Compile Include="Helpers\HashAlgorithmHelper.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\JsonCreationConverter.cs" />
+    <Compile Include="Helpers\JsonDeserializeHelper.cs" />
+    <Compile Include="Helpers\PathCodeHelper.cs" />
+    <Compile Include="Helpers\PinYinHelper.cs" />
+    <Compile Include="Helpers\SerilizeHelper.cs" />
+    <Compile Include="Helpers\ShowCastHelper.cs" />
+    <Compile Include="Helpers\TsqlHelper.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Helpers\CollectionHelper.cs" />
+    <Compile Include="Helpers\ZipHelper.cs" />
+    <Compile Include="Layouts\EditorKinds.cs" />
+    <Compile Include="Layouts\TreeLayoutModelAttribute.cs" />
+    <Compile Include="Layouts\GridLayoutModelAttribute.cs" />
+    <Compile Include="Layouts\ICustomerUC.cs" />
+    <Compile Include="Layouts\ILayoutEditor.cs" />
+    <Compile Include="Layouts\ISelectorAdapter.cs" />
+    <Compile Include="Layouts\LayoutEditorAttribute.cs" />
+    <Compile Include="Layouts\LayoutKinds.cs" />
+    <Compile Include="Layouts\FormLayoutModelAttribute.cs" />
+    <Compile Include="Models\LoginPost.cs" />
+    <Compile Include="Models\LoginResult.cs" />
+    <Compile Include="Models\LoginOperator.cs" />
+    <Compile Include="Models\OperationLog.cs" />
+    <Compile Include="Models\SequenceNumber.cs" />
+    <Compile Include="Patterns\Sandbox.cs" />
+    <Compile Include="Services\IService.cs" />
+    <Compile Include="SqlBulks\AllColumnSelect.cs" />
+    <Compile Include="SqlBulks\BulkDelete.cs" />
+    <Compile Include="SqlBulks\BulkInsert.cs" />
+    <Compile Include="SqlBulks\BulkInsertOrUpdate.cs" />
+    <Compile Include="SqlBulks\BulkOperations.cs" />
+    <Compile Include="SqlBulks\BulkOperationsHelpers.cs" />
+    <Compile Include="SqlBulks\BulkUpdate.cs" />
+    <Compile Include="SqlBulks\ColumnSelect.cs" />
+    <Compile Include="SqlBulks\IBulkOperations.cs" />
+    <Compile Include="SqlBulks\IdentityException.cs" />
+    <Compile Include="SqlBulks\ITransaction.cs" />
+    <Compile Include="SqlBulks\Setup.cs" />
+    <Compile Include="SqlBulks\Table.cs" />
+    <Compile Include="SqlBulks\TableSelect.cs" />
+    <Compile Include="Supports\GridSupport\GridSupportExtends.cs" />
+    <Compile Include="Supports\IKey.cs" />
+    <Compile Include="Supports\ISelected.cs" />
+    <Compile Include="Daos\IRepositoryExist.cs" />
+    <Compile Include="Patterns\MsDispose.cs" />
+    <Compile Include="Patterns\Singleton.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ParseProviders\IParseProvider.cs" />
+    <Compile Include="Providers\ParseProviders\JsonParseProvider.cs" />
+    <Compile Include="Providers\ParseProviders\ParserFactory.cs" />
+    <Compile Include="Providers\ParseProviders\XmlParseProvider.cs" />
+    <Compile Include="Supports\GridSupport\IGridSupport.cs" />
+    <Compile Include="Supports\GridSupport\GridSupport.cs" />
+    <Compile Include="Supports\IPinYinSupport.cs" />
+    <Compile Include="Supports\TreeSupport\ITreeSupportT.cs" />
+    <Compile Include="Supports\TreeSupport\TreeSupportExtends.cs" />
+    <Compile Include="Supports\TreeSupport\ITreeSupport.cs" />
+    <Compile Include="Supports\TreeSupport\TreeSupport.cs" />
+    <Compile Include="Supports\KeyEqualityComparer.cs" />
+    <Compile Include="Thread\LockObject.cs" />
+    <Compile Include="UtilityStatics.cs" />
+    <Compile Include="UtilityConsts.cs" />
+    <Compile Include="Validate\Annotations\CustomValidatorAttribute.cs" />
+    <Compile Include="Validate\Annotations\EnumRequiredAttribute.cs" />
+    <Compile Include="Validate\Annotations\ICustomValidator.cs" />
+    <Compile Include="Validate\Annotations\IValidateModel.cs" />
+    <Compile Include="Validate\Annotations\CustomValidatorFactory.cs" />
+    <Compile Include="Validate\RegexStrings.cs" />
+    <Compile Include="Validate\ValidateErrorCode.cs" />
+    <Compile Include="Validate\Annotations\ValidateExtends.cs" />
+    <Compile Include="Validate\ValidateResult.cs" />
+    <Compile Include="Validate\Validators\BoolValidator.cs" />
+    <Compile Include="Validate\Validators\DateValidator.cs" />
+    <Compile Include="Validate\Validators\ValidatorMaxPrice.cs" />
+    <Compile Include="Validate\Validators\NumericValidator.cs" />
+    <Compile Include="Validate\Validators\StringValidator.cs" />
+    <Compile Include="Validate\Validators\Validator.cs" />
+    <Compile Include="Validate\Validators\ValidatorBase.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>SET DllPath=$(SolutionDir)..\Assemblies\DLL\
+xcopy "$(TargetPath)" "%25DllPath%25$(TargetFileName)" /E /C /Y /R /U
+xcopy "$(TargetDir)$(TargetName).XML" "%25DllPath%25$(TargetName).XML" /E /C /Y /R /U
+xcopy "$(TargetDir)$(TargetName).PDB" "%25DllPath%25$(TargetName).PDB" /E /C /Y /R /U</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
