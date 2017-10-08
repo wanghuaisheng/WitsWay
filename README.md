@@ -1,2 +1,3 @@
 # WitsWay
-一个DotNet公共库集合，项目会持续完善
+A DotNet Common Library，I Will Keep It On And On
+## Library Contains： Common Helper、Data Anotation、Exception Handler etc.
