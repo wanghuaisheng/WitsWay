@@ -20,47 +20,31 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
 	/// </summary>
 	public class Layer
 	{
-		private string _name;
+		//private string _name;
 		private bool _isDirty;
-		private bool _visible;
-		private bool _active;
-		private GraphicsList _graphicsList;
+		//private bool _visible;
+		//private bool _active;
+		//private GraphicsList _graphicsList;
 
 		/// <summary>
 		/// <see cref="Layer"/> Name (User-defined)
 		/// </summary>
-		public string LayerName
-		{
-			get => _name;
-		    set => _name = value;
-		}
+		public string LayerName { get; set; }
 
 		/// <summary>
 		/// List of Graphic objects (derived from <see cref="DrawObject"/>) contained by this <see cref="Layer"/>
 		/// </summary>
-		public GraphicsList Graphics
-		{
-			get => _graphicsList;
-		    set => _graphicsList = value;
-		}
+		public GraphicsList Graphics { get; set; }
 
 		/// <summary>
 		/// Returns True if this <see cref="Layer"/> is visible, else False
 		/// </summary>
-		public bool IsVisible
-		{
-			get => _visible;
-		    set => _visible = value;
-		}
+		public bool IsVisible { get; set; }
 
 		/// <summary>
 		/// Returns True if this is the active <see cref="Layer"/>, else False
 		/// </summary>
-		public bool IsActive
-		{
-			get => _active;
-		    set => _active = value;
-		}
+		public bool IsActive { get; set; }
 
 		/// <summary>
 		/// Dirty is True if any elements in the contained <see cref="GraphicsList"/> are dirty, else False
@@ -70,12 +54,12 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
 			get
 			{
 				if (_isDirty == false)
-					_isDirty = _graphicsList.Dirty;
+					_isDirty = Graphics.Dirty;
 				return _isDirty;
 			}
 			set
 			{
-				_graphicsList.Dirty = false;
+			    Graphics.Dirty = false;
 				_isDirty = false;
 			}
 		}
@@ -92,29 +76,29 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
 				String.Format(CultureInfo.InvariantCulture,
 				              "{0}{1}",
 				              EntryLayerName, orderNumber),
-				_name);
+				LayerName);
 
 			info.AddValue(
 				String.Format(CultureInfo.InvariantCulture,
 				              "{0}{1}",
 				              EntryLayerVisible, orderNumber),
-				_visible);
+				IsVisible);
 
 			info.AddValue(
 				String.Format(CultureInfo.InvariantCulture,
 				              "{0}{1}",
 				              EntryLayerActive, orderNumber),
-				_active);
+				IsActive);
 
 			info.AddValue(
 				String.Format(CultureInfo.InvariantCulture,
 				              "{0}{1}",
 				              EntryGraphicsCount, orderNumber),
-				_graphicsList.Count);
+				Graphics.Count);
 
-			for (int i = 0; i < _graphicsList.Count; i++)
+			for (int i = 0; i < Graphics.Count; i++)
 			{
-				object o = _graphicsList[i];
+				object o = Graphics[i];
 				info.AddValue(
 					String.Format(CultureInfo.InvariantCulture,
 					              "{0}{1}-{2}",
@@ -127,19 +111,19 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
 
 		public void LoadFromStream(SerializationInfo info, int orderNumber)
 		{
-			_graphicsList = new GraphicsList();
+		    Graphics = new GraphicsList();
 
-			_name = info.GetString(
+			LayerName = info.GetString(
 				String.Format(CultureInfo.InvariantCulture,
 				              "{0}{1}",
 				              EntryLayerName, orderNumber));
 
-			_visible = info.GetBoolean(
+			IsVisible = info.GetBoolean(
 				String.Format(CultureInfo.InvariantCulture,
 				              "{0}{1}",
 				              EntryLayerVisible, orderNumber));
 
-			_active = info.GetBoolean(
+			IsActive = info.GetBoolean(
 				String.Format(CultureInfo.InvariantCulture,
 				              "{0}{1}",
 				              EntryLayerActive, orderNumber));
@@ -163,14 +147,14 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
 				((DrawObject)drawObject).LoadFromStream(info, orderNumber, i);
 
                 // Thanks to Member 3272353 for this fix to object ordering problem.
-				// _graphicsList.Add((DrawObject)drawObject);
-                _graphicsList.Append((DrawObject) drawObject);
+                // _graphicsList.Add((DrawObject)drawObject);
+			    Graphics.Append((DrawObject) drawObject);
 			}
 		}
 
 		internal void Draw(Graphics g)
 		{
-			_graphicsList.Draw(g);
+		    Graphics.Draw(g);
 		}
 	}
 }

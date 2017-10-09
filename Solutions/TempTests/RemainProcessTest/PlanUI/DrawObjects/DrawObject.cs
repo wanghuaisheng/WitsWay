@@ -16,20 +16,19 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
     {
         #region Members
         // Object properties
-        private bool _selected;
-        private Color _color;
-        private Color _fillColor;
-        private bool _filled;
-        private int _penWidth;
-        private Pen _drawpen;
-        private Brush _drawBrush;
-        private DrawingPens.PenType _penType;
-        private DrawUnitKind _brushType;
-        private string _tipText;
+        //private bool _selected;
+        //private Color _color;
+        //private Color _fillColor;
+        //private int _penWidth;
+        //private Pen _drawpen;
+        //private Brush _drawBrush;
+        //private DrawingPens.PenType _penType;
+        //private DrawUnitKind _brushType;
+        //private string _tipText;
 
         // Last used property values (may be kept in the Registry)
-        private static Color _lastUsedColor = Color.Black;
-        private static int _lastUsedPenWidth = 1;
+        //private static Color _lastUsedColor = Color.Black;
+        //private static int _lastUsedPenWidth = 1;
 
         // Entry names for serialization
         private const string EntryColor = "Color";
@@ -42,29 +41,26 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
         private const string EntryRotation = "Rotation";
         private const string EntryTipText = "TipText";
 
-        private bool _dirty;
-        private int _id;
-        private int _zOrder;
-        private int _rotation = 0;
-        private Point _center;
+        //private bool _dirty;
+        //private bool _filled;
+        //private int _id;
+        //private int _zOrder;
+        private int _rotation;
+        //private Point _center;
         #endregion Members
 
         #region Properties
         /// <summary>
         /// Center of the object being drawn.
         /// </summary>
-        public Point Center
-        {
-            get => _center;
-            set => _center = value;
-        }
+        public Point Center { get; set; }
 
         /// <summary>
         /// Rotation of the object in degrees. Negative is Left, Positive is Right.
         /// </summary>
         public int Rotation
         {
-            get => _rotation;
+            get { return _rotation; }
             set
             {
                 if (value > 360)
@@ -79,104 +75,55 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
         /// <summary>
         /// ZOrder is the order the objects will be drawn in - lower the ZOrder, the closer the to top the object is.
         /// </summary>
-        public int ZOrder
-        {
-            get => _zOrder;
-            set => _zOrder = value;
-        }
+        public int ZOrder { get; set; }
 
         /// <summary>
         /// Object ID used for Undo Redo functions
         /// </summary>
-        public int Id
-        {
-            get => _id;
-            set => _id = value;
-        }
+        public int Id { get; set; }
 
         /// <summary>
         /// Set to true whenever the object changes
         /// </summary>
-        public bool Dirty
-        {
-            get => _dirty;
-            set => _dirty = value;
-        }
-
+        public bool Dirty { get; set; }
         /// <summary>
         /// Draw object filled?
         /// </summary>
-        public bool Filled
-        {
-            get => _filled;
-            set => _filled = value;
-        }
+        public bool Filled { get; set; }
 
         /// <summary>
         /// Selection flag
         /// </summary>
-        public bool Selected
-        {
-            get => _selected;
-            set => _selected = value;
-        }
+        public bool Selected { get; set; }
 
         /// <summary>
         /// Fill Color
         /// </summary>
-        public Color FillColor
-        {
-            get => _fillColor;
-            set => _fillColor = value;
-        }
+        public Color FillColor { get; set; }
 
         /// <summary>
         /// Border (line) Color
         /// </summary>
-        public Color Color
-        {
-            get => _color;
-            set => _color = value;
-        }
+        public Color Color { get; set; }
 
         /// <summary>
         /// Pen width
         /// </summary>
-        public int PenWidth
-        {
-            get => _penWidth;
-            set => _penWidth = value;
-        }
+        public int PenWidth { get; set; }
 
-        public DrawUnitKind BrushType
-        {
-            get => _brushType;
-            set => _brushType = value;
-        }
+        public DrawUnitKind BrushType { get; set; }
 
         /// <summary>
         /// Brush used to paint object
         /// </summary>
-        public Brush DrawBrush
-        {
-            get => _drawBrush;
-            set => _drawBrush = value;
-        }
+        public Brush DrawBrush { get; set; }
 
-        public DrawingPens.PenType PenType
-        {
-            get => _penType;
-            set => _penType = value;
-        }
+        public DrawingPens.PenType PenType { get; set; }
 
         /// <summary>
         /// Pen used to draw object
         /// </summary>
-        public Pen DrawPen
-        {
-            get => _drawpen;
-            set => _drawpen = value;
-        }
+        public Pen DrawPen { get; set; }
 
         /// <summary>
         /// Number of handles
@@ -191,29 +138,17 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
         /// <summary>
         /// Last used color
         /// </summary>
-        public static Color LastUsedColor
-        {
-            get => _lastUsedColor;
-            set => _lastUsedColor = value;
-        }
+        public static Color LastUsedColor { get; set; } = Color.Black;
 
         /// <summary>
         /// Last used pen width
         /// </summary>
-        public static int LastUsedPenWidth
-        {
-            get => _lastUsedPenWidth;
-            set => _lastUsedPenWidth = value;
-        }
+        public static int LastUsedPenWidth { get; set; } = 1;
 
         /// <summary>
         /// Text to display when mouse is over an object
         /// </summary>
-        public string TipText
-        {
-            get => _tipText;
-            set => _tipText = value;
-        }
+        public string TipText { get; set; }
 
         #endregion Properties
         #region Constructor
@@ -260,7 +195,7 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
         {
             Point point = GetHandle(handleNumber);
             // Take into account width of pen
-            return new Rectangle(point.X - (_penWidth + 3), point.Y - (_penWidth + 3), 7 + _penWidth, 7 + _penWidth);
+            return new Rectangle(point.X - (PenWidth + 3), point.Y - (PenWidth + 3), 7 + PenWidth, 7 + PenWidth);
         }
 
         /// <summary>
@@ -299,7 +234,7 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
         {
             Point p = GetConnection(connectionNumber);
             // Take into account width of pen
-            return new Rectangle(p.X - (_penWidth + 3), p.Y - (_penWidth + 3), 7 + _penWidth, 7 + _penWidth);
+            return new Rectangle(p.X - (PenWidth + 3), p.Y - (PenWidth + 3), 7 + PenWidth, 7 + PenWidth);
         }
         public virtual void DrawConnection(Graphics g, int connectionNumber)
         {
@@ -398,7 +333,7 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
         {
             Trace.WriteLine("");
             Trace.WriteLine(GetType().Name);
-            Trace.WriteLine("Selected = " + _selected.ToString(CultureInfo.InvariantCulture));
+            Trace.WriteLine("Selected = " + Selected.ToString(CultureInfo.InvariantCulture));
         }
 
         /// <summary>
@@ -470,7 +405,7 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
                 String.Format(CultureInfo.InvariantCulture,
                               "{0}{1}-{2}",
                               EntryTipText, orderNumber, objectIndex),
-                _tipText);
+                TipText);
         }
 
         /// <summary>
@@ -527,7 +462,7 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
                               "{0}{1}-{2}",
                               EntryRotation, orderNumber, objectData));
 
-            _tipText = info.GetString(String.Format(CultureInfo.InvariantCulture,
+            TipText = info.GetString(String.Format(CultureInfo.InvariantCulture,
                               "{0}{1}-{2}",
                               EntryTipText, orderNumber, objectData));
 
@@ -556,17 +491,17 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
         /// <param name="drawObject">Object being cloned</param>
         protected void FillDrawObjectFields(DrawObject drawObject)
         {
-            drawObject._selected = _selected;
-            drawObject._color = _color;
-            drawObject._penWidth = _penWidth;
+            drawObject.Selected = Selected;
+            drawObject.Color =Color;
+            drawObject.PenWidth = PenWidth;
             drawObject.Id = Id;
-            drawObject._brushType = _brushType;
-            drawObject._penType = _penType;
-            drawObject._drawBrush = _drawBrush;
-            drawObject._drawpen = _drawpen;
-            drawObject._fillColor = _fillColor;
+            drawObject.BrushType = BrushType;
+            drawObject.PenType = PenType;
+            drawObject.DrawBrush = DrawBrush;
+            drawObject.DrawPen = DrawPen;
+            drawObject.FillColor = FillColor;
             drawObject._rotation = _rotation;
-            drawObject._center = _center;
+            drawObject.Center = Center;
         }
         #endregion Other functions
 

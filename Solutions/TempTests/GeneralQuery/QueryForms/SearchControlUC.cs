@@ -15,6 +15,7 @@ namespace WitsWay.TempTests.GeneralQuery.QueryForms
 
         }
 
+
         public EmployeeSearchFilter GetFilter()
         {
             return null;
@@ -24,8 +25,10 @@ namespace WitsWay.TempTests.GeneralQuery.QueryForms
         {
 
         }
-
-
-        public string ConfigKey => throw new NotImplementedException();
+        /// <summary>
+        /// 配置键
+        /// </summary>
+        public string ConfigKey { get; }
+        
     }
 }

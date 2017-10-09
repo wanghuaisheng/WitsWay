@@ -37,9 +37,9 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
         public DrawArea()
         {
             // create list of Layers, with one default active visible layer
-            _panning = false;
-            _panX = 0;
-            _panY = 0;
+            Panning = false;
+            PanX = 0;
+            PanY = 0;
             this.MouseWheel += DrawArea_MouseWheel;
             // This call is required by the Windows.Forms Form Designer.
             InitializeComponent();
@@ -62,24 +62,24 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
             Image,
             Connector,
             NumberOfDrawTools
-        } ;
+        };
         #endregion Enumerations
 
         #region Members
-        private float _zoom = 1.0f;
-        private float _rotation = 0f;
-        private int _panX = 0;
-        private int _panY;
-        private int _originalPanY;
-        private bool _panning = false;
+        //private float _zoom = 1.0f;
+        //private float _rotation = 0f;
+        //private int _panX = 0;
+        //private int _panY;
+        //private int _originalPanY;
+        //private bool _panning = false;
         private Point _lastPoint;
-        private Color _lineColor = Color.Black;
-        private Color _fillColor = Color.White;
-        private bool _drawFilled = false;
-        private int _lineWidth = -1;
-        private Pen _currentPen;
-        private DrawingPens.PenType _penType;
-        private Brush _currentBrush;
+        //private Color _lineColor = Color.Black;
+        //private Color _fillColor = Color.White;
+        //private bool _drawFilled = false;
+        //private int _lineWidth = -1;
+        //private Pen _currentPen;
+        //private DrawingPens.PenType _penType;
+        //private Brush _currentBrush;
 
         // Define the Layers collection
         private Layers _layers;
@@ -91,14 +91,14 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
 
         // group selection rectangle
         private Rectangle _netRectangle;
-        private bool _drawNetRectangle = false;
+        //private bool _drawNetRectangle = false;
 
         private Form _myparent;
 
         public Form MyParent
         {
-            get => _myparent;
-            set => _myparent = value;
+            get { return _myparent; }
+            set { _myparent = value; }
         }
 
         #endregion Members
@@ -113,145 +113,89 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
         //    set { _brushType = value; }
         //}
 
-        public Brush CurrentBrush
-        {
-            get => _currentBrush;
-            set => _currentBrush = value;
-        }
+        public Brush CurrentBrush { get; set; }
 
         /// <summary>
         /// Allow tools and objects to see the type of pen set
         /// </summary>
-        public DrawingPens.PenType PenType
-        {
-            get => _penType;
-            set => _penType = value;
-        }
+        public DrawingPens.PenType PenType { get; set; }
 
         /// <summary>
         /// Current Drawing Pen
         /// </summary>
-        public Pen CurrentPen
-        {
-            get => _currentPen;
-            set => _currentPen = value;
-        }
+        public Pen CurrentPen { get; set; }
 
         /// <summary>
         /// Current Line Width
         /// </summary>
-        public int LineWidth
-        {
-            get => _lineWidth;
-            set => _lineWidth = value;
-        }
+        public int LineWidth { get; set; } = -1;
 
         /// <summary>
         /// Flag determines if objects will be drawn filled or not
         /// </summary>
-        public bool DrawFilled
-        {
-            get => _drawFilled;
-            set => _drawFilled = value;
-        }
+        public bool DrawFilled { get; set; }
 
         /// <summary>
         /// Color to draw filled objects with
         /// </summary>
-        public Color FillColor
-        {
-            get => _fillColor;
-            set => _fillColor = value;
-        }
+        public Color FillColor { get; set; } = Color.White;
 
         /// <summary>
         /// Color for drawing lines
         /// </summary>
-        public Color LineColor
-        {
-            get => _lineColor;
-            set => _lineColor = value;
-        }
+        public Color LineColor { get; set; } = Color.Black;
 
         /// <summary>
         /// Original Y position - used when panning
         /// </summary>
-        public int OriginalPanY
-        {
-            get => _originalPanY;
-            set => _originalPanY = value;
-        }
+        public int OriginalPanY { get; set; }
 
         /// <summary>
         /// Flag is true if panning active
         /// </summary>
-        public bool Panning
-        {
-            get => _panning;
-            set => _panning = value;
-        }
+        public bool Panning { get; set; }
 
         /// <summary>
         /// Current pan offset along X-axis
         /// </summary>
-        public int PanX
-        {
-            get => _panX;
-            set => _panX = value;
-        }
+        public int PanX { get; set; }
 
         /// <summary>
         /// Current pan offset along Y-axis
         /// </summary>
-        public int PanY
-        {
-            get => _panY;
-            set => _panY = value;
-        }
+        public int PanY { get; set; }
 
         /// <summary>
         /// Degrees of rotation of the drawing
         /// </summary>
-        public float Rotation
-        {
-            get => _rotation;
-            set => _rotation = value;
-        }
+        public float Rotation { get; set; }
 
         /// <summary>
         /// Current Zoom factor
         /// </summary>
-        public float Zoom
-        {
-            get => _zoom;
-            set => _zoom = value;
-        }
+        public float Zoom { get; set; }
 
         /// <summary>
         /// Group selection rectangle. Used for drawing.
         /// </summary>
         public Rectangle NetRectangle
         {
-            get => _netRectangle;
-            set => _netRectangle = value;
+            get { return _netRectangle; }
+        set{ _netRectangle = value;}
         }
 
         /// <summary>
         /// Flag is set to true if group selection rectangle should be drawn.
         /// </summary>
-        public bool DrawNetRectangle
-        {
-            get => _drawNetRectangle;
-            set => _drawNetRectangle = value;
-        }
+        public bool DrawNetRectangle { get; set; }
 
         /// <summary>
         /// Reference to the owner form
         /// </summary>
         public PlanControl Owner
         {
-            get => _owner;
-            set => _owner = value;
+            get { return _owner; }
+            set { _owner = value; }
         }
 
         /// <summary>
@@ -259,8 +203,8 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
         /// </summary>
         public DrawToolType ActiveTool
         {
-            get => _activeTool;
-            set => _activeTool = value;
+            get { return _activeTool; }
+            set { _activeTool = value; }
         }
 
         /// <summary>
@@ -288,9 +232,9 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
         {
             Matrix mx = new Matrix();
             mx.Translate(-ClientSize.Width / 2f, -ClientSize.Height / 2f, MatrixOrder.Append);
-            mx.Rotate(_rotation, MatrixOrder.Append);
-            mx.Translate(ClientSize.Width / 2f + _panX, ClientSize.Height / 2f + _panY, MatrixOrder.Append);
-            mx.Scale(_zoom, _zoom, MatrixOrder.Append);
+            mx.Rotate(Rotation, MatrixOrder.Append);
+            mx.Translate(ClientSize.Width / 2f + PanX, ClientSize.Height / 2f + PanY, MatrixOrder.Append);
+            mx.Scale(Zoom, Zoom, MatrixOrder.Append);
             e.Graphics.Transform = mx;
             // Determine center of ClientRectangle
             Point centerRectangle = new Point();
@@ -335,9 +279,9 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
             Point[] pts = new Point[] { p };
             Matrix mx = new Matrix();
             mx.Translate(-ClientSize.Width / 2f, -ClientSize.Height / 2f, MatrixOrder.Append);
-            mx.Rotate(_rotation, MatrixOrder.Append);
-            mx.Translate(ClientSize.Width / 2f + _panX, ClientSize.Height / 2f + _panY, MatrixOrder.Append);
-            mx.Scale(_zoom, _zoom, MatrixOrder.Append);
+            mx.Rotate(Rotation, MatrixOrder.Append);
+            mx.Translate(ClientSize.Width / 2f + PanX, ClientSize.Height / 2f + PanY, MatrixOrder.Append);
+            mx.Scale(Zoom, Zoom, MatrixOrder.Append);
             mx.Invert();
             mx.TransformPoints(pts);
             return pts[0];
@@ -360,8 +304,8 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
             }
             else if (e.Button == MouseButtons.Right)
             {
-                if (_panning)
-                    _panning = false;
+                if (Panning)
+                    Panning = false;
                 //if (_activeTool == DrawToolType.PolyLine || _activeTool == DrawToolType.Connector)
                 //    _tools[(int)_activeTool].OnMouseDown(this, e);
                 ActiveTool = DrawToolType.Pointer;
@@ -392,14 +336,14 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
             Point curLoc = BackTrackMouse(e.Location);
             if (e.Button == MouseButtons.Left ||
               e.Button == MouseButtons.None)
-                if (e.Button == MouseButtons.Left && _panning)
+                if (e.Button == MouseButtons.Left && Panning)
                 {
                     if (curLoc.X !=
                       _lastPoint.X)
-                        _panX += curLoc.X - _lastPoint.X;
+                        PanX += curLoc.X - _lastPoint.X;
                     if (curLoc.Y !=
                       _lastPoint.Y)
-                        _panY += curLoc.Y - _lastPoint.Y;
+                        PanY += curLoc.Y - _lastPoint.Y;
                     Invalidate();
                 }
                 //else

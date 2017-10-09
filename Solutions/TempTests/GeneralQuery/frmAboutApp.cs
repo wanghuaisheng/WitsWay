@@ -9,8 +9,10 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Localization;
 using WitsWay.TempTests.GeneralQuery.Properties;
 
-namespace WitsWay.TempTests.GeneralQuery {
-    public partial class FrmAboutApp : XtraForm {
+namespace WitsWay.TempTests.GeneralQuery
+{
+    public partial class FrmAboutApp : XtraForm
+    {
         private bool _blnMoving;
         private int _mouseDownX;
         private int _mouseDownY;
@@ -33,7 +35,8 @@ namespace WitsWay.TempTests.GeneralQuery {
 
         private static readonly Rectangle CopyrightBounds = new Rectangle(20, 280, 485, 20);
 
-        public FrmAboutApp() {
+        public FrmAboutApp()
+        {
             InitializeComponent();
             Image bgImage = Resources.About;
             BackgroundImage = bgImage;
@@ -43,38 +46,43 @@ namespace WitsWay.TempTests.GeneralQuery {
 
         public sealed override Image BackgroundImage
         {
-            get => base.BackgroundImage;
-            set => base.BackgroundImage = value;
+            get { return base.BackgroundImage; }
+            set { base.BackgroundImage = value; }
         }
 
-        private void CreateLinks() {
+        private void CreateLinks()
+        {
             _labelInfo.Font = new Font(FontName, 8.75f);
             _labelInfo.BackColor = Color.Transparent;
             _labelInfo.Bounds = LocalizationHelper.IsJapanese ? new Rectangle(155, 260, 430, 20) : new Rectangle(55, 260, 430, 20);
             _labelInfo.Parent = this;
             _labelInfo.ItemClick += OnLabelClick;
             _labelInfo.Texts.Add("官网", Color1, true);
-            if(!LocalizationHelper.IsJapanese) {
+            if (!LocalizationHelper.IsJapanese)
+            {
                 _labelInfo.Texts.Add(@"◈", Color2);
-            _labelInfo.Texts.Add("关于", Color1, true);
+                _labelInfo.Texts.Add("关于", Color1, true);
             }
             _labelInfo.Texts.Add(@"◈", Color2);
             _labelInfo.Texts.Add("帮助", Color1, true);
         }
 
-        private void OnLabelClick(object sender, LabelInfoItemClickEventArgs e) {
+        private void OnLabelClick(object sender, LabelInfoItemClickEventArgs e)
+        {
             var name = GetProcessName(e);
-            if(name != null)
+            if (name != null)
                 ObjectHelper.ShowWebSite(name);
         }
-        private string GetProcessName(LabelInfoItemClickEventArgs e) {
-            if(e.InfoText.Text.Equals("官网")) return "yitusoft.com";
-            if(e.InfoText.Text.Equals("关于")) return "about.yitusoft.com";
-            if(e.InfoText.Text.Equals("帮助")) return "help.yitusoft.com";
+        private string GetProcessName(LabelInfoItemClickEventArgs e)
+        {
+            if (e.InfoText.Text.Equals("官网")) return "yitusoft.com";
+            if (e.InfoText.Text.Equals("关于")) return "about.yitusoft.com";
+            if (e.InfoText.Text.Equals("帮助")) return "help.yitusoft.com";
             return null;
         }
-        public static void ShowAbout(Form parent) {
-            var about = new FrmAboutApp {Opacity = 0};
+        public static void ShowAbout(Form parent)
+        {
+            var about = new FrmAboutApp { Opacity = 0 };
             var tmr = new Timer
             {
                 Tag = about,
@@ -86,16 +94,19 @@ namespace WitsWay.TempTests.GeneralQuery {
             about.Dispose();
         }
 
-        private static void tmr_Tick(object sender, EventArgs e) {
+        private static void tmr_Tick(object sender, EventArgs e)
+        {
             var tmr = sender as Timer;
             var frm = tmr.Tag as Form;
-            if(frm == null) {
+            if (frm == null)
+            {
                 tmr.Stop();
                 return;
             }
-            try {
+            try
+            {
                 frm.Opacity += 0.07;
-                if(frm.Opacity >= 0.99) tmr.Tag = null;
+                if (frm.Opacity >= 0.99) tmr.Tag = null;
             }
             catch (Exception)
             {
@@ -103,39 +114,48 @@ namespace WitsWay.TempTests.GeneralQuery {
             }
         }
 
-        protected override void OnKeyDown(KeyEventArgs e) {
-            if(e.KeyData == Keys.Escape) {
+        protected override void OnKeyDown(KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Escape)
+            {
                 e.Handled = true;
                 Close();
             }
             base.OnKeyDown(e);
         }
-        protected override void OnMouseDown(MouseEventArgs e) {
+        protected override void OnMouseDown(MouseEventArgs e)
+        {
             base.OnMouseDown(e);
-            if(e.Y < 250)
+            if (e.Y < 250)
                 Close();
-            else {
-                if(e.Button == MouseButtons.Left) {
+            else
+            {
+                if (e.Button == MouseButtons.Left)
+                {
                     _blnMoving = true;
                     _mouseDownX = e.X;
                     _mouseDownY = e.Y;
                 }
             }
         }
-        protected override void OnMouseMove(MouseEventArgs e) {
+        protected override void OnMouseMove(MouseEventArgs e)
+        {
             base.OnMouseMove(e);
-            if(_blnMoving)
+            if (_blnMoving)
                 Location = new Point(
                     Location.X + (e.X - _mouseDownX),
                     Location.Y + (e.Y - _mouseDownY));
         }
-        protected override void OnMouseUp(MouseEventArgs e) {
+        protected override void OnMouseUp(MouseEventArgs e)
+        {
             base.OnMouseUp(e);
-            if(e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
                 _blnMoving = false;
         }
-        protected override void OnPaint(PaintEventArgs e) {
-            using(var cache = new GraphicsCache(e)) {
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            using (var cache = new GraphicsCache(e))
+            {
                 cache.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
                 DrawVersion(cache);
                 DrawDescription(cache);
@@ -143,18 +163,21 @@ namespace WitsWay.TempTests.GeneralQuery {
             }
         }
 
-        private void DrawVersion(GraphicsCache cache) {
+        private void DrawVersion(GraphicsCache cache)
+        {
             var app = new AppearanceObject(VersionAppearance);
-            app.DrawString(cache, string.Format("AboutFormVersion"+ AssemblyInfo.MarketingVersion), VersionBounds);
+            app.DrawString(cache, string.Format("AboutFormVersion" + AssemblyInfo.MarketingVersion), VersionBounds);
         }
 
-        private void DrawDescription(GraphicsCache cache) {
+        private void DrawDescription(GraphicsCache cache)
+        {
             var app = new AppearanceObject(DescriptionAppearance);
             app.TextOptions.WordWrap = WordWrap.Wrap;
             app.DrawString(cache, "关于描述", DescriptionBounds);
         }
 
-        private void DrawCopyright(GraphicsCache cache) {
+        private void DrawCopyright(GraphicsCache cache)
+        {
             var app = new AppearanceObject(CopyrightAppearance);
             app.DrawString(cache, string.Format(@"©" + DateTime.Now.Year), CopyrightBounds);
         }

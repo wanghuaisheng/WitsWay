@@ -19,14 +19,14 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI
 
         public Color? Color
         {
-            get => _color;
-            set => _color = value;
+            get { return _color; }
+            set { _color = value; }
         }
 
         public int? PenWidth
         {
-            get => _penWidth;
-            set => _penWidth = value;
+            get { return _penWidth; }
+            set { _penWidth = value; }
         }
     }
 }

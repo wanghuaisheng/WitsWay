@@ -20,7 +20,7 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
 
 		protected string TheText
 		{
-			get => _theText;
+			get { return _theText; }
 		    set
 			{
 				_theText = value;
@@ -30,8 +30,8 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
 
 		public Font TheFont
 		{
-			get => _font;
-		    set => _font = value;
+			get { return _font; }
+		    set { _font = value; }
 		}
 
 		private const string EntryRectangle = "Rect";
@@ -46,8 +46,8 @@ namespace WitsWay.TempTests.RemainProcessTest.PlanUI.DrawObjects
 
 		protected Rectangle Rectangle
 		{
-			get => _rectangle;
-		    set => _rectangle = value;
+			get { return _rectangle; }
+		    set { _rectangle = value; }
 		}
 
 		public DrawText()
