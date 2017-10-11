@@ -19,7 +19,7 @@ namespace WitsWay.TempTests.ControlsTest
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new DesktopForm());
+            Application.Run(new ToastMessageTest());
         }
     }
 }
