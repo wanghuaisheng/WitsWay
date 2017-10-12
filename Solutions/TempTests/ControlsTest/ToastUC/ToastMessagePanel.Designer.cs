@@ -25,8 +25,8 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToastMessagePanel));
             this._flyoutPanelH = new DevExpress.Utils.FlyoutPanel();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this._panelControl = new DevExpress.XtraEditors.PanelControl();
+            this._labelControl = new DevExpress.XtraEditors.LabelControl();
             this._flyoutPanelV = new DevExpress.Utils.FlyoutPanel();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -43,10 +43,12 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.cbAnimationTypes = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this._flyoutPanelH)).BeginInit();
             this._flyoutPanelH.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._panelControl)).BeginInit();
+            this._panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._flyoutPanelV)).BeginInit();
             this._flyoutPanelV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -70,11 +72,8 @@
             this._flyoutPanelH.Appearance.Options.UseBackColor = true;
             this._flyoutPanelH.Appearance.Options.UseBorderColor = true;
             this._flyoutPanelH.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this._flyoutPanelH.Controls.Add(this.panelControl1);
+            this._flyoutPanelH.Controls.Add(this._panelControl);
             this._flyoutPanelH.Location = new System.Drawing.Point(29, 22);
-            this._flyoutPanelH.LookAndFeel.SkinMaskColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this._flyoutPanelH.LookAndFeel.SkinMaskColor2 = System.Drawing.Color.MediumSpringGreen;
-            this._flyoutPanelH.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
             this._flyoutPanelH.LookAndFeel.UseDefaultLookAndFeel = false;
             this._flyoutPanelH.Name = "_flyoutPanelH";
             this._flyoutPanelH.OptionsBeakPanel.BackColor = System.Drawing.Color.PaleGreen;
@@ -87,42 +86,40 @@
             this._flyoutPanelH.TabIndex = 0;
             this._flyoutPanelH.Hidden += new DevExpress.Utils.FlyoutPanelEventHandler(this.OnFlyoutPanelHidden);
             // 
-            // panelControl1
+            // _panelControl
             // 
-            this.panelControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.panelControl1.Appearance.Options.UseBackColor = true;
-            this.panelControl1.AutoSize = true;
-            this.panelControl1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl1.Controls.Add(this.labelControl3);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(20, 0);
-            this.panelControl1.LookAndFeel.SkinName = "Springtime";
-            this.panelControl1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
-            this.panelControl1.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Padding = new System.Windows.Forms.Padding(20, 0, 30, 0);
-            this.panelControl1.Size = new System.Drawing.Size(503, 68);
-            this.panelControl1.TabIndex = 1;
+            this._panelControl.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this._panelControl.Appearance.Options.UseBackColor = true;
+            this._panelControl.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this._panelControl.Controls.Add(this._labelControl);
+            this._panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._panelControl.Location = new System.Drawing.Point(20, 0);
+            this._panelControl.LookAndFeel.SkinName = "Springtime";
+            this._panelControl.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Flat;
+            this._panelControl.LookAndFeel.UseDefaultLookAndFeel = false;
+            this._panelControl.Name = "_panelControl";
+            this._panelControl.Padding = new System.Windows.Forms.Padding(20, 0, 30, 0);
+            this._panelControl.Size = new System.Drawing.Size(503, 68);
+            this._panelControl.TabIndex = 1;
             // 
-            // labelControl3
+            // _labelControl
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 16F);
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.SeaGreen;
-            this.labelControl3.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("labelControl3.Appearance.Image")));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Appearance.Options.UseImage = true;
-            this.labelControl3.Appearance.Options.UseTextOptions = true;
-            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl3.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.labelControl3.Location = new System.Drawing.Point(20, 0);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(453, 68);
-            this.labelControl3.TabIndex = 0;
-            this.labelControl3.Text = "成功2";
+            this._labelControl.Appearance.Font = new System.Drawing.Font("Tahoma", 16F);
+            this._labelControl.Appearance.ForeColor = System.Drawing.Color.SeaGreen;
+            this._labelControl.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("labelControl3.Appearance.Image")));
+            this._labelControl.Appearance.Options.UseFont = true;
+            this._labelControl.Appearance.Options.UseForeColor = true;
+            this._labelControl.Appearance.Options.UseImage = true;
+            this._labelControl.Appearance.Options.UseTextOptions = true;
+            this._labelControl.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this._labelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this._labelControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._labelControl.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this._labelControl.Location = new System.Drawing.Point(20, 0);
+            this._labelControl.Name = "_labelControl";
+            this._labelControl.Size = new System.Drawing.Size(453, 68);
+            this._labelControl.TabIndex = 0;
+            this._labelControl.Text = "成功2";
             // 
             // _flyoutPanelV
             // 
@@ -305,10 +302,29 @@
             this.cbAnimationTypes.TabIndex = 1;
             this.cbAnimationTypes.SelectedValueChanged += new System.EventHandler(this.OnAnimationTypesSelectedValueChanged);
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(402, 430);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.TabIndex = 7;
+            this.simpleButton1.Text = "simpleButton1";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(495, 430);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton2.TabIndex = 8;
+            this.simpleButton2.Text = "simpleButton2";
+            // 
             // ToastMessagePanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.simpleButton2);
+            this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this._flyoutPanelH);
             this.Controls.Add(this._flyoutPanelV);
             this.Controls.Add(this.groupCommands);
@@ -318,9 +334,8 @@
             this.Load += new System.EventHandler(this.ToastMessagePanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this._flyoutPanelH)).EndInit();
             this._flyoutPanelH.ResumeLayout(false);
-            this._flyoutPanelH.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._panelControl)).EndInit();
+            this._panelControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._flyoutPanelV)).EndInit();
             this._flyoutPanelV.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -358,8 +373,10 @@
         private DevExpress.XtraEditors.LabelControl lblXCoord;
         private DevExpress.XtraEditors.SpinEdit _spinYPosition;
         private DevExpress.XtraEditors.SpinEdit _spinXPosition;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.LabelControl _labelControl;
+        private DevExpress.XtraEditors.PanelControl _panelControl;
         private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

@@ -117,6 +117,7 @@
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeeStatus.cs" />
     <Compile Include="Models\Sex.cs" />
+    <Compile Include="ToastUC\ToastMessageHelper.cs" />
     <Compile Include="ToastUC\ToastMessageOptions.cs" />
     <Compile Include="ToastUC\ToastMessagePanel.cs">
       <SubType>UserControl</SubType>
@@ -461,6 +462,10 @@
     <Content Include="Resources\Disk\Tiles.png" />
     <Content Include="Resources\Disk\Unknown-user.png" />
     <Content Include="Resources\Disk\VideosSmall.png" />
+    <Content Include="Resources\LightBlue.png" />
+    <Content Include="Resources\LightGreen.png" />
+    <Content Include="Resources\LightRed.png" />
+    <Content Include="Resources\LightYellow.png" />
     <None Include="Resources\settings.svg" />
     <None Include="Resources\viewsetting.svg" />
   </ItemGroup>

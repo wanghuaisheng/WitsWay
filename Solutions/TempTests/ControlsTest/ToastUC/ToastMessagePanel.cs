@@ -62,8 +62,7 @@ namespace WitsWay.TempTests.ControlsTest.ToastUC
         {
             CheckEdit edit = (CheckEdit)sender;
             Options.CloseOnOuterClick = edit.Checked;
-            if (_fPanel != null)
-                _fPanel.Options.CloseOnOuterClick = Options.CloseOnOuterClick;
+            if (_fPanel != null) _fPanel.Options.CloseOnOuterClick = Options.CloseOnOuterClick;
         }
 
         void OnCoordEditValueChanged(object sender, EventArgs e)
@@ -81,8 +80,7 @@ namespace WitsWay.TempTests.ControlsTest.ToastUC
         void OnFlyoutPanelHidden(object sender, FlyoutPanelEventArgs e)
         {
             FlyoutPanel panel = (FlyoutPanel)sender;
-            if (_fPanel == null || !ReferenceEquals(panel, _fPanel))
-                return;
+            if (_fPanel == null || !ReferenceEquals(panel, _fPanel)) return;
             _fPanel = null;
             UpdateControls();
         }
@@ -126,10 +124,14 @@ namespace WitsWay.TempTests.ControlsTest.ToastUC
         {
             btnShowToolWindow.Enabled = _fPanel == null;
             btnHideToolWindow.Enabled = !btnShowToolWindow.Enabled;
-            var isManual=Options.Anchor == PopupToolWindowAnchor.Manual;
+            var isManual = Options.Anchor == PopupToolWindowAnchor.Manual;
             _spinXPosition.Enabled = _spinYPosition.Enabled = lblXCoord.Enabled = lblYCoord.Enabled = isManual;
         }
-        
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            ToastMessageHelper.InitToast(new ToastMessageOptions {Anchor=PopupToolWindowAnchor.Top,AnimationKind=PopupToolWindowAnimation.Slide,CloseOnOuterClick=true},FindForm(),DateTime.Now.ToLongTimeString());
+        }
     }
 
 
