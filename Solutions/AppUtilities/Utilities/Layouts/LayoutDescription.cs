@@ -18,30 +18,30 @@
  * ***************************************/
 #endregion
 
+using System;
+
 namespace WitsWay.Utilities.Layouts
 {
     /// <summary>
-    /// 用户自定义控件公用接口
+    /// 布局描述信息
     /// </summary>
-    public interface ICustomerUC
+    public class LayoutDescription
     {
         /// <summary>
-        /// Adapter
+        /// 布局编码
         /// </summary>
-        ISelectorAdapter AdapterInstance { get; set; }
-
+        public string Code { get; set; }
         /// <summary>
-        /// 控件名称
+        /// 布局名称
         /// </summary>
-        string CustomerControlName { get; }
+        public string Name { get; set; }
         /// <summary>
-        /// 取用户控件的操作结果
+        /// 目标模型
         /// </summary>
-        /// <returns></returns>
-        void GetResult(int customerControlIndex = 0);
+        public Type TargetModel { get; set; }
         /// <summary>
-        /// 显示用户控件信息
+        /// 布局备注
         /// </summary>
-        void BindUC(int customerControlIndex = 0);
+        public string Remark { get; set; }
     }
 }

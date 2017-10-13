@@ -6068,6 +6068,69 @@
             CheckedListBoxControlFlags 用于位域枚举
             </summary>
         </member>
+        <member name="T:WitsWay.Utilities.Layouts.ILayoutConsumer">
+            <summary>
+            布局消费者
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Layouts.ILayoutConsumer.UseLayouts">
+            <summary>
+            使用的所有布局编码
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Layouts.ILayoutConsumer.GetLayoutDescription">
+            <summary>
+            获取布局描述信息
+            </summary>
+            <returns>布局描述信息</returns>
+        </member>
+        <member name="P:WitsWay.Utilities.Layouts.ILayoutConsumer.StreamProvider">
+            <summary>
+            流提供者
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Layouts.ILayoutStreamProvider">
+            <summary>
+            布局流内容提供者
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Layouts.ILayoutStreamProvider.GetLayoutStream(System.String)">
+            <summary>
+            获取布局流
+            </summary>
+            <param name="layoutCode">布局编码</param>
+            <returns>布局流数据</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Layouts.LayoutDescription">
+            <summary>
+            布局描述信息
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Layouts.LayoutDescription.Code">
+            <summary>
+            布局编码
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Layouts.LayoutDescription.Name">
+            <summary>
+            布局名称
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Layouts.LayoutDescription.TargetModel">
+            <summary>
+            目标模型
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Layouts.LayoutDescription.Remark">
+            <summary>
+            布局备注
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Layouts.TreeLayoutAttribute">
+            <summary>
+            标识模型是否用于树布局
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Layouts.TreeLayoutModelAttribute">
             <summary>
             标识模型是否用于TreeList布局

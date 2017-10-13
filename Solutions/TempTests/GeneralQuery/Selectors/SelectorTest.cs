@@ -15,7 +15,7 @@ using WitsWay.Utilities.Win.Helpers;
 
 namespace WitsWay.TempTests.GeneralQuery.Selectors
 {
-    public partial class SelectorTest : DevExpress.XtraEditors.XtraForm
+    public partial class SelectorTest : XtraForm
     {
         public SelectorTest()
         {
@@ -27,7 +27,7 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
 
         private void InitControls()
         {
-            _colValuesPopup.PopupControl = this._popupContainer;
+            _colValuesPopup.PopupControl = _popupContainer;
 
             //var fields = EnumField.GetFieldInfos(typeof (EditorKinds));
             _colNameCombo.Items.AddRange(_templates);
@@ -38,12 +38,12 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
 
         }
 
-        void _colNameSwitch_ParseEditValue(object sender, DevExpress.XtraEditors.Controls.ConvertEditValueEventArgs e)
+        void _colNameSwitch_ParseEditValue(object sender, ConvertEditValueEventArgs e)
         {
 
         }
 
-        void _colNameCombo_ParseEditValue(object sender, DevExpress.XtraEditors.Controls.ConvertEditValueEventArgs e)
+        void _colNameCombo_ParseEditValue(object sender, ConvertEditValueEventArgs e)
         {
             e.Value = e.Value.ToString();
             e.Handled = true;
@@ -84,11 +84,11 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
             //treeList1.KeyFieldName = "Id";
         }
 
-        private List<ColumnField> _templates = new List<ColumnField>();
+        private readonly List<ColumnField> _templates = new List<ColumnField>();
 
-        private List<ColumnDefinitionRow> _rows = new List<ColumnDefinitionRow>()
+        private readonly List<ColumnDefinitionRow> _rows = new List<ColumnDefinitionRow>
         {
-            new ColumnDefinitionRow{AllowEmpty=false,AllowNull=false,Field="",Id="AndOr1",Input="DropEdit",Label="且",Mask="",MultiRow=false,NullText="",SupportOperates= {},SelectedOperate = "",ParentId="",RowKind=ColumnRowKinds.AndOr,SortCode=1,Template="",ValueType="",Values="AND"}
+            new ColumnDefinitionRow{AllowEmpty=false,AllowNull=false,Field="",Id="AndOr1",Input="DropEdit",Label="且",Mask="",MultiRow=false,NullText="",SupportOperates= new List<string>(),SelectedOperate = "",ParentId="",RowKind=ColumnRowKinds.AndOr,SortCode=1,Template="",ValueType="",Values="AND"}
         };
 
         private void _btnAddRelations_Click(object sender, EventArgs e)
@@ -149,7 +149,7 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
             TreeListHelper.InsertNode(_treeList, col, "", true);
         }
 
-        private void _colValuesButtonEditor_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        private void _colValuesButtonEditor_ButtonClick(object sender, ButtonPressedEventArgs e)
         {
             ShowSelector();
         }
@@ -216,7 +216,7 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
         }
 
 
-        Dictionary<string, RepositoryItem> _operatesEditorDic = new Dictionary<string, RepositoryItem>();
+        private readonly Dictionary<string, RepositoryItem> _operatesEditorDic = new Dictionary<string, RepositoryItem>();
 
         private void _treeList_CustomNodeCellEdit(object sender, GetCustomNodeCellEditEventArgs e)
         {
@@ -225,8 +225,9 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
 
             //_colValuesText.Enabled = false;
             var data = e.Node.Tag as ColumnDefinitionRow;
+            if (data == null) return;
             var col = e.Column;
-            var edit = e.RepositoryItem;
+            //var edit = e.RepositoryItem;
             if (col == _colValues && data.RowKind == ColumnRowKinds.Column) e.RepositoryItem = _colValuesPopup;
             else if (col == _colName && data.RowKind == ColumnRowKinds.AndOr) e.RepositoryItem = _colNameSwitch;
             else if (col == _colName && data.RowKind == ColumnRowKinds.Column) e.RepositoryItem = _colNameCombo;
@@ -240,7 +241,7 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
                 {
                     var combo = new RepositoryItemImageComboBox();
                     //_colRelationImageCombo.Items.Clear();
-                    combo.Items.AddRange(data.SupportOperates.Select(o => new ImageComboBoxItem() { Description = "●" + o, ImageIndex = new Random().Next(10), Value = o }).ToArray());
+                    combo.Items.AddRange(data.SupportOperates.Select(o => new ImageComboBoxItem { Description = "●" + o, ImageIndex = new Random().Next(10), Value = o }).ToArray());
                     e.RepositoryItem = combo;
                     _operatesEditorDic[data.Field] = combo;
                 }
@@ -278,7 +279,7 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
                 FieldName = "Department",
                 Input = "DepartmentSelector",
                 FieldTitle = "部门",
-                SupportOperates = new List<string>() { "Equal", "NotEqual", "In", "NotIn" },
+                SupportOperates = new List<string> { "Equal", "NotEqual", "In", "NotIn" },
                 SelectedOperate = "In",
                 SortCode = 2,
                 ValueType = "string",
@@ -289,7 +290,7 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
                 FieldName = "Sex",
                 Input = "check",
                 FieldTitle = "性别",
-                SupportOperates = new List<string>() { "Equal" },
+                SupportOperates = new List<string> { "Equal" },
                 SelectedOperate = "Equal",
                 SortCode = 3,
                 ValueType = "bool",
@@ -300,7 +301,7 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
                 FieldName = "Age",
                 Input = "spin",
                 FieldTitle = "年龄",
-                SupportOperates = new List<string>() { "Equal", "NotEqual", "Between", "In", "NotIn" },
+                SupportOperates = new List<string> { "Equal", "NotEqual", "Between", "In", "NotIn" },
                 SelectedOperate = "Between",
                 SortCode = 4,
                 ValueType = "int",
@@ -311,7 +312,7 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
                 FieldName = "Birthday",
                 Input = "date",
                 FieldTitle = "生日",
-                SupportOperates = new List<string>() { "Equal", "NotEqual", "Between", "In", "NotIn" },
+                SupportOperates = new List<string> { "Equal", "NotEqual", "Between", "In", "NotIn" },
                 SelectedOperate = "In",
                 SortCode = 5,
                 ValueType = "date",
@@ -332,23 +333,53 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
             _btnAddRelations.Enabled = selectData.RowKind == ColumnRowKinds.AndOr;
         }
 
+        //private void _btnTestIt_Click(object sender, EventArgs e)
+        //{
+        //    var roots =_rows.GetRoots();
+        //    var rules = GetRules(roots).ToList();
+        //    if (rules.Count != 1) throw new Exception("根表达式只能有一个");
+        //    var rule = rules[0];
+        //    if (rule.Value != "or" && rule.Value != "and") throw new Exception("必须以关系表达式开始");
+        //    //StringBuilder sb = new StringBuilder();
+        //    var result = GetWhereClause(rule, rule.Rules);
+        //    UtilityHelper.ShowInfoMessage(result);
+        //}
+
+        //private string GetWhereClause(FilterRule pRule, List<FilterRule> cRules)
+        //{
+        //    var cRuleClauses = cRules.Select(cRule => (cRule.Value == "or" || cRule.Value == "and") ?
+        //        GetWhereClause(cRule, cRule.Rules)
+        //        : $"( {cRule.Field} {cRule.Operator} {cRule.Value} )");
+        //    return "(" + string.Join(pRule.Value, cRuleClauses) + ")";
+        //}
+
+        //private IEnumerable<FilterRule> GetRules(List<ColumnDefinitionRow> rows)
+        //{
+        //    if (rows == null || rows.Count == 0) return new List<FilterRule>();
+        //    return rows.Select(row => new FilterRule { Condition = row.SelectedOperate, Field = row.Field, Id = row.Id, Input = row.Input, Operator = row.SelectedOperate, Type = row.ValueType, Value = row.Values, Rules = GetRules(row.Children).ToList() });
+        //}
+
+        private void _btnSaveIt_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void _btnTestIt_Click(object sender, EventArgs e)
         {
-            var roots =_rows.GetRoots();
+            var roots = _rows.GetRoots();
             var rules = GetRules(roots).ToList();
             if (rules.Count != 1) throw new Exception("根表达式只能有一个");
             var rule = rules[0];
             if (rule.Value != "or" && rule.Value != "and") throw new Exception("必须以关系表达式开始");
-            StringBuilder sb = new StringBuilder();
+            //StringBuilder sb = new StringBuilder();
             var result = GetWhereClause(rule, rule.Rules);
             UtilityHelper.ShowInfoMessage(result);
         }
 
         private string GetWhereClause(FilterRule pRule, List<FilterRule> cRules)
         {
-            var cRuleClauses = cRules.Select(cRule => (cRule.Value == "or" || cRule.Value == "and") ?
-                GetWhereClause(cRule, cRule.Rules)
-                : string.Format("( {0} {1} {2} )", cRule.Field, cRule.Operator, cRule.Value));
+            var cRuleClauses = cRules.Select(cRule => cRule.Value == "or" || cRule.Value == "and" ?
+                GetWhereClause(cRule, cRule.Rules) : $"( {cRule.Field} {cRule.Operator} {cRule.Value} )");
             return "(" + string.Join(pRule.Value, cRuleClauses) + ")";
         }
 
@@ -356,11 +387,6 @@ namespace WitsWay.TempTests.GeneralQuery.Selectors
         {
             if (rows == null || rows.Count == 0) return new List<FilterRule>();
             return rows.Select(row => new FilterRule { Condition = row.SelectedOperate, Field = row.Field, Id = row.Id, Input = row.Input, Operator = row.SelectedOperate, Type = row.ValueType, Value = row.Values, Rules = GetRules(row.Children).ToList() });
-        }
-
-        private void _btnSaveIt_Click(object sender, EventArgs e)
-        {
-
         }
 
 

@@ -463,6 +463,46 @@ namespace WitsWay.Utilities.Win.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        public static System.Drawing.Bitmap LightBlue {
+            get {
+                object obj = ResourceManager.GetObject("LightBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap LightGreen {
+            get {
+                object obj = ResourceManager.GetObject("LightGreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap LightRed {
+            get {
+                object obj = ResourceManager.GetObject("LightRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap LightYellow {
+            get {
+                object obj = ResourceManager.GetObject("LightYellow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         public static System.Drawing.Bitmap Lock16 {
             get {
                 object obj = ResourceManager.GetObject("Lock16", resourceCulture);
@@ -671,7 +711,7 @@ namespace WitsWay.Utilities.Win.Properties {
         }
         
         /// <summary>
-        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
         public static System.Drawing.Icon Success {
             get {

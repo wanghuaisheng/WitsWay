@@ -17,31 +17,27 @@
  * 
  * ***************************************/
 #endregion
+using System.Collections.Generic;
 
 namespace WitsWay.Utilities.Layouts
 {
     /// <summary>
-    /// 用户自定义控件公用接口
+    /// 布局消费者
     /// </summary>
-    public interface ICustomerUC
+    public interface ILayoutConsumer
     {
         /// <summary>
-        /// Adapter
+        /// 使用的所有布局编码
         /// </summary>
-        ISelectorAdapter AdapterInstance { get; set; }
-
+        IEnumerable<string> UseLayouts { get; }
         /// <summary>
-        /// 控件名称
+        /// 获取布局描述信息
         /// </summary>
-        string CustomerControlName { get; }
+        /// <returns>布局描述信息</returns>
+        LayoutDescription GetLayoutDescription();
         /// <summary>
-        /// 取用户控件的操作结果
+        /// 流提供者
         /// </summary>
-        /// <returns></returns>
-        void GetResult(int customerControlIndex = 0);
-        /// <summary>
-        /// 显示用户控件信息
-        /// </summary>
-        void BindUC(int customerControlIndex = 0);
+        ILayoutStreamProvider StreamProvider { get; set; }
     }
 }

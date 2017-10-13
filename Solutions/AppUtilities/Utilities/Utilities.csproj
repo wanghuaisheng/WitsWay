@@ -240,6 +240,10 @@
     <Compile Include="Helpers\CollectionHelper.cs" />
     <Compile Include="Helpers\ZipHelper.cs" />
     <Compile Include="Layouts\EditorKinds.cs" />
+    <Compile Include="Layouts\ILayoutConsumer.cs" />
+    <Compile Include="Layouts\ILayoutStreamProvider.cs" />
+    <Compile Include="Layouts\LayoutDescription.cs" />
+    <Compile Include="Layouts\TreeLayoutAttribute.cs" />
     <Compile Include="Layouts\TreeLayoutModelAttribute.cs" />
     <Compile Include="Layouts\GridLayoutModelAttribute.cs" />
     <Compile Include="Layouts\ICustomerUC.cs" />

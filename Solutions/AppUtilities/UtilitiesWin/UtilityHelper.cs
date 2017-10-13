@@ -38,7 +38,7 @@ namespace WitsWay.Utilities.Win
     /// <summary>
     /// WinForm通用辅助类
     /// </summary>
-    public static class UtilityHelper
+    public static partial class UtilityHelper
     {
         private static volatile bool _showWait = true;
 

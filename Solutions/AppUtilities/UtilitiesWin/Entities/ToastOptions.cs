@@ -18,30 +18,49 @@
  * ***************************************/
 #endregion
 
-namespace WitsWay.Utilities.Layouts
+using System.Drawing;
+using DevExpress.Utils.Win;
+
+namespace WitsWay.Utilities.Win.Entities
 {
     /// <summary>
-    /// 用户自定义控件公用接口
+    /// 提醒信息选项
     /// </summary>
-    public interface ICustomerUC
+    public class ToastOptions
     {
         /// <summary>
-        /// Adapter
+        /// 提醒信息选项
         /// </summary>
-        ISelectorAdapter AdapterInstance { get; set; }
-
+        public ToastOptions()
+        {
+            Anchor = PopupToolWindowAnchor.Top;
+            AnimationKind = PopupToolWindowAnimation.Slide;
+            CloseOnOuterClick = false;
+            PositionX = PositionY = 0;
+        }
         /// <summary>
-        /// 控件名称
+        /// 消息显示位置
         /// </summary>
-        string CustomerControlName { get; }
+        public PopupToolWindowAnchor Anchor { get; set; }
         /// <summary>
-        /// 取用户控件的操作结果
+        /// 动画类型
         /// </summary>
-        /// <returns></returns>
-        void GetResult(int customerControlIndex = 0);
+        public PopupToolWindowAnimation AnimationKind { get; set; }
         /// <summary>
-        /// 显示用户控件信息
+        /// 外部点击关闭
         /// </summary>
-        void BindUC(int customerControlIndex = 0);
+        public bool CloseOnOuterClick { get; set; }
+        /// <summary>
+        /// X坐标位置（左上角）
+        /// </summary>
+        public int PositionX { get; set; }
+        /// <summary>
+        ///  Y坐标位置（左上角）
+        /// </summary>
+        public int PositionY { get; set; }
+        /// <summary>
+        /// Anchor为Manual时是使用的自定义位置
+        /// </summary>
+        public Point CustomPosition => new Point(PositionX, PositionY);
     }
 }

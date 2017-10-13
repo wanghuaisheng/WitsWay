@@ -17,6 +17,7 @@
  * 
  * ***************************************/
 #endregion
+
 namespace WitsWay.Utilities.Layouts
 {
     /// <summary>

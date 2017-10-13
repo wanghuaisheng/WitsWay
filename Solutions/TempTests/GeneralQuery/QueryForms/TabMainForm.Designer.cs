@@ -105,6 +105,7 @@
             this.tabFormDefaultManager1.DockControls.Add(this.barDockControlBottom);
             this.tabFormDefaultManager1.DockControls.Add(this.barDockControlLeft);
             this.tabFormDefaultManager1.DockControls.Add(this.barDockControlRight);
+            this.tabFormDefaultManager1.DockingEnabled = false;
             this.tabFormDefaultManager1.Form = this;
             this.tabFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.skinBarSubItem1});
@@ -115,6 +116,7 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = null;
             this.barDockControlTop.Size = new System.Drawing.Size(950, 0);
             // 
             // barDockControlBottom
@@ -122,6 +124,7 @@
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 553);
+            this.barDockControlBottom.Manager = null;
             this.barDockControlBottom.Size = new System.Drawing.Size(950, 0);
             // 
             // barDockControlLeft
@@ -129,6 +132,7 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = null;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 553);
             // 
             // barDockControlRight
@@ -136,6 +140,7 @@
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(950, 0);
+            this.barDockControlRight.Manager = null;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 553);
             // 
             // skinBarSubItem1
@@ -171,10 +176,6 @@
             this.barButtonItem14,
             this.barButtonItem15});
             this._tabFormControl.LeftTabIndent = 5;
-            this._tabFormControl.LinkProvider.TabLeftItemLinks.Add(this.barButtonItem1, true);
-            this._tabFormControl.LinkProvider.TabLeftItemLinks.Add(this.barButtonItem10);
-            this._tabFormControl.LinkProvider.TabLeftItemLinks.Add(this.barButtonItem11);
-            this._tabFormControl.LinkProvider.TabRightItemLinks.Add(this.barButtonItem6, true);
             this._tabFormControl.Location = new System.Drawing.Point(0, 0);
             this._tabFormControl.Manager = this.tabFormDefaultManager2;
             this._tabFormControl.Name = "_tabFormControl";
@@ -185,14 +186,18 @@
             this._tabFormControl.Size = new System.Drawing.Size(950, 48);
             this._tabFormControl.TabForm = this;
             this._tabFormControl.TabIndex = 11;
+            this._tabFormControl.TabLeftItemLinks.Add(this.barButtonItem1, true);
+            this._tabFormControl.TabLeftItemLinks.Add(this.barButtonItem10);
+            this._tabFormControl.TabLeftItemLinks.Add(this.barButtonItem11);
+            this._tabFormControl.TabRightItemLinks.Add(this.barButtonItem6, true);
             this._tabFormControl.TabStop = false;
             // 
             // barSubItem1
             // 
             this.barSubItem1.Caption = "导航";
-            this.barSubItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barSubItem1.Glyph")));
             this.barSubItem1.Id = 0;
-            this.barSubItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barSubItem1.LargeGlyph")));
+            this.barSubItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barSubItem1.ImageOptions.Image")));
+            this.barSubItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barSubItem1.ImageOptions.LargeImage")));
             this.barSubItem1.Name = "barSubItem1";
             // 
             // barButtonItem1
@@ -201,9 +206,9 @@
             this.barButtonItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonItem1.Caption = "导航";
             this.barButtonItem1.DropDownControl = this._popupPages;
-            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
             this.barButtonItem1.Id = 1;
-            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -243,6 +248,7 @@
             this.tabFormDefaultManager2.DockControls.Add(this.barDockControl2);
             this.tabFormDefaultManager2.DockControls.Add(this.barDockControl3);
             this.tabFormDefaultManager2.DockControls.Add(this.barDockControl4);
+            this.tabFormDefaultManager2.DockingEnabled = false;
             this.tabFormDefaultManager2.Form = this;
             this.tabFormDefaultManager2.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barSubItem1,
@@ -264,7 +270,7 @@
             this.barButtonItem13,
             this.barButtonItem14,
             this.barButtonItem15});
-            this.tabFormDefaultManager2.MaxItemId = 27;
+            this.tabFormDefaultManager2.MaxItemId = 28;
             this.tabFormDefaultManager2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemToggleSwitch1});
             // 
@@ -273,6 +279,7 @@
             this.barDockControl1.CausesValidation = false;
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl1.Manager = null;
             this.barDockControl1.Size = new System.Drawing.Size(950, 0);
             // 
             // barDockControl2
@@ -280,6 +287,7 @@
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControl2.Location = new System.Drawing.Point(0, 553);
+            this.barDockControl2.Manager = null;
             this.barDockControl2.Size = new System.Drawing.Size(950, 0);
             // 
             // barDockControl3
@@ -287,6 +295,7 @@
             this.barDockControl3.CausesValidation = false;
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl3.Manager = null;
             this.barDockControl3.Size = new System.Drawing.Size(0, 553);
             // 
             // barDockControl4
@@ -294,6 +303,7 @@
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl4.Location = new System.Drawing.Point(950, 0);
+            this.barDockControl4.Manager = null;
             this.barDockControl4.Size = new System.Drawing.Size(0, 553);
             // 
             // barEditItem1
@@ -312,20 +322,20 @@
             // barLargeButtonItem1
             // 
             this.barLargeButtonItem1.ActAsDropDown = true;
-            this.barLargeButtonItem1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.barLargeButtonItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barLargeButtonItem1.Caption = "导航";
-            this.barLargeButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barLargeButtonItem1.Glyph")));
             this.barLargeButtonItem1.Id = 3;
-            this.barLargeButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barLargeButtonItem1.LargeGlyph")));
+            this.barLargeButtonItem1.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.barLargeButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLargeButtonItem1.ImageOptions.Image")));
+            this.barLargeButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLargeButtonItem1.ImageOptions.LargeImage")));
             this.barLargeButtonItem1.Name = "barLargeButtonItem1";
             this.barLargeButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // barDockingMenuItem1
             // 
             this.barDockingMenuItem1.Caption = "导航";
-            this.barDockingMenuItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barDockingMenuItem1.Glyph")));
             this.barDockingMenuItem1.Id = 4;
+            this.barDockingMenuItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barDockingMenuItem1.ImageOptions.Image")));
             this.barDockingMenuItem1.MenuCaption = "导航";
             this.barDockingMenuItem1.Name = "barDockingMenuItem1";
             this.barDockingMenuItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
@@ -361,9 +371,9 @@
             this.barButtonItem6.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonItem6.Caption = "你好，管理员";
             this.barButtonItem6.DropDownControl = this._popupLogin;
-            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
             this.barButtonItem6.Id = 9;
-            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
+            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
             this.barButtonItem6.Name = "barButtonItem6";
             this.barButtonItem6.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -397,27 +407,27 @@
             // barButtonItem10
             // 
             this.barButtonItem10.Caption = "全屏";
-            this.barButtonItem10.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.Glyph")));
             this.barButtonItem10.Id = 13;
-            this.barButtonItem10.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.LargeGlyph")));
+            this.barButtonItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
+            this.barButtonItem10.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.LargeImage")));
             this.barButtonItem10.Name = "barButtonItem10";
             this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
             // barButtonItem11
             // 
             this.barButtonItem11.Caption = "切换导航";
-            this.barButtonItem11.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.Glyph")));
             this.barButtonItem11.Id = 14;
-            this.barButtonItem11.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.LargeGlyph")));
+            this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
+            this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
             this.barButtonItem11.Name = "barButtonItem11";
             this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem11_ItemClick);
             // 
             // barButtonItem12
             // 
             this.barButtonItem12.Caption = "全屏";
-            this.barButtonItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.Glyph")));
             this.barButtonItem12.Id = 15;
-            this.barButtonItem12.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.LargeGlyph")));
+            this.barButtonItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
+            this.barButtonItem12.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.LargeImage")));
             this.barButtonItem12.Name = "barButtonItem12";
             this.barButtonItem12.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem12_ItemClick);
             // 
@@ -579,6 +589,7 @@
             this.barDockControl5.CausesValidation = false;
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl5.Manager = this._barManager;
             this.barDockControl5.Size = new System.Drawing.Size(950, 0);
             // 
             // barDockControl6
@@ -586,6 +597,7 @@
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControl6.Location = new System.Drawing.Point(0, 553);
+            this.barDockControl6.Manager = this._barManager;
             this.barDockControl6.Size = new System.Drawing.Size(950, 27);
             // 
             // barDockControl7
@@ -593,6 +605,7 @@
             this.barDockControl7.CausesValidation = false;
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl7.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl7.Manager = this._barManager;
             this.barDockControl7.Size = new System.Drawing.Size(0, 553);
             // 
             // barDockControl8
@@ -600,6 +613,7 @@
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl8.Location = new System.Drawing.Point(950, 0);
+            this.barDockControl8.Manager = this._barManager;
             this.barDockControl8.Size = new System.Drawing.Size(0, 553);
             // 
             // TabMainForm

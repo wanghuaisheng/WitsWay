@@ -18,30 +18,28 @@
  * ***************************************/
 #endregion
 
-namespace WitsWay.Utilities.Layouts
+namespace WitsWay.Utilities.Win.Enums
 {
     /// <summary>
-    /// 用户自定义控件公用接口
+    /// Toast类型
     /// </summary>
-    public interface ICustomerUC
+    public enum ToastKinds
     {
         /// <summary>
-        /// Adapter
+        /// 信息
         /// </summary>
-        ISelectorAdapter AdapterInstance { get; set; }
-
+        Info,
         /// <summary>
-        /// 控件名称
+        /// 警告
         /// </summary>
-        string CustomerControlName { get; }
+        Warning,
         /// <summary>
-        /// 取用户控件的操作结果
+        /// 错误
         /// </summary>
-        /// <returns></returns>
-        void GetResult(int customerControlIndex = 0);
+        Error,
         /// <summary>
-        /// 显示用户控件信息
+        /// 成功
         /// </summary>
-        void BindUC(int customerControlIndex = 0);
+        Success
     }
 }

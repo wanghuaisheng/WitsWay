@@ -323,7 +323,7 @@
             this.barButtonItem13,
             this.barButtonItem14,
             this.barButtonItem15});
-            this.tabFormDefaultManager2.MaxItemId = 30;
+            this.tabFormDefaultManager2.MaxItemId = 31;
             this.tabFormDefaultManager2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemToggleSwitch1});
             // 

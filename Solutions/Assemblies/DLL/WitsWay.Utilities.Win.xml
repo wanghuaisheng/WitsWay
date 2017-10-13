@@ -1722,6 +1722,71 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:WitsWay.Utilities.Win.Entities.ToastOptions">
+            <summary>
+            提醒信息选项
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Entities.ToastOptions.#ctor">
+            <summary>
+            提醒信息选项
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastOptions.Anchor">
+            <summary>
+            消息显示位置
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastOptions.AnimationKind">
+            <summary>
+            动画类型
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastOptions.CloseOnOuterClick">
+            <summary>
+            外部点击关闭
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastOptions.PositionX">
+            <summary>
+            X坐标位置（左上角）
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastOptions.PositionY">
+            <summary>
+             Y坐标位置（左上角）
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastOptions.CustomPosition">
+            <summary>
+            Anchor为Manual时是使用的自定义位置
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Enums.ToastKinds">
+            <summary>
+            Toast类型
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Enums.ToastKinds.Info">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Enums.ToastKinds.Warning">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Enums.ToastKinds.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.Enums.ToastKinds.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Win.Extends.GridViewExtends">
             <summary>
             XtraGrid辅助类
@@ -2462,6 +2527,27 @@
             </summary>
             <param name="view">GridView控件</param>
             <param name="popup">右键弹出菜单</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Helpers.ToastMessageHelper">
+            <summary>
+            提示消息帮助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ToastMessageHelper.ShowToastMessage(WitsWay.Utilities.Win.Entities.ToastOptions,System.Windows.Forms.Form,System.String)">
+            <summary>
+            显示Toast
+            </summary>
+            <param name="option">消息选项</param>
+            <param name="parentForm">父窗体</param>
+            <param name="msg">显示消息</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ToastMessageHelper.ShowControlToast(WitsWay.Utilities.Win.Entities.ToastOptions,System.Windows.Forms.Form,System.Windows.Forms.Control)">
+            <summary>
+            显示Toast
+            </summary>
+            <param name="option">消息选项</param>
+            <param name="parentForm">父窗体</param>
+            <param name="ctr">显示控件</param>
         </member>
         <member name="T:WitsWay.Utilities.Win.Helpers.ComboBoxHelper">
             <summary>
@@ -3704,6 +3790,174 @@
             </summary>
             <param name="customerControlIndex"></param>
         </member>
+        <member name="T:WitsWay.Utilities.Win.UtilityHelper">
+            <summary>
+            WinForm通用辅助类
+            </summary>
+            <summary>
+            WinForm通用辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowToast(WitsWay.Utilities.Win.Enums.ToastKinds,WitsWay.Utilities.Win.Entities.ToastOptions,System.String,System.Windows.Forms.Form)">
+            <summary>
+            提示
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowToast(WitsWay.Utilities.Win.Entities.ToastOptions,System.Windows.Forms.Control,System.Windows.Forms.Form)">
+            <summary>
+            显示提示（内容为用户控件）
+            </summary>
+            <param name="options">选项</param>
+            <param name="ctr">控件</param>
+            <param name="frm">窗体</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait(System.Object,System.String,System.String,System.Object[])">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait(System.Action,System.String)">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait(System.Action,System.Action,System.String)">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait``1(System.Func{``0},System.String)">
+            <summary>
+            异步调用方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInnerWait(System.Windows.Forms.Control,System.String)">
+            <summary>
+            在指定控件的中部显示等候图标
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.CloseInnerWait(System.Windows.Forms.Control)">
+            <summary>
+            在指定控件的中部取消等候图标的显示
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInnerWaitCircle(System.Windows.Forms.Control,System.String,WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle)">
+            <summary>
+            在指定控件的中部显示等候图标
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInnerWaitCircle(System.Windows.Forms.Control,WitsWay.Utilities.Win.Controls.LoadingCircle,System.String)">
+            <summary>
+            在指定控件的中部显示等候图标
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.CloseInnerWaitCircle(System.Windows.Forms.Control)">
+            <summary>
+            在指定控件的中部取消等候图标的显示
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.CenterControl(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>
+            控件置中
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.AddRedStar(System.Windows.Forms.Control,WitsWay.Utilities.Win.PositionEnum)">
+            <summary>
+            添加必填红星
+            </summary>
+            <param name="ctr">要添加红星的控件</param>
+            <param name="position">图标位置</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInfoMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            提示
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWarningMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowErrorMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowConfirmMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            确认
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowSuccessMessage(System.String,System.String,System.Windows.Forms.Form)">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInfoMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            提示
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWarningMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowErrorMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowConfirmMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            确认
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowSuccessMessage(System.Windows.Forms.Control,System.String,System.String)">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowDialog(System.Windows.Forms.Control,System.String,System.Windows.Forms.Form,System.Boolean)">
+            <summary>
+            用户控件显示为对话框
+            </summary>
+            <param name="owner">父窗体</param>
+            <param name="title">窗体标题</param>
+            <param name="uc">用户控件</param>
+            <param name="allowESC">是否允许ESC键关闭窗体</param>
+            <returns>对话框结果</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.InvokeExecute(System.Windows.Forms.Control,System.Action)">
+            <summary>
+            Invoke执行
+            </summary>
+            <param name="ctr">调用Invoke方法的控件</param>
+            <param name="action">执行方法</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.HandleException(System.Action,System.Action)">
+            <summary>
+            处理异常
+            </summary>
+            <param name="action">Action执行体</param>
+            <param name="final">try,catch,finally块中执行的Action方法</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.HandleException``1(System.Func{``0},System.Action)">
+            <summary>
+            处理异常
+            </summary>
+            <param name="func">带返回数据的方法执行体</param>
+            <param name="final">try,catch,finally块中执行的Action方法</param>
+            <typeparam name="TResult">返回结果类型</typeparam>
+            <returns>func调用的返回数据</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.UtilityHelper.GetControlName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">
+            <summary>
+            得到控件名称（只使用于窗体布局）
+            </summary>
+            <returns>控件名称</returns>
+        </member>
         <member name="T:WitsWay.Utilities.Win.WinUtilityConsts">
             <summary>
             公共类库使用常量
@@ -3737,6 +3991,21 @@
         <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.GridViewDoubleClickHelperTagKey">
             <summary>
             GridView双击事件绑定辅助类Tag键
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.FormToastFlyoutPanelTagKey">
+            <summary>
+            窗体消息Toast控件Tag键
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.FormToastFlyoutPanelLabelTagKey">
+            <summary>
+            窗体消息Toast控件中Label控件Tag键
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.FormToastFlyoutPanelControlTagKey">
+            <summary>
+            窗体Control容器Toast控件Tag键
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Win.Functions.WebApiHost">
@@ -4128,6 +4397,26 @@
               查找 System.Drawing.Bitmap 类型的本地化资源。
             </summary>
         </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.LightBlue">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.LightGreen">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.LightRed">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Properties.Resources.LightYellow">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
         <member name="P:WitsWay.Utilities.Win.Properties.Resources.Lock16">
             <summary>
               查找 System.Drawing.Bitmap 类型的本地化资源。
@@ -4235,7 +4524,7 @@
         </member>
         <member name="P:WitsWay.Utilities.Win.Properties.Resources.Success">
             <summary>
-              查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+              查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
             </summary>
         </member>
         <member name="P:WitsWay.Utilities.Win.Properties.Resources.UnitGreen">
@@ -4380,157 +4669,6 @@
             </summary>
             <typeparam name="TService">服务类型</typeparam>
             <returns>服务接口实例</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Win.UtilityHelper">
-            <summary>
-            WinForm通用辅助类
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait(System.Object,System.String,System.String,System.Object[])">
-            <summary>
-            异步调用方法
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait(System.Action,System.String)">
-            <summary>
-            异步调用方法
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait(System.Action,System.Action,System.String)">
-            <summary>
-            异步调用方法
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWait``1(System.Func{``0},System.String)">
-            <summary>
-            异步调用方法
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInnerWait(System.Windows.Forms.Control,System.String)">
-            <summary>
-            在指定控件的中部显示等候图标
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.CloseInnerWait(System.Windows.Forms.Control)">
-            <summary>
-            在指定控件的中部取消等候图标的显示
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInnerWaitCircle(System.Windows.Forms.Control,System.String,WitsWay.Utilities.Win.Controls.LoadingCircle.LoadingCircleStyle)">
-            <summary>
-            在指定控件的中部显示等候图标
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInnerWaitCircle(System.Windows.Forms.Control,WitsWay.Utilities.Win.Controls.LoadingCircle,System.String)">
-            <summary>
-            在指定控件的中部显示等候图标
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.CloseInnerWaitCircle(System.Windows.Forms.Control)">
-            <summary>
-            在指定控件的中部取消等候图标的显示
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.CenterControl(System.Windows.Forms.Control,System.Windows.Forms.Control)">
-            <summary>
-            控件置中
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.AddRedStar(System.Windows.Forms.Control,WitsWay.Utilities.Win.PositionEnum)">
-            <summary>
-            添加必填红星
-            </summary>
-            <param name="ctr">要添加红星的控件</param>
-            <param name="position">图标位置</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInfoMessage(System.String,System.String,System.Windows.Forms.Form)">
-            <summary>
-            提示
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWarningMessage(System.String,System.String,System.Windows.Forms.Form)">
-            <summary>
-            警告
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowErrorMessage(System.String,System.String,System.Windows.Forms.Form)">
-            <summary>
-            错误
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowConfirmMessage(System.String,System.String,System.Windows.Forms.Form)">
-            <summary>
-            确认
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowSuccessMessage(System.String,System.String,System.Windows.Forms.Form)">
-            <summary>
-            成功
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowInfoMessage(System.Windows.Forms.Control,System.String,System.String)">
-            <summary>
-            提示
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowWarningMessage(System.Windows.Forms.Control,System.String,System.String)">
-            <summary>
-            警告
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowErrorMessage(System.Windows.Forms.Control,System.String,System.String)">
-            <summary>
-            错误
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowConfirmMessage(System.Windows.Forms.Control,System.String,System.String)">
-            <summary>
-            确认
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowSuccessMessage(System.Windows.Forms.Control,System.String,System.String)">
-            <summary>
-            成功
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.ShowDialog(System.Windows.Forms.Control,System.String,System.Windows.Forms.Form,System.Boolean)">
-            <summary>
-            用户控件显示为对话框
-            </summary>
-            <param name="owner">父窗体</param>
-            <param name="title">窗体标题</param>
-            <param name="uc">用户控件</param>
-            <param name="allowESC">是否允许ESC键关闭窗体</param>
-            <returns>对话框结果</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.InvokeExecute(System.Windows.Forms.Control,System.Action)">
-            <summary>
-            Invoke执行
-            </summary>
-            <param name="ctr">调用Invoke方法的控件</param>
-            <param name="action">执行方法</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.HandleException(System.Action,System.Action)">
-            <summary>
-            处理异常
-            </summary>
-            <param name="action">Action执行体</param>
-            <param name="final">try,catch,finally块中执行的Action方法</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.HandleException``1(System.Func{``0},System.Action)">
-            <summary>
-            处理异常
-            </summary>
-            <param name="func">带返回数据的方法执行体</param>
-            <param name="final">try,catch,finally块中执行的Action方法</param>
-            <typeparam name="TResult">返回结果类型</typeparam>
-            <returns>func调用的返回数据</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.UtilityHelper.GetControlName``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})">
-            <summary>
-            得到控件名称（只使用于窗体布局）
-            </summary>
-            <returns>控件名称</returns>
         </member>
         <member name="T:WitsWay.Utilities.Win.PositionEnum">
             <summary>

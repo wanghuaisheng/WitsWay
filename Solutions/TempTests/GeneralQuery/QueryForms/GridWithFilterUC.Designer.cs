@@ -69,6 +69,8 @@
             this.controlNavigator1 = new DevExpress.XtraEditors.ControlNavigator();
             this.buttonEdit1 = new DevExpress.XtraEditors.ButtonEdit();
             this._navPageDetail = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this._navPageSearch2 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.searchControlUC1 = new WitsWay.TempTests.GeneralQuery.QueryForms.SearchControlUc();
             this._panelGrid = new DevExpress.XtraEditors.PanelControl();
             this._gridControl = new DevExpress.XtraGrid.GridControl();
             this._gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -104,8 +106,6 @@
             this._bbiTableColumnWidthBest = new DevExpress.XtraBars.BarButtonItem();
             this._bbiTableColumnWidthAuto = new DevExpress.XtraBars.BarButtonItem();
             this._popupMenu = new DevExpress.XtraBars.PopupMenu(this.components);
-            this._navPageSearch2 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.searchControlUC1 = new GeneralQuery.QueryForms.SearchControlUc();
             ((System.ComponentModel.ISupportInitialize)(this._gridNavPane)).BeginInit();
             this._gridNavPane.SuspendLayout();
             this._navPageSearch.SuspendLayout();
@@ -147,6 +147,7 @@
             this._navPageConfig.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).BeginInit();
+            this._navPageSearch2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._panelGrid)).BeginInit();
             this._panelGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._gridControl)).BeginInit();
@@ -158,7 +159,6 @@
             ((System.ComponentModel.ISupportInitialize)(this._barManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._popupMenu)).BeginInit();
-            this._navPageSearch2.SuspendLayout();
             this.SuspendLayout();
             // 
             // _gridNavPane
@@ -621,7 +621,23 @@
             this._navPageDetail.Properties.AppearanceCaption.Options.UseFont = true;
             this._navPageDetail.Properties.AppearanceCaption.Options.UseForeColor = true;
             this._navPageDetail.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Image;
-            this._navPageDetail.Size = new System.Drawing.Size(181, 593);
+            this._navPageDetail.Size = new System.Drawing.Size(238, 593);
+            // 
+            // _navPageSearch2
+            // 
+            this._navPageSearch2.Caption = "搜索2";
+            this._navPageSearch2.Controls.Add(this.searchControlUC1);
+            this._navPageSearch2.Name = "_navPageSearch2";
+            this._navPageSearch2.Size = new System.Drawing.Size(238, 593);
+            // 
+            // searchControlUC1
+            // 
+            this.searchControlUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.searchControlUC1.Location = new System.Drawing.Point(0, 0);
+            this.searchControlUC1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.searchControlUC1.Name = "searchControlUC1";
+            this.searchControlUC1.Size = new System.Drawing.Size(238, 593);
+            this.searchControlUC1.TabIndex = 0;
             // 
             // _panelGrid
             // 
@@ -671,6 +687,7 @@
             this.standaloneBarDockControl1.CausesValidation = false;
             this.standaloneBarDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.standaloneBarDockControl1.Location = new System.Drawing.Point(0, 0);
+            this.standaloneBarDockControl1.Manager = this._barManager;
             this.standaloneBarDockControl1.Name = "standaloneBarDockControl1";
             this.standaloneBarDockControl1.Size = new System.Drawing.Size(624, 30);
             this.standaloneBarDockControl1.Text = "standaloneBarDockControl1";
@@ -754,8 +771,8 @@
             // 
             this._cmdAddIt.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this._cmdAddIt.Caption = "添加";
-            this._cmdAddIt.Glyph = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.add;
             this._cmdAddIt.Id = 0;
+            this._cmdAddIt.ImageOptions.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.add;
             this._cmdAddIt.Name = "_cmdAddIt";
             this._cmdAddIt.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this._cmdAddIt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this._cmdAddIt_ItemClick);
@@ -764,8 +781,8 @@
             // 
             this._cmdEditIt.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this._cmdEditIt.Caption = "修改";
-            this._cmdEditIt.Glyph = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.application_edit;
             this._cmdEditIt.Id = 1;
+            this._cmdEditIt.ImageOptions.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.application_edit;
             this._cmdEditIt.Name = "_cmdEditIt";
             this._cmdEditIt.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this._cmdEditIt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this._cmdEditIt_ItemClick);
@@ -775,7 +792,6 @@
             this.barStaticItem1.Caption = "用户列表";
             this.barStaticItem1.Id = 9;
             this.barStaticItem1.Name = "barStaticItem1";
-            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barEditItem1
             // 
@@ -796,9 +812,9 @@
             // 
             this._cmdDeleteIt.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this._cmdDeleteIt.Caption = "删除";
-            this._cmdDeleteIt.Glyph = ((System.Drawing.Image)(resources.GetObject("_cmdDeleteIt.Glyph")));
             this._cmdDeleteIt.Id = 11;
-            this._cmdDeleteIt.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("_cmdDeleteIt.LargeGlyph")));
+            this._cmdDeleteIt.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("_cmdDeleteIt.ImageOptions.Image")));
+            this._cmdDeleteIt.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("_cmdDeleteIt.ImageOptions.LargeImage")));
             this._cmdDeleteIt.Name = "_cmdDeleteIt";
             this._cmdDeleteIt.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this._cmdDeleteIt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this._cmdDeleteIt_ItemClick);
@@ -807,9 +823,9 @@
             // 
             this.barSubItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barSubItem2.Caption = "操作";
-            this.barSubItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barSubItem2.Glyph")));
             this.barSubItem2.Id = 10;
-            this.barSubItem2.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barSubItem2.LargeGlyph")));
+            this.barSubItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barSubItem2.ImageOptions.Image")));
+            this.barSubItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barSubItem2.ImageOptions.LargeImage")));
             this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this._cmdRefreshGrid),
             new DevExpress.XtraBars.LinkPersistInfo(this._cmdFullscreenGrid)});
@@ -834,8 +850,8 @@
             // 
             this.barSubItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barSubItem1.Caption = "查看";
-            this.barSubItem1.Glyph = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.application_view_tile;
             this.barSubItem1.Id = 6;
+            this.barSubItem1.ImageOptions.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.application_view_tile;
             this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this._cmdColumnWidthBest),
             new DevExpress.XtraBars.LinkPersistInfo(this._cmdColumnWidthAuto)});
@@ -861,6 +877,7 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this._barManager;
             this.barDockControlTop.Size = new System.Drawing.Size(930, 0);
             // 
             // barDockControlBottom
@@ -868,6 +885,7 @@
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 654);
+            this.barDockControlBottom.Manager = this._barManager;
             this.barDockControlBottom.Size = new System.Drawing.Size(930, 0);
             // 
             // barDockControlLeft
@@ -875,6 +893,7 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this._barManager;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 654);
             // 
             // barDockControlRight
@@ -882,6 +901,7 @@
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(930, 0);
+            this.barDockControlRight.Manager = this._barManager;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 654);
             // 
             // _bbiAddIt
@@ -960,23 +980,7 @@
             this._popupMenu.Manager = this._barManager;
             this._popupMenu.Name = "_popupMenu";
             // 
-            // _navPageSearch2
-            // 
-            this._navPageSearch2.Caption = "搜索2";
-            this._navPageSearch2.Controls.Add(this.searchControlUC1);
-            this._navPageSearch2.Name = "_navPageSearch2";
-            this._navPageSearch2.Size = new System.Drawing.Size(238, 593);
-            // 
-            // searchControlUC1
-            // 
-            this.searchControlUC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.searchControlUC1.Location = new System.Drawing.Point(0, 0);
-            this.searchControlUC1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.searchControlUC1.Name = "searchControlUC1";
-            this.searchControlUC1.Size = new System.Drawing.Size(238, 593);
-            this.searchControlUC1.TabIndex = 0;
-            // 
-            // GridWithFilterUC
+            // GridWithFilterUc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1030,6 +1034,7 @@
             this._navPageConfig.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).EndInit();
+            this._navPageSearch2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._panelGrid)).EndInit();
             this._panelGrid.ResumeLayout(false);
             this._panelGrid.PerformLayout();
@@ -1043,7 +1048,6 @@
             ((System.ComponentModel.ISupportInitialize)(this._barManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._popupMenu)).EndInit();
-            this._navPageSearch2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

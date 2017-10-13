@@ -325,4 +325,16 @@
   <data name="MoveUp16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\MoveUp16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LightBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LightGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LightRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LightYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LightYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

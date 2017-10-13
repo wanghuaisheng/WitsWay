@@ -50,6 +50,18 @@ namespace WitsWay.Utilities.Win
         /// GridView双击事件绑定辅助类Tag键
         /// </summary>
         public const string GridViewDoubleClickHelperTagKey = "GridViewDoubleClickHelperTagKey";
+        /// <summary>
+        /// 窗体消息Toast控件Tag键
+        /// </summary>
+        public const string FormToastFlyoutPanelTagKey = "FormToastFlyoutPanelTagKey";
+        /// <summary>
+        /// 窗体消息Toast控件中Label控件Tag键
+        /// </summary>
+        public const string FormToastFlyoutPanelLabelTagKey = "FormToastFlyoutPanelLabelTagKey";
+        /// <summary>
+        /// 窗体Control容器Toast控件Tag键
+        /// </summary>
+        public const string FormToastFlyoutPanelControlTagKey = "FormToastFlyoutPanelControlTagKey";
 
     }
 }

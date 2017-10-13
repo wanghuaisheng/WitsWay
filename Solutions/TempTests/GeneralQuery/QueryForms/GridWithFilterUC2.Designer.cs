@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridWithFilterUc2));
             this._gridNavPane = new DevExpress.XtraBars.Navigation.NavigationPane();
             this._navPageSearch = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.searchControlUC1 = new GeneralQuery.QueryForms.SearchControlUc();
+            this.searchControlUC1 = new WitsWay.TempTests.GeneralQuery.QueryForms.SearchControlUc();
             this.splitterControl1 = new DevExpress.XtraEditors.SplitterControl();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this._btnSearchReset = new DevExpress.XtraEditors.SimpleButton();
@@ -290,6 +290,7 @@
             this.standaloneBarDockControl1.CausesValidation = false;
             this.standaloneBarDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.standaloneBarDockControl1.Location = new System.Drawing.Point(0, 0);
+            this.standaloneBarDockControl1.Manager = this.barManager1;
             this.standaloneBarDockControl1.Name = "standaloneBarDockControl1";
             this.standaloneBarDockControl1.Size = new System.Drawing.Size(624, 30);
             this.standaloneBarDockControl1.Text = "standaloneBarDockControl1";
@@ -364,8 +365,8 @@
             // 
             this.barButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barButtonItem1.Caption = "添加";
-            this.barButtonItem1.Glyph = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.add;
             this.barButtonItem1.Id = 0;
+            this.barButtonItem1.ImageOptions.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.add;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -373,8 +374,8 @@
             // 
             this.barButtonItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barButtonItem2.Caption = "修改";
-            this.barButtonItem2.Glyph = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.application_edit;
             this.barButtonItem2.Id = 1;
+            this.barButtonItem2.ImageOptions.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.application_edit;
             this.barButtonItem2.Name = "barButtonItem2";
             this.barButtonItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -383,7 +384,6 @@
             this.barStaticItem1.Caption = "用户列表";
             this.barStaticItem1.Id = 9;
             this.barStaticItem1.Name = "barStaticItem1";
-            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barEditItem1
             // 
@@ -404,9 +404,9 @@
             // 
             this.barButtonItem6.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barButtonItem6.Caption = "删除";
-            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
             this.barButtonItem6.Id = 11;
-            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
+            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
             this.barButtonItem6.Name = "barButtonItem6";
             this.barButtonItem6.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -414,9 +414,9 @@
             // 
             this.barSubItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barSubItem2.Caption = "操作";
-            this.barSubItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barSubItem2.Glyph")));
             this.barSubItem2.Id = 10;
-            this.barSubItem2.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barSubItem2.LargeGlyph")));
+            this.barSubItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barSubItem2.ImageOptions.Image")));
+            this.barSubItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barSubItem2.ImageOptions.LargeImage")));
             this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem9),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem10)});
@@ -439,8 +439,8 @@
             // 
             this.barSubItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barSubItem1.Caption = "查看";
-            this.barSubItem1.Glyph = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.application_view_tile;
             this.barSubItem1.Id = 6;
+            this.barSubItem1.ImageOptions.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.application_view_tile;
             this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem5)});
@@ -464,6 +464,7 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Size = new System.Drawing.Size(930, 0);
             // 
             // barDockControlBottom
@@ -471,6 +472,7 @@
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 654);
+            this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(930, 0);
             // 
             // barDockControlLeft
@@ -478,6 +480,7 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 654);
             // 
             // barDockControlRight
@@ -485,9 +488,10 @@
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(930, 0);
+            this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 654);
             // 
-            // GridWithFilterUC2
+            // GridWithFilterUc2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

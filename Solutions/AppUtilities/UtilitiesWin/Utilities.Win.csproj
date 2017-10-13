@@ -166,6 +166,8 @@
     <Compile Include="Controls\SplashForm2.Designer.cs">
       <DependentUpon>SplashForm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities\ToastOptions.cs" />
+    <Compile Include="Enums\ToastKinds.cs" />
     <Compile Include="Extends\GridViewExtends.Tag.cs" />
     <Compile Include="Extends\TreeListNodeExtends.cs" />
     <Compile Include="Extends\ControlExtends.cs" />
@@ -214,9 +216,11 @@
     <Compile Include="Helpers\ShortcutHelper.cs" />
     <Compile Include="Helpers\SpinEditHelper.cs" />
     <Compile Include="Helpers\GridViewPopupHelper.cs" />
+    <Compile Include="Helpers\ToastMessageHelper.cs" />
     <Compile Include="Layouts\ButtonEditBase.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UtilityHelper.Toast.cs" />
     <Compile Include="WinUtilityConsts.cs" />
     <Compile Include="_Deleted\GridColumnHeaderCheckHelper.cs" />
     <Compile Include="Helpers\ComboBoxHelper.cs" />
@@ -347,6 +351,10 @@
     <Content Include="Images\ClearSearch16.png" />
     <Content Include="Images\Close16.png" />
     <Content Include="Images\Database16.png" />
+    <None Include="Resources\LightRed.png" />
+    <None Include="Resources\LightGreen.png" />
+    <None Include="Resources\LightBlue.png" />
+    <None Include="Resources\LightYellow.png" />
     <None Include="Images\MoveDown16.png" />
     <None Include="Images\MoveUp16.png" />
     <Content Include="Images\SendDefer16.png" />

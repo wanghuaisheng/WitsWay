@@ -249,8 +249,8 @@
             // barButtonItem34
             // 
             this.barButtonItem34.Caption = "barButtonItem34";
-            this.barButtonItem34.Glyph = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.favicon;
             this.barButtonItem34.Id = 51;
+            this.barButtonItem34.ImageOptions.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.favicon;
             this.barButtonItem34.Name = "barButtonItem34";
             // 
             // barLargeButtonItem1
@@ -258,8 +258,8 @@
             this.barLargeButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barLargeButtonItem1.Caption = "barLargeButtonItem1";
             this.barLargeButtonItem1.CaptionAlignment = DevExpress.XtraBars.BarItemCaptionAlignment.Right;
-            this.barLargeButtonItem1.Glyph = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.Blue_Round;
             this.barLargeButtonItem1.Id = 52;
+            this.barLargeButtonItem1.ImageOptions.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.Blue_Round;
             this.barLargeButtonItem1.Name = "barLargeButtonItem1";
             // 
             // barDockControlTop
@@ -267,6 +267,7 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Size = new System.Drawing.Size(1020, 93);
             // 
             // barDockControlBottom
@@ -274,6 +275,7 @@
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 694);
+            this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(1020, 23);
             // 
             // barDockControlLeft
@@ -281,6 +283,7 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 93);
+            this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 601);
             // 
             // barDockControlRight
@@ -288,13 +291,14 @@
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1020, 93);
+            this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 601);
             // 
             // barButtonItem1
             // 
             this.barButtonItem1.Caption = "barButtonItem1";
             this.barButtonItem1.Id = 0;
-            this.barButtonItem1.ImageIndex = 1027;
+            this.barButtonItem1.ImageOptions.ImageIndex = 1027;
             this.barButtonItem1.Name = "barButtonItem1";
             // 
             // barButtonItem2
@@ -326,9 +330,9 @@
             // barButtonItem6
             // 
             this.barButtonItem6.Caption = "barButtonItem6";
-            this.barButtonItem6.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.Glyph")));
             this.barButtonItem6.Id = 5;
-            this.barButtonItem6.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.LargeGlyph")));
+            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
             this.barButtonItem6.Name = "barButtonItem6";
             // 
             // barButtonItem7
@@ -361,15 +365,15 @@
             // 
             this.barButtonItem10.Caption = "barButtonItem10";
             this.barButtonItem10.Id = 16;
-            this.barButtonItem10.ImageIndex = 2;
+            this.barButtonItem10.ImageOptions.ImageIndex = 2;
             this.barButtonItem10.Name = "barButtonItem10";
             // 
             // barButtonItem11
             // 
-            this.barButtonItem11.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
             this.barButtonItem11.Caption = "barButtonItem11";
-            this.barButtonItem11.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.Glyph")));
             this.barButtonItem11.Id = 17;
+            this.barButtonItem11.ImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
             this.barButtonItem11.Name = "barButtonItem11";
             // 
             // barButtonItem12
@@ -378,19 +382,18 @@
             this.barButtonItem12.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
             this.barButtonItem12.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
             this.barButtonItem12.Caption = "barButtonItem12";
-            this.barButtonItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.Glyph")));
             this.barButtonItem12.Id = 18;
+            this.barButtonItem12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.ImageOptions.Image")));
             this.barButtonItem12.Name = "barButtonItem12";
             this.barButtonItem12.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // barStaticItem1
             // 
             this.barStaticItem1.Caption = "barStaticItem1";
-            this.barStaticItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barStaticItem1.Glyph")));
             this.barStaticItem1.Id = 19;
+            this.barStaticItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barStaticItem1.ImageOptions.Image")));
             this.barStaticItem1.Name = "barStaticItem1";
             this.barStaticItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barButtonItem13
             // 
@@ -401,8 +404,8 @@
             // barSubItem2
             // 
             this.barSubItem2.Caption = "barSubItem2";
-            this.barSubItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barSubItem2.Glyph")));
             this.barSubItem2.Id = 21;
+            this.barSubItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barSubItem2.ImageOptions.Image")));
             this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.barCheckItem2),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem14)});
@@ -412,9 +415,9 @@
             // barCheckItem2
             // 
             this.barCheckItem2.Caption = "barCheckItem2";
-            this.barCheckItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem2.Glyph")));
             this.barCheckItem2.Id = 22;
-            this.barCheckItem2.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barCheckItem2.LargeGlyph")));
+            this.barCheckItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barCheckItem2.ImageOptions.Image")));
+            this.barCheckItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barCheckItem2.ImageOptions.LargeImage")));
             this.barCheckItem2.Name = "barCheckItem2";
             this.barCheckItem2.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -429,9 +432,9 @@
             this.barEditItem3.Caption = "barEditItem3";
             this.barEditItem3.Edit = this.repositoryItemButtonEdit2;
             this.barEditItem3.EditWidth = 138;
-            this.barEditItem3.Glyph = ((System.Drawing.Image)(resources.GetObject("barEditItem3.Glyph")));
             this.barEditItem3.Id = 24;
-            this.barEditItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barEditItem3.LargeGlyph")));
+            this.barEditItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barEditItem3.ImageOptions.Image")));
+            this.barEditItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barEditItem3.ImageOptions.LargeImage")));
             this.barEditItem3.Name = "barEditItem3";
             // 
             // repositoryItemButtonEdit2
@@ -457,23 +460,23 @@
             // 
             this.barButtonItem15.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barButtonItem15.Caption = "barButtonItem15";
-            this.barButtonItem15.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.Glyph")));
             this.barButtonItem15.Id = 27;
+            this.barButtonItem15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.Image")));
             this.barButtonItem15.Name = "barButtonItem15";
             // 
             // barButtonItem16
             // 
             this.barButtonItem16.Caption = "barButtonItem16";
-            this.barButtonItem16.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.Glyph")));
             this.barButtonItem16.Id = 28;
+            this.barButtonItem16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.ImageOptions.Image")));
             this.barButtonItem16.Name = "barButtonItem16";
             // 
             // barButtonItem17
             // 
             this.barButtonItem17.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barButtonItem17.Caption = "barButtonItem17";
-            this.barButtonItem17.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.Glyph")));
             this.barButtonItem17.Id = 29;
+            this.barButtonItem17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.Image")));
             this.barButtonItem17.Name = "barButtonItem17";
             // 
             // barButtonItem18
@@ -497,8 +500,8 @@
             // barButtonItem21
             // 
             this.barButtonItem21.Caption = "barButtonItem21";
-            this.barButtonItem21.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.Glyph")));
             this.barButtonItem21.Id = 33;
+            this.barButtonItem21.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.ImageOptions.Image")));
             this.barButtonItem21.Name = "barButtonItem21";
             // 
             // barStaticItem2
@@ -506,7 +509,6 @@
             this.barStaticItem2.Caption = "当前筛选条件:abc";
             this.barStaticItem2.Id = 34;
             this.barStaticItem2.Name = "barStaticItem2";
-            this.barStaticItem2.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barButtonItem9
             // 
@@ -537,14 +539,14 @@
             // 
             this.barButtonItem25.Caption = "barButtonItem25";
             this.barButtonItem25.Id = 39;
-            this.barButtonItem25.ImageIndex = 1034;
+            this.barButtonItem25.ImageOptions.ImageIndex = 1034;
             this.barButtonItem25.Name = "barButtonItem25";
             // 
             // barButtonItem26
             // 
             this.barButtonItem26.Caption = "barButtonItem26";
             this.barButtonItem26.Id = 40;
-            this.barButtonItem26.ImageIndex = 127;
+            this.barButtonItem26.ImageOptions.ImageIndex = 127;
             this.barButtonItem26.Name = "barButtonItem26";
             // 
             // barEditItem5
@@ -569,7 +571,7 @@
             this.barButtonItem27.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.barButtonItem27.Caption = "添加";
             this.barButtonItem27.Id = 42;
-            this.barButtonItem27.ImageIndex = 16;
+            this.barButtonItem27.ImageOptions.ImageIndex = 16;
             this.barButtonItem27.Name = "barButtonItem27";
             this.barButtonItem27.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -577,7 +579,7 @@
             // 
             this.barButtonItem28.Caption = "修改";
             this.barButtonItem28.Id = 43;
-            this.barButtonItem28.ImageIndex = 767;
+            this.barButtonItem28.ImageOptions.ImageIndex = 767;
             this.barButtonItem28.Name = "barButtonItem28";
             this.barButtonItem28.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -585,7 +587,7 @@
             // 
             this.barButtonItem29.Caption = "删除";
             this.barButtonItem29.Id = 44;
-            this.barButtonItem29.ImageIndex = 365;
+            this.barButtonItem29.ImageOptions.ImageIndex = 365;
             this.barButtonItem29.Name = "barButtonItem29";
             this.barButtonItem29.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
@@ -668,7 +670,7 @@
             this.navBarGroup1.Caption = "导航";
             this.navBarGroup1.ControlContainer = this.navBarGroupControlContainer1;
             this.navBarGroup1.Expanded = true;
-            this.navBarGroup1.GroupClientHeight = 693;
+            this.navBarGroup1.GroupClientHeight = 577;
             this.navBarGroup1.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this.navBarGroup1.Name = "navBarGroup1";
             this.navBarGroup1.NavigationPaneVisible = false;

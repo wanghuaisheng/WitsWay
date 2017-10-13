@@ -35,7 +35,6 @@
             this._panelConfigUc = new DevExpress.XtraEditors.PanelControl();
             this._panelCommands = new DevExpress.XtraEditors.PanelControl();
             this._barDockControl = new DevExpress.XtraBars.StandaloneBarDockControl();
-            this._viewTabItem = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this._barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -43,6 +42,7 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this._viewTabItem = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             ((System.ComponentModel.ISupportInitialize)(this._panelControl)).BeginInit();
             this._panelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._viewControl)).BeginInit();
@@ -117,13 +117,6 @@
             this._barDockControl.Size = new System.Drawing.Size(823, 26);
             this._barDockControl.Text = "standaloneBarDockControl1";
             // 
-            // _viewTabItem
-            // 
-            this._viewTabItem.Caption = "基础管理平台";
-            this._viewTabItem.ContentControl = this._viewClient;
-            this._viewTabItem.Name = "_viewTabItem";
-            this._viewTabItem.Selected = true;
-            // 
             // _barManager
             // 
             this._barManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
@@ -194,6 +187,13 @@
             this.barDockControlRight.Location = new System.Drawing.Point(982, 5);
             this.barDockControlRight.Manager = this._barManager;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 637);
+            // 
+            // _viewTabItem
+            // 
+            this._viewTabItem.Caption = "基础管理平台";
+            this._viewTabItem.ContentControl = this._viewClient;
+            this._viewTabItem.Name = "_viewTabItem";
+            this._viewTabItem.Selected = true;
             // 
             // ConfigManageForm
             // 
