@@ -1,23 +1,4 @@
-﻿#region License(Apache Version 2.0)
-/******************************************
- * Copyright ®2017-Now WangHuaiSheng.
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
- * except in compliance with the License. You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software distributed under the
- * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
- * either express or implied. See the License for the specific language governing permissions
- * and limitations under the License.
- * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
- * ***************************************/
-#endregion 
-#region ChangeLog
-/******************************************
- * 2017-10-7 OutMan Create
- * 
- * ***************************************/
-#endregion
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -26,6 +7,7 @@ using System.Reflection;
 using Microsoft.Practices.Unity.Utility;
 using WitsWay.Utilities.Entitys;
 using WitsWay.Utilities.Guards;
+using WitsWay.Utilities.Helpers;
 
 namespace WitsWay.Utilities.EntityCast
 {
@@ -37,16 +19,12 @@ namespace WitsWay.Utilities.EntityCast
     /// <typeparam name="A">原类型</typeparam>
     /// <typeparam name="B">新类型</typeparam>
     /// <seealso cref="CasterBuilder{A,B}"/>
-    public class ReflectionCaster<A,B> : IEntityCaster<A,B>
+    public class ReflectionCaster<A, B> : IEntityCaster<A, B>
         where A : new()
-        where B:new()
+        where B : new()
     {
-        private static readonly MethodInfo ConvertValue = 
-            StaticReflection.GetMethodInfo<PropertyMapping<A>>(pm => pm.GetPropertyValue(default(A)));
 
-        private static readonly NewExpression CreationExpression = Expression.New(typeof(B));
-
-        private readonly Func<A, B> mapping;
+        private readonly Func<A, B> _mapping;
 
         /// <summary>
         /// 创建<see cref="ReflectionCaster{A,B}"/>实例
@@ -58,29 +36,23 @@ namespace WitsWay.Utilities.EntityCast
             try
             {
                 var parameter = Expression.Parameter(typeof(A), "a");
+                var convertMethodInfo =
+                    StaticReflection.GetMethodInfo<PropertyMapping<A>>(pm => pm.GetPropertyValue(default(A)));
                 var bindings =
                     propertyMappings.Select(kvp => (MemberBinding)
-                        Expression.Bind(
-                            kvp.Key,
+                        Expression.Bind(kvp.Key,
                             Expression.Convert(
-                                Expression.Call(Expression.Constant(kvp.Value), ConvertValue, parameter),
+                                Expression.Call(Expression.Constant(kvp.Value), convertMethodInfo, parameter),
                                 kvp.Key.PropertyType)));
-                var expr =
-                    Expression.Lambda<Func<A, B>>(
-                        Expression.MemberInit(
-                            CreationExpression,
-                            bindings), parameter);
+                var creationExpression = Expression.New(typeof(B));
+                var expr = Expression.Lambda<Func<A, B>>(
+                        Expression.MemberInit(creationExpression, bindings), parameter);
 
-                mapping = expr.Compile();
+                _mapping = expr.Compile();
             }
             catch (Exception e)
             {
-                throw new InvalidOperationException(
-                    string.Format(
-                        CultureInfo.CurrentCulture,
-                        "创键PropertyMapping失败。",
-                        typeof(B).Name),
-                    e);
+                throw new InvalidOperationException(string.Format(CultureInfo.CurrentCulture,"创键PropertyMapping失败。"),e);
             }
         }
 
@@ -92,10 +64,7 @@ namespace WitsWay.Utilities.EntityCast
         /// <returns>新队形</returns>
         public B CastEntity(A a)
         {
-            //return ExceptionHelper.HandleException(() =>
-            //{
-                return mapping(a);
-            //}, "实体转换错误，请检查属性映射。");
+            return ExceptionHelper.HandleException(() => _mapping(a), "实体转换错误，请检查属性映射。");
         }
 
         /// <summary>
@@ -107,10 +76,7 @@ namespace WitsWay.Utilities.EntityCast
         {
             if (aList == null) { return null; }
             if (aList.Count == 0) { return new List<B>(); }
-            //return ExceptionHelper.HandleException(() =>
-            //{
-                return aList.Select(a => mapping(a)).ToList();
-            //}, "实体列表转换错误，请检查属性映射。");
+            return aList.Select(CastEntity).ToList();
         }
 
         /// <summary>
@@ -120,18 +86,14 @@ namespace WitsWay.Utilities.EntityCast
         /// <returns>B分页结果集</returns>
         public PageResult<B> CastPage(PageResult<A> aPage)
         {
-
-            //return ExceptionHelper.HandleException(() =>
-            //{
-                var result = new PageResult<B>
-                {
-                    PageIndex = aPage.PageIndex,
-                    PageSize = aPage.PageSize,
-                    TotalRecordNum = aPage.TotalRecordNum
-                };
-                result.Rows.AddRange(CastList(aPage.Rows));
-                return result;
-            //}, "分页信息转换错误，请检查属性映射。");
+            var result = new PageResult<B>
+            {
+                PageIndex = aPage.PageIndex,
+                PageSize = aPage.PageSize,
+                TotalRecordNum = aPage.TotalRecordNum
+            };
+            result.Rows.AddRange(CastList(aPage.Rows));
+            return result;
         }
 
     }

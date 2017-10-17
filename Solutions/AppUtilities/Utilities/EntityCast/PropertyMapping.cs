@@ -1,23 +1,4 @@
-﻿#region License(Apache Version 2.0)
-/******************************************
- * Copyright ®2017-Now WangHuaiSheng.
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
- * except in compliance with the License. You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software distributed under the
- * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
- * either express or implied. See the License for the specific language governing permissions
- * and limitations under the License.
- * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
- * ***************************************/
-#endregion 
-#region ChangeLog
-/******************************************
- * 2017-10-7 OutMan Create
- * 
- * ***************************************/
-#endregion
-using System;
+﻿using System;
 using System.Reflection;
 using WitsWay.Utilities.Extends;
 using WitsWay.Utilities.FastReflection;
@@ -44,7 +25,7 @@ namespace WitsWay.Utilities.EntityCast
         /// <summary>
         /// Get要映射的B对应属性信息
         /// </summary>
-        public PropertyInfo Property { get; private set; }
+        public PropertyInfo Property { get; }
 
         /// <summary>
         /// 获取A的对应属性值
@@ -88,8 +69,7 @@ namespace WitsWay.Utilities.EntityCast
         /// </summary>
         /// <param name="property">B的属性信息</param>
         /// <param name="propertyName">A的属性名</param>
-        public PropertyNameMapping(PropertyInfo property, string propertyName)
-            : base(property)
+        public PropertyNameMapping(PropertyInfo property, string propertyName) : base(property)
         {
             PropertyName = propertyName;
         }
@@ -97,7 +77,7 @@ namespace WitsWay.Utilities.EntityCast
         /// <summary>
         /// A的属性名
         /// </summary>
-        public string PropertyName { get; private set; }
+        public string PropertyName { get; }
 
         /// <summary>
         /// 取得属性值
@@ -107,26 +87,8 @@ namespace WitsWay.Utilities.EntityCast
         public override object GetPropertyValue(A a)
         {
             ArgumentGuard.ArgumentNotNull("a", a);
-            object value;
-
-            try
-            {
-                value = typeof(A).GetProperty(PropertyName).FastGetValue(a);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-
-            object convertedValue;
-            try
-            {
-                convertedValue = value.CastTo(Property.PropertyType);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            var value = typeof(A).GetProperty(PropertyName)?.FastGetValue(a);
+            var convertedValue = value.CastTo(Property.PropertyType);
             return convertedValue;
         }
     }
@@ -141,8 +103,7 @@ namespace WitsWay.Utilities.EntityCast
         /// </summary>
         /// <param name="property">B的属性信息</param>
         /// <param name="func">从A获取对应值的Func</param>
-        public FuncMapping(PropertyInfo property, Func<A, object> func)
-            : base(property)
+        public FuncMapping(PropertyInfo property, Func<A, object> func) : base(property)
         {
             ArgumentGuard.ArgumentNotNull("func", func);
             Func = func;
@@ -151,7 +112,7 @@ namespace WitsWay.Utilities.EntityCast
         /// <summary>
         /// 从A获取属性值Func
         /// </summary>
-        public Func<A, object> Func { get; private set; }
+        public Func<A, object> Func { get; }
 
         /// <summary>
         /// 获取属性值

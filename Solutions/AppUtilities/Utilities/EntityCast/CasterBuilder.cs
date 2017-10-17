@@ -1,23 +1,4 @@
-﻿#region License(Apache Version 2.0)
-/******************************************
- * Copyright ®2017-Now WangHuaiSheng.
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
- * except in compliance with the License. You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software distributed under the
- * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
- * either express or implied. See the License for the specific language governing permissions
- * and limitations under the License.
- * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
- * ***************************************/
-#endregion 
-#region ChangeLog
-/******************************************
- * 2017-10-7 OutMan Create
- * 
- * ***************************************/
-#endregion
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -26,7 +7,6 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 using WitsWay.Utilities.Guards;
-using WitsWay.Utilities.Thread;
 
 namespace WitsWay.Utilities.EntityCast
 {
@@ -112,16 +92,16 @@ namespace WitsWay.Utilities.EntityCast
         private class MapBuilderContext : IMapBuilderContext<A, B>
         {
 
-            private static ConcurrentDictionary<string, IEntityCaster<A, B>> cachedCaster = new ConcurrentDictionary<string, IEntityCaster<A, B>>();
+            private static readonly ConcurrentDictionary<string, IEntityCaster<A, B>> CachedCaster = new ConcurrentDictionary<string, IEntityCaster<A, B>>();
 
-            private Dictionary<PropertyInfo, PropertyMapping<A>> mappings;
+            private readonly Dictionary<PropertyInfo, PropertyMapping<A>> _mappings;
 
             /// <summary>
             /// 映射上下文实现
             /// </summary>
             public MapBuilderContext()
             {
-                mappings = new Dictionary<PropertyInfo, PropertyMapping<A>>();
+                _mappings = new Dictionary<PropertyInfo, PropertyMapping<A>>();
             }
 
             /// <summary>
@@ -157,7 +137,7 @@ namespace WitsWay.Utilities.EntityCast
             {
                 var normalizedPropertyInfo = NormalizePropertyInfo(property);
 
-                mappings.Remove(normalizedPropertyInfo);
+                _mappings.Remove(normalizedPropertyInfo);
 
                 return this;
             }
@@ -200,7 +180,7 @@ namespace WitsWay.Utilities.EntityCast
                 return new MapBuilderContextMap<P>(this, property);
             }
 
-            private LockObject _locker = new LockObject();
+            //private LockObject _locker = new LockObject();
 
             /// <summary>
             /// 构建<see cref="IEntityCaster&lt;A,B&gt;"/> 对象实例
@@ -208,13 +188,13 @@ namespace WitsWay.Utilities.EntityCast
             /// <returns> <see cref="IEntityCaster&lt;A,B&gt;"/>接口实例</returns>
             public IEntityCaster<A, B> Build()
             {
-                IEntityCaster<A, B> caster = null;
+                IEntityCaster<A, B> caster;
 
                 var cacheKey = GetMappingKey();
-                if (!cachedCaster.TryGetValue(cacheKey, out caster))
+                if (!CachedCaster.TryGetValue(cacheKey, out caster))
                 {
-                    caster = new ReflectionCaster<A, B>(mappings);
-                    cachedCaster[cacheKey] = caster;
+                    caster = new ReflectionCaster<A, B>(_mappings);
+                    CachedCaster[cacheKey] = caster;
                 }
 
                 return caster;
@@ -228,7 +208,7 @@ namespace WitsWay.Utilities.EntityCast
             {
                 var sb = new StringBuilder();
 
-                foreach (var item in mappings.OrderBy(kvp => kvp.Key.Name))
+                foreach (var item in _mappings.OrderBy(kvp => kvp.Key.Name))
                     sb.AppendFormat("{0}|{1},", item.Key.Name, item.Value == null || item.Value.Property == null ? string.Empty : item.Value.Property.Name);
 
                 if (sb.Length > 0)
@@ -290,7 +270,7 @@ namespace WitsWay.Utilities.EntityCast
                 public IMapBuilderContext<A, B> With(Func<A, P> f)
                 {
                     ArgumentGuard.ArgumentNotNull("f", f);
-                    builderContext.mappings[property] = new FuncMapping<A>(property, row => f(row));
+                    builderContext._mappings[property] = new FuncMapping<A>(property, row => f(row));
 
                     return builderContext;
                 }
@@ -298,13 +278,13 @@ namespace WitsWay.Utilities.EntityCast
 
                 public IMapBuilderContext<A, B> With(string propertyName)
                 {
-                    builderContext.mappings[property] = new PropertyNameMapping<A>(property, propertyName);
+                    builderContext._mappings[property] = new PropertyNameMapping<A>(property, propertyName);
                     return builderContext;
                 }
 
                 public IMapBuilderContext<A, B> With(PropertyInfo propertyA)
                 {
-                    builderContext.mappings[property] = new PropertyNameMapping<A>(property, propertyA.Name);
+                    builderContext._mappings[property] = new PropertyNameMapping<A>(property, propertyA.Name);
                     return builderContext;
                 }
             }

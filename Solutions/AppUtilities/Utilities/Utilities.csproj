@@ -141,7 +141,6 @@
     <Compile Include="Daos\IRepositoryClause.cs" />
     <Compile Include="Daos\IRepository.cs" />
     <Compile Include="EntityCast\CasterBuilder.cs" />
-    <Compile Include="EntityCast\FastReflectionCaster.cs" />
     <Compile Include="EntityCast\IEntityCaster.cs" />
     <Compile Include="EntityCast\IMapBuilderContext.cs" />
     <Compile Include="EntityCast\IMapBuilderContextMap.cs" />
