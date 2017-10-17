@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralQuery", "GeneralQuery\GeneralQuery.csproj", "{9753C641-E3C0-41DA-B4DA-1A1087698F0E}"
 EndProject
@@ -20,6 +20,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{F157AF10-2F2E-4355-ADB2-940002E7704A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagramTest", "DiagramTest\DiagramTest.csproj", "{023D5A8C-32F3-47F7-8549-651874E45E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPostPay", "TestPostPay\TestPostPay.csproj", "{EA3DA039-47CE-4C77-B757-4478FCE4ACA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperTest", "DapperTest\DapperTest.csproj", "{D8BDBD61-2D3E-4507-8D2D-957E84E7916D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,41 +67,19 @@ Global
 		{023D5A8C-32F3-47F7-8549-651874E45E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{023D5A8C-32F3-47F7-8549-651874E45E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{023D5A8C-32F3-47F7-8549-651874E45E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3DA039-47CE-4C77-B757-4478FCE4ACA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3DA039-47CE-4C77-B757-4478FCE4ACA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3DA039-47CE-4C77-B757-4478FCE4ACA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3DA039-47CE-4C77-B757-4478FCE4ACA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8BDBD61-2D3E-4507-8D2D-957E84E7916D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8BDBD61-2D3E-4507-8D2D-957E84E7916D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8BDBD61-2D3E-4507-8D2D-957E84E7916D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8BDBD61-2D3E-4507-8D2D-957E84E7916D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 10
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://192.168.1.11:8080/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = DynamicQuery\\DynamicQuery.csproj
-		SccProjectName1 = DynamicQuery
-		SccLocalPath1 = DynamicQuery
-		SccProjectUniqueName2 = GeneralQuery.UnitTests\\GeneralQuery.UnitTests.csproj
-		SccProjectName2 = GeneralQuery.UnitTests
-		SccLocalPath2 = GeneralQuery.UnitTests
-		SccProjectUniqueName3 = GeneralQuery\\GeneralQuery.csproj
-		SccProjectName3 = GeneralQuery
-		SccLocalPath3 = GeneralQuery
-		SccProjectUniqueName4 = RemainProcessTest\\RemainProcessTest.csproj
-		SccProjectName4 = RemainProcessTest
-		SccLocalPath4 = RemainProcessTest
-		SccProjectUniqueName5 = ReportUtil\\ReportUtil.csproj
-		SccProjectName5 = ReportUtil
-		SccLocalPath5 = ReportUtil
-		SccProjectUniqueName6 = WorkflowTest\\WorkflowTest.csproj
-		SccProjectName6 = WorkflowTest
-		SccLocalPath6 = WorkflowTest
-		SccProjectUniqueName7 = ControlsTest\\ControlsTest.csproj
-		SccProjectName7 = ControlsTest
-		SccLocalPath7 = ControlsTest
-		SccProjectUniqueName8 = ConsoleTest\\ConsoleTest.csproj
-		SccProjectName8 = ConsoleTest
-		SccLocalPath8 = ConsoleTest
-		SccProjectUniqueName9 = DiagramTest\\DiagramTest.csproj
-		SccProjectName9 = DiagramTest
-		SccLocalPath9 = DiagramTest
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F18D64CC-3054-4C9D-9802-3B4CBAA29699}
 	EndGlobalSection
 EndGlobal
