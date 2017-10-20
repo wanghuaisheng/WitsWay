@@ -257,6 +257,11 @@
     <Compile Include="Models\OperationLog.cs" />
     <Compile Include="Models\SequenceNumber.cs" />
     <Compile Include="Patterns\Sandbox.cs" />
+    <Compile Include="Regexs\ParseClassAttribute.cs" />
+    <Compile Include="Regexs\ParsePropertyAttribute.cs" />
+    <Compile Include="Regexs\RegexClassFactory.cs" />
+    <Compile Include="Regexs\RegexClassInfo.cs" />
+    <Compile Include="Regexs\RegexHelper.cs" />
     <Compile Include="Services\IService.cs" />
     <Compile Include="SqlBulks\AllColumnSelect.cs" />
     <Compile Include="SqlBulks\BulkDelete.cs" />
