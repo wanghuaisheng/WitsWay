@@ -1,25 +1,7 @@
-﻿#region License(Apache Version 2.0)
-/******************************************
- * Copyright ®2017-Now WangHuaiSheng.
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
- * except in compliance with the License. You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- * Unless required by applicable law or agreed to in writing, software distributed under the
- * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
- * either express or implied. See the License for the specific language governing permissions
- * and limitations under the License.
- * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
- * ***************************************/
-#endregion 
-#region ChangeLog
-/******************************************
- * 2017-10-7 OutMan Create
- * 
- * ***************************************/
-#endregion
-
-using System.Drawing;
+﻿using System.Drawing;
+using System.Security;
 using DevExpress.Utils.Win;
+using WitsWay.Utilities.Win.Enums;
 
 namespace WitsWay.Utilities.Win.Entities
 {
@@ -29,15 +11,44 @@ namespace WitsWay.Utilities.Win.Entities
     public class ToastOptions
     {
         /// <summary>
+        /// 获取<see cref="ToastOptions"/>默认新实例
+        /// </summary>
+        /// <returns><see cref="ToastOptions"/>默认新实例</returns>
+        [SecuritySafeCritical]
+        public static ToastOptions NewInstance() => new ToastOptions();
+
+        /// <summary>
+        /// 获取<see cref="ToastOptions"/>默认新实例
+        /// </summary>
+        /// <param name="kind">消息类型</param>
+        /// <returns><see cref="ToastOptions"/>默认新实例</returns>
+        [SecuritySafeCritical]
+        public static ToastOptions NewInstance(ToastKinds kind) => new ToastOptions(kind);
+
+        /// <summary>
         /// 提醒信息选项
         /// </summary>
         public ToastOptions()
         {
             Anchor = PopupToolWindowAnchor.Top;
             AnimationKind = PopupToolWindowAnimation.Slide;
-            CloseOnOuterClick = false;
+            CloseOnOuterClick = true;
             PositionX = PositionY = 0;
         }
+        /// <summary>
+        /// 提醒信息选项
+        /// </summary>
+        /// <param name="kind">消息类型</param>
+        public ToastOptions(ToastKinds kind) : this()
+        {
+            KindOptions = new ToastKindOptions(kind);
+        }
+
+        /// <summary>
+        /// 提醒消息类型选项
+        /// </summary>
+        public ToastKindOptions KindOptions { get; set; }
+
         /// <summary>
         /// 消息显示位置
         /// </summary>

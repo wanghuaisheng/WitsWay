@@ -166,9 +166,11 @@
     <Compile Include="Controls\SplashForm2.Designer.cs">
       <DependentUpon>SplashForm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entities\ToastKindOptions.cs" />
     <Compile Include="Entities\ToastOptions.cs" />
     <Compile Include="Enums\ToastKinds.cs" />
     <Compile Include="Extends\GridViewExtends.Tag.cs" />
+    <Compile Include="Extends\ToastOptionsExtends.cs" />
     <Compile Include="Extends\TreeListNodeExtends.cs" />
     <Compile Include="Extends\ControlExtends.cs" />
     <Compile Include="Extends\GridControlExtends.cs" />
@@ -177,6 +179,7 @@
     <Compile Include="Extends\RepositoryItemExtends.cs" />
     <Compile Include="Extends\GridViewExtends.cs" />
     <Compile Include="Extends\TreeListExtends.cs" />
+    <Compile Include="Extends\UriExtends.cs" />
     <Compile Include="Helpers\HttpClientHelper.cs" />
     <Compile Include="Helpers\MyWebRequest1.cs" />
     <Compile Include="Helpers\MyWebRequest3.cs" />

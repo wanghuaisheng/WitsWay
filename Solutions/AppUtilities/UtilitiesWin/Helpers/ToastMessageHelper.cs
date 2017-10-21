@@ -25,7 +25,6 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using WitsWay.Utilities.Win.Entities;
 using WitsWay.Utilities.Win.Extends;
-using WitsWay.Utilities.Win.Properties;
 
 namespace WitsWay.Utilities.Win.Helpers
 {
@@ -42,16 +41,15 @@ namespace WitsWay.Utilities.Win.Helpers
         /// <param name="msg">显示消息</param>
         public static void ShowToastMessage(ToastOptions option, Form parentForm, string msg)
         {
-            if (parentForm.GetTag("aaaaaa") == null)
+            var fPanel = parentForm.GetTag<FlyoutPanel>(WinUtilityConsts.FormToastFlyoutPanelTagKey);
+            if (fPanel == null)
             {
                 var ticks = DateTime.Now.Ticks;
                 var labelControl = new LabelControl();
-                // 
                 // _labelControl
-                // 
                 labelControl.Appearance.Font = new Font("Tahoma", 16F);
-                labelControl.Appearance.ForeColor = Color.SeaGreen;
-                labelControl.Appearance.Image = Resources.LightGreen;
+                //labelControl.Appearance.ForeColor = option.KindOptions.FontColor;
+                //labelControl.Appearance.Image = Resources.LightGreen;
                 labelControl.Appearance.Options.UseFont = true;
                 labelControl.Appearance.Options.UseForeColor = true;
                 labelControl.Appearance.Options.UseImage = true;
@@ -61,12 +59,9 @@ namespace WitsWay.Utilities.Win.Helpers
                 labelControl.Dock = DockStyle.Fill;
                 labelControl.ImageAlignToText = ImageAlignToText.LeftCenter;
                 labelControl.Name = $"_labelControl{ticks}";
-                // 
                 // _panelControl
-                // 
                 var panelControl = new PanelControl();
                 panelControl.SuspendLayout();
-
                 panelControl.Appearance.BackColor = Color.Transparent;
                 panelControl.Appearance.Options.UseBackColor = true;
                 panelControl.AutoSize = false;
@@ -76,16 +71,13 @@ namespace WitsWay.Utilities.Win.Helpers
                 panelControl.Dock = DockStyle.Fill;
                 panelControl.Name = $"_panelControl{ticks}";
                 panelControl.Padding = new Padding(20, 0, 30, 0);
-
                 panelControl.ResumeLayout(false);
-
-
                 //flyoutPanel
                 var flyoutPanel = new FlyoutPanel();
                 flyoutPanel.SuspendLayout();
                 //样式设置
-                flyoutPanel.Appearance.BackColor = Color.PaleGreen;
-                flyoutPanel.Appearance.BackColor2 = Color.PaleGreen;
+                //flyoutPanel.Appearance.BackColor = option.KindOptions.BackColor;
+                //flyoutPanel.Appearance.BackColor2 = option.KindOptions.BackColor;
                 flyoutPanel.Appearance.BorderColor = Color.DarkGreen;
                 flyoutPanel.Appearance.Options.UseBackColor = true;
                 flyoutPanel.Appearance.Options.UseBorderColor = true;
@@ -93,7 +85,7 @@ namespace WitsWay.Utilities.Win.Helpers
                 flyoutPanel.Controls.Add(panelControl);
                 flyoutPanel.LookAndFeel.UseDefaultLookAndFeel = false;
                 flyoutPanel.Name = $"_flyoutPanel{ticks}";
-                flyoutPanel.OptionsBeakPanel.BackColor = Color.PaleGreen;
+                //flyoutPanel.OptionsBeakPanel.BackColor = option.KindOptions.BackColor;
                 flyoutPanel.OptionsBeakPanel.BorderColor = Color.Transparent;
                 flyoutPanel.Padding = new Padding(20, 0, 20, 0);
 
@@ -102,7 +94,7 @@ namespace WitsWay.Utilities.Win.Helpers
                 flyoutPanel.Height = 60;
                 flyoutPanel.PerformLayout();
 
-                flyoutPanel.OwnerControl = flyoutPanel.FindForm();
+                flyoutPanel.OwnerControl = parentForm;
                 flyoutPanel.Options.AnchorType = option.Anchor;
                 flyoutPanel.Options.AnimationType = option.AnimationKind;
                 flyoutPanel.Options.CloseOnOuterClick = option.CloseOnOuterClick;
@@ -111,12 +103,17 @@ namespace WitsWay.Utilities.Win.Helpers
                 parentForm.SetTag(WinUtilityConsts.FormToastFlyoutPanelTagKey, flyoutPanel);
                 parentForm.SetTag(WinUtilityConsts.FormToastFlyoutPanelLabelTagKey, labelControl);
             }
-
-            var fPanel = parentForm.GetTag<FlyoutPanel>(WinUtilityConsts.FormToastFlyoutPanelTagKey);
+            fPanel = parentForm.GetTag<FlyoutPanel>(WinUtilityConsts.FormToastFlyoutPanelTagKey);
             var lbl = parentForm.GetTag<LabelControl>(WinUtilityConsts.FormToastFlyoutPanelLabelTagKey);
+            //设置样式
+            lbl.Appearance.ForeColor = option.KindOptions.FontColor;
+            lbl.Appearance.Image = option.KindOptions.IconImage;
+            fPanel.Appearance.BackColor = option.KindOptions.BackColor;
+            fPanel.Appearance.BackColor2 = option.KindOptions.BackColor;
+            fPanel.OptionsBeakPanel.BackColor = option.KindOptions.BackColor;
+            //设置文字
             lbl.Text = msg;
             fPanel.ShowPopup();
-
         }
 
         /// <summary>
@@ -134,6 +131,7 @@ namespace WitsWay.Utilities.Win.Helpers
                 return;
             }
             var ticks = DateTime.Now.Ticks;
+            var ctrHeight = ctr.Height;
             ctr.Dock = DockStyle.Fill;
             //_panelControl
             var panelControl = new PanelControl();
@@ -146,7 +144,8 @@ namespace WitsWay.Utilities.Win.Helpers
             panelControl.Controls.Add(ctr);
             panelControl.Dock = DockStyle.Fill;
             panelControl.Name = $"_panelControl{ticks}";
-            panelControl.Padding = new Padding(20, 0, 30, 0);
+            panelControl.Height = ctrHeight;
+            panelControl.Padding = new Padding(0);
             panelControl.ResumeLayout(false);
             //flyoutPanel
             var flyoutPanel = new FlyoutPanel();
@@ -162,10 +161,10 @@ namespace WitsWay.Utilities.Win.Helpers
             flyoutPanel.Name = $"_flyoutPanel1{ticks}";
             flyoutPanel.OptionsBeakPanel.BackColor = Color.PaleGreen;
             flyoutPanel.OptionsBeakPanel.BorderColor = Color.Transparent;
-            flyoutPanel.Padding = new Padding(20, 0, 20, 0);
+            flyoutPanel.Padding = new Padding(0);
             parentForm.Controls.Add(flyoutPanel);
             flyoutPanel.ResumeLayout(false);
-            flyoutPanel.Height = 60;
+            flyoutPanel.Height = ctrHeight;
             flyoutPanel.OwnerControl = flyoutPanel.FindForm();
             flyoutPanel.Options.AnchorType = option.Anchor;
             flyoutPanel.Options.AnimationType = option.AnimationKind;
@@ -180,3 +179,4 @@ namespace WitsWay.Utilities.Win.Helpers
 
     }
 }
+

@@ -1722,14 +1722,69 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:WitsWay.Utilities.Win.Entities.ToastKindOptions">
+            <summary>
+            提醒信息类型选项
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Entities.ToastKindOptions.#ctor">
+            <summary>
+            提醒信息类型选项
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Entities.ToastKindOptions.#ctor(WitsWay.Utilities.Win.Enums.ToastKinds)">
+            <summary>
+            提醒信息类型选项
+            </summary>
+            <param name="kind"></param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastKindOptions.FontColor">
+            <summary>
+            文字颜色
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastKindOptions.BackColor">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastKindOptions.IconImage">
+            <summary>
+            图标
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Win.Entities.ToastOptions">
             <summary>
             提醒信息选项
             </summary>
         </member>
+        <member name="M:WitsWay.Utilities.Win.Entities.ToastOptions.NewInstance">
+            <summary>
+            获取<see cref="T:WitsWay.Utilities.Win.Entities.ToastOptions"/>默认新实例
+            </summary>
+            <returns><see cref="T:WitsWay.Utilities.Win.Entities.ToastOptions"/>默认新实例</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Entities.ToastOptions.NewInstance(WitsWay.Utilities.Win.Enums.ToastKinds)">
+            <summary>
+            获取<see cref="T:WitsWay.Utilities.Win.Entities.ToastOptions"/>默认新实例
+            </summary>
+            <param name="kind">消息类型</param>
+            <returns><see cref="T:WitsWay.Utilities.Win.Entities.ToastOptions"/>默认新实例</returns>
+        </member>
         <member name="M:WitsWay.Utilities.Win.Entities.ToastOptions.#ctor">
             <summary>
             提醒信息选项
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Entities.ToastOptions.#ctor(WitsWay.Utilities.Win.Enums.ToastKinds)">
+            <summary>
+            提醒信息选项
+            </summary>
+            <param name="kind">消息类型</param>
+        </member>
+        <member name="P:WitsWay.Utilities.Win.Entities.ToastOptions.KindOptions">
+            <summary>
+            提醒消息类型选项
             </summary>
         </member>
         <member name="P:WitsWay.Utilities.Win.Entities.ToastOptions.Anchor">
@@ -1967,6 +2022,27 @@
             <param name="gridView">表格</param>
             <param name="popup">弹出菜单</param>
         </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.ToastOptionsExtends">
+            <summary>
+            <see cref="T:WitsWay.Utilities.Win.Entities.ToastOptions"/>实例扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.ToastOptionsExtends.ShowToastMessage(WitsWay.Utilities.Win.Entities.ToastOptions,System.String,System.Windows.Forms.Form)">
+            <summary>
+            显示Toast消息
+            </summary>
+            <param name="option">选项</param>
+            <param name="msg">消息</param>
+            <param name="parentForm">父窗体</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.ToastOptionsExtends.ShowToastControl(WitsWay.Utilities.Win.Entities.ToastOptions,System.Windows.Forms.Control,System.Windows.Forms.Form)">
+            <summary>
+            显示Toast消息
+            </summary>
+            <param name="option">选项</param>
+            <param name="ctr">控件</param>
+            <param name="parentForm">父窗体</param>
+        </member>
         <member name="T:WitsWay.Utilities.Win.Extends.TreeListNodeExtends">
             <summary>
             TreeListNode扩展类
@@ -2178,6 +2254,45 @@
             <summary>
             为TreeList绑定PopupMenu
             </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Win.Extends.UriExtends">
+            <summary>
+            Uri扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.UriExtends.HttpPostRequestString(System.Uri,System.Object,System.Net.Cookie)">
+            <summary>
+            Http Post Request String
+            </summary>
+            <param name="uri">地址</param>
+            <param name="contentEntity">post实体</param>
+            <param name="cookie">附带Cookie数据</param>
+            <returns>请求结果</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.UriExtends.AsyncHttpPostRequestString(System.Uri,System.Object,System.Net.Cookie)">
+            <summary>
+            Http 异步 Post 请求 String
+            </summary>
+            <param name="uri">地址</param>
+            <param name="contentEntity">post实体</param>
+            <param name="cookie">附带Cookie数据</param>
+            <returns>请求结果</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.UriExtends.HttpPostRequestCookies(System.Uri,System.Object)">
+            <summary>
+            Http Post Request Cookies
+            </summary>
+            <param name="uri">地址</param>
+            <param name="contentEntity">post实体</param>
+            <returns>请求结果</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.UriExtends.AsyncHttpPostRequestCookies(System.Uri,System.Object)">
+            <summary>
+            Http 异步 Post 请求 Cookies
+            </summary>
+            <param name="uri">地址</param>
+            <param name="contentEntity">post实体</param>
+            <returns><see cref="T:System.Net.Cookie"/>列表</returns>
         </member>
         <member name="T:WitsWay.Utilities.Win.Helpers.HttpClientHelper">
             <summary>

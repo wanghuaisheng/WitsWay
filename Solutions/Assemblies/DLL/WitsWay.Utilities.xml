@@ -6617,6 +6617,240 @@
             
             </summary>
         </member>
+        <member name="T:WitsWay.Utilities.Regexs.ParseClassAttribute">
+            <summary>
+            用于标示该类是解析类
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Regexs.ParseClassAttribute.RegexString">
+            <summary>
+            正则匹配字符串
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.ParseClassAttribute.#ctor(System.String)">
+            <summary>
+            够造函数
+            </summary>
+            <param name="pattern">正则字符串</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Regexs.ParsePropertyAttribute">
+            <summary>
+            要解析的属性
+            特性标示
+            <remarks>
+            每个RegexClassInfo中存储了ParseClassAttribute和ParsePropertyAttribute字典
+            该类负责属性的赋值，故一个RegexClassInfo实例化时会多次实例化本类
+            </remarks>
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Regexs.ParsePropertyAttribute._converHelperClass">
+            <summary>
+            默认转换函数类，默认为DataConverHelper
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Regexs.ParsePropertyAttribute.RegexGroupName">
+            <summary>
+            匹配组名
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Regexs.ParsePropertyAttribute.PropertyInfo">
+            <summary>
+            属性信息
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Regexs.ParsePropertyAttribute.CreateType">
+            <summary>
+            转换辅助类 
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.ParsePropertyAttribute.#ctor(System.String)">
+            <summary>
+            属性匹配设置
+            </summary>
+            <param name="groupName">正则表达式中的GroupName</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.ParsePropertyAttribute.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="groupName">匹配组名</param>
+            <param name="converFun">转换函数名</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.ParsePropertyAttribute.#ctor(System.String,System.Type,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="groupName">匹配组名</param>
+            <param name="converClass">用于转换的类</param>
+            <param name="converFun">转换函数</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.ParsePropertyAttribute.SetPropertyValue(System.Object,System.Text.RegularExpressions.Group)">
+            <summary>
+            设置属性的值
+            </summary>
+            <param name="matchObject"></param>
+            <param name="group"></param>
+            <returns>设置成功返回true</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.ParsePropertyAttribute.IsRegexMatchClass(System.Type)">
+            <summary>
+            判断是不是包含正则表达式的类
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Regexs.ParsePropertyAttribute.DefaultDataConverHelper">
+            <summary>
+            数据转换辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.ParsePropertyAttribute.DefaultDataConverHelper.StringToHexInt(System.String)">
+            <summary>
+            从字符串转换到Int类型
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.HexExtends.HexToInt(System.String)">
+            <summary>
+            16进制字符串转换为Int
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Regexs.RegexClassFactory">
+            <summary>
+            生成正则类的工厂
+            <remarks>
+            通过传入的Type生成正则类
+            </remarks>
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Regexs.RegexClassFactory.TypeDic">
+            <summary>
+            用于存放已经匹配过的正则类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexClassFactory.GetRegexClass(System.Object)">
+            <summary>
+            取得正则类
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexClassFactory.GetRegexClass(System.Type)">
+            <summary>
+            取得正则类
+            </summary>
+            <param name="type">类型Type</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexClassFactory.CreateRegexClassInfo(System.Type,WitsWay.Utilities.Regexs.ParseClassAttribute)">
+            <summary>
+            创建RegexClassInfo类
+            </summary>
+            <param name="type">要创建正则类信息的Type</param>
+            <param name="customAttribute">自定义特性ParseClassAttribute</param>
+            <returns>正则类信息</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Regexs.RegexClassInfo">
+            <summary>
+            正则匹配类信息
+            <remarks>
+            用于存储使用了ParseClassAttribute的类的信息
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Regexs.RegexClassInfo.CustomClassInfo">
+            <summary>
+            协议解析特性
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Regexs.RegexClassInfo.PropertyMap">
+            <summary>
+            要解析的所有属性字典
+            key:属性的名称
+            value:属性的自定义特性ParsePropertyAttribute
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Regexs.RegexClassInfo.RegexInfo">
+            <summary>
+            给System.Text.RegularExpressions.Regex取别名
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Regexs.RegexClassInfo.RegexPattern">
+            <summary>
+            正则匹配字符串
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexClassInfo.Available">
+            <summary>
+            判断是否时协议解析类
+            [是否有特性头][需要解析的属性大于零]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexClassInfo.CreateRegex(System.String)">
+            <summary>
+            创建MS正则Regex类
+            </summary>
+            <param name="pattern">正则匹配字符串</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexClassInfo.SetPropertyValue(System.String@,System.Object,System.Boolean)">
+            <summary>
+            设置匹配值
+            </summary>
+            <param name="processStr">要处理的字符串</param>
+            <param name="setObject">要设置值的对象</param>
+            <param name="deleteMatchString">是否删除匹配的字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexClassInfo.Match(System.String)">
+            <summary>
+            匹配
+            </summary>
+            <param name="processStr">要匹配的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexClassInfo.SetValue(System.Object,System.String,System.Text.RegularExpressions.Group)">
+            <summary>
+            匹配并设置值
+            </summary>
+            <param name="matchObject">要匹配的对象</param>
+            <param name="name">属性名称</param>
+            <param name="group"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Regexs.RegexHelper">
+            <summary>
+            为协议解析提供正则匹配的入口
+            完成匹配字符串并生成对象
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexHelper.Match``1(System.String@,System.Boolean)">
+            <summary>
+            泛型匹配
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexHelper.Match(System.Object,System.String@,System.Boolean)">
+            <summary>
+            匹配指定的类
+            </summary>
+            <param name="matchObject">匹配后生成的结果对象</param>
+            <param name="processStr"></param>
+            <param name="delMatchStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexHelper.MatchList``1(System.String@,System.Boolean)">
+            <summary>
+            匹配多个对象
+            </summary>
+            <typeparam name="T">匹配类型</typeparam>
+            <param name="processStr">处理字符串</param>
+            <param name="delMatchStr">是否删除已经匹配的字符串</param>
+            <returns>返回匹配的对象列表</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Regexs.RegexHelper.GetClassRegex``1">
+            <summary>
+            获取正则表达式
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
         <member name="T:WitsWay.Utilities.Services.IService">
             <summary>
             服务标记接口
