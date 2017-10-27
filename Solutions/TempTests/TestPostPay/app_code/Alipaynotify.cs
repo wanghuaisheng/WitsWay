@@ -123,7 +123,7 @@ namespace TestPostPay
                          //isSgin = AlipayMD5.Verify(preSignStr, sign, _key, charset);
 
                     case "RSA":
-                         isSign = AlipaySignature.RSACheckContent(preSignStr, sign, Config.alipay_public_key, _charset);
+                         isSign = AlipaySignature.RSACheckContent(preSignStr, sign, Config.alipay_public_key,"", _charset);
                         break;
 
                     default:
