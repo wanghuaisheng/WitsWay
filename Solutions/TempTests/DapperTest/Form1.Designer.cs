@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this._btnDapperQuery = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
+            // 
+            // _btnDapperQuery
+            // 
+            this._btnDapperQuery.Location = new System.Drawing.Point(24, 23);
+            this._btnDapperQuery.Name = "_btnDapperQuery";
+            this._btnDapperQuery.Size = new System.Drawing.Size(123, 34);
+            this._btnDapperQuery.TabIndex = 0;
+            this._btnDapperQuery.Text = "DapperQuery";
+            this._btnDapperQuery.Click += new System.EventHandler(this._btnDapperQuery_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 885);
+            this.Controls.Add(this._btnDapperQuery);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -42,6 +53,8 @@
         }
 
         #endregion
+
+        private DevExpress.XtraEditors.SimpleButton _btnDapperQuery;
     }
 }
 
