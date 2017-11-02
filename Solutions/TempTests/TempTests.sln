@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2002
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralQuery", "GeneralQuery\GeneralQuery.csproj", "{9753C641-E3C0-41DA-B4DA-1A1087698F0E}"
 EndProject
@@ -24,6 +24,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPostPay", "TestPostPay\TestPostPay.csproj", "{EA3DA039-47CE-4C77-B757-4478FCE4ACA4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperTest", "DapperTest\DapperTest.csproj", "{D8BDBD61-2D3E-4507-8D2D-957E84E7916D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQTest", "RabbitMQTest\RabbitMQTest.csproj", "{210C9DFB-1C6B-461E-88A7-16BF522FD8D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitPublisher", "RabbitMQConsole\RabbitPublisher.csproj", "{F4D2DFD4-AF48-4752-B047-0DBA5DE95952}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitSubscriber", "RabbitSubscriber\RabbitSubscriber.csproj", "{70C721B3-73AC-495B-9EAF-9F3DB246D815}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +81,18 @@ Global
 		{D8BDBD61-2D3E-4507-8D2D-957E84E7916D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8BDBD61-2D3E-4507-8D2D-957E84E7916D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8BDBD61-2D3E-4507-8D2D-957E84E7916D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210C9DFB-1C6B-461E-88A7-16BF522FD8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210C9DFB-1C6B-461E-88A7-16BF522FD8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210C9DFB-1C6B-461E-88A7-16BF522FD8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210C9DFB-1C6B-461E-88A7-16BF522FD8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D2DFD4-AF48-4752-B047-0DBA5DE95952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D2DFD4-AF48-4752-B047-0DBA5DE95952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D2DFD4-AF48-4752-B047-0DBA5DE95952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D2DFD4-AF48-4752-B047-0DBA5DE95952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C721B3-73AC-495B-9EAF-9F3DB246D815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C721B3-73AC-495B-9EAF-9F3DB246D815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C721B3-73AC-495B-9EAF-9F3DB246D815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C721B3-73AC-495B-9EAF-9F3DB246D815}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
