@@ -46,7 +46,7 @@ namespace WitsWay.Utilities.Win.Helpers
             var enumType = typeof(T);
             if (except == null)
                 except = new List<T>();
-            var exceptValue = except.Select(old => { return old.CastTo<int>(); }).ToList();
+            var exceptValue = except.Select(old => old.CastTo<int>()).ToList();
             BindEnumToCombo(ctr, enumType, header, exceptValue);
         }
 
@@ -206,8 +206,7 @@ namespace WitsWay.Utilities.Win.Helpers
         {
             foreach (var item in ctr.Properties.Items)
             {
-                var ed = item as EnumFieldAttribute;
-                if (ed != null && ed.EnumValue == data.CastTo<int>())
+                if (item is EnumFieldAttribute ed && ed.EnumValue == data.CastTo<int>())
                 {
                     ctr.SelectedItem = ed;
                 }
@@ -225,9 +224,8 @@ namespace WitsWay.Utilities.Win.Helpers
             if (ctr == null || data == null) { return; }
             foreach (var item in ctr.Properties.Items)
             {
-                var itd = item as IdTextData;
-                if (itd != null && ((typeof(T) == typeof(string) && data.ToString() == itd.Data.ToString()) 
-                    || ReferenceEquals(itd.Data, data)))
+                if (item is IdTextData itd 
+                    && (typeof(T) == typeof(string) && data.ToString() == itd.Data.ToString() || ReferenceEquals(itd.Data, data)))
                 {
                     ctr.SelectedItem = itd;
                     break;
@@ -238,7 +236,6 @@ namespace WitsWay.Utilities.Win.Helpers
         /// <summary>
         /// 设置选中项
         /// </summary>
-        /// <typeparam name="T">类型</typeparam>
         /// <param name="ctr">控件</param>
         /// <param name="key">数据键</param>
         public static void SetSelectKey(ComboBoxEdit ctr, string key)
@@ -268,8 +265,7 @@ namespace WitsWay.Utilities.Win.Helpers
             {
                 throw new ArgumentException(t.FullName + "必须是枚举类型");
             }
-            var ed = ctr.SelectedItem as EnumFieldAttribute;
-            if (ed != null)
+            if (ctr.SelectedItem is EnumFieldAttribute ed)
             {
                 return ed.EnumValue.CastTo<T>();
             }

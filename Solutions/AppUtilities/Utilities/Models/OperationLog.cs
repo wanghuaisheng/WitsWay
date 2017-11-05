@@ -78,7 +78,7 @@ namespace WitsWay.Utilities.Models
         public string ClientName { get; set; }
 
         /// <summary>
-        /// Browser information if this method is called in a web request.
+        /// 调用浏览器信息
         /// </summary>
         public string BrowserInfo { get; set; }
 
@@ -88,14 +88,17 @@ namespace WitsWay.Utilities.Models
         public string CustomData { get; set; }
 
         /// <summary>
-        /// Exception object, if an exception occured during execution of the method.
+        /// 异常信息
         /// </summary>
         public string ExceptionInfo { get; set; }
-
+        /// <summary>
+        /// <![CDATA[Audit Log: ServiceXXX.MethodXXX is executed by user XXX in DurationXXX ms from IpXXX]]>
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return
-                $"AUDIT LOG: {ServiceName}.{MethodName} is executed by user {EmployeeID} in {ExecutionDuration} ms from {ClientIpAddress} IP address.";
+                $"Audit Log: {ServiceName}.{MethodName} is executed by user {EmployeeID} in {ExecutionDuration} ms from {ClientIpAddress}.";
         }
     }
 }

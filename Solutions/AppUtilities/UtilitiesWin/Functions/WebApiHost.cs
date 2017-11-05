@@ -99,6 +99,12 @@ namespace WitsWay.Utilities.Win.Functions
     /// </summary>
     public class CrossDomainHandler : DelegatingHandler
     {
+        /// <summary>
+        /// 异步发送消息
+        /// </summary>
+        /// <param name="request"><see cref="HttpRequestMessage"/>请求消息</param>
+        /// <param name="cancellationToken">取消令牌</param>
+        /// <returns>响应消息</returns>
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
             var response = base.SendAsync(request, cancellationToken);

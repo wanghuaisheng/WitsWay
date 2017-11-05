@@ -40,7 +40,12 @@ namespace WitsWay.Utilities.Validate.Annotations
         {
             ValidatorKey = validatorKey;
         }
-
+        /// <summary>
+        /// 是否有效
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="validationContext"></param>
+        /// <returns></returns>
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             var validator = CustomValidatorFactory.GetCustomValidator(ValidatorKey);

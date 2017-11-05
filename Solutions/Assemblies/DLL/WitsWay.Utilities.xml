@@ -6481,7 +6481,7 @@
         </member>
         <member name="P:WitsWay.Utilities.Models.OperationLog.BrowserInfo">
             <summary>
-            Browser information if this method is called in a web request.
+            调用浏览器信息
             </summary>
         </member>
         <member name="P:WitsWay.Utilities.Models.OperationLog.CustomData">
@@ -6491,8 +6491,14 @@
         </member>
         <member name="P:WitsWay.Utilities.Models.OperationLog.ExceptionInfo">
             <summary>
-            Exception object, if an exception occured during execution of the method.
+            异常信息
             </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Models.OperationLog.ToString">
+            <summary>
+            <![CDATA[Audit Log: ServiceXXX.MethodXXX is executed by user XXX in DurationXXX ms from IpXXX]]>
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:WitsWay.Utilities.Models.SequenceNumber">
             <summary>
@@ -6705,6 +6711,11 @@
         <member name="M:WitsWay.Utilities.Regexs.ParsePropertyAttribute.DefaultDataConverHelper.StringToHexInt(System.String)">
             <summary>
             从字符串转换到Int类型
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Regexs.HexExtends">
+            <summary>
+            十六进制扩展
             </summary>
         </member>
         <member name="M:WitsWay.Utilities.Regexs.HexExtends.HexToInt(System.String)">
@@ -8161,10 +8172,25 @@
             自定义验证器
             </summary>
         </member>
+        <member name="M:WitsWay.Utilities.Validate.Annotations.CustomValidatorAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            是否有效
+            </summary>
+            <param name="value"></param>
+            <param name="validationContext"></param>
+            <returns></returns>
+        </member>
         <member name="T:WitsWay.Utilities.Validate.Annotations.EnumRequiredAttribute">
             <summary>
-            
+            EnumRequired标签
             </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Validate.Annotations.EnumRequiredAttribute.IsValid(System.Object)">
+            <summary>
+            是否有效
+            </summary>
+            <param name="value">值</param>
+            <returns>true有效，false无效</returns>
         </member>
         <member name="T:WitsWay.Utilities.Validate.Annotations.ICustomValidator">
             <summary>

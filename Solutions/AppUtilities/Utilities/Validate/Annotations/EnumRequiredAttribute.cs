@@ -22,10 +22,15 @@ using System.ComponentModel.DataAnnotations;
 namespace WitsWay.Utilities.Validate.Annotations
 {
     /// <summary>
-    /// 
+    /// EnumRequired标签
     /// </summary>
     public class EnumRequiredAttribute : ValidationAttribute
     {
+        /// <summary>
+        /// 是否有效
+        /// </summary>
+        /// <param name="value">值</param>
+        /// <returns>true有效，false无效</returns>
         public override bool IsValid(object value)
         {
             return value != null && !"0".Equals(value.ToString());

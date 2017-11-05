@@ -102,90 +102,71 @@ namespace WitsWay.Utilities.Regexs
                 //泛形支持
                 if (proType.IsGenericType)
                 {
-                    if (proType.IsArray == false)
+                    if (proType.IsArray)
+                        throw new Exception("不支持泛形数组");
+                    if (!PropertyInfo.CanWrite)
+                        throw new Exception("该成员只读！");
+                    //如果能直接创建
+                    if (!PropertyInfo.PropertyType.IsAssignableFrom(proType))
+                        return false;
+                    try
                     {
-                        if (PropertyInfo.CanWrite)
+                        var list = Activator.CreateInstance(proType) as IList;
+                        if (list == null)
+                            return false;
+                        //获取泛形内部成员
+                        var parameters = proType.GetGenericArguments();
+
+                        if (parameters.Length != 1)
                         {
-                            //如果能直接创建
-                            if (PropertyInfo.PropertyType.IsAssignableFrom(proType))
+                            throw new Exception("无法创建多个成员泛形！");
+                        }
+                        var valueType = parameters[0];
+                        //首先判断该类型是不是可以继续匹配的类型如果是的话就继续匹配
+                        if (IsRegexMatchClass(parameters[0]))
+                        {
+                            //
+                            foreach (MSRegex.Capture c in @group.Captures)
                             {
-                                try
+                                var str = c.Value;
+                                var retObj = Activator.CreateInstance(valueType);
+                                if (RegexHelper.Match(retObj, ref str, false))
                                 {
-                                    IList list;
-                                    list = Activator.CreateInstance(proType) as IList;
-                                    //获取泛形内部成员
-                                    var parameters = proType.GetGenericArguments();
-
-                                    if (parameters.Length != 1)
-                                    {
-                                        throw new Exception("无法创建多个成员泛形！");
-                                    }
-                                    var valueType = parameters[0];
-                                    //首先判断该类型是不是可以继续匹配的类型如果是的话就继续匹配
-                                    if (IsRegexMatchClass(parameters[0]))
-                                    {
-                                        //
-                                        foreach (MSRegex.Capture c in @group.Captures)
-                                        {
-                                            var str = c.Value;
-                                            var retObj = Activator.CreateInstance(valueType);
-                                            if (RegexHelper.Match(retObj, ref str, false))
-                                            {
-
-                                                list.Add(retObj);
-                                            }
-                                        }
-                                        PropertyInfo.SetValue(matchObject, list, null);
-                                        return true;
-                                    }
-
-                                    object retObj2 = null;
-                                    //普通类型
-                                    foreach (MSRegex.Capture c in @group.Captures)
-                                    {
-                                        if (ChangeType(matchObject, c.Value, ref retObj2))
-                                        {
-                                            var obj2 = retObj2 as IList;
-                                            if (obj2 != null)
-                                            {
-                                                list = obj2;
-                                                break;
-                                            }
-                                            list.Add(retObj2);
-                                        }
-
-                                    }
-                                    PropertyInfo.SetValue(matchObject, list, null);
-                                    return true;
-                                }
-                                catch (Exception ee)
-                                {
-                                    throw new Exception("无法创建实体类", ee);
+                                    list.Add(retObj);
                                 }
                             }
+                            PropertyInfo.SetValue(matchObject, list, null);
+                            return true;
                         }
-                        else
+
+                        object retObj2 = null;
+                        //普通类型
+                        foreach (MSRegex.Capture c in @group.Captures)
                         {
-                            throw new Exception("该成员只读！");
+                            if (!ChangeType(matchObject, c.Value, ref retObj2)) continue;
+                            if (retObj2 is IList obj2)
+                            {
+                                list = obj2;
+                                break;
+                            }
+                            list.Add(retObj2);
                         }
-                    }
-                    else
-                    {
-                        throw new Exception("不支持泛形数组");
-                    }
-                }
-                else
-                {
-                    object retObj = null;
-                    var value = group.Value;
-                    //非泛形支持
-                    if (ChangeType(matchObject, value, ref retObj))
-                    {
-                        PropertyInfo.SetValue(matchObject, retObj, null);
+                        PropertyInfo.SetValue(matchObject, list, null);
                         return true;
                     }
+                    catch (Exception ee)
+                    {
+                        throw new Exception("无法创建实体类", ee);
+                    }
                 }
-
+                //非泛型支持
+                object retObj3 = null;
+                var value = @group.Value;
+                if (ChangeType(matchObject, value, ref retObj3))
+                {
+                    PropertyInfo.SetValue(matchObject, retObj3, null);
+                    return true;
+                }
             }
             catch (Exception)
             {
@@ -199,11 +180,7 @@ namespace WitsWay.Utilities.Regexs
         bool IsRegexMatchClass(Type type)
         {
             var info = RegexClassFactory.GetRegexClass(type);
-            if (info == null)
-            {
-                return false;
-            }
-            return true;
+            return info != null;
         }
 
         bool ChangeType(object setValue, string value, ref object retObj)
@@ -271,7 +248,7 @@ namespace WitsWay.Utilities.Regexs
         #endregion
 
         #region [DefaultConvertClass]
-        
+
         /// <summary>
         /// 数据转换辅助类
         /// </summary>
@@ -304,8 +281,11 @@ namespace WitsWay.Utilities.Regexs
         #endregion
 
     }
-
-    public static class HexExtends{
+    /// <summary>
+    /// 十六进制扩展
+    /// </summary>
+    public static class HexExtends
+    {
 
         /// <summary>
         /// 16进制字符串转换为Int

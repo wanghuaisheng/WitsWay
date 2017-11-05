@@ -81,7 +81,7 @@ namespace WitsWay.Utilities.Win.Helpers
         {
             tree.OptionsBehavior.Editable = false;
             tree.OptionsSelection.EnableAppearanceFocusedCell = false;
-            tree.OptionsView.ShowFocusedFrame = false;
+            tree.OptionsView.FocusRectStyle=DrawFocusRectStyle.None;
         }
 
     }

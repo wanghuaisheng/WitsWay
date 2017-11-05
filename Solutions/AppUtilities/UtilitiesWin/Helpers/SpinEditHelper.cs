@@ -30,6 +30,7 @@ namespace WitsWay.Utilities.Win.Helpers
         /// 设置SpinEdit样式
         /// </summary>
         /// <param name="spin">spin控件</param>
+        /// <param name="isFloat">是否浮点数</param>
         /// <param name="minValue">最小值</param>
         /// <param name="maxValue">最大值</param>
         public static void SetSpinEditStyle(SpinEdit spin, bool isFloat, decimal minValue = 0, decimal maxValue = 0)
@@ -51,7 +52,7 @@ namespace WitsWay.Utilities.Win.Helpers
             spin.Properties.MinValue = minValue;
             spin.Properties.MaxValue = maxValue;
             spin.Properties.IsFloatValue = true;
-            spin.Properties.Mask.EditMask = ("f" + decimalDigits);
+            spin.Properties.Mask.EditMask = (@"f" + decimalDigits);
             spin.Properties.Mask.UseMaskAsDisplayFormat = true;
         }
 

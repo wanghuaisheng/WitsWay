@@ -258,57 +258,6 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="T:WitsWay.Utilities.Win.Controls.FlyingForm">
-            <summary>
-            浮动消息层
-            </summary>
-        </member>
-        <member name="F:WitsWay.Utilities.Win.Controls.FlyingForm.IconTextSpacing">
-            <summary>
-            图标和文本之间的间距（像素）
-            </summary>
-        </member>
-        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.BasePoint">
-            <summary>
-            基准点。用于指导本窗体显示位置
-            </summary>
-        </member>
-        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.TipIcon">
-            <summary>
-            提示图标
-            </summary>
-        </member>
-        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.TipText">
-            <summary>
-            提示文本
-            </summary>
-        </member>
-        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.Delay">
-            <summary>
-            停留时长（毫秒）
-            </summary>
-        </member>
-        <member name="P:WitsWay.Utilities.Win.Controls.FlyingForm.Floating">
-            <summary>
-            是否允许浮动
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.Controls.FlyingForm.GetPaddedRectangle">
-            <summary>
-            获取刨去Padding的内容区
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Win.Controls.FlyingForm.Fly(System.Drawing.Point,System.Drawing.Point,System.Drawing.Size,System.Drawing.Size,System.Drawing.Image,System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="sourcePoint"></param>
-            <param name="targetPoint"></param>
-            <param name="sourceSize"></param>
-            <param name="targetSize"></param>
-            <param name="image"></param>
-            <param name="speed"></param>
-        </member>
         <member name="T:WitsWay.Utilities.Win.Controls.GlassButton">
             <summary>
             ͸����ť
@@ -2611,6 +2560,7 @@
             设置SpinEdit样式
             </summary>
             <param name="spin">spin控件</param>
+            <param name="isFloat">是否浮点数</param>
             <param name="minValue">最小值</param>
             <param name="maxValue">最大值</param>
         </member>
@@ -2744,7 +2694,6 @@
             <summary>
             设置选中项
             </summary>
-            <typeparam name="T">类型</typeparam>
             <param name="ctr">控件</param>
             <param name="key">数据键</param>
         </member>
@@ -4166,6 +4115,14 @@
             <summary>
             跨域Handler
             </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Functions.CrossDomainHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            异步发送消息
+            </summary>
+            <param name="request"><see cref="T:System.Net.Http.HttpRequestMessage"/>请求消息</param>
+            <param name="cancellationToken">取消令牌</param>
+            <returns>响应消息</returns>
         </member>
         <member name="T:WitsWay.Utilities.Win.ICheckable">
             <summary>
