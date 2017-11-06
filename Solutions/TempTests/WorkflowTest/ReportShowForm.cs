@@ -23,24 +23,44 @@ namespace WitsWay.TempTests.WorkflowTest
 
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void SimpleButton1_Click(object sender, EventArgs e)
         {
             TestForm tst = new TestForm();
             tst.ShowDialog(this);
         }
 
-        private void simpleButton2_Click(object sender, EventArgs e)
+        private void SimpleButton2_Click(object sender, EventArgs e)
         {
-            ImportConfig config = new ImportConfig();
-            config.Key = Guid.NewGuid().ToString();
-            config.ColumnConfig = new List<DataColumnConfig>()
+            ImportConfig config = new ImportConfig
             {
-                new DataColumnConfig(){ColumnKey=1,ColumnName = "门店录入1",ColumnTag=ColumnTag.BarCode,Passed=true},
-                new DataColumnConfig(){ColumnKey=2,ColumnName = "门店录入2",ColumnTag=ColumnTag.BarCode,Passed=true},
-                new DataColumnConfig(){ColumnKey=3,ColumnName = "门店录入3",ColumnTag=ColumnTag.BarCode,Passed=true},
+                Key = Guid.NewGuid().ToString(),
+                ColumnConfig = new List<DataColumnConfig>()
+                {
+                    new DataColumnConfig()
+                    {
+                        ColumnKey = 1,
+                        ColumnName = "门店录入1",
+                        ColumnTag = ColumnTag.BarCode,
+                        Passed = true
+                    },
+                    new DataColumnConfig()
+                    {
+                        ColumnKey = 2,
+                        ColumnName = "门店录入2",
+                        ColumnTag = ColumnTag.BarCode,
+                        Passed = true
+                    },
+                    new DataColumnConfig()
+                    {
+                        ColumnKey = 3,
+                        ColumnName = "门店录入3",
+                        ColumnTag = ColumnTag.BarCode,
+                        Passed = true
+                    },
+                },
+                Name = "工作流表单",
+                ReportContent = null
             };
-            config.Name = "工作流表单";
-            config.ReportContent = null;
 
             var ds = new DisplayDataSet("数据源");
             var dt = ds.Tables.Add();
@@ -69,8 +89,7 @@ namespace WitsWay.TempTests.WorkflowTest
                 XtraMessageBox.Show("报表模板未设置。");
                 return;
             }
-            var report = new XtraReport();
-            report.DisplayName = "Report";
+            var report = new XtraReport {DisplayName = "Report"};
 
             try
             {
@@ -108,18 +127,38 @@ namespace WitsWay.TempTests.WorkflowTest
             return typeof(string);
         }
 
-        private void simpleButton3_Click(object sender, EventArgs e)
+        private void SimpleButton3_Click(object sender, EventArgs e)
         {
-            ImportConfig config = new ImportConfig();
-            config.Key = Guid.NewGuid().ToString();
-            config.ColumnConfig = new List<DataColumnConfig>()
+            ImportConfig config = new ImportConfig
             {
-                new DataColumnConfig(){ColumnKey=1,ColumnName = "门店录入1",ColumnTag=ColumnTag.Material,Passed=true},
-                new DataColumnConfig(){ColumnKey=2,ColumnName = "门店录入2",ColumnTag=ColumnTag.Material,Passed=true},
-                new DataColumnConfig(){ColumnKey=3,ColumnName = "门店录入3",ColumnTag=ColumnTag.Material,Passed=true},
+                Key = Guid.NewGuid().ToString(),
+                ColumnConfig = new List<DataColumnConfig>()
+                {
+                    new DataColumnConfig()
+                    {
+                        ColumnKey = 1,
+                        ColumnName = "门店录入1",
+                        ColumnTag = ColumnTag.Material,
+                        Passed = true
+                    },
+                    new DataColumnConfig()
+                    {
+                        ColumnKey = 2,
+                        ColumnName = "门店录入2",
+                        ColumnTag = ColumnTag.Material,
+                        Passed = true
+                    },
+                    new DataColumnConfig()
+                    {
+                        ColumnKey = 3,
+                        ColumnName = "门店录入3",
+                        ColumnTag = ColumnTag.Material,
+                        Passed = true
+                    },
+                },
+                Name = "工作流表单",
+                ReportContent = null
             };
-            config.Name = "工作流表单";
-            config.ReportContent = null;
 
             var ds = new DisplayDataSet("数据源");
             var dt = ds.Tables.Add();
@@ -142,7 +181,7 @@ namespace WitsWay.TempTests.WorkflowTest
         }
 
     }
-
+    
     /// <summary>
     /// 导入配置
     /// </summary>

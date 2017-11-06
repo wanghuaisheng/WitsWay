@@ -24,7 +24,6 @@ namespace TestPostPay
     {
         #region 字段
         private string _partner = "";               //合作身份者ID
-        private string _key = "";                   //商户的私钥
         private string _charset = "";         //编码格式
         private string _sign_type = "";             //签名方式
 

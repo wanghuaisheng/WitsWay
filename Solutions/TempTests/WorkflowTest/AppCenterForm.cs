@@ -52,17 +52,17 @@ namespace WitsWay.TempTests.WorkflowTest
             Process.Start("iexplore", @"http://deberp.com");
         }
 
-        private void memoEdit2_EditValueChanged(object sender, EventArgs e)
+        private void MemoEdit2_EditValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void SimpleButton1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void navBarControl1_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e)
+        private void NavBarControl1_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e)
         {
             if (e.Group == navBarGroup3) this.Width = 600;
             else this.Width = 300;

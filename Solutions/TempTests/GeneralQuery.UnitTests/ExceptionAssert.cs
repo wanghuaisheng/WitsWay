@@ -18,15 +18,15 @@ namespace WitsWay.TempTests.GeneralQuery.UnitTests
             {
                 exceptionThrown = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-
+                // ignored
             }
             if (!exceptionThrown)
             {
                 throw new Exception(
-                    string.Format("An exception of type {0} was expected, but not thrown", typeof(T))
-                    );
+                    $"An exception of type {typeof(T)} was expected, but not thrown"
+                );
             }
         }
     }

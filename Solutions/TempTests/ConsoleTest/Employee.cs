@@ -68,10 +68,7 @@ namespace WitsWay.TempTests.ConsoleTest
         /// <summary>
         /// 键【IKey实现】
         /// </summary>
-        public string Key
-        {
-            get { return EmployeeId.ToString(); }
-        }
+        public string Key => EmployeeId.ToString();
 
         ///// <summary>
         ///// 拥有公司Id

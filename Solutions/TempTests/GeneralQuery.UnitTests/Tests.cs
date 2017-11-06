@@ -1012,7 +1012,7 @@ namespace WitsWay.TempTests.GeneralQuery.UnitTests
             Assert.IsTrue(contentTypeIdFilterList.Count == 0);
             Assert.IsTrue(
                 contentTypeIdFilterList.Select(p => p.ContentTypeId)
-                    .All(p => p == null));
+                    .All(p => false));
 
         }
 
@@ -1070,7 +1070,7 @@ namespace WitsWay.TempTests.GeneralQuery.UnitTests
             Assert.IsTrue(contentTypeIdFilterList.Count == 4);
             Assert.IsTrue(
                 contentTypeIdFilterList.Select(p => p.ContentTypeId)
-                    .All(p => p != null));
+                    .All(p => true));
 
         }
 
@@ -3222,7 +3222,7 @@ namespace WitsWay.TempTests.GeneralQuery.UnitTests
             public DateTime? FavoriteBirthday { get; set; }
             public double DollarsInWallet { get; set; }
             public double? DesiredDollarsInWallet { get; set; }
-            public string camelCaseField { get; set; }
+            public string CamelCaseField { get; set; }
             [IgnoreDataMember]
             public int IgnoreField { get; set; }
         }

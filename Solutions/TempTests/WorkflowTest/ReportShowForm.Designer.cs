@@ -275,7 +275,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(75, 23);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "simpleButton1";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton1.Click += new System.EventHandler(this.SimpleButton1_Click);
             // 
             // simpleButton2
             // 
@@ -284,7 +284,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(75, 23);
             this.simpleButton2.TabIndex = 1;
             this.simpleButton2.Text = "simpleButton2";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            this.simpleButton2.Click += new System.EventHandler(this.SimpleButton2_Click);
             // 
             // documentViewer1
             // 
@@ -1565,7 +1565,7 @@
             this.simpleButton3.Size = new System.Drawing.Size(100, 23);
             this.simpleButton3.TabIndex = 6;
             this.simpleButton3.Text = "simpleButton3";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            this.simpleButton3.Click += new System.EventHandler(this.SimpleButton3_Click);
             // 
             // textEdit7
             // 

@@ -22,10 +22,12 @@
         /// 工作流类型
         /// </summary>
         public int WorkflowKind { get; set; }
+        
         /// <summary>
         /// 创建者
         /// </summary>
         public string Creator { get; set; }
+        
         /// <summary>
         /// 操作人
         /// </summary>

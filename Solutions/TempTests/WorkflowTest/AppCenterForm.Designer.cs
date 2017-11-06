@@ -108,7 +108,7 @@
             this.navBarControl1.StoreDefaultPaintStyleName = true;
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "登录";
-            this.navBarControl1.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl1_ActiveGroupChanged);
+            this.navBarControl1.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.NavBarControl1_ActiveGroupChanged);
             // 
             // navBarGroup2
             // 
@@ -136,7 +136,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(75, 23);
             this.simpleButton1.TabIndex = 1;
             this.simpleButton1.Text = "simpleButton1";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton1.Click += new System.EventHandler(this.SimpleButton1_Click);
             // 
             // textEdit1
             // 
@@ -230,7 +230,7 @@
             this.memoEdit2.Size = new System.Drawing.Size(176, 392);
             this.memoEdit2.TabIndex = 0;
             this.memoEdit2.UseOptimizedRendering = true;
-            this.memoEdit2.EditValueChanged += new System.EventHandler(this.memoEdit2_EditValueChanged);
+            this.memoEdit2.EditValueChanged += new System.EventHandler(this.MemoEdit2_EditValueChanged);
             // 
             // navBarGroup1
             // 
