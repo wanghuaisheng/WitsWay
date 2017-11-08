@@ -1,3 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 using System.Collections;
 using System.Reflection;
@@ -7,11 +26,11 @@ namespace WitsWay.Utilities.Regexs
 {
 
     /// <summary>
-    /// Òª½âÎöµÄÊôĞÔ
-    /// ÌØĞÔ±êÊ¾
+    /// è¦è§£æçš„å±æ€§
+    /// ç‰¹æ€§æ ‡ç¤º
     /// <remarks>
-    /// Ã¿¸öRegexClassInfoÖĞ´æ´¢ÁËParseClassAttributeºÍParsePropertyAttribute×Öµä
-    /// ¸ÃÀà¸ºÔğÊôĞÔµÄ¸³Öµ£¬¹ÊÒ»¸öRegexClassInfoÊµÀı»¯Ê±»á¶à´ÎÊµÀı»¯±¾Àà
+    /// æ¯ä¸ªRegexClassInfoä¸­å­˜å‚¨äº†ParseClassAttributeå’ŒParsePropertyAttributeå­—å…¸
+    /// è¯¥ç±»è´Ÿè´£å±æ€§çš„èµ‹å€¼ï¼Œæ•…ä¸€ä¸ªRegexClassInfoå®ä¾‹åŒ–æ—¶ä¼šå¤šæ¬¡å®ä¾‹åŒ–æœ¬ç±»
     /// </remarks>
     /// </summary>
     [AttributeUsage(AttributeTargets.Property)]
@@ -20,30 +39,30 @@ namespace WitsWay.Utilities.Regexs
 
         #region [Field]
         ///// <summary>
-        /////ÈÕÖ¾
+        /////æ—¥å¿—
         ///// </summary>
         /// <summary>
-        /// Ä¬ÈÏ×ª»»º¯ÊıÀà£¬Ä¬ÈÏÎªDataConverHelper
+        /// é»˜è®¤è½¬æ¢å‡½æ•°ç±»ï¼Œé»˜è®¤ä¸ºDataConverHelper
         /// </summary>
         private readonly Type _converHelperClass = typeof(DefaultDataConverHelper);
 
-        // ×ª»»º¯ÊıÃû
+        // è½¬æ¢å‡½æ•°å
         private readonly string _converFun;
-        // ×éÃû
+        // ç»„å
         /// <summary>
-        /// Æ¥Åä×éÃû
+        /// åŒ¹é…ç»„å
         /// </summary>
         public string RegexGroupName { get; }
 
         /// <summary>
-        /// ÊôĞÔĞÅÏ¢
+        /// å±æ€§ä¿¡æ¯
         /// </summary>
         public PropertyInfo PropertyInfo { get; set; }
 
         private MethodInfo _converMethod;
 
         /// <summary>
-        /// ×ª»»¸¨ÖúÀà 
+        /// è½¬æ¢è¾…åŠ©ç±» 
         /// </summary>
         public Type CreateType { get; private set; }
 
@@ -52,18 +71,18 @@ namespace WitsWay.Utilities.Regexs
         #region [Construction]
 
         /// <summary>
-        /// ÊôĞÔÆ¥ÅäÉèÖÃ
+        /// å±æ€§åŒ¹é…è®¾ç½®
         /// </summary>
-        /// <param name="groupName">ÕıÔò±í´ïÊ½ÖĞµÄGroupName</param>
+        /// <param name="groupName">æ­£åˆ™è¡¨è¾¾å¼ä¸­çš„GroupName</param>
         public ParsePropertyAttribute(string groupName)
         {
             RegexGroupName = groupName;
         }
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="groupName">Æ¥Åä×éÃû</param>
-        /// <param name="converFun">×ª»»º¯ÊıÃû</param>
+        /// <param name="groupName">åŒ¹é…ç»„å</param>
+        /// <param name="converFun">è½¬æ¢å‡½æ•°å</param>
         public ParsePropertyAttribute(string groupName, string converFun)
         {
             RegexGroupName = groupName;
@@ -71,11 +90,11 @@ namespace WitsWay.Utilities.Regexs
         }
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="groupName">Æ¥Åä×éÃû</param>
-        /// <param name="converClass">ÓÃÓÚ×ª»»µÄÀà</param>
-        /// <param name="converFun">×ª»»º¯Êı</param>
+        /// <param name="groupName">åŒ¹é…ç»„å</param>
+        /// <param name="converClass">ç”¨äºè½¬æ¢çš„ç±»</param>
+        /// <param name="converFun">è½¬æ¢å‡½æ•°</param>
         public ParsePropertyAttribute(string groupName, Type converClass, string converFun)
         {
             RegexGroupName = groupName;
@@ -89,98 +108,121 @@ namespace WitsWay.Utilities.Regexs
         #region [SetPropertyValue]
 
         /// <summary>
-        /// ÉèÖÃÊôĞÔµÄÖµ
+        /// è®¾ç½®å±æ€§çš„å€¼
         /// </summary>
         /// <param name="matchObject"></param>
         /// <param name="group"></param>
-        /// <returns>ÉèÖÃ³É¹¦·µ»Øtrue</returns>
+        /// <returns>è®¾ç½®æˆåŠŸè¿”å›true</returns>
         internal bool SetPropertyValue(object matchObject, MSRegex.Group group)
         {
             try
             {
                 var proType = PropertyInfo.PropertyType;
-                //·ºĞÎÖ§³Ö
+                //æ³›å½¢æ”¯æŒ
                 if (proType.IsGenericType)
                 {
-                    if (proType.IsArray)
-                        throw new Exception("²»Ö§³Ö·ºĞÎÊı×é");
-                    if (!PropertyInfo.CanWrite)
-                        throw new Exception("¸Ã³ÉÔ±Ö»¶Á£¡");
-                    //Èç¹ûÄÜÖ±½Ó´´½¨
-                    if (!PropertyInfo.PropertyType.IsAssignableFrom(proType))
-                        return false;
-                    try
+                    if (proType.IsArray == false)
                     {
-                        var list = Activator.CreateInstance(proType) as IList;
-                        if (list == null)
-                            return false;
-                        //»ñÈ¡·ºĞÎÄÚ²¿³ÉÔ±
-                        var parameters = proType.GetGenericArguments();
-
-                        if (parameters.Length != 1)
+                        if (PropertyInfo.CanWrite)
                         {
-                            throw new Exception("ÎŞ·¨´´½¨¶à¸ö³ÉÔ±·ºĞÎ£¡");
-                        }
-                        var valueType = parameters[0];
-                        //Ê×ÏÈÅĞ¶Ï¸ÃÀàĞÍÊÇ²»ÊÇ¿ÉÒÔ¼ÌĞøÆ¥ÅäµÄÀàĞÍÈç¹ûÊÇµÄ»°¾Í¼ÌĞøÆ¥Åä
-                        if (IsRegexMatchClass(parameters[0]))
-                        {
-                            //
-                            foreach (MSRegex.Capture c in @group.Captures)
+                            //å¦‚æœèƒ½ç›´æ¥åˆ›å»º
+                            if (PropertyInfo.PropertyType.IsAssignableFrom(proType))
                             {
-                                var str = c.Value;
-                                var retObj = Activator.CreateInstance(valueType);
-                                if (RegexHelper.Match(retObj, ref str, false))
+                                try
                                 {
-                                    list.Add(retObj);
+                                    IList list;
+                                    list = Activator.CreateInstance(proType) as IList;
+                                    //è·å–æ³›å½¢å†…éƒ¨æˆå‘˜
+                                    var parameters = proType.GetGenericArguments();
+
+                                    if (parameters.Length != 1)
+                                    {
+                                        throw new Exception("æ— æ³•åˆ›å»ºå¤šä¸ªæˆå‘˜æ³›å½¢ï¼");
+                                    }
+                                    var valueType = parameters[0];
+                                    //é¦–å…ˆåˆ¤æ–­è¯¥ç±»å‹æ˜¯ä¸æ˜¯å¯ä»¥ç»§ç»­åŒ¹é…çš„ç±»å‹å¦‚æœæ˜¯çš„è¯å°±ç»§ç»­åŒ¹é…
+                                    if (IsRegexMatchClass(parameters[0]))
+                                    {
+                                        //
+                                        foreach (MSRegex.Capture c in @group.Captures)
+                                        {
+                                            var str = c.Value;
+                                            var retObj = Activator.CreateInstance(valueType);
+                                            if (RegexHelper.Match(retObj, ref str, false))
+                                            {
+
+                                                list.Add(retObj);
+                                            }
+                                        }
+                                        PropertyInfo.SetValue(matchObject, list, null);
+                                        return true;
+                                    }
+
+                                    object retObj2 = null;
+                                    //æ™®é€šç±»å‹
+                                    foreach (MSRegex.Capture c in @group.Captures)
+                                    {
+                                        if (ChangeType(matchObject, c.Value, ref retObj2))
+                                        {
+                                            var obj2 = retObj2 as IList;
+                                            if (obj2 != null)
+                                            {
+                                                list = obj2;
+                                                break;
+                                            }
+                                            list.Add(retObj2);
+                                        }
+
+                                    }
+                                    PropertyInfo.SetValue(matchObject, list, null);
+                                    return true;
+                                }
+                                catch (Exception ee)
+                                {
+                                    throw new Exception("æ— æ³•åˆ›å»ºå®ä½“ç±»", ee);
                                 }
                             }
-                            PropertyInfo.SetValue(matchObject, list, null);
-                            return true;
                         }
-
-                        object retObj2 = null;
-                        //ÆÕÍ¨ÀàĞÍ
-                        foreach (MSRegex.Capture c in @group.Captures)
+                        else
                         {
-                            if (!ChangeType(matchObject, c.Value, ref retObj2)) continue;
-                            if (retObj2 is IList obj2)
-                            {
-                                list = obj2;
-                                break;
-                            }
-                            list.Add(retObj2);
+                            throw new Exception("è¯¥æˆå‘˜åªè¯»ï¼");
                         }
-                        PropertyInfo.SetValue(matchObject, list, null);
+                    }
+                    else
+                    {
+                        throw new Exception("ä¸æ”¯æŒæ³›å½¢æ•°ç»„");
+                    }
+                }
+                else
+                {
+                    object retObj = null;
+                    var value = group.Value;
+                    //éæ³›å½¢æ”¯æŒ
+                    if (ChangeType(matchObject, value, ref retObj))
+                    {
+                        PropertyInfo.SetValue(matchObject, retObj, null);
                         return true;
                     }
-                    catch (Exception ee)
-                    {
-                        throw new Exception("ÎŞ·¨´´½¨ÊµÌåÀà", ee);
-                    }
                 }
-                //·Ç·ºĞÍÖ§³Ö
-                object retObj3 = null;
-                var value = @group.Value;
-                if (ChangeType(matchObject, value, ref retObj3))
-                {
-                    PropertyInfo.SetValue(matchObject, retObj3, null);
-                    return true;
-                }
+
             }
             catch (Exception)
             {
-                throw new Exception("ÕıÔò½âÎö´íÎó");
+                throw new Exception("æ­£åˆ™è§£æé”™è¯¯");
             }
             return false;
         }
         /// <summary>
-        /// ÅĞ¶ÏÊÇ²»ÊÇ°üº¬ÕıÔò±í´ïÊ½µÄÀà
+        /// åˆ¤æ–­æ˜¯ä¸æ˜¯åŒ…å«æ­£åˆ™è¡¨è¾¾å¼çš„ç±»
         /// </summary>
         bool IsRegexMatchClass(Type type)
         {
             var info = RegexClassFactory.GetRegexClass(type);
-            return info != null;
+            if (info == null)
+            {
+                return false;
+            }
+            return true;
         }
 
         bool ChangeType(object setValue, string value, ref object retObj)
@@ -188,7 +230,7 @@ namespace WitsWay.Utilities.Regexs
 
             if (string.IsNullOrEmpty(_converFun))
             {
-                //Ã»ÓĞ×Ô¼º¶¨Òå×ª»»º¯Êı
+                //æ²¡æœ‰è‡ªå·±å®šä¹‰è½¬æ¢å‡½æ•°
                 if (CreateType == null)
                 {
                     CreateType = PropertyInfo.PropertyType;
@@ -196,10 +238,10 @@ namespace WitsWay.Utilities.Regexs
                 retObj = Convert.ChangeType(value, CreateType, null);
                 return true;
             }
-            //×Ô¼º¶¨ÒåÁË×ª»»º¯Êı
+            //è‡ªå·±å®šä¹‰äº†è½¬æ¢å‡½æ•°
             if (_converMethod == null)
             {
-                //½¨Á¢×ª»¯º¯Êı¹¤³§
+                //å»ºç«‹è½¬åŒ–å‡½æ•°å·¥å‚
                 var type = setValue.GetType();
                 while (_converMethod == null)
                 {
@@ -212,7 +254,7 @@ namespace WitsWay.Utilities.Regexs
                 }
                 if (_converMethod == null)
                 {
-                    //»ñÈ¡±ê×¼Êı¾İ×ª»»º¯Êı
+                    //è·å–æ ‡å‡†æ•°æ®è½¬æ¢å‡½æ•°
                     if (_converHelperClass != null)
                     {
                         var tempType = _converHelperClass;
@@ -238,11 +280,11 @@ namespace WitsWay.Utilities.Regexs
                 }
                 catch (Exception e1)
                 {
-                    throw new Exception("ÕıÔò±í´ïÊ½·ÖÎöÊı¾İ×ª»»Òì³£", e1);
+                    throw new Exception("æ­£åˆ™è¡¨è¾¾å¼åˆ†ææ•°æ®è½¬æ¢å¼‚å¸¸", e1);
 
                 }
             }
-            throw new Exception($"Î´ÕÒµ½Ö¸¶¨µÄ×ª»»º¯Êı{_converFun}");
+            throw new Exception($"æœªæ‰¾åˆ°æŒ‡å®šçš„è½¬æ¢å‡½æ•°{_converFun}");
         }
 
         #endregion
@@ -250,12 +292,12 @@ namespace WitsWay.Utilities.Regexs
         #region [DefaultConvertClass]
 
         /// <summary>
-        /// Êı¾İ×ª»»¸¨ÖúÀà
+        /// æ•°æ®è½¬æ¢è¾…åŠ©ç±»
         /// </summary>
         private static class DefaultDataConverHelper
         {
             /// <summary>
-            /// ´Ó×Ö·û´®×ª»»µ½IntÀàĞÍ
+            /// ä»å­—ç¬¦ä¸²è½¬æ¢åˆ°Intç±»å‹
             /// </summary>
             public static int StringToHexInt(string value)
             {
@@ -268,10 +310,10 @@ namespace WitsWay.Utilities.Regexs
         #region [Deleted]
 
         ///// <summary>
-        ///// ÊôĞÔÆ¥ÅäÉèÖÃ
+        ///// å±æ€§åŒ¹é…è®¾ç½®
         ///// </summary>
-        ///// <param name="groupName">ÕıÔò±í´ïÊ½ÖĞµÄGroupName</param>
-        ///// <param name="createType">Éè¶¨´´½¨µÄÀàĞÍÊıÖµ</param>
+        ///// <param name="groupName">æ­£åˆ™è¡¨è¾¾å¼ä¸­çš„GroupName</param>
+        ///// <param name="createType">è®¾å®šåˆ›å»ºçš„ç±»å‹æ•°å€¼</param>
         //public ParsePropertyAttribute(string groupName, Type createType)
         //{
         //    _groupName = groupName;
@@ -281,14 +323,12 @@ namespace WitsWay.Utilities.Regexs
         #endregion
 
     }
-    /// <summary>
-    /// Ê®Áù½øÖÆÀ©Õ¹
-    /// </summary>
+
     public static class HexExtends
     {
 
         /// <summary>
-        /// 16½øÖÆ×Ö·û´®×ª»»ÎªInt
+        /// 16è¿›åˆ¶å­—ç¬¦ä¸²è½¬æ¢ä¸ºInt
         /// </summary>
         public static int HexToInt(this string hex)
         {

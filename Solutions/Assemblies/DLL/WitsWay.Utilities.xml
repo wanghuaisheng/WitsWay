@@ -6713,11 +6713,6 @@
             从字符串转换到Int类型
             </summary>
         </member>
-        <member name="T:WitsWay.Utilities.Regexs.HexExtends">
-            <summary>
-            十六进制扩展
-            </summary>
-        </member>
         <member name="M:WitsWay.Utilities.Regexs.HexExtends.HexToInt(System.String)">
             <summary>
             16进制字符串转换为Int

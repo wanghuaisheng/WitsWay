@@ -1,12 +1,31 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System.Collections.Generic;
 using MSRegex = System.Text.RegularExpressions;
 
 namespace WitsWay.Utilities.Regexs
 {
     /// <summary>
-    /// ÕıÔòÆ¥ÅäÀàĞÅÏ¢
+    /// æ­£åˆ™åŒ¹é…ç±»ä¿¡æ¯
     /// <remarks>
-    /// ÓÃÓÚ´æ´¢Ê¹ÓÃÁËParseClassAttributeµÄÀàµÄĞÅÏ¢
+    /// ç”¨äºå­˜å‚¨ä½¿ç”¨äº†ParseClassAttributeçš„ç±»çš„ä¿¡æ¯
     /// </remarks>
     /// </summary>
     public class RegexClassInfo
@@ -15,26 +34,26 @@ namespace WitsWay.Utilities.Regexs
         #region [Property]
 
         /// <summary>
-        /// Ğ­Òé½âÎöÌØĞÔ
+        /// åè®®è§£æç‰¹æ€§
         /// </summary>
         public ParseClassAttribute CustomClassInfo { get; set; }
 
         private IDictionary<string, ParsePropertyAttribute> _parsePropertyMap;
         /// <summary>
-        /// Òª½âÎöµÄËùÓĞÊôĞÔ×Öµä
-        /// key:ÊôĞÔµÄÃû³Æ
-        /// value:ÊôĞÔµÄ×Ô¶¨ÒåÌØĞÔParsePropertyAttribute
+        /// è¦è§£æçš„æ‰€æœ‰å±æ€§å­—å…¸
+        /// key:å±æ€§çš„åç§°
+        /// value:å±æ€§çš„è‡ªå®šä¹‰ç‰¹æ€§ParsePropertyAttribute
         /// </summary>
         public IDictionary<string, ParsePropertyAttribute> PropertyMap => 
             _parsePropertyMap ?? (_parsePropertyMap = new Dictionary<string, ParsePropertyAttribute>());
 
         /// <summary>
-        /// ¸øSystem.Text.RegularExpressions.RegexÈ¡±ğÃû
+        /// ç»™System.Text.RegularExpressions.Regexå–åˆ«å
         /// </summary>
         public MSRegex.Regex RegexInfo { get; private set; }
 
         /// <summary>
-        /// ÕıÔòÆ¥Åä×Ö·û´®
+        /// æ­£åˆ™åŒ¹é…å­—ç¬¦ä¸²
         /// </summary>
         public string RegexPattern { get; set; }
 
@@ -42,8 +61,8 @@ namespace WitsWay.Utilities.Regexs
 
         #region [Public Method]
         /// <summary>
-        /// ÅĞ¶ÏÊÇ·ñÊ±Ğ­Òé½âÎöÀà
-        /// [ÊÇ·ñÓĞÌØĞÔÍ·][ĞèÒª½âÎöµÄÊôĞÔ´óÓÚÁã]
+        /// åˆ¤æ–­æ˜¯å¦æ—¶åè®®è§£æç±»
+        /// [æ˜¯å¦æœ‰ç‰¹æ€§å¤´][éœ€è¦è§£æçš„å±æ€§å¤§äºé›¶]
         /// </summary>
         /// <returns></returns>
         public bool Available()
@@ -53,9 +72,9 @@ namespace WitsWay.Utilities.Regexs
         }
 
         /// <summary>
-        /// ´´½¨MSÕıÔòRegexÀà
+        /// åˆ›å»ºMSæ­£åˆ™Regexç±»
         /// </summary>
-        /// <param name="pattern">ÕıÔòÆ¥Åä×Ö·û´®</param>
+        /// <param name="pattern">æ­£åˆ™åŒ¹é…å­—ç¬¦ä¸²</param>
         public void CreateRegex(string pattern)
         {
             var option =
@@ -72,11 +91,11 @@ namespace WitsWay.Utilities.Regexs
 
 
         /// <summary>
-        /// ÉèÖÃÆ¥ÅäÖµ
+        /// è®¾ç½®åŒ¹é…å€¼
         /// </summary>
-        /// <param name="processStr">Òª´¦ÀíµÄ×Ö·û´®</param>
-        /// <param name="setObject">ÒªÉèÖÃÖµµÄ¶ÔÏó</param>
-        /// <param name="deleteMatchString">ÊÇ·ñÉ¾³ıÆ¥ÅäµÄ×Ö·û</param>
+        /// <param name="processStr">è¦å¤„ç†çš„å­—ç¬¦ä¸²</param>
+        /// <param name="setObject">è¦è®¾ç½®å€¼çš„å¯¹è±¡</param>
+        /// <param name="deleteMatchString">æ˜¯å¦åˆ é™¤åŒ¹é…çš„å­—ç¬¦</param>
         /// <returns></returns>
         internal bool SetPropertyValue(ref string processStr, object setObject, bool deleteMatchString)
         {
@@ -98,19 +117,19 @@ namespace WitsWay.Utilities.Regexs
         }
 
         /// <summary>
-        /// Æ¥Åä
+        /// åŒ¹é…
         /// </summary>
-        /// <param name="processStr">ÒªÆ¥ÅäµÄ×Ö·û´®</param>
+        /// <param name="processStr">è¦åŒ¹é…çš„å­—ç¬¦ä¸²</param>
         /// <returns></returns>
         internal MSRegex.Match Match(string processStr)
         {
             return RegexInfo.Match(processStr);
         }
         /// <summary>
-        /// Æ¥Åä²¢ÉèÖÃÖµ
+        /// åŒ¹é…å¹¶è®¾ç½®å€¼
         /// </summary>
-        /// <param name="matchObject">ÒªÆ¥ÅäµÄ¶ÔÏó</param>
-        /// <param name="name">ÊôĞÔÃû³Æ</param>
+        /// <param name="matchObject">è¦åŒ¹é…çš„å¯¹è±¡</param>
+        /// <param name="name">å±æ€§åç§°</param>
         /// <param name="group"></param>
         /// <returns></returns>
         internal bool SetValue(object matchObject, string name, MSRegex.Group group)

@@ -1,16 +1,35 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System.Collections.Generic;
 using MSRegex = System.Text.RegularExpressions;
 
 namespace WitsWay.Utilities.Regexs
 {
     /// <summary>
-    /// ÎªĞ­Òé½âÎöÌá¹©ÕıÔòÆ¥ÅäµÄÈë¿Ú
-    /// Íê³ÉÆ¥Åä×Ö·û´®²¢Éú³É¶ÔÏó
+    /// ä¸ºåè®®è§£ææä¾›æ­£åˆ™åŒ¹é…çš„å…¥å£
+    /// å®ŒæˆåŒ¹é…å­—ç¬¦ä¸²å¹¶ç”Ÿæˆå¯¹è±¡
     /// </summary>
     public class RegexHelper
     {
         /// <summary>
-        /// ·ºĞÍÆ¥Åä
+        /// æ³›å‹åŒ¹é…
         /// </summary>
         public static T Match<T>(ref string processStr, bool delMatchStr) where T : new() 
         {
@@ -19,9 +38,9 @@ namespace WitsWay.Utilities.Regexs
         }
 
         /// <summary>
-        /// Æ¥ÅäÖ¸¶¨µÄÀà
+        /// åŒ¹é…æŒ‡å®šçš„ç±»
         /// </summary>
-        /// <param name="matchObject">Æ¥ÅäºóÉú³ÉµÄ½á¹û¶ÔÏó</param>
+        /// <param name="matchObject">åŒ¹é…åç”Ÿæˆçš„ç»“æœå¯¹è±¡</param>
         /// <param name="processStr"></param>
         /// <param name="delMatchStr"></param>
         /// <returns></returns>
@@ -32,12 +51,12 @@ namespace WitsWay.Utilities.Regexs
         }
 
         /// <summary>
-        /// Æ¥Åä¶à¸ö¶ÔÏó
+        /// åŒ¹é…å¤šä¸ªå¯¹è±¡
         /// </summary>
-        /// <typeparam name="T">Æ¥ÅäÀàĞÍ</typeparam>
-        /// <param name="processStr">´¦Àí×Ö·û´®</param>
-        /// <param name="delMatchStr">ÊÇ·ñÉ¾³ıÒÑ¾­Æ¥ÅäµÄ×Ö·û´®</param>
-        /// <returns>·µ»ØÆ¥ÅäµÄ¶ÔÏóÁĞ±í</returns>
+        /// <typeparam name="T">åŒ¹é…ç±»å‹</typeparam>
+        /// <param name="processStr">å¤„ç†å­—ç¬¦ä¸²</param>
+        /// <param name="delMatchStr">æ˜¯å¦åˆ é™¤å·²ç»åŒ¹é…çš„å­—ç¬¦ä¸²</param>
+        /// <returns>è¿”å›åŒ¹é…çš„å¯¹è±¡åˆ—è¡¨</returns>
         public static IList<T> MatchList<T>(ref string processStr, bool delMatchStr) where T : new()
         {
             var temValue = processStr;
@@ -60,7 +79,7 @@ namespace WitsWay.Utilities.Regexs
         }
 
         /// <summary>
-        /// »ñÈ¡ÕıÔò±í´ïÊ½
+        /// è·å–æ­£åˆ™è¡¨è¾¾å¼
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>

@@ -2694,6 +2694,7 @@
             <summary>
             设置选中项
             </summary>
+            <typeparam name="T">类型</typeparam>
             <param name="ctr">控件</param>
             <param name="key">数据键</param>
         </member>

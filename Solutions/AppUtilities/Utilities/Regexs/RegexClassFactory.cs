@@ -1,3 +1,22 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -5,19 +24,19 @@ using System.Reflection;
 namespace WitsWay.Utilities.Regexs
 {
     /// <summary>
-    /// Éú³ÉÕıÔòÀàµÄ¹¤³§
+    /// ç”Ÿæˆæ­£åˆ™ç±»çš„å·¥å‚
     /// <remarks>
-    /// Í¨¹ı´«ÈëµÄTypeÉú³ÉÕıÔòÀà
+    /// é€šè¿‡ä¼ å…¥çš„Typeç”Ÿæˆæ­£åˆ™ç±»
     /// </remarks>
     /// </summary>
     public static class RegexClassFactory
     {
         /// <summary>
-        /// ÓÃÓÚ´æ·ÅÒÑ¾­Æ¥Åä¹ıµÄÕıÔòÀà
+        /// ç”¨äºå­˜æ”¾å·²ç»åŒ¹é…è¿‡çš„æ­£åˆ™ç±»
         /// </summary>
         private static readonly Dictionary<Type, RegexClassInfo> TypeDic = new Dictionary<Type, RegexClassInfo>();
         /// <summary>
-        /// È¡µÃÕıÔòÀà
+        /// å–å¾—æ­£åˆ™ç±»
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
@@ -27,16 +46,16 @@ namespace WitsWay.Utilities.Regexs
         }
 
         /// <summary>
-        /// È¡µÃÕıÔòÀà
+        /// å–å¾—æ­£åˆ™ç±»
         /// </summary>
-        /// <param name="type">ÀàĞÍType</param>
+        /// <param name="type">ç±»å‹Type</param>
         /// <returns></returns>
         public static RegexClassInfo GetRegexClass(Type type)
         {
             RegexClassInfo info;
             if (TypeDic.TryGetValue(type, out info) == false)
             {
-                //È¡µÃ×Ô¶¨ÒåÌØĞÔParseClassAttribute
+                //å–å¾—è‡ªå®šä¹‰ç‰¹æ€§ParseClassAttribute
                 var attribs = type.GetCustomAttributes(typeof(ParseClassAttribute), true);
                 if (attribs.Length <= 0) return null;
                 info = CreateRegexClassInfo(type, attribs[0] as ParseClassAttribute);
@@ -53,11 +72,11 @@ namespace WitsWay.Utilities.Regexs
         }
 
         /// <summary>
-        /// ´´½¨RegexClassInfoÀà
+        /// åˆ›å»ºRegexClassInfoç±»
         /// </summary>
-        /// <param name="type">Òª´´½¨ÕıÔòÀàĞÅÏ¢µÄType</param>
-        /// <param name="customAttribute">×Ô¶¨ÒåÌØĞÔParseClassAttribute</param>
-        /// <returns>ÕıÔòÀàĞÅÏ¢</returns>
+        /// <param name="type">è¦åˆ›å»ºæ­£åˆ™ç±»ä¿¡æ¯çš„Type</param>
+        /// <param name="customAttribute">è‡ªå®šä¹‰ç‰¹æ€§ParseClassAttribute</param>
+        /// <returns>æ­£åˆ™ç±»ä¿¡æ¯</returns>
         private static RegexClassInfo CreateRegexClassInfo(Type type, ParseClassAttribute customAttribute)
         {
             var result = new RegexClassInfo

@@ -1,22 +1,41 @@
+ï»¿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright Â®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
 using System;
 
 namespace WitsWay.Utilities.Regexs
 {
     /// <summary>
-    /// ÓÃÓÚ±êÊ¾¸ÃÀàÊÇ½âÎöÀà
+    /// ç”¨äºæ ‡ç¤ºè¯¥ç±»æ˜¯è§£æç±»
     /// </summary>
     [AttributeUsage(AttributeTargets.Class)]
     public class ParseClassAttribute : Attribute
     {
         /// <summary>
-        /// ÕıÔòÆ¥Åä×Ö·û´®
+        /// æ­£åˆ™åŒ¹é…å­—ç¬¦ä¸²
         /// </summary>
         public string RegexString { get; }
 
         /// <summary>
-        /// ¹»Ôìº¯Êı
+        /// å¤Ÿé€ å‡½æ•°
         /// </summary>
-        /// <param name="pattern">ÕıÔò×Ö·û´®</param>
+        /// <param name="pattern">æ­£åˆ™å­—ç¬¦ä¸²</param>
         public ParseClassAttribute(string pattern)
         {
             RegexString = pattern;
