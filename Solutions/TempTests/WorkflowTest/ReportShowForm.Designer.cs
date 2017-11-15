@@ -305,7 +305,7 @@
             // 
             this.ribbonControl1.AllowMinimizeRibbon = false;
             this.ribbonControl1.AutoHideEmptyItems = true;
-            this.ribbonControl1.BackgroundImage = global::WitsWay.TempTests.WorkflowTest.Properties.Resources.sheep;
+            this.ribbonControl1.BackgroundImage = global::WitsWay.TempTests.WorkflowTest.Properties.Resources.WitswayLogo;
             this.ribbonControl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {

@@ -27,7 +27,7 @@ namespace WitsWay.TempTests.WorkflowTest
             //Application.Run(new LayOutTest());
             //Application.Run(new RibbonDropMenu());
             //Application.Run(new ReportShowForm());
-            Application.Run(new RibbonPaintForm());
+            //Application.Run(new RibbonPaintForm());
             Application.Run(new SystemManageForm());
         }
     }

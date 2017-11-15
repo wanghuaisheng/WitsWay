@@ -51,7 +51,7 @@ namespace WitsWay.TempTests.WorkflowTest
             {
                 num = groups[groups.Count - 1].Bounds.Right;
             }
-            Image imageLogoEx = Properties.Resources.yitusoft_LOGO;// Helper.GetImageLogo(base.LookAndFeel);
+            Image imageLogoEx = Properties.Resources.WitswayLogo;
             if (bounds.Height < imageLogoEx.Height)
             {
                 return;
@@ -130,6 +130,13 @@ namespace WitsWay.TempTests.WorkflowTest
         private void ribbon_ApplicationButtonClick(object sender, EventArgs e)
         {
             //backstageViewControl1.Visible = !backstageViewControl1.Visible;
+        }
+
+        private void barButtonItem26_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var frm = new RibbonDropMenu();
+            frm.MdiParent = this;
+            frm.Show();
         }
     }
 }

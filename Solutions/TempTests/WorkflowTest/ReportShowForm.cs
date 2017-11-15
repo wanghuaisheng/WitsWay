@@ -113,7 +113,7 @@ namespace WitsWay.TempTests.WorkflowTest
         /// <param name="report">报表</param>
         private static void SetReportWatermark(XtraReport report)
         {
-            report.Watermark.Image = Resources.sheep;
+            report.Watermark.Image = Resources.WitswayLogo;
             report.Watermark.ImageAlign = ContentAlignment.MiddleCenter;
             report.Watermark.ImageTiling = true;
             report.Watermark.ImageTransparency = 222;

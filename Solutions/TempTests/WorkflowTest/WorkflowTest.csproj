@@ -137,10 +137,10 @@
     <Compile Include="RibbonDropMenu.Designer.cs">
       <DependentUpon>RibbonDropMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="RibbonPaintForm.cs">
+    <Compile Include="ok\RibbonPaintForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RibbonPaintForm.Designer.cs">
+    <Compile Include="ok\RibbonPaintForm.Designer.cs">
       <DependentUpon>RibbonPaintForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LayOutTest.cs">
@@ -201,7 +201,7 @@
     <EmbeddedResource Include="RibbonDropMenu.resx">
       <DependentUpon>RibbonDropMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RibbonPaintForm.resx">
+    <EmbeddedResource Include="ok\RibbonPaintForm.resx">
       <DependentUpon>RibbonPaintForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LayOutTest.resx">
@@ -238,16 +238,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sheep.png" />
+    <None Include="Resources\WitswayLogo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\yitusoft-LOGO-Blue.png" />
-    <None Include="Resources\yitusoft-LOGO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="LayoutTest\" />
-    <Folder Include="Localization\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

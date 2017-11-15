@@ -2,19 +2,15 @@
 using System.Windows.Forms;
 using DevExpress.LookAndFeel;
 using DevExpress.Skins;
-using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon.ViewInfo;
 
 namespace WitsWay.TempTests.WorkflowTest
 {
-    public partial class RibbonDropMenu : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class RibbonPaintForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public RibbonDropMenu()
+        public RibbonPaintForm()
         {
             InitializeComponent();
-
-            SkinManager.EnableFormSkins();
-            LookAndFeelHelper.ForceDefaultLookAndFeelChanged();
             //this.navBarControl1.MenuManager = this.ribbonControl1;
             //this.SetFormParam();
             //this.filter = new NavBarFilter(this.navBarControl1);
@@ -28,11 +24,12 @@ namespace WitsWay.TempTests.WorkflowTest
             //((UserLookAndFeelDefault)UserLookAndFeel.Default).StyleChangeProgress += new LookAndFeelProgressEventHandler(this.Default_StyleChangeProgress);
         }
 
-        private void ribbonControl1_Paint(object sender, PaintEventArgs e)
+        private void _ribbonControl_Paint(object sender, PaintEventArgs e)
         {
-            var viewInfo = ribbonControl1.ViewInfo;
+            var viewInfo = _ribbonControl.ViewInfo;
             var panel = viewInfo?.Panel;
-            var groups = panel?.Groups;if (groups == null) return;
+            var groups = panel?.Groups;
+            if (groups == null) return;
             var bounds = panel.Bounds;
             var groupRight = bounds.X;
             if (groups.Count > 0)
@@ -51,10 +48,9 @@ namespace WitsWay.TempTests.WorkflowTest
             e.Graphics.DrawImage(logoImage, bounds);
         }
 
-        private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
+        private void RibbonPaintForm_Load(object sender, System.EventArgs e)
         {
-            ////右侧
-            //backstageViewControl1.Show();
+
         }
     }
 }
