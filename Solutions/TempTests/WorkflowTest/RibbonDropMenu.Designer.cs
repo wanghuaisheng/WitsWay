@@ -48,6 +48,7 @@
             this._menuItemHome = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
@@ -69,6 +70,9 @@
             this.xtraTabPage13 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage14 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage15 = new DevExpress.XtraTab.XtraTabPage();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._imageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
@@ -80,7 +84,9 @@
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.ApplicationButtonDropDownControl = this.popupMenu1;
             this.ribbonControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ribbonControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Green;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Images = this._imageCollection;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -99,17 +105,23 @@
             this.barButtonItem6,
             this._menuItemHome,
             this.barButtonItem1,
-            this.barButtonItem7});
+            this.barButtonItem7,
+            this.barButtonItem12,
+            this.barButtonItem13,
+            this.barButtonItem14,
+            this.skinRibbonGalleryBarItem1});
             this.ribbonControl1.LargeImages = this._imageCollection;
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ribbonControl1.MaxItemId = 13;
+            this.ribbonControl1.MaxItemId = 17;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsTouch.ShowTouchUISelectorInQAT = true;
             this.ribbonControl1.OptionsTouch.ShowTouchUISelectorVisibilityItemInQATMenu = true;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.QuickToolbarItemLinks.Add(this.barButtonGroup2);
+            this.ribbonControl1.QuickToolbarItemLinks.Add(this.barButtonItem13, true);
+            this.ribbonControl1.QuickToolbarItemLinks.Add(this.skinRibbonGalleryBarItem1);
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
@@ -223,6 +235,7 @@
             this.barButtonGroup2.Caption = "barButtonGroup2";
             this.barButtonGroup2.Id = 8;
             this.barButtonGroup2.ItemLinks.Add(this.barButtonItem6);
+            this.barButtonGroup2.ItemLinks.Add(this.barButtonItem12);
             this.barButtonGroup2.Name = "barButtonGroup2";
             // 
             // barButtonItem6
@@ -261,6 +274,16 @@
             this.barButtonItem7.Id = 12;
             this.barButtonItem7.ImageOptions.LargeImageIndex = 0;
             this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // barButtonItem12
+            // 
+            this.barButtonItem12.Caption = "帮助项";
+            this.barButtonItem12.DropDownControl = this.popupMenu2;
+            this.barButtonItem12.Id = 13;
+            this.barButtonItem12.ImageOptions.ImageIndex = 1;
+            this.barButtonItem12.Name = "barButtonItem12";
+            this.barButtonItem12.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barButtonItem12.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText;
             // 
             // ribbonPage1
             // 
@@ -339,21 +362,21 @@
             // 
             this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage2.Text = "xtraTabPage2";
             // 
             // xtraTabPage3
             // 
             this.xtraTabPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage3.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage3.Text = "xtraTabPage3";
             // 
             // xtraTabPage4
             // 
             this.xtraTabPage4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage4.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage4.Text = "xtraTabPage4";
             // 
             // xtraTabPage5
@@ -361,78 +384,105 @@
             this.xtraTabPage5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage5.Name = "xtraTabPage5";
             this.xtraTabPage5.ShowCloseButton = DevExpress.Utils.DefaultBoolean.False;
-            this.xtraTabPage5.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage5.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage5.Text = "xtraTabPage5";
             // 
             // xtraTabPage6
             // 
             this.xtraTabPage6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage6.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage6.Text = "xtraTabPage6";
             // 
             // xtraTabPage7
             // 
             this.xtraTabPage7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage7.Name = "xtraTabPage7";
-            this.xtraTabPage7.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage7.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage7.Text = "xtraTabPage7";
             // 
             // xtraTabPage8
             // 
             this.xtraTabPage8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage8.Name = "xtraTabPage8";
-            this.xtraTabPage8.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage8.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage8.Text = "xtraTabPage8";
             // 
             // xtraTabPage9
             // 
             this.xtraTabPage9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage9.Name = "xtraTabPage9";
-            this.xtraTabPage9.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage9.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage9.Text = "xtraTabPage9";
             // 
             // xtraTabPage10
             // 
             this.xtraTabPage10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage10.Name = "xtraTabPage10";
-            this.xtraTabPage10.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage10.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage10.Text = "xtraTabPage10";
             // 
             // xtraTabPage11
             // 
             this.xtraTabPage11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage11.Name = "xtraTabPage11";
-            this.xtraTabPage11.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage11.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage11.Text = "xtraTabPage11";
             // 
             // xtraTabPage12
             // 
             this.xtraTabPage12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage12.Name = "xtraTabPage12";
-            this.xtraTabPage12.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage12.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage12.Text = "xtraTabPage12";
             // 
             // xtraTabPage13
             // 
             this.xtraTabPage13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage13.Name = "xtraTabPage13";
-            this.xtraTabPage13.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage13.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage13.Text = "xtraTabPage13";
             // 
             // xtraTabPage14
             // 
             this.xtraTabPage14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage14.Name = "xtraTabPage14";
-            this.xtraTabPage14.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage14.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage14.Text = "xtraTabPage14";
             // 
             // xtraTabPage15
             // 
             this.xtraTabPage15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraTabPage15.Name = "xtraTabPage15";
-            this.xtraTabPage15.Size = new System.Drawing.Size(1276, 582);
+            this.xtraTabPage15.Size = new System.Drawing.Size(1276, 655);
             this.xtraTabPage15.Text = "xtraTabPage15";
+            // 
+            // barButtonItem13
+            // 
+            this.barButtonItem13.ActAsDropDown = true;
+            this.barButtonItem13.Caption = "barButtonItem13";
+            this.barButtonItem13.Id = 14;
+            this.barButtonItem13.Name = "barButtonItem13";
+            this.barButtonItem13.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barButtonItem13.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // barButtonItem14
+            // 
+            this.barButtonItem14.ActAsDropDown = true;
+            this.barButtonItem14.Caption = "barButtonItem14";
+            this.barButtonItem14.DropDownControl = this.popupMenu1;
+            this.barButtonItem14.Id = 15;
+            this.barButtonItem14.ImageOptions.ImageIndex = 2;
+            this.barButtonItem14.Name = "barButtonItem14";
+            this.barButtonItem14.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barButtonItem14.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            // 
+            // skinRibbonGalleryBarItem1
+            // 
+            this.skinRibbonGalleryBarItem1.Caption = "skinRibbonGalleryBarItem1";
+            this.skinRibbonGalleryBarItem1.Id = 16;
+            this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
             // RibbonDropMenu
             // 
@@ -500,5 +550,9 @@
         private DevExpress.XtraBars.BarButtonItem _menuItemHome;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem14;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
+        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
     }
 }

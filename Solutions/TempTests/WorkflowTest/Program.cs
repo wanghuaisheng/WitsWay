@@ -15,12 +15,11 @@ namespace WitsWay.TempTests.WorkflowTest
         /// </summary>
         [STAThread]
         static void Main()
-        {
-            Application.EnableVisualStyles();
+        {Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("zh-CN");
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CN");
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("zh-Hans");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-Hans");
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
