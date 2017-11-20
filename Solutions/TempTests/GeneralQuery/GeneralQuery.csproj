@@ -219,12 +219,6 @@
     <Compile Include="WindowsUiButtonForm.Designer.cs">
       <DependentUpon>WindowsUiButtonForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackstageViewForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BackstageViewForm.Designer.cs">
-      <DependentUpon>BackstageViewForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="QueryForms\TabMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -301,9 +295,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WindowsUiButtonForm.resx">
       <DependentUpon>WindowsUiButtonForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BackstageViewForm.resx">
-      <DependentUpon>BackstageViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QueryForms\TabMainForm.resx">
       <DependentUpon>TabMainForm.cs</DependentUpon>

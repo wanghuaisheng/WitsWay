@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace WitsWay.TempTests.GeneralQuery
 {
-    public partial class BackstageViewForm : DevExpress.XtraEditors.XtraForm
+    public partial class BackstageViewForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public BackstageViewForm()
         {

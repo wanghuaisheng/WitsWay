@@ -47,13 +47,13 @@ namespace WitsWay.TempTests.DynamicQuery.Helpers
                 case "less_than":
                     expression = ExpressionFactory.GetExpression(SupportRelations.LessThan, propertyExp, type, rule.Value);
                     break;
-                case "less_than_or_equal":
+                case "less_or_equal":
                     expression = ExpressionFactory.GetExpression(SupportRelations.LessThanOrEqual, propertyExp, type, rule.Value);
                     break;
                 case "greater_than":
                     expression = ExpressionFactory.GetExpression(SupportRelations.GreaterThan, propertyExp, type, rule.Value);
                     break;
-                case "greater_than_or_equal":
+                case "greater_or_equal":
                     expression = ExpressionFactory.GetExpression(SupportRelations.GreaterThanOrEqual, propertyExp, type, rule.Value);
                     break;
                 case "starts_with":
@@ -87,8 +87,7 @@ namespace WitsWay.TempTests.DynamicQuery.Helpers
                     expression = ExpressionFactory.GetExpression(SupportRelations.IsNotNull, propertyExp);
                     break;
                 default:
-                    throw new Exception(string.Format("当前不支持操作: {0} ", rule.Operator));
-            }
+                    throw new Exception(string.Format("当前不支持操作: {0} ", rule.Operator));            }
             return expression;
         }
 
@@ -102,7 +101,7 @@ namespace WitsWay.TempTests.DynamicQuery.Helpers
             Type type;
             switch (rule.Type)
             {
-                case "int":
+                case "integer":
                     type = typeof(int);
                     break;
                 case "double":

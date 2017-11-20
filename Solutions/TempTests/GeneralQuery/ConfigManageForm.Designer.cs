@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this._panelControl = new DevExpress.XtraEditors.PanelControl();
             this._viewControl = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this._viewClient = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this._panelConfigUc = new DevExpress.XtraEditors.PanelControl();
             this._panelCommands = new DevExpress.XtraEditors.PanelControl();
             this._barDockControl = new DevExpress.XtraBars.StandaloneBarDockControl();
-            this._barManager = new DevExpress.XtraBars.BarManager(this.components);
+            this._barManager = new DevExpress.XtraBars.BarManager();
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -58,9 +57,10 @@
             // 
             this._panelControl.Controls.Add(this._viewControl);
             this._panelControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._panelControl.Location = new System.Drawing.Point(5, 5);
+            this._panelControl.Location = new System.Drawing.Point(6, 6);
+            this._panelControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._panelControl.Name = "_panelControl";
-            this._panelControl.Size = new System.Drawing.Size(977, 637);
+            this._panelControl.Size = new System.Drawing.Size(1116, 820);
             this._panelControl.TabIndex = 1;
             // 
             // _viewControl
@@ -70,10 +70,11 @@
             this._viewControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this._viewControl.Items.Add(this._viewTabItem);
             this._viewControl.Location = new System.Drawing.Point(2, 2);
+            this._viewControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._viewControl.Name = "_viewControl";
             this._viewControl.SelectedTab = this._viewTabItem;
             this._viewControl.SelectedTabIndex = 0;
-            this._viewControl.Size = new System.Drawing.Size(973, 633);
+            this._viewControl.Size = new System.Drawing.Size(1112, 816);
             this._viewControl.TabIndex = 0;
             this._viewControl.Text = "backstageViewControl1";
             // 
@@ -81,18 +82,20 @@
             // 
             this._viewClient.Controls.Add(this._panelConfigUc);
             this._viewClient.Controls.Add(this._panelCommands);
-            this._viewClient.Location = new System.Drawing.Point(136, 0);
+            this._viewClient.Location = new System.Drawing.Point(165, 0);
+            this._viewClient.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._viewClient.Name = "_viewClient";
-            this._viewClient.Padding = new System.Windows.Forms.Padding(5);
-            this._viewClient.Size = new System.Drawing.Size(837, 633);
+            this._viewClient.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this._viewClient.Size = new System.Drawing.Size(947, 816);
             this._viewClient.TabIndex = 1;
             // 
             // _panelConfigUc
             // 
             this._panelConfigUc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._panelConfigUc.Location = new System.Drawing.Point(5, 39);
+            this._panelConfigUc.Location = new System.Drawing.Point(6, 50);
+            this._panelConfigUc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._panelConfigUc.Name = "_panelConfigUc";
-            this._panelConfigUc.Size = new System.Drawing.Size(827, 589);
+            this._panelConfigUc.Size = new System.Drawing.Size(935, 760);
             this._panelConfigUc.TabIndex = 6;
             // 
             // _panelCommands
@@ -100,10 +103,11 @@
             this._panelCommands.AutoSize = true;
             this._panelCommands.Controls.Add(this._barDockControl);
             this._panelCommands.Dock = System.Windows.Forms.DockStyle.Top;
-            this._panelCommands.Location = new System.Drawing.Point(5, 5);
+            this._panelCommands.Location = new System.Drawing.Point(6, 6);
+            this._panelCommands.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._panelCommands.Name = "_panelCommands";
-            this._panelCommands.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this._panelCommands.Size = new System.Drawing.Size(827, 34);
+            this._panelCommands.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this._panelCommands.Size = new System.Drawing.Size(935, 44);
             this._panelCommands.TabIndex = 2;
             // 
             // _barDockControl
@@ -111,10 +115,11 @@
             this._barDockControl.AutoSize = true;
             this._barDockControl.CausesValidation = false;
             this._barDockControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this._barDockControl.Location = new System.Drawing.Point(2, 4);
+            this._barDockControl.Location = new System.Drawing.Point(2, 5);
             this._barDockControl.Manager = this._barManager;
+            this._barDockControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._barDockControl.Name = "_barDockControl";
-            this._barDockControl.Size = new System.Drawing.Size(823, 26);
+            this._barDockControl.Size = new System.Drawing.Size(931, 34);
             this._barDockControl.Text = "standaloneBarDockControl1";
             // 
             // _barManager
@@ -160,33 +165,37 @@
             // 
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(5, 5);
+            this.barDockControlTop.Location = new System.Drawing.Point(6, 6);
             this.barDockControlTop.Manager = this._barManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(977, 0);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1116, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(5, 642);
+            this.barDockControlBottom.Location = new System.Drawing.Point(6, 826);
             this.barDockControlBottom.Manager = this._barManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(977, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1116, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(5, 5);
+            this.barDockControlLeft.Location = new System.Drawing.Point(6, 6);
             this.barDockControlLeft.Manager = this._barManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 637);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 820);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(982, 5);
+            this.barDockControlRight.Location = new System.Drawing.Point(1122, 6);
             this.barDockControlRight.Manager = this._barManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 637);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 820);
             // 
             // _viewTabItem
             // 
@@ -197,16 +206,17 @@
             // 
             // ConfigManageForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(987, 647);
+            this.ClientSize = new System.Drawing.Size(1128, 832);
             this.Controls.Add(this._panelControl);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ConfigManageForm";
-            this.Padding = new System.Windows.Forms.Padding(5);
+            this.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Text = "配置管理";
             ((System.ComponentModel.ISupportInitialize)(this._panelControl)).EndInit();
             this._panelControl.ResumeLayout(false);

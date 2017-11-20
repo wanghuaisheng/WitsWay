@@ -104,5 +104,10 @@ namespace WitsWay.TempTests.WorkflowTest
             item2.Control = textBox2;
             item2.Text = "年龄:";
         }
+
+        private void simpleButton9_Click(object sender, EventArgs e)
+        {
+            popupMenu1.ShowPopup(simpleButton9.Parent.PointToScreen(new Point(simpleButton9.Left, simpleButton9.Bottom)));
+        }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup3 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
@@ -69,8 +68,8 @@
             this.tileNavItem3 = new DevExpress.XtraBars.Navigation.TileNavItem();
             this.tileNavItem4 = new DevExpress.XtraBars.Navigation.TileNavItem();
             this.tileNavItem5 = new DevExpress.XtraBars.Navigation.TileNavItem();
-            this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
-            this.galleryDropDown2 = new DevExpress.XtraBars.Ribbon.GalleryDropDown(this.components);
+            this.galleryDropDown1 = new DevExpress.XtraBars.Ribbon.GalleryDropDown();
+            this.galleryDropDown2 = new DevExpress.XtraBars.Ribbon.GalleryDropDown();
             this.officeNavigationBar1 = new DevExpress.XtraBars.Navigation.OfficeNavigationBar();
             this.navigationBarItem1 = new DevExpress.XtraBars.Navigation.NavigationBarItem();
             this.navigationBarItem2 = new DevExpress.XtraBars.Navigation.NavigationBarItem();
@@ -79,11 +78,11 @@
             this.navigationBarItem5 = new DevExpress.XtraBars.Navigation.NavigationBarItem();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.filteringUIContext1 = new DevExpress.Utils.Filtering.FilteringUIContext(this.components);
+            this.filteringUIContext1 = new DevExpress.Utils.Filtering.FilteringUIContext();
             this.workspaceManager1 = new DevExpress.Utils.WorkspaceManager();
             this.formAssistant1 = new DevExpress.XtraBars.FormAssistant();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.styleController1 = new DevExpress.XtraEditors.StyleController(this.components);
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.styleController1 = new DevExpress.XtraEditors.StyleController();
             this.flyoutPanel1 = new DevExpress.Utils.FlyoutPanel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -116,11 +115,12 @@
             this.ribbonGalleryBarItem2,
             this.ribbonGalleryBarItem3});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 4;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(941, 144);
+            this.ribbonControl1.Size = new System.Drawing.Size(1075, 183);
             // 
             // ribbonGalleryBarItem1
             // 
@@ -185,9 +185,10 @@
             // 
             this.tileNavPane1.DefaultCategory.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
             this.tileNavPane1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tileNavPane1.Location = new System.Drawing.Point(0, 144);
+            this.tileNavPane1.Location = new System.Drawing.Point(0, 183);
+            this.tileNavPane1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tileNavPane1.Name = "tileNavPane1";
-            this.tileNavPane1.Size = new System.Drawing.Size(941, 40);
+            this.tileNavPane1.Size = new System.Drawing.Size(1075, 51);
             this.tileNavPane1.TabIndex = 3;
             this.tileNavPane1.Text = "tileNavPane1";
             // 
@@ -384,9 +385,10 @@
             this.navigationBarItem3,
             this.navigationBarItem4,
             this.navigationBarItem5});
-            this.officeNavigationBar1.Location = new System.Drawing.Point(0, 625);
+            this.officeNavigationBar1.Location = new System.Drawing.Point(0, 804);
+            this.officeNavigationBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.officeNavigationBar1.Name = "officeNavigationBar1";
-            this.officeNavigationBar1.Size = new System.Drawing.Size(941, 46);
+            this.officeNavigationBar1.Size = new System.Drawing.Size(1075, 59);
             this.officeNavigationBar1.TabIndex = 11;
             this.officeNavigationBar1.Text = "officeNavigationBar1";
             // 
@@ -420,10 +422,11 @@
             this.navBarControl1.ActiveGroup = this.navBarGroup1;
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1});
-            this.navBarControl1.Location = new System.Drawing.Point(69, 274);
+            this.navBarControl1.Location = new System.Drawing.Point(79, 352);
+            this.navBarControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = 140;
-            this.navBarControl1.Size = new System.Drawing.Size(140, 300);
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 160;
+            this.navBarControl1.Size = new System.Drawing.Size(160, 386);
             this.navBarControl1.TabIndex = 12;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -445,7 +448,8 @@
             // flyoutPanel1
             // 
             this.flyoutPanel1.Controls.Add(this.groupControl1);
-            this.flyoutPanel1.Location = new System.Drawing.Point(265, 392);
+            this.flyoutPanel1.Location = new System.Drawing.Point(303, 504);
+            this.flyoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flyoutPanel1.Name = "flyoutPanel1";
             this.flyoutPanel1.Options.CloseOnOuterClick = true;
             this.flyoutPanel1.OptionsButtonPanel.ButtonPanelContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -456,7 +460,7 @@
             this.flyoutPanel1.OptionsButtonPanel.ShowButtonPanel = true;
             this.flyoutPanel1.OwnerControl = this.simpleButton1;
             this.flyoutPanel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 30);
-            this.flyoutPanel1.Size = new System.Drawing.Size(297, 150);
+            this.flyoutPanel1.Size = new System.Drawing.Size(339, 193);
             this.flyoutPanel1.TabIndex = 13;
             // 
             // groupControl1
@@ -464,17 +468,19 @@
             this.groupControl1.CustomHeaderButtons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
             new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton(),
             new DevExpress.XtraEditors.ButtonsPanelControl.GroupBoxButton()});
-            this.groupControl1.Location = new System.Drawing.Point(21, 17);
+            this.groupControl1.Location = new System.Drawing.Point(24, 22);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(256, 100);
+            this.groupControl1.Size = new System.Drawing.Size(293, 129);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "groupControl1";
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(340, 347);
+            this.simpleButton1.Location = new System.Drawing.Point(389, 446);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.Size = new System.Drawing.Size(86, 30);
             this.simpleButton1.TabIndex = 14;
             this.simpleButton1.Text = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -482,7 +488,8 @@
             // flyoutPanel2
             // 
             this.flyoutPanel2.Controls.Add(this.flyoutPanelControl2);
-            this.flyoutPanel2.Location = new System.Drawing.Point(41, 412);
+            this.flyoutPanel2.Location = new System.Drawing.Point(47, 530);
+            this.flyoutPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flyoutPanel2.Name = "flyoutPanel2";
             this.flyoutPanel2.OptionsButtonPanel.ButtonPanelContentAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.flyoutPanel2.OptionsButtonPanel.ButtonPanelHeight = 50;
@@ -494,7 +501,7 @@
             this.flyoutPanel2.OptionsButtonPanel.ShowButtonPanel = true;
             this.flyoutPanel2.OwnerControl = this.simpleButton2;
             this.flyoutPanel2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.flyoutPanel2.Size = new System.Drawing.Size(201, 150);
+            this.flyoutPanel2.Size = new System.Drawing.Size(230, 193);
             this.flyoutPanel2.TabIndex = 15;
             // 
             // flyoutPanelControl2
@@ -502,24 +509,26 @@
             this.flyoutPanelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flyoutPanelControl2.FlyoutPanel = this.flyoutPanel2;
             this.flyoutPanelControl2.Location = new System.Drawing.Point(0, 0);
+            this.flyoutPanelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flyoutPanelControl2.Name = "flyoutPanelControl2";
-            this.flyoutPanelControl2.Size = new System.Drawing.Size(201, 100);
+            this.flyoutPanelControl2.Size = new System.Drawing.Size(230, 143);
             this.flyoutPanelControl2.TabIndex = 0;
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(601, 436);
+            this.simpleButton2.Location = new System.Drawing.Point(687, 561);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton2.Size = new System.Drawing.Size(86, 30);
             this.simpleButton2.TabIndex = 16;
             this.simpleButton2.Text = "simpleButton2";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // FlyoutPanelForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 671);
+            this.ClientSize = new System.Drawing.Size(1075, 863);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.flyoutPanel2);
             this.Controls.Add(this.simpleButton1);
@@ -528,6 +537,7 @@
             this.Controls.Add(this.officeNavigationBar1);
             this.Controls.Add(this.tileNavPane1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FlyoutPanelForm";
             this.Ribbon = this.ribbonControl1;
             this.Text = "XtraForm5";

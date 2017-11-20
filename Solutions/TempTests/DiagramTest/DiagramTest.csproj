@@ -70,10 +70,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="NotUse\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="NotUse\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Configs\FlowItemConfig.cs" />
@@ -91,21 +91,21 @@
     <Compile Include="Models\Nodes\FlowNodeStates.cs" />
     <Compile Include="Models\Nodes\FlowNodeKinds.cs" />
     <Compile Include="Models\Nodes\FlowNode.cs" />
-    <Compile Include="MyDiagramControl.cs">
+    <Compile Include="NotUse\MyDiagramControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="MyDiagramControl.Designer.cs">
+    <Compile Include="NotUse\MyDiagramControl.Designer.cs">
       <DependentUpon>MyDiagramControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XtraForm1.cs">
+    <Compile Include="FlowDesignXtraForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XtraForm1.Designer.cs">
-      <DependentUpon>XtraForm1.cs</DependentUpon>
+    <Compile Include="FlowDesignXtraForm.Designer.cs">
+      <DependentUpon>FlowDesignXtraForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="NotUse\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -119,8 +119,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="XtraForm1.resx">
-      <DependentUpon>XtraForm1.cs</DependentUpon>
+    <EmbeddedResource Include="FlowDesignXtraForm.resx">
+      <DependentUpon>FlowDesignXtraForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

@@ -20,6 +20,6 @@ namespace WitsWay.TempTests.GeneralQuery
             //UserLookAndFeel.Default.SetSkinStyle("DevExpress Dark Style");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SelectorTest());}
+            Application.Run(new NavControlTest());}
     }
 }

@@ -407,7 +407,7 @@
             this._diagramControl.OptionsView.PaperKind = System.Drawing.Printing.PaperKind.Letter;
             this._diagramControl.OptionsView.Theme = DevExpress.Diagram.Core.DiagramThemes.NoTheme;
             this._diagramControl.PropertyGrid = this.diagramPropertyGridDockPanel1;
-            this._diagramControl.Size = new System.Drawing.Size(851, 570);
+            this._diagramControl.Size = new System.Drawing.Size(1013, 739);
             this._diagramControl.TabIndex = 0;
             this._diagramControl.Text = "图表控件";
             this._diagramControl.Toolbox = this.diagramToolboxDockPanel1;
@@ -417,6 +417,7 @@
             this.diagramPropertyGridDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.diagramPropertyGridDockPanel1.ID = new System.Guid("454d764f-78c3-4eb4-9e88-8b5e0daa2544");
             this.diagramPropertyGridDockPanel1.Location = new System.Drawing.Point(0, 0);
+            this.diagramPropertyGridDockPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.diagramPropertyGridDockPanel1.Name = "diagramPropertyGridDockPanel1";
             this.diagramPropertyGridDockPanel1.Options.AllowFloating = false;
             this.diagramPropertyGridDockPanel1.OriginalSize = new System.Drawing.Size(300, 200);
@@ -432,7 +433,7 @@
             this.diagramPropertyGridDockPanel1.PropertyGrid.TabIndex = 6;
             this.diagramPropertyGridDockPanel1.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.diagramPropertyGridDockPanel1.SavedIndex = 1;
-            this.diagramPropertyGridDockPanel1.Size = new System.Drawing.Size(300, 576);
+            this.diagramPropertyGridDockPanel1.Size = new System.Drawing.Size(343, 741);
             this.diagramPropertyGridDockPanel1.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
             // 
             // diagramToolboxDockPanel1
@@ -440,11 +441,12 @@
             this.diagramToolboxDockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Left;
             this.diagramToolboxDockPanel1.FloatSize = new System.Drawing.Size(200, 500);
             this.diagramToolboxDockPanel1.ID = new System.Guid("7f7e9d97-94a4-481b-b81d-bb5d577667dd");
-            this.diagramToolboxDockPanel1.Location = new System.Drawing.Point(0, 147);
+            this.diagramToolboxDockPanel1.Location = new System.Drawing.Point(0, 184);
+            this.diagramToolboxDockPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.diagramToolboxDockPanel1.Name = "diagramToolboxDockPanel1";
             this.diagramToolboxDockPanel1.Options.AllowFloating = false;
             this.diagramToolboxDockPanel1.OriginalSize = new System.Drawing.Size(300, 200);
-            this.diagramToolboxDockPanel1.Size = new System.Drawing.Size(300, 576);
+            this.diagramToolboxDockPanel1.Size = new System.Drawing.Size(300, 745);
             // 
             // 
             // 
@@ -452,13 +454,14 @@
             this.diagramToolboxDockPanel1.Toolbox.Caption = "Shapes";
             this.diagramToolboxDockPanel1.Toolbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.diagramToolboxDockPanel1.Toolbox.Location = new System.Drawing.Point(0, 0);
+            this.diagramToolboxDockPanel1.Toolbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.diagramToolboxDockPanel1.Toolbox.Name = "";
             this.diagramToolboxDockPanel1.Toolbox.OptionsBehavior.ItemSelectMode = DevExpress.XtraToolbox.ToolboxItemSelectMode.Single;
             this.diagramToolboxDockPanel1.Toolbox.OptionsView.ItemImageSize = new System.Drawing.Size(32, 32);
             this.diagramToolboxDockPanel1.Toolbox.OptionsView.MenuButtonCaption = "More Shapes";
             this.diagramToolboxDockPanel1.Toolbox.OptionsView.ShowToolboxCaption = true;
             this.diagramToolboxDockPanel1.Toolbox.SelectedGroupIndex = 1;
-            this.diagramToolboxDockPanel1.Toolbox.Size = new System.Drawing.Size(291, 549);
+            this.diagramToolboxDockPanel1.Toolbox.Size = new System.Drawing.Size(288, 712);
             this.diagramToolboxDockPanel1.Toolbox.TabIndex = 0;
             this.diagramToolboxDockPanel1.Toolbox.Text = "Shapes";
             // 
@@ -614,6 +617,7 @@
             this.diagramCommandBringToFrontBarSplitButtonItem1,
             this.diagramCommandSendToBackBarSplitButtonItem1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonControl1.MaxItemId = 285;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
@@ -632,7 +636,7 @@
             this.diagramRepositoryItemZoomTrackBar2,
             this.repositoryItemFontEdit2,
             this.repositoryItemDiagramFontSizeEdit2});
-            this.ribbonControl1.Size = new System.Drawing.Size(1177, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(1345, 184);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // barButtonGroup1
@@ -2274,10 +2278,11 @@
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.diagramStatusBarShapeInfoBarStaticItem1);
             this.ribbonStatusBar1.ItemLinks.Add(this.diagramCommandStatusBarZoomEditorBarEditItem1);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 723);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 929);
+            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1177, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1345, 40);
             // 
             // InsertContainerPopupMenu
             // 
@@ -2327,9 +2332,10 @@
             this.hideContainerRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.hideContainerRight.Controls.Add(this.diagramPropertyGridDockPanel1);
             this.hideContainerRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.hideContainerRight.Location = new System.Drawing.Point(1157, 147);
+            this.hideContainerRight.Location = new System.Drawing.Point(1319, 184);
+            this.hideContainerRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.hideContainerRight.Name = "hideContainerRight";
-            this.hideContainerRight.Size = new System.Drawing.Size(20, 576);
+            this.hideContainerRight.Size = new System.Drawing.Size(26, 745);
             // 
             // diagramControlDockPanel1
             // 
@@ -2348,7 +2354,7 @@
             this.controlContainer1.Controls.Add(this._diagramControl);
             this.controlContainer1.Location = new System.Drawing.Point(0, 0);
             this.controlContainer1.Name = "controlContainer1";
-            this.controlContainer1.Size = new System.Drawing.Size(851, 570);
+            this.controlContainer1.Size = new System.Drawing.Size(1013, 739);
             this.controlContainer1.TabIndex = 0;
             // 
             // documentManager1
@@ -2530,13 +2536,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 754);
+            this.ClientSize = new System.Drawing.Size(1345, 969);
             this.Controls.Add(this.diagramToolboxDockPanel1);
             this.Controls.Add(this.hideContainerRight);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;

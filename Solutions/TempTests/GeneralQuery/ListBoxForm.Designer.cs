@@ -49,17 +49,19 @@
             "的点点滴滴",
             "点对多点通信",
             "单打独斗"});
-            this.listBoxControl1.Location = new System.Drawing.Point(175, 114);
+            this.listBoxControl1.Location = new System.Drawing.Point(200, 147);
+            this.listBoxControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBoxControl1.Name = "listBoxControl1";
-            this.listBoxControl1.Size = new System.Drawing.Size(219, 501);
+            this.listBoxControl1.Size = new System.Drawing.Size(250, 644);
             this.listBoxControl1.TabIndex = 0;
             // 
             // ListBoxForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(806, 700);
+            this.ClientSize = new System.Drawing.Size(921, 900);
             this.Controls.Add(this.listBoxControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ListBoxForm";
             this.Text = "ListBoxForm";
             ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).EndInit();

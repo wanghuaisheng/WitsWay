@@ -30,43 +30,26 @@ namespace WitsWay.TempTests.WorkflowTest
 
         private void Ribbon_Paint(object sender, PaintEventArgs e)
         {
-            RibbonViewInfo viewInfo = Ribbon.ViewInfo;
-            if (viewInfo == null)
-            {
-                return;
-            }
-            RibbonPanelViewInfo panel = viewInfo.Panel;
-            if (panel == null)
-            {
-                return;
-            }
-            Rectangle bounds = panel.Bounds;
-            int num = bounds.X;
-            RibbonPageGroupViewInfoCollection groups = panel.Groups;
-            if (groups == null)
-            {
-                return;
-            }
+            var viewInfo = Ribbon.ViewInfo;
+            var panel = viewInfo?.Panel;
+            var groups = panel?.Groups;
+            if (groups == null) return;
+            var bounds = panel.Bounds;
+            var groupRight = bounds.X;
             if (groups.Count > 0)
             {
-                num = groups[groups.Count - 1].Bounds.Right;
+                groupRight = groups[groups.Count - 1].Bounds.Right;
             }
-            Image imageLogoEx = Properties.Resources.WitswayLogo;
-            if (bounds.Height < imageLogoEx.Height)
-            {
-                return;
-            }
-            int num2 = (bounds.Height - imageLogoEx.Height) / 2;
-            int num3 = imageLogoEx.Width + 15;
-            bounds.X = bounds.Width - num3;
-            if (bounds.X < num)
-            {
-                return;
-            }
-            bounds.Width = num3;
-            bounds.Y += num2;
-            bounds.Height = imageLogoEx.Height;
-            e.Graphics.DrawImage(imageLogoEx, bounds.Location);
+            var logoImage = Properties.Resources.WitswayLogo;
+            if (bounds.Height < logoImage.Height) return;
+            var logoTop = (bounds.Height - logoImage.Height) / 2;
+            var logoLeft = logoImage.Width;
+            bounds.X = bounds.Width - logoLeft - 30;
+            if (bounds.X < groupRight) return;
+            bounds.Width = logoLeft;
+            bounds.Y += logoTop;
+            bounds.Height = logoImage.Height;
+            e.Graphics.DrawImage(logoImage, bounds);
         }
 
         private void barButtonItem10_ItemClick(object sender, ItemClickEventArgs e)
@@ -80,11 +63,11 @@ namespace WitsWay.TempTests.WorkflowTest
         {
             ribbon.Minimized = !ribbon.Minimized;
         }
-
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            popupMenu1.ShowPopup(barManager1, simpleButton1.Parent.PointToScreen
-                (new Point(simpleButton1.Left, simpleButton1.Bottom)));
+            _popupMenu1.ShowPopup(MousePosition);
+
+            //_popupMenu1.ShowPopup(simpleButton1.Parent.PointToScreen(new Point(simpleButton1.Left, simpleButton1.Bottom)));
         }
 
         private void barButtonItem12_ItemClick(object sender, ItemClickEventArgs e)
