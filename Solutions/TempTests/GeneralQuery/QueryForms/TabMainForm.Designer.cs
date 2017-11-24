@@ -86,9 +86,15 @@
             this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
+            this.flyoutPanel1 = new DevExpress.Utils.FlyoutPanel();
+            this.flyoutPanelControl1 = new DevExpress.Utils.FlyoutPanelControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tabFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._tabbedMdiManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._tabFormControl)).BeginInit();
+            this._tabFormControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._popupPages)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabFormDefaultManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemToggleSwitch1)).BeginInit();
@@ -97,6 +103,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._barManager)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).BeginInit();
+            this.flyoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).BeginInit();
+            this.flyoutPanelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabFormDefaultManager1
@@ -155,6 +166,7 @@
             // 
             // _tabFormControl
             // 
+            this._tabFormControl.Controls.Add(this.flyoutPanel1);
             this._tabFormControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barSubItem1,
             this.barButtonItem1,
@@ -270,7 +282,7 @@
             this.barButtonItem13,
             this.barButtonItem14,
             this.barButtonItem15});
-            this.tabFormDefaultManager2.MaxItemId = 28;
+            this.tabFormDefaultManager2.MaxItemId = 29;
             this.tabFormDefaultManager2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemToggleSwitch1});
             // 
@@ -492,11 +504,12 @@
             this.navigationPage3.Caption = "navigationPage3";
             this.navigationPage3.Image = ((System.Drawing.Image)(resources.GetObject("navigationPage3.Image")));
             this.navigationPage3.Name = "navigationPage3";
-            this.navigationPage3.Size = new System.Drawing.Size(184, 468);
+            this.navigationPage3.Size = new System.Drawing.Size(238, 444);
             // 
             // navigationPage2
             // 
             this.navigationPage2.Caption = "用户管理";
+            this.navigationPage2.Controls.Add(this.simpleButton3);
             this.navigationPage2.Controls.Add(this.simpleButton2);
             this.navigationPage2.Controls.Add(this.simpleButton1);
             this.navigationPage2.Image = ((System.Drawing.Image)(resources.GetObject("navigationPage2.Image")));
@@ -541,6 +554,8 @@
             this.navigationPane1.Size = new System.Drawing.Size(300, 505);
             this.navigationPane1.TabIndex = 6;
             this.navigationPane1.Text = "navigationPane1";
+            this.navigationPane1.MouseEnter += new System.EventHandler(this.navigationPane1_MouseEnter);
+            this.navigationPane1.MouseLeave += new System.EventHandler(this.navigationPane1_MouseLeave);
             // 
             // _barManager
             // 
@@ -616,11 +631,58 @@
             this.barDockControl8.Manager = this._barManager;
             this.barDockControl8.Size = new System.Drawing.Size(0, 553);
             // 
+            // flyoutPanel1
+            // 
+            this.flyoutPanel1.Controls.Add(this.flyoutPanelControl1);
+            this.flyoutPanel1.Location = new System.Drawing.Point(508, 30);
+            this.flyoutPanel1.Name = "flyoutPanel1";
+            this.flyoutPanel1.Options.CloseOnOuterClick = true;
+            this.flyoutPanel1.OwnerControl = this.panelControl1;
+            this.flyoutPanel1.Size = new System.Drawing.Size(150, 150);
+            this.flyoutPanel1.TabIndex = 0;
+            // 
+            // flyoutPanelControl1
+            // 
+            this.flyoutPanelControl1.Controls.Add(this.simpleButton4);
+            this.flyoutPanelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flyoutPanelControl1.FlyoutPanel = this.flyoutPanel1;
+            this.flyoutPanelControl1.Location = new System.Drawing.Point(0, 0);
+            this.flyoutPanelControl1.Name = "flyoutPanelControl1";
+            this.flyoutPanelControl1.Size = new System.Drawing.Size(150, 150);
+            this.flyoutPanelControl1.TabIndex = 0;
+            this.flyoutPanelControl1.VisibleChanged += new System.EventHandler(this.flyoutPanelControl1_VisibleChanged);
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Location = new System.Drawing.Point(664, 27);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(120, 15);
+            this.panelControl1.TabIndex = 25;
+            this.panelControl1.Visible = false;
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(55, 174);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton3.TabIndex = 2;
+            this.simpleButton3.Text = "simpleButton3";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(29, 3);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton4.TabIndex = 0;
+            this.simpleButton4.Text = "simpleButton4";
+            // 
             // TabMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 580);
+            this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.navigationPane1);
             this.Controls.Add(this.xtraScrollableControl1);
             this.Controls.Add(this._tabFormControl);
@@ -648,6 +710,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabFormDefaultManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._tabbedMdiManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._tabFormControl)).EndInit();
+            this._tabFormControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._popupPages)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabFormDefaultManager2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemToggleSwitch1)).EndInit();
@@ -656,6 +719,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._barManager)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).EndInit();
+            this.flyoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).EndInit();
+            this.flyoutPanelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -719,5 +787,10 @@
         private DevExpress.XtraBars.Bar bar3;
         private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem2;
         private DevExpress.XtraBars.BarMdiChildrenListItem barMdiChildrenListItem1;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.Utils.FlyoutPanel flyoutPanel1;
+        private DevExpress.Utils.FlyoutPanelControl flyoutPanelControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
     }
 }

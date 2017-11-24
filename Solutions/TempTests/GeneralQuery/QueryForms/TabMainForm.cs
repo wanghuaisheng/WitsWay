@@ -78,6 +78,35 @@ namespace WitsWay.TempTests.GeneralQuery.QueryForms
         {
             FrmAboutApp.ShowAbout(this);
         }
+
+        private void navigationPane1_MouseEnter(object sender, EventArgs e)
+        {
+            //navigationPage2.Container
+        }
+
+        private void navigationPane1_MouseLeave(object sender, EventArgs e)
+        {
+            //navigationPane1.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
+            //navigationPage2.Container.Hide();
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            flyoutPanel1.Options.CloseOnOuterClick = true;
+            panelControl1.Show();
+            flyoutPanel1.Height = this.Height;
+            flyoutPanel1.ShowPopup(true);
+            flyoutPanel1.VisibleChanged += FlyoutPanel1_VisibleChanged;
+        }
+
+        private void FlyoutPanel1_VisibleChanged(object sender, EventArgs e)
+        {
+            panelControl1.Visible = flyoutPanel1.Visible;
+        }
+
+        private void flyoutPanelControl1_VisibleChanged(object sender, EventArgs e)
+        {
+        }
     }
 }
 

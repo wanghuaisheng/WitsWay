@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using WitsWay.TempTests.GeneralQuery.QueryForms;
 using WitsWay.TempTests.GeneralQuery.Selectors;
 
 namespace WitsWay.TempTests.GeneralQuery
@@ -20,6 +21,6 @@ namespace WitsWay.TempTests.GeneralQuery
             //UserLookAndFeel.Default.SetSkinStyle("DevExpress Dark Style");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NavControlTest());}
+            Application.Run(new TabMainForm());}
     }
 }
