@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridWithFilterUc2));
             this._gridNavPane = new DevExpress.XtraBars.Navigation.NavigationPane();
             this._navPageSearch = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -47,9 +46,7 @@
             this._gridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this._panelBar = new DevExpress.XtraEditors.PanelControl();
             this.standaloneBarDockControl1 = new DevExpress.XtraBars.StandaloneBarDockControl();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.pagerUC1 = new WitsWay.Utilities.Win.Controls.PagerUC();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.barManager1 = new DevExpress.XtraBars.BarManager();
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
@@ -67,6 +64,8 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
+            this.pagerUC1 = new WitsWay.Utilities.Win.Controls.PagerUC();
             ((System.ComponentModel.ISupportInitialize)(this._gridNavPane)).BeginInit();
             this._gridNavPane.SuspendLayout();
             this._navPageSearch.SuspendLayout();
@@ -81,10 +80,10 @@
             ((System.ComponentModel.ISupportInitialize)(this._gridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._panelBar)).BeginInit();
             this._panelBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
-            this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
             this.SuspendLayout();
             // 
             // _gridNavPane
@@ -100,7 +99,8 @@
             this._gridNavPane.Controls.Add(this._navPageDetail);
             this._gridNavPane.Dock = System.Windows.Forms.DockStyle.Right;
             this._gridNavPane.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._gridNavPane.Location = new System.Drawing.Point(630, 0);
+            this._gridNavPane.Location = new System.Drawing.Point(720, 0);
+            this._gridNavPane.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._gridNavPane.Name = "_gridNavPane";
             this._gridNavPane.PageProperties.AllowHtmlDraw = false;
             this._gridNavPane.PageProperties.ShowExpandButton = false;
@@ -108,9 +108,9 @@
             this._navPageDetail,
             this._navPageSearch,
             this._navPageConfig});
-            this._gridNavPane.RegularSize = new System.Drawing.Size(300, 654);
+            this._gridNavPane.RegularSize = new System.Drawing.Size(343, 841);
             this._gridNavPane.SelectedPage = this._navPageDetail;
-            this._gridNavPane.Size = new System.Drawing.Size(300, 654);
+            this._gridNavPane.Size = new System.Drawing.Size(343, 841);
             this._gridNavPane.TabIndex = 1;
             this._gridNavPane.Text = "功能区";
             this._gridNavPane.TransitionType = DevExpress.Utils.Animation.Transitions.Cover;
@@ -122,6 +122,7 @@
             this._navPageSearch.Controls.Add(this.splitterControl1);
             this._navPageSearch.Controls.Add(this.panelControl2);
             this._navPageSearch.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.zoom100_32x32;
+            this._navPageSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._navPageSearch.Name = "_navPageSearch";
             this._navPageSearch.PageText = "搜索";
             this._navPageSearch.Properties.AppearanceCaption.Image = ((System.Drawing.Image)(resources.GetObject("_navPageSearch.Properties.AppearanceCaption.Image")));
@@ -129,23 +130,24 @@
             this._navPageSearch.Properties.ShowCollapseButton = DevExpress.Utils.DefaultBoolean.True;
             this._navPageSearch.Properties.ShowExpandButton = DevExpress.Utils.DefaultBoolean.False;
             this._navPageSearch.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Image;
-            this._navPageSearch.Size = new System.Drawing.Size(238, 593);
+            this._navPageSearch.Size = new System.Drawing.Size(272, 762);
             // 
             // searchControlUC1
             // 
             this.searchControlUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.searchControlUC1.Location = new System.Drawing.Point(0, 0);
-            this.searchControlUC1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.searchControlUC1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.searchControlUC1.Name = "searchControlUC1";
-            this.searchControlUC1.Size = new System.Drawing.Size(238, 538);
+            this.searchControlUC1.Size = new System.Drawing.Size(272, 693);
             this.searchControlUC1.TabIndex = 8;
             // 
             // splitterControl1
             // 
             this.splitterControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitterControl1.Location = new System.Drawing.Point(0, 538);
+            this.splitterControl1.Location = new System.Drawing.Point(0, 693);
+            this.splitterControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.splitterControl1.Name = "splitterControl1";
-            this.splitterControl1.Size = new System.Drawing.Size(238, 6);
+            this.splitterControl1.Size = new System.Drawing.Size(272, 6);
             this.splitterControl1.TabIndex = 7;
             this.splitterControl1.TabStop = false;
             // 
@@ -154,25 +156,28 @@
             this.panelControl2.Controls.Add(this._btnSearchReset);
             this.panelControl2.Controls.Add(this._btnSearchConfirm);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl2.Location = new System.Drawing.Point(0, 544);
+            this.panelControl2.Location = new System.Drawing.Point(0, 699);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(238, 49);
+            this.panelControl2.Size = new System.Drawing.Size(272, 63);
             this.panelControl2.TabIndex = 6;
             // 
             // _btnSearchReset
             // 
-            this._btnSearchReset.Location = new System.Drawing.Point(154, 12);
+            this._btnSearchReset.Location = new System.Drawing.Point(176, 15);
+            this._btnSearchReset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._btnSearchReset.Name = "_btnSearchReset";
-            this._btnSearchReset.Size = new System.Drawing.Size(75, 23);
+            this._btnSearchReset.Size = new System.Drawing.Size(86, 30);
             this._btnSearchReset.TabIndex = 6;
             this._btnSearchReset.Text = "重置";
             this._btnSearchReset.Click += new System.EventHandler(this._btnSearchReset_Click);
             // 
             // _btnSearchConfirm
             // 
-            this._btnSearchConfirm.Location = new System.Drawing.Point(75, 12);
+            this._btnSearchConfirm.Location = new System.Drawing.Point(86, 15);
+            this._btnSearchConfirm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._btnSearchConfirm.Name = "_btnSearchConfirm";
-            this._btnSearchConfirm.Size = new System.Drawing.Size(75, 23);
+            this._btnSearchConfirm.Size = new System.Drawing.Size(86, 30);
             this._btnSearchConfirm.TabIndex = 5;
             this._btnSearchConfirm.Text = "确定";
             this._btnSearchConfirm.Click += new System.EventHandler(this._btnSearchConfirm_Click);
@@ -185,12 +190,13 @@
             this._navPageConfig.Controls.Add(this.buttonEdit1);
             this._navPageConfig.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._navPageConfig.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.pagesetup_32x32;
+            this._navPageConfig.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._navPageConfig.Name = "_navPageConfig";
             this._navPageConfig.PageText = "设置";
             this._navPageConfig.Properties.ShowCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this._navPageConfig.Properties.ShowExpandButton = DevExpress.Utils.DefaultBoolean.False;
             this._navPageConfig.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Image;
-            this._navPageConfig.Size = new System.Drawing.Size(238, 604);
+            this._navPageConfig.Size = new System.Drawing.Size(272, 777);
             // 
             // listBoxControl1
             // 
@@ -200,16 +206,18 @@
             "列2",
             "列3",
             "列4"});
-            this.listBoxControl1.Location = new System.Drawing.Point(51, 184);
+            this.listBoxControl1.Location = new System.Drawing.Point(58, 237);
+            this.listBoxControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listBoxControl1.Name = "listBoxControl1";
-            this.listBoxControl1.Size = new System.Drawing.Size(120, 95);
+            this.listBoxControl1.Size = new System.Drawing.Size(137, 122);
             this.listBoxControl1.TabIndex = 0;
             // 
             // controlNavigator1
             // 
-            this.controlNavigator1.Location = new System.Drawing.Point(34, 331);
+            this.controlNavigator1.Location = new System.Drawing.Point(39, 426);
+            this.controlNavigator1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.controlNavigator1.Name = "controlNavigator1";
-            this.controlNavigator1.Size = new System.Drawing.Size(167, 24);
+            this.controlNavigator1.Size = new System.Drawing.Size(191, 31);
             this.controlNavigator1.TabIndex = 1;
             this.controlNavigator1.Text = "controlNavigator1";
             // 
@@ -217,11 +225,12 @@
             // 
             this.buttonEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonEdit1.EditValue = "筛选条件：用户名=“张三”";
-            this.buttonEdit1.Location = new System.Drawing.Point(34, 296);
+            this.buttonEdit1.Location = new System.Drawing.Point(39, 381);
+            this.buttonEdit1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonEdit1.Name = "buttonEdit1";
             this.buttonEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit1.Size = new System.Drawing.Size(160, 20);
+            this.buttonEdit1.Size = new System.Drawing.Size(183, 24);
             this.buttonEdit1.TabIndex = 2;
             // 
             // _navPageDetail
@@ -232,6 +241,7 @@
             this._navPageDetail.CustomHeaderButtons.AddRange(new DevExpress.XtraBars.Docking2010.IButton[] {
             new DevExpress.XtraBars.Docking.CustomHeaderButton()});
             this._navPageDetail.Image = global::WitsWay.TempTests.GeneralQuery.Properties.Resources.textbox_32x32;
+            this._navPageDetail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._navPageDetail.Name = "_navPageDetail";
             this._navPageDetail.PageText = "详情";
             this._navPageDetail.Properties.AppearanceCaption.FontStyleDelta = System.Drawing.FontStyle.Bold;
@@ -240,7 +250,7 @@
             this._navPageDetail.Properties.AppearanceCaption.Options.UseFont = true;
             this._navPageDetail.Properties.AppearanceCaption.Options.UseForeColor = true;
             this._navPageDetail.Properties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.Image;
-            this._navPageDetail.Size = new System.Drawing.Size(238, 593);
+            this._navPageDetail.Size = new System.Drawing.Size(275, 770);
             // 
             // _panelGrid
             // 
@@ -250,18 +260,21 @@
             this._panelGrid.Controls.Add(this.panelControl3);
             this._panelGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this._panelGrid.Location = new System.Drawing.Point(0, 0);
+            this._panelGrid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._panelGrid.Name = "_panelGrid";
-            this._panelGrid.Padding = new System.Windows.Forms.Padding(3);
-            this._panelGrid.Size = new System.Drawing.Size(630, 654);
+            this._panelGrid.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this._panelGrid.Size = new System.Drawing.Size(720, 841);
             this._panelGrid.TabIndex = 2;
             // 
             // _gridControl
             // 
             this._gridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._gridControl.Location = new System.Drawing.Point(3, 36);
+            this._gridControl.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this._gridControl.Location = new System.Drawing.Point(3, 47);
             this._gridControl.MainView = this._gridView;
+            this._gridControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._gridControl.Name = "_gridControl";
-            this._gridControl.Size = new System.Drawing.Size(624, 585);
+            this._gridControl.Size = new System.Drawing.Size(714, 751);
             this._gridControl.TabIndex = 6;
             this._gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this._gridView});
@@ -278,10 +291,11 @@
             this._panelBar.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this._panelBar.Controls.Add(this.standaloneBarDockControl1);
             this._panelBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this._panelBar.Location = new System.Drawing.Point(3, 3);
+            this._panelBar.Location = new System.Drawing.Point(3, 4);
+            this._panelBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._panelBar.Name = "_panelBar";
-            this._panelBar.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this._panelBar.Size = new System.Drawing.Size(624, 33);
+            this._panelBar.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
+            this._panelBar.Size = new System.Drawing.Size(714, 43);
             this._panelBar.TabIndex = 7;
             // 
             // standaloneBarDockControl1
@@ -291,29 +305,10 @@
             this.standaloneBarDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.standaloneBarDockControl1.Location = new System.Drawing.Point(0, 0);
             this.standaloneBarDockControl1.Manager = this.barManager1;
+            this.standaloneBarDockControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.standaloneBarDockControl1.Name = "standaloneBarDockControl1";
-            this.standaloneBarDockControl1.Size = new System.Drawing.Size(624, 30);
+            this.standaloneBarDockControl1.Size = new System.Drawing.Size(714, 39);
             this.standaloneBarDockControl1.Text = "standaloneBarDockControl1";
-            // 
-            // panelControl3
-            // 
-            this.panelControl3.AutoSize = true;
-            this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl3.Controls.Add(this.pagerUC1);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl3.Location = new System.Drawing.Point(3, 621);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(624, 30);
-            this.panelControl3.TabIndex = 5;
-            // 
-            // pagerUC1
-            // 
-            this.pagerUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pagerUC1.Location = new System.Drawing.Point(0, 0);
-            this.pagerUC1.Name = "pagerUC1";
-            this.pagerUC1.PageSizeAllow = ((System.Collections.Generic.List<int>)(resources.GetObject("pagerUC1.PageSizeAllow")));
-            this.pagerUC1.Size = new System.Drawing.Size(624, 30);
-            this.pagerUC1.TabIndex = 3;
             // 
             // barManager1
             // 
@@ -465,15 +460,17 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(930, 0);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1063, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 654);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 841);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(930, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1063, 0);
             // 
             // barDockControlLeft
             // 
@@ -481,19 +478,43 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 654);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 841);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(930, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1063, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 654);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 841);
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.AutoSize = true;
+            this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl3.Controls.Add(this.pagerUC1);
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl3.Location = new System.Drawing.Point(3, 798);
+            this.panelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(714, 39);
+            this.panelControl3.TabIndex = 5;
+            // 
+            // pagerUC1
+            // 
+            this.pagerUC1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pagerUC1.Location = new System.Drawing.Point(0, 0);
+            this.pagerUC1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.pagerUC1.Name = "pagerUC1";
+            this.pagerUC1.PageSizeAllow = ((System.Collections.Generic.List<int>)(resources.GetObject("pagerUC1.PageSizeAllow")));
+            this.pagerUC1.Size = new System.Drawing.Size(714, 39);
+            this.pagerUC1.TabIndex = 3;
             // 
             // GridWithFilterUc2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this._panelGrid);
             this.Controls.Add(this._gridNavPane);
@@ -501,8 +522,9 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GridWithFilterUc2";
-            this.Size = new System.Drawing.Size(930, 654);
+            this.Size = new System.Drawing.Size(1063, 841);
             ((System.ComponentModel.ISupportInitialize)(this._gridNavPane)).EndInit();
             this._gridNavPane.ResumeLayout(false);
             this._navPageSearch.ResumeLayout(false);
@@ -519,10 +541,10 @@
             ((System.ComponentModel.ISupportInitialize)(this._panelBar)).EndInit();
             this._panelBar.ResumeLayout(false);
             this._panelBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
-            this.panelControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

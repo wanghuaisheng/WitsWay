@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonalDiskForm));
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
@@ -46,15 +47,15 @@
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem7 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.Skins.SkinPaddingEdges skinPaddingEdges1 = new DevExpress.Skins.SkinPaddingEdges();
             DevExpress.Skins.SkinPaddingEdges skinPaddingEdges2 = new DevExpress.Skins.SkinPaddingEdges();
-            this._barManager = new DevExpress.XtraBars.BarManager();
+            this._barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.imgArrows = new DevExpress.Utils.ImageCollection();
+            this.imgArrows = new DevExpress.Utils.ImageCollection(this.components);
             this.navigationPanel = new DevExpress.XtraEditors.PanelControl();
             this.btnNavigationHistory = new DevExpress.XtraEditors.LabelControl();
-            this.imgs = new DevExpress.Utils.ImageCollection();
+            this.imgs = new DevExpress.Utils.ImageCollection(this.components);
             this.btnUpTo = new DevExpress.XtraEditors.LabelControl();
             this.btnForward = new DevExpress.XtraEditors.LabelControl();
             this.btnBack = new DevExpress.XtraEditors.LabelControl();
@@ -100,7 +101,7 @@
             this.ButtonItemProperties = new DevExpress.XtraBars.BarButtonItem();
             this.btnOpen = new DevExpress.XtraBars.BarButtonItem();
             this.ButtonItemOptions = new DevExpress.XtraBars.BarButtonItem();
-            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this._ribbonGalleryViews = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
@@ -179,15 +180,17 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this._barManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(1144, 0);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1307, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 657);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 845);
             this.barDockControlBottom.Manager = this._barManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1144, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1307, 0);
             // 
             // barDockControlLeft
             // 
@@ -195,15 +198,17 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this._barManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 657);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 845);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1144, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1307, 0);
             this.barDockControlRight.Manager = this._barManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 657);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 845);
             // 
             // imgArrows
             // 
@@ -228,10 +233,10 @@
             this.navigationPanel.Controls.Add(this.EditSearch);
             this.navigationPanel.Controls.Add(this.editBreadCrumb);
             this.navigationPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.navigationPanel.Location = new System.Drawing.Point(0, 123);
+            this.navigationPanel.Location = new System.Drawing.Point(0, 156);
             this.navigationPanel.Margin = new System.Windows.Forms.Padding(0);
             this.navigationPanel.Name = "navigationPanel";
-            this.navigationPanel.Size = new System.Drawing.Size(1144, 34);
+            this.navigationPanel.Size = new System.Drawing.Size(1307, 44);
             this.navigationPanel.TabIndex = 9;
             // 
             // btnNavigationHistory
@@ -246,9 +251,10 @@
             this.btnNavigationHistory.AppearancePressed.ImageIndex = 3;
             this.btnNavigationHistory.AppearancePressed.Options.UseImageIndex = true;
             this.btnNavigationHistory.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.btnNavigationHistory.Location = new System.Drawing.Point(60, 8);
+            this.btnNavigationHistory.Location = new System.Drawing.Point(69, 10);
+            this.btnNavigationHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnNavigationHistory.Name = "btnNavigationHistory";
-            this.btnNavigationHistory.Size = new System.Drawing.Size(16, 18);
+            this.btnNavigationHistory.Size = new System.Drawing.Size(18, 23);
             this.btnNavigationHistory.TabIndex = 8;
             // 
             // imgs
@@ -271,9 +277,10 @@
             this.btnUpTo.AppearancePressed.ImageIndex = 8;
             this.btnUpTo.AppearancePressed.Options.UseImageIndex = true;
             this.btnUpTo.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.btnUpTo.Location = new System.Drawing.Point(76, 5);
+            this.btnUpTo.Location = new System.Drawing.Point(87, 6);
+            this.btnUpTo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpTo.Name = "btnUpTo";
-            this.btnUpTo.Size = new System.Drawing.Size(24, 24);
+            this.btnUpTo.Size = new System.Drawing.Size(27, 31);
             this.btnUpTo.TabIndex = 7;
             // 
             // btnForward
@@ -288,9 +295,10 @@
             this.btnForward.AppearancePressed.ImageIndex = 7;
             this.btnForward.AppearancePressed.Options.UseImageIndex = true;
             this.btnForward.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.btnForward.Location = new System.Drawing.Point(36, 8);
+            this.btnForward.Location = new System.Drawing.Point(41, 10);
+            this.btnForward.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnForward.Name = "btnForward";
-            this.btnForward.Size = new System.Drawing.Size(18, 18);
+            this.btnForward.Size = new System.Drawing.Size(21, 23);
             this.btnForward.TabIndex = 6;
             // 
             // btnBack
@@ -305,28 +313,31 @@
             this.btnBack.AppearancePressed.ImageIndex = 6;
             this.btnBack.AppearancePressed.Options.UseImageIndex = true;
             this.btnBack.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.btnBack.Location = new System.Drawing.Point(7, 8);
+            this.btnBack.Location = new System.Drawing.Point(8, 10);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(18, 18);
+            this.btnBack.Size = new System.Drawing.Size(21, 23);
             this.btnBack.TabIndex = 5;
             // 
             // EditSearch
             // 
             this.EditSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.EditSearch.Location = new System.Drawing.Point(869, 5);
+            this.EditSearch.Location = new System.Drawing.Point(993, 6);
+            this.EditSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EditSearch.Name = "EditSearch";
             this.EditSearch.Properties.AutoHeight = false;
             editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.EditSearch.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(editorButtonImageOptions1, DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, null)});
-            this.EditSearch.Size = new System.Drawing.Size(263, 24);
+            this.EditSearch.Size = new System.Drawing.Size(301, 24);
             this.EditSearch.TabIndex = 4;
             // 
             // editBreadCrumb
             // 
             this.editBreadCrumb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.editBreadCrumb.Location = new System.Drawing.Point(106, 5);
+            this.editBreadCrumb.Location = new System.Drawing.Point(121, 6);
+            this.editBreadCrumb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.editBreadCrumb.Name = "editBreadCrumb";
             this.editBreadCrumb.Properties.AutoHeight = false;
             this.editBreadCrumb.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -352,7 +363,7 @@
             this.editBreadCrumb.Properties.QueryChildNodes += new DevExpress.XtraEditors.BreadCrumbQueryChildNodesEventHandler(this.OnBreadCrumbQueryChildNodes);
             this.editBreadCrumb.Properties.ValidatePath += new DevExpress.XtraEditors.BreadCrumbValidatePathEventHandler(this.OnBreadCrumbValidatePath);
             this.editBreadCrumb.Properties.NewNodeAdding += new DevExpress.XtraEditors.BreadCrumbNewNodeAddingEventHandler(this.OnBreadCrumbNewNodeAdding);
-            this.editBreadCrumb.Size = new System.Drawing.Size(756, 24);
+            this.editBreadCrumb.Size = new System.Drawing.Size(864, 24);
             this.editBreadCrumb.TabIndex = 3;
             // 
             // RibbonControl
@@ -405,6 +416,7 @@
             this.barButtonItem2,
             this.barSubItem2});
             this.RibbonControl.Location = new System.Drawing.Point(0, 0);
+            this.RibbonControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RibbonControl.MaxItemId = 181;
             this.RibbonControl.Name = "RibbonControl";
             this.RibbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -415,7 +427,7 @@
             this.RibbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.RibbonControl.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.ShowOnMultiplePages;
             this.RibbonControl.ShowToolbarCustomizeItem = false;
-            this.RibbonControl.Size = new System.Drawing.Size(1144, 123);
+            this.RibbonControl.Size = new System.Drawing.Size(1307, 156);
             this.RibbonControl.Toolbar.ShowCustomizeItem = false;
             // 
             // ButtonItemHelp
@@ -880,20 +892,22 @@
             this._panelContent.Controls.Add(this.splitterControl1);
             this._panelContent.Controls.Add(this._navBar);
             this._panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._panelContent.Location = new System.Drawing.Point(0, 157);
+            this._panelContent.Location = new System.Drawing.Point(0, 200);
             this._panelContent.Margin = new System.Windows.Forms.Padding(0);
             this._panelContent.Name = "_panelContent";
-            this._panelContent.Size = new System.Drawing.Size(1144, 500);
+            this._panelContent.Size = new System.Drawing.Size(1307, 645);
             this._panelContent.TabIndex = 15;
             // 
             // _gridControl
             // 
             this._gridControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._gridControl.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._gridControl.Location = new System.Drawing.Point(2, 2);
             this._gridControl.MainView = this._gridView;
+            this._gridControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._gridControl.MenuManager = this.RibbonControl;
             this._gridControl.Name = "_gridControl";
-            this._gridControl.Size = new System.Drawing.Size(854, 496);
+            this._gridControl.Size = new System.Drawing.Size(977, 641);
             this._gridControl.TabIndex = 2;
             this._gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this._gridView});
@@ -970,9 +984,10 @@
             // splitterControl1
             // 
             this.splitterControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitterControl1.Location = new System.Drawing.Point(856, 2);
+            this.splitterControl1.Location = new System.Drawing.Point(979, 2);
+            this.splitterControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.splitterControl1.Name = "splitterControl1";
-            this.splitterControl1.Size = new System.Drawing.Size(6, 496);
+            this.splitterControl1.Size = new System.Drawing.Size(6, 641);
             this.splitterControl1.TabIndex = 3;
             this.splitterControl1.TabStop = false;
             // 
@@ -1000,11 +1015,11 @@
             this.navPanelItemVideos});
             this._navBar.LinkInterval = 0;
             this._navBar.LinkSelectionMode = DevExpress.XtraNavBar.LinkSelectionModeType.OneInControl;
-            this._navBar.Location = new System.Drawing.Point(862, 2);
-            this._navBar.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this._navBar.Location = new System.Drawing.Point(985, 2);
+            this._navBar.Margin = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this._navBar.Name = "_navBar";
-            this._navBar.OptionsNavPane.ExpandedWidth = 280;
-            this._navBar.Size = new System.Drawing.Size(280, 496);
+            this._navBar.OptionsNavPane.ExpandedWidth = 320;
+            this._navBar.Size = new System.Drawing.Size(320, 641);
             this._navBar.TabIndex = 1;
             this._navBar.Text = "navigationPanel";
             // 
@@ -1042,8 +1057,9 @@
             this._navContainerProperties.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this._navContainerProperties.Appearance.Options.UseBackColor = true;
             this._navContainerProperties.Controls.Add(this._propertyGrid);
+            this._navContainerProperties.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._navContainerProperties.Name = "_navContainerProperties";
-            this._navContainerProperties.Size = new System.Drawing.Size(256, 176);
+            this._navContainerProperties.Size = new System.Drawing.Size(290, 226);
             this._navContainerProperties.TabIndex = 0;
             // 
             // _propertyGrid
@@ -1051,6 +1067,7 @@
             this._propertyGrid.Cursor = System.Windows.Forms.Cursors.Default;
             this._propertyGrid.Dock = System.Windows.Forms.DockStyle.Top;
             this._propertyGrid.Location = new System.Drawing.Point(0, 0);
+            this._propertyGrid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._propertyGrid.Name = "_propertyGrid";
             this._propertyGrid.Rows.AddRange(new DevExpress.XtraVerticalGrid.Rows.BaseRow[] {
             this.row,
@@ -1065,7 +1082,7 @@
             this.row9,
             this.row10,
             this.row11});
-            this._propertyGrid.Size = new System.Drawing.Size(256, 149);
+            this._propertyGrid.Size = new System.Drawing.Size(290, 192);
             this._propertyGrid.TabIndex = 4;
             // 
             // row
@@ -1156,7 +1173,7 @@
             this._navGroupFileProperties.Caption = "文件属性";
             this._navGroupFileProperties.ControlContainer = this._navContainerProperties;
             this._navGroupFileProperties.Expanded = true;
-            this._navGroupFileProperties.GroupClientHeight = 178;
+            this._navGroupFileProperties.GroupClientHeight = 231;
             this._navGroupFileProperties.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this._navGroupFileProperties.Name = "_navGroupFileProperties";
             // 
@@ -1174,9 +1191,9 @@
             // 
             // PersonalDiskForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1144, 657);
+            this.ClientSize = new System.Drawing.Size(1307, 845);
             this.Controls.Add(this._panelContent);
             this.Controls.Add(this.navigationPanel);
             this.Controls.Add(this.RibbonControl);
@@ -1184,6 +1201,7 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PersonalDiskForm";
             this.Ribbon = this.RibbonControl;
             this.Text = "文件管理";

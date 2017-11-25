@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TabMainForm));
             this.tabFormDefaultManager1 = new DevExpress.XtraBars.TabFormDefaultManager();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -36,11 +35,15 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
-            this._tabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this._tabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
             this._tabFormControl = new DevExpress.XtraBars.TabFormControl();
+            this.flyoutPanel1 = new DevExpress.Utils.FlyoutPanel();
+            this.flyoutPanelControl1 = new DevExpress.Utils.FlyoutPanelControl();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this._popupPages = new DevExpress.XtraBars.PopupMenu(this.components);
+            this._popupPages = new DevExpress.XtraBars.PopupMenu();
             this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
@@ -58,7 +61,7 @@
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this._popupLogin = new DevExpress.XtraBars.PopupMenu(this.components);
+            this._popupLogin = new DevExpress.XtraBars.PopupMenu();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
@@ -71,14 +74,15 @@
             this.xtraScrollableControl2 = new DevExpress.XtraEditors.XtraScrollableControl();
             this.tabFormPage3 = new DevExpress.XtraBars.TabFormPage();
             this.xtraScrollableControl3 = new DevExpress.XtraEditors.XtraScrollableControl();
-            this._lookAndFeel = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this._lookAndFeel = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
-            this._barManager = new DevExpress.XtraBars.BarManager(this.components);
+            this._barManager = new DevExpress.XtraBars.BarManager();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.skinBarSubItem2 = new DevExpress.XtraBars.SkinBarSubItem();
             this.barMdiChildrenListItem1 = new DevExpress.XtraBars.BarMdiChildrenListItem();
@@ -86,15 +90,15 @@
             this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
-            this.flyoutPanel1 = new DevExpress.Utils.FlyoutPanel();
-            this.flyoutPanelControl1 = new DevExpress.Utils.FlyoutPanelControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tabFormDefaultManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._tabbedMdiManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._tabFormControl)).BeginInit();
             this._tabFormControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).BeginInit();
+            this.flyoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).BeginInit();
+            this.flyoutPanelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._popupPages)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabFormDefaultManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemToggleSwitch1)).BeginInit();
@@ -103,11 +107,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._barManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).BeginInit();
-            this.flyoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).BeginInit();
-            this.flyoutPanelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabFormDefaultManager1
@@ -128,15 +127,17 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = null;
-            this.barDockControlTop.Size = new System.Drawing.Size(950, 0);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1084, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 553);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 711);
             this.barDockControlBottom.Manager = null;
-            this.barDockControlBottom.Size = new System.Drawing.Size(950, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1084, 0);
             // 
             // barDockControlLeft
             // 
@@ -144,15 +145,17 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = null;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 553);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 711);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(950, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1084, 0);
             this.barDockControlRight.Manager = null;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 553);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 711);
             // 
             // skinBarSubItem1
             // 
@@ -190,12 +193,13 @@
             this._tabFormControl.LeftTabIndent = 5;
             this._tabFormControl.Location = new System.Drawing.Point(0, 0);
             this._tabFormControl.Manager = this.tabFormDefaultManager2;
+            this._tabFormControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._tabFormControl.Name = "_tabFormControl";
             this._tabFormControl.Pages.Add(this.tabFormPage1);
             this._tabFormControl.Pages.Add(this.tabFormPage2);
             this._tabFormControl.Pages.Add(this.tabFormPage3);
             this._tabFormControl.SelectedPage = this.tabFormPage1;
-            this._tabFormControl.Size = new System.Drawing.Size(950, 48);
+            this._tabFormControl.Size = new System.Drawing.Size(1084, 63);
             this._tabFormControl.TabForm = this;
             this._tabFormControl.TabIndex = 11;
             this._tabFormControl.TabLeftItemLinks.Add(this.barButtonItem1, true);
@@ -203,6 +207,47 @@
             this._tabFormControl.TabLeftItemLinks.Add(this.barButtonItem11);
             this._tabFormControl.TabRightItemLinks.Add(this.barButtonItem6, true);
             this._tabFormControl.TabStop = false;
+            // 
+            // flyoutPanel1
+            // 
+            this.flyoutPanel1.Controls.Add(this.flyoutPanelControl1);
+            this.flyoutPanel1.Location = new System.Drawing.Point(581, 39);
+            this.flyoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flyoutPanel1.Name = "flyoutPanel1";
+            this.flyoutPanel1.Options.CloseOnOuterClick = true;
+            this.flyoutPanel1.OwnerControl = this.panelControl1;
+            this.flyoutPanel1.Size = new System.Drawing.Size(171, 193);
+            this.flyoutPanel1.TabIndex = 0;
+            // 
+            // flyoutPanelControl1
+            // 
+            this.flyoutPanelControl1.Controls.Add(this.simpleButton4);
+            this.flyoutPanelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flyoutPanelControl1.FlyoutPanel = this.flyoutPanel1;
+            this.flyoutPanelControl1.Location = new System.Drawing.Point(0, 0);
+            this.flyoutPanelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.flyoutPanelControl1.Name = "flyoutPanelControl1";
+            this.flyoutPanelControl1.Size = new System.Drawing.Size(171, 193);
+            this.flyoutPanelControl1.TabIndex = 0;
+            this.flyoutPanelControl1.VisibleChanged += new System.EventHandler(this.flyoutPanelControl1_VisibleChanged);
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(33, 4);
+            this.simpleButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(86, 30);
+            this.simpleButton4.TabIndex = 0;
+            this.simpleButton4.Text = "simpleButton4";
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Location = new System.Drawing.Point(759, 35);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(137, 19);
+            this.panelControl1.TabIndex = 25;
+            this.panelControl1.Visible = false;
             // 
             // barSubItem1
             // 
@@ -282,7 +327,7 @@
             this.barButtonItem13,
             this.barButtonItem14,
             this.barButtonItem15});
-            this.tabFormDefaultManager2.MaxItemId = 29;
+            this.tabFormDefaultManager2.MaxItemId = 30;
             this.tabFormDefaultManager2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemToggleSwitch1});
             // 
@@ -292,15 +337,17 @@
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
             this.barDockControl1.Manager = null;
-            this.barDockControl1.Size = new System.Drawing.Size(950, 0);
+            this.barDockControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControl1.Size = new System.Drawing.Size(1084, 0);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 553);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 711);
             this.barDockControl2.Manager = null;
-            this.barDockControl2.Size = new System.Drawing.Size(950, 0);
+            this.barDockControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControl2.Size = new System.Drawing.Size(1084, 0);
             // 
             // barDockControl3
             // 
@@ -308,15 +355,17 @@
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl3.Location = new System.Drawing.Point(0, 0);
             this.barDockControl3.Manager = null;
-            this.barDockControl3.Size = new System.Drawing.Size(0, 553);
+            this.barDockControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 711);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(950, 0);
+            this.barDockControl4.Location = new System.Drawing.Point(1084, 0);
             this.barDockControl4.Manager = null;
-            this.barDockControl4.Size = new System.Drawing.Size(0, 553);
+            this.barDockControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 711);
             // 
             // barEditItem1
             // 
@@ -452,9 +501,10 @@
             // xtraScrollableControl1
             // 
             this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 48);
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 63);
+            this.xtraScrollableControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.xtraScrollableControl1.Name = "xtraScrollableControl1";
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(950, 505);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(1084, 648);
             this.xtraScrollableControl1.TabIndex = 12;
             // 
             // tabFormPage2
@@ -485,10 +535,6 @@
             this.xtraScrollableControl3.Size = new System.Drawing.Size(942, 736);
             this.xtraScrollableControl3.TabIndex = 14;
             // 
-            // _lookAndFeel
-            // 
-            this._lookAndFeel.LookAndFeel.SkinName = "Caramel";
-            // 
             // navigationPage1
             // 
             this.navigationPage1.Caption = "navigationPage1";
@@ -503,8 +549,9 @@
             // 
             this.navigationPage3.Caption = "navigationPage3";
             this.navigationPage3.Image = ((System.Drawing.Image)(resources.GetObject("navigationPage3.Image")));
+            this.navigationPage3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.navigationPage3.Name = "navigationPage3";
-            this.navigationPage3.Size = new System.Drawing.Size(238, 444);
+            this.navigationPage3.Size = new System.Drawing.Size(272, 571);
             // 
             // navigationPage2
             // 
@@ -513,27 +560,40 @@
             this.navigationPage2.Controls.Add(this.simpleButton2);
             this.navigationPage2.Controls.Add(this.simpleButton1);
             this.navigationPage2.Image = ((System.Drawing.Image)(resources.GetObject("navigationPage2.Image")));
+            this.navigationPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.navigationPage2.Name = "navigationPage2";
             this.navigationPage2.PageText = "用户管理";
             this.navigationPage2.Properties.ShowCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.navigationPage2.Properties.ShowExpandButton = DevExpress.Utils.DefaultBoolean.False;
-            this.navigationPage2.Size = new System.Drawing.Size(238, 455);
+            this.navigationPage2.Size = new System.Drawing.Size(275, 589);
             this.navigationPage2.ToolTip = "用户管理tooltip";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.Location = new System.Drawing.Point(63, 224);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(86, 30);
+            this.simpleButton3.TabIndex = 2;
+            this.simpleButton3.Text = "simpleButton3";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(55, 132);
+            this.simpleButton2.Location = new System.Drawing.Point(63, 170);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton2.Size = new System.Drawing.Size(86, 30);
             this.simpleButton2.TabIndex = 1;
             this.simpleButton2.Text = "显示About";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(55, 58);
+            this.simpleButton1.Location = new System.Drawing.Point(63, 75);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.Size = new System.Drawing.Size(86, 30);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "simpleButton1";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -543,15 +603,16 @@
             this.navigationPane1.Controls.Add(this.navigationPage2);
             this.navigationPane1.Controls.Add(this.navigationPage3);
             this.navigationPane1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.navigationPane1.Location = new System.Drawing.Point(0, 48);
+            this.navigationPane1.Location = new System.Drawing.Point(0, 63);
+            this.navigationPane1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.navigationPane1.Name = "navigationPane1";
             this.navigationPane1.PageProperties.AppearanceCaption.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navigationPage2,
             this.navigationPage3});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(300, 505);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(343, 648);
             this.navigationPane1.SelectedPage = this.navigationPage2;
-            this.navigationPane1.Size = new System.Drawing.Size(300, 505);
+            this.navigationPane1.Size = new System.Drawing.Size(343, 648);
             this.navigationPane1.TabIndex = 6;
             this.navigationPane1.Text = "navigationPane1";
             this.navigationPane1.MouseEnter += new System.EventHandler(this.navigationPane1_MouseEnter);
@@ -605,15 +666,17 @@
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl5.Location = new System.Drawing.Point(0, 0);
             this.barDockControl5.Manager = this._barManager;
-            this.barDockControl5.Size = new System.Drawing.Size(950, 0);
+            this.barDockControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControl5.Size = new System.Drawing.Size(1084, 0);
             // 
             // barDockControl6
             // 
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 553);
+            this.barDockControl6.Location = new System.Drawing.Point(0, 711);
             this.barDockControl6.Manager = this._barManager;
-            this.barDockControl6.Size = new System.Drawing.Size(950, 27);
+            this.barDockControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControl6.Size = new System.Drawing.Size(1084, 34);
             // 
             // barDockControl7
             // 
@@ -621,67 +684,23 @@
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl7.Location = new System.Drawing.Point(0, 0);
             this.barDockControl7.Manager = this._barManager;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 553);
+            this.barDockControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 711);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(950, 0);
+            this.barDockControl8.Location = new System.Drawing.Point(1084, 0);
             this.barDockControl8.Manager = this._barManager;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 553);
-            // 
-            // flyoutPanel1
-            // 
-            this.flyoutPanel1.Controls.Add(this.flyoutPanelControl1);
-            this.flyoutPanel1.Location = new System.Drawing.Point(508, 30);
-            this.flyoutPanel1.Name = "flyoutPanel1";
-            this.flyoutPanel1.Options.CloseOnOuterClick = true;
-            this.flyoutPanel1.OwnerControl = this.panelControl1;
-            this.flyoutPanel1.Size = new System.Drawing.Size(150, 150);
-            this.flyoutPanel1.TabIndex = 0;
-            // 
-            // flyoutPanelControl1
-            // 
-            this.flyoutPanelControl1.Controls.Add(this.simpleButton4);
-            this.flyoutPanelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flyoutPanelControl1.FlyoutPanel = this.flyoutPanel1;
-            this.flyoutPanelControl1.Location = new System.Drawing.Point(0, 0);
-            this.flyoutPanelControl1.Name = "flyoutPanelControl1";
-            this.flyoutPanelControl1.Size = new System.Drawing.Size(150, 150);
-            this.flyoutPanelControl1.TabIndex = 0;
-            this.flyoutPanelControl1.VisibleChanged += new System.EventHandler(this.flyoutPanelControl1_VisibleChanged);
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Location = new System.Drawing.Point(664, 27);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(120, 15);
-            this.panelControl1.TabIndex = 25;
-            this.panelControl1.Visible = false;
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Location = new System.Drawing.Point(55, 174);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton3.TabIndex = 2;
-            this.simpleButton3.Text = "simpleButton3";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Location = new System.Drawing.Point(29, 3);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton4.TabIndex = 0;
-            this.simpleButton4.Text = "simpleButton4";
+            this.barDockControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 711);
             // 
             // TabMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(950, 580);
+            this.ClientSize = new System.Drawing.Size(1084, 745);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.navigationPane1);
             this.Controls.Add(this.xtraScrollableControl1);
@@ -701,6 +720,7 @@
             this.DoubleBuffered = true;
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TabMainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -711,6 +731,11 @@
             ((System.ComponentModel.ISupportInitialize)(this._tabbedMdiManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._tabFormControl)).EndInit();
             this._tabFormControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).EndInit();
+            this.flyoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).EndInit();
+            this.flyoutPanelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._popupPages)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabFormDefaultManager2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemToggleSwitch1)).EndInit();
@@ -719,11 +744,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._barManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).EndInit();
-            this.flyoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).EndInit();
-            this.flyoutPanelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

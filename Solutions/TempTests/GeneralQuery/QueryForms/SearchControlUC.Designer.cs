@@ -72,8 +72,9 @@
             this.accordionControlElement2,
             this.accordionControlElement3});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(411, 782);
+            this.accordionControl1.Size = new System.Drawing.Size(470, 1005);
             this.accordionControl1.TabIndex = 0;
             this.accordionControl1.Text = "accordionControl1";
             // 
@@ -82,15 +83,17 @@
             this.accordionContentContainer1.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.accordionContentContainer1.Appearance.Options.UseBackColor = true;
             this.accordionContentContainer1.Controls.Add(this.textEdit1);
+            this.accordionContentContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accordionContentContainer1.Name = "accordionContentContainer1";
-            this.accordionContentContainer1.Size = new System.Drawing.Size(394, 157);
+            this.accordionContentContainer1.Size = new System.Drawing.Size(450, 202);
             this.accordionContentContainer1.TabIndex = 1;
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(73, 51);
+            this.textEdit1.Location = new System.Drawing.Point(83, 66);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(117, 20);
+            this.textEdit1.Size = new System.Drawing.Size(134, 24);
             this.textEdit1.TabIndex = 0;
             // 
             // accordionContentContainer2
@@ -98,15 +101,17 @@
             this.accordionContentContainer2.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.accordionContentContainer2.Appearance.Options.UseBackColor = true;
             this.accordionContentContainer2.Controls.Add(this.simpleButton1);
+            this.accordionContentContainer2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accordionContentContainer2.Name = "accordionContentContainer2";
-            this.accordionContentContainer2.Size = new System.Drawing.Size(394, 89);
+            this.accordionContentContainer2.Size = new System.Drawing.Size(450, 114);
             this.accordionContentContainer2.TabIndex = 2;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(86, 30);
+            this.simpleButton1.Location = new System.Drawing.Point(98, 39);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(87, 27);
+            this.simpleButton1.Size = new System.Drawing.Size(99, 35);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "simpleButton1";
             // 
@@ -115,16 +120,18 @@
             this.accordionContentContainer3.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.accordionContentContainer3.Appearance.Options.UseBackColor = true;
             this.accordionContentContainer3.Controls.Add(this.checkEdit1);
+            this.accordionContentContainer3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accordionContentContainer3.Name = "accordionContentContainer3";
-            this.accordionContentContainer3.Size = new System.Drawing.Size(394, 89);
+            this.accordionContentContainer3.Size = new System.Drawing.Size(450, 114);
             this.accordionContentContainer3.TabIndex = 3;
             // 
             // checkEdit1
             // 
-            this.checkEdit1.Location = new System.Drawing.Point(57, 31);
+            this.checkEdit1.Location = new System.Drawing.Point(65, 40);
+            this.checkEdit1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkEdit1.Name = "checkEdit1";
             this.checkEdit1.Properties.Caption = "checkEdit1";
-            this.checkEdit1.Size = new System.Drawing.Size(87, 19);
+            this.checkEdit1.Size = new System.Drawing.Size(99, 22);
             this.checkEdit1.TabIndex = 0;
             // 
             // accordionContentContainer4
@@ -132,18 +139,20 @@
             this.accordionContentContainer4.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.accordionContentContainer4.Appearance.Options.UseBackColor = true;
             this.accordionContentContainer4.Controls.Add(this.searchControl1);
+            this.accordionContentContainer4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accordionContentContainer4.Name = "accordionContentContainer4";
-            this.accordionContentContainer4.Size = new System.Drawing.Size(394, 89);
+            this.accordionContentContainer4.Size = new System.Drawing.Size(450, 114);
             this.accordionContentContainer4.TabIndex = 4;
             // 
             // searchControl1
             // 
-            this.searchControl1.Location = new System.Drawing.Point(73, 29);
+            this.searchControl1.Location = new System.Drawing.Point(83, 37);
+            this.searchControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Repository.ClearButton(),
             new DevExpress.XtraEditors.Repository.SearchButton()});
-            this.searchControl1.Size = new System.Drawing.Size(117, 20);
+            this.searchControl1.Size = new System.Drawing.Size(134, 24);
             this.searchControl1.TabIndex = 0;
             // 
             // accordionContentContainer5
@@ -151,15 +160,17 @@
             this.accordionContentContainer5.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.accordionContentContainer5.Appearance.Options.UseBackColor = true;
             this.accordionContentContainer5.Controls.Add(this.labelControl1);
+            this.accordionContentContainer5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accordionContentContainer5.Name = "accordionContentContainer5";
-            this.accordionContentContainer5.Size = new System.Drawing.Size(394, 89);
+            this.accordionContentContainer5.Size = new System.Drawing.Size(450, 114);
             this.accordionContentContainer5.TabIndex = 5;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(86, 29);
+            this.labelControl1.Location = new System.Drawing.Point(98, 37);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(70, 14);
+            this.labelControl1.Size = new System.Drawing.Size(81, 18);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "labelControl1";
             // 
@@ -228,11 +239,12 @@
             // 
             // SearchControlUc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.accordionControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SearchControlUc";
-            this.Size = new System.Drawing.Size(411, 782);
+            this.Size = new System.Drawing.Size(470, 1005);
             this.Load += new System.EventHandler(this.SearchControlUC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             this.accordionControl1.ResumeLayout(false);

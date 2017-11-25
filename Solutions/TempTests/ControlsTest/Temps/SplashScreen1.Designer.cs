@@ -66,7 +66,6 @@
             // pictureEdit2
             // 
             this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit2.EditValue = global::WitsWay.TempTests.ControlsTest.Properties.Resources.彩色背景_002;
             this.pictureEdit2.Location = new System.Drawing.Point(12, 11);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.AllowFocused = false;
@@ -82,7 +81,6 @@
             // 
             this.pictureEdit1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit1.EditValue = global::WitsWay.TempTests.ControlsTest.Properties.Resources.yitusoft_LOGO;
             this.pictureEdit1.Location = new System.Drawing.Point(278, 246);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;

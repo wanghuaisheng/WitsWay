@@ -130,6 +130,42 @@
     <Compile Include="EditorTests\PopupContainerEditTest.Designer.cs">
       <DependentUpon>PopupContainerEditTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainUI\UC\GridFilterUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUI\UC\GridFilterUC.Designer.cs">
+      <DependentUpon>GridFilterUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUI\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI\UC\SearchUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUI\UC\SearchUC.Designer.cs">
+      <DependentUpon>SearchUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI\TestForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUI\TestForm1.designer.cs">
+      <DependentUpon>TestForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI\TestForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUI\TestForm2.designer.cs">
+      <DependentUpon>TestForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI\TestForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUI\TestForm3.Designer.cs">
+      <DependentUpon>TestForm3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeeStatus.cs" />
     <Compile Include="Models\Sex.cs" />
@@ -230,6 +266,24 @@
     <EmbeddedResource Include="EditorTests\PopupContainerEditTest.resx">
       <DependentUpon>PopupContainerEditTest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainUI\UC\GridFilterUC.resx">
+      <DependentUpon>GridFilterUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI\UC\SearchUC.resx">
+      <DependentUpon>SearchUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI\TestForm1.resx">
+      <DependentUpon>TestForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI\TestForm2.resx">
+      <DependentUpon>TestForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI\TestForm3.resx">
+      <DependentUpon>TestForm3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ToastUC\ToastMessagePanel.resx">
       <DependentUpon>ToastMessagePanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,9 +355,6 @@
     <None Include="Resources\彩色背景-020.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\yitusoft-LOGO.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
@@ -319,9 +370,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AddCondition.png" />
@@ -438,6 +486,103 @@
     <None Include="Resources\RemoveGroup.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\zoom100_32x32.png" />
+    <None Include="Resources\yitusoft-LOGO.png" />
+    <None Include="Resources\textbox_32x32.png" />
+    <None Include="Resources\pagesetup_32x32.png" />
+    <None Include="Resources\login_logo.gif" />
+    <None Include="Resources\WYSIWYGReports.png" />
+    <None Include="Resources\WordProcessing.png" />
+    <None Include="Resources\WeatherMap.png" />
+    <None Include="Resources\Unknown-user.png" />
+    <None Include="Resources\Tomorrow_Flag.png" />
+    <None Include="Resources\ToDoList_32x32.png" />
+    <None Include="Resources\Today_Flag.png" />
+    <None Include="Resources\Today_32x32.png" />
+    <None Include="Resources\Today_16x16.png" />
+    <None Include="Resources\ThisWeek_Flag.png" />
+    <None Include="Resources\TableStyle.png" />
+    <None Include="Resources\Spreadsheet.png" />
+    <None Include="Resources\SplashScreen.png" />
+    <None Include="Resources\SortAsc_32x32.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Scheduler.png" />
+    <None Include="Resources\SaveAll_32x32.png" />
+    <None Include="Resources\Save_32x32.png" />
+    <None Include="Resources\Save_16x16.png" />
+    <None Include="Resources\reminder.png" />
+    <None Include="Resources\Refresh_32x32.png" />
+    <None Include="Resources\Refresh_16x16.png" />
+    <None Include="Resources\reading.png" />
+    <None Include="Resources\Professor.png" />
+    <None Include="Resources\Priority_16x16.png" />
+    <None Include="Resources\Prioritized_32x32.png" />
+    <None Include="Resources\PrintDirectLarge.png" />
+    <None Include="Resources\Pivot.png" />
+    <None Include="Resources\PDFViewer.png" />
+    <None Include="Resources\PaperKind_Tabloid.png" />
+    <None Include="Resources\PaperKind_Letter.png" />
+    <None Include="Resources\PaperKind_Legal.png" />
+    <None Include="Resources\PaperKind_Executive.png" />
+    <None Include="Resources\PaperKind_A6.png" />
+    <None Include="Resources\PaperKind_A5.png" />
+    <None Include="Resources\PaperKind_A4.png" />
+    <None Include="Resources\PaperKind_A3.png" />
+    <None Include="Resources\PageOrientationPortrait.png" />
+    <None Include="Resources\PageOrientationLandscape.png" />
+    <None Include="Resources\PageMarginsWide.png" />
+    <None Include="Resources\PageMarginsNormal.png" />
+    <None Include="Resources\PageMarginsNarrow.png" />
+    <None Include="Resources\PageMarginsModerate.png" />
+    <None Include="Resources\Owner.png" />
+    <None Include="Resources\Overdue_32x32.png" />
+    <None Include="Resources\OpenClendar_64x64.png" />
+    <None Include="Resources\Online_Help.png" />
+    <None Include="Resources\normal.png" />
+    <None Include="Resources\NoDate_Flag.png" />
+    <None Include="Resources\NextWeek_Flag.png" />
+    <None Include="Resources\NewTask_32x32.png" />
+    <None Include="Resources\NewTask_16x16.png" />
+    <None Include="Resources\NewContact_32x32.png" />
+    <None Include="Resources\NewContact_16x16.png" />
+    <None Include="Resources\NavigationBar_32x32.png" />
+    <None Include="Resources\NavigationBar_16x16.png" />
+    <None Include="Resources\MultiplePagesLarge.png" />
+    <None Include="Resources\Ms.png" />
+    <None Include="Resources\Mrs.png" />
+    <None Include="Resources\Mr.png" />
+    <None Include="Resources\Miss.png" />
+    <None Include="Resources\MemoStyle.png" />
+    <None Include="Resources\Low16x16.png" />
+    <None Include="Resources\ListByDate_32x32.png" />
+    <None Include="Resources\List_32x32.png" />
+    <None Include="Resources\Analytics.png" />
+    <None Include="Resources\ArrowLeft.png" />
+    <None Include="Resources\ArrowRight.png" />
+    <None Include="Resources\BandedReports.png" />
+    <None Include="Resources\BO_Task.png" />
+    <None Include="Resources\BO_Task_Large.png" />
+    <None Include="Resources\ByState_32x32.png" />
+    <None Include="Resources\Card_32x32.png" />
+    <None Include="Resources\Close_16x16.png" />
+    <None Include="Resources\Close_32x32.png" />
+    <None Include="Resources\Code_Central.png" />
+    <None Include="Resources\ColorMixer_32x32.png" />
+    <None Include="Resources\Completed_16x16.png" />
+    <None Include="Resources\Completed_32x32.png" />
+    <None Include="Resources\Contact_16x16.png" />
+    <None Include="Resources\Contact_32x32.png" />
+    <None Include="Resources\Contact_Us.png" />
+    <None Include="Resources\Custom_Flag.png" />
+    <None Include="Resources\Deferred_32x32.png" />
+    <None Include="Resources\Delete_16x16.png" />
+    <None Include="Resources\Delete_32x32.png" />
+    <None Include="Resources\About.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\application_edit.png" />
+    <None Include="Resources\application_view_tile.png" />
+    <None Include="Resources\Blue Round.png" />
+    <None Include="Resources\CommandSave16.png" />
     <Content Include="Resources\Disk\attach-16x16.png" />
     <Content Include="Resources\Disk\contact-16x16.png" />
     <Content Include="Resources\Disk\Content.png" />
@@ -485,11 +630,31 @@
     <Content Include="Resources\Disk\Tiles.png" />
     <Content Include="Resources\Disk\Unknown-user.png" />
     <Content Include="Resources\Disk\VideosSmall.png" />
+    <None Include="Resources\Doctor.png" />
+    <None Include="Resources\EditContact_16x16.png" />
+    <None Include="Resources\EditContact_32x32.png" />
+    <None Include="Resources\EditTask_16x16.png" />
+    <None Include="Resources\EditTask_32x32.png" />
+    <None Include="Resources\ExportToCSV_32x32.png" />
+    <None Include="Resources\ExportToHTML_32x32.png" />
+    <None Include="Resources\ExportToImage_32x32.png" />
+    <None Include="Resources\ExportToMHT_32x32.png" />
+    <None Include="Resources\ExportToPDF_32x32.png" />
+    <None Include="Resources\ExportToRTF_32x32.png" />
+    <None Include="Resources\ExportToText_32x32.png" />
+    <None Include="Resources\ExportToXLS_32x32.png" />
+    <None Include="Resources\ExportToXLSX_32x32.png" />
+    <None Include="Resources\GridContacts.png" />
+    <None Include="Resources\GridTasks.png" />
+    <None Include="Resources\High16x16.png" />
+    <None Include="Resources\Important_16x16.png" />
+    <None Include="Resources\LayoutFlip_16x16.png" />
+    <None Include="Resources\LayoutFlip_32x32.png" />
+    <None Include="Resources\favicon.png" />
     <Content Include="Resources\LightBlue.png" />
     <Content Include="Resources\LightGreen.png" />
     <Content Include="Resources\LightRed.png" />
     <Content Include="Resources\LightYellow.png" />
-    <None Include="Resources\login_logo.gif" />
     <None Include="Resources\settings.svg" />
     <None Include="Resources\viewsetting.svg" />
   </ItemGroup>
