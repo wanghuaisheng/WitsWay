@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C2E33FD-0D9D-423E-A02A-F457A94C97D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WitsWay.WinTemplate</RootNamespace>
+    <AssemblyName>WinTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WitsWay.WinTemplate.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core">
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1">
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1">
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1">
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1">
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1">
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1">
+      <HintPath>
+      </HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WitsWay.Utilities">
+      <HintPath>..\..\..\Assemblies\DLL\WitsWay.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="WitsWay.Utilities.Win">
+      <HintPath>..\..\..\Assemblies\DLL\WitsWay.Utilities.Win.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm1.Designer.cs">
+      <DependentUpon>TestForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm2.Designer.cs">
+      <DependentUpon>TestForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm3.Designer.cs">
+      <DependentUpon>TestForm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\GridFilterUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\GridFilterUC.Designer.cs">
+      <DependentUpon>GridFilterUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\SearchUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\SearchUC.Designer.cs">
+      <DependentUpon>SearchUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TestForm1.resx">
+      <DependentUpon>TestForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm2.resx">
+      <DependentUpon>TestForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm3.resx">
+      <DependentUpon>TestForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\GridFilterUC.resx">
+      <DependentUpon>GridFilterUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\SearchUC.resx">
+      <DependentUpon>SearchUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\application_view_tile.png" />
+    <None Include="Icons\application_edit.png" />
+    <None Include="Icons\add.png" />
+    <Content Include="Icons\DevExpress.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Icons\textbox_32x32.png" />
+    <None Include="Icons\pagesetup_32x32.png" />
+    <Content Include="Icons\Universal.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Win.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Icons\zoom100_32x32.png" />
+    <Content Include="Resources\ArrowLeft.png" />
+    <Content Include="Resources\ArrowRight.png" />
+    <Content Include="Resources\ColorMixer_32x32.png" />
+    <Content Include="Resources\reminder.png" />
+    <Content Include="Resources\WeatherMap.png" />
+    <Content Include="Resources\WYSIWYGReports.png" />
+    <Content Include="Resources\WordProcessing.png" />
+    <Content Include="Resources\NewContact_32x32.png" />
+    <Content Include="Resources\NewContact_16x16.png" />
+    <Content Include="Resources\EditContact_16x16.png" />
+    <Content Include="Resources\EditContact_32x32.png" />
+    <Content Include="Resources\LayoutFlip_16x16.png" />
+    <Content Include="Resources\LayoutFlip_32x32.png" />
+    <Content Include="Resources\SortAsc_32x32.png" />
+    <Content Include="Resources\Card_32x32.png" />
+    <Content Include="Resources\ByState_32x32.png" />
+    <Content Include="Resources\GridTasks.png" />
+    <Content Include="Resources\GridContacts.png" />
+    <Content Include="Resources\Spreadsheet.png" />
+    <Content Include="Resources\BandedReports.png" />
+    <Content Include="Resources\Pivot.png" />
+    <Content Include="Resources\Analytics.png" />
+    <Content Include="Resources\Scheduler.png" />
+    <Content Include="Resources\PDFViewer.png" />
+    <Content Include="Resources\Today_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Today_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BO_Task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BO_Task_Large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Delete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Priority_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NavigationBar_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NavigationBar_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SaveAll_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Unknown-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\reading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Owner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Miss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Mr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Mrs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Ms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Professor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PrintDirectLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MultiplePagesLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageOrientationLandscape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageOrientationPortrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsModerate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsNarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PageMarginsWide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Executive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Legal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PaperKind_Tabloid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Online_Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Code_Central.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Contact_Us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\TableStyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MemoStyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToPDF_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToHTML_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToMHT_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToRTF_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToXLS_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToXLSX_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToCSV_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToText_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExportToImage_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\List_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Completed_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Contact_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Contact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Completed_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewTask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NewTask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditTask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EditTask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ListByDate_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ToDoList_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Prioritized_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Overdue_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Deferred_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Important_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Today_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Tomorrow_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ThisWeek_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NextWeek_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\NoDate_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Custom_Flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\OpenClendar_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Low16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\High16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

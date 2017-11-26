@@ -1,0 +1,1081 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NoDate" xml:space="preserve">
+    <value>No Date</value>
+  </data>
+  <data name="FeedNews" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="PriorityDescription" xml:space="preserve">
+    <value>Set priority for this item.</value>
+  </data>
+  <data name="CollatedDescription" xml:space="preserve">
+    <value>1,2,3   1,2,3  1,2,3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Code_Central" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Code_Central.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Online_Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Online_Help.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReplyDescription" xml:space="preserve">
+    <value>Reply to the sender of this message.</value>
+  </data>
+  <data name="NoDate_Flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoDate_Flag.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactAlphabeticalDescription" xml:space="preserve">
+    <value>List contacts in alphabetical order.</value>
+  </data>
+  <data name="ProgressPanelCaption" xml:space="preserve">
+    <value>Please Wait</value>
+  </data>
+  <data name="Priority_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Priority_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FeedBlogs" xml:space="preserve">
+    <value>Blogs</value>
+  </data>
+  <data name="Work" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="ImageFilter" xml:space="preserve">
+    <value>BMP files (*.bmp)|*.bmp|Gif files (*.gif)|*.gif|Jpeg files (*.jpeg)|*.jpeg|PNG files (*.png)|*.png|Tiff files (*.tiff)|*.tiff|EMF files (*.emf)|.emf|WMF files (*.wmf)|*.wmf</value>
+  </data>
+  <data name="DeleteContactDescription" xml:space="preserve">
+    <value>Delete this contact.</value>
+  </data>
+  <data name="PDFViewer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PDFViewer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PriorityMedium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="ReminderText" xml:space="preserve">
+    <value>REMINDERS: {0}</value>
+  </data>
+  <data name="TempFeedName" xml:space="preserve">
+    <value>MyFeed</value>
+  </data>
+  <data name="Spreadsheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spreadsheet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BO_Task" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BO_Task.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Contact_Us" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contact_Us.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportToHTML_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToHTML_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportToImage_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToImage_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchReceivedDescription" xml:space="preserve">
+    <value>Filter e-mail messages by date.</value>
+  </data>
+  <data name="IDETools" xml:space="preserve">
+    <value>IDE Tools</value>
+  </data>
+  <data name="TaskOverdueDescription" xml:space="preserve">
+    <value>List overdue tasks.</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="FeedEngadget" xml:space="preserve">
+    <value>Engadget</value>
+  </data>
+  <data name="Pivot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pivot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortraitOrientation" xml:space="preserve">
+    <value>Portrait Orientation</value>
+  </data>
+  <data name="IsEarlierThisWeek" xml:space="preserve">
+    <value>Is earlier this week</value>
+  </data>
+  <data name="MarginsWideDescription" xml:space="preserve">
+    <value>Top:	25 mm	Bottom:	25 mm
+Left:	50 mm	Right:	50 mm</value>
+  </data>
+  <data name="FeedVideos" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="ExportToRTF_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToRTF_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskStatusWaitingOnSomeoneElse" xml:space="preserve">
+    <value>Waiting On Someone Else</value>
+  </data>
+  <data name="EditTask_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditTask_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnreadReadDescription" xml:space="preserve">
+    <value>If this item is marked as unread mark it as read.
+If this item is marked as read mark it as though you haven't read it yet.</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="FeedGroupDX" xml:space="preserve">
+    <value>DevExpress</value>
+  </data>
+  <data name="CSVFilter" xml:space="preserve">
+    <value>CSV files (*.csv)|*.csv</value>
+  </data>
+  <data name="ContactTitleMrs" xml:space="preserve">
+    <value>Mrs.</value>
+  </data>
+  <data name="NewTaskName" xml:space="preserve">
+    <value>New task</value>
+  </data>
+  <data name="AddressHtml" xml:space="preserve">
+    <value>&lt;br&gt;&lt;br&gt;Address: &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="Mrs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mrs.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_Legal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Legal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKindA5Description" xml:space="preserve">
+    <value>148 mm x 210 mm</value>
+  </data>
+  <data name="High16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\High16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKindA6Description" xml:space="preserve">
+    <value>105 mm x 148 mm</value>
+  </data>
+  <data name="Ms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ms.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchResetDescription" xml:space="preserve">
+    <value>Reset to the default filter column list.</value>
+  </data>
+  <data name="PaperKind_Executive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Executive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IsToday" xml:space="preserve">
+    <value>Is Today</value>
+  </data>
+  <data name="PriorityLow" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="Close_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ByState_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ByState_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteItemDescription" xml:space="preserve">
+    <value>Delete this item.</value>
+  </data>
+  <data name="WordProcessing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WordProcessing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MarginsNarrowDescription" xml:space="preserve">
+    <value>Top:	12 mm	Bottom:	12 mm
+Left:	12 mm	Right:	12 mm</value>
+  </data>
+  <data name="MarginsNarrow" xml:space="preserve">
+    <value>Narrow</value>
+  </data>
+  <data name="FlagTomorrowDescription" xml:space="preserve">
+    <value>Flag this item as a task with a due date of tomorrow.</value>
+  </data>
+  <data name="PageMarginsWide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsWide.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="TasksName" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="NewContactDescription" xml:space="preserve">
+    <value>Create a new contact.</value>
+  </data>
+  <data name="FeedNote" xml:space="preserve">
+    <value>&lt;b&gt; &lt;/b&gt;Content is taken from the public &lt;color={1}&gt;{0}&lt;/color&gt; feed</value>
+  </data>
+  <data name="FromOutbox" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="WYSIWYGReports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WYSIWYGReports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewFirstName" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="FeedWebinars" xml:space="preserve">
+    <value>Webinars</value>
+  </data>
+  <data name="MHTFilter" xml:space="preserve">
+    <value>MHT files (*.mht)|*.mht</value>
+  </data>
+  <data name="TaskListDescription" xml:space="preserve">
+    <value>List all tasks and group them by date.</value>
+  </data>
+  <data name="Scheduler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scheduler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProgressPanelDescription" xml:space="preserve">
+    <value>Loading ...</value>
+  </data>
+  <data name="TableStyle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TableStyle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveQuestion" xml:space="preserve">
+    <value>Do you want to save changes?</value>
+  </data>
+  <data name="HTMLFilter" xml:space="preserve">
+    <value>HTML files (*.html)|*.html</value>
+  </data>
+  <data name="BO_Task_Large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BO_Task_Large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReplyAllDescription" xml:space="preserve">
+    <value>Reply to the sender and all other recipients of this message.</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>Inbox</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="FeedsName" xml:space="preserve">
+    <value>Feeds</value>
+  </data>
+  <data name="OwnerName" xml:space="preserve">
+    <value>Mr.Brooks</value>
+  </data>
+  <data name="List_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\List_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PriorityHigh" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="PaperKindA5" xml:space="preserve">
+    <value>A5</value>
+  </data>
+  <data name="ASP" xml:space="preserve">
+    <value>ASP</value>
+  </data>
+  <data name="NewFeedDescription" xml:space="preserve">
+    <value>Create a new feed.</value>
+  </data>
+  <data name="CloseSearchDescription" xml:space="preserve">
+    <value>Close the current search.</value>
+  </data>
+  <data name="Completed_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Completed_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>Next Week</value>
+  </data>
+  <data name="Refresh_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="NewContact_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewContact_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MarginsNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="ContactByStateDescription" xml:space="preserve">
+    <value>Group contacts by the states.</value>
+  </data>
+  <data name="DateDeleted" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Tomorrow_Flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tomorrow_Flag.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlagNoDatekDescription" xml:space="preserve">
+    <value>Flag this item as a task with no due date.</value>
+  </data>
+  <data name="FlagNextWeekDescription" xml:space="preserve">
+    <value>Flag this item as a task for next week.</value>
+  </data>
+  <data name="TaskSimpleListDescription" xml:space="preserve">
+    <value>List all tasks.</value>
+  </data>
+  <data name="DueDateWarning" xml:space="preserve">
+    <value>Please enter Due Date</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Refresh_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="ExportToText_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToText_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LowPriority" xml:space="preserve">
+    <value>Low priority</value>
+  </data>
+  <data name="FeedBBCNews" xml:space="preserve">
+    <value>BBC News</value>
+  </data>
+  <data name="WeatherMap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WeatherMap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LandscapeOrientation" xml:space="preserve">
+    <value>Landscape Orientation</value>
+  </data>
+  <data name="FromInbox" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="LayoutFlip_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayoutFlip_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MarginsModerateDescription" xml:space="preserve">
+    <value>Top:	25 mm	Bottom:	25 mm
+Left:	19 mm	Right:	19 mm</value>
+  </data>
+  <data name="Today_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Today_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskStatusNotStarted" xml:space="preserve">
+    <value>Not Started</value>
+  </data>
+  <data name="DateInbox" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="InfoText" xml:space="preserve">
+    <value>ITEMS: {0}</value>
+  </data>
+  <data name="PageMarginsNarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsNarrow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportToCSV_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToCSV_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PhoneHtml" xml:space="preserve">
+    <value>&lt;br&gt;Phone: &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="SaveAll_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveAll_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighPriority" xml:space="preserve">
+    <value>High priority</value>
+  </data>
+  <data name="IsEarlierThisMonth" xml:space="preserve">
+    <value>Is earlier this month</value>
+  </data>
+  <data name="PaperKind_A6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A6.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKindLetter" xml:space="preserve">
+    <value>Letter</value>
+  </data>
+  <data name="PaperKindLetterDescription" xml:space="preserve">
+    <value>215 mm x 279 mm</value>
+  </data>
+  <data name="RefreshFeedDescription" xml:space="preserve">
+    <value>Reload this feed from the server.</value>
+  </data>
+  <data name="TaskStatusDeferred" xml:space="preserve">
+    <value>Deferred</value>
+  </data>
+  <data name="Custom_Flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Custom_Flag.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKindExecutive" xml:space="preserve">
+    <value>Executive</value>
+  </data>
+  <data name="FlagTodayDescription" xml:space="preserve">
+    <value>Flag this item as a task with a due date of today.</value>
+  </data>
+  <data name="ForwardTextStart" xml:space="preserve">
+    <value>This is a forwarded message:
+
+=================Original message text===============
+
+</value>
+  </data>
+  <data name="ExportToXLS_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToXLS_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MarginsModerate" xml:space="preserve">
+    <value>Moderate</value>
+  </data>
+  <data name="Overdue_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Overdue_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllFilesFilter" xml:space="preserve">
+    <value>All files (*.*)|*.*</value>
+  </data>
+  <data name="WinForms" xml:space="preserve">
+    <value>WinForms</value>
+  </data>
+  <data name="PaperKind_Letter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Letter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FromDeleted" xml:space="preserve">
+    <value>To/From</value>
+  </data>
+  <data name="Professor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Professor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FeedError" xml:space="preserve">
+    <value>Please accept our apologies for the inconvenience. The feed URL is currently unavailable:&lt;br&gt;&lt;b&gt;{0}</value>
+  </data>
+  <data name="DeletedItems" xml:space="preserve">
+    <value>Deleted Items</value>
+  </data>
+  <data name="RotateLayoutDescription" xml:space="preserve">
+    <value>Rotate the layout of controls.</value>
+  </data>
+  <data name="TempGroupName" xml:space="preserve">
+    <value>MyGroup</value>
+  </data>
+  <data name="PaperKindLegal" xml:space="preserve">
+    <value>Legal</value>
+  </data>
+  <data name="NavigationDescription" xml:space="preserve">
+    <value>Switch between modules.</value>
+  </data>
+  <data name="SearchUnreadDescription" xml:space="preserve">
+    <value>Display unread e-mail messages.</value>
+  </data>
+  <data name="Picture100Zoom" xml:space="preserve">
+    <value>Fit Image</value>
+  </data>
+  <data name="Drafts" xml:space="preserve">
+    <value>Drafts</value>
+  </data>
+  <data name="Low16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Low16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageInfo" xml:space="preserve">
+    <value>Page {0} of </value>
+  </data>
+  <data name="DateOutbox" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="TaskPrioritizedDescription" xml:space="preserve">
+    <value>Group tasks by priority.</value>
+  </data>
+  <data name="OpentFileQuestion" xml:space="preserve">
+    <value>Do you want to open this file?</value>
+  </data>
+  <data name="EditTask_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditTask_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportErrorText" xml:space="preserve">
+    <value>An error occurred while exporting</value>
+  </data>
+  <data name="Owner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Owner.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewLastName" xml:space="preserve">
+    <value>Last</value>
+  </data>
+  <data name="BandedReports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BandedReports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageMarginsNormal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsNormal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Announcements" xml:space="preserve">
+    <value>Announcements</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Important_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Important_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="Mr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mr.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchClearDescription" xml:space="preserve">
+    <value>Clear the applied filter.</value>
+  </data>
+  <data name="EditContactDescription" xml:space="preserve">
+    <value>Edit this contact.</value>
+  </data>
+  <data name="MemoStyleString" xml:space="preserve">
+    <value>Memo Style</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="ContactTitleMs" xml:space="preserve">
+    <value>Ms.</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="EditTaskDescription" xml:space="preserve">
+    <value>Edit this task.</value>
+  </data>
+  <data name="Starting" xml:space="preserve">
+    <value>Starting</value>
+  </data>
+  <data name="ContactTitleProf" xml:space="preserve">
+    <value>Prof.</value>
+  </data>
+  <data name="DeleteFeedDescription" xml:space="preserve">
+    <value>Delete this feed.</value>
+  </data>
+  <data name="TwoSideDescription" xml:space="preserve">
+    <value>Reload paper when prompted to print the second side</value>
+  </data>
+  <data name="reading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reading.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactCardDescription" xml:space="preserve">
+    <value>Display card presentation.</value>
+  </data>
+  <data name="MailName" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="EmailHtml" xml:space="preserve">
+    <value>&lt;br&gt;Email: &lt;b&gt;{0}&lt;/b&gt;</value>
+  </data>
+  <data name="ListByDate_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ListByDate_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OneSideDescription" xml:space="preserve">
+    <value>Only print on one side of the page</value>
+  </data>
+  <data name="Uncollated" xml:space="preserve">
+    <value>Uncollated</value>
+  </data>
+  <data name="Delete_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_A5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewItemDescription" xml:space="preserve">
+    <value>Create a new mail.</value>
+  </data>
+  <data name="PaperKindA4Description" xml:space="preserve">
+    <value>210 mm x 296 mm</value>
+  </data>
+  <data name="Miss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Miss.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UncollatedDescription" xml:space="preserve">
+    <value>1,1,1  2,2,2  3,3,3</value>
+  </data>
+  <data name="TaskStatusInProgress" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+  <data name="SortAsc_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SortAsc_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MarginsNormalDescription" xml:space="preserve">
+    <value>Top:	25 mm	Bottom:	25 mm
+Left:	25 mm	Right:	25 mm</value>
+  </data>
+  <data name="Save_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchColumnsDescription" xml:space="preserve">
+    <value>Select columns against which a search is performed.</value>
+  </data>
+  <data name="ExportToMHT_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToMHT_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Today_Flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Today_Flag.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskCategoryOffice" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="NextWeek_Flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NextWeek_Flag.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportToXLSX_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToXLSX_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ForwardDescription" xml:space="preserve">
+    <value>Forward this item to someone else.</value>
+  </data>
+  <data name="EditContact_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditContact_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>Text files (*.txt)|*.txt</value>
+  </data>
+  <data name="Save_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskDeferredDescription" xml:space="preserve">
+    <value>List deferred tasks.</value>
+  </data>
+  <data name="Prioritized_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prioritized_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactTitleDr" xml:space="preserve">
+    <value>Dr.</value>
+  </data>
+  <data name="TaskCategoryShopping" xml:space="preserve">
+    <value>Shopping</value>
+  </data>
+  <data name="MediumPriority" xml:space="preserve">
+    <value>Medium priority</value>
+  </data>
+  <data name="Doctor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Doctor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XLSXFilter" xml:space="preserve">
+    <value>XLSX files (*.xls)|*.xls</value>
+  </data>
+  <data name="ThisWeek_Flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ThisWeek_Flag.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewTask_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewTask_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReplyText" xml:space="preserve">
+    <value>Dear, {0}
+
+{1}, you wrote:
+
+</value>
+  </data>
+  <data name="NavigationBar_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NavigationBar_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageMarginsModerate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageMarginsModerate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DueDateError" xml:space="preserve">
+    <value>Due Date can't be less than Start Date</value>
+  </data>
+  <data name="AppointmentError" xml:space="preserve">
+    <value>Error: could not export appointments</value>
+  </data>
+  <data name="ExportToPDF_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExportToPDF_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="NewContact_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewContact_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKindTabloidDescription" xml:space="preserve">
+    <value>279 mm x 431 mm</value>
+  </data>
+  <data name="PaperKind_A3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKindExecutiveDescription" xml:space="preserve">
+    <value>184 mm x 266 mm</value>
+  </data>
+  <data name="GridContacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GridContacts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Frameworks" xml:space="preserve">
+    <value>Frameworks</value>
+  </data>
+  <data name="MarginsWide" xml:space="preserve">
+    <value>Wide</value>
+  </data>
+  <data name="EditContact_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditContact_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactsName" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="Unknown_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Unknown-user.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FeedStackOverflow" xml:space="preserve">
+    <value>Stack Overflow</value>
+  </data>
+  <data name="Contact_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contact_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IsYesterday" xml:space="preserve">
+    <value>Is yesterday</value>
+  </data>
+  <data name="PaperKindA3" xml:space="preserve">
+    <value>A3</value>
+  </data>
+  <data name="OneSide" xml:space="preserve">
+    <value>Print One Sided</value>
+  </data>
+  <data name="ShowPreviewDescription" xml:space="preserve">
+    <value>Display message previews</value>
+  </data>
+  <data name="FeedGroupMisc" xml:space="preserve">
+    <value>Misc</value>
+  </data>
+  <data name="Today_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Today_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKindTabloid" xml:space="preserve">
+    <value>Tabloid</value>
+  </data>
+  <data name="Contact_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Contact_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactTitleMr" xml:space="preserve">
+    <value>Mr.</value>
+  </data>
+  <data name="IsEarlierThisYear" xml:space="preserve">
+    <value>Is earlier this year</value>
+  </data>
+  <data name="EditFeedDescription" xml:space="preserve">
+    <value>Edit this feed's settings.</value>
+  </data>
+  <data name="TableStyleString" xml:space="preserve">
+    <value>Table Style</value>
+  </data>
+  <data name="RuleIsNotBlankWarning" xml:space="preserve">
+    <value>This value cannot be empty</value>
+  </data>
+  <data name="PaperKindA3Description" xml:space="preserve">
+    <value>296 mm x 420 mm</value>
+  </data>
+  <data name="SearchString" xml:space="preserve">
+    <value>Search {0} (Ctrl + E)</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>This Week</value>
+  </data>
+  <data name="TwoSide" xml:space="preserve">
+    <value>Manually Print on Both Sides</value>
+  </data>
+  <data name="ContactTitleMiss" xml:space="preserve">
+    <value>Miss</value>
+  </data>
+  <data name="TaskStatusCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="TaskToDoListDescription" xml:space="preserve">
+    <value>List non-completed tasks and group them by date.</value>
+  </data>
+  <data name="PaperKindA4" xml:space="preserve">
+    <value>A4</value>
+  </data>
+  <data name="XLSFilter" xml:space="preserve">
+    <value>XLS files (*.xls)|*.xls</value>
+  </data>
+  <data name="TaskCategoryHouseChores" xml:space="preserve">
+    <value>House Chores</value>
+  </data>
+  <data name="RTFFilter" xml:space="preserve">
+    <value>RTF files (*.rtf)|*.rtf</value>
+  </data>
+  <data name="PaperKindA6" xml:space="preserve">
+    <value>A6</value>
+  </data>
+  <data name="Collated" xml:space="preserve">
+    <value>Collated</value>
+  </data>
+  <data name="MultiplePagesLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MultiplePagesLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDFFilter" xml:space="preserve">
+    <value>PDF files (*.pdf)|*.pdf</value>
+  </data>
+  <data name="MemoStyle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MemoStyle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PaperKind_Tabloid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_Tabloid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskTodayDescription" xml:space="preserve">
+    <value>List Today's tasks.</value>
+  </data>
+  <data name="ContactListDescription" xml:space="preserve">
+    <value>List contacts in the order of creation.</value>
+  </data>
+  <data name="ForwardTextEnd" xml:space="preserve">
+    <value>
+
+=================End of original message text===============</value>
+  </data>
+  <data name="IsLastWeek" xml:space="preserve">
+    <value>Is last week</value>
+  </data>
+  <data name="Analytics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Analytics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchCloseDescription" xml:space="preserve">
+    <value>Close the Search tab.</value>
+  </data>
+  <data name="FlagThisWeekDescription" xml:space="preserve">
+    <value>Flag this item as a task to due at the end of the work week.</value>
+  </data>
+  <data name="RuleUniqueNamesWarning" xml:space="preserve">
+    <value>This value must be unique and does not equal empty.</value>
+  </data>
+  <data name="TaskCompletedDescription" xml:space="preserve">
+    <value>List completed tasks and group them by date.</value>
+  </data>
+  <data name="PaperKind_A4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PaperKind_A4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageOrientationLandscape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageOrientationLandscape.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewTaskDescription" xml:space="preserve">
+    <value>Create a new task.</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="FlipLayoutDescription" xml:space="preserve">
+    <value>Flip the layout of controls around a vertical axis.</value>
+  </data>
+  <data name="PrintDirectLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrintDirectLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BirthDateHtml" xml:space="preserve">
+    <value>&lt;br&gt;Birth Date: &lt;b&gt;{0:d}&lt;/b&gt;</value>
+  </data>
+  <data name="SearchHasAttachmentDescription" xml:space="preserve">
+    <value>Display e-mail messages that have attachments.</value>
+  </data>
+  <data name="PageOrientationPortrait" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageOrientationPortrait.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Completed_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Completed_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewTask_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewTask_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToDoList_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToDoList_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CalendarName" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="FlagCustomDescription" xml:space="preserve">
+    <value>Flag this item as a task with custom due date.</value>
+  </data>
+  <data name="DeleteTaskDescription" xml:space="preserve">
+    <value>Delete this task.</value>
+  </data>
+  <data name="NavigationBar_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NavigationBar_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GridTasks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GridTasks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LayoutFlip_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LayoutFlip_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchImportantDescription" xml:space="preserve">
+    <value>Display prioritized e-mail messages.</value>
+  </data>
+  <data name="Deferred_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Deferred_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Tomorrow</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="PaperKindLegalDescription" xml:space="preserve">
+    <value>215 mm x 355 mm</value>
+  </data>
+  <data name="SentItems" xml:space="preserve">
+    <value>Sent Items</value>
+  </data>
+  <data name="reminder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reminder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArrowLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArrowLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArrowRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArrowRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColorMixer_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColorMixer_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\application_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="application_view_tile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\application_view_tile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DevExpress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\devexpress.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pagesetup_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\pagesetup_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="textbox_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\textbox_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Universal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\universal.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Win" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\win.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom100_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\zoom100_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
