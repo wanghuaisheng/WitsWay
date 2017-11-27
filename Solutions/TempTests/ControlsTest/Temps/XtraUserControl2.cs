@@ -38,7 +38,8 @@ namespace WitsWay.TempTests.ControlsTest.Temps
                 {
                    Age=50, BirthDay=DateTime.Now.AddYears(-50),EmployeeId=5,Name="秦大大",IsJoin = true,Remark="秦始皇的后代",SortCode=15,School="墨家",Sex=Sex.Female,States=EmployeeStatus.Enable|EmployeeStatus.Confirmed
                 },
-            };_gridControl.DataSource = modules;
+            };
+            _gridControl.DataSource = modules;
             _gridView.SetStyle();
             _gridView.DrawRowIndicator();
             _gridControl.BindCopyToCtrlC();
@@ -105,7 +106,8 @@ namespace WitsWay.TempTests.ControlsTest.Temps
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var rows = _gridView.GetSelectedRows();var selectEmps = rows.Where(row => row >= 0).Select(row => _gridView.GetRow(row) as Employee);
+            var rows = _gridView.GetSelectedRows();
+            var selectEmps = rows.Where(row => row >= 0).Select(row => _gridView.GetRow(row) as Employee);
             gridControl1.DataSource = selectEmps;
             gridControl1.RefreshDataSource();
         }
