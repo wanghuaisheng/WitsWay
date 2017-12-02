@@ -360,5 +360,23 @@ namespace WitsWay.Utilities.Errors
         [EnumMember]
         [ErrorItem("用户『{0}』不存在")]
         UserWithKeyNotExist,
+        /// <summary>
+        /// 资源『{0}』请求失败
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("资源『{0}』请求失败")]
+        ResourceRequestFail,
+        /// <summary>
+        /// 程序配置文件中appSettings中配置{0}获取失败
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("程序配置文件中appSettings中配置{0}获取失败")]
+        AppConfigAppSettingError,
+        /// <summary>
+        /// 对象转换错误：{0}
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("对象转换错误：{0}")]
+        ObjectCastError,
     }
 }

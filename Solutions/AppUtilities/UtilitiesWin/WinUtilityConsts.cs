@@ -62,6 +62,19 @@ namespace WitsWay.Utilities.Win
         /// 窗体Control容器Toast控件Tag键
         /// </summary>
         public const string FormToastFlyoutPanelControlTagKey = "FormToastFlyoutPanelControlTagKey";
+        /// <summary>
+        /// BeakTooltip使用BeakPanelOptions控件Tag键
+        /// </summary>
+        public const string BeakTooltipBeakPanelOptionsTagKey = "BeakTooltipBeakPanelOptionsTagKey";
+        /////// <summary>
+        /////// TileView弹出菜单绑定辅助类Tag键
+        /////// </summary>
+        ////public const string TileViewPopupMenuHelperTagKey = "TileViewPopupMenuHelperTagKey";
+        /// /// <summary>
+        /// ColumnView弹出菜单绑定辅助类Tag键
+        /// </summary>
+        public const string ColumnViewPopupMenuHelperTagKey = "ColumnViewPopupMenuHelperTagKey";
+
 
     }
 }

@@ -28,38 +28,28 @@ namespace WitsWay.Utilities.Enums
     /// </summary>
     [Serializable]
     [DataContract]
-    [EnumFieldAttribute("页面功能")]
+    [EnumField("页面功能")]
     public enum PageFunctions
     {
         /// <summary>
         /// 查看
         /// </summary>
-        [EnumMember]
-        [EnumFieldAttribute("查看")]
-        View = 1,
+        [EnumMember] [EnumField("查看")] View = 1,
         /// <summary>
         /// 添加
         /// </summary>
-        [EnumMember]
-        [EnumFieldAttribute("添加")]
-        Add = 2,
+        [EnumMember] [EnumField("添加")] Add = 2,
         /// <summary>
         /// 拷贝添加
         /// </summary>
-        [EnumMember]
-        [EnumFieldAttribute("添加")]
-        CopyAdd = 4,
+        [EnumMember] [EnumField("添加")] CopyAdd = 4,
         /// <summary>
         /// 修改
         /// </summary>
-        [EnumMember]
-        [EnumFieldAttribute("修改")]
-        Edit = 8,
+        [EnumMember] [EnumField("修改")] Edit = 8,
         /// <summary>
         /// 审核
         /// </summary>
-        [EnumMember]
-        [EnumFieldAttribute("审核")]
-        Audit = 16
+        [EnumMember] [EnumField("审核")] Audit = 16
     }
 }

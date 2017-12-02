@@ -25,7 +25,6 @@ namespace WitsWay.Utilities.Fills
     /// <summary>
     /// 填充目标特性
     /// </summary>
-
     [AttributeUsage(AttributeTargets.Property)]
     public class FillTargetAttribute : Attribute
     {

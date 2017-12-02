@@ -71,14 +71,8 @@ namespace WitsWay.Utilities.Exceptions
         /// </summary>
         public AppExceptionKinds ExceptionType
         {
-            get
-            {
-                return _exceptionType;
-            }
-            set
-            {
-                _exceptionType = value;
-            }
+            get => _exceptionType;
+            set => _exceptionType = value;
         }
 
         /// <summary>
@@ -100,16 +94,12 @@ namespace WitsWay.Utilities.Exceptions
         /// </summary>
         public int SystemCode
         {
-            get { return Convert.ToInt32(ErrorCode / 100000000); }
-            set { ErrorCode = ErrorCode % 100000000 + value * 100000000; }
+            get => Convert.ToInt32(ErrorCode / 100000000);
+            set => ErrorCode = ErrorCode % 100000000 + value * 100000000;
         }
         /// <summary>
         /// 由错误码和错误描述、操作帮助组成的提示消息串
         /// </summary>
-        public override string Message
-        {
-            get { return $"{ErrorDescription} {OperationHelp}"; }
-        }
-
+        public override string Message => $"{ErrorDescription} {OperationHelp}";
     }
 }

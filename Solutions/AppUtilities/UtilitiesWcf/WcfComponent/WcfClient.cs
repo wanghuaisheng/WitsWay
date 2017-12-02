@@ -92,9 +92,6 @@ namespace WitsWay.Utilities.Wcf.WcfComponent
         /// <summary>
         /// 获取用于调用服务的服务契约接口
         /// </summary>
-        public TServiceContract ServiceContract
-        {
-            get { return Channel; }
-        }
+        public TServiceContract ServiceContract => Channel;
     }
 }

@@ -25,6 +25,8 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Linq;
 using WitsWay.Utilities.Guards;
 
 namespace WitsWay.Utilities.Helpers
@@ -34,6 +36,29 @@ namespace WitsWay.Utilities.Helpers
     /// </summary>
     public class SerilizeHelper
     {
+
+        /// <summary>
+        /// 解析为JObject
+        /// <para>可后续使用JObject进行属性获取等其它操作</para>
+        /// </summary>
+        /// <param name="json">json字符串</param>
+        /// <returns><see cref="JObject"/>对象</returns>
+        public static JObject JObjectParse(string json)
+        {
+            return JObject.Parse(json);
+        }
+
+        /// <summary>
+        /// 获得某个json对象下一层指定值
+        /// </summary>
+        /// <param name="json"></param>
+        /// <param name="subJObjectValue"></param>
+        /// <returns></returns>
+        public static string GetJObjectValue(string json, string subJObjectValue)
+        {
+            return JObjectParse(json).GetValue(subJObjectValue).ToString();
+        }
+
         /// <summary>
         /// 转换为实体
         /// </summary>
@@ -41,10 +66,10 @@ namespace WitsWay.Utilities.Helpers
         /// <returns></returns>
         public static T DeserilizeJson<T>(string jsonString)
         {
-            if (string.IsNullOrEmpty(jsonString)) 
+            if (string.IsNullOrEmpty(jsonString))
                 return default(T);
-
-            return JsonConvert.DeserializeObject<T>(jsonString);
+            var jsonSettings = InitJsonSetting();
+            return JsonConvert.DeserializeObject<T>(jsonString, jsonSettings);
         }
 
         /// <summary>
@@ -54,14 +79,31 @@ namespace WitsWay.Utilities.Helpers
         /// <returns></returns>
         public static string SerilizeToJson<T>(T obj)
         {
-            return JsonConvert.SerializeObject(obj);
+            var jsonSettings = InitJsonSetting();
+            return JsonConvert.SerializeObject(obj, jsonSettings);
         }
 
         /// <summary>
-        /// 
+        /// 初始化Json序列化设置
         /// </summary>
-        /// <param name="obj"></param>
-        /// <returns></returns>
+        /// <returns>Json序列化设置</returns>
+        private static JsonSerializerSettings InitJsonSetting()
+        {
+            //设置序列化时间
+            var datetimeConverter = new IsoDateTimeConverter { DateTimeFormat = "yyyy-MM-dd HH:mm:ss" };
+            var jsonSettings = new JsonSerializerSettings
+            {
+                MissingMemberHandling = MissingMemberHandling.Ignore,
+                NullValueHandling = NullValueHandling.Include,
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+            jsonSettings.Converters.Add(datetimeConverter);
+            return jsonSettings;
+        }
+
+        /// <summary>
+        /// 序列化为Json字符串
+        /// </summary>
         public static string SerilizeToJson<T>(IList<T> obj)
         {
             return JsonConvert.SerializeObject(obj);

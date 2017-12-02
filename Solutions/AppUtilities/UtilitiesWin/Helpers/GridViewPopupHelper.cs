@@ -77,26 +77,31 @@ namespace WitsWay.Utilities.Win.Helpers
         private void GridViewMouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Right) return;
-            var gridCtr = sender as GridView;
-            var hi = gridCtr?.CalcHitInfo(e.Location);
+            var gridView = sender as GridView;
+            var hi = gridView?.CalcHitInfo(e.Location);
             if (hi == null || !hi.InRow) return;
-            var data = gridCtr.GetFocusData<T>();
+            var data = gridView.GetFocusData<T>();
             if (data == null) return;
             //处理Predicate
-            var helper = gridCtr.GetTag<GridViewPopupHelper<T>>(WinUtilityConsts.GridViewPopupMenuHelperTagKey);
+            var helper = gridView.GetTag<GridViewPopupHelper<T>>(WinUtilityConsts.GridViewPopupMenuHelperTagKey);
             if (helper == null) return;
-            var eor = _popupDic.GetEnumerator();
-            while (eor.MoveNext())
+            using (var eor = _popupDic.GetEnumerator())
             {
-                var popup = eor.Current.Key;
-                var funcKey = eor.Current.Value;
-                if (_funcDic.ContainsKey(funcKey) && _funcDic[funcKey] != null && _funcDic[funcKey](data))
+                while (eor.MoveNext())
                 {
-                    popup.ShowPopup(Control.MousePosition);
-                    return;
+                    var popup = eor.Current.Key;
+                    var funcKey = eor.Current.Value;
+                    if (!_funcDic.ContainsKey(funcKey) || _funcDic[funcKey] == null)
+                    {
+                        popup.ShowPopup(Control.MousePosition);
+                        return;
+                    }
+                    if (_funcDic[funcKey] != null && _funcDic[funcKey](data))
+                    {
+                        popup.ShowPopup(Control.MousePosition);
+                        return;
+                    }
                 }
-                popup.ShowPopup(Control.MousePosition);
-                return;
             }
         }
 

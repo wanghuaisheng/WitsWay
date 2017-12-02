@@ -36,32 +36,26 @@ namespace WitsWay.Utilities.Enums
         /// <summary>
         /// MD5
         /// </summary>
-        [EnumMember]
-        Md5,
+        [EnumMember] Md5,
         /// <summary>
         /// RIPEMD160
         /// </summary>
-        [EnumMember]
-        Ripemd160,
+        [EnumMember] Ripemd160,
         /// <summary>
         /// SHA1
         /// </summary>
-        [EnumMember]
-        Sha160,
+        [EnumMember] Sha160,
         /// <summary>
         /// SHA256
         /// </summary>
-        [EnumMember]
-        Sha256,
+        [EnumMember] Sha256,
         /// <summary>
         /// SHA384
         /// </summary>
-        [EnumMember]
-        Sha384,
+        [EnumMember] Sha384,
         /// <summary>
         /// SHA512
         /// </summary>
-        [EnumMember]
-        Sha512
+        [EnumMember] Sha512
     }
 }

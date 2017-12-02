@@ -73,7 +73,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public List<int> PageSizeAllow
         {
-            get { return _pageSizeAllow; }
+            get => _pageSizeAllow;
             set
             {
                 if (value == null || value.Count == 0) { return; }
@@ -98,10 +98,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public int PageSize
         {
-            get
-            {
-                return _pageSize;
-            }
+            get => _pageSize;
             private set
             {
                 if (value <= 0)

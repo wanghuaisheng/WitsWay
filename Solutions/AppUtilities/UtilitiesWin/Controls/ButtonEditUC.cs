@@ -111,7 +111,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Description("选中的对象是否使用删除样式。")]
         public bool CustomUseDeleteStyle
         {
-            get { return _CustomUseDeleteStyle; }
+            get => _CustomUseDeleteStyle;
             set {
                 _CustomUseDeleteStyle = value;
                 SetValueStyle(); 
@@ -126,7 +126,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Description("按键Delete清楚选择值是否可用。")]
         public bool CustomCanDeleteValue
         {
-            get { return _CustomCanDeleteValue; }
+            get => _CustomCanDeleteValue;
             set
             {
                 _CustomCanDeleteValue = value;
@@ -142,7 +142,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Description("选择按钮是否可用，双击文本框是否可用。")]
         public bool CustomIsSelectable 
         {
-            get { return _CustomIsSelectable; }
+            get => _CustomIsSelectable;
             set {
                 _CustomIsSelectable = value;
                 SetisSelectable(); 

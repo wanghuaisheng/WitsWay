@@ -17,16 +17,16 @@
  * 
  * ***************************************/
 #endregion
-using System.Collections.Generic;
+ using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using WitsWay.Utilities.Extends;
 using WitsWay.Utilities.Web.Extends;
-using WitsWay.Utilities.Web.Helpers;
 
-namespace WitsWay.Utilities.Win.Helpers
+namespace WitsWay.Utilities.Web.Helpers
 {
     /// <summary>
     /// Http客户端辅助类
@@ -36,7 +36,7 @@ namespace WitsWay.Utilities.Win.Helpers
         /// <summary>
         /// HttpClient实现Post请求String
         /// </summary>
-        public static async Task<string> AsyncHttpPostRequestString(string postUrl, object contentEntity,Cookie cookie=null)
+        public static async Task<string> AsyncHttpPostRequestString(string postUrl, object contentEntity, Cookie cookie = null)
         {
             var handler = new HttpClientHandler
             {
@@ -63,12 +63,12 @@ namespace WitsWay.Utilities.Win.Helpers
         /// <summary>
         /// HttpClient实现Post请求String
         /// </summary>
-        public static string HttpPostRequestString(string postUrl, object contentEntity,Cookie cookie=null)
+        public static string HttpPostRequestString(string postUrl, object contentEntity, Cookie cookie = null)
         {
             var handler = new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip };
-            if(cookie!=null)
+            if (cookie != null)
             {
-                var container=new CookieContainer();
+                var container = new CookieContainer();
                 container.Add(cookie);
                 handler.CookieContainer = container;
             }
@@ -81,11 +81,24 @@ namespace WitsWay.Utilities.Win.Helpers
             }
         }
 
+        /// <summary>
+        /// HttpClient实现Post请求String
+        /// </summary>
+        public static Stream HttpGetRequestStream(string postUrl)
+        {
+            var handler = new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip };
+            using (var http = new HttpClient(handler))
+            {
+                http.DefaultRequestHeaders.Add(@"KeepAlive", @"false");
+                return http.GetAsync(postUrl).Result.Content.ReadAsStreamAsync().Result;
+            }
+        }
+
 
         /// <summary>
         /// HttpClient实现Post请求Cookie
         /// </summary>
-        public static async Task<List<Cookie>> AsyncHttpPostRequestCookies(string postUrl, object contentEntity,Cookie cookie=null)
+        public static async Task<List<Cookie>> AsyncHttpPostRequestCookies(string postUrl, object contentEntity, Cookie cookie = null)
         {
             var cookieContainer = new CookieContainer();
             var handler = new HttpClientHandler

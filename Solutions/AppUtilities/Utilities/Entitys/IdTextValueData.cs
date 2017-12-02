@@ -17,86 +17,40 @@
  * 
  * ***************************************/
 #endregion
-namespace WitsWay.Utilities.Win
+using System;
+
+namespace WitsWay.Utilities.Entitys
 {
     /// <summary>
-    /// 图标Key枚举
+    /// ID-Text-Data，用于Combo绑定
     /// </summary>
-    public enum ContractItemIconKey
+    public class IdTextValueData<T>
     {
         /// <summary>
-        /// 
+        /// ID
         /// </summary>
-        CabinetGreen,
+        public string Id { get; set; }
+        /// <summary>
+        /// 显示文字
+        /// </summary>
+        public string Text { get; set; }
+        /// <summary>
+        /// 值
+        /// </summary>
+        public object Value { get; set; }
+        /// <summary>
+        /// 数据
+        /// </summary>
+        public T Data { get; set; }
 
         /// <summary>
-        /// 
+        /// ToString
         /// </summary>
-        CabinetRed,
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return Text;
+        }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        CabinetYellow,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        CablineGreen,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        CablineRed,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        CablineYellow,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        DoorGreen,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        DoorRed,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        DoorYellow,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        FittingGreen,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        FittingRed,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        FittingYellow,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        UnitGreen,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        UnitRed,
-
-        /// <summary>
-        /// 
-        /// </summary>
-        UnitYellow
     }
 }

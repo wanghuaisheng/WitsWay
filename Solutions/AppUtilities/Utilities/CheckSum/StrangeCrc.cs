@@ -114,15 +114,9 @@ namespace WitsWay.Utilities.CheckSum
 		/// <summary>
 		/// 获取CRC校验值
 		/// </summary>
-		public long Value
-		{
-			get
-			{
-				return ~_globalCrc;
-			}
-		}
+		public long Value => ~_globalCrc;
 
-		/// <summary>
+	    /// <summary>
 		/// 添加校验值
 		/// </summary>
 		/// <param name = "value">

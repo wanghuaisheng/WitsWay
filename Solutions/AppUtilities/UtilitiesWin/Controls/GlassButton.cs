@@ -251,15 +251,9 @@ namespace WitsWay.Utilities.Win.Controls
         [DefaultValue(FontStyle.Regular)]
         public FontStyle FontsStyle
         {
-            get
-            {
-                return usedFontStyle;
-            }
+            get => usedFontStyle;
 
-            set
-            {
-                usedFontStyle = value;
-            }
+            set => usedFontStyle = value;
         }
 
         private int fontSize = 12;
@@ -272,15 +266,9 @@ namespace WitsWay.Utilities.Win.Controls
         [DefaultValue(12)]
         public int FontSize
         {
-            get
-            {
-                return fontSize;
-            }
+            get => fontSize;
 
-            set
-            {
-                fontSize = value;
-            }
+            set => fontSize = value;
         }
 
         private float iconTransparency;
@@ -293,10 +281,7 @@ namespace WitsWay.Utilities.Win.Controls
         [DefaultValue(1f)]
         public float IconTransparency
         {
-            get
-            {
-                return iconTransparency;
-            }
+            get => iconTransparency;
 
             set
             {
@@ -473,10 +458,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Category("Text")]
         public string ButtonText
         {
-            get
-            {
-                return text;
-            }
+            get => text;
 
             set
             {
@@ -546,10 +528,7 @@ namespace WitsWay.Utilities.Win.Controls
         [DefaultValue(ButtonTextAlign.Center)]
         public ButtonTextAlign TextAlign
         {
-            get
-            {
-                return textAlign;
-            }
+            get => textAlign;
 
             set
             {
@@ -565,10 +544,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public int TextSpacingX
         {
-            get
-            {
-                return textSpacingX;
-            }
+            get => textSpacingX;
 
             set
             {
@@ -585,10 +561,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public int TextSpacingY
         {
-            get
-            {
-                return textSpacingY;
-            }
+            get => textSpacingY;
 
             set
             {
@@ -634,10 +607,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public Bitmap Icon
         {
-            get
-            {
-                return icon;
-            }
+            get => icon;
 
             set
             {
@@ -718,10 +688,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public IconBitmapAlign IconAlign
         {
-            get
-            {
-                return iconAlign;
-            }
+            get => iconAlign;
 
             set
             {
@@ -742,10 +709,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public int IconSpacingX
         {
-            get
-            {
-                return iconSpacingX;
-            }
+            get => iconSpacingX;
 
             set
             {
@@ -760,10 +724,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public int IconSpacingY
         {
-            get
-            {
-                return iconSpacingY;
-            }
+            get => iconSpacingY;
 
             set
             {
@@ -800,10 +761,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public ButtonTextImageRelation TextImageRelation
         {
-            get
-            {
-                return textImageRelation;
-            }
+            get => textImageRelation;
 
             set
             {
@@ -829,10 +787,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public Color[] MouseOn_Colors
         {
-            get
-            {
-                return mouseOnColors;
-            }
+            get => mouseOnColors;
 
             set
             {
@@ -854,10 +809,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public Color[] MouseDown_Colors
         {
-            get
-            {
-                return mouseDownColors;
-            }
+            get => mouseDownColors;
 
             set
             {
@@ -876,10 +828,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public Color[] Normal_Colors
         {
-            get
-            {
-                return normalColors;
-            }
+            get => normalColors;
 
             set
             {
@@ -901,10 +850,7 @@ namespace WitsWay.Utilities.Win.Controls
         [Browsable(true)]
         public Color[] DisabledColors
         {
-            get
-            {
-                return disabledColors;
-            }
+            get => disabledColors;
 
             set
             {

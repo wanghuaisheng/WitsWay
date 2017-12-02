@@ -33,7 +33,8 @@ namespace WitsWay.Utilities.Win.Helpers
         /// </summary>
         /// <param name="keyCode"></param>
         /// <returns></returns>
-        [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true, CallingConvention = CallingConvention.Winapi)]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, ExactSpelling = true,
+            CallingConvention = CallingConvention.Winapi)]
         private static extern short GetKeyState(int keyCode);
 
         /// <summary>

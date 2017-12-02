@@ -23,35 +23,25 @@ using WitsWay.Utilities.Attributes;
 
 namespace WitsWay.Utlities.Tests.Utilities.Attributes
 {
-
-    [EnumFieldAttribute("性别枚举")]
+    [EnumField("性别枚举")]
     public enum TestEnumSex
     {
-
-        [EnumFieldAttribute("男")]
-        Male,
-        [EnumFieldAttribute("女")]
-        Female
+        [EnumField("男")] Male,
+        [EnumField("女")] Female
     }
 
-    [EnumFieldAttribute("支持功能")]
+    [EnumField("支持功能")]
     [Flags]
     public enum TestEnumSupports
     {
-
-        [EnumFieldAttribute("登录")]
-        Login = 1,
-        [EnumFieldAttribute("登出")]
-        Logout = 2,
-        [EnumFieldAttribute("修改")]
-        Modify = 4
+        [EnumField("登录")] Login = 1,
+        [EnumField("登出")] Logout = 2,
+        [EnumField("修改")] Modify = 4
     }
 
     [TestClass]
     public class EnumFieldAttributeTests : Attribute
     {
-
-
         [TestMethod]
         public void GetEnumTextTest()
         {

@@ -18,6 +18,7 @@
  * ***************************************/
 #endregion
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using WitsWay.Utilities.Entitys;
 
 namespace WitsWay.Utilities.Daos
@@ -30,7 +31,7 @@ namespace WitsWay.Utilities.Daos
     /// </summary>
     /// <typeparam name="TData">要存取的实例对象</typeparam>
     /// <typeparam name="TKey">键类型</typeparam>
-    public interface IRepositoryBulk<TKey,TData>
+    public interface IRepositoryBulk<TKey, TData>
     {
         /// <summary>
         /// 通过主键列表删除数据
@@ -49,18 +50,17 @@ namespace WitsWay.Utilities.Daos
         /// </summary>
         /// <param name="datas">实体列表</param>
         /// <returns>批量插入结果</returns>
-        SqlBulkResult BulkInsert(IList<TData> datas);
+        List<BulkInsertResult> BulkInsert(IList<TData> datas, SqlTransaction tran);
         /// <summary>
         /// 批量更新
         /// </summary>
         /// <param name="datas">实体列表</param>
-        void BulkUpdate(IList<TData> datas);
+        List<BulkInsertResult> BulkUpdate(IList<TData> datas, SqlTransaction tran);
         /// <summary>
         /// 批量同步（插入、更新、删除）
         /// </summary>
         /// <param name="datas">实体列表</param>
-        void BulkSync(IList<TData> datas);
+        List<BulkInsertResult> BulkSync(IList<TData> datas, SqlTransaction tran);
 
     }
-
 }

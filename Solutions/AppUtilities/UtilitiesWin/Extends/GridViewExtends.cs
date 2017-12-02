@@ -60,13 +60,6 @@ namespace WitsWay.Utilities.Win.Extends
             };
         }
 
-        /// <summary>
-        /// 取Grid选中数据
-        /// </summary>
-        public static T GetFocusData<T>(this GridView view) where T : class
-        {
-            return view.FocusedRowHandle >= 0 ? view.GetRow(view.FocusedRowHandle) as T : default(T);
-        }
 
         /// <summary>
         /// 选中GridView对应Key的行,如果不存在则选中第一行
@@ -319,7 +312,7 @@ namespace WitsWay.Utilities.Win.Extends
         /// <param name="gridView">表格</param>
         /// <param name="popup">弹出菜单</param>
         /// <param name="beforeShow">显示前处理</param>
-        public static void BindPopup<T>(this GridView gridView, PopupMenu popup, Predicate<T> beforeShow = null) where T : class, IKey
+        public static void BindPopupMenu<T>(this GridView gridView, PopupMenu popup, Predicate<T> beforeShow = null) where T : class, IKey
         {
             var helper = gridView.GetTag<GridViewPopupHelper<T>>(WinUtilityConsts.GridViewPopupMenuHelperTagKey);
             if (helper == null)
@@ -335,7 +328,7 @@ namespace WitsWay.Utilities.Win.Extends
         /// </summary>
         /// <param name="gridView">表格</param>
         /// <param name="popup">弹出菜单</param>
-        public static void UnbindPopup<T>(this GridView gridView, PopupMenu popup) where T : class, IKey
+        public static void UnbindPopupMenu<T>(this GridView gridView, PopupMenu popup) where T : class, IKey
         {
             var helper = gridView?.GetTag<GridViewPopupHelper<T>>(WinUtilityConsts.GridViewPopupMenuHelperTagKey);
             helper?.UnbindPopupMenu(gridView, popup);

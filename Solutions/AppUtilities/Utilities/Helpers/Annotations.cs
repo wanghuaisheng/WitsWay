@@ -41,9 +41,9 @@ namespace WitsWay.Utilities.Helpers
     /// }
     /// </code></example>
     [AttributeUsage(
-      AttributeTargets.Method | AttributeTargets.Parameter |
-      AttributeTargets.Property | AttributeTargets.Delegate |
-      AttributeTargets.Field)]
+        AttributeTargets.Method | AttributeTargets.Parameter |
+        AttributeTargets.Property | AttributeTargets.Delegate |
+        AttributeTargets.Field)]
     public sealed class CanBeNullAttribute : Attribute { }
 
     /// <summary>
@@ -55,9 +55,9 @@ namespace WitsWay.Utilities.Helpers
     /// }
     /// </code></example>
     [AttributeUsage(
-      AttributeTargets.Method | AttributeTargets.Parameter |
-      AttributeTargets.Property | AttributeTargets.Delegate |
-      AttributeTargets.Field)]
+        AttributeTargets.Method | AttributeTargets.Parameter |
+        AttributeTargets.Property | AttributeTargets.Delegate |
+        AttributeTargets.Field)]
     public sealed class NotNullAttribute : Attribute { }
 
     /// <summary>
@@ -73,7 +73,7 @@ namespace WitsWay.Utilities.Helpers
     /// }
     /// </code></example>
     [AttributeUsage(
-      AttributeTargets.Constructor | AttributeTargets.Method)]
+        AttributeTargets.Constructor | AttributeTargets.Method)]
     public sealed class StringFormatMethodAttribute : Attribute
     {
         /// <param name="formatParameterName">
@@ -248,8 +248,8 @@ namespace WitsWay.Utilities.Helpers
     /// }
     /// </code></example>
     [AttributeUsage(
-      AttributeTargets.Interface | AttributeTargets.Class |
-      AttributeTargets.Struct)]
+        AttributeTargets.Interface | AttributeTargets.Class |
+        AttributeTargets.Struct)]
     public sealed class CannotApplyEqualityOperatorAttribute : Attribute { }
 
     /// <summary>
@@ -329,6 +329,7 @@ namespace WitsWay.Utilities.Helpers
 
         [UsedImplicitly]
         public ImplicitUseKindFlags UseKindFlags { get; private set; }
+
         [UsedImplicitly]
         public ImplicitUseTargetFlags TargetFlags { get; private set; }
     }
@@ -565,8 +566,8 @@ namespace WitsWay.Utilities.Helpers
     public sealed class AspMvcActionSelectorAttribute : Attribute { }
 
     [AttributeUsage(
-      AttributeTargets.Parameter | AttributeTargets.Property |
-      AttributeTargets.Field)]
+        AttributeTargets.Parameter | AttributeTargets.Property |
+        AttributeTargets.Field)]
     public sealed class HtmlElementAttributesAttribute : Attribute
     {
         public HtmlElementAttributesAttribute() { }
@@ -580,8 +581,8 @@ namespace WitsWay.Utilities.Helpers
     }
 
     [AttributeUsage(
-      AttributeTargets.Parameter | AttributeTargets.Field |
-      AttributeTargets.Property)]
+        AttributeTargets.Parameter | AttributeTargets.Field |
+        AttributeTargets.Property)]
     public sealed class HtmlAttributeValueAttribute : Attribute
     {
         public HtmlAttributeValueAttribute([NotNull] string name)

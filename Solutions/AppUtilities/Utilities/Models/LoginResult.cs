@@ -94,10 +94,7 @@ namespace WitsWay.Utilities.Models
         /// <summary>
         /// 键
         /// </summary>
-        public string Key
-        {
-            get { return SessionKey; }
-        }
+        public string Key => SessionKey;
 
         #endregion
 

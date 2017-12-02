@@ -42,14 +42,8 @@ namespace WitsWay.Utlities.Tests.Utilities.Extents
         ///</summary>
         public TestContext TestContext
         {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
+            get => testContextInstance;
+            set => testContextInstance = value;
         }
 
         #region 附加测试特性

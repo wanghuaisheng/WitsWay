@@ -18,7 +18,9 @@
  * ***************************************/
 #endregion
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
+using DevExpress.XtraBars;
 using WitsWay.Utilities.Extends;
 
 namespace WitsWay.Utilities.Win.Extends
@@ -28,6 +30,15 @@ namespace WitsWay.Utilities.Win.Extends
     /// </summary>
     public static class ControlExtends
     {
+        /// <summary>
+        /// 显示弹出菜单
+        /// </summary>
+        public static void ShowPopupBottom(this Control ctr, PopupMenu popupMenu)
+        {
+            var barManager = popupMenu?.Manager;
+            if (barManager == null || ctr == null) return;
+            popupMenu.ShowPopup(barManager, ctr.Parent.PointToScreen(new Point(ctr.Left, ctr.Bottom)));
+        }
         /// <summary>
         /// 设置控件Tag
         /// </summary>

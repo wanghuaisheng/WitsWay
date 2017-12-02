@@ -43,10 +43,7 @@ namespace WitsWay.Utilities.Validate.Validators
         /// <summary>
         /// 验证结果集合
         /// </summary>
-        public List<ValidateResult> ValidatorResults
-        {
-            get { return validatorResults; }
-        }
+        public List<ValidateResult> ValidatorResults => validatorResults;
 
         /// <summary>
         /// 验证错误集合
@@ -63,13 +60,7 @@ namespace WitsWay.Utilities.Validate.Validators
         /// <summary>
         /// 是否通过验证
         /// </summary>
-        public bool Pass
-        {
-            get
-            {
-                return ValidatorErrors == null||ValidatorErrors.Count==0;
-            }
-        }
+        public bool Pass => ValidatorErrors == null||ValidatorErrors.Count==0;
 
         #endregion
 

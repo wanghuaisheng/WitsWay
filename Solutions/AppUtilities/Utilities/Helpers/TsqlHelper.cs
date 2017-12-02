@@ -236,7 +236,8 @@ namespace WitsWay.Utilities.Helpers
         /// <summary>
         /// 序列化使用类
         /// </summary>
-        [Serializable, XmlRoot(ElementName = "RootInfo")]
+        [Serializable]
+        [XmlRoot(ElementName = "RootInfo")]
         public class SerilizeInfo<T>
         {
             /// <summary>

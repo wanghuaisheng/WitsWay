@@ -27,38 +27,31 @@ namespace WitsWay.Utilities.Win
     /// </summary>
     public class BackgroundLoader
     {
-        private Action _work;
-        private Action _completedWork;
-        private BackgroundWorker bw = new BackgroundWorker();
+        private readonly Action _action;
+        private readonly Action _completedWork;
+        private readonly BackgroundWorker _worker = new BackgroundWorker();
         /// <summary>
         /// 构造函数
         /// </summary>
         /// <param name="doWork">加载动作内容</param>
         /// <param name="completedWork">完成后内容</param>
-        public BackgroundLoader(Action doWork,Action completedWork)
+        public BackgroundLoader(Action doWork, Action completedWork)
         {
-            _work = doWork;
+            _action = doWork;
             _completedWork = completedWork;
-            bw.DoWork += bw_DoWork;
-            bw.RunWorkerCompleted += bw_RunWorkerCompleted;
-           
-            bw.RunWorkerAsync();
+            _worker.DoWork += bw_DoWork;
+            _worker.RunWorkerCompleted += bw_RunWorkerCompleted;
+            _worker.RunWorkerAsync();
         }
 
         private void bw_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            if (_completedWork == null)
-                return;
-
-            _completedWork();
+            _completedWork?.Invoke();
         }
 
         private void bw_DoWork(object sender, DoWorkEventArgs e)
         {
-            if (_work == null)
-                return;
-
-            _work();
+            _action?.Invoke();
         }
     }
 }

@@ -24,13 +24,7 @@ namespace WitsWay.Utlities.Tests.Utilities.Validates
 {
     public class TestCustomValidator : ICustomValidator
     {
-        public string Key
-        {
-            get
-            {
-                return CustomValidatorKeys.TestCustomValidator;
-            }
-        }
+        public string Key => CustomValidatorKeys.TestCustomValidator;
 
         public ValidationResult Validate(object val, ValidationContext context)
         {

@@ -83,8 +83,8 @@ namespace WitsWay.Utilities.Win.Controls
             /// </summary>
             public bool Enabled
             {
-                get { return _enable; }
-                set { _enable = value; }
+                get => _enable;
+                set => _enable = value;
             }
 
             private bool _active = true;
@@ -93,8 +93,8 @@ namespace WitsWay.Utilities.Win.Controls
             /// </summary>
             public bool Active
             {
-                get { return _active; }
-                set { _active = value; }
+                get => _active;
+                set => _active = value;
             }
             Color _backColor = Color.Transparent;
             /// <summary>
@@ -102,14 +102,8 @@ namespace WitsWay.Utilities.Win.Controls
             /// </summary>
             public Color BackColor
             {
-                get
-                {
-                    return _backColor;
-                }
-                set
-                {
-                    _backColor = value;
-                }
+                get => _backColor;
+                set => _backColor = value;
             }
             int _rotationSpeed = 120;
             /// <summary>
@@ -117,11 +111,8 @@ namespace WitsWay.Utilities.Win.Controls
             /// </summary>
             public int RotationSpeed
             {
-                get { return _rotationSpeed; }
-                set
-                {
-                    _rotationSpeed = value;
-                }
+                get => _rotationSpeed;
+                set => _rotationSpeed = value;
             }
 
 
@@ -131,8 +122,8 @@ namespace WitsWay.Utilities.Win.Controls
             /// </summary>
             public StylePresets CircleStyle
             {
-                get { return _circleStyle; }
-                set { _circleStyle = value; }
+                get => _circleStyle;
+                set => _circleStyle = value;
             }
         }
 
@@ -199,15 +190,12 @@ namespace WitsWay.Utilities.Win.Controls
         /// Gets or sets the lightest color of the circle.
         /// </summary>
         /// <value>The lightest color of the circle.</value>
-        [TypeConverter("System.Drawing.ColorConverter"),
-         Category("LoadingCircle"),
-         Description("Sets the color of spoke.")]
+        [TypeConverter("System.Drawing.ColorConverter")]
+        [Category("LoadingCircle")]
+        [Description("Sets the color of spoke.")]
         public Color Color
         {
-            get
-            {
-                return m_Color;
-            }
+            get => m_Color;
             set
             {
                 m_Color = value;
@@ -221,8 +209,8 @@ namespace WitsWay.Utilities.Win.Controls
         /// Gets or sets the outer circle radius.
         /// </summary>
         /// <value>The outer circle radius.</value>
-        [Description("Gets or sets the radius of outer circle."),
-         Category("LoadingCircle")]
+        [Description("Gets or sets the radius of outer circle.")]
+        [Category("LoadingCircle")]
         public int OuterCircleRadius
         {
             get
@@ -243,8 +231,8 @@ namespace WitsWay.Utilities.Win.Controls
         /// Gets or sets the inner circle radius.
         /// </summary>
         /// <value>The inner circle radius.</value>
-        [Description("Gets or sets the radius of inner circle."),
-         Category("LoadingCircle")]
+        [Description("Gets or sets the radius of inner circle.")]
+        [Category("LoadingCircle")]
         public int InnerCircleRadius
         {
             get
@@ -265,8 +253,8 @@ namespace WitsWay.Utilities.Win.Controls
         /// Gets or sets the number of spoke.
         /// </summary>
         /// <value>The number of spoke.</value>
-        [Description("Gets or sets the number of spoke."),
-        Category("LoadingCircle")]
+        [Description("Gets or sets the number of spoke.")]
+        [Category("LoadingCircle")]
         public int NumberSpoke
         {
             get
@@ -293,14 +281,11 @@ namespace WitsWay.Utilities.Win.Controls
         /// Gets or sets a value indicating whether this <see cref="T:LoadingCircle"/> is active.
         /// </summary>
         /// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
-        [Description("Gets or sets the number of spoke."),
-        Category("LoadingCircle")]
+        [Description("Gets or sets the number of spoke.")]
+        [Category("LoadingCircle")]
         public bool Active
         {
-            get
-            {
-                return m_IsTimerActive;
-            }
+            get => m_IsTimerActive;
             set
             {
                 m_IsTimerActive = value;
@@ -312,8 +297,8 @@ namespace WitsWay.Utilities.Win.Controls
         /// Gets or sets the spoke thickness.
         /// </summary>
         /// <value>The spoke thickness.</value>
-        [Description("Gets or sets the thickness of a spoke."),
-        Category("LoadingCircle")]
+        [Description("Gets or sets the thickness of a spoke.")]
+        [Category("LoadingCircle")]
         public int SpokeThickness
         {
             get
@@ -334,14 +319,11 @@ namespace WitsWay.Utilities.Win.Controls
         /// Gets or sets the rotation speed.
         /// </summary>
         /// <value>The rotation speed.</value>
-        [Description("Gets or sets the rotation speed. Higher the slower."),
-        Category("LoadingCircle")]
+        [Description("Gets or sets the rotation speed. Higher the slower.")]
+        [Category("LoadingCircle")]
         public int RotationSpeed
         {
-            get
-            {
-                return m_Timer.Interval;
-            }
+            get => m_Timer.Interval;
             set
             {
                 if (value > 0)
@@ -353,12 +335,12 @@ namespace WitsWay.Utilities.Win.Controls
         /// Quickly sets the style to one of these presets, or a custom style if desired
         /// </summary>
         /// <value>The style preset.</value>
-        [Category("LoadingCircle"),
-         Description("Quickly sets the style to one of these presets, or a custom style if desired"),
-         DefaultValue(typeof(StylePresets), "Custom")]
+        [Category("LoadingCircle")]
+        [Description("Quickly sets the style to one of these presets, or a custom style if desired")]
+        [DefaultValue(typeof(StylePresets), "Custom")]
         public StylePresets StylePreset
         {
-            get { return m_StylePreset; }
+            get => m_StylePreset;
             set
             {
                 m_StylePreset = value;

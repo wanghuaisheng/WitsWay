@@ -34,8 +34,8 @@ namespace WitsWay.Utilities.Wcf
         /// </summary>
         public string ServiceEndPointUri
         {
-            get { return _serviceEndPointUri; }
-            set { _serviceEndPointUri = value; }
+            get => _serviceEndPointUri;
+            set => _serviceEndPointUri = value;
         }
         private string _dnsIdentity;
 
@@ -44,8 +44,8 @@ namespace WitsWay.Utilities.Wcf
         /// </summary>
         public string DnsIdentity
         {
-            get { return _dnsIdentity; }
-            set { _dnsIdentity = value; }
+            get => _dnsIdentity;
+            set => _dnsIdentity = value;
         }
     }
 }

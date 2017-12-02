@@ -44,10 +44,7 @@ namespace WitsWay.Utilities.Patterns
             /// <summary>
             /// 
             /// </summary>
-            public static T Instance
-            {
-                get { return Nested.instance; }
-            }
+            public static T Instance => Nested.instance;
 
             private class Nested
             {

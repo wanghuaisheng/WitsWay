@@ -24,7 +24,7 @@ namespace WitsWay.Utilities.Win.Extends
     /// <summary>
     /// XtraGrid辅助类
     /// </summary>
-    public static class RepositoryItemExtends
+    public static partial class RepositoryItemExtends
     {
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace WitsWay.Utilities.Win.Extends
         /// </summary>
         /// <param name="pictureItem">表格控件</param>
         /// <param name="height">图片高度</param>
-        public static void PictureHeight(this RepositoryItemPictureEdit pictureItem,int height)
+        public static void PictureHeight(this RepositoryItemPictureEdit pictureItem, int height)
         {
             pictureItem.CustomHeight = height;
         }

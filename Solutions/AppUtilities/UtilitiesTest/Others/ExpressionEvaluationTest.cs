@@ -28,7 +28,6 @@ namespace WitsWay.Utlities.Tests.Others
     [TestClass]
     public class ExpressionEvaluationTest
     {
-
         [TestMethod]
         public void TestInvokeMethodWithParams()
         {
@@ -55,7 +54,6 @@ namespace WitsWay.Utlities.Tests.Others
         {
 
         }
-
 
 
         [TestMethod]

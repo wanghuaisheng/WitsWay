@@ -65,23 +65,11 @@ namespace WitsWay.Utilities.Providers.ParseProviders
         /// <summary>
         /// Json解析器
         /// </summary>
-        public static IParseProvider JsonParser
-        {
-            get
-            {
-                return Providers[JsonParseProvider.ProviderName];
-            }
-        }
+        public static IParseProvider JsonParser => Providers[JsonParseProvider.ProviderName];
+
         /// <summary>
         /// Xml解析器
         /// </summary>
-        public static IParseProvider XmlParser
-        {
-            get
-            {
-                return Providers[XmlParseProvider.ProviderName];
-            }
-        }
-
+        public static IParseProvider XmlParser => Providers[XmlParseProvider.ProviderName];
     }
 }

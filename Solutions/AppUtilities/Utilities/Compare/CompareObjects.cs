@@ -94,10 +94,7 @@ namespace  WitsWay.Utilities.Compare
         /// <summary>
         /// The amount of time in milliseconds it took for the comparison
         /// </summary>
-        public long ElapsedMilliseconds
-        {
-            get { return _watch.ElapsedMilliseconds; }
-        }
+        public long ElapsedMilliseconds => _watch.ElapsedMilliseconds;
 
         /// <summary>
         /// Show breadcrumb at each stage of the comparision.  

@@ -18,38 +18,40 @@
  * ***************************************/
 #endregion
 using System.Drawing;
-using WitsWay.Utilities.Win.Properties;
+using DevExpress.Utils.Drawing;
+using DevExpress.XtraSplashScreen;
 
-namespace WitsWay.Utilities.Win
+namespace WitsWay.Utilities.Win.Helpers.StartScreen
 {
     /// <summary>
-    /// 图标管理
+    /// 加载中文字 图片绘制器
     /// </summary>
-    public class IconManager
+    public class StartScreenTextPainter : ICustomImagePainter
     {
+        /// <summary>
+        /// 绘制计数器
+        /// </summary>
+        internal static int Counter = 0;
+        /// <summary>
+        /// 默认字体
+        /// </summary>
+        private static readonly Font DefaultFont = new Font("Segoe UI", 6.75f, FontStyle.Bold);
+        /// <summary>
+        /// 字体刷
+        /// </summary>
+        private static readonly SolidBrush FontBrush = new SolidBrush(SkinAppearance.LabelAndCaptionInLayoutColor);
 
         /// <summary>
-        /// 取得Icon
+        /// 绘制加载文字
         /// </summary>
-        public static Image GetIcon(IconKey key)
+        void ICustomImagePainter.Draw(GraphicsCache cache, Rectangle bounds)
         {
-            var iconName = key.ToString();
-            return Resources.ResourceManager.GetObject(iconName) as Image;
-        }
-
-        /// <summary>
-        /// 取得Icon
-        /// </summary>
-        public static Image GetIcon(string key)
-        {
-            return Resources.ResourceManager.GetObject(key) as Image;
-        }
-        /// <summary>
-        /// 取得Icon
-        /// </summary>
-        public static Image GetContractItemIcon(ContractItemIconKey key)
-        {
-            return GetIcon(key.ToString());
+            var text = "加载中";
+            for (var i = 0; i < Counter % 4; i++)
+            {
+                text += '.';
+            }
+            cache.Graphics.DrawString(text, DefaultFont, FontBrush, 62f, 45f);
         }
 
     }

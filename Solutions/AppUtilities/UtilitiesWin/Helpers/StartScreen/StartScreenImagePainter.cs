@@ -17,52 +17,33 @@
  * 
  * ***************************************/
 #endregion
-namespace WitsWay.Utilities.Win
+using System.Drawing;
+using DevExpress.Utils.Drawing;
+using DevExpress.XtraSplashScreen;
+
+namespace WitsWay.Utilities.Win.Helpers.StartScreen
 {
     /// <summary>
-    /// 图标Key枚举
+    /// 自定义启动图绘制器
     /// </summary>
-    public enum IconKey
+    public class StartScreenImagePainter : ICustomImagePainter
     {
-        /// <summary>Delete16 </summary>
-        Delete16,
-        /// <summary>Refresh16 </summary>
-        Refresh16,
-        /// <summary>Search16 </summary>
-        Search16,
-        /// <summary>Confirm16 </summary>
-        Confirm16,
-        /// <summary>Close16 </summary>
-        Close16,
-        /// <summary>Select16 </summary>
-        Select16,
-        /// <summary>Group16 </summary>
-        Group16,
-        /// <summary>View16 </summary>
-        View16,
-        /// <summary>Edit16 </summary>
-        Edit16,
-        /// <summary>ClearSearch16</summary>
-        ClearSearch16,
         /// <summary>
-        /// 回退
+        /// 默认字体
         /// </summary>
-        Backward16,
+        private static readonly Font DefaultFont = new Font("Segoe UI", 8.25f);
         /// <summary>
-        /// 前进
+        /// 字体笔刷
         /// </summary>
-        Forward16,
+        private static readonly SolidBrush FontBrush = new SolidBrush(Color.FromArgb(242, 242, 242));
         /// <summary>
-        /// 保存
+        /// 绘制信息
         /// </summary>
-        Save16,
-        /// <summary>
-        /// 打印
-        /// </summary>
-        Print16,
-        /// <summary>
-        /// 审核
-        /// </summary>
-        Check16
+        public void Draw(GraphicsCache cache, Rectangle bounds)
+        {
+            cache.Graphics.DrawString("®版本", DefaultFont, FontBrush, 97f, 400f);
+            cache.Graphics.DrawString("Copyright ® 2000-2017 WitsWay Inc.", DefaultFont, FontBrush, 97f, 430f);
+        }
+
     }
 }

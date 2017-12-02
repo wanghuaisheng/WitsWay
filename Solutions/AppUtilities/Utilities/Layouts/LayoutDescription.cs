@@ -36,6 +36,10 @@ namespace WitsWay.Utilities.Layouts
         /// </summary>
         public string Name { get; set; }
         /// <summary>
+        /// 布局UI类型
+        /// </summary>
+        public LayoutUiKinds UiKind { get; set; }
+        /// <summary>
         /// 目标模型
         /// </summary>
         public Type TargetModel { get; set; }

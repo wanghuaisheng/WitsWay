@@ -19,9 +19,13 @@
 #endregion
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WitsWay.Utilities.Web.Extends;
+using WitsWay.Utilities.Web.Helpers;
 using WitsWay.Utilities.Win.Helpers;
 using WitsWay.Utlities.Tests.UtilitiesWin.Entities;
+using System.Drawing.Imaging;
 
 namespace WitsWay.Utlities.Tests.UtilitiesWin
 {
@@ -47,7 +51,7 @@ namespace WitsWay.Utlities.Tests.UtilitiesWin
                 UserName = "admin",
                 Password = "111111",
                 Remember = false,
-                LoginTypeEnum = LoginTypeEnum.Shop
+                LoginTypeEnum =LoginTypeEnum.Shop
             };
             var cookies = HttpClientHelper.HttpPostRequestCookies(urlLogin, loginPara);
             var cookie = cookies[0];
@@ -57,6 +61,19 @@ namespace WitsWay.Utlities.Tests.UtilitiesWin
 
         }
 
+        [TestMethod]
+        public void HttpRequestImageTest()
+        {
+            var urlImg = "https://github.com/wanghuaisheng/Articles/blob/master/OutMan/OutMan.png?raw=true";
+            var uri = new Uri(urlImg);
+            var img = uri.UriToImage();
+            img.Save(@"D:\1.png", ImageFormat.Png);
+            var stream = HttpClientHelper.HttpGetRequestStream(urlImg);
+            var img2 = Image.FromStream(stream);
+            img2.Save(@"D:\2.png", ImageFormat.Png);
+            Assert.IsTrue(true);
+
+        }
 
         [TestMethod]
         public void DoHttpPostTest2()
@@ -69,8 +86,8 @@ namespace WitsWay.Utlities.Tests.UtilitiesWin
 
             var para = new SendSalaryPara
             {
-                corpid="1000",
-                WeChatSendTasks=list
+                corpid = "1000",
+                WeChatSendTasks = list
             };
             var result = HttpClientHelper.HttpPostRequestString(urlSearch, para);
 
@@ -91,7 +108,6 @@ namespace WitsWay.Utlities.Tests.UtilitiesWin
     //     发送工资条消息实体
     public class SendSalaryMessageEntity
     {
-        public SendSalaryMessageEntity() { }
 
         // 摘要: 
         //     消息内容

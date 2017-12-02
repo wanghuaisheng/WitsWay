@@ -26,8 +26,8 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
 	/// <summary>
 	/// 加解密辅助类
     /// </summary>
-    [TestClass]
-    public class EncryptDecryptHelperTests
+	[TestClass]
+	public class EncryptDecryptHelperTests
     {
 
         /// <summary>

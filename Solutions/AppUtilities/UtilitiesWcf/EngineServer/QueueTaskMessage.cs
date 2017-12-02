@@ -36,14 +36,8 @@ namespace WitsWay.Utilities.Wcf.EngineServer
         /// </summary>
         public T MessageContent
         {
-            get
-            {
-                return _messageContent;
-            }
-            set
-            {
-                _messageContent = value;
-            }
+            get => _messageContent;
+            set => _messageContent = value;
         }
 
     }

@@ -39,7 +39,7 @@ namespace WitsWay.Utilities.Win.Tests
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            Application.Run(new ToastTestForm());
+            Application.Run(new TestForm());
         }
     }
 }

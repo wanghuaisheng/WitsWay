@@ -35,10 +35,7 @@ namespace WitsWay.Utilities.Supports.TreeSupport
         /// 子节点列表
         /// </summary>
         [XmlIgnore]
-        public List<T> Children
-        {
-            get { return _children ?? (_children = new List<T>()); }
-        }
+        public List<T> Children => _children ?? (_children = new List<T>());
 
         /// <summary>
         /// 父节点
@@ -68,35 +65,17 @@ namespace WitsWay.Utilities.Supports.TreeSupport
         /// <summary>
         /// 是否有孩子节点
         /// </summary>
-        public bool HaveChild
-        {
-            get
-            {
-                return _children != null && _children.Any();
-            }
-        }
+        public bool HaveChild => _children != null && _children.Any();
 
         /// <summary>
         /// 是否有父亲节点
         /// </summary>
-        public bool HaveParent
-        {
-            get
-            {
-                return Parent != null;
-            }
-        }
+        public bool HaveParent => Parent != null;
 
         /// <summary>
         /// 子节点数量
         /// </summary>
-        public int ChildNum
-        {
-            get
-            {
-                return _children == null ? 0 : _children.Count;
-            }
-        }
+        public int ChildNum => _children == null ? 0 : _children.Count;
 
         /// <summary>
         /// 节点层级

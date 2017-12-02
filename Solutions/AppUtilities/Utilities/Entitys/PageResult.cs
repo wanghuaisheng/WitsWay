@@ -44,13 +44,7 @@ namespace WitsWay.Utilities.Entitys
         /// <summary>
         /// Get总页数
         /// </summary>
-        public int PageCount
-        {
-            get
-            {
-                return CalculateTotalPages(TotalRecordNum, PageSize);
-            }
-        }
+        public int PageCount => CalculateTotalPages(TotalRecordNum, PageSize);
 
 
         /// <summary>
@@ -61,10 +55,7 @@ namespace WitsWay.Utilities.Entitys
         /// <summary>
         /// Get当前页数据
         /// </summary>
-        public List<T> Rows
-        {
-            get { return _rows ?? (_rows = new List<T>()); }
-        }
+        public List<T> Rows => _rows ?? (_rows = new List<T>());
 
         /// <summary>
         /// 计算总页数

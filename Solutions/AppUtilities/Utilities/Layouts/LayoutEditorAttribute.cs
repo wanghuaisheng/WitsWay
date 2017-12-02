@@ -48,8 +48,8 @@ namespace WitsWay.Utilities.Layouts
         /// </summary>
         public bool IsShow
         {
-            get { return _isShow; }
-            set { _isShow = value; }
+            get => _isShow;
+            set => _isShow = value;
         }
         /// <summary>
         /// 控件的Type

@@ -21,7 +21,7 @@
 namespace WitsWay.Utilities.Layouts
 {
     /// <summary>
-    /// IEditor
+    /// 布局控件基础接口
     /// </summary>
     public interface ILayoutEditor
     {

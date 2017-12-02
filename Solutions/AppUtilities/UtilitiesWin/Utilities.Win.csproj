@@ -115,9 +115,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="WitsWay.Utilities">
-      <HintPath>..\..\Assemblies\DLL\WitsWay.Utilities.dll</HintPath>
-    </Reference>
     <Reference Include="WitsWay.Utilities.Wcf">
       <HintPath>..\..\Assemblies\DLL\WitsWay.Utilities.Wcf.dll</HintPath>
     </Reference>
@@ -165,9 +162,14 @@
       <DependentUpon>SplashForm2.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\ToastKindOptions.cs" />
+    <Compile Include="Entities\BeaktipOptions.cs" />
     <Compile Include="Entities\ToastOptions.cs" />
+    <Compile Include="Enums\ColumnViewKinds.cs" />
     <Compile Include="Enums\ToastKinds.cs" />
-    <Compile Include="Extends\GridViewExtends.Tag.cs" />
+    <Compile Include="Extends\ColumnViewExtends.Tag.cs" />
+    <Compile Include="Extends\ColumnViewExtends.cs" />
+    <Compile Include="Extends\RepositoryItemExtends.Tag.cs" />
+    <Compile Include="Extends\BeaktipOptionsExtends.cs" />
     <Compile Include="Extends\ToastOptionsExtends.cs" />
     <Compile Include="Extends\TreeListNodeExtends.cs" />
     <Compile Include="Extends\ControlExtends.cs" />
@@ -177,13 +179,10 @@
     <Compile Include="Extends\RepositoryItemExtends.cs" />
     <Compile Include="Extends\GridViewExtends.cs" />
     <Compile Include="Extends\TreeListExtends.cs" />
-    <Compile Include="Extends\UriExtends.cs" />
-    <Compile Include="Helpers\HttpClientHelper.cs" />
-    <Compile Include="Helpers\MyWebRequest1.cs" />
-    <Compile Include="Helpers\MyWebRequest3.cs" />
     <Compile Include="Helpers\BarHelper.cs" />
+    <Compile Include="Helpers\Delegates.cs" />
+    <Compile Include="Helpers\ColumnViewPopupHelper.cs" />
     <Compile Include="Helpers\ButtonStyleHelper.cs" />
-    <Compile Include="Helpers\ButtonStyles.cs" />
     <Compile Include="Controls\PagerUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -217,7 +216,11 @@
     <Compile Include="Helpers\ShortcutHelper.cs" />
     <Compile Include="Helpers\SpinEditHelper.cs" />
     <Compile Include="Helpers\GridViewPopupHelper.cs" />
+    <Compile Include="Helpers\StartScreen\SkinAppearance.cs" />
+    <Compile Include="Helpers\StartScreen\StartScreenImagePainter.cs" />
+    <Compile Include="Helpers\StartScreen\StartScreenTextPainter.cs" />
     <Compile Include="Helpers\ToastMessageHelper.cs" />
+    <Compile Include="Helpers\StartScreenManager.cs" />
     <Compile Include="Layouts\ButtonEditBase.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -230,7 +233,6 @@
     <Compile Include="Helpers\PInvokeHelper.Shutdown.cs" />
     <Compile Include="Helpers\RepositoryComboBoxHelper.cs" />
     <Compile Include="Helpers\TextEditBlockSelectHelper.cs" />
-    <Compile Include="Helpers\TreeFilterHelper.cs" />
     <Compile Include="Functions\WebApiHost.cs" />
     <Compile Include="Helpers\TreeListHelper.cs" />
     <Compile Include="Helpers\GridServerMode.cs" />
@@ -244,15 +246,13 @@
     <Compile Include="Helpers\RepositoryImageComboBoxHelper.cs" />
     <Compile Include="Helpers\PInvokeHelper.LockKey.cs" />
     <Compile Include="Helpers\CheckedListBoxHelper.cs" />
-    <Compile Include="Helpers\TreeFilterHelper.New.cs" />
+    <Compile Include="Helpers\TreeFilterHelper.cs" />
     <Compile Include="ICheckable.cs" />
     <Compile Include="IdTextData.cs" />
     <Compile Include="Helpers\ValidateHelper.cs" />
     <Compile Include="Helpers\XtraGridHelper.cs" />
     <Compile Include="Helpers\ControlStyleHelper.cs" />
     <Compile Include="Helpers\UserControlHelper.cs" />
-    <Compile Include="IconKey.cs" />
-    <Compile Include="IconManager.cs" />
     <Compile Include="Layouts\CustomerControlBase.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -273,8 +273,7 @@
     <Compile Include="ServiceCaller.cs" />
     <Compile Include="UtilityHelper.cs" />
     <Compile Include="PositionEnum.cs" />
-    <Compile Include="EntityActionEnum.cs" />
-    <Compile Include="ContractItemIconKey.cs" />
+    <Compile Include="RowActions.cs" />
     <Compile Include="IdTextValueData.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -405,7 +404,12 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{c7244023-8221-4b7b-8cef-7bb53e6f947d}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>SET DllPath=$(SolutionDir)..\Assemblies\DLL\

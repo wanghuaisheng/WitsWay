@@ -22,21 +22,23 @@ namespace WitsWay.Utilities.Entitys
     /// <summary>
     /// 批量插入结果
     /// </summary>
-    public struct SqlBulkResult
+    public class BulkInsertResult
     {
         /// <summary>
-        /// 最大自增Id
+        /// 操作行为,update ,insert,delete
         /// </summary>
-        public int MaxIdentity { get; set; }
+        public string Action
+        {
+            get;
+            set;
+        }
         /// <summary>
-        /// 行数
+        /// 删除的ID
         /// </summary>
-        public int RowCount { get; set; }
+        public string DeletedId { get; set; }
         /// <summary>
-        /// 取得对应索引的Id，从0开始
+        /// 添加的ID
         /// </summary>
-        /// <param name="idx">索引序号</param>
-        /// <returns>对应索引的Id，从0开始，不存在则返回-1</returns>
-        public int this[int idx] => idx < RowCount ? MaxIdentity - RowCount + 1 + idx : -1;
+        public string InsertedId { get; set; }
     }
 }

@@ -25,7 +25,8 @@ namespace WitsWay.Utilities.Validate.Annotations
     /// <summary>
     /// 自定义验证器
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Method | AttributeTargets.Parameter, AllowMultiple = true)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property | AttributeTargets.Field |
+                    AttributeTargets.Method | AttributeTargets.Parameter, AllowMultiple = true)]
     public sealed class CustomValidatorAttribute : ValidationAttribute
     {
         /// <summary>

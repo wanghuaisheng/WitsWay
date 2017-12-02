@@ -32,17 +32,14 @@ namespace WitsWay.Utilities.Enums
         /// <summary>
         /// Crc32
         /// </summary>
-        [EnumMember]
-        Crc32,
+        [EnumMember] Crc32,
         /// <summary>
         /// Adler32
         /// </summary>
-        [EnumMember]
-        Adler32,
+        [EnumMember] Adler32,
         /// <summary>
         /// StrangeCrc
         /// </summary>
-        [EnumMember]
-        StrangeCrc
+        [EnumMember] StrangeCrc
     }
 }

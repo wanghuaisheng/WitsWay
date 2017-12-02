@@ -1,4 +1,23 @@
-﻿using System.Drawing;
+﻿#region License(Apache Version 2.0)
+/******************************************
+ * Copyright ®2017-Now WangHuaiSheng.
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ * Detail: https://github.com/WangHuaiSheng/WitsWay/LICENSE
+ * ***************************************/
+#endregion 
+#region ChangeLog
+/******************************************
+ * 2017-10-7 OutMan Create
+ * 
+ * ***************************************/
+#endregion
+using System.Drawing;
 using WitsWay.Utilities.Win.Enums;
 using WitsWay.Utilities.Win.Properties;
 
@@ -26,39 +45,39 @@ namespace WitsWay.Utilities.Win.Entities
             switch (kind)
             {
                 case ToastKinds.Success:
-                    {
-                        FontColor = Color.SeaGreen;
-                        BackColor = Color.PaleGreen;
-                        IconImage = Resources.LightGreen;
-                        break;
-                    }
+                {
+                    FontColor = Color.SeaGreen;
+                    BackColor = Color.PaleGreen;
+                    IconImage = Resources.LightGreen;
+                    break;
+                }
                 case ToastKinds.Error:
-                    {
-                        FontColor = Color.DarkRed;
-                        BackColor = Color.LightCoral;
-                        IconImage = Resources.LightRed;
-                        break;
-                    }
+                {
+                    FontColor = Color.DarkRed;
+                    BackColor = Color.LightCoral;
+                    IconImage = Resources.LightRed;
+                    break;
+                }
                 case ToastKinds.Info:
-                    {
-                        FontColor = Color.DodgerBlue;
-                        BackColor = Color.Aqua;
-                        IconImage = Resources.LightBlue;
-                        break;
-                    }
+                {
+                    FontColor = Color.DodgerBlue;
+                    BackColor = Color.Aqua;
+                    IconImage = Resources.LightBlue;
+                    break;
+                }
                 case ToastKinds.Warning:
-                    {
-                        FontColor = Color.Coral;
-                        BackColor = Color.Gold;
-                        IconImage = Resources.LightYellow;
-                        break;
-                    }
+                {
+                    FontColor = Color.Coral;
+                    BackColor = Color.Gold;
+                    IconImage = Resources.LightYellow;
+                    break;
+                }
                 default:
-                    {
-                        FontColor = Color.Black;
-                        BackColor = Color.LightGray;
-                        break;
-                    }
+                {
+                    FontColor = Color.Black;
+                    BackColor = Color.LightGray;
+                    break;
+                }
             }
         }
         /// <summary>
@@ -73,13 +92,6 @@ namespace WitsWay.Utilities.Win.Entities
         /// 图标
         /// </summary>
         public Bitmap IconImage { get; set; }
-
-        ///// <summary>
-        ///// 释放非托管资源
-        ///// </summary>
-        //public override void ReleaseUnManagedResource()
-        //{
-        //    IconImage?.Dispose();
-        //}
+        
     }
 }

@@ -32,10 +32,7 @@ namespace WitsWay.Utilities.Wcf.EngineServer
         /// </summary>
         public double Interval
         {
-            get
-            {
-                return _timer != null ? _timer.Interval : 0;
-            }
+            get => _timer != null ? _timer.Interval : 0;
             set
             {
                 if (_timer != null)
@@ -48,10 +45,7 @@ namespace WitsWay.Utilities.Wcf.EngineServer
         /// </summary>
         public bool AutoReset
         {
-            get
-            {
-                return _timer != null && _timer.AutoReset;
-            }
+            get => _timer != null && _timer.AutoReset;
             set
             {
                 if (_timer != null)

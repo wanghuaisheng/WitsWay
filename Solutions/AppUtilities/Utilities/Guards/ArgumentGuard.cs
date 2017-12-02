@@ -77,7 +77,8 @@ namespace WitsWay.Utilities.Guards
         /// <summary>
         /// 检查参数实例从指定的类型继承或实现
         /// </summary>
-        [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes", Justification = "GetType() invoked for diagnostics purposes")]
+        [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes", Justification =
+            "GetType() invoked for diagnostics purposes")]
         public static void InstanceIsAssignable(Type assignmentTargetType, object assignmentInstance, string methodName, string argumentName)
         {
             if (string.IsNullOrEmpty(methodName)) { throw new ArgumentNullException(nameof(methodName)); }

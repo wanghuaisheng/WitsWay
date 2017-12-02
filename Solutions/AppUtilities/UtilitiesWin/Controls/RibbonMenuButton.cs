@@ -106,7 +106,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public e_imagelocation ImageLocation
         {
-            get { return _imagelocation; }
+            get => _imagelocation;
             set { _imagelocation = value; this.Refresh(); }
         }
         private int _imageoffset;
@@ -115,8 +115,8 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public int ImageOffset
         {
-            get { return _imageoffset; }
-            set { _imageoffset = value; }
+            get => _imageoffset;
+            set => _imageoffset = value;
         }
         private Point _maximagesize;
         /// <summary>
@@ -124,8 +124,8 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public Point MaxImageSize
         {
-            get { return _maximagesize; }
-            set { _maximagesize = value; }
+            get => _maximagesize;
+            set => _maximagesize = value;
         }
 
         private Image _grayImage;
@@ -155,7 +155,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public e_showbase ShowBase
         {
-            get { return _showbase; }
+            get => _showbase;
             set { _showbase = value; this.Refresh(); }
         }
         private int _radius = 6;
@@ -164,7 +164,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public int Radius
         {
-            get { return _radius; }
+            get => _radius;
             set { if (_radius > 0) _radius = value; this.Refresh(); }
         }
         private e_groupPos _grouppos;
@@ -203,7 +203,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public e_groupPos GroupPos
         {
-            get { return _grouppos; }
+            get => _grouppos;
             set { _grouppos = value; this.Refresh(); }
         }
 
@@ -231,7 +231,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public e_arrow Arrow
         {
-            get { return _arrow; }
+            get => _arrow;
             set { _arrow = value; this.Refresh(); }
         }
         private e_splitbutton _splitbutton;
@@ -254,7 +254,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public e_splitbutton SplitButton
         {
-            get { return _splitbutton; }
+            get => _splitbutton;
             set { _splitbutton = value; this.Refresh(); }
         }
         private int _splitdistance;
@@ -263,7 +263,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public int SplitDistance
         {
-            get { return _splitdistance; }
+            get => _splitdistance;
             set { _splitdistance = value; this.Refresh(); }
         }
         private string _title = "";
@@ -272,7 +272,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public string Title
         {
-            get { return _title; }
+            get => _title;
             set { _title = value; this.Refresh(); }
         }
         private bool _keeppress;
@@ -281,8 +281,8 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public bool KeepPress
         {
-            get { return _keeppress; }
-            set { _keeppress = value; }
+            get => _keeppress;
+            set => _keeppress = value;
         }
         private bool _ispressed;
         /// <summary>
@@ -290,8 +290,8 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public bool IsPressed
         {
-            get { return _ispressed; }
-            set { _ispressed = value; }
+            get => _ispressed;
+            set => _ispressed = value;
         }
 
 
@@ -304,8 +304,8 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public Point MenuPos
         {
-            get { return _menupos; }
-            set { _menupos = value; }
+            get => _menupos;
+            set => _menupos = value;
         }
         #endregion
 
@@ -324,7 +324,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public Color ColorBase
         {
-            get { return _baseColor; }
+            get => _baseColor;
             set
             {
                 _baseColor = value;
@@ -353,7 +353,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public Color ColorOn
         {
-            get { return _onColor; }
+            get => _onColor;
             set
             {
                 _onColor = value;
@@ -379,7 +379,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public Color ColorPress
         {
-            get { return _pressColor; }
+            get => _pressColor;
             set
             {
                 _pressColor = value;
@@ -406,24 +406,24 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public Color ColorBaseStroke
         {
-            get { return _baseStroke; }
-            set { _baseStroke = value; }
+            get => _baseStroke;
+            set => _baseStroke = value;
         }
         /// <summary>
         /// 
         /// </summary>
         public Color ColorOnStroke
         {
-            get { return _onStroke; }
-            set { _onStroke = value; }
+            get => _onStroke;
+            set => _onStroke = value;
         }
         /// <summary>
         /// 
         /// </summary>
         public Color ColorPressStroke
         {
-            get { return _pressStroke; }
-            set { _pressStroke = value; }
+            get => _pressStroke;
+            set => _pressStroke = value;
         }
         /// <summary>
         /// 
@@ -1015,7 +1015,7 @@ namespace WitsWay.Utilities.Win.Controls
         /// </summary>
         public int FadingSpeed
         {
-            get { return i_factor; }
+            get => i_factor;
             set
             {
                 if (value > -1)
@@ -1364,7 +1364,9 @@ namespace WitsWay.Utilities.Win.Controls
         /// <summary>
         /// 
         /// </summary>
-        public uint AC { get { return ac; } set { Math.Min(value, 255); } }
+        public uint AC { get => ac;
+            set => Math.Min(value, 255);
+        }
         #endregion
 
         #region RGB
@@ -1372,15 +1374,21 @@ namespace WitsWay.Utilities.Win.Controls
         /// <summary>
         /// 
         /// </summary>
-        public int RC { get { return rc; } set { rc = Math.Min(value, 255); } }
+        public int RC { get => rc;
+            set => rc = Math.Min(value, 255);
+        }
         /// <summary>
         /// 
         /// </summary>
-        public int GC { get { return gc; } set { gc = Math.Min(value, 255); } }
+        public int GC { get => gc;
+            set => gc = Math.Min(value, 255);
+        }
         /// <summary>
         /// 
         /// </summary>
-        public int BC { get { return bc; } set { bc = Math.Min(value, 255); } }
+        public int BC { get => bc;
+            set => bc = Math.Min(value, 255);
+        }
 
         /// <summary>
         /// 
@@ -1480,15 +1488,18 @@ namespace WitsWay.Utilities.Win.Controls
         /// <summary>
         /// 
         /// </summary>
-        public float HC { get { return hc; } set { hc = (int)Math.Min(value, 359); hc = Math.Max(hc, 0); } }
+        public float HC { get => hc;
+            set { hc = (int)Math.Min(value, 359); hc = Math.Max(hc, 0); } }
         /// <summary>
         /// 
         /// </summary>
-        public float SC { get { return sc; } set { sc = (int)Math.Min(value, 100); sc = Math.Max(sc, 0); } }
+        public float SC { get => sc;
+            set { sc = (int)Math.Min(value, 100); sc = Math.Max(sc, 0); } }
         /// <summary>
         /// 
         /// </summary>
-        public float VC { get { return vc; } set { vc = (int)Math.Min(value, 100); vc = Math.Max(vc, 0); } }
+        public float VC { get => vc;
+            set { vc = (int)Math.Min(value, 100); vc = Math.Max(vc, 0); } }
         /// <summary>
         /// 
         /// </summary>

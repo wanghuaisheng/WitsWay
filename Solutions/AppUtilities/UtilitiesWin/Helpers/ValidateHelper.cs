@@ -113,8 +113,8 @@ namespace WitsWay.Utilities.Win.Helpers
         /// </summary>
         public bool ValidateEnable
         {
-            get { return _enable; }
-            set { _enable = value; }
+            get => _enable;
+            set => _enable = value;
         }
 
         /// <summary>

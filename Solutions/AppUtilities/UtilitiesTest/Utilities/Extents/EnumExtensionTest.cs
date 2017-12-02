@@ -28,7 +28,6 @@ namespace WitsWay.Utlities.Tests.Utilities.Extents
     [TestClass]
     public class EnumExtensionTest
     {
-
         [TestMethod]
         public void GetDescriptionTest()
         {
@@ -85,12 +84,10 @@ namespace WitsWay.Utlities.Tests.Utilities.Extents
         public Sex Sex { get; set; }
     }
 
-    [EnumFieldAttribute("性别")]
+    [EnumField("性别")]
     public enum Sex
     {
-        [EnumFieldAttribute("男")]
-        Male = 0,
-        [EnumFieldAttribute("女")]
-        Female = 1
+        [EnumField("男")] Male = 0,
+        [EnumField("女")] Female = 1
     }
 }

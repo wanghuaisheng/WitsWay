@@ -119,7 +119,9 @@
     <Compile Include="Builders\PageParameterBuilder.cs" />
     <Compile Include="CheckSum\CrcFactory.cs" />
     <Compile Include="Containers\BasicTypeContainer.cs" />
+    <Compile Include="Daos\BulkOperations.cs" />
     <Compile Include="Daos\DaoFactory.cs" />
+    <Compile Include="Daos\CdcOperations.cs" />
     <Compile Include="Daos\IDaoExtends.cs" />
     <Compile Include="Daos\IDao.cs" />
     <Compile Include="Daos\IDaoAttribute.cs" />
@@ -146,6 +148,8 @@
     <Compile Include="EntityCast\IMapBuilderContextMap.cs" />
     <Compile Include="EntityCast\PropertyMapping.cs" />
     <Compile Include="EntityCast\ReflectionCaster.cs" />
+    <Compile Include="Entitys\IdTextValueData.cs" />
+    <Compile Include="Entitys\IdTextData.cs" />
     <Compile Include="Entitys\PagerFilterPara.cs" />
     <Compile Include="Entitys\BulkInsertResult.cs" />
     <Compile Include="Enums\CrcAlgorithmKinds.cs" />
@@ -155,6 +159,8 @@
     <Compile Include="Enums\SequenceCircle.cs" />
     <Compile Include="Enums\MenuKinds.cs" />
     <Compile Include="Enums\SubSystems.cs" />
+    <Compile Include="Extends\ImageExtends.cs" />
+    <Compile Include="Helpers\StreamByteImageHelper.cs" />
     <Compile Include="Helpers\ExceptionHelper.HandleClient.cs" />
     <Compile Include="Helpers\ExceptionHelper.HandleService.cs" />
     <Compile Include="Helpers\ExceptionHelper.HandleLogic.cs" />
@@ -242,6 +248,7 @@
     <Compile Include="Layouts\ILayoutConsumer.cs" />
     <Compile Include="Layouts\ILayoutStreamProvider.cs" />
     <Compile Include="Layouts\LayoutDescription.cs" />
+    <Compile Include="Layouts\LayoutUiKinds.cs" />
     <Compile Include="Layouts\TreeLayoutAttribute.cs" />
     <Compile Include="Layouts\TreeLayoutModelAttribute.cs" />
     <Compile Include="Layouts\GridLayoutModelAttribute.cs" />
@@ -279,6 +286,8 @@
     <Compile Include="SqlBulks\TableSelect.cs" />
     <Compile Include="Supports\GridSupport\GridSupportExtends.cs" />
     <Compile Include="Supports\IKey.cs" />
+    <Compile Include="Supports\ICheckable.cs" />
+    <Compile Include="Supports\ITimestamp.cs" />
     <Compile Include="Supports\ISelected.cs" />
     <Compile Include="Daos\IRepositoryExist.cs" />
     <Compile Include="Patterns\MsDispose.cs" />

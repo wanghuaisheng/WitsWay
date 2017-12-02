@@ -34,8 +34,8 @@ namespace WitsWay.Utilities.Wcf.EngineServer
         /// </summary>
         public int ProcessedTimes
         {
-            get { return _processedTimes; }
-            set { _processedTimes = value; }
+            get => _processedTimes;
+            set => _processedTimes = value;
         }
         private DateTime _firstOperationFailTime = DateTime.Now;
 
@@ -44,8 +44,8 @@ namespace WitsWay.Utilities.Wcf.EngineServer
         /// </summary>
         public DateTime FirstOperationFailTime
         {
-            get { return _firstOperationFailTime; }
-            set { _firstOperationFailTime = value; }
+            get => _firstOperationFailTime;
+            set => _firstOperationFailTime = value;
         }
         private Guid _taskId;
         /// <summary>
@@ -53,8 +53,8 @@ namespace WitsWay.Utilities.Wcf.EngineServer
         /// </summary>
         public Guid TaskId
         {
-            get { return _taskId; }
-            set { _taskId = value; }
+            get => _taskId;
+            set => _taskId = value;
         }
         private int _queueType;
 
@@ -63,8 +63,8 @@ namespace WitsWay.Utilities.Wcf.EngineServer
         /// </summary>
         public int QueueType
         {
-            get { return _queueType; }
-            set { _queueType = value; }
+            get => _queueType;
+            set => _queueType = value;
         }
     }
 }

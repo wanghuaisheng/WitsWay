@@ -17,22 +17,27 @@
  * 
  * ***************************************/
 #endregion
+
 using System.Collections.Generic;
+using System.Windows.Forms;
+using DevExpress.Utils.Controls;
+using DevExpress.XtraBars;
+using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Base;
 using WitsWay.Utilities.Extends;
 
 namespace WitsWay.Utilities.Win.Extends
 {
     /// <summary>
-    /// XtraGrid辅助类
+    /// ColumnView辅助类
     /// </summary>
-    public  static partial class GridViewExtends
+    public static partial class ColumnViewExtends
     {
 
         /// <summary>
         /// 设置控件Tag
         /// </summary>
-        public static void SetTag(this BaseView ctr, string tagKey, object tag)
+        public static void SetTag(this ColumnView ctr, string tagKey, object tag)
         {
             var tagDic = ctr.Tag as Dictionary<string, object>;
             if (tagDic == null)
@@ -42,34 +47,37 @@ namespace WitsWay.Utilities.Win.Extends
             }
             tagDic[tagKey] = tag;
         }
+
         /// <summary>
         /// 获取控件Tag
         /// </summary>
         /// <param name="ctr">控件</param>
         /// <param name="tagKey">数据键</param>
-        public static object GetTag(this BaseView ctr, string tagKey)
+        public static object GetTag(this ColumnView ctr, string tagKey)
         {
             var tagDic = ctr.Tag as Dictionary<string, object>;
             if (tagDic == null) return null;
             return tagDic.ContainsKey(tagKey) ? tagDic[tagKey] : null;
         }
+
         /// <summary>
         /// 获取控件Tag
         /// </summary>
         /// <param name="ctr">控件</param>
         /// <param name="tagKey">数据键</param>
         /// <typeparam name="T">Tag数据类型</typeparam>
-        public static T GetTag<T>(this BaseView ctr, string tagKey)
+        public static T GetTag<T>(this ColumnView ctr, string tagKey)
         {
             var tagData = GetTag(ctr, tagKey);
             return tagData.CastTo<T>();
         }
+
         /// <summary>
         /// 获取控件Tag
         /// </summary>
         /// <param name="ctr">控件</param>
         /// <param name="tagKey">数据键</param>
-        public static void RemoveTag(this BaseView ctr, string tagKey)
+        public static void RemoveTag(this ColumnView ctr, string tagKey)
         {
             var tagDic = ctr.Tag as Dictionary<string, object>;
             if (tagDic == null) return;

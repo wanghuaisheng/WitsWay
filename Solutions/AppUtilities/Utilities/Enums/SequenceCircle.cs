@@ -28,21 +28,17 @@ namespace WitsWay.Utilities.Enums
     /// </summary>
     [Serializable]
     [DataContract]
-    [EnumFieldAttribute("系统序列周期")]
+    [EnumField("系统序列周期")]
     public enum SequenceCircle
     {
         /// <summary>
         /// 递增序列
         /// </summary>
-        [EnumMember]
-        [EnumFieldAttribute("递增序列")]
-        Increase = 1,
+        [EnumMember] [EnumField("递增序列")] Increase = 1,
         /// <summary>
         /// 以天为周期
         /// </summary>
-        [EnumMember]
-        [EnumFieldAttribute("以天为周期")]
-        Day = 2
+        [EnumMember] [EnumField("以天为周期")] Day = 2
 
     }
 }

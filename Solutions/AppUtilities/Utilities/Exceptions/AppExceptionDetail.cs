@@ -37,14 +37,8 @@ namespace WitsWay.Utilities.Exceptions
         /// </summary>
         public AppExceptionKinds ExceptionType
         {
-            get
-            {
-                return _exceptionType;
-            }
-            set
-            {
-                _exceptionType = value;
-            }
+            get => _exceptionType;
+            set => _exceptionType = value;
         }
 
         /// <summary>
@@ -56,14 +50,8 @@ namespace WitsWay.Utilities.Exceptions
         /// </summary>
         public long ExceptionCode
         {
-            get
-            {
-                return _exceptionCode;
-            }
-            set
-            {
-                _exceptionCode = value;
-            }
+            get => _exceptionCode;
+            set => _exceptionCode = value;
         }
 
         /// <summary>
@@ -75,14 +63,8 @@ namespace WitsWay.Utilities.Exceptions
         /// </summary>
         public string ExceptionMessage
         {
-            get
-            {
-                return _exceptionMessage;
-            }
-            set
-            {
-                _exceptionMessage = value;
-            }
+            get => _exceptionMessage;
+            set => _exceptionMessage = value;
         }
 
     }

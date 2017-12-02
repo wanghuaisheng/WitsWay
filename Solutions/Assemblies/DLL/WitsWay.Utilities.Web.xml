@@ -317,6 +317,64 @@
             <param name="cookieContainer">Cookie容器</param>
             <returns></returns>
         </member>
+        <member name="T:WitsWay.Utilities.Web.Extends.UriExtends">
+            <summary>
+            Uri扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.UriExtends.HttpPostRequestString(System.Uri,System.Object,System.Net.Cookie)">
+            <summary>
+            Http Post Request String
+            </summary>
+            <param name="uri">地址</param>
+            <param name="contentEntity">post实体</param>
+            <param name="cookie">附带Cookie数据</param>
+            <returns>请求结果</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.UriExtends.AsyncHttpPostRequestString(System.Uri,System.Object,System.Net.Cookie)">
+            <summary>
+            Http 异步 Post 请求 String
+            </summary>
+            <param name="uri">地址</param>
+            <param name="contentEntity">post实体</param>
+            <param name="cookie">附带Cookie数据</param>
+            <returns>请求结果</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.UriExtends.HttpPostRequestCookies(System.Uri,System.Object)">
+            <summary>
+            Http Post Request Cookies
+            </summary>
+            <param name="uri">地址</param>
+            <param name="contentEntity">post实体</param>
+            <returns>请求结果</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.UriExtends.AsyncHttpPostRequestCookies(System.Uri,System.Object)">
+            <summary>
+            Http 异步 Post 请求 Cookies
+            </summary>
+            <param name="uri">地址</param>
+            <param name="contentEntity">post实体</param>
+            <returns><see cref="T:System.Net.Cookie"/>列表</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.UriExtends.UriToImage(System.Uri,System.Boolean)">
+            <summary>
+            把图片Url转化成Image对象
+            </summary>
+            <param name="uri">图片Url</param>
+            <param name="throwException">是否抛出异常
+            <para>false则不抛出异常，异常发生时记录异常并返回null</para>
+            <para>true则记录日志，并抛出异常</para>
+            </param>
+            <returns><see cref="T:System.Drawing.Image"/>对象</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Extends.UriExtends.AsyncHttpExecute(System.Uri,System.Net.Cookie)">
+            <summary>
+            Http 异步 Post 执行
+            </summary>
+            <param name="uri">地址</param>
+            <param name="cookie">附带Cookie数据</param>
+            <returns>请求结果</returns>
+        </member>
         <member name="T:WitsWay.Utilities.Web.Extends.StringExtends">
             <summary>
             字符串扩展
@@ -789,6 +847,36 @@
         <member name="M:WitsWay.Utilities.Web.Helpers.MimeTypeHelper.GetMimeType(WitsWay.Utilities.Web.Helpers.MimeTypeEnum)">
             <summary>
             获取Mime类型
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Web.Helpers.HttpClientHelper">
+            <summary>
+            Http客户端辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.HttpClientHelper.AsyncHttpPostRequestString(System.String,System.Object,System.Net.Cookie)">
+            <summary>
+            HttpClient实现Post请求String
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.HttpClientHelper.HttpPostRequestString(System.String,System.Object,System.Net.Cookie)">
+            <summary>
+            HttpClient实现Post请求String
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.HttpClientHelper.HttpGetRequestStream(System.String)">
+            <summary>
+            HttpClient实现Post请求String
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.HttpClientHelper.AsyncHttpPostRequestCookies(System.String,System.Object,System.Net.Cookie)">
+            <summary>
+            HttpClient实现Post请求Cookie
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Web.Helpers.HttpClientHelper.HttpPostRequestCookies(System.String,System.Object)">
+            <summary>
+            HttpClient实现Post请求Cookie
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Web.Helpers.UploadHelper">

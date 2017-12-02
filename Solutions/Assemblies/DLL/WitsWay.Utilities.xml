@@ -311,6 +311,81 @@
             <param name="fullName">类型全名</param>
             <returns>类型</returns>
         </member>
+        <member name="T:WitsWay.Utilities.Daos.BulkOperations`1">
+            <summary>
+            数据批量操作
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.BulkInsert(System.String,System.Collections.Generic.IList{`0},System.String,System.String,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            批量插入(主键重复会报错)
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.BulkUpdate(System.String,System.Collections.Generic.IList{`0},System.String,System.String,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            批量更新
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.BulkSync(System.String,System.Collections.Generic.IList{`0},System.String,System.String,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            批量同步（插入或更新或删除）
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.MergeUpdateOrInsert(System.Data.SqlClient.SqlCommand,System.String,System.String,System.String,System.String)">
+            <summary>
+            批量更新更新或插入
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.MergeUpdate(System.Data.SqlClient.SqlCommand,System.String,System.String,System.String,System.String)">
+            <summary>
+            批量更新
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.CreateUpdateSql(System.Data.SqlClient.SqlCommand,System.String,System.String)">
+            <summary>
+            创建更新的sql
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.CreateInsertSql(System.Data.SqlClient.SqlCommand,System.String,System.String)">
+            <summary>
+            创建插入sql
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.EntitiesToTable(System.Data.SqlClient.SqlCommand,System.Collections.Generic.IList{`0},System.String,System.String)">
+            <summary>
+            把数据集合转成table
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.BulkToServer(System.Data.SqlClient.SqlCommand,System.Data.DataTable,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            把数据批量写到数据库
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.CreateTempTable(System.Data.SqlClient.SqlCommand,System.String,System.String,System.String)">
+            <summary>
+            创建临时表
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.DropTempTable(System.Data.SqlClient.SqlCommand,System.String)">
+            <summary>
+            删除临时表
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.CreateTable(System.Data.SqlClient.SqlCommand,System.String,System.String)">
+            <summary>
+            创建表结构
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.GetTableColumnInfo(System.Data.SqlClient.SqlCommand,System.String,System.String)">
+            <summary>
+            目标表的列信息
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.BulkOperations`1.ResultToEntity(System.Data.DataTable)">
+            <summary>
+            把结果集转化为实体集
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Daos.DaoFactory">
             <summary>
             数据访问对象工厂
@@ -349,6 +424,71 @@
         <member name="M:WitsWay.Utilities.Daos.DaoFactory.InitDll(System.String,System.Collections.Generic.IDictionary{System.Type,System.Type})">
             <summary>
             数据访问对象工厂
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Daos.CdcOperations">
+            <summary>
+            CDCOperations
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.#ctor(System.String)">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.EnableDb">
+            <summary>
+            对数据库开启CDC
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.DisableDb">
+            <summary>
+            关闭数据库CDC
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.IsEnableDb(System.String)">
+            <summary>
+            检查数据库是否已经开启CDC
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.EnableTable(System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            对表开启CDC
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.DisableTable(System.String,System.String)">
+            <summary>
+            关闭表的CDC
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.IsEnableTable(System.String,System.String)">
+            <summary>
+            检查表是否开启CDC
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.GetDbName">
+            <summary>
+            取数据库信息
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.GetTables">
+            <summary>
+            取数据库里面所有的表
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.GetColumnsByTable(System.String,System.String)">
+            <summary>
+            取表的所有列
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.GetCdcTables">
+            <summary>
+            取已经开启CDC的表
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.CdcOperations.GetCdcColumns">
+            <summary>
+            取所有开启CDC的列
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Daos.IDaoExtends">
@@ -496,20 +636,20 @@
             <param name="keys">键列表</param>
             <returns>数据列表</returns>
         </member>
-        <member name="M:WitsWay.Utilities.Daos.IRepositoryBulk`2.BulkInsert(System.Collections.Generic.IList{`1})">
+        <member name="M:WitsWay.Utilities.Daos.IRepositoryBulk`2.BulkInsert(System.Collections.Generic.IList{`1},System.Data.SqlClient.SqlTransaction)">
             <summary>
             批量插入
             </summary>
             <param name="datas">实体列表</param>
             <returns>批量插入结果</returns>
         </member>
-        <member name="M:WitsWay.Utilities.Daos.IRepositoryBulk`2.BulkUpdate(System.Collections.Generic.IList{`1})">
+        <member name="M:WitsWay.Utilities.Daos.IRepositoryBulk`2.BulkUpdate(System.Collections.Generic.IList{`1},System.Data.SqlClient.SqlTransaction)">
             <summary>
             批量更新
             </summary>
             <param name="datas">实体列表</param>
         </member>
-        <member name="M:WitsWay.Utilities.Daos.IRepositoryBulk`2.BulkSync(System.Collections.Generic.IList{`1})">
+        <member name="M:WitsWay.Utilities.Daos.IRepositoryBulk`2.BulkSync(System.Collections.Generic.IList{`1},System.Data.SqlClient.SqlTransaction)">
             <summary>
             批量同步（插入、更新、删除）
             </summary>
@@ -1871,6 +2011,76 @@
             <param name="aPage">A分页结果集</param>
             <returns>B分页结果集</returns>
         </member>
+        <member name="T:WitsWay.Utilities.Entitys.IdTextValueData`1">
+            <summary>
+            ID-Text-Data，用于Combo绑定
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.IdTextValueData`1.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.IdTextValueData`1.Text">
+            <summary>
+            显示文字
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.IdTextValueData`1.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.IdTextValueData`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Entitys.IdTextValueData`1.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Entitys.IdTextData">
+            <summary>
+            ID-Text-Data，用于Combo绑定
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.IdTextData.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.IdTextData.Text">
+            <summary>
+            显示文字
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.IdTextData.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Entitys.IdTextData.GetData``1">
+            <summary>
+            获取数据
+            </summary>
+            <typeparam name="T">数据类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Entitys.IdTextData.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Entitys.IdTextData.GetTypeCode">
+            <summary>
+            GetTypeCode
+            </summary>
+            <returns><see cref="T:System.TypeCode"/></returns>
+        </member>
         <member name="T:WitsWay.Utilities.Entitys.PagerFilterPara`1">
             <summary>
              表格搜索对象
@@ -1887,27 +2097,25 @@
             分页参数
             </summary>
         </member>
-        <member name="T:WitsWay.Utilities.Entitys.SqlBulkResult">
+        <member name="T:WitsWay.Utilities.Entitys.BulkInsertResult">
             <summary>
             批量插入结果
             </summary>
         </member>
-        <member name="P:WitsWay.Utilities.Entitys.SqlBulkResult.MaxIdentity">
+        <member name="P:WitsWay.Utilities.Entitys.BulkInsertResult.Action">
             <summary>
-            最大自增Id
+            操作行为,update ,insert,delete
             </summary>
         </member>
-        <member name="P:WitsWay.Utilities.Entitys.SqlBulkResult.RowCount">
+        <member name="P:WitsWay.Utilities.Entitys.BulkInsertResult.DeletedId">
             <summary>
-            行数
+            删除的ID
             </summary>
         </member>
-        <member name="P:WitsWay.Utilities.Entitys.SqlBulkResult.Item(System.Int32)">
+        <member name="P:WitsWay.Utilities.Entitys.BulkInsertResult.InsertedId">
             <summary>
-            取得对应索引的Id，从0开始
+            添加的ID
             </summary>
-            <param name="idx">索引序号</param>
-            <returns>对应索引的Id，从0开始，不存在则返回-1</returns>
         </member>
         <member name="T:WitsWay.Utilities.Entitys.IntIdStringValue">
             <summary>
@@ -2409,6 +2617,11 @@
             报表中心
             </summary>
         </member>
+        <member name="F:WitsWay.Utilities.Enums.SubSystems.AppCenter">
+            <summary>
+            应用中心
+            </summary>
+        </member>
         <member name="F:WitsWay.Utilities.Enums.SubSystems.ABM">
             <summary>
             基础管理平台（Application Basic Manage）
@@ -2437,6 +2650,774 @@
         <member name="F:WitsWay.Utilities.Enums.SubSystems.SCM">
             <summary>
             供应链管理系统
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Enums.SubSystems.WMS">
+            <summary>
+            库房管理系统
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.ImageExtends">
+            <summary>
+            图片扩展信息
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ImageExtends.ToBytes(System.Drawing.Image)">
+            <summary>
+            Image转换为byte数组
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.EnumExtends">
+            <summary>
+            字符串扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetDescription(System.Enum)">
+            <summary>
+            获取“枚举值”描述信息
+            </summary>
+            <param name="enumValue">枚举值</param>
+            <returns>枚举值描述</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetEnumDescription(System.Enum)">
+            <summary>
+            获取“枚举”描述信息
+            </summary>
+            <param name="enumValue">枚举值</param>
+            <returns>枚举描述</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetFieldInfo(System.Enum)">
+            <summary>
+            获取“枚举”字段信息
+            </summary>
+            <param name="enumValue">枚举值</param>
+            <returns>枚举字段信息</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetValue(System.Enum)">
+            <summary>
+            取得枚举值
+            </summary>
+            <param name="enumValue">枚举</param>
+            <returns>枚举值</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetFieldInfos(System.Enum)">
+            <summary>
+            获取“枚举”所有字段信息
+            </summary>
+            <param name="enumValue">枚举值</param>
+            <returns>枚举所有字段信息</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumExtends.ToInt(System.Enum)">
+            <summary>
+            转换为Int值
+            </summary>
+            <param name="enumValue">枚举值</param>
+            <returns>Int值</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumExtends.ToIntString(System.Enum)">
+            <summary>
+            转换为对应Int值的String
+            </summary>
+            <param name="enumValue">枚举值</param>
+            <returns>Int值对应的String</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.DatabaseExtends">
+            <summary>
+            Database扩展方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.GetDbCommand(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.CommandType,System.String)">
+            <summary>
+            获取DbCommand对象
+            </summary>
+            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
+            <param name="cmdType"><see cref="T:System.Data.CommandType"/>枚举</param>
+            <param name="sql">TSQL语句</param>
+            <returns><see cref="T:System.Data.Common.DbCommand"/>对象</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadList``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,Microsoft.Practices.EnterpriseLibrary.Data.IRowMapper{``0},System.Data.CommandType,System.String)">
+            <summary>
+            读取列表
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
+            <param name="mapper">映射对象</param>
+            <param name="cmdType">CommandType</param>
+            <param name="sql">CommandText</param>
+            <returns>实体列表</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadList``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,Microsoft.Practices.EnterpriseLibrary.Data.IRowMapper{``0},System.Data.Common.DbCommand)">
+            <summary>
+            读取列表
+            读取列表
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
+            <param name="mapper">映射对象</param>
+            <param name="cmd">DbCommand</param>
+            <returns>实体列表</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadList``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.CommandType,System.String)">
+            <summary>
+            读取列表,使用默认Mapper
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
+            <param name="cmdType">CommandType</param>
+            <param name="sql">CommandText</param>
+            <returns>实体列表</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadList``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.Common.DbCommand)">
+            <summary>
+            读取列表,使用默认Mapper
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
+            <param name="cmd">DbCommand</param>
+            <returns>实体列表</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadRow``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,Microsoft.Practices.EnterpriseLibrary.Data.IRowMapper{``0},System.Data.Common.DbCommand)">
+            <summary>
+            读取一行数据，无数据返回null，不抛出异常
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
+            <param name="mapper">映射对象</param>
+            <param name="cmd"><see cref="T:System.Data.Common.DbCommand"/>对象</param>
+            <returns>实体列表</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadRow``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.Common.DbCommand)">
+            <summary>
+            读取一行数据，无数据返回null，不抛出异常，使用默认Mapper
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
+            <param name="cmd"><see cref="T:System.Data.Common.DbCommand"/>对象</param>
+            <returns>实体列表</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.CheckCommandType(System.Data.CommandType)">
+            <summary>
+            检查CommandType参数
+            </summary>
+            <param name="cmdType">CommandType</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ExecuteNonQueryZeroThrow(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.Common.DbCommand,System.String)">
+            <summary>
+            执行添加，添加影响行数0时抛出异常
+            </summary>
+            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
+            <param name="cmd"><see cref="T:System.Data.Common.DbCommand"/>对象</param>
+            <param name="msg">备注信息</param>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.DataRowExtends">
+            <summary>
+            DataRow扩展方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DataRowExtends.FieldIsNullOrNotExist(System.Data.DataRow,System.String)">
+            <summary>
+            字段是否为空或者不存在
+            </summary>
+            <param name="dr">数据源</param>
+            <param name="fieldName">字段名称</param>
+            <returns>不存在或者为Null返回true。</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.DateTimeExtends">
+            <summary>
+            日期类型的扩展方法
+            </summary>
+            <remarks>
+            SQL Server 2008除了DateTime和SmallDateTime之外，又新增了四种时间类型，分别为：date，time，datetime2和datetimeoffset。
+            各时间类型范围、精度一览表：
+            数据类型 时间范围 精度
+            datetime 1753-01-01到9999-12-31 00:00:00 到 23:59:59.997 3.33毫秒
+            smalldatetime 1900-01-01 到 2079-06-06 00:00:00 到 23:59:59 分钟
+            date 0001-01-01 到 9999-12-31 天
+            time 00:00:00.0000000 到 23:59:59.9999999 100 纳秒
+            datetime2 0001-01-01 到 9999-12-31 00:00:00 到 23:59:59.9999999 100 纳秒
+            datetimeoffset 0001-01-01 到 9999-12-31 00:00:00 到 23:59:59.9999999 -14:00 到 +14:00 100 纳秒
+            各时间类型表达式一览表： 数据类型 输出 time 12:35:29. 1234567 date 2007-05-08 smalldatetime 2007-05-08 12:35:00 datetime 2007-05-08 12:35:29.123 datetime2 2007-05-08 12:35:29. 1234567 datetimeoffset 2007-05-08 12:35:29.1234567 +12:15
+            </remarks>
+        </member>
+        <member name="F:WitsWay.Utilities.Extends.DateTimeExtends.MinSqlServerDateTime">
+            <summary>
+            T-SQL最小时间，按照smalldatetime作为依据确定
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Extends.DateTimeExtends.MaxSqlServerDateTime">
+            <summary>
+            T-SQL最大时间，按照smalldatetime作为依据确定
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateString(System.Nullable{System.DateTime})">
+            <summary>
+            转为日期字符串
+            </summary>
+            <param name="dateTime">可空日期</param>
+            <returns>yyyy-MM-dd表示的日期，或空字符串</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateString(System.DateTime)">
+            <summary>
+            转为日期字符串
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns>yyyy-MM-dd表示的日期，或空字符串</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateTimeString(System.Nullable{System.DateTime})">
+            <summary>
+            转为日期时间字符串
+            </summary>
+            <param name="dateTime">可空日期</param>
+            <returns>yyyy-MM-dd HH:mm表示的日期，或空字符串</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateTimeString(System.DateTime)">
+            <summary>
+            转为日期时间字符串，精确到分
+            <para>格式：yyyy-MM-dd HH:mm</para>
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns>yyyy-MM-dd HH:mm表示的日期，或空字符串</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateTimeStringSecond(System.DateTime)">
+            <summary>
+            转为日期时间字符串,精确到秒 
+            <para>格式：yyyy-MM-dd HH:mm:ss</para>
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.IsValidSqlServerDateTime(System.DateTime)">
+            <summary>
+            判断日期时间是否是合法的数据库日期时间值
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns>有效true，无效false</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.GetValidSqlServerDateTimeOrNow(System.DateTime)">
+            <summary>
+            获取有效的SQL时间或当前日期
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns>有效日期本身，无效DateTime.Now</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.ListExtensions">
+            <summary>
+            <see cref="T:System.Collections.Generic.List`1"/> 扩展方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ListExtensions.MoveToEnd``1(System.Collections.Generic.List{``0},System.Predicate{``0})">
+            <summary>
+            Moves the item matching the <paramref name="itemSelector"/> to the end of the <paramref name="list"/>.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ListExtensions.MoveToBeginning``1(System.Collections.Generic.List{``0},System.Predicate{``0})">
+            <summary>
+            Moves the item matching the <paramref name="itemSelector"/> to the beginning of the <paramref name="list"/>.
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ListExtensions.MoveUp``1(System.Collections.Generic.List{``0},``0)">
+            <summary>
+            上移
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ListExtensions.MoveDown``1(System.Collections.Generic.List{``0},``0)">
+            <summary>
+            下移
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ListExtensions.Move``1(System.Collections.Generic.List{``0},System.Predicate{``0},System.Int32)">
+            <summary>
+            Moves the item matching the <paramref name="itemSelector"/> to the <paramref name="newIndex"/> in the <paramref name="list"/>.
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.MethodExtends">
+            <summary>
+            方法扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.MethodExtends.GetAttribute``1(System.Reflection.MethodInfo)">
+            <summary>
+            取得自定义特性
+            </summary>
+            <typeparam name="T">自定义Attribute类型</typeparam>
+            <param name="method">方法信息</param>
+            <returns>T实例</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.MethodExtends.GetCnNames(System.Enum,System.Collections.Generic.Dictionary{System.Enum,System.String})">
+            <summary>
+            枚举类型根据名称字典获取中文名称串的扩展方法
+            </summary>
+            <param name="en"></param>
+            <param name="dict">该枚举类型的中文名称字典</param>
+            <returns>转换后的中文名称串，如果缺少中文定义将抛异常</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.ObjectExtends">
+            <summary>
+            Object扩展方法
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.RemoveEvent``1(``0,System.Delegate,System.String)">
+            <summary>
+            移除事件绑定
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="entity">实体</param>
+            <param name="eventDelegate">事件委托</param>
+            <param name="eventName">事件名称</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.ConvertTo``1(System.Object)">
+            <summary>
+            转换对象为特定的类型，默认值为 default(T)
+            </summary>
+            <typeparam name = "T">要转换的类型</typeparam>
+            <param name = "value">要转换的object</param>
+            <returns>转换后T</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.ConvertTo``1(System.Object,``0)">
+            <summary>
+            转换对象为特定的类型，默认值为 default(T)
+            </summary>
+            <typeparam name = "T">要转换的类型</typeparam>
+            <param name = "value">要转换的object</param>
+            <param name="defaultValue">默认值</param>
+            <returns>转换后T</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.ConvertTo``1(System.Object,``0,System.Boolean)">
+            <summary>
+            转换对象为特定的类型，默认值为 default(T)
+            </summary>
+            <typeparam name = "T">要转换的类型</typeparam>
+            <param name = "value">要转换的object</param>
+            <param name="defaultValue">默认值</param>
+            <param name="ignoreException">忽略异常</param>
+            <returns>转换后T</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.CanConvertTo``1(System.Object)">
+            <summary>
+            对象是否能被转换为特定的类型
+            </summary>
+            <param name="value">对象</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.CanConvertTo(System.Object,System.Type)">
+            <summary>
+            对象是否能被转换为特定的类型
+            </summary>
+            true则value可以转换为T，否则false
+            <param name="targetType">类型</param>
+            <param name="value">对象</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.InvokeMethod(System.Object,System.String,System.Object[])">
+            <summary>
+            通过反射动态调用方法methodName
+            </summary>
+            <param name = "obj">持有方法的对象</param>
+            <param name = "methodName">方法名</param>
+            <param name = "parameters">参数列表</param>
+            <returns>方法返回值</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.InvokeMethod``1(System.Object,System.String,System.Object[])">
+            <summary>
+            通过反射动态调用方法methodName，返回强类型对象
+            </summary>
+            <typeparam name = "T">期望返回的类型</typeparam>
+            <param name = "obj">持有方法的对象</param>
+            <param name = "methodName">方法名</param>
+            <param name = "parameters">参数列表</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetPropertyValue(System.Object,System.String)">
+            <summary>
+            通过反射动态获取属性值
+            </summary>
+            <param name = "obj">持有属性的对象</param>
+            <param name = "propertyName">属性名</param>
+            <returns>属性值</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetPropertyValue``1(System.Object,System.String,``0)">
+            <summary>
+            取得强类型属性值
+            </summary>
+            <typeparam name = "T">返回值类型</typeparam>
+            <param name = "obj">持有属性的对象</param>
+            <param name="defaultValue">默认值</param>
+            <param name = "propertyName">属性名</param>
+            <returns>属性值</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.SetPropertyValue(System.Object,System.String,System.Object)">
+            <summary>
+            动态设置属性值
+            </summary>
+            <param name = "obj">要设置属性的对象</param>
+            <param name = "propertyName">属性名</param>
+            <param name = "value">值</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetAttribute``1(System.Object)">
+            <summary>
+            取得对象的标签实例
+            </summary>
+            <typeparam name = "T">要取得的的标签类型</typeparam>
+            <param name = "obj">要获取的对象实例</param>
+            <returns>标签实例</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetAttribute``1(System.Object,System.Boolean)">
+            <summary>
+            取得对象的标签实例
+            </summary>
+            <typeparam name = "T">要取得的的标签类型</typeparam>
+            <param name = "obj">要获取的对象实例</param>
+            <param name="includeInherited">是否包括继承的类型</param>
+            <returns>标签实例</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetAttributes``1(System.Object)">
+            <summary>
+            取得所有的T类型标签
+            </summary>
+            <typeparam name = "T">标签类型</typeparam>
+            <param name = "obj">获取对象</param>
+            <returns>所有T类型标签</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetAttributes``1(System.Object,System.Boolean)">
+            <summary>
+            取得所有的T类型标签
+            </summary>
+            <typeparam name = "T">标签类型</typeparam>
+            <param name = "obj">获取对象</param>
+            <param name="includeInherited">是否包括继承的类型</param>
+            <returns>所有T类型标签</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.IsType``1(System.Object)">
+            <summary>
+            对象是否为T类型
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetTypeDefaultValue``1(``0)">
+            <summary>
+            取得对应类型默认值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.AsString(System.Object)">
+            <summary>
+            转换为string
+            </summary>
+            <returns>
+            target=null返回null，否则等同于ToString()
+            </returns>
+            <param name = "target">要ToString的对象</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.CastTo``1(System.Object)">
+            <summary>
+            转换类型
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.CastTo(System.Object,System.Type)">
+            <summary>
+            转换类型
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.Clone``1(``0)">
+            <summary>
+            克隆对象
+            </summary>
+            <typeparam name="T">克隆对象类型</typeparam>
+            <param name="source">克隆源</param>
+            <returns>深度克隆对象</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.PackJson``1(``0)">
+            <summary>
+            Json打包对象
+            </summary>
+            <param name="entity">实体对象</param>
+            <typeparam name="T">对象类型</typeparam>
+            <returns>序列化后字符串</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.PackXml``1(``0)">
+            <summary>
+            Xml打包对象
+            </summary>
+            <param name="entity">实体对象</param>
+            <typeparam name="T">对象类型</typeparam>
+            <returns>序列化后字符串</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.Pack``1(``0,System.String)">
+            <summary>
+            打包对象
+            </summary>
+            <typeparam name="T">克隆对象类型</typeparam>
+            <param name="entity">实体对象</param>
+            <param name="parserName">解析器名称</param>
+            <returns>序列化后字符串</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.PropertyExtends">
+            <summary>
+            属性扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.PropertyExtends.GetAttribute``1(System.Reflection.PropertyInfo)">
+            <summary>
+            取得对应属性的T自定义标签实例
+            </summary>
+            <typeparam name="T">自定义标签类型</typeparam>
+            <param name="property">属性信息</param>
+            <returns>自定义标签实例</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.ByteExtends">
+            <summary>
+            字符串扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ByteExtends.ToHexString(System.Byte[])">
+            <summary>
+            byte数组转16进制字符串
+            </summary>
+            <param name="bytes">byte数组</param>
+            <returns>16进制字符串</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.ByteExtends.ToHexString2(System.Byte[])">
+            <summary>
+            byte数组转16进制字符串
+            </summary>
+            <param name="bytes">byte数组</param>
+            <returns>16进制字符串</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.TypeExtends">
+            <summary>
+            Type扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.TypeExtends.GetAttribute``1(System.Type)">
+            <summary>
+            取得type的T特性实例
+            </summary>
+            <typeparam name="T">特性类型</typeparam>
+            <param name="type">Type实例</param>
+            <returns>T实例</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.TypeExtends.GetInstance(System.Type)">
+            <summary>
+            取得Type实例对象
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.TypeExtends.IsNumericType(System.Type)">
+            <summary>
+            判断是否为数值类型。
+            </summary>
+            <param name="t">要判断的类型</param>
+            <returns>是否为数值类型</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.TypeExtends.IsNumericOrNullableNumericType(System.Type)">
+            <summary>
+            判断是否为可空数值类型。
+            </summary>
+            <param name="t">要判断的类型</param>
+            <returns>是否为可空数值类型</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.TypeExtends.IsNullableType(System.Type)">
+            <summary>
+            判断是否为可空类型。
+            注意，直接调用可空对象的.GetType()方法返回的会是其泛型值的实际类型，用其进行此判断肯定返回false。
+            </summary>
+            <param name="t">要判断的类型</param>
+            <returns>是否为可空类型</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.StringExtends">
+            <summary>
+            字符串扩展
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.CutStringLength(System.String,System.Int32,System.String)">
+            <summary>
+            截取标题字数
+            </summary>
+            <param name="str">准备截取的字符串</param>
+            <param name="len">截取长度</param>
+            <param name="suffix">超过长度显示字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.GetChineseInitial(System.String)">
+            <summary>
+            取得拼音首字母
+            </summary>
+            <param name="str">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.ToHash(System.String,WitsWay.Utilities.Enums.HashAlgorithmKinds)">
+            <summary>
+            Hash加密
+            </summary>
+            <param name="str">字符串</param>
+            <param name="hashAlgorithm">哈希类型</param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException">未实现对应的哈希Algorithm</exception>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.Left(System.String,System.Int32)">
+            <summary>
+            取左
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.Right(System.String,System.Int32)">
+            <summary>
+            取右
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.Middle(System.String,System.Int32,System.Int32)">
+            <summary>
+            取中
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.IsDate(System.String)">
+            <summary>
+            是否是日期
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.IsInt(System.String)">
+            <summary>
+            是否Int型
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.IsBool(System.String)">
+            <summary>
+            是否Bool型
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.Isdecimal(System.String)">
+            <summary>
+            是否Decimal型
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.IsTinyint(System.String)">
+            <summary>
+            是否Tinyint型
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.ToDateTime(System.String)">
+            <summary>
+            将string转为DateTime，如果字符串不是正确的日期值，将返回DateTime.MinValue
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.ToDateTimeNullable(System.String)">
+            <summary>
+            将string转为DateTime，如果字符串不是正确的日期值，将返回null
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.ToInt(System.String,System.Int32)">
+            <summary>
+            将字符串转为数字,如果转换失败则返回默认值
+            </summary>
+            <param name="source">字符串</param>
+            <param name="defaultValue">转换失败时返回的默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.AddCommaSplit(System.String)">
+            <summary>
+            将字符串转为数字,如果转换失败则返回默认值
+            </summary>
+            <param name="source">字符串</param>
+            <returns>添加了逗号分隔的字符串</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.SplitToList``1(System.String)">
+            <summary>
+            解析实体
+            </summary>
+            <typeparam name="T">转换类型</typeparam>
+            <param name="val">值</param>
+            <returns>实体实例</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.ParseJson``1(System.String)">
+            <summary>
+            解析Json实体
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="val">值</param>
+            <returns>实体实例</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.ParseXml``1(System.String)">
+            <summary>
+            解析Xml实体
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="val">值</param>
+            <returns>实体实例</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.StringExtends.ParseEntity``1(System.String,System.String)">
+            <summary>
+            解析实体
+            </summary>
+            <typeparam name="T">实体类型</typeparam>
+            <param name="val">值</param>
+            <param name="providerName"> </param>
+            <returns>实体实例</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Extends.EnumerableExtensions">
+            <summary>
+            IEnumerable扩展信息
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumerableExtensions.IsNullOrEmpty(System.Collections.IEnumerable)">
+            <summary>
+            是否为空
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumerableExtensions.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            是否为空
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumerableExtensions.SafeForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0},System.Func{``0,System.Boolean},System.Boolean)">
+            <summary>
+            安全ForEach,当lst不为空，且lst中满足predicate条件的项存在时才执行循环操作
+            </summary>
+            <param name="lst">数据</param>
+            <param name="action">循环执行方法体</param>
+            <param name="predicate">循环筛选谓词，true执行，false不执行</param>
+            <param name="changeList">循环执行方法体 是否变更了数据</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumerableExtensions.Join``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            串联字符串集合的成员，其中在每个成员之间使用指定的分隔符（默认使用;）。
+            </summary>
+            <param name="source"></param>
+            <param name="spliter"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Helpers.StreamByteImageHelper">
+            <summary>
+            流、字节、图片辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.StreamByteImageHelper.StreamToBytes(System.IO.Stream)">
+            <summary>
+            将 Stream 转成 byte[]
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.StreamByteImageHelper.BytesToStream(System.Byte[])">
+            <summary>
+            将 byte[] 转成 Stream
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.StreamByteImageHelper.ByteArrayToImage(System.Byte[])">
+            <summary> 
+            字节数组转换成图片 
+            </summary> 
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.StreamByteImageHelper.ImageToByteArray(System.Drawing.Image)">
+            <summary>
+             图片转换成字节流 
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Helpers.ExceptionHelper">
@@ -2733,12 +3714,23 @@
             </summary>
             <param name="key"></param>
         </member>
-        <member name="M:WitsWay.Utilities.Helpers.AppSettingHelper.SetValue(System.String,System.String)">
+        <member name="M:WitsWay.Utilities.Helpers.AppSettingHelper.GetValue``1(System.String)">
+            <summary>
+            根据Key取Value值
+            </summary>
+            <typeparam name="T">值类型</typeparam>
+            <param name="key">AppSetting键</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.AppSettingHelper.SetValue(System.String,System.String,System.String)">
             <summary>
             根据Key修改Value
             </summary>
             <param name="key">要修改的Key</param>
             <param name="value">要修改为的值</param>
+            <param name="xmlFileRelativePath">xml文件相对位置
+            <para>例如：<![CDATA[Xml\\appSettings.config]]></para>
+            </param>
         </member>
         <member name="T:WitsWay.Utilities.Helpers.ComputerHelper">
             <summary>
@@ -3416,6 +4408,22 @@
             XML序列化辅助类
             </summary>
         </member>
+        <member name="M:WitsWay.Utilities.Helpers.SerilizeHelper.JObjectParse(System.String)">
+            <summary>
+            解析为JObject
+            <para>可后续使用JObject进行属性获取等其它操作</para>
+            </summary>
+            <param name="json">json字符串</param>
+            <returns><see cref="T:Newtonsoft.Json.Linq.JObject"/>对象</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.SerilizeHelper.GetJObjectValue(System.String,System.String)">
+            <summary>
+            获得某个json对象下一层指定值
+            </summary>
+            <param name="json"></param>
+            <param name="subJObjectValue"></param>
+            <returns></returns>
+        </member>
         <member name="M:WitsWay.Utilities.Helpers.SerilizeHelper.DeserilizeJson``1(System.String)">
             <summary>
             转换为实体
@@ -3430,12 +4438,16 @@
             <param name="obj"></param>
             <returns></returns>
         </member>
+        <member name="M:WitsWay.Utilities.Helpers.SerilizeHelper.InitJsonSetting">
+            <summary>
+            初始化Json序列化设置
+            </summary>
+            <returns>Json序列化设置</returns>
+        </member>
         <member name="M:WitsWay.Utilities.Helpers.SerilizeHelper.SerilizeToJson``1(System.Collections.Generic.IList{``0})">
             <summary>
-            
+            序列化为Json字符串
             </summary>
-            <param name="obj"></param>
-            <returns></returns>
         </member>
         <member name="M:WitsWay.Utilities.Helpers.SerilizeHelper.SerilizeToXML``1(``0)">
             <summary>
@@ -4332,6 +5344,21 @@
             用户『{0}』不存在
             </summary>
         </member>
+        <member name="F:WitsWay.Utilities.Errors.UtilityErrors.ResourceRequestFail">
+            <summary>
+            资源『{0}』请求失败
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Errors.UtilityErrors.AppConfigAppSettingError">
+            <summary>
+            程序配置文件中appSettings中配置{0}获取失败
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Errors.UtilityErrors.ObjectCastError">
+            <summary>
+            对象转换错误：{0}
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Exceptions.ApiExceptionDetail">
             <summary>
             异常明细
@@ -4506,734 +5533,6 @@
             <param name="errorCode">错误码</param>
             <param name="errorDescription">错误描述</param>
             <param name="operationHelp">操作帮助</param>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.EnumExtends">
-            <summary>
-            字符串扩展
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetDescription(System.Enum)">
-            <summary>
-            获取“枚举值”描述信息
-            </summary>
-            <param name="enumValue">枚举值</param>
-            <returns>枚举值描述</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetEnumDescription(System.Enum)">
-            <summary>
-            获取“枚举”描述信息
-            </summary>
-            <param name="enumValue">枚举值</param>
-            <returns>枚举描述</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetFieldInfo(System.Enum)">
-            <summary>
-            获取“枚举”字段信息
-            </summary>
-            <param name="enumValue">枚举值</param>
-            <returns>枚举字段信息</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetValue(System.Enum)">
-            <summary>
-            取得枚举值
-            </summary>
-            <param name="enumValue">枚举</param>
-            <returns>枚举值</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetFieldInfos(System.Enum)">
-            <summary>
-            获取“枚举”所有字段信息
-            </summary>
-            <param name="enumValue">枚举值</param>
-            <returns>枚举所有字段信息</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumExtends.ToInt(System.Enum)">
-            <summary>
-            转换为Int值
-            </summary>
-            <param name="enumValue">枚举值</param>
-            <returns>Int值</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumExtends.ToIntString(System.Enum)">
-            <summary>
-            转换为对应Int值的String
-            </summary>
-            <param name="enumValue">枚举值</param>
-            <returns>Int值对应的String</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.DatabaseExtends">
-            <summary>
-            Database扩展方法
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.GetDbCommand(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.CommandType,System.String)">
-            <summary>
-            获取DbCommand对象
-            </summary>
-            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
-            <param name="cmdType"><see cref="T:System.Data.CommandType"/>枚举</param>
-            <param name="sql">TSQL语句</param>
-            <returns><see cref="T:System.Data.Common.DbCommand"/>对象</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadList``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,Microsoft.Practices.EnterpriseLibrary.Data.IRowMapper{``0},System.Data.CommandType,System.String)">
-            <summary>
-            读取列表
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
-            <param name="mapper">映射对象</param>
-            <param name="cmdType">CommandType</param>
-            <param name="sql">CommandText</param>
-            <returns>实体列表</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadList``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,Microsoft.Practices.EnterpriseLibrary.Data.IRowMapper{``0},System.Data.Common.DbCommand)">
-            <summary>
-            读取列表
-            读取列表
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
-            <param name="mapper">映射对象</param>
-            <param name="cmd">DbCommand</param>
-            <returns>实体列表</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadList``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.CommandType,System.String)">
-            <summary>
-            读取列表,使用默认Mapper
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
-            <param name="cmdType">CommandType</param>
-            <param name="sql">CommandText</param>
-            <returns>实体列表</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadList``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.Common.DbCommand)">
-            <summary>
-            读取列表,使用默认Mapper
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
-            <param name="cmd">DbCommand</param>
-            <returns>实体列表</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadRow``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,Microsoft.Practices.EnterpriseLibrary.Data.IRowMapper{``0},System.Data.Common.DbCommand)">
-            <summary>
-            读取一行数据，无数据返回null，不抛出异常
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
-            <param name="mapper">映射对象</param>
-            <param name="cmd"><see cref="T:System.Data.Common.DbCommand"/>对象</param>
-            <returns>实体列表</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ReadRow``1(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.Common.DbCommand)">
-            <summary>
-            读取一行数据，无数据返回null，不抛出异常，使用默认Mapper
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
-            <param name="cmd"><see cref="T:System.Data.Common.DbCommand"/>对象</param>
-            <returns>实体列表</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.CheckCommandType(System.Data.CommandType)">
-            <summary>
-            检查CommandType参数
-            </summary>
-            <param name="cmdType">CommandType</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DatabaseExtends.ExecuteNonQueryZeroThrow(Microsoft.Practices.EnterpriseLibrary.Data.Database,System.Data.Common.DbCommand,System.String)">
-            <summary>
-            执行添加，添加影响行数0时抛出异常
-            </summary>
-            <param name="db"><see cref="T:Microsoft.Practices.EnterpriseLibrary.Data.Database"/>对象</param>
-            <param name="cmd"><see cref="T:System.Data.Common.DbCommand"/>对象</param>
-            <param name="msg">备注信息</param>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.DataRowExtends">
-            <summary>
-            DataRow扩展方法
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DataRowExtends.FieldIsNullOrNotExist(System.Data.DataRow,System.String)">
-            <summary>
-            字段是否为空或者不存在
-            </summary>
-            <param name="dr">数据源</param>
-            <param name="fieldName">字段名称</param>
-            <returns>不存在或者为Null返回true。</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.DateTimeExtends">
-            <summary>
-            日期类型的扩展方法
-            </summary>
-            <remarks>
-            SQL Server 2008除了DateTime和SmallDateTime之外，又新增了四种时间类型，分别为：date，time，datetime2和datetimeoffset。
-            各时间类型范围、精度一览表：
-            数据类型 时间范围 精度
-            datetime 1753-01-01到9999-12-31 00:00:00 到 23:59:59.997 3.33毫秒
-            smalldatetime 1900-01-01 到 2079-06-06 00:00:00 到 23:59:59 分钟
-            date 0001-01-01 到 9999-12-31 天
-            time 00:00:00.0000000 到 23:59:59.9999999 100 纳秒
-            datetime2 0001-01-01 到 9999-12-31 00:00:00 到 23:59:59.9999999 100 纳秒
-            datetimeoffset 0001-01-01 到 9999-12-31 00:00:00 到 23:59:59.9999999 -14:00 到 +14:00 100 纳秒
-            各时间类型表达式一览表： 数据类型 输出 time 12:35:29. 1234567 date 2007-05-08 smalldatetime 2007-05-08 12:35:00 datetime 2007-05-08 12:35:29.123 datetime2 2007-05-08 12:35:29. 1234567 datetimeoffset 2007-05-08 12:35:29.1234567 +12:15
-            </remarks>
-        </member>
-        <member name="F:WitsWay.Utilities.Extends.DateTimeExtends.MinSqlServerDateTime">
-            <summary>
-            T-SQL最小时间，按照smalldatetime作为依据确定
-            </summary>
-        </member>
-        <member name="F:WitsWay.Utilities.Extends.DateTimeExtends.MaxSqlServerDateTime">
-            <summary>
-            T-SQL最大时间，按照smalldatetime作为依据确定
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateString(System.Nullable{System.DateTime})">
-            <summary>
-            转为日期字符串
-            </summary>
-            <param name="dateTime">可空日期</param>
-            <returns>yyyy-MM-dd表示的日期，或空字符串</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateString(System.DateTime)">
-            <summary>
-            转为日期字符串
-            </summary>
-            <param name="dateTime">日期</param>
-            <returns>yyyy-MM-dd表示的日期，或空字符串</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateTimeString(System.Nullable{System.DateTime})">
-            <summary>
-            转为日期时间字符串
-            </summary>
-            <param name="dateTime">可空日期</param>
-            <returns>yyyy-MM-dd HH:mm表示的日期，或空字符串</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateTimeString(System.DateTime)">
-            <summary>
-            转为日期时间字符串，精确到分
-            <para>格式：yyyy-MM-dd HH:mm</para>
-            </summary>
-            <param name="dateTime">日期</param>
-            <returns>yyyy-MM-dd HH:mm表示的日期，或空字符串</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToDateTimeStringSecond(System.DateTime)">
-            <summary>
-            转为日期时间字符串,精确到秒 
-            <para>格式：yyyy-MM-dd HH:mm:ss</para>
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.IsValidSqlServerDateTime(System.DateTime)">
-            <summary>
-            判断日期时间是否是合法的数据库日期时间值
-            </summary>
-            <param name="dateTime">日期</param>
-            <returns>有效true，无效false</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.GetValidSqlServerDateTimeOrNow(System.DateTime)">
-            <summary>
-            获取有效的SQL时间或当前日期
-            </summary>
-            <param name="dateTime">日期</param>
-            <returns>有效日期本身，无效DateTime.Now</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.ListExtensions">
-            <summary>
-            <see cref="T:System.Collections.Generic.List`1"/> 扩展方法
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ListExtensions.MoveToEnd``1(System.Collections.Generic.List{``0},System.Predicate{``0})">
-            <summary>
-            Moves the item matching the <paramref name="itemSelector"/> to the end of the <paramref name="list"/>.
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ListExtensions.MoveToBeginning``1(System.Collections.Generic.List{``0},System.Predicate{``0})">
-            <summary>
-            Moves the item matching the <paramref name="itemSelector"/> to the beginning of the <paramref name="list"/>.
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ListExtensions.MoveUp``1(System.Collections.Generic.List{``0},``0)">
-            <summary>
-            上移
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ListExtensions.MoveDown``1(System.Collections.Generic.List{``0},``0)">
-            <summary>
-            下移
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ListExtensions.Move``1(System.Collections.Generic.List{``0},System.Predicate{``0},System.Int32)">
-            <summary>
-            Moves the item matching the <paramref name="itemSelector"/> to the <paramref name="newIndex"/> in the <paramref name="list"/>.
-            </summary>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.MethodExtends">
-            <summary>
-            方法扩展
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.MethodExtends.GetAttribute``1(System.Reflection.MethodInfo)">
-            <summary>
-            取得自定义特性
-            </summary>
-            <typeparam name="T">自定义Attribute类型</typeparam>
-            <param name="method">方法信息</param>
-            <returns>T实例</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.MethodExtends.GetCnNames(System.Enum,System.Collections.Generic.Dictionary{System.Enum,System.String})">
-            <summary>
-            枚举类型根据名称字典获取中文名称串的扩展方法
-            </summary>
-            <param name="en"></param>
-            <param name="dict">该枚举类型的中文名称字典</param>
-            <returns>转换后的中文名称串，如果缺少中文定义将抛异常</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.ObjectExtends">
-            <summary>
-            Object扩展方法
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.RemoveEvent``1(``0,System.Delegate,System.String)">
-            <summary>
-            移除事件绑定
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="entity">实体</param>
-            <param name="eventDelegate">事件委托</param>
-            <param name="eventName">事件名称</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.ConvertTo``1(System.Object)">
-            <summary>
-            转换对象为特定的类型，默认值为 default(T)
-            </summary>
-            <typeparam name = "T">要转换的类型</typeparam>
-            <param name = "value">要转换的object</param>
-            <returns>转换后T</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.ConvertTo``1(System.Object,``0)">
-            <summary>
-            转换对象为特定的类型，默认值为 default(T)
-            </summary>
-            <typeparam name = "T">要转换的类型</typeparam>
-            <param name = "value">要转换的object</param>
-            <param name="defaultValue">默认值</param>
-            <returns>转换后T</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.ConvertTo``1(System.Object,``0,System.Boolean)">
-            <summary>
-            转换对象为特定的类型，默认值为 default(T)
-            </summary>
-            <typeparam name = "T">要转换的类型</typeparam>
-            <param name = "value">要转换的object</param>
-            <param name="defaultValue">默认值</param>
-            <param name="ignoreException">忽略异常</param>
-            <returns>转换后T</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.CanConvertTo``1(System.Object)">
-            <summary>
-            对象是否能被转换为特定的类型
-            </summary>
-            <param name="value">对象</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.CanConvertTo(System.Object,System.Type)">
-            <summary>
-            对象是否能被转换为特定的类型
-            </summary>
-            true则value可以转换为T，否则false
-            <param name="targetType">类型</param>
-            <param name="value">对象</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.InvokeMethod(System.Object,System.String,System.Object[])">
-            <summary>
-            通过反射动态调用方法methodName
-            </summary>
-            <param name = "obj">持有方法的对象</param>
-            <param name = "methodName">方法名</param>
-            <param name = "parameters">参数列表</param>
-            <returns>方法返回值</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.InvokeMethod``1(System.Object,System.String,System.Object[])">
-            <summary>
-            通过反射动态调用方法methodName，返回强类型对象
-            </summary>
-            <typeparam name = "T">期望返回的类型</typeparam>
-            <param name = "obj">持有方法的对象</param>
-            <param name = "methodName">方法名</param>
-            <param name = "parameters">参数列表</param>
-            <returns>返回值</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetPropertyValue(System.Object,System.String)">
-            <summary>
-            通过反射动态获取属性值
-            </summary>
-            <param name = "obj">持有属性的对象</param>
-            <param name = "propertyName">属性名</param>
-            <returns>属性值</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetPropertyValue``1(System.Object,System.String,``0)">
-            <summary>
-            取得强类型属性值
-            </summary>
-            <typeparam name = "T">返回值类型</typeparam>
-            <param name = "obj">持有属性的对象</param>
-            <param name="defaultValue">默认值</param>
-            <param name = "propertyName">属性名</param>
-            <returns>属性值</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.SetPropertyValue(System.Object,System.String,System.Object)">
-            <summary>
-            动态设置属性值
-            </summary>
-            <param name = "obj">要设置属性的对象</param>
-            <param name = "propertyName">属性名</param>
-            <param name = "value">值</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetAttribute``1(System.Object)">
-            <summary>
-            取得对象的标签实例
-            </summary>
-            <typeparam name = "T">要取得的的标签类型</typeparam>
-            <param name = "obj">要获取的对象实例</param>
-            <returns>标签实例</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetAttribute``1(System.Object,System.Boolean)">
-            <summary>
-            取得对象的标签实例
-            </summary>
-            <typeparam name = "T">要取得的的标签类型</typeparam>
-            <param name = "obj">要获取的对象实例</param>
-            <param name="includeInherited">是否包括继承的类型</param>
-            <returns>标签实例</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetAttributes``1(System.Object)">
-            <summary>
-            取得所有的T类型标签
-            </summary>
-            <typeparam name = "T">标签类型</typeparam>
-            <param name = "obj">获取对象</param>
-            <returns>所有T类型标签</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetAttributes``1(System.Object,System.Boolean)">
-            <summary>
-            取得所有的T类型标签
-            </summary>
-            <typeparam name = "T">标签类型</typeparam>
-            <param name = "obj">获取对象</param>
-            <param name="includeInherited">是否包括继承的类型</param>
-            <returns>所有T类型标签</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.IsType``1(System.Object)">
-            <summary>
-            对象是否为T类型
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.GetTypeDefaultValue``1(``0)">
-            <summary>
-            取得对应类型默认值
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.AsString(System.Object)">
-            <summary>
-            转换为string
-            </summary>
-            <returns>
-            target=null返回null，否则等同于ToString()
-            </returns>
-            <param name = "target">要ToString的对象</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.CastTo``1(System.Object)">
-            <summary>
-            转换类型
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.CastTo(System.Object,System.Type)">
-            <summary>
-            转换类型
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.Clone``1(``0)">
-            <summary>
-            克隆对象
-            </summary>
-            <typeparam name="T">克隆对象类型</typeparam>
-            <param name="source">克隆源</param>
-            <returns>深度克隆对象</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.PackJson``1(``0)">
-            <summary>
-            Json打包对象
-            </summary>
-            <param name="entity">实体对象</param>
-            <typeparam name="T">对象类型</typeparam>
-            <returns>序列化后字符串</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.PackXml``1(``0)">
-            <summary>
-            Xml打包对象
-            </summary>
-            <param name="entity">实体对象</param>
-            <typeparam name="T">对象类型</typeparam>
-            <returns>序列化后字符串</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ObjectExtends.Pack``1(``0,System.String)">
-            <summary>
-            打包对象
-            </summary>
-            <typeparam name="T">克隆对象类型</typeparam>
-            <param name="entity">实体对象</param>
-            <param name="parserName">解析器名称</param>
-            <returns>序列化后字符串</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.PropertyExtends">
-            <summary>
-            属性扩展
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.PropertyExtends.GetAttribute``1(System.Reflection.PropertyInfo)">
-            <summary>
-            取得对应属性的T自定义标签实例
-            </summary>
-            <typeparam name="T">自定义标签类型</typeparam>
-            <param name="property">属性信息</param>
-            <returns>自定义标签实例</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.ByteExtends">
-            <summary>
-            字符串扩展
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ByteExtends.ToHexString(System.Byte[])">
-            <summary>
-            byte数组转16进制字符串
-            </summary>
-            <param name="bytes">byte数组</param>
-            <returns>16进制字符串</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.ByteExtends.ToHexString2(System.Byte[])">
-            <summary>
-            byte数组转16进制字符串
-            </summary>
-            <param name="bytes">byte数组</param>
-            <returns>16进制字符串</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.TypeExtends">
-            <summary>
-            Type扩展
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.TypeExtends.GetAttribute``1(System.Type)">
-            <summary>
-            取得type的T特性实例
-            </summary>
-            <typeparam name="T">特性类型</typeparam>
-            <param name="type">Type实例</param>
-            <returns>T实例</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.TypeExtends.GetInstance(System.Type)">
-            <summary>
-            取得Type实例对象
-            </summary>
-            <param name="type"></param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.TypeExtends.IsNumericType(System.Type)">
-            <summary>
-            判断是否为数值类型。
-            </summary>
-            <param name="t">要判断的类型</param>
-            <returns>是否为数值类型</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.TypeExtends.IsNumericOrNullableNumericType(System.Type)">
-            <summary>
-            判断是否为可空数值类型。
-            </summary>
-            <param name="t">要判断的类型</param>
-            <returns>是否为可空数值类型</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.TypeExtends.IsNullableType(System.Type)">
-            <summary>
-            判断是否为可空类型。
-            注意，直接调用可空对象的.GetType()方法返回的会是其泛型值的实际类型，用其进行此判断肯定返回false。
-            </summary>
-            <param name="t">要判断的类型</param>
-            <returns>是否为可空类型</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.StringExtends">
-            <summary>
-            字符串扩展
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.CutStringLength(System.String,System.Int32,System.String)">
-            <summary>
-            截取标题字数
-            </summary>
-            <param name="str">准备截取的字符串</param>
-            <param name="len">截取长度</param>
-            <param name="suffix">超过长度显示字符串</param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.GetChineseInitial(System.String)">
-            <summary>
-            取得拼音首字母
-            </summary>
-            <param name="str">字符串</param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.ToHash(System.String,WitsWay.Utilities.Enums.HashAlgorithmKinds)">
-            <summary>
-            Hash加密
-            </summary>
-            <param name="str">字符串</param>
-            <param name="hashAlgorithm">哈希类型</param>
-            <returns></returns>
-            <exception cref="T:System.NotImplementedException">未实现对应的哈希Algorithm</exception>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.Left(System.String,System.Int32)">
-            <summary>
-            取左
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.Right(System.String,System.Int32)">
-            <summary>
-            取右
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.Middle(System.String,System.Int32,System.Int32)">
-            <summary>
-            取中
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.IsDate(System.String)">
-            <summary>
-            是否是日期
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.IsInt(System.String)">
-            <summary>
-            是否Int型
-            </summary>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.IsBool(System.String)">
-            <summary>
-            是否Bool型
-            </summary>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.Isdecimal(System.String)">
-            <summary>
-            是否Decimal型
-            </summary>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.IsTinyint(System.String)">
-            <summary>
-            是否Tinyint型
-            </summary>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.ToDateTime(System.String)">
-            <summary>
-            将string转为DateTime，如果字符串不是正确的日期值，将返回DateTime.MinValue
-            </summary>
-            <param name="source"></param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.ToDateTimeNullable(System.String)">
-            <summary>
-            将string转为DateTime，如果字符串不是正确的日期值，将返回null
-            </summary>
-            <param name="source"></param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.ToInt(System.String,System.Int32)">
-            <summary>
-            将字符串转为数字,如果转换失败则返回默认值
-            </summary>
-            <param name="source">字符串</param>
-            <param name="defaultValue">转换失败时返回的默认值</param>
-            <returns></returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.AddCommaSplit(System.String)">
-            <summary>
-            将字符串转为数字,如果转换失败则返回默认值
-            </summary>
-            <param name="source">字符串</param>
-            <returns>添加了逗号分隔的字符串</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.SplitToList``1(System.String)">
-            <summary>
-            解析实体
-            </summary>
-            <typeparam name="T">转换类型</typeparam>
-            <param name="val">值</param>
-            <returns>实体实例</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.ParseJson``1(System.String)">
-            <summary>
-            解析Json实体
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="val">值</param>
-            <returns>实体实例</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.ParseXml``1(System.String)">
-            <summary>
-            解析Xml实体
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="val">值</param>
-            <returns>实体实例</returns>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.StringExtends.ParseEntity``1(System.String,System.String)">
-            <summary>
-            解析实体
-            </summary>
-            <typeparam name="T">实体类型</typeparam>
-            <param name="val">值</param>
-            <param name="providerName"> </param>
-            <returns>实体实例</returns>
-        </member>
-        <member name="T:WitsWay.Utilities.Extends.EnumerableExtensions">
-            <summary>
-            IEnumerable扩展信息
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumerableExtensions.IsNullOrEmpty(System.Collections.IEnumerable)">
-            <summary>
-            是否为空
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumerableExtensions.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})">
-            <summary>
-            是否为空
-            </summary>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumerableExtensions.SafeForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0},System.Func{``0,System.Boolean},System.Boolean)">
-            <summary>
-            安全ForEach,当lst不为空，且lst中满足predicate条件的项存在时才执行循环操作
-            </summary>
-            <param name="lst">数据</param>
-            <param name="action">循环执行方法体</param>
-            <param name="predicate">循环筛选谓词，true执行，false不执行</param>
-            <param name="changeList">循环执行方法体 是否变更了数据</param>
-        </member>
-        <member name="M:WitsWay.Utilities.Extends.EnumerableExtensions.Join``1(System.Collections.Generic.IEnumerable{``0},System.String)">
-            <summary>
-            串联字符串集合的成员，其中在每个成员之间使用指定的分隔符（默认使用;）。
-            </summary>
-            <param name="source"></param>
-            <param name="spliter"></param>
-            <typeparam name="T"></typeparam>
-            <returns></returns>
         </member>
         <member name="T:WitsWay.Utilities.FastReflection.Cache.ConstructorInvokerCache">
             <summary>
@@ -6116,6 +6415,11 @@
             布局名称
             </summary>
         </member>
+        <member name="P:WitsWay.Utilities.Layouts.LayoutDescription.UiKind">
+            <summary>
+            布局UI类型
+            </summary>
+        </member>
         <member name="P:WitsWay.Utilities.Layouts.LayoutDescription.TargetModel">
             <summary>
             目标模型
@@ -6124,6 +6428,26 @@
         <member name="P:WitsWay.Utilities.Layouts.LayoutDescription.Remark">
             <summary>
             布局备注
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Layouts.LayoutUiKinds">
+            <summary>
+            布局UI类型
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Layouts.LayoutUiKinds.Form">
+            <summary>
+            窗体布局
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Layouts.LayoutUiKinds.GridList">
+            <summary>
+            表格布局
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Layouts.LayoutUiKinds.TreeList">
+            <summary>
+            树状表格布局
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Layouts.TreeLayoutAttribute">
@@ -6169,7 +6493,7 @@
         </member>
         <member name="T:WitsWay.Utilities.Layouts.ILayoutEditor">
             <summary>
-            IEditor
+            布局控件基础接口
             </summary>
         </member>
         <member name="M:WitsWay.Utilities.Layouts.ILayoutEditor.GetValue">
@@ -7668,6 +7992,26 @@
         <member name="P:WitsWay.Utilities.Supports.IKey.Key">
             <summary>
             主键
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Supports.ICheckable">
+            <summary>
+            ICheckable
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Supports.ICheckable.IsChecked">
+            <summary>
+            IsChecked
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Supports.ITimestamp">
+            <summary>
+            时间戳支持
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Supports.ITimestamp.Timestamp">
+            <summary>
+            时间戳
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Supports.ISelected">

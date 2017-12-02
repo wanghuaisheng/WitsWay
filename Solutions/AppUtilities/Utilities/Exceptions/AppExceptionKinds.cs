@@ -30,12 +30,10 @@ namespace WitsWay.Utilities.Exceptions
         /// <summary>
         /// 业务异常
         /// </summary>
-        [EnumMember]
-        BusinessException = 1,
+        [EnumMember] BusinessException = 1,
         /// <summary>
         /// 程序异常
         /// </summary>
-        [EnumMember]
-        ProgramException = 2
+        [EnumMember] ProgramException = 2
     }
 }

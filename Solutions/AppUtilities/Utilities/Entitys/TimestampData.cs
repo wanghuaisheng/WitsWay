@@ -18,6 +18,7 @@
  * ***************************************/
 #endregion
 using System;
+using WitsWay.Utilities.Supports;
 
 namespace WitsWay.Utilities.Entitys
 {
@@ -25,7 +26,7 @@ namespace WitsWay.Utilities.Entitys
     /// 时间戳数据
     /// </summary>
     [Serializable]
-    public class TimestampData<T>
+    public class TimestampData<T> : ITimestamp
     {
 
         /// <summary>

@@ -33,98 +33,66 @@ namespace WitsWay.Utilities.Errors
         /// <summary>
         /// 通用错误
         /// </summary>
-        [EnumMember]
-        [ErrorItem("通用错误")]
-        Utility,
+        [EnumMember] [ErrorItem("通用错误")] Utility,
         /// <summary>
         /// 共享缓存
         /// </summary>
-        [EnumMember]
-        [ErrorItem("共享缓存")]
-        ShareCache,
+        [EnumMember] [ErrorItem("共享缓存")] ShareCache,
         /// <summary>
         /// 服务
         /// </summary>
-        [EnumMember]
-        [ErrorItem("服务")]
-        Services,
+        [EnumMember] [ErrorItem("服务")] Services,
         /// <summary>
         /// 缓存镜像
         /// </summary>
-        [EnumMember]
-        [ErrorItem("缓存镜像")]
-        CacheMirror,
+        [EnumMember] [ErrorItem("缓存镜像")] CacheMirror,
         /// <summary>
         /// 地区信息
         /// </summary>
-        [EnumMember]
-        [ErrorItem("地区信息")]
-        BaseRegion,
+        [EnumMember] [ErrorItem("地区信息")] BaseRegion,
         /// <summary>
         /// 基础组
         /// </summary>
-        [EnumMember]
-        [ErrorItem("基础组")]
-        LibBaseGroup,
+        [EnumMember] [ErrorItem("基础组")] LibBaseGroup,
         /// <summary>
         /// 库存件领料单
         /// </summary>
-        [EnumMember]
-        [ErrorItem("库存件领料单")]
-        LibStorageUnitBill,
+        [EnumMember] [ErrorItem("库存件领料单")] LibStorageUnitBill,
         /// <summary>
         /// 客户信息
         /// </summary>
-        [EnumMember]
-        [ErrorItem("客户信息")]
-        Customer,
+        [EnumMember] [ErrorItem("客户信息")] Customer,
         /// <summary>
         /// 订单信息
         /// </summary>
-        [EnumMember]
-        [ErrorItem("订单信息")]
-        PreOrder,
+        [EnumMember] [ErrorItem("订单信息")] PreOrder,
         /// <summary>
         /// 签到信息
         /// </summary>
-        [EnumMember]
-        [ErrorItem("签到信息")]
-        SignOrder,
+        [EnumMember] [ErrorItem("签到信息")] SignOrder,
         /// <summary>
         /// 配置项
         /// </summary>
-        [EnumMember]
-        [ErrorItem("配置项")]
-        ConfigItem,
+        [EnumMember] [ErrorItem("配置项")] ConfigItem,
         /// <summary>
         /// 分组信息
         /// </summary>
-        [EnumMember]
-        [ErrorItem("分组信息")]
-        GroupInfo,
+        [EnumMember] [ErrorItem("分组信息")] GroupInfo,
         /// <summary>
         /// 磁盘信息
         /// </summary>
-        [EnumMember]
-        [ErrorItem("磁盘信息")]
-        DiskManage,
+        [EnumMember] [ErrorItem("磁盘信息")] DiskManage,
         /// <summary>
         /// 菜单
         /// </summary>
-        [EnumMember]
-        [ErrorItem("菜单")]
-        ModulePage,
+        [EnumMember] [ErrorItem("菜单")] ModulePage,
         /// <summary>
         /// 组件桌面
         /// </summary>
-        [EnumMember]
-        [ErrorItem("组件桌面")]
-        WidgetDesktop,
+        [EnumMember] [ErrorItem("组件桌面")] WidgetDesktop,
         /// <summary>
         /// 呈现项
         /// </summary>
-        [EnumMember]
-        [ErrorItem("呈现项")]
-        PresentItem,
+        [EnumMember] [ErrorItem("呈现项")] PresentItem,
     }
 }

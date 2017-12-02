@@ -108,8 +108,8 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
         /// </summary>
         public int UserId
         {
-            get { return _userId; }
-            set { _userId = value; }
+            get => _userId;
+            set => _userId = value;
         }
         private string _userName;
         /// <summary>
@@ -117,8 +117,8 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
         /// </summary>
         public string UserName
         {
-            get { return _userName; }
-            set { _userName = value; }
+            get => _userName;
+            set => _userName = value;
         }
 
     }

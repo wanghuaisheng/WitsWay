@@ -30,10 +30,7 @@ namespace WitsWay.Utilities.Providers.ParseProviders
         /// <summary>
         /// Json序列化提供者
         /// </summary>
-        public static string ProviderName
-        {
-            get { return UtilityConsts.JsonParseProviderName; }
-        }
+        public static string ProviderName => UtilityConsts.JsonParseProviderName;
 
         /// <summary>
         /// 打包
@@ -54,10 +51,6 @@ namespace WitsWay.Utilities.Providers.ParseProviders
         /// <summary>
         /// Json序列化提供者
         /// </summary>
-        public string Name
-        {
-            get { return ProviderName; }
-        }
-
+        public string Name => ProviderName;
     }
 }

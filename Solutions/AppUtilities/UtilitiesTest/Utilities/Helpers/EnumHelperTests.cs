@@ -64,17 +64,13 @@ namespace WitsWay.Utlities.Tests.Utilities.Helpers
 
     }
 
-    [EnumFieldAttribute("支持功能")]
+    [EnumField("支持功能")]
     [Flags]
     public enum TestEnumSupports
     {
-
-        [EnumFieldAttribute("登录")]
-        Login = 1,
-        [EnumFieldAttribute("登出")]
-        Logout = 2,
-        [EnumFieldAttribute("修改")]
-        Modify = 4
+        [EnumField("登录")] Login = 1,
+        [EnumField("登出")] Logout = 2,
+        [EnumField("修改")] Modify = 4
     }
 
 }

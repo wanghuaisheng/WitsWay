@@ -17,32 +17,23 @@
  * 
  * ***************************************/
 #endregion
-namespace WitsWay.Utilities.Win
+using System.Drawing;
+using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraGrid.Views.Base.ViewInfo;
+using WitsWay.Utilities.Supports;
+
+namespace WitsWay.Utilities.Win.Helpers
 {
+
     /// <summary>
-    /// 实体操作枚举
+    /// 有 HitInfo 和 模型两个参数的谓词委托
     /// </summary>
-    public enum EntityActionEnum
-    {
-        /// <summary>
-        /// 查看
-        /// </summary>
-        View=1,
-        /// <summary>
-        /// 添加
-        /// </summary>
-        Add=2,
-        /// <summary>
-        /// 修改
-        /// </summary>
-        Edit=3,
-        /// <summary>
-        /// 删除
-        /// </summary>
-        Delete=4,
-        /// <summary>
-        /// 移除所有项
-        /// </summary>
-        RemoveAll=5
-    }
+    /// <typeparam name="T">模型类型</typeparam>
+    /// <param name="model">模型</param>
+    /// <param name="columnView"><see cref="ColumnView"/>当前View</param>
+    /// <param name="hitInfo"><see cref="BaseHitInfo"/>信息</param>
+    /// <returns>是否通过</returns>
+    public delegate bool BaseHitInfoModelPredicate<T>(ColumnView columnView, BaseHitInfo hitInfo, T model) where T : class, IKey;
+
 }

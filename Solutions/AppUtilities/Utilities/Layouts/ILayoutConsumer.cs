@@ -29,7 +29,7 @@ namespace WitsWay.Utilities.Layouts
         /// <summary>
         /// 使用的所有布局编码
         /// </summary>
-        IEnumerable<string> UseLayouts { get; }
+        IList<string> UseLayouts { get; }
         /// <summary>
         /// 获取布局描述信息
         /// </summary>

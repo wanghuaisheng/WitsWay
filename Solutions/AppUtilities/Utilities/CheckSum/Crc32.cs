@@ -95,8 +95,8 @@ namespace WitsWay.Utilities.CheckSum
         /// </summary>
         public long Value
         {
-            get { return _crc; }
-            set { _crc = (uint)value; }
+            get => _crc;
+            set => _crc = (uint)value;
         }
 
         /// <summary>

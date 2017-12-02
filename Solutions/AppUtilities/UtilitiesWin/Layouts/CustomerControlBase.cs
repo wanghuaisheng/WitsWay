@@ -43,7 +43,8 @@ namespace WitsWay.Utilities.Win.Layouts
         /// <summary>
         /// Adapter
         /// </summary>
-        public TAdapter Adapter { get { return AdapterInstance as TAdapter; } }
+        public TAdapter Adapter => AdapterInstance as TAdapter;
+
         /// <summary>
         /// 控件名称
         /// </summary>

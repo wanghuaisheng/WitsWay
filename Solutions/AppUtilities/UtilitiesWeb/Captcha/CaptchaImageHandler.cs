@@ -41,10 +41,7 @@ namespace WitsWay.Utilities.Web.Captcha
         /// <summary>
         /// 是否可重用
         /// </summary>
-        public bool IsReusable
-        {
-            get { return true; }
-        }
+        public bool IsReusable => true;
 
         /// <summary>
         /// 处理请求

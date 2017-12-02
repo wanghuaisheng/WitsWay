@@ -68,12 +68,16 @@ namespace WitsWay.Utlities.Tests.Utilities.Validates
         {
             [Range(1000, 6000, ErrorMessage = "值要在1000-6000")]
             public int IntTest { get; set; }
+
             [MinLength(5, ErrorMessage = "至少五个字符")]
             public string Password1 { get; set; }
+
             [Compare("Password1", ErrorMessage = "两次密码不同")]
             public string Password2 { get; set; }
+
             [EmailAddress(ErrorMessage = "错误的邮件地址")]
             public string Email { get; set; }
+
             [RegularExpression(@"^\d{4}$", ErrorMessage = "格式错误")]
             public string RegexValue { get; set; }
             /// <summary>

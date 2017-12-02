@@ -92,34 +92,19 @@ namespace WitsWay.Utilities.Web.Captcha
         /// <summary>
         /// 验证码图片唯一标识
         /// </summary>
-        public string UniqueId
-        {
-            get
-            {
-                return guid;
-            }
-        }
+        public string UniqueId => guid;
 
         /// <summary>
         /// 图片最后呈现时间
         /// </summary>
-        public DateTime RenderedAt
-        {
-            get
-            {
-                return generatedAt;
-            }
-        }
+        public DateTime RenderedAt => generatedAt;
 
         /// <summary>
         /// 用于绘制验证码的FontFamily，为空则从字体白名单中为每个字符随机取字体
         /// </summary>
         public string FontFamilyName
         {
-            get
-            {
-                return fontFamilyName;
-            }
+            get => fontFamilyName;
 
             set
             {
@@ -142,15 +127,9 @@ namespace WitsWay.Utilities.Web.Captcha
         /// </summary>
         public FontWarpFactor FontWarp
         {
-            get
-            {
-                return fontWarp;
-            }
+            get => fontWarp;
 
-            set
-            {
-                fontWarp = value;
-            }
+            set => fontWarp = value;
         }
 
         /// <summary>
@@ -158,15 +137,9 @@ namespace WitsWay.Utilities.Web.Captcha
         /// </summary>
         public BackgroundNoiseLevel BackgroundNoise
         {
-            get
-            {
-                return backgroundNoise;
-            }
+            get => backgroundNoise;
 
-            set
-            {
-                backgroundNoise = value;
-            }
+            set => backgroundNoise = value;
         }
 
         /// <summary>
@@ -174,15 +147,9 @@ namespace WitsWay.Utilities.Web.Captcha
         /// </summary>
         public LineNoiseLevel LineNoise
         {
-            get
-            {
-                return lineNoise;
-            }
+            get => lineNoise;
 
-            set
-            {
-                lineNoise = value;
-            }
+            set => lineNoise = value;
         }
 
         /// <summary>
@@ -190,10 +157,7 @@ namespace WitsWay.Utilities.Web.Captcha
         /// </summary>
         public string TextChars
         {
-            get
-            {
-                return randomTextChars;
-            }
+            get => randomTextChars;
 
             set
             {
@@ -207,10 +171,7 @@ namespace WitsWay.Utilities.Web.Captcha
         /// </summary>
         public int TextLength
         {
-            get
-            {
-                return randomTextLength;
-            }
+            get => randomTextLength;
 
             set
             {
@@ -222,23 +183,14 @@ namespace WitsWay.Utilities.Web.Captcha
         /// <summary>
         /// Get验证字符
         /// </summary>
-        public string Text
-        {
-            get
-            {
-                return randomText;
-            }
-        }
+        public string Text => randomText;
 
         /// <summary>
         /// 验证码图片宽度
         /// </summary>
         public int Width
         {
-            get
-            {
-                return width;
-            }
+            get => width;
 
             set
             {
@@ -255,10 +207,7 @@ namespace WitsWay.Utilities.Web.Captcha
         /// </summary>
         public int Height
         {
-            get
-            {
-                return height;
-            }
+            get => height;
 
             set
             {
@@ -275,15 +224,9 @@ namespace WitsWay.Utilities.Web.Captcha
         /// </summary>
         public string FontWhitelist
         {
-            get
-            {
-                return fontWhitelist;
-            }
+            get => fontWhitelist;
 
-            set
-            {
-                fontWhitelist = value;
-            }
+            set => fontWhitelist = value;
         }
 
         /// <summary>
