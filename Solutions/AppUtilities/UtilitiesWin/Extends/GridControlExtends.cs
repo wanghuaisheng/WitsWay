@@ -18,6 +18,7 @@
  * ***************************************/
 #endregion
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -35,6 +36,13 @@ namespace WitsWay.Utilities.Win.Extends
     /// </summary>
     public static class GridControlExtends
     {
+        /// <summary>
+        /// 取Grid选中数据
+        /// </summary>
+        public static List<T> GetBindList<T>(this GridControl grid) where T : class
+        {
+            return grid.DataSource as List<T>;
+        }
 
         /// <summary>
         /// 绑定CtrlC

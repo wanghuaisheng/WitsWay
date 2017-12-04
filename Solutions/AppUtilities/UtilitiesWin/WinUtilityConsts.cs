@@ -73,7 +73,11 @@ namespace WitsWay.Utilities.Win
         /// /// <summary>
         /// ColumnView弹出菜单绑定辅助类Tag键
         /// </summary>
-        public const string ColumnViewPopupMenuHelperTagKey = "ColumnViewPopupMenuHelperTagKey";
+        public const string ColumnViewPopupMenuHelperTagKey = "ColumnViewPopupMenuHelperTagKey";     
+        /// <summary>
+        /// 窗体Control容器Toast控件Tag键
+        /// </summary>
+        public const string ServicesDllNamesKey = "servicesDllNames";
 
 
     }

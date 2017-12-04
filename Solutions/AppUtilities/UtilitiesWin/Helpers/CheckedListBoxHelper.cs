@@ -213,5 +213,61 @@ namespace WitsWay.Utilities.Win.Helpers
                             .Cast<T>()
                             .ToList();
         }
+
+        /// <summary>
+        /// 绑定枚举到复选列表控件
+        /// </summary>
+        /// <param name="ctr">控件</param>
+        /// <param name="header">请选择等文字</param>
+        /// <param name="except">不绑定项</param>
+        /// <param name="enumType">枚举类型</param>
+        public static void BindEnum(CheckedListBoxControl ctr, Type enumType, string header = null, List<int> except = null)
+        {
+            if (!enumType.IsEnum)
+            {
+                throw new ArgumentException(enumType.FullName + "不是枚举类型");
+            }
+            if (!string.IsNullOrEmpty(header))
+            {
+                ctr.Items.Add(header);
+            }
+            var eds = EnumFieldAttribute.GetFieldInfos(enumType);
+
+            var exceptValue = new List<int>();
+            if (except != null && except.Count > 0)
+                exceptValue = except.Select(old => old.CastTo<int>()).ToList();
+
+            if (eds != null && eds.Count > 0)
+                foreach (var ed in eds)
+                    if (!exceptValue.Contains(ed.EnumValue))
+                        ctr.Items.Add(ed, false);
+        }
+        /// <summary>
+        /// 绑定枚举到复选列表控件
+        /// </summary>
+        /// <param name="ctr">控件</param>
+        /// <param name="list">绑定的枚举列表</param>
+        /// <param name="header">请选择等文字</param>
+        /// <param name="enumType">枚举类型</param>
+        public static void BindEnumList(CheckedListBoxControl ctr, Type enumType, List<int> list, string header = null)
+        {
+            if (list.IsNullOrEmpty())
+                return;
+
+            if (!enumType.IsEnum)
+            {
+                throw new ArgumentException(enumType.FullName + "不是枚举类型");
+            }
+            if (!string.IsNullOrEmpty(header))
+            {
+                ctr.Items.Add(header);
+            }
+
+            var eds = EnumFieldAttribute.GetFieldInfos(enumType);
+            var enumValueList = list.Select(x => x.CastTo<int>()).ToList();
+
+            foreach (var ed in eds.Where(x => enumValueList.Contains(x.EnumValue)))
+                ctr.Items.Add(ed, false);
+        }
     }
 }

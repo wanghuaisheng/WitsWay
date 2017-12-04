@@ -18,6 +18,7 @@
  * ***************************************/
 #endregion
 using System;
+using SmartSolution.Utilities.Helpers;
 
 namespace WitsWay.Utilities.Extends
 {
@@ -115,7 +116,26 @@ namespace WitsWay.Utilities.Extends
         {
             return dateTime.IsValidSqlServerDateTime() ? dateTime : DateTime.Now;
         }
+        
+        /// <summary>
+        /// 转换为Unix时间戳（毫秒）
+        /// </summary>
+        /// <param name="dateTime">日期</param>
+        /// <returns>毫秒</returns>
+        public static long ToUnixTimestamp(this DateTime dateTime)
+        {
+            return DateTimeHelper.GetUnixTimestamp(dateTime);
+        }
 
+        /// <summary>
+        /// 转换为Unix时间戳（秒）
+        /// </summary>
+        /// <param name="dateTime">日期</param>
+        /// <returns>秒</returns>
+        public static long ToUnixTimeSeconds(this DateTime dateTime)
+        {
+            return DateTimeHelper.GetNowUnixTimeSeconds(dateTime);
+        }
 
     }
 }

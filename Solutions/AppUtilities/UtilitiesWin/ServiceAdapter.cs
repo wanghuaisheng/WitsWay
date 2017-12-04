@@ -211,7 +211,7 @@ namespace WitsWay.Utilities.Win
             {
                 if (_allServices != null) return _allServices;
                 var services = new List<ServiceItemInfo>();
-                var dlls = new List<string> { "SmartSolution.Logics.Infra.Services" };
+                var dlls = AppSettingHelper.GetValue(WinUtilityConsts.ServicesDllNamesKey)?.SplitToList<string>();
                 dlls.SafeForEach(dll =>
                 {
                     try

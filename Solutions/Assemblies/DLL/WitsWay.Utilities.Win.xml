@@ -2186,6 +2186,11 @@
             XtraGrid辅助类
             </summary>
         </member>
+        <member name="M:WitsWay.Utilities.Win.Extends.GridControlExtends.GetBindList``1(DevExpress.XtraGrid.GridControl)">
+            <summary>
+            取Grid选中数据
+            </summary>
+        </member>
         <member name="M:WitsWay.Utilities.Win.Extends.GridControlExtends.BindCopyToCtrlC(DevExpress.XtraGrid.GridControl,DevExpress.XtraGrid.Columns.GridColumn[])">
             <summary>
             绑定CtrlC
@@ -3531,6 +3536,22 @@
             <param name="ctr">控件</param>
             <returns>选中数据</returns>
         </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RadioGroupHelper.BindEnumToRadioGroup(DevExpress.XtraEditors.RadioGroup,System.Type,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到单选组
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="except">不绑定项</param>
+            <param name="enumType">枚举类型</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.RadioGroupHelper.BindEnumList(DevExpress.XtraEditors.RadioGroup,System.Type,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到单选组
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="list">绑定的枚举列表</param>
+            <param name="enumType">枚举类型</param>
+        </member>
         <member name="T:WitsWay.Utilities.Win.Helpers.CheckedComboBoxHelper">
             <summary>
             下拉复选控件辅助类
@@ -3698,6 +3719,24 @@
             <param name="ctr">控件</param>
             <returns>选中数据</returns>
         </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper.BindEnum(DevExpress.XtraEditors.CheckedListBoxControl,System.Type,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            绑定枚举到复选列表控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="header">请选择等文字</param>
+            <param name="except">不绑定项</param>
+            <param name="enumType">枚举类型</param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.CheckedListBoxHelper.BindEnumList(DevExpress.XtraEditors.CheckedListBoxControl,System.Type,System.Collections.Generic.List{System.Int32},System.String)">
+            <summary>
+            绑定枚举到复选列表控件
+            </summary>
+            <param name="ctr">控件</param>
+            <param name="list">绑定的枚举列表</param>
+            <param name="header">请选择等文字</param>
+            <param name="enumType">枚举类型</param>
+        </member>
         <member name="T:WitsWay.Utilities.Win.Helpers.TreeFilterHelper">
             <summary>
             添加入：王怀生
@@ -3771,6 +3810,14 @@
             移除控件错误提示
             </summary>
             <param name="ctr"></param>
+        </member>
+        <member name="M:WitsWay.Utilities.Win.Helpers.ValidateHelper.ShowError(DevExpress.XtraEditors.DXErrorProvider.DXErrorProvider,System.Windows.Forms.Control,System.String)">
+            <summary>
+            显示错误信息
+            </summary>
+            <param name="errorProvider">errorProvider</param>
+            <param name="control">控件</param>
+            <param name="message">提示信息</param>
         </member>
         <member name="T:WitsWay.Utilities.Win.Helpers.IErrorProvider">
             <summary>
@@ -4248,6 +4295,11 @@
         <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.ColumnViewPopupMenuHelperTagKey">
             /// <summary>
             ColumnView弹出菜单绑定辅助类Tag键
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Win.WinUtilityConsts.ServicesDllNamesKey">
+            <summary>
+            窗体Control容器Toast控件Tag键
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Win.Functions.WebApiHost">

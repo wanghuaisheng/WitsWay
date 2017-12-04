@@ -18,6 +18,7 @@
  * ***************************************/
 #endregion
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace WitsWay.Utilities.Extends
 {
@@ -91,6 +92,32 @@ namespace WitsWay.Utilities.Extends
         }
 
         #endregion
+
+        /// <summary>
+        /// 取属性的显示名称
+        /// </summary>
+        /// <param name="type">Type</param>
+        /// <param name="propertyName">属性名</param>
+        /// <returns></returns>
+        public static string GetPropertyDisplayName(this Type type, string propertyName)
+        {
+            var property = type.GetProperty(propertyName);
+            var attribute = property?.GetAttribute<DisplayAttribute>();
+            return attribute == null ? string.Empty : attribute.Name;
+        }
+
+        /// <summary>
+        /// 取属性的attribute
+        /// </summary>
+        /// <param name="type">Type</param>
+        /// <param name="propertyName">属性名</param>
+        /// <typeparam name="T">attribute</typeparam>
+        /// <returns>attribute</returns>
+        public static T GetPropertyAttribute<T>(this Type type, string propertyName)
+        {
+            var property = type.GetProperty(propertyName);
+            return property == null ? default(T) : property.GetAttribute<T>();
+        }
 
     }
 }
