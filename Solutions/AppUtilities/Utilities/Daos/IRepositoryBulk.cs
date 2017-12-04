@@ -49,17 +49,22 @@ namespace WitsWay.Utilities.Daos
         /// 批量插入
         /// </summary>
         /// <param name="datas">实体列表</param>
+        /// <param name="tran"><see cref="SqlTransaction"/>事务对象</param>
         /// <returns>批量插入结果</returns>
         List<BulkInsertResult> BulkInsert(IList<TData> datas, SqlTransaction tran);
         /// <summary>
         /// 批量更新
         /// </summary>
         /// <param name="datas">实体列表</param>
+        /// <param name="tran"><see cref="SqlTransaction"/>事务对象</param>
+        /// <returns>批量插入结果</returns>
         List<BulkInsertResult> BulkUpdate(IList<TData> datas, SqlTransaction tran);
         /// <summary>
         /// 批量同步（插入、更新、删除）
         /// </summary>
         /// <param name="datas">实体列表</param>
+        /// <param name="tran"><see cref="SqlTransaction"/>事务对象</param>
+        /// <returns>批量插入结果</returns>
         List<BulkInsertResult> BulkSync(IList<TData> datas, SqlTransaction tran);
 
     }

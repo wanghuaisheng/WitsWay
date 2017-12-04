@@ -150,6 +150,7 @@
     <Compile Include="EntityCast\ReflectionCaster.cs" />
     <Compile Include="Entitys\IdTextValueData.cs" />
     <Compile Include="Entitys\IdTextData.cs" />
+    <Compile Include="Entitys\PageParameterModel.cs" />
     <Compile Include="Entitys\PagerFilterPara.cs" />
     <Compile Include="Entitys\BulkInsertResult.cs" />
     <Compile Include="Enums\CrcAlgorithmKinds.cs" />
@@ -160,6 +161,7 @@
     <Compile Include="Enums\MenuKinds.cs" />
     <Compile Include="Enums\SubSystems.cs" />
     <Compile Include="Extends\ImageExtends.cs" />
+    <Compile Include="Helpers\DateTimeHelper.cs" />
     <Compile Include="Helpers\StreamByteImageHelper.cs" />
     <Compile Include="Helpers\ExceptionHelper.HandleClient.cs" />
     <Compile Include="Helpers\ExceptionHelper.HandleService.cs" />
@@ -287,6 +289,7 @@
     <Compile Include="Supports\GridSupport\GridSupportExtends.cs" />
     <Compile Include="Supports\IKey.cs" />
     <Compile Include="Supports\ICheckable.cs" />
+    <Compile Include="Supports\IQueryModel.cs" />
     <Compile Include="Supports\ITimestamp.cs" />
     <Compile Include="Supports\ISelected.cs" />
     <Compile Include="Daos\IRepositoryExist.cs" />
@@ -305,6 +308,7 @@
     <Compile Include="Supports\TreeSupport\ITreeSupport.cs" />
     <Compile Include="Supports\TreeSupport\TreeSupport.cs" />
     <Compile Include="Supports\KeyEqualityComparer.cs" />
+    <Compile Include="Sync\ISyncFilter.cs" />
     <Compile Include="Thread\LockObject.cs" />
     <Compile Include="UtilityStatics.cs" />
     <Compile Include="UtilityConsts.cs" />

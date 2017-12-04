@@ -641,6 +641,7 @@
             批量插入
             </summary>
             <param name="datas">实体列表</param>
+            <param name="tran"><see cref="T:System.Data.SqlClient.SqlTransaction"/>事务对象</param>
             <returns>批量插入结果</returns>
         </member>
         <member name="M:WitsWay.Utilities.Daos.IRepositoryBulk`2.BulkUpdate(System.Collections.Generic.IList{`1},System.Data.SqlClient.SqlTransaction)">
@@ -648,12 +649,16 @@
             批量更新
             </summary>
             <param name="datas">实体列表</param>
+            <param name="tran"><see cref="T:System.Data.SqlClient.SqlTransaction"/>事务对象</param>
+            <returns>批量插入结果</returns>
         </member>
         <member name="M:WitsWay.Utilities.Daos.IRepositoryBulk`2.BulkSync(System.Collections.Generic.IList{`1},System.Data.SqlClient.SqlTransaction)">
             <summary>
             批量同步（插入、更新、删除）
             </summary>
             <param name="datas">实体列表</param>
+            <param name="tran"><see cref="T:System.Data.SqlClient.SqlTransaction"/>事务对象</param>
+            <returns>批量插入结果</returns>
         </member>
         <member name="T:WitsWay.Utilities.Daos.IRepositorySearch`2">
             <summary>
@@ -669,6 +674,21 @@
             </summary>
             <param name="filter">筛选条件载体</param>
             <returns>分页结果集</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.IRepositorySearch`2.Page(WitsWay.Utilities.Entitys.PageParameter,System.String)">
+            <summary>
+            分页
+            </summary>
+            <param name="pageParameter">分页参数</param>
+            <param name="filterClause">过滤条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Daos.IRepositorySearch`2.Page(WitsWay.Utilities.Entitys.PageParameterModel)">
+            <summary>
+            分页
+            </summary>
+            <param name="pageParameter">分页存储过程要用的参数</param>
+            <returns>PageResult</returns>
         </member>
         <member name="T:WitsWay.Utilities.Daos.IRepositoryClause`1">
             <summary>
@@ -2081,6 +2101,41 @@
             </summary>
             <returns><see cref="T:System.TypeCode"/></returns>
         </member>
+        <member name="T:WitsWay.Utilities.Entitys.PageParameterModel">
+            <summary>
+            分页存储过程要用的参数
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.PageParameterModel.TableName">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.PageParameterModel.Fields">
+            <summary>
+            要返回的字段
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.PageParameterModel.OrderFields">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.PageParameterModel.PageSize">
+            <summary>
+            页大小
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.PageParameterModel.PageIndex">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Entitys.PageParameterModel.Where">
+            <summary>
+            条件
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Entitys.PagerFilterPara`1">
             <summary>
              表格搜索对象
@@ -2898,6 +2953,20 @@
             <param name="dateTime">日期</param>
             <returns>有效日期本身，无效DateTime.Now</returns>
         </member>
+        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToUnixTimestamp(System.DateTime)">
+            <summary>
+            转换为Unix时间戳（毫秒）
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns>毫秒</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.DateTimeExtends.ToUnixTimeSeconds(System.DateTime)">
+            <summary>
+            转换为Unix时间戳（秒）
+            </summary>
+            <param name="dateTime">日期</param>
+            <returns>秒</returns>
+        </member>
         <member name="T:WitsWay.Utilities.Extends.ListExtensions">
             <summary>
             <see cref="T:System.Collections.Generic.List`1"/> 扩展方法
@@ -3221,6 +3290,23 @@
             </summary>
             <param name="t">要判断的类型</param>
             <returns>是否为可空类型</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.TypeExtends.GetPropertyDisplayName(System.Type,System.String)">
+            <summary>
+            取属性的显示名称
+            </summary>
+            <param name="type">Type</param>
+            <param name="propertyName">属性名</param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.TypeExtends.GetPropertyAttribute``1(System.Type,System.String)">
+            <summary>
+            取属性的attribute
+            </summary>
+            <param name="type">Type</param>
+            <param name="propertyName">属性名</param>
+            <typeparam name="T">attribute</typeparam>
+            <returns>attribute</returns>
         </member>
         <member name="T:WitsWay.Utilities.Extends.StringExtends">
             <summary>
@@ -6367,6 +6453,11 @@
             CheckedListBoxControlFlags 用于位域枚举
             </summary>
         </member>
+        <member name="F:WitsWay.Utilities.Layouts.EditorKinds.PictureEdit">
+            <summary>
+            PictureEdit
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Layouts.ILayoutConsumer">
             <summary>
             布局消费者
@@ -8004,6 +8095,11 @@
             IsChecked
             </summary>
         </member>
+        <member name="T:WitsWay.Utilities.Supports.IQueryModel">
+            <summary>
+            查询模型接口
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Supports.ITimestamp">
             <summary>
             时间戳支持
@@ -8329,6 +8425,17 @@
             <summary>
             Xml序列化提供者
             </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Sync.ISyncFilter">
+            <summary>
+            同步数据过滤器
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Sync.ISyncFilter.Filter(System.Object,System.String)">
+            <summary>
+            过滤方法
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:WitsWay.Utilities.Thread.LockObject">
             <summary>
@@ -9515,6 +9622,35 @@
             <param name="predicate">Predicate《TValue》委托，输入TValue类型，返回bool</param>
             <param name="errorMsg">验证错误消息</param>
             <returns></returns>
+        </member>
+        <member name="T:SmartSolution.Utilities.Helpers.DateTimeHelper">
+            <summary>
+            日期时间辅助类
+            </summary>
+        </member>
+        <member name="M:SmartSolution.Utilities.Helpers.DateTimeHelper.GetUnixTimestamp(System.DateTime)">
+            <summary>
+            获得Unix时间戳（毫秒）
+            </summary>
+            <returns>毫秒</returns>
+        </member>
+        <member name="M:SmartSolution.Utilities.Helpers.DateTimeHelper.GetNowUnixTimestamp">
+            <summary>
+            获得当前Unix时间戳（毫秒）
+            </summary>
+            <returns>毫秒</returns>
+        </member>
+        <member name="M:SmartSolution.Utilities.Helpers.DateTimeHelper.GetNowUnixTimeSeconds">
+            <summary>
+            获得当前Unix时间戳（秒）
+            </summary>
+            <returns>秒</returns>
+        </member>
+        <member name="M:SmartSolution.Utilities.Helpers.DateTimeHelper.GetNowUnixTimeSeconds(System.DateTime)">
+            <summary>
+            获得当前Unix时间戳（秒）
+            </summary>
+            <returns>秒</returns>
         </member>
     </members>
 </doc>

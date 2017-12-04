@@ -201,6 +201,18 @@ namespace WitsWay.Utilities.Win.Helpers
             return results.IsNullOrEmpty();
         }
 
+        /// <summary>
+        /// 显示错误信息
+        /// </summary>
+        /// <param name="errorProvider">errorProvider</param>
+        /// <param name="control">控件</param>
+        /// <param name="message">提示信息</param>
+        public static void ShowError(DXErrorProvider errorProvider, Control control, string message)
+        {
+            errorProvider.SetIconAlignment(control, ErrorIconAlignment.MiddleRight);
+            errorProvider.SetError(control, message, ErrorType.Default);
+        }
+
     }
 
     /// <summary>

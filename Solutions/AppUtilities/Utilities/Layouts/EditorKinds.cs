@@ -91,6 +91,10 @@ namespace WitsWay.Utilities.Layouts
         /// <summary>
         /// CheckedListBoxControlFlags 用于位域枚举
         /// </summary>
-        CheckedListBoxControlFlags
+        CheckedListBoxControlFlags,
+        /// <summary>
+        /// PictureEdit
+        /// </summary>
+        PictureEdit
     }
 }

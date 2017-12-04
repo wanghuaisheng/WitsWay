@@ -38,6 +38,19 @@ namespace WitsWay.Utilities.Daos
         /// <param name="filter">筛选条件载体</param>
         /// <returns>分页结果集</returns>
         PageResult<TData> Search(PagerFilterPara<TFilter> filter);
+        /// <summary>
+        /// 分页
+        /// </summary>
+        /// <param name="pageParameter">分页参数</param>
+        /// <param name="filterClause">过滤条件</param>
+        /// <returns></returns>
+        PageResult<TData> Page(PageParameter pageParameter, string filterClause);
 
+        /// <summary>
+        /// 分页
+        /// </summary>
+        /// <param name="pageParameter">分页存储过程要用的参数</param>
+        /// <returns>PageResult</returns>
+        PageResult<TData> Page(PageParameterModel pageParameter);
     }
 }
