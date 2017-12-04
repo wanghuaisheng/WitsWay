@@ -52,8 +52,7 @@ namespace WitsWay.Utilities.Attributes
         public static string GetEnumText(Type enumType)
         {
             var eds = (EnumFieldAttribute[])enumType.GetCustomAttributes(typeof(EnumFieldAttribute), false);
-            if (eds.Length != 1) return string.Empty;
-            return eds[0].DisplayText;
+            return eds.Length < 1 ? string.Empty : eds[0].DisplayText;
         }
 
         /// <summary>
@@ -75,8 +74,8 @@ namespace WitsWay.Utilities.Attributes
         /// <returns>描述字符串</returns>
         public static EnumFieldAttribute GetFieldInfo(object enumValue)
         {
-            var descriptions = GetFieldInfos(enumValue.GetType());
-            return descriptions.FirstOrDefault(ed => ed.FieldName == enumValue.ToString());
+            var fields = GetFieldInfos(enumValue.GetType());
+            return fields.FirstOrDefault(ed => ed.FieldName == enumValue.ToString());
         }
 
         /// <summary>
@@ -86,15 +85,17 @@ namespace WitsWay.Utilities.Attributes
         /// <param name="enumType">枚举类型</param>
         public static List<EnumFieldAttribute> GetFieldInfos(Type enumType)
         {
-            List<EnumFieldAttribute> descriptions;
+            var enumFullName = enumType?.FullName;
+            if (enumFullName == null) return null;
+            List<EnumFieldAttribute> infos;
             try
             {
-                if (!CachedEnum.ContainsKey(enumType.FullName))
+                if (!CachedEnum.ContainsKey(enumFullName))
                 {
                     Locker.EnterWriteLock();
-                    if (!CachedEnum.ContainsKey(enumType.FullName))
+                    if (!CachedEnum.ContainsKey(enumFullName))
                     {
-                        descriptions = new List<EnumFieldAttribute>();
+                        infos = new List<EnumFieldAttribute>();
                         var fields = enumType.GetFields();
                         foreach (var fi in fields)
                         {
@@ -103,9 +104,9 @@ namespace WitsWay.Utilities.Attributes
                             var ed = (EnumFieldAttribute)attrs[0];
                             ed.EnumValue = (int)fi.GetValue(null);
                             ed.FieldName = fi.Name;
-                            descriptions.Add(ed);
+                            infos.Add(ed);
                         }
-                        CachedEnum[enumType.FullName] = descriptions;
+                        CachedEnum[enumFullName] = infos;
                     }
                     Locker.ExitWriteLock();
                 }
@@ -117,12 +118,12 @@ namespace WitsWay.Utilities.Attributes
                     Locker.ExitWriteLock();
                 }
             }
-            descriptions = CachedEnum[enumType.FullName];
-            if (descriptions.Count <= 0)
+            infos = CachedEnum[enumFullName];
+            if (infos.Count <= 0)
             {
                 throw new NotSupportedException("枚举类型[" + enumType.Name + "]未定义属性EnumValueDescription");
             }
-            return descriptions;
+            return infos;
         }
 
         /// <summary>

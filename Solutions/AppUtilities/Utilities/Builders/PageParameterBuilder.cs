@@ -35,11 +35,11 @@ namespace WitsWay.Utilities.Builders
         {
             return new PageParameterBuilder();
         }
-        private readonly PageParameter _para = new PageParameter { SortColumns = new List<SortColumn>() };
+
         /// <summary>
         /// 构建结果
         /// </summary>
-        public PageParameter Result => _para;
+        public PageParameter Result { get; } = new PageParameter { SortColumns = new List<SortColumn>() };
 
         /// <summary>
         /// 第几页
@@ -47,7 +47,7 @@ namespace WitsWay.Utilities.Builders
         /// <returns>分页参数构建器</returns>
         public PageParameterBuilder PageIndex(int pageIndex)
         {
-            _para.PageIndex = pageIndex;
+            Result.PageIndex = pageIndex;
             return this;
         }
         /// <summary>
@@ -56,7 +56,7 @@ namespace WitsWay.Utilities.Builders
         /// <returns>分页参数构建器</returns>
         public PageParameterBuilder PageSize(int pageSize)
         {
-            _para.PageSize = pageSize;
+            Result.PageSize = pageSize;
             return this;
         }
         /// <summary>
@@ -67,7 +67,7 @@ namespace WitsWay.Utilities.Builders
         /// <returns>分页参数构建器</returns>
         public PageParameterBuilder SortColumn(string field, bool assend)
         {
-            _para.SortColumns.Add(new SortColumn { SortField = field, Ascend = assend });
+            Result.SortColumns.Add(new SortColumn { SortField = field, Ascend = assend });
             return this;
         }
     }
