@@ -37,6 +37,10 @@ namespace WitsWay.Utilities.Containers
         /// 类型全名→类型
         /// </summary>
         protected static readonly ConcurrentDictionary<string, Type> FullNameTypeDic = new ConcurrentDictionary<string, Type>();
+        /// <summary>
+        /// 类型全名→类型
+        /// </summary>
+        protected static readonly ConcurrentDictionary<string, Type> FullNamePropertyTypeDic = new ConcurrentDictionary<string, Type>();
 
         /// <summary>
         /// AppConfig中数据访问Dll名称配置
@@ -45,7 +49,7 @@ namespace WitsWay.Utilities.Containers
         /// <summary>
         /// 排除查找的DLL
         /// </summary>
-        private static readonly string[] ExcludeDlls = { "mscorlib,", "mscorlib.", "System,", "System.", "Microsoft.", "vshost32,", "Newtonsoft.", "UIAutomationClient,", "SMDiagnostics,", "DevExpress.", "Anonymously Hosted DynamicMethods Assembly,", "", "ExpressMapper," };
+        private static readonly string[] ExcludeDlls = { "mscorlib,", "mscorlib.", "System,", "System.", "Microsoft.", "vshost32,", "Newtonsoft.", "UIAutomationClient,", "SMDiagnostics,", "Anonymously Hosted DynamicMethods Assembly,", "", "ExpressMapper," };// "DevExpress."
         /// <summary>
         /// 锁对象
         /// </summary>
@@ -66,7 +70,7 @@ namespace WitsWay.Utilities.Containers
                 if (!string.IsNullOrWhiteSpace(daoFiles))
                 {
                     var dllArray = daoFiles.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-                    dllArray.SafeForEach(dll => Assembly.Load((string) dll));
+                    dllArray.SafeForEach(dll => Assembly.Load(dll));
                 }
                 var assemblies = AppDomain.CurrentDomain.GetAssemblies();
                 foreach (var ass in assemblies)
@@ -81,6 +85,84 @@ namespace WitsWay.Utilities.Containers
             });
             return FullNameTypeDic.ContainsKey(fullName) ? FullNameTypeDic[fullName] : null;
         }
-
+        /// <summary>
+        /// 根据父类取type
+        /// </summary>
+        /// <param name="baseType">父类</param>
+        /// <param name="propertyName">属性名称</param>
+        /// <param name="propertyValue">属性值</param>
+        /// <returns>类型</returns>
+        public static Type GetTypeByBaseType(Type baseType, string propertyName, object propertyValue)
+        {
+            Type result = null;
+            if (baseType == null || propertyValue == null || string.IsNullOrEmpty(propertyName)) return null;
+            Locker.LockExecute(() =>
+            {
+                var daoFiles = ConfigurationManager.AppSettings[DllConfigKey];
+                if (!string.IsNullOrWhiteSpace(daoFiles))
+                {
+                    var dllArray = daoFiles.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                    dllArray.SafeForEach(dll => Assembly.Load(dll));
+                }
+                var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+                foreach (var ass in assemblies)
+                {
+                    var assName = ass.FullName;
+                    if (!ExcludeDlls.Any(ex => assName.StartsWith(ex))) continue;
+                    foreach (var type in ass.GetTypes())
+                    {
+                        if (string.IsNullOrEmpty(type.BaseType?.FullName) || !type.BaseType.FullName.Equals(baseType.FullName)) continue;
+                        var propertyInfo = type.GetProperty(propertyName);
+                        if (propertyInfo == null) continue;
+                        if (propertyValue != propertyInfo.GetValue(type.GetInstance())) continue;
+                        result = type;
+                        break;
+                    }
+                    if (result != null)
+                        break;
+                }
+            });
+            return result;
+        }
+        /// <summary>
+        /// 根据接口取type
+        /// </summary>
+        /// <param name="interfaceType">父类</param>
+        /// <param name="propertyName">属性名称</param>
+        /// <param name="propertyValue">属性值</param>
+        /// <returns>类型</returns>
+        public static Type GetTypeByInterfaceType(Type interfaceType, string propertyName, string propertyValue)
+        {
+            Type result = null;
+            if (interfaceType == null || propertyValue == null || string.IsNullOrEmpty(propertyName)) return null;
+            Locker.LockExecute(() =>
+            {
+                var daoFiles = ConfigurationManager.AppSettings[DllConfigKey];
+                if (!string.IsNullOrWhiteSpace(daoFiles))
+                {
+                    var dllArray = daoFiles.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+                    dllArray.SafeForEach(dll => Assembly.Load(dll));
+                }
+                var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+                foreach (var ass in assemblies)
+                {
+                    var assName = ass.FullName;
+                    if (!ExcludeDlls.Any(ex => assName.StartsWith(ex))) continue;
+                    foreach (var type in ass.GetTypes())
+                    {
+                        var interf = type.GetInterface(interfaceType.Name);
+                        if (interf == null) continue;
+                        var propertyInfo = type.GetProperty(propertyName);
+                        if (propertyInfo == null) continue;
+                        if (!propertyValue.Equals(propertyInfo.GetValue(type.GetInstance()))) continue;
+                        result = type;
+                        break;
+                    }
+                    if (result != null)
+                        break;
+                }
+            });
+            return result;
+        }
     }
 }

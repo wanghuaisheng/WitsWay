@@ -65,7 +65,10 @@ namespace WitsWay.Utilities.Layouts
         /// 用户控件的顺序值，默认是0，当一个用户控件在窗体上多次显示的时候才需要使用，UserControl的时候才设置，非UserControl的时候不用设置
         /// </summary>
         public int CustomerControlIndex { get; set; }
-
+        /// <summary>
+        /// 数据来源
+        /// </summary>
+        public string DataSource { get; set; }
 
     }
 }

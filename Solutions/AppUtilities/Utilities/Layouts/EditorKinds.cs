@@ -27,74 +27,82 @@ namespace WitsWay.Utilities.Layouts
         /// <summary>
         /// TextEdit
         /// </summary>
-        TextEdit,
+        TextEdit = 1,
         /// <summary>
-        /// CheckedListBoxControl
+        /// CheckedListBoxControlDataSource
         /// </summary>
-        CheckedListBoxControl,
+        CheckedListBoxControlDataSource = 2,
         /// <summary>
         /// RadioGroup
         /// </summary>
-        RadioGroup,
+        RadioGroup = 3,
         /// <summary>
         /// ComboBoxEdit
         /// </summary>
-        ComboBoxEdit,
+        ComboBoxEdit = 4,
         /// <summary>
         /// MemoEdit
         /// </summary>
-        MemoEdit,
+        MemoEdit = 5,
         /// <summary>
         /// SpinEdit
         /// </summary>
-        SpinEdit,
+        SpinEdit = 6,
         /// <summary>
         /// 用户自定义控件
         /// </summary>
-        Customer,
+        Customer = 7,
         /// <summary>
         /// MRUEdit
         /// </summary>
-        MRUEdit,
+        MRUEdit = 8,
         /// <summary>
         /// LookUpEdit
         /// </summary>
-        LookUpEdit,
+        LookUpEdit = 9,
         /// <summary>
         /// ListBoxControl
         /// </summary>
-        ListBoxControl,
+        ListBoxControl = 10,
         /// <summary>
         /// DropDownButton
         /// </summary>
-        DropDownButtonEdit,
+        DropDownButtonEdit = 11,
         /// <summary>
         /// ButtonEdit
         /// </summary>
-        ButtonEdit,
+        ButtonEdit = 12,
         /// <summary>
         /// TimeEdit
         /// </summary>
-        TimeEdit,
+        TimeEdit = 13,
         /// <summary>
         /// DateEdit
         /// </summary>
-        DateEdit,
+        DateEdit = 14,
         /// <summary>
         /// SearchControl
         /// </summary>
-        SearchControl,
+        SearchControl = 15,
         /// <summary>
         /// RichEditControl
         /// </summary>
-        RichEditControl,
+        RichEditControl = 16,
         /// <summary>
         /// CheckedListBoxControlFlags 用于位域枚举
         /// </summary>
-        CheckedListBoxControlFlags,
+        CheckedListBoxControlFlags = 17,
         /// <summary>
         /// PictureEdit
         /// </summary>
-        PictureEdit
+        PictureEdit = 18,
+        /// <summary>
+        /// ComboBoxEditDataSource
+        /// </summary>
+        ComboBoxEditDataSource = 19,
+        /// <summary>
+        /// RadioGroupDataSource
+        /// </summary>
+        RadioGroupDataSource = 20
     }
 }

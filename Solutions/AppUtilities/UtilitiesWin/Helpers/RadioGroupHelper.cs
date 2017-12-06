@@ -70,6 +70,37 @@ namespace WitsWay.Utilities.Win.Helpers
         /// 绑定枚举到单选组
         /// </summary>
         /// <param name="ctr">控件</param>
+        /// <param name="except">不绑定项</param>
+        /// <param name="enumType">枚举类型</param>
+        public static void BindEnumToRadioGroup(RadioGroup ctr, Type enumType, List<int> except = null)
+        {
+            if (!enumType.IsEnum)
+            {
+                throw new ArgumentException(enumType.FullName + "不是枚举类型");
+            }
+            var eds = EnumFieldAttribute.GetFieldInfos(enumType);
+            if (eds != null && eds.Count > 0)
+            {
+                if (except == null) { except = new List<int>(); }
+                var exceptValue = except.Select(old => old.CastTo<int>()).ToList();
+                foreach (var ed in eds)
+                {
+                    if (!exceptValue.Contains(ed.EnumValue))
+                    {
+                        var item = new RadioGroupItem(ed.EnumValue, ed.DisplayText) { Tag = ed };
+                        ctr.Properties.Items.Add(item);
+                    }
+                }
+            }
+            if (ctr.Properties.Items.Count > 0)
+            {
+                ctr.SelectedIndex = 0;
+            }
+        }
+        /// <summary>
+        /// 绑定枚举到单选组
+        /// </summary>
+        /// <param name="ctr">控件</param>
         /// <param name="list">绑定的枚举列表</param>
         /// <typeparam name="T">枚举类型</typeparam>
         public static void BindEnumList<T>(RadioGroup ctr, List<T> list) where T : struct
@@ -182,37 +213,6 @@ namespace WitsWay.Utilities.Win.Helpers
                     return selectedData.Data;
             }
             return default(T);
-        }
-        /// <summary>
-        /// 绑定枚举到单选组
-        /// </summary>
-        /// <param name="ctr">控件</param>
-        /// <param name="except">不绑定项</param>
-        /// <param name="enumType">枚举类型</param>
-        public static void BindEnumToRadioGroup(RadioGroup ctr, Type enumType, List<int> except = null)
-        {
-            if (!enumType.IsEnum)
-            {
-                throw new ArgumentException(enumType.FullName + "不是枚举类型");
-            }
-            var eds = EnumFieldAttribute.GetFieldInfos(enumType);
-            if (eds != null && eds.Count > 0)
-            {
-                if (except == null) { except = new List<int>(); }
-                var exceptValue = except.Select(old => old.CastTo<int>()).ToList();
-                foreach (var ed in eds)
-                {
-                    if (!exceptValue.Contains(ed.EnumValue))
-                    {
-                        var item = new RadioGroupItem(ed.EnumValue, ed.DisplayText);
-                        ctr.Properties.Items.Add(item);
-                    }
-                }
-            }
-            if (ctr.Properties.Items.Count > 0)
-            {
-                ctr.SelectedIndex = 0;
-            }
         }
         /// <summary>
         /// 绑定枚举到单选组

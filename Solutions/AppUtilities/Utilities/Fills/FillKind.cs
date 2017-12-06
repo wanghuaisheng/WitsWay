@@ -58,6 +58,11 @@ namespace WitsWay.Utilities.Fills
         /// <summary>
         /// 菜单模块名称
         /// </summary>
-        [EnumField("菜单模块名称")] MenuModuleName
+        [EnumField("菜单模块名称")] MenuModuleName,
+        /// <summary>
+        /// 租户名称
+        /// </summary>
+        [EnumField("租户名称")]
+        TenantName
     }
 }

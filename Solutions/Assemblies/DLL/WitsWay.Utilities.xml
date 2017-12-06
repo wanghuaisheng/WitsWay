@@ -289,6 +289,11 @@
             类型全名→类型
             </summary>
         </member>
+        <member name="F:WitsWay.Utilities.Containers.BasicTypeContainer.FullNamePropertyTypeDic">
+            <summary>
+            类型全名→类型
+            </summary>
+        </member>
         <member name="F:WitsWay.Utilities.Containers.BasicTypeContainer.DllConfigKey">
             <summary>
             AppConfig中数据访问Dll名称配置
@@ -309,6 +314,24 @@
             获取类型
             </summary>
             <param name="fullName">类型全名</param>
+            <returns>类型</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Containers.BasicTypeContainer.GetTypeByBaseType(System.Type,System.String,System.Object)">
+            <summary>
+            根据父类取type
+            </summary>
+            <param name="baseType">父类</param>
+            <param name="propertyName">属性名称</param>
+            <param name="propertyValue">属性值</param>
+            <returns>类型</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Containers.BasicTypeContainer.GetTypeByInterfaceType(System.Type,System.String,System.String)">
+            <summary>
+            根据接口取type
+            </summary>
+            <param name="interfaceType">父类</param>
+            <param name="propertyName">属性名称</param>
+            <param name="propertyValue">属性值</param>
             <returns>类型</returns>
         </member>
         <member name="T:WitsWay.Utilities.Daos.BulkOperations`1">
@@ -2722,6 +2745,11 @@
             Image转换为byte数组
             </summary>
         </member>
+        <member name="T:WitsWay.Utilities.Extends.QueryableExtends">
+            <summary>
+            Queryable扩展
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Extends.EnumExtends">
             <summary>
             字符串扩展
@@ -2773,6 +2801,14 @@
             <summary>
             转换为对应Int值的String
             </summary>
+            <param name="enumValue">枚举值</param>
+            <returns>Int值对应的String</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Extends.EnumExtends.GetFlagDescriptions``1(System.Enum,System.Int32)">
+            <summary>
+            转换为对应Int值的String
+            </summary>
+            <param name="enum">枚举</param>
             <param name="enumValue">枚举值</param>
             <returns>Int值对应的String</returns>
         </member>
@@ -4916,6 +4952,21 @@
             呈现项
             </summary>
         </member>
+        <member name="F:WitsWay.Utilities.Errors.ErrorDomains.SystemItem">
+            <summary>
+            系统项
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Errors.ErrorDomains.TenantInfo">
+            <summary>
+            租户信息
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Errors.ErrorDomains.RightItem">
+            <summary>
+            权限项
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Errors.ErrorSystems">
             <summary>
             错误域枚举
@@ -6277,6 +6328,11 @@
             菜单模块名称
             </summary>
         </member>
+        <member name="F:WitsWay.Utilities.Fills.FillKind.TenantName">
+            <summary>
+            租户名称
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Fills.FillTargetAttribute">
             <summary>
             填充目标特性
@@ -6373,9 +6429,9 @@
             TextEdit
             </summary>
         </member>
-        <member name="F:WitsWay.Utilities.Layouts.EditorKinds.CheckedListBoxControl">
+        <member name="F:WitsWay.Utilities.Layouts.EditorKinds.CheckedListBoxControlDataSource">
             <summary>
-            CheckedListBoxControl
+            CheckedListBoxControlDataSource
             </summary>
         </member>
         <member name="F:WitsWay.Utilities.Layouts.EditorKinds.RadioGroup">
@@ -6458,6 +6514,16 @@
             PictureEdit
             </summary>
         </member>
+        <member name="F:WitsWay.Utilities.Layouts.EditorKinds.ComboBoxEditDataSource">
+            <summary>
+            ComboBoxEditDataSource
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Layouts.EditorKinds.RadioGroupDataSource">
+            <summary>
+            RadioGroupDataSource
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Layouts.ILayoutConsumer">
             <summary>
             布局消费者
@@ -6477,6 +6543,21 @@
         <member name="P:WitsWay.Utilities.Layouts.ILayoutConsumer.StreamProvider">
             <summary>
             流提供者
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Layouts.ILayoutDataSource">
+            <summary>
+            窗体布局控件的数据来源接口
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Layouts.ILayoutDataSource.SourceName">
+            <summary>
+            来源名称
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Layouts.ILayoutDataSource.GetData">
+            <summary>
+            取数据
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Layouts.ILayoutStreamProvider">
@@ -6637,6 +6718,11 @@
         <member name="P:WitsWay.Utilities.Layouts.LayoutEditorAttribute.CustomerControlIndex">
             <summary>
             用户控件的顺序值，默认是0，当一个用户控件在窗体上多次显示的时候才需要使用，UserControl的时候才设置，非UserControl的时候不用设置
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Layouts.LayoutEditorAttribute.DataSource">
+            <summary>
+            数据来源
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Layouts.LayoutKinds">

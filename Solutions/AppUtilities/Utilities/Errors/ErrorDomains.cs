@@ -93,6 +93,24 @@ namespace WitsWay.Utilities.Errors
         /// <summary>
         /// 呈现项
         /// </summary>
-        [EnumMember] [ErrorItem("呈现项")] PresentItem,
+        [EnumMember] [ErrorItem("呈现项")] PresentItem,     
+        /// <summary>
+        /// 系统项
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("系统项")]
+        SystemItem,
+        /// <summary>
+        /// 租户信息
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("租户信息")]
+        TenantInfo,   
+        /// <summary>
+        /// 权限项
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("权限项")]
+        RightItem,
     }
 }

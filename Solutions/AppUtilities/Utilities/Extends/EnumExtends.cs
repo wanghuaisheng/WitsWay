@@ -19,6 +19,7 @@
 #endregion
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using WitsWay.Utilities.Attributes;
 
 namespace WitsWay.Utilities.Extends
@@ -98,6 +99,17 @@ namespace WitsWay.Utilities.Extends
         public static string ToIntString(this Enum enumValue)
         {
             return enumValue.CastTo<int>().ToString();
+        }
+
+        /// <summary>
+        /// 转换为对应Int值的String
+        /// </summary>
+        /// <param name="enum">枚举</param>
+        /// <param name="enumValue">枚举值</param>
+        /// <returns>Int值对应的String</returns>
+        public static string GetFlagDescriptions<TEnum>(this Enum @enum, int enumValue) where TEnum : struct
+        {
+            return @enum.GetFieldInfos().FindAll(fi => (enumValue & fi.EnumValue) > 0).Select(one => one.DisplayText).Join(",");
         }
 
 

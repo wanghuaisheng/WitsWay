@@ -161,6 +161,7 @@
     <Compile Include="Enums\MenuKinds.cs" />
     <Compile Include="Enums\SubSystems.cs" />
     <Compile Include="Extends\ImageExtends.cs" />
+    <Compile Include="Extends\QueryableExtends.cs" />
     <Compile Include="Helpers\DateTimeHelper.cs" />
     <Compile Include="Helpers\StreamByteImageHelper.cs" />
     <Compile Include="Helpers\ExceptionHelper.HandleClient.cs" />
@@ -248,6 +249,7 @@
     <Compile Include="Helpers\ZipHelper.cs" />
     <Compile Include="Layouts\EditorKinds.cs" />
     <Compile Include="Layouts\ILayoutConsumer.cs" />
+    <Compile Include="Layouts\ILayoutDataSource.cs" />
     <Compile Include="Layouts\ILayoutStreamProvider.cs" />
     <Compile Include="Layouts\LayoutDescription.cs" />
     <Compile Include="Layouts\LayoutUiKinds.cs" />
