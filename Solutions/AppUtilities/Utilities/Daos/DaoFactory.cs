@@ -47,8 +47,9 @@ namespace WitsWay.Utilities.Daos
         /// 取得数据访问对象
         /// </summary>
         /// <typeparam name="T">数据访问对象接口类型</typeparam>
+        /// <param name="readWrite">读写方式</param>
         /// <returns>接口实例</returns>
-        public static T GetDao<T>()
+        public static T GetDao<T>(ReadWriteWays readWrite = ReadWriteWays.Default)
         {
             var daoFiles = AppSettingHelper.GetValue(UtilityConsts.DaoAppSettingKey);
             if (string.IsNullOrWhiteSpace(daoFiles.Trim()))
@@ -63,8 +64,9 @@ namespace WitsWay.Utilities.Daos
         /// </summary>
         /// <typeparam name="T">数据访问对象接口类型</typeparam>
         /// <param name="dll">数据访问层实例DLL名称</param>
+        /// <param name="readWrite">读写方式</param>
         /// <returns>接口实例</returns>
-        public static T GetDao<T>(string dll)
+        public static T GetDao<T>(string dll, ReadWriteWays readWrite = ReadWriteWays.Default)
         {
             if (string.IsNullOrWhiteSpace(dll)) return default(T);
             if (!DaoTypeDic.ContainsKey(dll))
@@ -79,7 +81,16 @@ namespace WitsWay.Utilities.Daos
             }
             try
             {
-                return (T)dic[t].GetInstance();
+                var tDao = (T)dic[t].GetInstance();
+                if (typeof(ReadWriteDao).IsAssignableFrom(t))
+                {
+                    var rwDao = tDao as ReadWriteDao;
+                    if (rwDao != null)
+                    {
+                        rwDao.ReadWriteWay = readWrite;
+                    }
+                }
+                return tDao;
             }
             catch (Exception ex)
             {

@@ -424,19 +424,21 @@
             锁对象
             </summary>
         </member>
-        <member name="M:WitsWay.Utilities.Daos.DaoFactory.GetDao``1">
+        <member name="M:WitsWay.Utilities.Daos.DaoFactory.GetDao``1(WitsWay.Utilities.Daos.ReadWriteWays)">
             <summary>
             取得数据访问对象
             </summary>
             <typeparam name="T">数据访问对象接口类型</typeparam>
+            <param name="readWrite">读写方式</param>
             <returns>接口实例</returns>
         </member>
-        <member name="M:WitsWay.Utilities.Daos.DaoFactory.GetDao``1(System.String)">
+        <member name="M:WitsWay.Utilities.Daos.DaoFactory.GetDao``1(System.String,WitsWay.Utilities.Daos.ReadWriteWays)">
             <summary>
             取得数据访问对象
             </summary>
             <typeparam name="T">数据访问对象接口类型</typeparam>
             <param name="dll">数据访问层实例DLL名称</param>
+            <param name="readWrite">读写方式</param>
             <returns>接口实例</returns>
         </member>
         <member name="M:WitsWay.Utilities.Daos.DaoFactory.InitDlls(System.String)">
@@ -512,6 +514,26 @@
         <member name="M:WitsWay.Utilities.Daos.CdcOperations.GetCdcColumns">
             <summary>
             取所有开启CDC的列
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Daos.ReadWriteDao">
+            <summary>
+            数据读写访问标记
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Daos.ReadWriteDao.ReadWriteWay">
+            <summary>
+            读写方式
+            </summary>
+        </member>
+        <member name="T:WitsWay.Utilities.Daos.IReadWriteDao">
+            <summary>
+            数据读写访问标记
+            </summary>
+        </member>
+        <member name="P:WitsWay.Utilities.Daos.IReadWriteDao.ReadWriteWay">
+            <summary>
+            读写方式
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Daos.IDaoExtends">
@@ -792,6 +814,26 @@
             </summary>
             <param name="id">主键id</param>
             <returns>返回实体</returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Daos.ReadWriteWays">
+            <summary>
+            读写方式
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Daos.ReadWriteWays.Default">
+            <summary>
+            默认根连接
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Daos.ReadWriteWays.Write">
+            <summary>
+            写连接
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Daos.ReadWriteWays.Read">
+            <summary>
+            读连接
+            </summary>
         </member>
         <member name="T:WitsWay.Utilities.Daos.IRepositoryExist`1">
             <summary>
@@ -3517,6 +3559,65 @@
             <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
+        <member name="T:WitsWay.Utilities.Helpers.HttpRequestHelper">
+            <summary>
+            Http请求类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.HttpRequestHelper.HttpRequest(System.String,System.String,System.Boolean@,System.Boolean,System.Boolean,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Http请求提交(提交数据使用UTF-8传送)
+            </summary>
+            <param name="url"></param>
+            <param name="value"></param>
+            <param name="isCatch">是否捕获到异常；true:捕获到异常</param>
+            <param name="saveCookie">是否用一个容器来保存cookies默认不保存</param>
+            <param name="requestType"></param>
+            <param name="encodingName"></param>
+            <param name="timeout">超时时间，以毫秒为单位</param>
+            <param name="contentType"></param>
+            <param name="referer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.HttpRequestHelper.ConvertEntityToKvString``1(``0,System.String,System.String)">
+            <summary>
+            将实体转换成Post格式字符串
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="kbm"></param>
+            <param name="keyNameJoinStr">属性名与属性值连接字符串</param>
+            <param name="splitStr">每组值的分割符</param>
+            <returns></returns>
+        </member>
+        <member name="T:WitsWay.Utilities.Helpers.DateTimeHelper">
+            <summary>
+            日期时间辅助类
+            </summary>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.DateTimeHelper.GetUnixTimestamp(System.DateTime)">
+            <summary>
+            获得Unix时间戳（毫秒）
+            </summary>
+            <returns>毫秒</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.DateTimeHelper.GetNowUnixTimestamp">
+            <summary>
+            获得当前Unix时间戳（毫秒）
+            </summary>
+            <returns>毫秒</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.DateTimeHelper.GetNowUnixTimeSeconds">
+            <summary>
+            获得当前Unix时间戳（秒）
+            </summary>
+            <returns>秒</returns>
+        </member>
+        <member name="M:WitsWay.Utilities.Helpers.DateTimeHelper.GetNowUnixTimeSeconds(System.DateTime)">
+            <summary>
+            获得当前Unix时间戳（秒）
+            </summary>
+            <returns>秒</returns>
+        </member>
         <member name="T:WitsWay.Utilities.Helpers.StreamByteImageHelper">
             <summary>
             流、字节、图片辅助类
@@ -4967,6 +5068,21 @@
             权限项
             </summary>
         </member>
+        <member name="F:WitsWay.Utilities.Errors.ErrorDomains.EmpInfo">
+            <summary>
+            雇员
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Errors.ErrorDomains.OrgInfo">
+            <summary>
+            组织机构
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Errors.ErrorDomains.UserInfo">
+            <summary>
+            用户信息
+            </summary>
+        </member>
         <member name="T:WitsWay.Utilities.Errors.ErrorSystems">
             <summary>
             错误域枚举
@@ -5279,6 +5395,11 @@
         <member name="F:WitsWay.Utilities.Errors.UtilityErrors.DatabaseAccessError">
             <summary>
             数据库访问错误
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Errors.UtilityErrors.DatabaseConnectionError">
+            <summary>
+            数据库连接错误
             </summary>
         </member>
         <member name="F:WitsWay.Utilities.Errors.UtilityErrors.FileOrDirectoryOrStreamAccessError">
@@ -6331,6 +6452,21 @@
         <member name="F:WitsWay.Utilities.Fills.FillKind.TenantName">
             <summary>
             租户名称
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Fills.FillKind.OrgName">
+            <summary>
+            组织机构
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Fills.FillKind.DataGroupName">
+            <summary>
+            数据字典
+            </summary>
+        </member>
+        <member name="F:WitsWay.Utilities.Fills.FillKind.SystemItemName">
+            <summary>
+            系统项
             </summary>
         </member>
         <member name="T:WitsWay.Utilities.Fills.FillTargetAttribute">
@@ -9708,35 +9844,6 @@
             <param name="predicate">Predicate《TValue》委托，输入TValue类型，返回bool</param>
             <param name="errorMsg">验证错误消息</param>
             <returns></returns>
-        </member>
-        <member name="T:SmartSolution.Utilities.Helpers.DateTimeHelper">
-            <summary>
-            日期时间辅助类
-            </summary>
-        </member>
-        <member name="M:SmartSolution.Utilities.Helpers.DateTimeHelper.GetUnixTimestamp(System.DateTime)">
-            <summary>
-            获得Unix时间戳（毫秒）
-            </summary>
-            <returns>毫秒</returns>
-        </member>
-        <member name="M:SmartSolution.Utilities.Helpers.DateTimeHelper.GetNowUnixTimestamp">
-            <summary>
-            获得当前Unix时间戳（毫秒）
-            </summary>
-            <returns>毫秒</returns>
-        </member>
-        <member name="M:SmartSolution.Utilities.Helpers.DateTimeHelper.GetNowUnixTimeSeconds">
-            <summary>
-            获得当前Unix时间戳（秒）
-            </summary>
-            <returns>秒</returns>
-        </member>
-        <member name="M:SmartSolution.Utilities.Helpers.DateTimeHelper.GetNowUnixTimeSeconds(System.DateTime)">
-            <summary>
-            获得当前Unix时间戳（秒）
-            </summary>
-            <returns>秒</returns>
         </member>
     </members>
 </doc>

@@ -111,6 +111,24 @@ namespace WitsWay.Utilities.Errors
         /// </summary>
         [EnumMember]
         [ErrorItem("权限项")]
-        RightItem,
+        RightItem,        
+        /// <summary>
+        /// 雇员
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("雇员")]
+        EmpInfo,
+        /// <summary>
+        /// 组织机构
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("组织机构")]
+        OrgInfo,
+        /// <summary>
+        /// 用户信息
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("用户信息")]
+        UserInfo,
     }
 }

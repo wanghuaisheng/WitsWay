@@ -63,6 +63,21 @@ namespace WitsWay.Utilities.Fills
         /// 租户名称
         /// </summary>
         [EnumField("租户名称")]
-        TenantName
+        TenantName,
+        /// <summary>
+        /// 组织机构
+        /// </summary>
+        [EnumField("组织机构")]
+        OrgName,
+        /// <summary>
+        /// 数据字典
+        /// </summary>
+        [EnumField("数据字典")]
+        DataGroupName,
+        /// <summary>
+        /// 系统项
+        /// </summary>
+        [EnumField("系统项")]
+        SystemItemName
     }
 }

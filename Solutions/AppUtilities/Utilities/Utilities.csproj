@@ -122,6 +122,8 @@
     <Compile Include="Daos\BulkOperations.cs" />
     <Compile Include="Daos\DaoFactory.cs" />
     <Compile Include="Daos\CdcOperations.cs" />
+    <Compile Include="Daos\ReadWriteDao.cs" />
+    <Compile Include="Daos\IReadWriteDao.cs" />
     <Compile Include="Daos\IDaoExtends.cs" />
     <Compile Include="Daos\IDao.cs" />
     <Compile Include="Daos\IDaoAttribute.cs" />
@@ -142,6 +144,7 @@
     <Compile Include="Daos\IRepositorySearch.cs" />
     <Compile Include="Daos\IRepositoryClause.cs" />
     <Compile Include="Daos\IRepository.cs" />
+    <Compile Include="Daos\ReadWriteWays.cs" />
     <Compile Include="EntityCast\CasterBuilder.cs" />
     <Compile Include="EntityCast\IEntityCaster.cs" />
     <Compile Include="EntityCast\IMapBuilderContext.cs" />
@@ -162,6 +165,7 @@
     <Compile Include="Enums\SubSystems.cs" />
     <Compile Include="Extends\ImageExtends.cs" />
     <Compile Include="Extends\QueryableExtends.cs" />
+    <Compile Include="Helpers\HttpRequestHelper.cs" />
     <Compile Include="Helpers\DateTimeHelper.cs" />
     <Compile Include="Helpers\StreamByteImageHelper.cs" />
     <Compile Include="Helpers\ExceptionHelper.HandleClient.cs" />

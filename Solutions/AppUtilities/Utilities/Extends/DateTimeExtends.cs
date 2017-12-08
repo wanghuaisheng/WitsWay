@@ -18,7 +18,7 @@
  * ***************************************/
 #endregion
 using System;
-using SmartSolution.Utilities.Helpers;
+using WitsWay.Utilities.Helpers;
 
 namespace WitsWay.Utilities.Extends
 {

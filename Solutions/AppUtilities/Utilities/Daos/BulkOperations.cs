@@ -102,13 +102,14 @@ namespace WitsWay.Utilities.Daos
         /// </summary>
         private static DataTable MergeUpdateOrInsert(SqlCommand command, string schema, string targetTableName, string sourceTableName, string primaryKey)
         {
+            var fileds = CreateInsertSql(command, schema, targetTableName);
             string sql = $@"MERGE INTO {schema}.{targetTableName} AS T           
                             USING {sourceTableName} AS S
                                ON T.{primaryKey} = S.{primaryKey} 
                             WHEN MATCHED
                                THEN UPDATE SET {CreateUpdateSql(command, schema, targetTableName)}
                             WHEN NOT MATCHED BY TARGET
-                               THEN INSERT VALUES({CreateInsertSql(command, schema, targetTableName)})
+                               THEN INSERT ({fileds.Replace("[S].", "")}) VALUES({fileds})
                             --WHEN NOT MATCHED BY SOURCE
                             --   THEN DELETE
                             OUTPUT $ACTION AS[Action],
@@ -194,18 +195,31 @@ namespace WitsWay.Utilities.Daos
         /// </summary>
         private static void CreateTempTable(SqlCommand command, string tempTableName, string schema, string targetTableName)
         {
-            var table = GetTableColumnInfo(command, schema, targetTableName);
+            var tableColumnInfo = GetTableColumnInfo(command, schema, targetTableName);
+            var table = CreateTable(command, schema, targetTableName);
             var builder = new StringBuilder();
             builder.Append($"if object_id('Tempdb.dbo.{tempTableName}') is not null drop table {tempTableName}; ");
             builder.Append($"create table {tempTableName} (");
-            foreach (DataRow row in table.Rows)
+            //foreach (DataRow row in table.Rows)
+            //{
+            //    builder.Append(row["COLUMN_NAME"]);
+            //    builder.Append(" ");
+            //    builder.Append(row["DATA_TYPE"]);
+            //    if (row["DATA_TYPE"].ToString().Equals("nvarchar") || row["DATA_TYPE"].ToString().Equals("varchar"))
+            //    {
+            //        builder.Append("-1".Equals(row["CHARACTER_MAXIMUM_LENGTH"].ToString()) ? " (max)" : $" ({row["CHARACTER_MAXIMUM_LENGTH"]})");
+            //    }
+            //    builder.Append(",");
+            //}
+            foreach (DataColumn col in table.Columns)
             {
-                builder.Append(row["COLUMN_NAME"]);
+                DataRow[] dr = tableColumnInfo.Select($@"COLUMN_NAME='{col.ColumnName}'");
+                builder.Append(dr[0]["COLUMN_NAME"]);
                 builder.Append(" ");
-                builder.Append(row["DATA_TYPE"]);
-                if (row["DATA_TYPE"].ToString().Equals("nvarchar") || row["DATA_TYPE"].ToString().Equals("varchar"))
+                builder.Append(dr[0]["DATA_TYPE"]);
+                if (dr[0]["DATA_TYPE"].ToString().Equals("nvarchar") || dr[0]["DATA_TYPE"].ToString().Equals("varchar"))
                 {
-                    builder.Append("-1".Equals(row["CHARACTER_MAXIMUM_LENGTH"].ToString()) ? " (max)" : $" ({row["CHARACTER_MAXIMUM_LENGTH"]})");
+                    builder.Append("-1".Equals(dr[0]["CHARACTER_MAXIMUM_LENGTH"].ToString()) ? " (max)" : $" ({dr[0]["CHARACTER_MAXIMUM_LENGTH"]})");
                 }
                 builder.Append(",");
             }
@@ -227,13 +241,18 @@ namespace WitsWay.Utilities.Daos
         /// </summary>
         private static DataTable CreateTable(SqlCommand command, string schema, string targetTableName)
         {
-            var table = GetTableColumnInfo(command, schema, targetTableName);
-            var newTable = new DataTable();
-            foreach (DataRow row in table.Rows)
-            {
-                newTable.Columns.Add(new DataColumn(row["COLUMN_NAME"].ToString(), row["DATA_TYPE"].GetType()));
-            }
-            return newTable;
+            //var table = GetTableColumnInfo(command, schema, targetTableName);
+            //var newTable = new DataTable();
+            //foreach (DataRow row in table.Rows)
+            //{
+            //    newTable.Columns.Add(new DataColumn(row["COLUMN_NAME"].ToString(), row["DATA_TYPE"].GetType()));
+            //}
+            command.CommandText = $@"select * from {schema}.{targetTableName} where 1<0";
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = command;
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            return ds.Tables[0];
         }
         /// <summary>
         /// 目标表的列信息

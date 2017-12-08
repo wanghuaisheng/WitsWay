@@ -102,7 +102,12 @@ namespace WitsWay.Utilities.Errors
         [EnumMember]
         [ErrorItem("数据库访问错误")]
         DatabaseAccessError,
-
+        /// <summary>
+        /// 数据库连接错误
+        /// </summary>
+        [EnumMember]
+        [ErrorItem("数据库连接错误")]
+        DatabaseConnectionError,
         /// <summary>
         /// 文件、目录或流访问错误
         /// </summary>
