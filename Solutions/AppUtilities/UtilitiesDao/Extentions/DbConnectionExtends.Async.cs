@@ -3,8 +3,8 @@ using System.Data;
 using System.Threading.Tasks;
 using Dapper;
 using WitsWay.Utilities.Dap.Helpers;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 
 namespace WitsWay.Utilities.Dap.Extentions
 {

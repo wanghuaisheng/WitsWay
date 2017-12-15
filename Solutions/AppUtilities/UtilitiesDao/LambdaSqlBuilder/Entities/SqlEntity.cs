@@ -1,4 +1,4 @@
-﻿namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity
+﻿namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities
 {
     
      public class SqlEntity

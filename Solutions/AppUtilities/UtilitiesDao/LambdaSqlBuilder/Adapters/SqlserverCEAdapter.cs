@@ -1,13 +1,13 @@
-﻿using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+﻿using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 
-namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter
+namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters
 {
    
     /// <summary>
     /// 支持Sqlserver 2005及以上
     /// </summary>
     
-    class SqlserverAdapter : AdapterBase, ISqlAdapter
+    class SqlserverCEAdapter : AdapterBase, ISqlAdapter
     {
         public override string AutoIncrementDefinition { get; } = "IDENTITY(1,1)";
  
@@ -16,7 +16,7 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter
         public override string PrimaryKeyDefinition { get; } = " Primary Key";
         public override string SelectIdentitySql { get; set; } = "SELECT SCOPE_IDENTITY()";
 
-        public SqlserverAdapter()
+        public SqlserverCEAdapter()
             : base(SqlConsts.LeftTokens[0], SqlConsts.RightTokens[0], SqlConsts.ParamPrefixs[0])
         {
              
@@ -96,7 +96,7 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter
         /// <returns></returns>
         protected virtual string DbTypeDateTime2(string fieldLength)
         {
-            return $"DATETIME2";
+            return $"DATETIME";
         }
     }
 }

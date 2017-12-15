@@ -1,4 +1,4 @@
-﻿namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter
+﻿namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters
 {
     /// <summary>
     /// Sql适配器类型

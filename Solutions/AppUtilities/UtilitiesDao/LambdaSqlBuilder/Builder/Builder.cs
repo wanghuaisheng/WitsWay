@@ -4,8 +4,8 @@ using System.Dynamic;
 using System.Globalization;
 using System.Linq;
 using WitsWay.Utilities.Dap.Helpers;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 
 namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Builder
 {

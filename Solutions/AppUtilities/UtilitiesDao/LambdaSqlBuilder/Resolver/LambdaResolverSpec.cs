@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Reflection;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 using WitsWay.Utilities.Dap.LambdaSqlBuilder.Enums;
 using WitsWay.Utilities.Dap.LambdaSqlBuilder.Resolver.ExpressionTree;
 

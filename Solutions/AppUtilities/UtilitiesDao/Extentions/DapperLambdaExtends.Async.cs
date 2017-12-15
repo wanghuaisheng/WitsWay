@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Dapper;
 using WitsWay.Utilities.Dap.LambdaSqlBuilder;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 
 namespace WitsWay.Utilities.Dap.Extentions
 {

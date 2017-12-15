@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 
-namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter
+namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters
 {
     /// <summary>
     /// Sql适配器

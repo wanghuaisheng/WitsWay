@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 using WitsWay.Utilities.Dap.LambdaSqlBuilder.Enums;
 using WitsWay.Utilities.Dap.LambdaSqlBuilder.Resolver;
 using WitsWay.Utilities.Dap.LambdaSqlBuilder.Resolver.ExpressionTree;

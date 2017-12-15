@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 using WitsWay.Utilities.Dap.LambdaSqlBuilder.Resolver;
 
 namespace WitsWay.Utilities.Dap.LambdaSqlBuilder

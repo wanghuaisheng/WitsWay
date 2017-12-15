@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Reflection;
-using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 
-namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter
+namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters
 {
 
     abstract class AdapterBase : ISqlAdapter

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter
+namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters
 {
     public static class AdapterFactory
     {

@@ -1,6 +1,6 @@
-﻿using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entity;
+﻿using WitsWay.Utilities.Dap.LambdaSqlBuilder.Entities;
 
-namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapter
+namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Adapters
 {
     
     class Sqlite3Adapter : AdapterBase
