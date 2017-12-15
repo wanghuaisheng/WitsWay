@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{C7244023-8221-4B7B-8CEF-7BB53E6F947D}"
 EndProject
@@ -26,6 +26,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Win", "UtilitiesWin\Utilities.Win.csproj", "{4228578B-ED44-4D77-AB1B-587BE30BB506}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utillities.Win.Tests", "Utillities.Win.Tests\Utillities.Win.Tests.csproj", "{F2AAA22A-3D9E-4DEC-9B3E-261D502999E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Dap", "UtilitiesDao\Utilities.Dap.csproj", "{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Dap.Tests", "Utilities.Dap.Tests\Utilities.Dap.Tests.csproj", "{338E6126-9625-4435-9C13-772B0218049C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +139,38 @@ Global
 		{F2AAA22A-3D9E-4DEC-9B3E-261D502999E6}.Release|x64.Build.0 = Release|Any CPU
 		{F2AAA22A-3D9E-4DEC-9B3E-261D502999E6}.Release|x86.ActiveCfg = Release|Any CPU
 		{F2AAA22A-3D9E-4DEC-9B3E-261D502999E6}.Release|x86.Build.0 = Release|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Debug|x64.Build.0 = Debug|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Debug|x86.Build.0 = Debug|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Release|x64.ActiveCfg = Release|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Release|x64.Build.0 = Release|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Release|x86.ActiveCfg = Release|Any CPU
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63}.Release|x86.Build.0 = Release|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Debug|x64.Build.0 = Debug|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Debug|x86.Build.0 = Debug|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Release|x64.ActiveCfg = Release|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Release|x64.Build.0 = Release|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Release|x86.ActiveCfg = Release|Any CPU
+		{338E6126-9625-4435-9C13-772B0218049C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,6 +183,11 @@ Global
 		{8DAA35AB-1A90-4E9F-A09B-357600BEB97D} = {52D480BC-7070-427F-AC41-62ABEB5DE7C6}
 		{4228578B-ED44-4D77-AB1B-587BE30BB506} = {52D480BC-7070-427F-AC41-62ABEB5DE7C6}
 		{F2AAA22A-3D9E-4DEC-9B3E-261D502999E6} = {A481E4D8-AA93-43EE-A7B4-7044D2138B12}
+		{8B94DAD8-CF44-4FF7-BF66-AA2A0E8B2A63} = {52D480BC-7070-427F-AC41-62ABEB5DE7C6}
+		{338E6126-9625-4435-9C13-772B0218049C} = {A481E4D8-AA93-43EE-A7B4-7044D2138B12}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5DFC68A-6BDF-4800-92E0-5F4704844D24}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = AppPublic.vsmdi
