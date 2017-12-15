@@ -17,22 +17,17 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder
 
         internal List<SqlExpBase> _childSqlExps = new List<SqlExpBase>();
 
-     
-
         public string JoinSubAliasTableName { get; internal set; }
 
         internal Type _entityType;
 
-        public Builder.Builder SqlBuilder { get { return _builder; } }
+        public Builder.Builder SqlBuilder => _builder;
 
-        public SqlType SqlType { get { return _type; } }
+        public SqlType SqlType => _type;
 
-        public SqlExpBase()
-        {
+        protected SqlExpBase() { }
 
-        }
-
-        public SqlExpBase(SqlAdapterKinds adater, Type entityType)
+        protected SqlExpBase(SqlAdapterKinds adater, Type entityType)
         {
             _type = SqlType.Query;
             _adapter = adater;
@@ -41,7 +36,7 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder
             _resolver = new LambdaResolver(_builder);
         }
 
-        public SqlExpBase(SqlAdapterKinds adater, SqlTableDefine tableDefine, List<SqlColumnDefine> columnDefines)
+        protected SqlExpBase(SqlAdapterKinds adater, SqlTableDefine tableDefine, List<SqlColumnDefine> columnDefines)
         {
             _type = SqlType.Query;
             _adapter = adater;
@@ -50,13 +45,7 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder
             _resolver = new LambdaResolver(_builder);
         }
 
-        public string SqlString
-        {
-            get
-            {
-                return _builder.SqlString();
-            }
-        }
+        public string SqlString => _builder.SqlString();
 
         public string QueryPage(int pageSize, int? pageNumber = null)
         {
@@ -72,40 +61,30 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder
         {
             get
             {
-                if (_childSqlExps.Any())
+                if (!_childSqlExps.Any()) return _builder.Parameters;
+                var parameterList = new Dictionary<string, object>();
+                foreach (var child in _childSqlExps)
                 {
-                    var parameterList = new Dictionary<string, object>();
+                    var parameters = child.Parameters;
 
-                    foreach (var child in _childSqlExps)
+                    foreach (var pp in parameters)
                     {
-                        var parameters = child.Parameters;
-
-                        foreach (var pp in parameters)
-                        {
-                            parameterList.Add(pp.Key, pp.Value);
-                        }
+                        parameterList.Add(pp.Key, pp.Value);
                     }
-
-                    foreach (var pm in _builder.Parameters)
-                    {
-                        parameterList.Add(pm.Key,pm.Value);
-                    }
-                    return parameterList;
                 }
-                else
+
+                foreach (var pm in _builder.Parameters)
                 {
-                    return _builder.Parameters;
+                    parameterList.Add(pm.Key, pm.Value);
                 }
+                return parameterList;
             }
         }
 
         /// <summary>
         /// 主要给Dapper用
         /// </summary>
-        public string[] SplitColumns
-        {
-            get { return _builder.SplitColumns.ToArray(); }
-        }
+        public string[] SplitColumns => _builder.SplitColumns.ToArray();
 
         #region update
 

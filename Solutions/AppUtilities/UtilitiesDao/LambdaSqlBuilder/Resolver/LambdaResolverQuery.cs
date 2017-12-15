@@ -14,44 +14,26 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Resolver
             BuildSql(expressionTree);
         }
 
-        private Node ResolveQuery<T>(ConstantExpression constantExpression)
+        private Node ResolveQuery(ConstantExpression constantExpression)
         {
-            return new ValueNode() { Value = constantExpression.Value };
+            return new ValueNode { Value = constantExpression.Value };
         }
 
         private Node ResolveQuery<T>(UnaryExpression unaryExpression)
         {
-            return new SingleOperationNode()
+            return new SingleOperationNode
             {
                 Operator = unaryExpression.NodeType,
                 Child = ResolveQuery((dynamic)unaryExpression.Operand)
             };
         }
-
-        //private Node ResolveQuery(BinaryExpression binaryExpression)
-        //{
-        //    return new OperationNode
-        //    {
-        //        Left = ResolveQuery((dynamic)binaryExpression.Left),
-        //        Operator = binaryExpression.NodeType,
-        //        Right = ResolveQuery((dynamic)binaryExpression.Right)
-        //    };
-        //}
+        
         private Node ResolveQuery<T>(BinaryExpression binaryExpression)
         {
             var left = ResolveQuery<T>((dynamic) binaryExpression.Left);
             var opera = binaryExpression.NodeType;
             var right = ResolveQuery<T>((dynamic) binaryExpression.Right);
-
             return new OperationNode {Left = left,Operator = opera,Right = right};
-
-
-            //return new OperationNode
-            //{
-            //    Left = ResolveQuery<T>((dynamic)binaryExpression.Left),
-            //    Operator = binaryExpression.NodeType,
-            //    Right = ResolveQuery<T>((dynamic)binaryExpression.Right)
-            //};
         }
 
         private Node ResolveQuery<T>(MethodCallExpression callExpression)
@@ -59,13 +41,13 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Resolver
             LikeMethod callFunction;
             if (Enum.TryParse(callExpression.Method.Name, true, out callFunction))
             {
-                var member = callExpression.Object as MemberExpression;
+                //var member = callExpression.Object as MemberExpression;
                 var tvalue = GetExpressionValue(callExpression.Arguments.First());
                 var fieldValue = Convert.ToString(tvalue);
-                return new LikeNode()
-                           {
-                               MemberNode = new MemberNode()
-                                       {
+                return new LikeNode
+                {
+                               MemberNode = new MemberNode
+                               {
                                            TableName =GetTableName<T>(),// GetTableName(member),
                                            FieldName = GetColumnName(callExpression.Object)
                                        },
@@ -76,7 +58,7 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Resolver
             else
             {
                 var value = ResolveMethodCall(callExpression);
-                return new ValueNode() { Value = value };
+                return new ValueNode { Value = value };
             }
         }
 
@@ -86,18 +68,18 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Resolver
 
             if (rootExpression.Expression == null)
             {
-                return new ValueNode() { Value = GetExpressionValue(rootExpression) };
+                return new ValueNode { Value = GetExpressionValue(rootExpression) };
             }
 
             switch (memberExpression.Expression.NodeType)
             {
                 case ExpressionType.Parameter:
-                    return new MemberNode() { TableName = GetTableName<T>(), FieldName = GetColumnName(rootExpression) };
+                    return new MemberNode { TableName = GetTableName<T>(), FieldName = GetColumnName(rootExpression) };
                 case ExpressionType.MemberAccess:
                     return ResolveQuery<T>(memberExpression.Expression as MemberExpression, rootExpression);
                 case ExpressionType.Call:
                 case ExpressionType.Constant:
-                    return new ValueNode() { Value = GetExpressionValue(rootExpression) };
+                    return new ValueNode { Value = GetExpressionValue(rootExpression) };
                 default:
                     throw new ArgumentException("Expected member expression");
             }
@@ -109,12 +91,12 @@ namespace WitsWay.Utilities.Dap.LambdaSqlBuilder.Resolver
             switch (memberExpression.Expression.NodeType)
             {
                 case ExpressionType.Parameter:
-                    return new MemberNode() { TableName = GetTableName<T>(), FieldName = GetColumnName(rootExpression) };
+                    return new MemberNode { TableName = GetTableName<T>(), FieldName = GetColumnName(rootExpression) };
                 case ExpressionType.MemberAccess:
                     return ResolveQuery<T>(memberExpression.Expression as MemberExpression, rootExpression);
                 case ExpressionType.Call:
                 case ExpressionType.Constant:
-                    return new ValueNode() { Value = GetExpressionValue(rootExpression) };
+                    return new ValueNode { Value = GetExpressionValue(rootExpression) };
                 default:
                     throw new ArgumentException("Expected member expression");
             }
